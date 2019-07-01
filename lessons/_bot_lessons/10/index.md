@@ -97,11 +97,7 @@ reflection:
 ### Review
    * What is resistance? What is the job of a resistor in a circuit?
 
-### Step 1:  Connecting The Barnabas-Bot (10 minutes) 
-Rather than go through the process here, please look at the Additional Resources provided in the Lesson overview. There are two separate documents. One for Mac users and one for PC users. There you will find instructions to connect the Barnabas-bot to the computer. They will also include instructions on how to ensure the robot and computer can communicate with one another (upload code). 
-
-{% include youtube.html id="i2l7I9PdE2o" %}
-{% include youtube.html id="bBSZ8REdUYA" %}
+{% include badge.html type='troubleshoot' content='Please see our <a href="/software/index.html">Software</a> page for setting up your computers. %}
 
 #### Vocabulary
    * **Arduino**: Both hardware and software. The hardware is a line of microcontrollers (very simple computers). In fact, the Barnabas Noggin utilizes an Arduino microcontroller itself. The software is a C based IDE (integrated development environment… A place where you code). Because Arduino handles both sides of things the process of coding, then uploading your code to a microcontroller is very easy. The Arduino IDE can be out of scope for younger classes as the ability to type acts as a barrier to entry.
