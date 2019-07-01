@@ -1,3 +1,5 @@
+---
+---
 /*
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -295,6 +297,6 @@
 //   }
 
 // FROM DRAGON app? is above better? 
-navigator.serviceWorker && navigator.serviceWorker.register('sw.js').then(function(registration) {
+navigator.serviceWorker && navigator.serviceWorker.register('{{ site.baseurl }}/sw.js').then(function(registration) {
 	console.log('Excellent, registered with scope: ', registration.scope);
   });
