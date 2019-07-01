@@ -1,7 +1,7 @@
 <!-- this current state is NGSS reorganized to match new structure
 many items are missing or lacking  
 Lesson plans have been grouped with SESSIONS and now appropriately named worksheet
-These may be better served as seperate files in supporting materials-->
+These may be better served as seperate files in supporting materials -->
 # Day 1 of 16  Introduction to Robotics
 > Suggested Time: 60-75 minutes  
 
