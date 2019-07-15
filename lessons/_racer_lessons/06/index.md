@@ -88,7 +88,7 @@ Continuous servos are similar to the servos that we used from Barnabas-Bot, exce
 
 ##### Moving Forward
 
-The code above should move your car forward.  Notice that it seems like the motor should be moving in opposite directions.  Look at how your car is constructed and see if you can see why the car moves forward even though the motors are moving in opposite directions.
+The code below should move your car forward.  Notice that it seems like the motor should be moving in opposite directions.  Look at how your car is constructed and see if you can see why the car moves forward even though the motors are moving in opposite directions.
 
 ![fig 6.6](fig-6_6.png){:.image .block-based}
 
