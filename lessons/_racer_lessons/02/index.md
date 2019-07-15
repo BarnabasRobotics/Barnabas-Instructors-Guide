@@ -75,6 +75,8 @@ Now that the students can work with the LED and buzzer, have them integrate both
 Make your circuit do this!
 [Light And Buzzer Challenge #1](https://youtu.be/ARKQP-Zd3dY)
 
+While some students may be up for this challenge, those who are not can simply get their circuit to light up and make noise. This is also an effective review.
+
 {% include youtube.html id="ARKQP-Zd3dY" %}
 
 ### Solution 
