@@ -65,7 +65,7 @@ Have the students work together to build the two circuits shown in the schematic
 #### Programming Review
 We will now have the students review what they did before by going through the same exercises for the light and buzzer from the level 1 class.  You can find the curriculum at the links below.
 
-[LED](lesson/06/index.html#LED)
+[LED](https://lessons.barnabasrobotics.com/bot_lessons/10/index.html)
 [Buzzer](lesson/06#Buzzer)
 
 #### Integration Challenge
