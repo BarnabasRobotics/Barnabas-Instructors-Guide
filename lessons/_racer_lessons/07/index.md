@@ -118,31 +118,6 @@ That's great! We now know how to put our robots into reverse.
 
 ### Step 2: Can We Make Our Car Turn? (45 minutes) 
 
-```c
-#include <Servo.h>
-
-Servo servo_pin_11;
-Servo servo_pin_10;
-
-void setup()
-{
-  servo_pin_11.attach(11);
-  servo_pin_10.attach(10);
-
-  while (digitalWrite(2)==HIGH){
-    servo_pin_11.write( 90 );
-    servo_pin_10.write( 90 );
-  }
-}
-
-void loop()
-{
-  servo_pin_11.write( 1 );
-  servo_pin_10.write( 180 );
-}
-```
-{:.text-based}
-
 Now let's say that from here we instead want to turn in one direction, how do we do that? Thinking about the direction we want to turn our motors if I wanted to turn left I would have the right motor continue moving forward but change the direction of the left motor. I could do likewise with the right motor if I wanted to turn right instead. The code to do either is below;
 
 ![fig 7.4](fig-7_4.png){:.image .block-based}
