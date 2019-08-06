@@ -41,15 +41,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function teachChecked() {
     tTip = document.getElementById("tooltipteach");
+    mssb = document.getElementById("modeshowsidebar");
     if(localStorage.getItem("user") == 'teacher')
     {
         document.getElementById("teacherCheck").checked = true;
         document.getElementById('teacher').style.display = '';
         tTip.innerHTML ="Teacher Mode";
+        mssb.innerHTML ="Teacher Mode";
     }
     else {
         document.getElementById('teacher').style.display = 'none';
         tTip.innerHTML= "Student Mode";
+        mssb.innerHTML= "Student Mode";
     }
 }
 
