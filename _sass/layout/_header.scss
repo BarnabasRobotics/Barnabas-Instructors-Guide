@@ -17,6 +17,12 @@
 			margin-bottom: 0;
 		}
 
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
 		.logo {
 			border-bottom: 0;
 			color: inherit;
