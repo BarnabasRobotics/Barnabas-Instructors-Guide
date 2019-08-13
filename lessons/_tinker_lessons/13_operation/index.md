@@ -1,7 +1,7 @@
 ---
 published: true
 layout: lesson
-title: TS13 &middot; Robot Operation Game
+title: 13 &middot; Robot Operation Game
 
 disciplines:
     - "ETS1.A: Defining and Delimiting Engineering Problems"
