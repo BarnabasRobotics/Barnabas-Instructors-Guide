@@ -35,8 +35,7 @@ Materials:
 * Draw BayMax on the board and explain how BayMax has a body.  Explain that every robot has a body, just like our robot.  Explain that a mechanical engineer is the one that works on the robot’s body. 
 * Next, introduce the the medicine cup, and that today it will be the robot’s body!  Explain that the cup will be upside down, and not rightside up.
 
-![]()
- 20170711_104843.jpg 
+![fig mc.1](image1.jpg){:class="image "}
 
 #### Creating Your Robot’s Clothes (10 min)
 * Introducing The Stencil: Explain that we need to give skin to our robot.  Show how a stencil works.  Explain that we need to share the stencil with our neighbor.
@@ -52,6 +51,8 @@ Materials:
 * Hand out googly eyes, extra construction paper and tape
 * Ideas
    * Give your medicine bot a neck or a tail!
+
+![fig mc.2](image2.jpg){:class="image "}
 
 ### Learning About Our Robot’s Heart (5 min)
 * Draw a heart on your BayMax drawing.
@@ -69,6 +70,8 @@ Materials:
    * Building the robot's heart
    * Hand out the coincell battery and motor
    * Draw out the a diagram showing the loop that they want to make.  Explain that there is a positive and negative.  Draw a battery connected to a motor.  The example below is open-circuit because the loop is broken.  To make a closed-circuit, just fill in the line.
+
+![fig mc.5](image5.jpg){:class="image "}
 
    * Have the kids try to create a working closed-circuit based on the drawing.  Have them experiment making a closed circuit (the motor should turn on) and an open-circuit (the motor should turn off).
 
@@ -95,3 +98,5 @@ Materials:
    * See if you can make it go in circles
    * See if you can make sure it doesn't fall down
    * If you have time, kids can try to race their robots or battle them
+
+![fig mc.6](image6.jpg){:class="image "}

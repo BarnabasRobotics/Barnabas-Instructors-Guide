@@ -21,6 +21,7 @@ materials:
     - Construction Paper	For creating head, tail and body
     - Markers Several for decoration
 ---
+![fig cb.1](image1.png){:class="image "}
 
 ### Introductions and Ice Breaker (5 min)
 - Let your students know that they will be building a robot today.  
@@ -43,10 +44,14 @@ materials:
    * CLOSED: means that you can find a closed loop 
    * OPEN: means that you cannot find a closed loop
 
+![fig cb.4](image4.jpg){:class="image "}
+
 ### Building The Robot’s Heart (10 min)
    * Building the robot's heart
    * Hand out the coincell battery and motor
    * Draw out the a diagram showing the loop that they want to make.  Explain that there is a positive and negative.  Draw a battery connected to a motor.  The example below is open-circuit because the loop is broken.  To make a closed-circuit, just fill in the line.
+
+![fig cb.8](image8.jpg){:class="image "}
 
    * Have the kids try to create a working closed-circuit based on the drawing.  Have them experiment making a closed circuit (the motor should turn on) and an open-circuit (the motor should turn off).
    * We will now experiment with making a simple switch so that you can turn your robot on and off.
@@ -83,6 +88,8 @@ When the eccentric wheel spins, its weight is distributed unevenly, causing it t
    * Use pipe cleaners for hair or legs!
    * Add googly eyes!
 
+![fig cb.5](image5.jpg){:class="image "}
+
 #### Experiment! (5 min)
    * Once you are done, does it go forward?  Does it go in circles?  
    * Watch Critterbots in action! (Scarecrow, Bun Bun)
@@ -91,3 +98,8 @@ When the eccentric wheel spins, its weight is distributed unevenly, causing it t
    * See if you can make it go in circles
    * See if you can make sure it doesn't fall down
    * If you have time, kids can try to race their robots or battle them
+
+![fig cb.2](image2.jpg){:class="image "}
+![fig cb.6](image6.jpg){:class="image "}
+![fig cb.7](image7.jpg){:class="image "}
+![fig cb.9](image9.jpg){:class="image "}
