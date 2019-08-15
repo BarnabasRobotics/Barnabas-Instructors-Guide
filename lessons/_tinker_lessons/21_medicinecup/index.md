@@ -90,9 +90,13 @@ Materials:
    * Now using a sticker, connect the top wire and the top of the coincell battery.  
    * Watch video: Student experimenting with the motor and the sticker-made switch.
 
+{% include gvid.html id="0Bwi3TToI1ZE9V0RIWlhRQ3A3SVE" %}
+
 ### Experiment! (5 min)
    * Once you are done, does it go forward?  Does it go in circles?  
    * Watch Critterbots in action! (Scarecrow, Bun Bun)
+{% include gvid.html id="14TYWXPxTiOWsOB_CE_hv_Wc-b4zktCzz" %}
+{% include gvid.html id="0Bwi3TToI1ZE9WVhGSm9FODBQQmc" %}
    * Possible challenges:
    * See if you can make it go straight
    * See if you can make it go in circles
