@@ -62,7 +62,12 @@ materials:
    * Put one of the wires on the sticky side of the strip.  The other wire should be sticking up in the air.
    * Place the battery onto the sticky foam.  Make sure that the side on the sticky foam is touching the metal part of the wire that is on the sticky foam.
    * Now using a sticker, connect the top wire and the top of the coincell battery.  
-   * Watch video: Student experimenting with the motor and the sticker-made switch.
+   * Student experimenting with the motor and the sticker-made switch.
+
+<div class="video-responsive">
+    <iframe src="https://drive.google.com/file/d/0Bwi3TToI1ZE9V0RIWlhRQ3A3SVE/preview" width="560" height="315" frameborder="0" allowfullscreen ></iframe>
+</div>
+   
 
 ### Mechanics (5 min -- OPTIONAL)
    * Why does the motor vibrate?
