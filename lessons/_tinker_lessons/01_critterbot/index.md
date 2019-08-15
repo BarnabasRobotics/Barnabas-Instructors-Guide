@@ -64,9 +64,7 @@ materials:
    * Now using a sticker, connect the top wire and the top of the coincell battery.  
    * Student experimenting with the motor and the sticker-made switch.
 
-<div class="video-responsive">
-    <iframe src="https://drive.google.com/file/d/0Bwi3TToI1ZE9V0RIWlhRQ3A3SVE/preview" width="560" height="315" frameborder="0" allowfullscreen ></iframe>
-</div>
+{% include gvid.html id="0Bwi3TToI1ZE9V0RIWlhRQ3A3SVE" %}
    
 
 ### Mechanics (5 min -- OPTIONAL)
