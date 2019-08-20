@@ -24,6 +24,7 @@ Materials:
    - Double-stick Tape To connect construction paper to the cup
 
 ---
+![fig mc.6](image6.jpg){:class="image "}
 
 ### Introductions (5 min)
 * Tell the kids that we are going to build a robot today.  We're going to BUILD something, LEARN engineering from it, and we're going to have FUN!
@@ -90,17 +91,12 @@ Materials:
    * Now using a sticker, connect the top wire and the top of the coincell battery.  
    * Watch video: Student experimenting with the motor and the sticker-made switch.
 
-{% include gvid.html id="0Bwi3TToI1ZE9V0RIWlhRQ3A3SVE" %}
 
 ### Experiment! (5 min)
    * Once you are done, does it go forward?  Does it go in circles?  
-   * Watch Critterbots in action! (Scarecrow, Bun Bun)
-{% include gvid.html id="14TYWXPxTiOWsOB_CE_hv_Wc-b4zktCzz" %}
-{% include gvid.html id="0Bwi3TToI1ZE9WVhGSm9FODBQQmc" %}
    * Possible challenges:
    * See if you can make it go straight
    * See if you can make it go in circles
    * See if you can make sure it doesn't fall down
    * If you have time, kids can try to race their robots or battle them
 
-![fig mc.6](image6.jpg){:class="image "}
