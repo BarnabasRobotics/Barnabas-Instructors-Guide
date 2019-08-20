@@ -37,7 +37,7 @@
   .tooltip .tooltiplefthover {
     visibility: hidden;
     width: 120px;
-    background-color: black;
+    background-color: grey;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -49,14 +49,14 @@
   }
 
   .tooltip .tooltiplefthover::after {
-    content: " ";
+    content: "";
     position: absolute;
     top: 50%;
     left: 100%; /* To the left of the tooltip */
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent black transparent transparent;
+    border-color: transparent grey transparent transparent;
   }
 
   .tooltip:hover .tooltiplefthover {
