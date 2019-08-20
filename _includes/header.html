@@ -1,12 +1,8 @@
 <header id="header">
 	<a href="{{ site.baseurl }}/" class="logo"><strong>Barnabas Robotics</strong></a><small>&lt;&nbsp;BUILD. LEARN. TEACH. INSPIRE.&nbsp;&gt;</small>
 	<ul class="icons">
-		<li><a href="https://twitter.com/{{site.twitter_username}}" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-		<li><a href="https://www.facebook.com/{{site.facebook_username}}"  target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-		<li><a href="https://github.com/{{site.repository}}/" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>
-		<li><a href="https://www.instagram.com/{{site.instagram_username}}/"  target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-		<li><a href="https://www.youtube.com/user/{{site.youtube_username}}"  target="_blank" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
 		{% if page.url contains "lessons" %}
+		<li>Page Settings</li>
 		<li><a href="#settingsModal" onclick="showSettings()"  class="icon fa-cog"><span class="label">Settings</span></a></li>
 		{% endif %}
 	</ul>
