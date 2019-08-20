@@ -37,8 +37,8 @@ documents:
 - link: https://goo.gl/DZUBAa
   text: Happy Birthday Piano Tutorial for comparison
 other:
-- link: https://engineering.purdue.edu/ece477/Archive/2014/Spring/S14-Grp1/images/je/note_frequencies.jpg
-  text: Frequency Chart
+- link: https://docs.google.com/spreadsheets/d/e/2PACX-1vSomZD6rbr080Sh6Zd5SIWp-jlhSAMxhklSTJ7EiGNjLmfvSCWEAkgPqiT3_RM-3xH01TFOp35U_kKc/pubhtml?gid=563648701&single=true
+  text: Barnabas Frequency Chart
 
 depth:
 - "Level 1:  Recall and Reproduction"
