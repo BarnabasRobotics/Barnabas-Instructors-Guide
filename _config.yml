@@ -30,6 +30,10 @@ repository: BarnabasRobotics/Barnabas-Instructors-Guide
 github: [metadata]
 version: 1.0.1
 
+markdown: kramdown
+kramdown:
+    math_engine: katex
+
 collections:
   bot_lessons:
     output: true
