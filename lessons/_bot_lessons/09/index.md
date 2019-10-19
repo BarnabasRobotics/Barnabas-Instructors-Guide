@@ -179,7 +179,7 @@ The fourth band on a resistor is what’s called it’s tolerance. Tolerance is 
 {% include badge.html type="activity" content="Have the students come up with the color code for a resistor that has a strength of your choosing. If you would like, you can put the students in groups and give each group a different resistor value to work on." %}
 
 ### Step 5: Going Even Further With Resistance (5 minutes or as time permits)
-With knowledge of Ohm’s law, we can calculate the current going through the circuit when either resistor is used. Ohm’s law (V=IR) can be rewritten as I=V/R. Both the voltage and the resistance are known to us so we can calculate current in both cases.
+With knowledge of Ohm’s law, we can calculate the current going through the circuit when either resistor is used. Ohm’s law (V=IR) can be rewritten as I=V/R \\(\frac{\Delta{V}}{R}\\). Both the voltage and the resistance are known to us so we can calculate current in both cases.
    * I=5/470 -> I=0.01 Amps (Amperes are the unit used to measure current)
    * I=5/4700 -> I=0.001 Amps
 
