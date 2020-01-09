@@ -7,8 +7,7 @@ title: Revisions
 
 This site was inspired by previous schoology courses and 
 amazing curriculum writers like Valerie Sun and Monica Bennett.
-You can find their work in our NGSS repo.
-https://github.com/BarnabasRobotics/Curriculum-NGSS
+You can find their work in our [NGSS repo.](https://github.com/BarnabasRobotics/Curriculum-NGSS)
 
 Current Version {{ site.version }}
 
