@@ -115,6 +115,15 @@ Use the following checklist to prepare your robot for coding:
    
 _This process must be done each lesson that you intend to program._
 
+### Step 1: Changing The Circuit (5 minutes)
+In this section we are finally going to code our LED. However, we must make a small change to the current circuit first. 
+
+The wire that is currently in the 5V pin must be placed in the pin labelled 7.
+
+![fig 10.6](fig-10_6.png){:class="image fit"}
+
+You may notice that the LED no longer turns on. This is because while the 5V pin is always on, pin 7 is what is called a programmable pin, meaning we decide whether it is on or off with code. 
+
 ### Step 2: Getting Started With Ardublock (5 minutes) 
 Now that our computer is talking to our Barnabas Noggin, let's get started with ArduBlock!  ArduBlock is a block-based programming language that is great for those who are new to programming.  
 
@@ -159,14 +168,6 @@ The last skill we need to learn is how to delete blocks of code. Say we have the
    * **Loop Do**: The most important block in Ardublock. It is important that one and only one loop do is in the code at a time, otherwise your code cannot be uploaded. The loop do will run whatever code is placed inside it repeatedly, starting again at the beginning whenever the end is reached.
 
 ### Step 4: Our First Program, Programming The LED (20 minutes) 
-In this section we are finally going to code our LED. However, we must make a small change to the current circuit first. 
-
-The wire that is currently in the 5V pin must be placed in the pin labelled 7.
-
-![fig 10.6](fig-10_6.png){:class="image fit"}
-
-You may notice that the LED no longer turns on. This is because while the 5V pin is always on, pin 7 is what is called a programmable pin, meaning we decide whether it is on or off with code. 
-
 With that out of the way let’s begin coding by grabbing a Set Digital Pin block out of the Pins tab and place it in the loop do.
 
 ![fig 10.7](fig-10_7.png){:class="image "}
