@@ -66,7 +66,7 @@ reflection:
   - Why is fastening the motors from both sides important?
 ---
 
-{% include badge.html type='suggestion' content='If you are building the wooden version of the Barnabas Bot, please see <a href="../Appendix/C/index.html>."> the Wooden Bot Addendeum</a>.' %}
+{% include badge.html type='suggestion' content='If you are building the wooden version of the Barnabas Bot, please see <a href="../Appendix/C"> the Wooden Bot Addendeum</a>.' %}
 
 {% include youtube.html id="Bq8QKORWx4k" %}
 
