@@ -69,9 +69,7 @@ reflection:
 
 The process of getting a 3-D file to the printer isn’t as simple as you may suspect. It is not as easy as throwing the file we designed into a 3-D printer and turning it on. The CAD file we designed previously can be exported from Onshape as what is called an STL file. STLs are a common format for 3-D files. Unfortunately for us, a 3-D printer does not accept STL files. Instead they are made to accept g-code files. A g-code file is a file made up of many two dimensional drawings which will ultimately be printed one on top of the other to create the finished product. A g-code file tells the 3-D printer the specifics of how it should move and how much plastic to extrude at any one time.
 
-What is needed is some way of converting an STL file to a g-code file. This can be done with a slicer program. A slicer will take the 3-D STL file and slice it into each 2-D piece. The overall process is shown in simplified form below:
-
-![fig 5.1](fig-5_1.png){:class="image "}
+What is needed is some way of converting an STL file to a g-code file. This can be done with a slicer program. A slicer will take the 3-D STL file and slice it into each 2-D piece.
 
 ### Step 2: Industrial Design (20 minutes) 
 Industrial design is a term that refers to two different aspects of a manufactured product. The first is the object’s usefulness (function). The second is the object’s beauty (form). When engineers design products for the public they need to carefully consider the role of the product and determine how much of their effort goes into the form of the product and how much goes into the function of the product. Some things do not need to look pretty, they just need to work. Others need to draw people's attention to have a chance in the market.
@@ -84,6 +82,6 @@ Think about common items (especially electronics) and ask yourself whether the f
 
 Now that we have learned about industrial design and 3-D printing, take out your robot and beginning thinking about who this robot is for.  Is it for yourself?  Or someone else?  Now come up with a design for your robot.  Think of colors and even sketches or words that you want to put your on your robot.  Keep in mind who you are designing for.  This will guide you in making your design decisions!
 
-<iframe width="0" height="0" src="https://www.tinkercad.com/embed/9RUh82CEU99?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<iframe width="100%" height="62%" src="https://www.tinkercad.com/embed/9RUh82CEU99?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 To add colors to your robot, click <a href="https://www.tinkercad.com/things/9RUh82CEU99" target="_blank">here</a>. Note that you'll need to create a TinkerCAD account.
