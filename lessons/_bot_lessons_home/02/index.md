@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 2 &middot; Time to Paint!
+title: Lesson 2 &middot; Time To Decorate!
 suggested_time: 60-75 minutes
 
 disciplines:
@@ -43,22 +43,22 @@ materials:
 * What is industrial design?
 
 ### Examining The Parts (10 min)
-Hand out the custom parts, the heads and front plates, to each of the students.  Have them examine the 3-D printed parts to make sure that they match with their original CAD drawing.  This is a good time to also think about how each 3-D printed part was laying on the bed as it was printed.  HINT: look at how the lines on the 3-D printed bots are oriented.
-
-Hand out whatever supplies you are going to have the students use, paints or otherwise.
+Check out your robot parts, the heads and front plates, to each of the students.  Examine the 3-D printed parts and think about how each 3-D printed part was laying on the bed as it was printed.  HINT: look at how the lines on the 3-D printed bots are oriented.
 
 ### Creating A Story (10 min)
-Explain to the students that the next class they will be able to paint/color their robot. Have the students individually come up with a design plan or color scheme with their robot.
+Remembering what we learning about industrial design, think about who this robot is for, and what it does.  Is it for yourself?  Or someone else?  Now come up with a design for your robot.  Think of colors and even sketches or words that you want to put your on your robot.  Keep in mind who you are designing for.  This will guide you in making your design decisions!
 
-Spend some time with the class discussing possible designs for their robots.  Give the class a few sentence starters.
+<iframe width="725" height="453" src="https://www.tinkercad.com/embed/9RUh82CEU99?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+To add colors to your robot, click <a href="https://www.tinkercad.com/things/9RUh82CEU99" target="_blank">here</a>. Note that you'll need to create a TinkerCAD account.
+
+A few sentence starters.
 
 1. My robot’s name is:
 2. My robot’s job is to:
 3. My robot’s colors are:
 
-Each student can share their robot’s design with their neighbor or class before they start decorating. 
-
 ### Decorating The Robot (50 minutes) 
-Be sure to cover the tables of the classroom in some way, we recommend butcher paper. This is an opportunity for the students to make each of their robots unique.
+It's time to decorate!
 
 {% include badge.html type='tidbit' content='This is a good time to infuse some of your artistic knowledge into the class. A quick discussion of additive vs subtractive colors or how color affects our moods would be appropriate.' %}
