@@ -62,12 +62,8 @@ reflection:
   - Why is the form or beauty of a product important to engineers?
 
 ---
-
-#### Review
-* What CAD operations did we learn to do last week?
-
 ### Step 1: Introduction To 3-D Printing (25 minutes) 
-Over the last two lessons the process of 3-D printing has been mentioned, but I think it is time to explicitly ask: “What is 3-D printing?”. That question is much more complicated than it originally seems. We can begin to answer it by drawing similarities and differences between a 3-D printer and your paper printer at home. The big difference is that a 3-D printer will print layers one on top of another, accumulating height while doing so. Using an analogy we can say that the 3-D printing process is much like writing your name on a cake, the icing sits atop the rest of the cake.
+“What is 3-D printing?”. That question is much more complicated than it originally seems. We can begin to answer it by drawing similarities and differences between a 3-D printer and your paper printer at home. The big difference is that a 3-D printer will print layers one on top of another, accumulating height while doing so. Using an analogy we can say that the 3-D printing process is much like writing your name on a cake, the icing sits atop the rest of the cake.
 
 3-D printers are used by engineers in the field to quickly build designs. They are used as rapid prototyping machines more often than not, giving engineers the opportunity to design, build and test an idea in the same day. This means that while 3-D printers are not always creating the finished product, they are still crucial to the design process.
 
@@ -95,10 +91,10 @@ Have the students attempt to point out these parts on the 3-D printer. Perhaps a
 ### Step 2: Industrial Design (20 minutes) 
 Industrial design is a term that refers to two different aspects of a manufactured product. The first is the object’s usefulness (function). The second is the object’s beauty (form). When engineers design products for the public they need to carefully consider the role of the product and determine how much of their effort goes into the form of the product and how much goes into the function of the product. Some things do not need to look pretty, they just need to work. Others need to draw people's attention to have a chance in the market.
 
-Lead the students in a discussion about common items (especially electronics) and ask the students if they think that form or function is more important for that item. 
+Think about common items (especially electronics) and ask yourself whether the form or function of each is more important.
 
-{% include badge.html type='activity' content='Have the class discuss reasons they like either Samsung or Apple phones.  Group each reason into two categories: function or beauty.   Explain the story of the <a href="https://bgr.com/2018/05/24/samsung-apple-lawsuit-patents-rounded-corners-setllement/" target="_blank">Samsung and Apple dispute</a> over rounded edges.  This activity enforces that looks do matter!' %}
+{% include badge.html type='activity' content='Do you like Samsung or Apple phone?  Give your reasons and put them into two categories: function or beauty.   Check out the story about <a href="https://bgr.com/2018/05/24/samsung-apple-lawsuit-patents-rounded-corners-setllement/" target="_blank">Samsung and Apple dispute</a> over rounded edges.  Looks really do matter!' %}
 
-{% include badge.html type='activity' content='Have your students design a smartphone for themselves and one for someone they know, like a relative, friend or sibling. How do those two phones differ? Perform the same exercise with something simpler, like a sandwich. How is the sandwich you made for yourself different from the sandwich you made for the other person? Why are they different?' %}
+{% include badge.html type='activity' content='Design something simple like a sandwich for yourself and someone you know, like a relative, friend or sibling. How is the sandwich you made for yourself different from the sandwich you made for the other person? Why are they different?' %}
 
-Hand each student the drawing of their robot as well as a box with the robot parts inside. The box should contain everything except the custom 3-D printed parts. You can hand those out next time. The drawing of their robot can be placed inside the box under the top. 
+Now that we have learned about industrial design and 3-D printing, take out your robot and beginning thinking about who this robot is for.  Is it for yourself?  Or someone else?  Now come up with a design for your robot.  Think of colors and even sketches or words that you want to put your on your robot.  Keep in mind who you are designing for.  This will guide you in making your design decisions!
