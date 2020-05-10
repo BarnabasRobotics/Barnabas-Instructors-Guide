@@ -197,37 +197,21 @@ layout: index
         {% endfor %}
     </ul>
 
-    <h3>Challenges</h3>
+    <h3>Personal Reflection</h3>
     <ul class="">
         <li>What was hard in today's class?</li>
         {% for item in page.reflection.challenges %}
         <li>{{ item }}</li>
         {% endfor %}
-    </ul>
-
-    <h3>Enjoyment</h3>
-    <ul class="">
-        <li>What was fun about today's class?</li>
-        {% for item in page.reflection.enjoyment %}
+	    
+	{% for item in page.reflection.enjoyment %}
         <li>{{ item }}</li>
         {% endfor %}
-    </ul>
-
-    <h3>Mindset</h3>
-    <ul class="">
-        <li>What did you learn about yourself?</li>
-        <li>What would you like to improve?</li>
-        {% for item in page.reflection.mindset %}
+	    
+	{% for item in page.reflection.mindset %}
         <li>{{ item }}</li>
         {% endfor %}
-    </ul>
-
-    <h3>Community</h3>
-    <ul class="">
-        <li>How can what you learned impact those around you?</li>
-        {% for item in page.reflection.community %}
-        <li>{{ item }}</li>
-        {% endfor %}
+	    
     </ul>
 	
     <hr class="major" />
