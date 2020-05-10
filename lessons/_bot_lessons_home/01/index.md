@@ -84,8 +84,19 @@ Think about common items (especially electronics) and ask yourself whether the f
 
 Now that we have learned about industrial design and 3-D printing, take out your robot and beginning thinking about who this robot is for.  Is it for yourself?  Or someone else?  Now come up with a design for your robot.  Think of colors and even sketches or words that you want to put your on your robot.  Keep in mind who you are designing for.  This will guide you in making your design decisions!
 
-<div>
-<iframe height="100%" src="https://www.tinkercad.com/embed/9RUh82CEU99?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-</div>
+<head>
+<style type="text/css"> 
+html {height:100%}
+body {
+margin:0;
+height:100%;
+overflow:hidden
+}
+</style>
+</head>
+
+<body>
+<iframe allowtransparency=true frameborder=0 id=rf sandbox="allow-same-origin allow-forms allow-scripts" scrolling=auto src="https://www.tinkercad.com/embed/9RUh82CEU99?editbtn=1" style="width:100%;height:100%"></iframe>
+</body>
 
 To add colors to your robot, click <a href="https://www.tinkercad.com/things/9RUh82CEU99" target="_blank">here</a>. Note that you'll need to create a TinkerCAD account.
