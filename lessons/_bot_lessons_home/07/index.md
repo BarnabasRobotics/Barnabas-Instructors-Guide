@@ -34,6 +34,8 @@ vocab:
 #- Period (duration)
 
 videos:
+- link: https://youtu.be/qbIv8ygmDII
+  text: Morse code tutorial
 documents:
 other:
 - link: https://upload.wikimedia.org/wikipedia/commons/b/b5/International_Morse_Code.svg
