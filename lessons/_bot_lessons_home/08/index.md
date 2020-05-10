@@ -29,6 +29,8 @@ videos:
   text: Wiring your buzzer
 - link: https://youtu.be/DjNMpiLLQb4
   text: Programming your buzzer
+- link: https://youtu.be/fu8Hz3LpBMU
+  text: Making music with your buzzer
 documents:
 - link: https://goo.gl/lyJHw4
   text: Hot Cross Buns Piano Tutorial for comparison
