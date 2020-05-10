@@ -73,21 +73,6 @@ What is needed is some way of converting an STL file to a g-code file. This can 
 
 ![fig 5.1](fig-5_1.png){:class="image "}
 
-Draw a 3-D printer on the whiteboard, making sure to label important components:
-
-![fig 5.2](fig-5_2.png){:class="image fit"}
-
-Going over the significant parts:
-
-#### Vocabulary
-
-* **Filament**: A long string of plastic that is fed into the extruder where it is melted and used to print an object.
-* **Extruder**: The component responsible for heating and printing the plastic material of the filament.
-* **Cartridge**: Where the filament is held.
-* **Platform**: Where the object is printed.
-
-Have the students attempt to point out these parts on the 3-D printer. Perhaps also ask them questions such as: How many motors do you see? What does each motor do?
-
 ### Step 2: Industrial Design (20 minutes) 
 Industrial design is a term that refers to two different aspects of a manufactured product. The first is the object’s usefulness (function). The second is the object’s beauty (form). When engineers design products for the public they need to carefully consider the role of the product and determine how much of their effort goes into the form of the product and how much goes into the function of the product. Some things do not need to look pretty, they just need to work. Others need to draw people's attention to have a chance in the market.
 
@@ -99,4 +84,4 @@ Think about common items (especially electronics) and ask yourself whether the f
 
 Now that we have learned about industrial design and 3-D printing, take out your robot and beginning thinking about who this robot is for.  Is it for yourself?  Or someone else?  Now come up with a design for your robot.  Think of colors and even sketches or words that you want to put your on your robot.  Keep in mind who you are designing for.  This will guide you in making your design decisions!
 
-<iframe width="725" height="453" src="https://www.tinkercad.com/embed/9RUh82CEU99?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<iframe width="100%" height="auto" src="https://www.tinkercad.com/embed/9RUh82CEU99?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
