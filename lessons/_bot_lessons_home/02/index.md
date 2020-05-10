@@ -47,12 +47,12 @@ Take out your robot body parts (body, arms & head).  Examine tehm and think abou
 
 Check out the 3-D model of your robot to make sure the components on the screen match what you have in your kit.  This was the original 3-D printed file that was used to print your robot!  
 
+<iframe width="725" height="453" src="https://www.tinkercad.com/embed/9RUh82CEU99?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
 ### Designing Your Robot
 Remembering what we learned about industrial design, think about who this robot is for, and what it does.  Is it for yourself?  Or perhaps for someone else?  Think of colors and even sketches or words that you want to put your on your robot.  Keep in mind who you are designing for.  This will guide you in making your design decisions!
 
 To see what your robot will look like with different colors, click <a href="https://www.tinkercad.com/things/9RUh82CEU99" target="_blank">here</a>. Note that you'll need to create a TinkerCAD account.
-
-<iframe width="725" height="453" src="https://www.tinkercad.com/embed/9RUh82CEU99?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
 ### Decorating Your Robot
 It's time to decorate!  Use permanent markers, acrylic paints or even spray paint!
