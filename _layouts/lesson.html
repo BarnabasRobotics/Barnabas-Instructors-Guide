@@ -197,9 +197,9 @@ layout: index
         {% endfor %}
     </ul>
 
-    <h3>Personal Reflection</h3>
+    <h3>Personal Growth</h3>
     <ul class="">
-        <li>What was hard in today's class?</li>
+	    
         {% for item in page.reflection.challenges %}
         <li>{{ item }}</li>
         {% endfor %}
@@ -209,6 +209,10 @@ layout: index
         {% endfor %}
 	    
 	{% for item in page.reflection.mindset %}
+        <li>{{ item }}</li>
+        {% endfor %}
+	    
+	{% for item in page.reflection.community %}
         <li>{{ item }}</li>
         {% endfor %}
 	    
