@@ -91,10 +91,7 @@ reflection:
   - What is the breadboard used for? How does the breadboard work?
   - What is resistance? How does resistance affect our circuit?
   - What part(s) of the robot does the Barnabas Noggin represent?
-  mindset:
-  - What does freedom mean to you?
-  - Freedom to learn?  
-  - Freedom to fail?  
+  mindset: 
 
 ---
 
