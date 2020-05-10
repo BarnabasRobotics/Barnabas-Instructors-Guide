@@ -52,6 +52,8 @@ materials:
 
 reflection:
   comprehension: 
+  
+  mindset:
   - What is your favorite aspect of your own robot?
   - What is your favorite aspect of someone else's robot?
 
