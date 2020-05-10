@@ -79,9 +79,3 @@ Think about common items (especially electronics) and ask yourself whether the f
 {% include badge.html type='activity' content='Do you like Samsung or Apple phone?  Give your reasons and put them into two categories: function or beauty.   Check out the story about <a href="https://bgr.com/2018/05/24/samsung-apple-lawsuit-patents-rounded-corners-setllement/" target="_blank">Samsung and Apple dispute</a> over rounded edges.  Looks really do matter!' %}
 
 {% include badge.html type='activity' content='Design something simple like a sandwich for yourself and someone you know, like a relative, friend or sibling. How is the sandwich you made for yourself different from the sandwich you made for the other person? Why are they different?' %}
-
-Now that we have learned about industrial design and 3-D printing, take out your robot and beginning thinking about who this robot is for.  Is it for yourself?  Or someone else?  Now come up with a design for your robot.  Think of colors and even sketches or words that you want to put your on your robot.  Keep in mind who you are designing for.  This will guide you in making your design decisions!
-
-<iframe width="725" height="453" src="https://www.tinkercad.com/embed/9RUh82CEU99?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-
-To add colors to your robot, click <a href="https://www.tinkercad.com/things/9RUh82CEU99" target="_blank">here</a>. Note that you'll need to create a TinkerCAD account.
