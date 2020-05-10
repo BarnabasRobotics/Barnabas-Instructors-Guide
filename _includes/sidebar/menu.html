@@ -8,7 +8,7 @@
         <li><a href="{{ site.baseurl }}/"><i class="icon fa-home"></i> Home</a></li>
         {% endif %}
         <li>
-            <span class="opener"><i class="icon fa-android"></i> Bot Lessons</span>
+            <span class="opener"><i class="icon fa-android"></i> Bot Lessons (Classroom) </span>
             <ul>
                     {% for lesson in site.bot_lessons %}
                     <li><a href="{{ site.baseurl }}{{ lesson.url }}">{{ lesson.title }}</a></li>
@@ -21,6 +21,23 @@
         {% endif %}
 
         {% if page.collection == "bot_lessons" %}
+        {% include sidebar/lessonsegment.html %}
+        {% endif %}
+        
+        <li>
+            <span class="opener"><i class="icon fa-android"></i> Bot Lessons (Home) </span>
+            <ul>
+                    {% for lesson in site.bot_lessons_home %}
+                    <li><a href="{{ site.baseurl }}{{ lesson.url }}">{{ lesson.title }}</a></li>
+                    {% endfor %}
+            </ul>
+        </li>
+        {% assign ifLesson = '' %}
+        {% if page.url contains "lessons" %}
+        {% assign ifLesson = 'lessons/' %}
+        {% endif %}
+
+        {% if page.collection == "bot_lessons_home" %}
         {% include sidebar/lessonsegment.html %}
         {% endif %}
 
