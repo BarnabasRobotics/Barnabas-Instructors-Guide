@@ -87,11 +87,12 @@ reflection:
 ### Review
    * What block is used to turn the LED on and off.
    * How is the delay block important in getting the LED to visibly blink?
-
-### Step 1: Blinking At Different Speeds (25 minutes) 
+   
+### Video Tutorial of Lesson
 
 {% include youtube.html id="qbIv8ygmDII" %}
 
+### Step 1: Blinking At Different Speeds (25 minutes) 
 We spent last week learning to blink our LEDs and playing with the speed at which it blinks. We are going to pick up where we left off by using the skills learned last week. The first challenge of this lesson is to create a program that causes the LED to blink at two distinct speeds. It will be on for a long period of time (long as in about a second), then off, then on for a short period of time, then off. 
 
 
