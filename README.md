@@ -39,3 +39,6 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ### Image Recommendations
 
 In the Barnabas docs the lesson images are stored in their respective lesson folder. All other site images are stored under assets. This is subject to change to a library as many of the images will be used in other cirriculum. All images should be no larger than 640 pixels wide and preferrably in png format. A service like [tinyPNG](https://tinypng.com) can also compress these images based on color depth while preserving transparent backgrounds. A compressed file improves site delivery and puts less load on mobile devices. 
+
+Revision History
+- 1.00
