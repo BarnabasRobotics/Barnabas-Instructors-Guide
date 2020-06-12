@@ -72,22 +72,7 @@ reflection:
 
 ---
 
-#### Instructor Mindset
-* There are a variety of ways to present new concepts to students.  Think of different ways to explain new concepts and multiple methods of engaging students in learning these concepts.
-* Set up your classroom in a “community-building” environment (e.g. chairs arranged in a circle; carpet space to sit in a circle, etc.)
-
-### Step 1: Introducing Barnabas Robotics (10 minutes)
-#### Project Objective
-The overall goal of all Barnabas Robotics’ projects is to create a robot, while learning more about engineering - and about ourselves.  Throughout the Barnabas-Bot project, students will explore the various disciplines of engineering--including mechanical, electrical, hardware, and software engineering--which each play a critical role in robotics.  Additionally, students will have the opportunity to learn about themselves and their peers, as the project also promotes teamwork, communication, and self-reflection.
-
-Take the time at the very beginning of the project to explain these goals to your students to set the tone and expectation for the rest of the project.
-
-#### Creating a Culture of Encouragement
-The name “Barnabas” means “Son of Encouragement.”  The Barnabas-Bot curriculum provides opportunities for students to be an encouragement to their peers and to themselves.  This is especially important because there are parts of the robot-building process that may be challenging.  Creating a culture of encouragement in the classroom will motivate students to try and persevere, even when they encounter frustration during the robot-building process.
-
-Do not assume that all students understand what “encouragement” means or how they can be encouraging to themselves or others.  You can initiate a classroom discussion about what “encouragement” means by prompting students to share examples of encouragement they have witnessed or experienced in their own lives.  Lastly, discuss the four goals of the class:  1) Build, 2) Learn, 3) Teach, and 4) Inspire.  Then delve into the meaning of each one with your students.
-
-### Step 2: Connecting the Disciplines (40 minutes)
+### Connecting the Disciplines 
 #### Background Knowledge
 Robotics is a cross-disciplinary field in which electrical engineering, mechanical engineering, and software programming concepts are applied to create a moving system (or a "robot").  Below is a brief explanation of how each of the three disciplines plays a part in robotics:
 
@@ -102,14 +87,10 @@ To process information, the human body has a central nervous system consisting o
 Building a robot requires collaboration amongst a team of individuals with varying skills.  Students going through the Barnabas-Bot curriculum will get a taste of each of the above engineering disciplines and work in collaboration with others (teacher, parent, mentor, classmate, etc.) as they build their robots from the ground up.
 
 #### Discussion
-Open up the robotics discussion by asking what the similarities and differences are between a human and a robot.  Throughout this discussion, students may name certain parts of a robot, or of a human, to help them compare and contrast the two.  As the students give examples of either similarities or differences, write them down on a whiteboard, putting some emphasis on the parts of either humans or robots, as this will segway nicely into the next part of the discussion.
+Let's learn about the similarities and differences between a human versus a robot.
 
-{% include badge.html type='suggestion' content='<b>Connect the Dots:</b>  Draw a stick-figure body.  Add a heart, a brain, and soul (encircled gingerbread man or woman) to the body.  Next, write the engineering disciplines (Mechanical, Electrical, Computer (Hardware), and Software) next to the body.  Have the students draw a line connecting the engineering discipline, which corresponds most closely to the function  of the listed body part.' %}
+{% include badge.html type='activity' content='<em>Connect the Dots:</b>  Draw a stick-figure body.  Add a heart, a brain, and soul (encircled gingerbread man or woman) to the body.  Next, write the engineering disciplines (Mechanical, Electrical, Computer (Hardware), and Software) next to the body.  Draw a line connecting the engineering discipline, which corresponds most closely to the function  of the listed body part.' %}
 
-{% include badge.html type='activity' content='<em>“Is This A Robot?”</em>  
- Ask the students if a commonly used appliance is a robot.  For example, “Is a washing machine a robot?”  Have the students plead their case one way or the other for why the object is or is not a robot.  The goal of this exercise is not to correctly identify whether the appliance is a robot or not.  Rather, the goal should be to guide the discussion toward using the four parts of a robot to assess whether the object is a robot or not.  Have the students attempt to match the appliance in question to that criteria of a robot (body, heart, brain, personality).' %}
-
-{% include badge.html type='best_practice' content='Consider drawing a robot during the parts of a robot discussion. Add the individual parts to it as they come up, like in the examples below' %}
 
 ![fig 1.1](fig-1_1.png){:class="image "}
 ![fig 1.2](fig-1_2.png){:class="image "}
