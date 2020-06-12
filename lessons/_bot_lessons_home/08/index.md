@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 18&middot; More Servo Motors
+title: Lesson 8&middot; More Servo Motors
 suggested_time: 60-75 minutes each
 
 disciplines: 
