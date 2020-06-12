@@ -89,7 +89,7 @@ Building a robot requires collaboration amongst a team of individuals with varyi
 #### Discussion
 Let's learn about the similarities and differences between a human versus a robot.
 
-{% include badge.html type='activity' content='<em>Connect the Dots:</b>  Draw a stick-figure body.  Add a heart, a brain, and soul (encircled gingerbread man or woman) to the body.  Next, write the engineering disciplines (Mechanical, Electrical, Computer (Hardware), and Software) next to the body.  Draw a line connecting the engineering discipline, which corresponds most closely to the function  of the listed body part.' %}
+{% include badge.html type='activity' content='<b>Connect the Dots:</b>  Draw a stick-figure body.  Add a heart, a brain, and soul (encircled gingerbread man or woman) to the body.  Next, write the engineering disciplines (Mechanical, Electrical, Computer (Hardware), and Software) next to the body.  Draw a line connecting the engineering discipline, which corresponds most closely to the function  of the listed body part.' %}
 
 
 ![fig 1.1](fig-1_1.png){:class="image "}
