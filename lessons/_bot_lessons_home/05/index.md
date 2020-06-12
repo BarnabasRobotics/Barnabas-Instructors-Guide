@@ -1,185 +1,217 @@
 ---
 layout: lesson
-title: Lesson 5 &middot; Introduction to Breadboards
-suggested_time: 60-75 minutes
+title: Lesson 5 &middot; The Blinking Light Challenge
+suggested_time:  60-75 minutes
 
 disciplines:
-- "PS3.B: Conservation of Energy and Energy Transfer: Energy can also be transferred from place to place by electric currents, which can then be used locally to produce motion, sound, heat, or light. The currents may have been produced to begin with by transforming the energy of motion into electrical energy. (4-PS3-2),(4-PS3-4)"
-
-### Science and Engineering Practices
-- "Planning and Carrying Out Investigations: Make observations to produce data to serve as the basis for evidence for an explanation of a phenomenon or test a design solution. (4-PS3-2)"
-- "Constructing Explanations and Designing Solutions: Apply scientific ideas to solve design problems. (4-PS3-4)"
-
+- "ETS1.B: Developing Possible Solutions: Tests are often designed to identify failure points or difficulties, which suggest the elements of the design that need to be improved. (3-5-ETS1-3)"
+- "ETS1.C: Optimizing the Design Solution: Different solutions need to be tested in order to determine which of them best solves the problem, given the criteria and the constraints. (3-5-ETS1-3)"
 ### Cross-Cutting Concepts
 - "Energy and Matter: Energy can be transferred in various ways and between objects. (4-PS3-1),(4-PS3-2),(4-PS3-3),(4-PS3-4)"
-- "Science is a Human Endeavor: Science affects everyday life. (4-PS3-4)"
 
-### Learning Target(s)
 technical_skills:
-- Further comprehension of basic electronics concepts from last lesson.
-- Ability to utilize breadboard when building circuits.
-- Understanding of the concept of resistance and the resistor.
-- Ability to identify specific pins on Barnabas Noggin used to power circuits, and understanding the Barnabas Noggin’s use as a power source.
+- Ability to operate a computer.
+- Understanding of physical computing fundamentals.
+- Understanding of cooperation between hardware and software in physical computing. 
+- Working knowledge of Arduino/Ardublock and how the Barnabas-Bot interfaces with the computer.
+
 life_skills:
-- Teamwork
+- Procedure
 
 essential_questions:
-- How does the breadboard help us make circuits?
-- How does one create a closed circuit on the breadboard?
-- What is the purpose of the resistor in our circuit?
-- Which of the two types of resistor is stronger? Is the LED dimmer or brighter with the stronger resistor.
+- Think of all the electronics in our lives that are automated. Do you perceive these devices to be simple or complex?
+- What are the main drawbacks of Arduino?
+- Can we upload code to our bots immediately after connecting them to the computer? Why or why not?
+- Why do we have to change the pin \# block from 1 to 7 on the set digital pin block.
+- Why can’t we see the LED blink without delay blocks?
 
 vocab:
-- Breadboard
-- Schematic
-- Resistor
-- Ohm
+# - Coding
+# - Program
+# - Compile
 - Arduino
-- Current
-- Amps
+- Ardublock
+- Loop Do
+- Programmable Pin
+- Set Digital Pin
+- Delay
 
 
 videos:
-- link: https://youtu.be/BwVRfxDj0Pc
-  text: Simple Breadboard LED
-- link: https://youtu.be/5P-3rSK79Uo
-  text: Build the 3V LED circuit with a breadboard
-- link: https://youtu.be/QFm8Gkofgs8
-  text: How a breadboard works
-- link: https://youtu.be/iY3Ygg6Ucq0
-  text: Build the 5V LED circuit
+- link: https://youtu.be/UfxJx9LQ9u0
+  text: Wiring up the LED and programming it in Ardublock
+- link: https://youtu.be/JHJoiSG9jWw
+  text: How to comment your code
+- link: https://youtu.be/i2l7I9PdE2o
+  text: Easy Ardublock install
+- link: https://youtu.be/bBSZ8REdUYA
+  text: Advanced Ardublock install
 documents:
 other:
-- link: https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard
-  text: Sparkfun Breadboarding Tutorial
-- link: https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-resistor-color-code-4-band
-  text: Resistor color code calculator
-
-depth:
+- link: https://docs.google.com/document/d/1sDz2-crxL3YPCPiS6wtUBbhqJtMYeFzgs56nUAafHik/edit?usp=sharing
+  text: Software setup on Windows
+- link: https://docs.google.com/document/d/1ULIuHSl1rNucHNq35fZh8eQJxEY3afcOX8tWPj6X_n4/edit?usp=sharing
+  text: Connecting Barnabas-Bot to a Windows PC
+- link: https://docs.google.com/document/d/1BVIaZwNlZEG0om7E13G6qr_O3muZJSE-u3bn53Z1BXg/edit?usp=sharing
+  text: Software setup on Mac
+- link: https://docs.google.com/document/d/1i_FVrwEXDOQY791zeHScGpZF_IAIIequutYzS-uE-0s/edit?usp=sharing
+  text: Connecting Barnabas-Bot to a Mac
 
 barriers: 
-- Minimal experience with household electronics.
-- No working knowledge of electricity.
-- Poor understanding of lesson 7.
+- Minimal experience with computers.
 
 anticipatory:
-- Demonstrate a completed breadboard circuit without going over all the steps 
-- Learn intermediate electrical engineering concepts.
-- Introduce new components and use them to create circuits.
+- We will create a light circuit and write a program with our computer so it turns on and off automatically. 
+- Understanding coding activity - students giving explicit 1-step instructions to accomplish a task  
+- Learn how to to connect Barnabas-bot to a computer.
+- Learn procedure that allows code to be uploaded to the robot.
+- 'Learn the function of three blocks in Ardublock: Loop do, Set digital pin, and delay.'
+- Understand that the robot can be physically manipulated through code.
 
 practice:
-- Assembly of LED circuit using a breadboard with a partner. Time permitting, the assembly of a two LED circuit using a breadboard with three partners.
-- Assembly of 5V LED circuit using breadboard, resistor, and Barnabas Noggin.
-
+- Use Ardublock to turn the LED on, then to turn the LED off.
+- Create a program in Ardublock that continuously blinks the light on and off.
 
 assessment:
-- Comparison of 5V circuit with each type of resistor. Based on the behavior of the circuit which resistor is stronger? Defend your answer.
-- Using Ohm’s Law, have each student calculate the current in their circuit with the resistor of their choice.
-- The breadboard circuit is complete with a LED that is able to light up  
+- Blinking LED connected to the breadboard  
+- Determine the smallest millisecond delay that still appears to blink.  
 
 materials:
 - Engineering Journal
-- Mini Breadboard (x1)
-- Jumper Wires
-- AA batteries (x1 min2)
-- AA battery holder(x1 min2)
-- 3V LED (x1)
-- Resistors  (470 Ohm - yellow violet brown gold and 4.7K Ohm - yellow violet red gold)
+- Computer (mouse preferred)
+- Mini Breadboard
+- ArduBlock [Arduino IDE Tool]
+- Barnabas arduino board
+- Jumper wires
+- 3V LED
+- Resistors (470 Ohm - yellow violet brown gold and 4.7K Ohm - yellow violet red gold)
+- USB cable (A to mini)
 
 reflection:
   comprehension: 
-  - What is the breadboard used for? How does the breadboard work?
-  - What is resistance? How does resistance affect our circuit?
-  - What part(s) of the robot does the Barnabas Noggin represent?
-  mindset: 
-
+  - What significance does changing the number attached to the Set Digital Pin block to 7 have?
+  - What effect does the delay block have? Why do we only use the delay milliseconds block?
+  - Why do we need two delay blocks to make the LED blink?
 ---
 
 ### Review
-   * How do open and closed circuits differ?
-   * How does increasing voltage affect a circuit?
+   * What is resistance? What is the job of a resistor in a circuit?
 
-
-### Step 1: Introducing The Breadboard (15 minutes) 
-In this lesson we are introduced to a very valuable tool, The breadboard. What is a breadboard?
-
-
-A breadboard helps us connect our wires (analogous to blood vessels) together.  We can connect our wires to the holes in the breadboard to make secure connections without needing to tie the wires together.  This is useful, especially when we need to change the connections often.  This is common while engineers figure out how to best make their ideas happen. Draw a picture of the miniature breadboard on the whiteboard.  NOTE: You can use the 1-17 (rows) and A-J (columns) references to tell kids where to place wires as the lesson progresses.
-
-![fig 9.1](empty_breadboard.png){:class="image "}
-
-   * How many rows are there? (17)
-   * How many columns are there? (2 sets of 5)
-
-In a breadboard All the holes on each row of 5 are connected to each other. By connected I mean that any two things placed into the same row will be connected to each other. The breadboard helps us make closed circuits. Test the kids to see if they understand which holes connect to one another.
+{% include badge.html type='troubleshoot' content='Please see our <a href="https://www.barnabasrobotics.com/resources/" target="_blank">Software</a> page for setting up your computers.' %}
 
 #### Vocabulary
-   * **Breadboard**: A tool used to create circuits. The breadboard is able to connect two or more components together as if their were touching so long as they are on the same row.
-   * **Component**: A single element of a circuit. Ex: battery, LED.
+   * **Arduino**: Both hardware and software. The hardware is a line of microcontrollers (very simple computers). In fact, the Barnabas Noggin utilizes an Arduino microcontroller itself. The software is a C based IDE (integrated development environment… A place where you code). Because Arduino handles both sides of things the process of coding, then uploading your code to a microcontroller is very easy. The Arduino IDE can be out of scope for younger classes as the ability to type acts as a barrier to entry.
 
-{% include youtube.html id="QFm8Gkofgs8" %}
+{% include badge.html type='best_practice' content='Have the students make a step by step checklist in their journal on how to connect the Barnabas-Bot to the computer in explicit detail.' %}
 
-{% include badge.html type="best_practice" content="It is important that the students have a good grasp of how the breadboard works. To ensure comprehension you can draw boxes around each set of holes that are connected on your whiteboard drawing. Another method would be to remove the adhesive from the back of a breadboard (I would suggest you use a spare for this rather than using a student’s) exposing the strips of metal underneath. This may help them understand why the breadboard works as it does." %}
+Use the following checklist to prepare your robot for coding:
 
-### Step 2: Creating Our First Breadboard Circuit (15 minutes) 
-Now that we understand how to use the breadboard we can recreate the 3V LED circuit from the last lesson. This time as a completely hands free circuit. Let’s start by recalling the schematic for that circuit.
+   1. Turn on the computer.
+   2. Input password.
+   3. Open Arduino.
+   4. Plug the robot into the computer via the USB cable.
+   5. Go to tools -> port -> select port (not com1 or serial port ex. for windows pc).
+   6. Go to tools -> board -> select Arduino Nano
+   
+_This process must be done each lesson that you intend to program._
 
-![fig 9.2](fig-9_2.png){:class="image "}
+### Step 1: Changing The Circuit (5 minutes)
+In this section we are finally going to code our LED. However, we must make a small change to the current circuit first. 
+
+The wire that is currently in the 5V pin must be placed in the pin labelled 7.
+
+![fig 10.6](fig-10_6.png){:class="image fit"}
+
+You may notice that the LED no longer turns on. This is because while the 5V pin is always on, pin 7 is what is called a programmable pin, meaning we decide whether it is on or off with code. 
+
+### Step 2: Getting Started With Ardublock (5 minutes) 
+Now that our computer is talking to our Barnabas Noggin, let's get started with ArduBlock!  ArduBlock is a block-based programming language that is great for those who are new to programming.  
+
+Open ArduBlock by going to TOOLS->ARDUBLOCK.
+
+![fig 10.1](fig-10_1.jpg){:class="image "}
+
+Once ArduBlock opens, you should see the following screen.  Note that your screen may differ a little depending on which version of Ardublock you have installed.
+
+![fig 10.2](fig-10_2.jpg){:class="image "}
   
-To create the circuit using the breadboard you need to make the same exact connections as before. A helpful tip is that any two wires/legs that were held together in the previous circuit must now be in a row together. Not necessarily in the same hole though. Also, both ends of a component should never be in the same row together. That is the same as touching the two sides together which, in the case of the battery, creates a short circuit. They should end up with a circuit that looks similar to the one below.
+Go to `CONTROL`, and drag in a `LOOP-DO` block (if it isn't there already).  Click on `SAVE`, type in your name, and click `SAVE` again.  Note that every program needs a `LOOP-DO`.
 
-![fig 9.3](fig-9_3.png){:class="image "}
+![fig 10.3](fig-10_3.jpg){:class="image "}
+  
+Now click `UPLOAD`, type in your name, and click `SAVE`.  Your program will now upload code into your robot. 
 
-![fig 9.4](fig-9_4.jpg){:class="image fit"}
+![fig 10.4](fig-10_4.jpg){:class="image "}
+  
+Congratulations, you just wrote your first program!  In the future, you will want to always click `SAVE`, and then `UPLOAD` when loading your program to your Barnabas-Bot.
 
-{% include badge.html type="best_practice" content="Before asking the students to create the circuit, draw the schematic on the board. Then draw a breadboard. Enlist the aid of the students in drawing batteries and the LEDs, as well as placing them in the correct spots to create a complete circuit. Once finished, follow the path of the circuit with the class and ensure that the circuit is closed." %}
-
-{% include badge.html type="troubleshoot" content="A common mistake is to put far too many connections on the same row of the breadboard. This is generally the most common reason a group’s circuit will not work. This is something you should keep an eye out for and simply remind students that only things should be in any row of the breadboard at once. Reminding them of their method of creating the circuit from last week’s lesson may also help, as this is essentially the same circuit." %}
-
-### Step 3: Introducing The Barnabas Noggin and Resistance (20 minutes) 
-For the first time we are now going to use the Barnabas Noggin to create a circuit. With the Noggin we will be powering the circuit with 5V instead of 3V. What do you think will happen when we increase the voltage? (The LED will be brighter, and we no longer need the AA batteries) In fact, the 5V is too much.  Ask what will happen if you push 5V through a 3V LED (it will burn out). Talk about what happens in our body if our heart (battery) pumps blood too fast through our veins (it may burst!).  Explain that the same thing happens in electronics, so to combat that, we need to slow the blood (current) down using a resistor.  Have the kids take out the 4.7K resistor (red band).  Explain that a resistor is the component, and that resistance is the value (4.7K or 4,700 in this case). Draw the following schematic.
-
-![fig 9.5](fig-9_5.png){:class="image "}
-
-Before asking the students to attempt building this circuit on their own guide them through placing wires in the Noggin. Have them place one end of a wire (preferably red) into the 5V pin located on the Noggin. Have them place one end of another wire (preferably black) into one of the GND pins located on the Noggin (there is more than one). The other ends of both wires are currently dangling free. These ends should be treated the same as the + and - ends of a battery. Now they should be ready to create the circuit below.
-
-![fig 9.6](fig-9_6.png){:class="image fit"}
-
-Plug the 9V battery into the jack on the Noggin and your LED should light up!
 
 #### Vocabulary
-   * **Barnabas Noggin**: The brain of our soon to be robot! The Barnabas Noggin houses the brain of the Barnabas bot. It also contains a large amount of internal circuitry, making it somewhat related to the robot’s heart as well. We will often treat the Noggin as a power source, as it can give us 5V, a voltage we are comfortable with.
-   * **Resistance**: The difficulty of passing an electric current through an object. If an object is very difficult to pass current through, it has a high resistance.
+   * **Ardublock**: A GUI (graphic user interface… another place to code) that runs with Arduino. This means that closing Arduino also closes Ardublock so be careful! Ardublock is a block based coding platform, allowing us to sidestep the need to type.
 
-{% include youtube.html id="iY3Ygg6Ucq0" %}
+{% include badge.html type='best_practice' content='Uploading blank code may seem frivolous but it is important. By attempting to upload now any technical issues can be addressed. If the Arduino window shows any kind of error, you know there is a problem. The three most likely reasons a student would get an error message here are: They did not choose the correct port, they did not choose the correct board, or their robot is not connected to the computer.' %}
 
-{% include badge.html type="troubleshoot" content="Sometimes your students' LEDs may burn out because of incorrect connections.  This is all part of the learning process.  We recommend having a working Arduino + breadboard setup that you can use to test to see if students' LEDs are in fact burned out or if there is perhaps another wiring issue." %}
+### Step 3: Ardublock Basics (5 minutes) 
+Before we can begin coding we should familiarize ourselves with the basics of ardublock. How to move around, create and delete code.
 
-{% include badge.html type="tidbit" content="Resistance, along with voltage and current are the three fundamental quantities in a circuit. In fact, there is an equation that relates all three of these inside of a circuit. The equation is known as Ohm’s Law V=IxR, where V is the voltage, R is the resistance, and I is the current. This simple equation gives us a very good understanding of the behavior of any circuit." %}
+The first thing to mention is the loop do. The loop do is the most important block in Ardublock. Code is only able to be uploaded to your robot if there is one and only one loop do. The loop do will house any other blocks used in our code and will change its size to accommodate. As inferred by its name, the loop do will loop through your code. When it reaches the end of your code, it will start again at the beginning. Luckily for us, this integral part of our code will always be in a new Ardublock file by default. 
 
-{% include badge.html type="activity" content="Have the students switch between the two different kind of resistors and observe the behavior of the LED as the resistor is changed. They should see the LED dim when the red banded resistor is in the circuit. This is the larger resistor. Because it is larger, it slows down current more, leading to the dimmer light." %}
+Let’s say that the loop do is not there when opening Ardublock. We can add the loop do to the code, as well as any add any other block, by the following method. All of the colored tabs on the left side of the Ardublock window can be selected. After selecting one of them a menu will pop up with several similarly colored blocks. You can drag any of the blocks into the grey coding area (generally putting them inside of the loop do.
 
-{% include badge.html type="best_practice" content="It is always a good idea to have power disconnected from our circuit as we are constructing it, or making changes to it. In this case, even in the event of a short circuit, we will not damage any of our parts. It is best to build the circuit, check it for errors, then apply power." %}
+In the case of the loop do you would navigate to the yellow tab labelled control, then drag and drop loop do into the gray area.
 
-{% include badge.html type="best_practice" content="Why is it important to color code wires? Color coding wires helps us both construct and troubleshoot our circuits. If I know that a certain color of wire always means a certain thing, it will be obvious when that wire is out of place" %}
+![fig 10.5](fig-10_5.png){:class="image "}
 
-### Step 4: Going Further With Resistance (15 minutes or as time permits)
-You may have noticed the two different types of resistor that we have are differentiated based on the colors of their bands. As it turns out we can tell the exact strength of a resistor based on the color of those bands.
+The last skill we need to learn is how to delete blocks of code. Say we have the case of multiple loop do’s, and we want to get rid of the extras. Just use your cursor to grab one of the unwanted blocks and drag it over to the tabs on the left side of the window. Then, just drop it and it should disappear.
 
-![fig 9.7 resistor table](resistor_table.png){:class="image fit"}
+#### Vocabulary
+   * **Loop Do**: The most important block in Ardublock. It is important that one and only one loop do is in the code at a time, otherwise your code cannot be uploaded. The loop do will run whatever code is placed inside it repeatedly, starting again at the beginning whenever the end is reached.
 
-Let’s walk through this chart together. In the Numeric Value column we see that each color is given a number value associated with it. These numbers are only applied to the first two colored bands on a resistor. Those two numbers are combined into one 2 digit number. For example our 4,700 Ohm resistor has the colors yellow and violet as it’s first two color bands, in that order. From this we know that resistor’s value must start with the number 47, which we know it does. The third band on the resistor is the multiplier. We take the number denoted by the color of that band (in this case 100-red) and multiply that number and the 2 digit number from earlier together (47x100), giving us 4,700 Ohms. 
+### Step 4: Our First Program, Programming The LED (20 minutes) 
+With that out of the way let’s begin coding by grabbing a Set Digital Pin block out of the Pins tab and place it in the loop do.
+
+![fig 10.7](fig-10_7.png){:class="image "}
+
+The `Set Digital Pin` block should snap into place when dropped on the loop do.
+
+![fig 10.8](fig-10_8.png){:class="image "}
+  
+There are two smaller blocks attached to the `Set Digital Pin` block. The number 1 and the word `HIGH`. The number 1 refers to the pin on the robot that this block will attempt to control. Remember that we placed the LED circuit on pin 7, so that 1 needs to be changed to a 7. This can be done by clicking on the block, pressing 7, then pressing enter.
+
+The `HIGH` block is telling us that it will be turning the pin on (giving it power). By mousing over this block with your mouse cursor and clicking on the upside down triangle that appears on it a menu will appear. That menu has only two options `HIGH` and `LOW`. As you may have guessed LOW will turn the pin off.
+
+After changing the pin number to 7 have all the students press upload to arduino at the top of the Ardublock window. You will be prompted to save, go ahead and do so. Afterwards you will see a green progress bar in the Arduino window showing the code being uploaded. You should see the LED turn on. 
+
+Next you should ask the students to turn the LED off by changing the code. Let them figure out how to do so on their own (Switch the HIGH to LOW). In order to see the change the students will need to upload their code again. The Barnabas Noggin is only capable of holding one program at a time. This means that uploading the LED off code will permanently erase the LED on code from the robot. To turn the LED on again they would have to re-upload a set digital pin HIGH code to the robot.
+
+{% include youtube.html id="UfxJx9LQ9u0" %}
+{% include youtube.html id="JHJoiSG9jWw" %}
+
+LED on ![fig 10.9](pinHigh.png){:class="image "}  ![fig 10.10](pinLow.png){:class="image "} LED off
+
+#### Vocabulary
+   * **Programmable pin**: One of the pins on the Barnabas Noggin labelled 0-13 (it has more labelled A0-A5, but we are not using those in this class). These pins can be controlled by the code we create in Ardublock rather than just being innately on or off.
+   * **Set Digital Pin**: Located in the aqua colored pins tab, this is the block we use to turn the LED on and off. To properly use this block we need to pick a pin number (for us 7) and choose between HIGH or LOW (on or off). This block must be placed inside the loop do.
 
 
-The fourth band on a resistor is what’s called it’s tolerance. Tolerance is the error that one can expect in the resistor. For example, a gold tolerance band on our 4,700 Ohm resistor tells us that it may not be exactly 4,700 Ohms, but we can expect it to be within 5% of that. So the resistor could be as small as 4,465 Ohms or as big as 4,935 Ohms. The last column in the table above is labelled Temperature Coefficient. We don’t need to worry about what that means, as it is only used in resistors with five bands or more.
+### Step 5: Blinking The LED (20 minutes) 
+Now it’s time for the big challenge, blinking the LED. I generally start by asking the class for suggestions on how to do this. The answer I’m looking for at this point is that we should place another Set Digital Pin block into our loop do. By having two `Set Digital Pin` blocks, one `HIGH` and the other `LOW`, We should see both behaviors happen. Have the students do this and upload the code. What kind of behavior do they see?
 
-{% include badge.html type="activity" content="Have the students come up with the color code for a resistor that has a strength of your choosing. If you would like, you can put the students in groups and give each group a different resistor value to work on." %}
+![fig 10.11](fig-10_11.png){:class="image "}
 
-### Step 5: Going Even Further With Resistance (5 minutes or as time permits)
-With knowledge of Ohm’s law, we can calculate the current going through the circuit when either resistor is used. Ohm’s law (V=IR) can be rewritten as I=V/R \\(\frac{\Delta{V}}{R}\\). Both the voltage and the resistance are known to us so we can calculate current in both cases.
-   * I=5/470 -> I=0.01 Amps (Amperes are the unit used to measure current)
-   * I=5/4700 -> I=0.001 Amps
+They should see the light turn off momentarily before turning back on, and staying on there after. Don’t be fooled by the initial turning off of the LED, that is not do to our code working as intended. The Noggin will always stop whatever it is doing to accept new code. In this case turning the LED off just after our code is uploaded. Unfortunately this is not part of a blink. Because the loop do repeats we should see the LED blink over and over, which we do not with the code as written.
 
-{% include badge.html type="tidbit" content="Not all resistors are 'Ohmic' resistors, as in ones that follow Ohm's laws. An Ohmic resistor always has the same resistance, where as a non Ohmic resistor has a fluctuating resistance based on some parameter. For example if you were to measure the resistance of a light bulb while it is off, you would measure a fairly low resistance. But if you turned the lightbulb on, the resistance would skyrocket due to how much hotter the lightbulb became. If non Ohmic resistors are used in simple circuits such as this one, some interesting effects can be created." %}
+The reason we can not see a repeated blink is due to the speed at which the Barnabas Noggin is processing commands. The Barnabas Noggin thinks fast enough to do hundreds of commands in a second, far to fast for our eyes to keep up with. The LED is blinking, but too fast for us to make out.
 
-{% include badge.html type="best_practice" content="Do not dismantle the circuits at the end of this lesson. We will be building on these circuits for the rest of class and it would be convenient if we did not have to start from scratch each week. Just make sure that the students unplug their batteries before putting the circuits away." %}
+There is a way to slow our code down deliberately. In the controls tab there are two blocks labelled Delay. One says `Delay milliseconds` (a _milli_ second is one *thousandth* of a second), and the other says `delay microseconds` (a _micro_ second is one *millionth* of a second). We will always use the Delay milliseconds block, as the Delay microseconds block yields the same problem as before; the LED will be blinking too fast for us to see. The question is where do we place the Delay millisecond block in our current code. There are two immediate options:  
+
+![fig 10.12](fig-10_12.png){:class="image "} ![fig 10.13](fig-10_13.png){:class="image "}
+
+You're probably wondering why there isn’t a third option for the delay block bing at the top of the code. It turns out that would be identical to the code on the left due to the code repeating. Unfortunately, these don’t work either. The one on the left seems to stay off, and the one on the right seems to stay on. In either case the delay block is only pausing after one of the actions, either turning off or turning on. We need to pause our code after each action, allowing both of them to happen for some observable amount of time, like below:
+
+![fig 10.14](fig-10_14.png){:class="image "}
+
+#### Vocabulary
+   * **Delay**: The delay block comes in two different flavors, delay milliseconds and delay microseconds. We only make use of the delay milliseconds block. The delay block will stop code from progressing forward until a certain amount of time has elapsed.
+
+{% include badge.html type='activity' content='Once your students have the LED blinking challenge them to change the numbers inside the delay block and identify how that changes the behavior of the LED. Challenge the students to find the smallest delay where they can still see the LED blink.' %}

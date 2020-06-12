@@ -1,47 +1,39 @@
 ---
 layout: lesson
-title: Lesson 7 &middot; Blinking in Code
+title: Lesson 7 &middot; Make Your Robot Wave!
 suggested_time: 60-75 minutes
 
-disciplines:
-- "ETS1.B: Developing Possible Solutions: At whatever stage, communicating with peers about proposed solutions is an important part of the design process, and shared ideas can lead to improved designs. (3-5-ETS1-2)"
-- "Tests are often designed to identify failure points or difficulties, which suggest the elements of the design that need to be improved. (3-5-ETS1-3)"
-- "ETS1.C: Optimizing the Design Solution: Different solutions need to be tested in order to determine which of them best solves the problem, given the criteria and the constraints. (3-5-ETS1-3)"
-- "At whatever stage, communicating with peers about proposed solutions is an important part of the design process, and shared ideas can lead to improved designs. (3-5-ETS1-2)"
+disciplines: 
+- "ETS1.B: Developing Possible Solutions: Tests are often designed to identify failure points or difficulties, which suggest the elements of the design that need to be improved. (3-5-ETS1-3)"
+
+### Cross-Cutting Concepts
 - "Science is a Human Endeavor: Most scientists and engineers work in teams. (4-PS3-4)"
-### Science and Engineering Practices
-- "Constructing Explanations and Designing Solutions: Generate and compare multiple solutions to a problem based on how well they meet the criteria and constraints of the design problem. (3-5-ETS1-2)"
 
 technical_skills:
-- Knowledge of how morse code functions.
-- Understanding of how to condense code.
-- Improved understanding of how code is executed block by block.
+- Understanding physical limitations; range of motion (angles), power consumption
 life_skills:
-- Communicating
-- Planing
-- Testing
-- Altering a hypothesis
+- Perseverance
 
-essential_questions: 
-- What is morse code? How does one communicate using morse code?
-- How can we condense our code to make blinking in morse code easier to achieve.
-- Does your code vary the time the LED spends off? Why or why not?
+essential_questions:
+- What can limit a robot’s movements? 
+- Do we program the servo motors by giving them angles of position, or angles of motion? What is the difference between the two?
 
 vocab:
-- Repeat
-- Morse Code
-#- Sequence (morse code)
-#- Period (duration)
+- Servo
+- Limits
+- Modulation
 
 videos:
-- link: https://youtu.be/qbIv8ygmDII
-  text: Morse code tutorial
+- link: https://youtu.be/gviUtLsHDtg
+  text: How servo motors work
+- link: https://youtu.be/iTdQKmu6R1o
+  text: Wiring your first servo motor
+- link: https://youtu.be/x2z0ARKediA
+  text: Waving demo
+- link: https://youtu.be/qSbMojcwunk
+  text: Programming your servo motor
 documents:
 other:
-- link: https://upload.wikimedia.org/wikipedia/commons/b/b5/International_Morse_Code.svg
-  text: Morse Code Browser Cheat Sheet
-- link: https://drive.google.com/open?id=1liBuEK5mu3E04ymCv_On7b9cEDAkBJO1
-  text: Morse Code PDF
 
 depth:
 - "Level 1:  Recall and Reproduction"
@@ -50,104 +42,92 @@ depth:
 - "Level 4:  Extended Thinking"
 
 barriers: 
-- Understanding the pauses necessary in coding  
-- Correct breadboard set up to power LED  
+- Poor understanding of range of motion, angle position vs. angle of motion
+- Inability to distinguish between known blocks in Ardublock
+- Poor understanding of previous coding exercises i.e. blinking light and buzzer
 
 anticipatory:
-- We will create and decode a message using Morse Code by using coding skills in ArduBlock.  
-- Demonstrate a simple pre-coded flashing LED with a Morse Code message (ie. S-O-S!) and ask students to decode it using the Morse Code decoder  
+- Students will learn to code their motors to move the extremities of the robot and achieve repeated motion
 
 practice:
-- Student practicing different letters to code.  
+- Wiring a single motor using the breadboard
+- Using code to experiment with the range of motion of the motors as well as the necessary sequence for repeated motion to occur
 
 assessment:
-- Student has a completed, decodable message.  
-- Is the breadboard correct to light up LED  
+- Getting the robot to wave or shake its head
 
 materials:
-- USB to mini cable (x1)
-- 3V LED (x1)
-- Jumper wires
-- Resistors (470 Ohm - yellow violet brown gold and 4.7K Ohm - yellow violet red gold)
-- Mini breadboard (x1)
-- Computer (x1)
-- Engineering Journal (x1)
-- Pencil (x1)
-
+- Jumper wires (preferably yellow, red, black)
+- Engineering journal
+- Computer with Arduino/Ardublock software
+- Assembled robot or servo motor
 
 
 reflection:
   comprehension: 
-  - What i morse code? How is morse code communicated?
-  - When making blinks of different speeds, how does not changing the delay after turning the LED off benefit us?
-  - Describe how the repeat block helps us create code?
-  - What is the importance of precision in coding?
+  - If the motor has previously been set to 20 degrees and is then set to 90, how many degrees does the motor move?
+  - Why are there three wires attached to the servo motor and what do each of them do?
 ---
 
-### Review
-   * What block is used to turn the LED on and off.
-   * How is the delay block important in getting the LED to visibly blink?
-   
-### Video Tutorial of Lesson
+### Step 1: How Does The Servo Motor Work? (5 min)
 
-{% include youtube.html id="qbIv8ygmDII" %}
+![fig 13.1](fig-13_1.jpg){:class="image "}
 
-### Step 1: Blinking At Different Speeds (25 minutes) 
-We spent last week learning to blink our LEDs and playing with the speed at which it blinks. We are going to pick up where we left off by using the skills learned last week. The first challenge of this lesson is to create a program that causes the LED to blink at two distinct speeds. It will be on for a long period of time (long as in about a second), then off, then on for a short period of time, then off. 
+Above is a picture of a servo motor. There are multiple types of servo motor, however the important characteristic of our servo motors is that they can only move in half a circle, 180 degrees. 
 
-
-How should our code from last week, the blinking light code, be altered to accomplish this? Well we need to first understand we will need two different blinks, and will therefore need more blocks. If we stick to the status quo of four blocks in our code we will be limited to only one of the two behaviors; either the fast blink or the slow blink.
-  
-![fig 11.1](fig-11_1.png){:class="image "}
-One blink
-![fig 11.2](fig-11_2.png){:class="image "}
-Two blinks
-	
-In the example on the right we have enough blocks to create two distinctly different blinks, however at the moment the code on the right and the code on the left behave identically. Why is that?
-
-The right hand code may have enough blocks for two blinks but currently all of the delay blocks have the default value of 1000. So in either code every blink we see will be the same length of time. In order to vary the blink speeds we need to alter the value of one or more of the delay blocks. The question is which delays need to be altered? Let’s have a look at the code below:
-  
-![fig 11.3](fig-11_3.png){:class="image "}
-
-You can see here that the first two delays are kept at the same value, and the last two delays are kept at the same value. They are separated into two blinks, each with their own specific delay. There is a small problem with this code however, which will be apparent as you watch the LED. The second blink, in particular the low part of it, is short enough that the blink becomes hard to distinguish from the longer blink. This can be solved by making sure that the delays after set digital pin LOW blocks are equal in value, like in the example below:
-
-![fig 11.4](fig-11_4.png){:class="image "}  
-
-With the delays set at these values both blinks will be clearly visible as separate blinks and it will be clear that one is longer than the other.
-
-### Step 2: What Is Morse Code (10 minutes) 
-In order to accomplish this lessons challenge we first need to understand morse code. Both what morse code is as well as how it is used. Morse code is essentially an alternate way of producing the alphabet using an assortment of dots and dashes to represent any one letter. A message in morse code is usually conveyed through either light or sound rather than just on paper. At this point I’d like you to look at the morse code PDF located here as well as in the additional resources section at the top of the lesson. This is a resource that you should consider distributing to your students.
-
-
-That PDF does ask that the short and long blinks be timed in a different manner. It asks for significantly shorter blinks in both cases, which would look like the following:
-
-![fig 11.5](fig-11_dot.png){:class="image "}
-Short blink. A dot.
-	  
-![fig 11.6](fig-11_dash.png){:class="image "}
-Long blink. A dash.
-	
-In addition the morse code pdf gives us rules for ending letters and ending words. We are told to have a 1000 millisecond delay at the end of a letter and a 2000 millisecond delay at the end of a word. This helps us interpret the morse code message a little easier, as we can better distinguish between individual letters and words.
+Each servo motor has three wires attached to it: an orange wire, a red wire and a brown wire. If you consider the previous components, the LED and buzzer, you may remember that each of them only needed two wires to function. The main difference between the motor and our previous components is how much current the motor requires. The motor constantly needs 5V fed to it in order to function, where the buzzer and LED only needed 5V intermittently. The motor has two wires dedicated to pumping current in and out of the motor, these are the red (5V) and brown (GND) wires. In our robot human analogy these wires would be the veins. The orange wire, on the other hand, is responsible for sending a signal to the motor which will tell the motor to move. This wire would be more analogous to the nerves that extend across our bodies, carrying signals from our brain to the muscles.
 
 #### Vocabulary
-   * **Morse Code**: A method of transmitting information as a series of on-off tones, lights, or clicks that can be interpreted by a skilled observer without the use of equipment.
+  * **Servo Motor**: The servo motors our robot uses are 180 degree rotation servo motors, meaning they only have a range of motion of about half a circle. The servo motors require much more power than the LED or the buzzer, which necessitates a third wire attached to the motor. The motor has one wire dedicated to ground (GND), one dedicated to power (5V), and one dedicated to receiving a signal from the Arduino.
 
-### Step 3: Our First Morse Code Message (20 minutes) 
-Morse code is probably most commonly known as as an emergency method of communication, with the most commonly known message being S-O-S (help). This will be the first message we try to create using the LED. It is actually one of the easiest messages to create in morse code as S is represented by three dots, and O is represented by three dashes. Because both S and O are defined with repetitive signals it would be best for me to introduce a new block.
+{% include youtube.html id="gviUtLsHDtg" %}
 
+### Step 2: Connecting The Motor (10min)
+Start by drawing the circuit schematic below:
 
-The repeat block can be found in the control tab. It is the first of the three repeat blocks seen, the others being repeat and count, and repeat between. This block behaves somewhat like the loop do in that other blocks can be placed inside it. There is a small integer block attached to it, much like the other blocks we have used thus far, which can have its value changed. That number will dictate how many times the code within the repeat block will run before further blocks in your code are. Take a look at the example below:
+![fig 13.2](fig-13_2.png){:class="image "}
+![fig 13.3](fig-13_3.jpg){:class="image "}
+
+The first image is a more official looking schematic, however it may be difficult for your students to understand what this schematic is saying.
+
+While the following schematic looks more primitive, it will probably seem less abstract to the students.
+
+In general I would advise drawing the schematic on the right, however if you are looking to challenge your students you can draw the more abstract schematic on the left.
+
+In order to attach our motors to the breadboard we will need to augment the servo motor wires. You will need three jumper wires, preferably yellow, red and black, to correspond with the orange, red and brown wires of the servo motor. Place one end of each of the jumper wires into the ends of the motor wires, being sure to color code the wires appropriately; yellow->orange, red->red, black->brown.
+
+Just like it was recommended in past lessons, try having your students collectively build a breadboard diagram of the circuit based on the schematic you have drawn. Below is a diagram with all of the components we currently have attached to the robot:
+
+![fig 13.4](fig-13_4.png){:class="image fit"}
+
+{% include youtube.html id="iTdQKmu6R1o" %}
+
+### Step 3: Getting Our Robot To Wave (45 min)
+To control the servo motor we will need the servo block, located in the pins tab:
+
+![fig 13.5](fig-13_5.png){:class="image fit"}
   
-![fig 11.7](fig-11_7.png){:class="image "}
+Upon closer inspection you will see, like some of the other blocks we have used to this point, the servo block expects two input values:
 
-This code will blink fast three times before waiting a second, then starting over. Based on what we already know, this code creates the message S-S-S-S-S….. 
+![fig 13.6](fig-13_6.png){:class="image "}
 
-Putting together the rest of the S-O-S code should be easy to accomplish. We just need to add three long blinks, followed by three more short blinks, with the appropriate delays in between.
-  
-![fig 11.8](fig-11_8.png){:class="image "}
+The first, unsurprisingly, refers to the pin the motor has been placed on. In our case this is pin 9. The second is called the angle. The angle refers to the position that the motor will move to, not the total amount of motion that will take place. For example inputting an angle of 90 will not make the motor move 90 degrees, it will move to whatever position is associated with 90 degrees, no matter how near or far that is from the motor’s current position.
 
-Notice that the last delay is for 2000 milliseconds (2 seconds). This is appropriate if we consider S-O-S to be a word.
+While programming the servo motor, don’t forget to consider its physical limitations. The servo motor is capable of rotating in half a circle, 180 degrees. Because of this the angle from 0 to 180 are valid inputs for the servo block. You are welcome to try other angles, it will not damage the motor to do so but you should not expect the motor to behave itself if you do.
+
+With all that being said I think it is time to experiment. Just have your students pick an angle they would like to try and upload their code.
+What happens? Many of your students will claim they say movement, however they can not get the movement to repeat, even after uploading their code again. After giving them some time to experiment and note this behavior recommend to the students that they change the angle before uploading again, and to be more precise they should pick an angle that is drastically different than their current angle. At least 30 degrees different. They should notice that the motor moves to a new position, and once again stays there.
+
+This is a good time to reiterate that the angle chosen does not move the motor by that much, but rather moves the motor to the position associated with that angle.
+
+Can we do better than this? Can we do better than repeatedly uploading code to the robot in order to get constant motion from the robot? If fact we can, and doing so won’t require knowledge of any new blocks. Much like the set digital pin and tone blocks we can use delay in tandem with the servo block to create repeated effects, such as what is shown below:
+
+![fig 13.7](fig-13_7.png){:class="image "}
+
+The code above will move one of the robot’s motors back and forth over the span of two seconds.
+
+{% include youtube.html id="x2z0ARKediA" %}
+
+
 #### Vocabulary
-   * **Repeat**: The repeat block, like the loop block, can have other blocks placed within it. Any blocks within the repeat block will be run a number of times equal to the integer that innately comes with the block. Afterwards, subsequent blocks of the code will be run as expected.
-
-{% include badge.html type='activity' content='Have the students attempt custom messages in morse code, such as their name, and see if other students can decipher them.' %}
+  * **Servo Block**: The servo block is the block used to control the servo motors on the robot. It requires two things, the pin the motor is located on and the angle the motor is meant to move to. The angle can accept any number but the physical limitations of the servo motor limit the effective range from 0 to 180.

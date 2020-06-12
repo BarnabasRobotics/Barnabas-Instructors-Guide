@@ -1,47 +1,39 @@
 ---
 layout: lesson
-title: Lesson 4 &middot; Exploring the Robot’s Heart
+title: Lesson 4 &middot; Assembling your Robot
 suggested_time: 60-75 minutes
 
 disciplines:
-- "PS3.B: Conservation of Energy and Energy Transfer: Energy can also be transferred from place to place by electric currents, which can then be used locally to produce motion, sound, heat, or light. The currents may have been produced to begin with by transforming the energy of motion into electrical energy. (4-PS3-2),(4-PS3-4)"
-
-### Science and Engineering Practices
-- "Planning and Carrying Out Investigations: Make observations to produce data to serve as the basis for evidence for an explanation of a phenomenon or test a design solution. (4-PS3-2)"
-- "Constructing Explanations and Designing Solutions: Apply scientific ideas to solve design problems. (4-PS3-4)"
+- "ETS1.B: Developing Possible Solutions: Tests are often designed to identify failure points or difficulties, which suggest the elements of the design that need to be improved. (3-5-ETS1-3)"
+- "At whatever stage, communicating with peers about proposed solutions is an important part of the design process, and shared ideas can lead to improved designs. (3-5-ETS1-2)"
 
 ### Cross-Cutting Concepts
-- "Energy and Matter: Energy can be transferred in various ways and between objects. (4-PS3-1),(4-PS3-2),(4-PS3-3),(4-PS3-4)"
-
-### Learning Target(s)
+- "Science is a Human Endeavor: Most scientists and engineers work in teams. (4-PS3-4)"
+  
 technical_skills:
-- Understanding of basic electronics concepts including open-circuits, closed-circuits, short-circuits, voltage and current
-- Ability to create a simple circuit with an LED using AA batteries.
-- Ability to extrapolate necessary voltage for two LED circuits and beyond.
+- Fine motor skills
+- Following a procedure
 life_skills:
+- Perseverance
 - Teamwork
-- Freedom to fail
+
 
 essential_questions:
-- What is a circuit?
-- What is the difference between open and closed circuits?
-- What is current?
-- How does voltage effect a circuit?
 
 vocab:
-- Circuit
-- Open-Circuit
-- Closed-Circuit
-- Current
-- Voltage
-- Short-Circuit
+- Fastener
 
 videos:
-- link: https://youtu.be/5P-3rSK79Uo
-  text: How to build the 3V LED circuit
-- link: https://www.brainpop.com/technology/energytechnology/electriccircuits/
-  text: BrainPop video on "Electric Circuits"
+- link: https://youtu.be/Bq8QKORWx4k
+  text: How to assemble your Barnabas-Bot motors
 documents:
+Instructions online: http://tinyurl.com/hvn4ztp  
+# Google Docs  
+#     Barnabas-Bot Servo Motor Assembly
+#     Barnabas-Bot Faceplate Assembly
+#     Barnabas-Bot Backplate Assembly
+#     Barnabas-Bot Arm Assembly
+#     Barnabas-Bot Head Assembly
 other:
 
 depth:
@@ -51,113 +43,116 @@ depth:
 - "Level 4:  Extended Thinking"
 
 barriers: 
-- Minimal experience with household electronics.
-- No working knowledge of electricity.
- 
+- Fine motor skills and patience  
+
 anticipatory:
-- Learn basic electrical engineering concepts and use them to create a simple LED circuit
+- Students will assemble the robot
 
 practice:
-- Assembly of LED circuit with a partner. Time permitting, the assembly of a two LED circuit with three partners.
+- Following step by step instructions to assemble the robot.
 
 assessment:
-- Drawing the two LED circuit schematic.
+- Completed robot with head and arms connected to servo motors  
 
 materials:
-- AA Battery (x1)
-- AA Battery connector (x1)
-- 3V LED (x1)
-- Engineering Journal (x1)
-- Pencil (x1)
+- All 3D printed and painted materials
+- 3 servo motors
+- Screws
+- Mini screw drivers
+- LOOK AT MATERIALS!
 
 reflection:
-  comprehension:
-    - What is a circuit? What is the difference between an open-circuit and a closed-circuit.
-    - Why did our initial circuit (one AA battery) not light the LED?
-    - If I wanted to light 5 LEDs, how many AA batteries would I need?
-
+  comprehension: 
+  - Why is fastening the motors from both sides important?
 ---
 
-### Review
-- What are the four main parts of a robot?
-- Which kind of engineer works on each part of the robot? 
+{% include badge.html type='suggestion' content='If you are building the wooden version of the Barnabas Bot, please see <a href="../Appendix/C"> the Wooden Bot Addendeum</a>.' %}
 
-### Step 1: Electronic Basics (20 minutes) 
-Draw a robot. I like to draw Eve from Wall-E. Eve’s battery is analogous to a human heart. Draw a heart on your robot. We cannot live without our hearts pumping blood to the rest of our bodies, and robots cannot turn on without a battery. Human hearts pump blood, similar to how robots batteries supply electrical power.  
+{% include youtube.html id="Bq8QKORWx4k" %}
 
-Eve’s wires are analogous to a human’s arteries, veins, and capillaries. Draw a full circulatory system on your robot. We cannot be healthy if our arteries are blocked or veins are weak and cannot supply appropriate blood flow to our body. Similarly, issues with wiring can seriously affect the robot even if the battery is fully charged.  
+### Step 1: Attaching The Servo Motors
+Servos motors are used to move your robot's right arm, left arm, and head.  Servo motors can move a half-circle (or 180 degrees). Follow the below steps to attach the servo motors:
 
-Eve’s current flow is analogous to human circulation. Just as blood flows in one direction in our bodies: from our heart out to arteries into capillaries in our bodies where oxygen is used to veins that carry the blood back to our heart where the oxygen can be replaced (actually the blood also flows separately to the lungs to be reoxygenated, it is written here thusly for simplicity), electricity flows through a circuit in a particular direction so that the robot works best. Just as the circulatory system makes a loop, a circuit makes a loop too.  
+![fig 7.1](fig-7_1.jpg){:class="image right"} Take one servo motor and place it into the left arm socket of the robot body.  Note:  The servo motor should be placed inside of the plastic robot body casing.  The top of the motor (with the white plastic tip) will stick slightly out of the robot’s body.  (See photo.)
+{:style="overflow: hidden;"}
+
+![fig 7.2](fig-7_2.jpg){:class="image right"} 
+Take one 9/16" servo screw and put it through the outside of the body and into the corresponding hole on the wing of the servo motor.  Push it through so that you can see the screw stick out through the wing of the servo motor.  If you have trouble sticking the screw through, try using the screwdriver to screw it in.
+{:style="overflow: hidden;"}
+
+![fig 7.3](fig-7_3.jpg){:class="image right"} Take a nut and place it over the tip of the 9/16" servo screw.  Then, while gently holding the nut in place with your finger, tighten the 9/16" servo screw using your screwdriver. (Be careful not to over tighten.)  (This may require some patience and perseverance.  But you can do it!)
+{:style="overflow: hidden;"}
+
+![fig 7.4](fig-7_4.jpg){:class="image right"}  
+Once your nut is secure on your servo screw, it should look like the photo.
+{:style="overflow: hidden;"}
+
+![fig 7.5](fig-7_5.jpg){:class="image right"} Repeat the above instructions for the other wing of the servo motor.  Once completed, your servo motor should look like the photo.  
+{:style="overflow: hidden;"}
+
+![fig 7.6](fig-7_6.jpg){:class="image right"} Now, repeat the above steps for the other arm hole.  Once you have finished, your robot's body should look like the photo below.
+{:style="overflow: hidden;"}
+
+![fig 7.7](fig-7_7.jpg){:class="image right"} Now that your two arm motors are assembled, take the last servo motor and fit it into the third servo motor socket on the top of the robot body.  This third motor will be for your robot's head.  Repeat the steps above to attach this third servo motor to your robot body.  
+{:style="overflow: hidden;"}
+
+![fig 7.8](fig-7_8.jpg){:class="image right"} Once completed, your robot should look like this.
+{:style="overflow: hidden;"}
 
 #### Vocabulary
-- **Closed-circuit**: A closed-circuit is when there is a complete loop in your electrical system. In this case electricity can flow.
-- **Open-circuit**: An open-circuit is when the loop is broken. In this case electricity cannot flow. The robot cannot live if we have an open circuit, much like how we cannot live if blood is not circulating through our bodies.
-- **Short-circuit**: A short circuit is when you have a loop, but electricity is flowing too fast. Just like blood being pumped through our bodies too quickly, too much electricity flowing through a circuit can harm the robot.
+   * **Fastener**: a hardware device that mechanically joins or affixes two or more objects together.
 
-{% include badge.html type="activity" content="Flip the light switch in the room off and ask the students if this is an open or closed circuit. Hopefully this helps cement the idea that open-circuit = no electricity." %}
+### Step 2: Frontplate Assembly
+In this step, you will now cover your robot's motors by installing your faceplate by following the steps below:
 
-
-### Step 2: Building Our First LED Circuit (1.5V) (10 minutes) 
-Draw the LED circuit schematic shown below. Encourage the students to determine the voltage of the circuit by examining their parts. HINT: it is written on the battery.
-
-![fig 8.1](fig-8_1.png){:class="image"}
-
-Explain that the voltage determines how fast electricity flows through our circuit. The higher the voltage, the faster electricity moves. Explain that electricity flowing through a circuit is called ‘current,’ and that there are positive and negative sides on both the battery as well as the LED. They need to line up the positives and negatives for the circuit to work.
-
-The schematic is the plan for our circuit. You can compare it to the blueprint of a building. At this point, distribute the robotics kits to your students. Have them take out:
-- AA Battery
-- AA Battery holder
-- LED
-
-Have the students build the circuit with the components they just took out. Let them figure out how to correctly put the battery into the battery holder, as well as which side is positive(red) and which is negative(black). The positive end of the LED has a longer wire.
-
-...IT DOESN’T WORK!
-
-Your students will notice that the LED does not light up. Ask them why (HINT: the 3V LED needs at least 3 volts to turn on). At this point, use the metaphor of a waterfall to describe voltage. Explain that the taller a waterfall is, the more power you will get out of it. It is the same with voltage. More voltage, more power. Ask the students how we can get the necessary 3V to light up the LED (DO NOT use the 9V battery. Instead, combine two AA batteries!).
-
-#### Vocabulary
-- **Current**: Current is simply the flow of electricity.
-- **Voltage**: Voltage is what creates current, or the flow of electricity through a circuit. A larger voltage will cause a faster flow of electricity through a circuit.
-
-{% include badge.html type="tidbit" content="Not all electronic components have positive and negative ends, as we will see later. However the LED being used must be placed in the following way due to some fairly simple physics. Have you ever made a lemon or potato battery? The key to getting a potato battery to work is that either side of the potato must be poked with some sort of metal AND a different metal must be used for each side. When the two metals are placed side by side one seems slightly negatively charged and the other seems slightly positively charged. This is what allows the potato to generate voltage and make current travel in a specific direction. The LED likewise has two different metals at either side of it, so it prefers current to flow in one direction through it." %}
-
-{% include badge.html type="best_practice" content="Before handing out the robotics kits consider giving a general discussion about safety, both for the students and for the robot. Make sure to emphasize that the electronic parts are easy to break (usually by short circuiting them) and that they need to act responsibly with them. If problems arise, I recommend confiscating the 9V batteries until they are needed. Those pose the biggest threat to student and robot safety." %}
-
-### Step 3: Building The 3 Volt Circuit (15 minutes) 
-Start by drawing the 3V LED schematic.
-
-![fig 8.3](fig-8_3.png){:class="image "}
-
-Ask the students to identify the difference between this schematic and our previous one (there are two batteries). How many total volts is the LED getting now.
-
-Have the students work together to build the circuit. Everyone will need to find a partner to have enough batteries for the circuit. If you have an odd number of students, you as the instructor can fill in as a partner for one of your students.After giving the students an opportunity to build the circuit themselves, bring the class together and walk through building the circuit one step at a time.
-
-{% include youtube.html id="5P-3rSK79Uo" %}
-
-![fig 8.4a](fig-8_4a.jpg){:class="image right"} Connect the + wire(red) of the first battery to the + leg(the longer leg) of the LED.
+![fig 7.9](fig-7_9.jpg){:class="image right"} Find the front of your robot body.  (Hint: It is the open side of the body that is closest to the arm motors and has 2 holes at the bottom.)  Align your faceplate to your robot’s body so the screw holes line up.  (See photo.)  
 {:style="overflow: hidden;"}
 
-![fig 8.4b](fig-8_4b.jpg){:class="image right"} Connect the - leg(the shorter leg) of the LED to the - wire(black) of the second battery.
+![fig 7.10](fig-7_10.jpg){:class="image right"} Using your miniature Phillips screwdriver, fasten the two 1/4" screws to the robot’s body.
 {:style="overflow: hidden;"}
 
-![fig 8.4c](fig-8_4c.jpg){:class="image right"} Connect the + wire(red) of the second battery to the - wire(black) of the first battery.
+![fig 7.11](fig-7_11.jpg){:class="image right"} Once completed, your robot should look like the photo.
 {:style="overflow: hidden;"}
 
-{% include badge.html type='troubleshoot' content='Students often connect the positive terminals and negative terminals of the batteries together, rather than connecting the negative to positive (as shown in the schematic).  This incorrectly creates a parallel circuit.  If they do this, they will see that the LED still does not light up.  You can take this opportunity to talk about "series" circuits versus "parallel" circuits, if you like.  A "series" circuit stacks the batteries on top of each other, so that the voltage is added together (like putting two same height waterfalls on top of each other).' %}
+### Step 3: Attaching The Backplate
+In this step, you will now cover the backside of your robot's body by installing your Barnabas Noggin. Follow the step below:
 
-A "parallel" circuit puts them next to each other so that the voltage stays the same, but there is more current available (like putting two same height waterfalls next to each other).
+![fig 7.12](fig-7_12.jpg){:class="image right"} Find the back of your robot.  (Hint: It is the open side of the body that is furthest from the arm motors with 4 holes.)  Align your Barnabas Noggin to your robot’s body. The screw holes on the four corners of the robot body and the Barnabas Noggin should line up.  (See photo.)  
+{:style="overflow: hidden;"}
 
-![fig 8.5](fig-8_5.png){:class="image left"}
+![fig 7.13](fig-7_13.jpg){:class="image right"} Next, screw in the four 1/4" screws into the four holes using your screwdriver. 
+{:style="overflow: hidden;"}
 
-Another error is for students to attempt to use more than two batteries to light a single	LED. While this will likely give a blighter glow to the LED it is likely to damage it as well. Another common error is to connect the batteries incorrectly. Remember that The red wire of one battery must be connected to the black wire of the other battery. In a circuit where the two red wires are connected or the two black wires are connected electricity will not flow. Going back to the waterfall analogy, we can increase the height of our waterfall by connecting batteries together from negative to positive. We are taking additional steps in the same direction, up. However connecting two like ends, whether negative or positive, has the opposite effect. One battery is attempting to increase the height of the waterfall while the other is decreasing it.
+![fig 7.14](fig-7_14.jpg){:class="image right"} Once completed, your robot should look like the photo.
+{:style="overflow: hidden;"}
 
-### Step 4: The Two LED Circuit (15 minutes or as time permits)
-Now that the students have successfully made the 3V LED circuit it’s time to give them a bigger challenge. Instead of pairs, have the student’s get into groups of four. Between the four of them they should have enough batteries to light two LEDs. Give them the opportunity to attempt a two LED circuit on their own. Unlike the one LED circuit, this two LED circuit has multiple working schematics. See below. 
+### Step 4: Attaching The Arms
+Now you will connect your arms to your robot's body by following the steps below:
+![fig 7.15](fig-7_15.jpg){:class="image right"}  Take one 9/16” servo screw and put it through one of the arm’s holes.  Screw on one nut to the other side of the servo screw--but only part of the way.  Be careful not to screw the nut in all the way.  (See photo.)
+{:style="overflow: hidden;"}
 
-![fig 8.6a](fig-8_6a.png){:class="image "}
-![fig 8.6b](fig-8_6b.png){:class="image "}
-![fig 8.6c](fig-8_6c.png){:class="image "}
+![fig 7.16](fig-7_16.jpg){:class="image right"} Take the arm and hold it up to the servo motor shaft (i.e. white plastic tip of the servo motor) as shown below.  The hole in the arm should match up with the hole on the servo motor shaft.
+{:style="overflow: hidden;"}
 
-You should challenge your students to build the circuit without showing them the schematics above. These are more for the benefit of the teacher, so you may be more equipped to help your students with troubleshooting issues.
+![fig 7.17](fig-7_17.jpg){:class="image right"} Next, using the screwdriver, tighten your servo screw by turning clockwise.  (Be careful not to over tighten.)  (See photo.)
+{:style="overflow: hidden;"}
 
-{% include badge.html type="activity" content="After each group has successfully created the circuit, challenge them to create the schematic of the circuit they have just built. This activity is best when the schematics above have not yet been shown to them" %}
+![fig 7.18](fig-7_18.jpg){:class="image right"} Once the arm is tightened, it should look like the photo.
+{:style="overflow: hidden;"}
+
+![fig 7.19](fig-7_19.jpg){:class="image right"} Now, repeat the process above for the other arm too.  Once you are finished, your robot arms should look like the photo. 
+{:style="overflow: hidden;"}
+
+### Step 5: Attaching The Head
+Every robot needs a head! You will be fastening the head to the servo motor sticking out of the top of the robot as described below:
+
+![fig 7.20](fig-7_20.jpg){:class="image right"} Find the bottom of your head (i.e. the base) and align the hole to the top of the hole on the servo motor shaft head.  (See photo.)  
+{:style="overflow: hidden;"}
+
+![fig 7.21](fig-7_21.jpg){:class="image right"} Fasten the screw.
+{:style="overflow: hidden;"}
+
+![fig 7.22](fig-7_22.jpg){:class="image right"} Now fasten the top of the head to the bottom part.  It should fit in over the top.  You may want to use glue (Elmer’s glue or super glue) to secure it further. 
+{:style="overflow: hidden;"}
+
+{% include badge.html type='best_practice' content='The typical message of perseverance is particularly relevant this lesson as the need for fine motor skills often frustrates students. This is something as a teacher to be aware of.' %}

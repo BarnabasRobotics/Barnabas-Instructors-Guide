@@ -1,81 +1,96 @@
 ---
 layout: lesson
-title: Lesson 1 &middot; 3D Printing and Design
-suggested_time: 60-75 minutes
+title: Lesson 1 &middot; Introduction to Robotics
+suggested_time: 60 - 75 minutes
 
 disciplines:
-    - "Constructing Explanations and Designing Solutions: Apply scientific ideas to solve design problems. (4-PS3-4)"
-### Cross-Cutting Concepts
-    - "Science is a Human Endeavor: People’s needs and wants change over time, as do their demands for new and improved technologies. (3-5-ETS1-1)"
-    - "Science affects everyday life. (4-PS3-4)"
+    - "ETS1.B:  Developing Possible Solutions:  Research on a problem should be carried out before beginning to design a solution.  (3-5-ETS1-2)"
 
-### Learning Target(s)
 technical_skills:
-    - We will learn the parts and properties of a 3-D printer.
-    - We will learn about industrial design and the importance of form and function in design.
+    - We will identify the basic parts of a robot.  We will work together to build, learn, teach, and inspire.
 life_skills:
-    - How to have a discussion
+    - Teamwork
+    - Inspiration
+    - Communication
 
-essential_questions: 
-    - What are the limitations of 3-D printing?
-    - What is the importance of form and function in regards to the design process?
-    - How do you suspect the robot was printed? (How were the pieces oriented on the printer?)
+essential_questions:
+    - What are the similarities and differences between robots and humans?  
+    - What is your favorite robot?  
+    - What do robots help us do?  
+    - What are the 4 main parts that make up a robot?  
+    - What are the 4 types of engineering that make up robotics?  
+    - What does it mean to encourage somebody?  
+    - What does it mean to you to be a good community member?  
 
 vocab:
-    - Filament
-    - Extruder
-    - Bed
-    - Cartridge
+    - Barnabas
+    - Community
+    - Encouragement
+    - Inspire
+    - Goal
 
 videos:
-    - link: https://youtu.be/f4RGU2jXQiE
-      text: 3-D Printer and How it is Made
-    - link: https://youtu.be/Gwro2HzxMgw
-      text: 3-D Printer in Action
 documents:
 other:
+    - link: https://scratch.mit.edu/projects/124980272/#player
+      text: Scratch "paper doll" robot as demonstration
 
-barriers: 
-    - There shouldn’t be any barriers in this lesson
+depth:
+    - "Level 1:  Recall and Reproduction"
+    - "Level 2:  Skills and Concepts"
+    - "Level 3:  Strategic Thinking and Reasoning"
+    - "Level 4:  Extended Thinking (appendix b?)"
+
+barriers:
+    - Minimal understanding of metaphors (robot to human)  
+    - Lack of exposure to robots and their properties (e.g.  They are machines; they take commands in the form of code; they are not human; they can perform repetitive action)
 
 anticipatory:
-    - Hand students a few 3-D printed objects, if you have them. What do they notice about the objects? What process do they think is needed to print the objects? 
+    - Student definitions or examples of encouragement and community  
+    - "Student understanding of functions of the human body parts:  body, brain, heart, and soul"
 
 practice:
-    - Asking/answering questions regarding the 3-D printer and the process of printing 3-D objects.
+    - Student drawing of robots and label the 4 parts
 
 assessment:
-    - Drawing of robot with color schemes to be used for painting in the next session  
-    - Ability to name the parts of a 3-D printer  
-    - Understanding the importance of designing a product before it is printed?  
+    - The labeled final drawing of the student’s favorite robot
+    - Students explain how/why robot and human parts are similar  
+    - Students provide examples of encouragement and community
 
 materials:
-  - Engineering Journal
-  - Portable 3-D printer
-  - If a 3-D printer is not available for students to see, opt for the video
-
+    - Robot Model (drawing or physical)
+    
 reflection:
-  comprehension:
-  - Explain the significance of 3-D printing in the design process.
-  - What are some of the 3-D printers components and what does each of them do?
-  - Describe the process that begins with designing an object in a CAD program and ends with the 3-D printed object.
-  - Why is the form or beauty of a product important to engineers?
+    comprehension: 
+      - "✎ :  What are the similarities and differences between robots and humans?"
+      - What are the 4 major parts of any robot?
+      - What type of engineering is related to each of those parts?
+      - What are we going to learn about and how are we going to learn?
+    mindset:
+        - How can you help make the class a good learning community?
+
 
 ---
-### Step 1: Introduction To 3-D Printing
-“What is 3-D printing?”. That question is much more complicated than it originally seems. We can begin to answer it by drawing similarities and differences between a 3-D printer and your paper printer at home. The big difference is that a 3-D printer will print layers one on top of another, accumulating height while doing so. Using an analogy we can say that the 3-D printing process is much like writing your name on a cake, the icing sits atop the rest of the cake.
 
-3-D printers are used by engineers in the field to quickly build designs. They are used as rapid prototyping machines more often than not, giving engineers the opportunity to design, build and test an idea in the same day. This means that while 3-D printers are not always creating the finished product, they are still crucial to the design process.
+### Connecting the Disciplines 
+#### Background Knowledge
+Robotics is a cross-disciplinary field in which electrical engineering, mechanical engineering, and software programming concepts are applied to create a moving system (or a "robot").  Below is a brief explanation of how each of the three disciplines plays a part in robotics:
 
-The process of getting a 3-D file to the printer isn’t as simple as you may suspect. It is not as easy as throwing the file we designed into a 3-D printer and turning it on. The CAD file we designed previously can be exported from Onshape as what is called an STL file. STLs are a common format for 3-D files. Unfortunately for us, a 3-D printer does not accept STL files. Instead they are made to accept g-code files. A g-code file is a file made up of many two dimensional drawings which will ultimately be printed one on top of the other to create the finished product. A g-code file tells the 3-D printer the specifics of how it should move and how much plastic to extrude at any one time.
+1) _Mechanical Engineering​_ i​s a branch of engineering that focuses on the design, construction, and use of machines and robots.  By definition, a robot has to have a moving part -- like an arm, which has joints at the shoulder and the elbow so that the arm can move back and forth. The mechanical component of a robot may be a motor, lever, or gear that helps the robot move.  A mechanical engineer may also design the exterior of the robot, which helps to protect the internal parts of the robot.
 
-What is needed is some way of converting an STL file to a g-code file. This can be done with a slicer program. A slicer will take the 3-D STL file and slice it into each 2-D piece.
+2) _Electrical Engineering​_ ​is a branch of engineering that focuses on the design, use, and distribution of electricity.  A robot must have a power source from which to draw electricity.  A robot’s power source may be a battery or an electrical outlet.  Just as the human heart pumps blood to the rest of our organs for our body to function, a battery or power source for a robot “pumps” electricity to the rest of the robot’s body parts so that the robot can move and function.  In order for electricity to reach the rest of the robot’s body parts, a robot has a network of wires and circuits through which electricity can travel.  This is similar to how human bodies have veins and arteries for blood to travel through to reach other organs.
 
-### Step 2: Industrial Design 
-Industrial design is a term that refers to two different aspects of a manufactured product. The first is the object’s usefulness (function). The second is the object’s beauty (form). When engineers design products for the public they need to carefully consider the role of the product and determine how much of their effort goes into the form of the product and how much goes into the function of the product. Some things do not need to look pretty, they just need to work. Others need to draw people's attention to have a chance in the market.
+To process information, the human body has a central nervous system consisting of a brain and a network of nerves and muscles.  Likewise, a robot needs a “brain” to tell its body parts to move and function. The “brain” of the robot is the computer chip or circuit board. 
 
-Think about common items (especially electronics) and ask yourself whether the form or function of each is more important.
+3) _Computer Science​_ is the study of how computers function and process information. In order for humans to move their arms, the brain must send a message to the arm telling it to move. This message is similar to a computer program/code.  The program/code dictates the way a robot behaves and functions.  This is essentially the robot’s personality.
 
-{% include badge.html type='activity' content='Do you like Samsung or Apple phone?  Give your reasons and put them into two categories: function or beauty.   Check out the story about <a href="https://bgr.com/2018/05/24/samsung-apple-lawsuit-patents-rounded-corners-setllement/" target="_blank">Samsung and Apple dispute</a> over rounded edges.  Looks really do matter!' %}
+Building a robot requires collaboration amongst a team of individuals with varying skills.  Students going through the Barnabas-Bot curriculum will get a taste of each of the above engineering disciplines and work in collaboration with others (teacher, parent, mentor, classmate, etc.) as they build their robots from the ground up.
 
-{% include badge.html type='activity' content='Design something simple like a sandwich for yourself and someone you know, like a relative, friend or sibling. How is the sandwich you made for yourself different from the sandwich you made for the other person? Why are they different?' %}
+#### Discussion
+Let's learn about the similarities and differences between a human versus a robot.
+
+{% include badge.html type='activity' content='<b>Connect the Dots:</b>  Draw a stick-figure body.  Add a heart, a brain, and soul (encircled gingerbread man or woman) to the body.  Next, write the engineering disciplines (Mechanical, Electrical, Computer (Hardware), and Software) next to the body.  Draw a line connecting the engineering discipline, which corresponds most closely to the function  of the listed body part.' %}
+
+
+![fig 1.1](fig-1_1.png){:class="image "}
+![fig 1.2](fig-1_2.png){:class="image "}
