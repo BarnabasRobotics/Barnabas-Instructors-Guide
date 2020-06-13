@@ -3,6 +3,18 @@ layout: lesson
 title: Lesson 2 &middot; 3D Printing and Design
 
 ---
+#### Review
+   * Review the four parts of a robot and how it relates to the human body
+   * What is the difference between design and build?
+
+### Step 1: What Is CAD? (15 minutes) 
+Computer-Aided Design (or CAD) is used by engineers across many disciplines.  Specifically, when building a robot, CAD is used by a mechanical engineer to create the frame or body of the robot.  CAD software allows us to create very precise designs with perfect lines and shape, that would be difficult to sketch by hand.  CAD is also advantageous because the blueprint is stored digitally and can be accessed on most devices anywhere in the world at a moment’s notice.  With an electronically-stored blueprint, an engineer can then create the design using a machine and material of their preference.  Our robots will be 3D-printed using plastic.
+
+{% include badge.html type='activity' content='Quick 2-minute discussion of how the perspective changes and followed by a check for understanding' %}
+
+{% include badge.html type='activity' content='Hold a piece a paper behind your back that has a secret message and ask how can the students make it possible to read with getting up from their seats. (perhaps a passcode to the computers?)' %}
+
+
 ### Step 1: Introduction To 3-D Printing
 “What is 3-D printing?”. That question is much more complicated than it originally seems. We can begin to answer it by drawing similarities and differences between a 3-D printer and your paper printer at home. The big difference is that a 3-D printer will print layers one on top of another, accumulating height while doing so. Using an analogy we can say that the 3-D printing process is much like writing your name on a cake, the icing sits atop the rest of the cake.
 
