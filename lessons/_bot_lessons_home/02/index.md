@@ -15,7 +15,7 @@ Computer-Aided Design (or CAD) is used by engineers across many disciplines.  Sp
 {% include badge.html type='activity' content='Hold a piece a paper behind your back that has a secret message and ask how can the students make it possible to read with getting up from their seats. (perhaps a passcode to the computers?)' %}
 
 
-### Step 1: Introduction To 3-D Printing
+### Step 2: Introduction To 3-D Printing
 “What is 3-D printing?”. That question is much more complicated than it originally seems. We can begin to answer it by drawing similarities and differences between a 3-D printer and your paper printer at home. The big difference is that a 3-D printer will print layers one on top of another, accumulating height while doing so. Using an analogy we can say that the 3-D printing process is much like writing your name on a cake, the icing sits atop the rest of the cake.
 
 3-D printers are used by engineers in the field to quickly build designs. They are used as rapid prototyping machines more often than not, giving engineers the opportunity to design, build and test an idea in the same day. This means that while 3-D printers are not always creating the finished product, they are still crucial to the design process.
@@ -24,7 +24,7 @@ The process of getting a 3-D file to the printer isn’t as simple as you may su
 
 What is needed is some way of converting an STL file to a g-code file. This can be done with a slicer program. A slicer will take the 3-D STL file and slice it into each 2-D piece.
 
-### Step 2: Industrial Design 
+### Step 3: Industrial Design 
 Industrial design is a term that refers to two different aspects of a manufactured product. The first is the object’s usefulness (function). The second is the object’s beauty (form). When engineers design products for the public they need to carefully consider the role of the product and determine how much of their effort goes into the form of the product and how much goes into the function of the product. Some things do not need to look pretty, they just need to work. Others need to draw people's attention to have a chance in the market.
 
 Think about common items (especially electronics) and ask yourself whether the form or function of each is more important.
