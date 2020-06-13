@@ -1,4 +1,3 @@
-
 ---
 layout: lesson
 title: Lesson 1 &middot; Introduction to Robotics
