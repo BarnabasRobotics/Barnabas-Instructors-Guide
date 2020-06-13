@@ -1,3 +1,8 @@
+---
+layout: lesson
+title: Lesson 1 &middot; Introduction To Robotics
+suggested_time: 60-75 minutes
+
 ### What is Robotics: Connecting the Disciplines 
 #### Background Knowledge
 Robotics is a cross-disciplinary field in which electrical engineering, mechanical engineering, and software programming concepts come together to create a moving system (or a "robot").  Below is a brief explanation of how each of the 3 engineering disciplines plays a part in robotics:
