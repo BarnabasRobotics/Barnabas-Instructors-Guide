@@ -71,8 +71,8 @@ reflection:
 
 ---
 
-### Connecting the Disciplines 
-#### Background Knowledge
+### What is Robotics?  
+#### Connecting Engineering Disciplines
 Robotics is made up of 3 different engineering practices in a moving machine: (1) electrical engineering; (2) mechanical engineering; and (3) software programming. Below is a brief explanation of how each of the 3 engineerings disciplines and the role they each play in a robot:
 
 1) _Mechanical Engineering​_ ​focuses on the design, construction, and use of robots.  By definition, a robot has to have a moving part -- think of an arm with joints at the shoulder and the elbow to move back and forth. The mechanical part of a robot may be a motor, lever, or gear that helps the robot move.  A mechanical engineer may also design the outside of the robot to help to protect the fragile parts inside of the robot.
