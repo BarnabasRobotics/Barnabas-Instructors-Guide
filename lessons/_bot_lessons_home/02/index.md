@@ -1,6 +1,7 @@
 ---
 layout: lesson
 title: Lesson 2 &middot; 3D Printing and Design
+
 ---
 ### Step 1: Introduction To 3-D Printing
 “What is 3-D printing?”. That question is much more complicated than it originally seems. We can begin to answer it by drawing similarities and differences between a 3-D printer and your paper printer at home. The big difference is that a 3-D printer will print layers one on top of another, accumulating height while doing so. Using an analogy we can say that the 3-D printing process is much like writing your name on a cake, the icing sits atop the rest of the cake.
