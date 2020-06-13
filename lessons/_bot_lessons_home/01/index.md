@@ -1,7 +1,6 @@
 ---
 layout: lesson
 title: Lesson 1 &middot; Introduction to Robotics
-suggested_time: 60 - 75 minutes
 
 disciplines:
     - "ETS1.B:  Developing Possible Solutions:  Research on a problem should be carried out before beginning to design a solution.  (3-5-ETS1-2)"
