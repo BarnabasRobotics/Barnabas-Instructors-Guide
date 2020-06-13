@@ -1,4 +1,76 @@
+
 ---
+layout: lesson
+title: Lesson 1 &middot; Introduction to Robotics
+suggested_time: 60 - 75 minutes
+
+disciplines:
+    - "ETS1.B:  Developing Possible Solutions:  Research on a problem should be carried out before beginning to design a solution.  (3-5-ETS1-2)"
+
+technical_skills:
+    - We will identify the basic parts of a robot.  We will work together to build, learn, teach, and inspire.
+life_skills:
+    - Teamwork
+    - Inspiration
+    - Communication
+
+essential_questions:
+    - What are the similarities and differences between robots and humans?  
+    - What is your favorite robot?  
+    - What do robots help us do?  
+    - What are the 4 main parts that make up a robot?  
+    - What are the 4 types of engineering that make up robotics?  
+    - What does it mean to encourage somebody?  
+    - What does it mean to you to be a good community member?  
+
+vocab:
+    - Barnabas
+    - Community
+    - Encouragement
+    - Inspire
+    - Goal
+
+videos:
+documents:
+other:
+    - link: https://scratch.mit.edu/projects/124980272/#player
+      text: Scratch "paper doll" robot as demonstration
+
+depth:
+    - "Level 1:  Recall and Reproduction"
+    - "Level 2:  Skills and Concepts"
+    - "Level 3:  Strategic Thinking and Reasoning"
+    - "Level 4:  Extended Thinking (appendix b?)"
+
+barriers:
+    - Minimal understanding of metaphors (robot to human)  
+    - Lack of exposure to robots and their properties (e.g.  They are machines; they take commands in the form of code; they are not human; they can perform repetitive action)
+
+anticipatory:
+    - Student definitions or examples of encouragement and community  
+    - "Student understanding of functions of the human body parts:  body, brain, heart, and soul"
+
+practice:
+    - Student drawing of robots and label the 4 parts
+
+assessment:
+    - The labeled final drawing of the student’s favorite robot
+    - Students explain how/why robot and human parts are similar  
+    - Students provide examples of encouragement and community
+
+materials:
+    - Robot Model (drawing or physical)
+    
+reflection:
+    comprehension: 
+      - "✎ :  What are the similarities and differences between robots and humans?"
+      - What are the 4 major parts of any robot?
+      - What type of engineering is related to each of those parts?
+      - What are we going to learn about and how are we going to learn?
+    mindset:
+        - How can you help make the class a good learning community?
+
+
 ---
 ### What is Robotics: Connecting the Disciplines 
 #### Background Knowledge
