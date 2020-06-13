@@ -71,9 +71,10 @@ reflection:
 
 
 ---
-### What is Robotics: Connecting the Disciplines 
+
+### Connecting the Disciplines 
 #### Background Knowledge
-Robotics is a cross-disciplinary field in which electrical engineering, mechanical engineering, and software programming concepts come together to create a moving system (or a "robot").  Below is a brief explanation of how each of the 3 engineering disciplines plays a part in robotics:
+Robotics is a cross-disciplinary field in which electrical engineering, mechanical engineering, and software programming concepts are applied to create a moving system (or a "robot").  Below is a brief explanation of how each of the three disciplines plays a part in robotics:
 
 1) _Mechanical Engineering​_ i​s a branch of engineering that focuses on the design, construction, and use of machines and robots.  By definition, a robot has to have a moving part -- like an arm, which has joints at the shoulder and the elbow so that the arm can move back and forth. The mechanical component of a robot may be a motor, lever, or gear that helps the robot move.  A mechanical engineer may also design the exterior of the robot, which helps to protect the internal parts of the robot.
 
