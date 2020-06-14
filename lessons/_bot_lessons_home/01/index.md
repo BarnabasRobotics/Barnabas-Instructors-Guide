@@ -91,5 +91,5 @@ Let's learn about the similarities and differences between a human versus a robo
 {% include badge.html type='activity' content='<b>Connect the Dots:</b>  Draw a stick-figure body.  Add a heart, a brain, and soul (encircled gingerbread man or woman) to the body.  Next, write the engineering disciplines (Mechanical, Electrical, Computer (Hardware), and Software) next to the body.  Draw a line connecting the engineering discipline, which corresponds most closely to the function  of the listed body part.' %}
 
 
-![fig 1.1](fig-1_1.png){:class="image "}
+![fig 1.1](lessons/_bot_lessons_home/01/Screen Shot 2020-06-07 at 1.20.32 PM (2) (1).jpg){:class="image "}
 ![fig 1.2](fig-1_2.png){:class="image "}
