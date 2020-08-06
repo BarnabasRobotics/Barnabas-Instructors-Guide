@@ -114,6 +114,11 @@ In this step, you will now cover the backside of your robot’s body by installi
 Use 4 x #2-5/16” screws to attach the noggin to the body.
 {:style="overflow: hidden;"}
 
+ ![fig 4.10](fig-4_10.png){:class="image right"}
+
+Use 4 x #2-5/16” screws to attach the noggin to the body.
+{:style="overflow: hidden;"}
+
 
 
 
