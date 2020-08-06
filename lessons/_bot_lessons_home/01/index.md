@@ -92,6 +92,7 @@ A **robot** is a type of moving machine powered by electricity that can automati
 4. **Software Engineering** is the study of how computers function and process information. For humans to move their arms, our brain must send a message to the arm telling it to move. This message is similar to a computer program/code. The program/code dictates the way a robot behaves and functions. This is essentially the robot’s “personality.”
 
 Professional engineers who design and build robots need to depend on others in the above engineering fields and a team of artists and other types of designers. In other words, building a robot requires teamwork among individuals with varying skills. 
+
 As you go through the Barnabas-Bot project, you’ll get a taste of each of these engineering disciplines and how they work together in the process of building a robot from the ground up! 
 
 {% include badge.html type='activity' content=Draw a picture of a robot. Next, give your robot drawing a body, heart, brain, and personality. Next, write the engineering disciplines (Mechanical, Electrical, Computer (Hardware), and Software) next to the robot’s body, heart, brain, and personality. ' %}
