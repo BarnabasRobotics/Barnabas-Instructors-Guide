@@ -106,7 +106,7 @@ In this step, you will now cover your robot’s motors by installing your facepl
 ### Attaching The Barnabas Noggin
 In this step, you will now cover the backside of your robot’s body by installing your Barnabas Noggin.
 
-![fig 4.8](fig-4_8.png){:class="image right"} Take the electrical cables from the servo motors (3 total) motor wires and feed them through the hole at the bottom of the robot.
+![fig 4.9](fig-4_9.png){:class="image right"} Find the back of your robot. (Hint: It is the open side of the body that is furthest from the arm motors with 4 holes.) Align your Barnabas Noggin to your robot’s body. The screw holes on the four corners of the robot body and the Barnabas Noggin should line up.
 {:style="overflow: hidden;"}
 
 
