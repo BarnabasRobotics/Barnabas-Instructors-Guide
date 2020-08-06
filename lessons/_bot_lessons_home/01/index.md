@@ -74,7 +74,7 @@ A robot is a type of moving machine powered by electricity that can automaticall
 
 <img align="left" src="fig-01_1.png" width="150">
 
-**Body (Skin & Skeleton)** - Just as the human body is made up of skin and bones to give our bodies structure and protects our internal organs, a robot’s body also has an exterior protective shell to protect its fragile components inside.  While the human body is made up of joints that allow us to move, a robot may have a motor, lever, or gear to help it move.  
+​     **Body (Skin & Skeleton)** - Just as the human body is made up of skin and bones to give our bodies structure and protects our internal organs, a robot’s body also has an exterior protective shell to protect its fragile components inside.  While the human body is made up of joints that allow us to move, a robot may have a motor, lever, or gear to help it move.  
 
 <p align="center">
     <img align="center" src="fig-01_8.png" width="400">
