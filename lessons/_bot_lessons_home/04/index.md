@@ -68,25 +68,24 @@ reflection:
 
 {% include badge.html type='suggestion' content='If you are building the wooden version of the Barnabas Bot, please see <a href="../Appendix/C"> the Wooden Bot Addendeum</a>.' %}
 
-### Step 1: Attaching The Servo Motors
+### Attaching The Servo Motors
 Servos motors are used to move your robot’s right arm, left arm, and head. Servo motors can move a half-circle (or 180 degrees). We’ll see it in action later, but let’s get it attached to our 3D-printed body. 
 
 ![fig 4.1](fig-4_1.png){:class="image right"} Take one servo motor and place it into the right arm socket of the robot body. Note: The servo motor should be placed inside of the plastic robot body casing. The top of the motor (with the white plastic tip) will stick slightly out of the robot’s body.
 {:style="overflow: hidden;"}
 
-![fig 7.2](fig-7_2.jpg){:class="image right"} 
-Take one 9/16" servo screw and put it through the outside of the body and into the corresponding hole on the wing of the servo motor.  Push it through so that you can see the screw stick out through the wing of the servo motor.  If you have trouble sticking the screw through, try using the screwdriver to screw it in.
+![fig 4.2](fig-4_2.png){:class="image right"} 
+Take a #3-7/16” servo screw and screw it through the outside of the body and into the corresponding hole on the wing of the servo motor. Use the L-shaped allen wrench to fasten it.  Be careful not to over tighten,
 {:style="overflow: hidden;"}
 
-![fig 7.3](fig-7_3.jpg){:class="image right"} Take a nut and place it over the tip of the 9/16" servo screw.  Then, while gently holding the nut in place with your finger, tighten the 9/16" servo screw using your screwdriver. (Be careful not to over tighten.)  (This may require some patience and perseverance.  But you can do it!)
+![fig 4.3](fig-4_3.png){:class="image right"} Take another #3-7/16” servo screw and fasten the other side of the servo motor
 {:style="overflow: hidden;"}
 
-![fig 7.4](fig-7_4.jpg){:class="image right"}  
-Once your nut is secure on your servo screw, it should look like the photo.
-{:style="overflow: hidden;"}
+![fig 4.4](fig-4_4.png){:class="image right"}  Repeat steps to fasten the servo motor for the right arm socket. {:style="overflow: hidden;"}
 
-![fig 7.5](fig-7_5.jpg){:class="image right"} Repeat the above instructions for the other wing of the servo motor.  Once completed, your servo motor should look like the photo.  
-{:style="overflow: hidden;"}
+![fig 4.5](fig-4_5.png){:class="image right"} Repeat steps to fasten the servo motor for the head.{:style="overflow: hidden;"}
+
+
 
 ![fig 7.6](fig-7_6.jpg){:class="image right"} Now, repeat the above steps for the other arm hole.  Once you have finished, your robot's body should look like the photo below.
 {:style="overflow: hidden;"}
