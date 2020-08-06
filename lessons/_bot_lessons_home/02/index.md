@@ -2,6 +2,12 @@
 layout: lesson
 title: Lesson 2 &middot; 3D Printing and Design
 
+reflection:
+    comprehension: 
+      - What does C.A.D. stand for?
+      - Why do engineers use 3-D printers?
+      - at are the two things that we need to remember when we design things?
+
 ---
 
 ### Computer Aided Design
