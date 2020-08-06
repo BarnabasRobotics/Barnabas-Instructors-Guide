@@ -68,8 +68,6 @@ reflection:
 
 {% include badge.html type='suggestion' content='If you are building the wooden version of the Barnabas Bot, please see <a href="../Appendix/C"> the Wooden Bot Addendeum</a>.' %}
 
-{% include youtube.html id="Bq8QKORWx4k" %}
-
 ### Step 1: Attaching The Servo Motors
 Servos motors are used to move your robot's right arm, left arm, and head.  Servo motors can move a half-circle (or 180 degrees). Follow the below steps to attach the servo motors:
 
