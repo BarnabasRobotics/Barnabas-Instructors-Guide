@@ -87,57 +87,47 @@ Take a #3-7/16” servo screw and screw it through the outside of the body and i
 ![fig 4.5](fig-4_5.png){:class="image right"} Repeat steps to fasten the servo motor for the head.
 {:style="overflow: hidden;"}
 
-### Step 2: Frontplate Assembly
-In this step, you will now cover your robot's motors by installing your faceplate by following the steps below:
+### Attaching The Faceplate
+In this step, you will now cover your robot’s motors by installing your faceplate.
 
-![fig 7.9](fig-7_9.jpg){:class="image right"} Find the front of your robot body.  (Hint: It is the open side of the body that is closest to the arm motors and has 2 holes at the bottom.)  Align your faceplate to your robot’s body so the screw holes line up.  (See photo.)  
+![fig 4.6](fig-4_6.png){:class="image right"} Find the front of your robot body. (Hint: It is the open side of the body that is closest to the arm motors and has 2 holes at the bottom.) Align your faceplate to your robot’s body so the screw holes line up.  
 {:style="overflow: hidden;"}
 
-![fig 7.10](fig-7_10.jpg){:class="image right"} Using your miniature Phillips screwdriver, fasten the two 1/4" screws to the robot’s body.
+![fig 4.7](fig-4_7.png){:class="image right"} Use your allen wrench, to screw in 2 x #2-5/16” screws to fasten the faceplate to the robot’s body.
 {:style="overflow: hidden;"}
 
-![fig 7.11](fig-7_11.jpg){:class="image right"} Once completed, your robot should look like the photo.
+![fig 4.8](fig-4_8.png){:class="image right"} Take the electrical cables from the servo motors (3 total) motor wires and feed them through the hole at the bottom of the robot.
 {:style="overflow: hidden;"}
 
-### Step 3: Attaching The Backplate
-In this step, you will now cover the backside of your robot's body by installing your Barnabas Noggin. Follow the step below:
+### Attaching The Barnbas Noggin
+In this step, you will now cover the backside of your robot’s body by installing your Barnabas Noggin.
 
-![fig 7.12](fig-7_12.jpg){:class="image right"} Find the back of your robot.  (Hint: It is the open side of the body that is furthest from the arm motors with 4 holes.)  Align your Barnabas Noggin to your robot’s body. The screw holes on the four corners of the robot body and the Barnabas Noggin should line up.  (See photo.)  
+![fig 4.9](fig-4_9.png){:class="image right"} Find the back of your robot. (Hint: It is the open side of the body that is furthest from the arm motors with 4 holes.) Align your Barnabas Noggin to your robot’s body. The screw holes on the four corners of the robot body and the Barnabas Noggin should line up. 
 {:style="overflow: hidden;"}
 
-![fig 7.13](fig-7_13.jpg){:class="image right"} Next, screw in the four 1/4" screws into the four holes using your screwdriver. 
+![fig 4.10](fig-4_10.png){:class="image right"} 
+
+### Attaching The Arms
+Now you will connect your arms to your robot’s body.![fig 4.11](fig-4_11.png){:class="image right"}  Take one #2-9/16” screw and put it through one of the arm’s holes.
 {:style="overflow: hidden;"}
 
-![fig 7.14](fig-7_14.jpg){:class="image right"} Once completed, your robot should look like the photo.
+![fig 4.12](fig-4_12.png){:class="image right"} Using the allen wrench, attach the arm to either the left or right arm servo motor.  Make sure that the tip of the screw goes into the hole on the white tip of the servo motor.
+
+Notice that there will be a gap between the blue part of the motor and the arm.  
+
+Be careful not to over tighten.  Once the arm is snug, you’re good to go!{:style="overflow: hidden;"}
+
+![fig 4.13](fig-4_13.png){:class="image right"} Repeat for the other arm.
 {:style="overflow: hidden;"}
 
-### Step 4: Attaching The Arms
-Now you will connect your arms to your robot's body by following the steps below:
-![fig 7.15](fig-7_15.jpg){:class="image right"}  Take one 9/16” servo screw and put it through one of the arm’s holes.  Screw on one nut to the other side of the servo screw--but only part of the way.  Be careful not to screw the nut in all the way.  (See photo.)
+### Attaching The Head
+Every robot needs a head! You will be fastening the head to the servo motor sticking out of the top of the robot.
+
+![fig 4.14](fig-4_14.png){:class="image right"}  Find the bottom of your head (i.e. the base) and align the hole to the top of the hole on the servo motor shaft head. 
 {:style="overflow: hidden;"}
 
-![fig 7.16](fig-7_16.jpg){:class="image right"} Take the arm and hold it up to the servo motor shaft (i.e. white plastic tip of the servo motor) as shown below.  The hole in the arm should match up with the hole on the servo motor shaft.
+![fig 4.15](fig-4_15.png){:class="image right"} Use 1 x #2-5/16” screw to fasten the head base to your head servo motor.  You want it to be tight enough so that the base doesn’t wobble.
 {:style="overflow: hidden;"}
 
-![fig 7.17](fig-7_17.jpg){:class="image right"} Next, using the screwdriver, tighten your servo screw by turning clockwise.  (Be careful not to over tighten.)  (See photo.)
+![fig 4.16](fig-4_16.png){:class="image right"} Now fasten the top of the head to the bottom part. It should fit in over the top. You may want to use glue (Elmer’s glue or super glue) to secure it further.
 {:style="overflow: hidden;"}
-
-![fig 7.18](fig-7_18.jpg){:class="image right"} Once the arm is tightened, it should look like the photo.
-{:style="overflow: hidden;"}
-
-![fig 7.19](fig-7_19.jpg){:class="image right"} Now, repeat the process above for the other arm too.  Once you are finished, your robot arms should look like the photo. 
-{:style="overflow: hidden;"}
-
-### Step 5: Attaching The Head
-Every robot needs a head! You will be fastening the head to the servo motor sticking out of the top of the robot as described below:
-
-![fig 7.20](fig-7_20.jpg){:class="image right"} Find the bottom of your head (i.e. the base) and align the hole to the top of the hole on the servo motor shaft head.  (See photo.)  
-{:style="overflow: hidden;"}
-
-![fig 7.21](fig-7_21.jpg){:class="image right"} Fasten the screw.
-{:style="overflow: hidden;"}
-
-![fig 7.22](fig-7_22.jpg){:class="image right"} Now fasten the top of the head to the bottom part.  It should fit in over the top.  You may want to use glue (Elmer’s glue or super glue) to secure it further. 
-{:style="overflow: hidden;"}
-
-{% include badge.html type='best_practice' content='The typical message of perseverance is particularly relevant this lesson as the need for fine motor skills often frustrates students. This is something as a teacher to be aware of.' %}
