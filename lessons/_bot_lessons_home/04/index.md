@@ -103,16 +103,18 @@ In this step, you will now cover your robot’s motors by installing your facepl
 ![fig 4.8](fig-4_8.png){:class="image right"} Take the electrical cables from the servo motors (3 total) motor wires and feed them through the hole at the bottom of the robot.
 {:style="overflow: hidden;"}
 
-### Attaching The Barnbas Noggin
+### Attaching The Barnabas Noggin
 In this step, you will now cover the backside of your robot’s body by installing your Barnabas Noggin.
 
-![fig 4.9](fig-4_9.png){:class="image right"} Find the back of your robot. (Hint: It is the open side of the body that is furthest from the arm motors with 4 holes.) Align your Barnabas Noggin to your robot’s body. The screw holes on the four corners of the robot body and the Barnabas Noggin should line up. 
+![fig 4.9](fig-4_9.png){:class="image right"} Find the back of your robot. (Hint: It is the open side of the body that is furthest from the arm motors with 4 holes.) Align your Barnabas Noggin to your robot’s body. The screw holes on the four corners of the robot body and the Barnabas Noggin should line up.
 {:style="overflow: hidden;"}
 
 ![fig 4.10](fig-4_10.png){:class="image right"} 
 
-Use 4 x #2-5/16” screws to attach the noggin to the body. 
+Use 4 x #2-5/16” screws to attach the noggin to the body.
 {:style="overflow: hidden;"}
+
+
 
 ### Attaching The Arms
 
@@ -123,7 +125,7 @@ Now you will connect your arms to your robot’s body.![fig 4.11](fig-4_11.png){
 
 Notice that there will be a gap between the blue part of the motor and the arm.  
 
-Be careful not to over tighten.  Once the arm is snug, you’re good to go! 
+Be careful not to over tighten.  Once the arm is snug, you’re good to go!
 {:style="overflow: hidden;"}
 
 ![fig 4.13](fig-4_13.png){:class="image right"} Repeat for the other arm.
