@@ -11,6 +11,9 @@ reflection:
 ---
 
 ### Computer Aided Design
+
+![fig 2.0](fig-2_0.png){:class="image center"}
+
 Computer-Aided Design (or CAD) is used by engineers across many disciplines. Specifically, when building a robot, CAD is used by a mechanical engineer to create the frame or body of the robot. CAD software allows us to create very precise designs with perfect lines and shape, that would be difficult to sketch by hand. CAD is also advantageous because the blueprint is stored digitally and can be accessed on most devices anywhere in the world at a moment’s notice. With an electronically-stored blueprint, an engineer can then create the design using a machine and material of their preference. Our robots will be 3D-printed using plastic.
 
 ### 3-D Printing
