@@ -22,6 +22,9 @@ The process of getting a 3-D file to the printer isn’t as simple as you may su
 
 What is needed is some way of converting an STL file to a g-code file. This can be done with a slicer program. A slicer will take the 3-D STL file and slice it into each 2-D piece.
 
+Watch a 3-D printing simulation of the Barnabas-bot parts!
+{% include youtube.html id="JGHyz8-7zwk" %}
+
 ### Industrial Design 
 Industrial design is a term that refers to two different aspects of a manufactured product. The first is the object’s usefulness (function). The second is the object’s beauty (form). When engineers design products for the public they need to carefully consider the role of the product and determine how much of their effort goes into the form of the product and how much goes into the function of the product. Some things do not need to look pretty, they just need to work. Others need to draw people’s attention to have a chance in the market.
 
