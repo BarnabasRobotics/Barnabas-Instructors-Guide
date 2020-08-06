@@ -128,16 +128,6 @@ Now you will connect your arms to your robot’s body.
 ![fig 4.12](fig-4_12.png){:class="image right"} Using the allen wrench, attach the arm to either the left or right arm servo motor.  Make sure that the tip of the screw goes into the hole on the white tip of the servo motor.  Notice that there will be a gap between the blue part of the motor and the arm.  Be careful not to over tighten.  Once the arm is snug, you’re good to go!
 {:style="overflow: hidden;"}
 
-![fig 4.13](fig-4_13.png){:class="image right"} Take one #2-9/16” screw and put it through one of the arm’s holes.
-{:style="overflow: hidden;"}
-
-![fig 4.12](fig-4_12.png){:class="image right"} Using the allen wrench, attach the arm to either the left or right arm servo motor.  Make sure that the tip of the screw goes into the hole on the white tip of the servo motor.
-
-Notice that there will be a gap between the blue part of the motor and the arm.  
-
-Be careful not to over tighten.  Once the arm is snug, you’re good to go!
-{:style="overflow: hidden;"}
-
 ![fig 4.13](fig-4_13.png){:class="image right"} Repeat for the other arm.
 {:style="overflow: hidden;"}
 
