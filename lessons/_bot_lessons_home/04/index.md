@@ -75,29 +75,17 @@ Servos motors are used to move your robot’s right arm, left arm, and head. Ser
 {:style="overflow: hidden;"}
 
 ![fig 4.2](fig-4_2.png){:class="image right"} 
-Take a #3-7/16” servo screw and screw it through the outside of the body and into the corresponding hole on the wing of the servo motor. Use the L-shaped allen wrench to fasten it.  Be careful not to over tighten,
+Take a #3-7/16” servo screw and screw it through the outside of the body and into the corresponding hole on the wing of the servo motor. Use the L-shaped allen wrench to fasten it.  Be careful not to over tighten.
 {:style="overflow: hidden;"}
 
-![fig 4.3](fig-4_3.png){:class="image right"} Take another #3-7/16” servo screw and fasten the other side of the servo motor
+![fig 4.3](fig-4_3.png){:class="image right"} Take another #3-7/16” servo screw and fasten the other side of the servo motor.
 {:style="overflow: hidden;"}
 
-![fig 4.4](fig-4_4.png){:class="image right"}  Repeat steps to fasten the servo motor for the right arm socket. {:style="overflow: hidden;"}
-
-![fig 4.5](fig-4_5.png){:class="image right"} Repeat steps to fasten the servo motor for the head.{:style="overflow: hidden;"}
-
-
-
-![fig 7.6](fig-7_6.jpg){:class="image right"} Now, repeat the above steps for the other arm hole.  Once you have finished, your robot's body should look like the photo below.
+![fig 4.4](fig-4_4.png){:class="image right"}  Repeat steps to fasten the servo motor for the right arm socket.
 {:style="overflow: hidden;"}
 
-![fig 7.7](fig-7_7.jpg){:class="image right"} Now that your two arm motors are assembled, take the last servo motor and fit it into the third servo motor socket on the top of the robot body.  This third motor will be for your robot's head.  Repeat the steps above to attach this third servo motor to your robot body.  
+![fig 4.5](fig-4_5.png){:class="image right"} Repeat steps to fasten the servo motor for the head.
 {:style="overflow: hidden;"}
-
-![fig 7.8](fig-7_8.jpg){:class="image right"} Once completed, your robot should look like this.
-{:style="overflow: hidden;"}
-
-#### Vocabulary
-   * **Fastener**: a hardware device that mechanically joins or affixes two or more objects together.
 
 ### Step 2: Frontplate Assembly
 In this step, you will now cover your robot's motors by installing your faceplate by following the steps below:
