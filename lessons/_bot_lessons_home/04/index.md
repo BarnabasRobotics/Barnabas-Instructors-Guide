@@ -69,9 +69,9 @@ reflection:
 {% include badge.html type='suggestion' content='If you are building the wooden version of the Barnabas Bot, please see <a href="../Appendix/C"> the Wooden Bot Addendeum</a>.' %}
 
 ### Step 1: Attaching The Servo Motors
-Servos motors are used to move your robot's right arm, left arm, and head.  Servo motors can move a half-circle (or 180 degrees). Follow the below steps to attach the servo motors:
+Servos motors are used to move your robot’s right arm, left arm, and head. Servo motors can move a half-circle (or 180 degrees). We’ll see it in action later, but let’s get it attached to our 3D-printed body. 
 
-![fig 7.1](fig-7_1.jpg){:class="image right"} Take one servo motor and place it into the left arm socket of the robot body.  Note:  The servo motor should be placed inside of the plastic robot body casing.  The top of the motor (with the white plastic tip) will stick slightly out of the robot’s body.  (See photo.)
+![fig 4.1](fig-4_1.png){:class="image right"} Take one servo motor and place it into the right arm socket of the robot body. Note: The servo motor should be placed inside of the plastic robot body casing. The top of the motor (with the white plastic tip) will stick slightly out of the robot’s body.
 {:style="overflow: hidden;"}
 
 ![fig 7.2](fig-7_2.jpg){:class="image right"} 
