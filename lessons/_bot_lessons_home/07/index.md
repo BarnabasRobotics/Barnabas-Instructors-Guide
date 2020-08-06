@@ -1,133 +1,138 @@
 ---
 layout: lesson
-title: Lesson 7 &middot; Make Your Robot Wave!
+title: Lesson 7 &middot; The Blinking Light
 suggested_time: 60-75 minutes
-
-disciplines: 
-- "ETS1.B: Developing Possible Solutions: Tests are often designed to identify failure points or difficulties, which suggest the elements of the design that need to be improved. (3-5-ETS1-3)"
-
-### Cross-Cutting Concepts
-- "Science is a Human Endeavor: Most scientists and engineers work in teams. (4-PS3-4)"
-
-technical_skills:
-- Understanding physical limitations; range of motion (angles), power consumption
-life_skills:
-- Perseverance
-
-essential_questions:
-- What can limit a robot’s movements? 
-- Do we program the servo motors by giving them angles of position, or angles of motion? What is the difference between the two?
-
-vocab:
-- Servo
-- Limits
-- Modulation
-
-videos:
-- link: https://youtu.be/gviUtLsHDtg
-  text: How servo motors work
-- link: https://youtu.be/iTdQKmu6R1o
-  text: Wiring your first servo motor
-- link: https://youtu.be/x2z0ARKediA
-  text: Waving demo
-- link: https://youtu.be/qSbMojcwunk
-  text: Programming your servo motor
-documents:
-other:
-
-depth:
-- "Level 1:  Recall and Reproduction"
-- "Level 2:  Skills and Concepts"
-- "Level 3:  Strategic Thinking and Reasoning"
-- "Level 4:  Extended Thinking"
-
-barriers: 
-- Poor understanding of range of motion, angle position vs. angle of motion
-- Inability to distinguish between known blocks in Ardublock
-- Poor understanding of previous coding exercises i.e. blinking light and buzzer
-
-anticipatory:
-- Students will learn to code their motors to move the extremities of the robot and achieve repeated motion
-
-practice:
-- Wiring a single motor using the breadboard
-- Using code to experiment with the range of motion of the motors as well as the necessary sequence for repeated motion to occur
-
-assessment:
-- Getting the robot to wave or shake its head
-
-materials:
-- Jumper wires (preferably yellow, red, black)
-- Engineering journal
-- Computer with Arduino/Ardublock software
-- Assembled robot or servo motor
-
-
-reflection:
-  comprehension: 
-  - If the motor has previously been set to 20 degrees and is then set to 90, how many degrees does the motor move?
-  - Why are there three wires attached to the servo motor and what do each of them do?
 ---
 
-### Step 1: How Does The Servo Motor Work? (5 min)
+### What You'll Need
 
-![fig 13.1](fig-13_1.jpg){:class="image "}
+Before we get started, let’s make sure that we have all the parts.
 
-Above is a picture of a servo motor. There are multiple types of servo motor, however the important characteristic of our servo motors is that they can only move in half a circle, 180 degrees. 
-
-Each servo motor has three wires attached to it: an orange wire, a red wire and a brown wire. If you consider the previous components, the LED and buzzer, you may remember that each of them only needed two wires to function. The main difference between the motor and our previous components is how much current the motor requires. The motor constantly needs 5V fed to it in order to function, where the buzzer and LED only needed 5V intermittently. The motor has two wires dedicated to pumping current in and out of the motor, these are the red (5V) and brown (GND) wires. In our robot human analogy these wires would be the veins. The orange wire, on the other hand, is responsible for sending a signal to the motor which will tell the motor to move. This wire would be more analogous to the nerves that extend across our bodies, carrying signals from our brain to the muscles.
+{% include badge.html type='troubleshoot' content='Please see our <a href="https://www.barnabasrobotics.com/resources/" target="_blank">Software</a> page for setting up your computers.' %}
 
 #### Vocabulary
-  * **Servo Motor**: The servo motors our robot uses are 180 degree rotation servo motors, meaning they only have a range of motion of about half a circle. The servo motors require much more power than the LED or the buzzer, which necessitates a third wire attached to the motor. The motor has one wire dedicated to ground (GND), one dedicated to power (5V), and one dedicated to receiving a signal from the Arduino.
 
-{% include youtube.html id="gviUtLsHDtg" %}
+   * **Arduino**: Both hardware and software. The hardware is a line of microcontrollers (very simple computers). In fact, the Barnabas Noggin utilizes an Arduino microcontroller itself. The software is a C based IDE (integrated development environment… A place where you code). Because Arduino handles both sides of things the process of coding, then uploading your code to a microcontroller is very easy. The Arduino IDE can be out of scope for younger classes as the ability to type acts as a barrier to entry.
 
-### Step 2: Connecting The Motor (10min)
-Start by drawing the circuit schematic below:
+{% include badge.html type='best_practice' content='Have the students make a step by step checklist in their journal on how to connect the Barnabas-Bot to the computer in explicit detail.' %}
 
-![fig 13.2](fig-13_2.png){:class="image "}
-![fig 13.3](fig-13_3.jpg){:class="image "}
+Use the following checklist to prepare your robot for coding:
 
-The first image is a more official looking schematic, however it may be difficult for your students to understand what this schematic is saying.
+      1. Turn on the computer.
+      2. Input password.
+      3. Open Arduino.
+      4. Plug the robot into the computer via the USB cable.
+      5. Go to tools -> port -> select port (not com1 or serial port ex. for windows pc).
+      6. Go to tools -> board -> select Arduino Nano
 
-While the following schematic looks more primitive, it will probably seem less abstract to the students.
+_This process must be done each lesson that you intend to program._
 
-In general I would advise drawing the schematic on the right, however if you are looking to challenge your students you can draw the more abstract schematic on the left.
+### Step 1: Changing The Circuit (5 minutes)
 
-In order to attach our motors to the breadboard we will need to augment the servo motor wires. You will need three jumper wires, preferably yellow, red and black, to correspond with the orange, red and brown wires of the servo motor. Place one end of each of the jumper wires into the ends of the motor wires, being sure to color code the wires appropriately; yellow->orange, red->red, black->brown.
+In this section we are finally going to code our LED. However, we must make a small change to the current circuit first. 
 
-Just like it was recommended in past lessons, try having your students collectively build a breadboard diagram of the circuit based on the schematic you have drawn. Below is a diagram with all of the components we currently have attached to the robot:
+The wire that is currently in the 5V pin must be placed in the pin labelled 7.
 
-![fig 13.4](fig-13_4.png){:class="image fit"}
+![fig 10.6](fig-10_6.png){:class="image fit"}
 
-{% include youtube.html id="iTdQKmu6R1o" %}
+You may notice that the LED no longer turns on. This is because while the 5V pin is always on, pin 7 is what is called a programmable pin, meaning we decide whether it is on or off with code. 
 
-### Step 3: Getting Our Robot To Wave (45 min)
-To control the servo motor we will need the servo block, located in the pins tab:
+### Step 2: Getting Started With Ardublock (5 minutes) 
 
-![fig 13.5](fig-13_5.png){:class="image fit"}
-  
-Upon closer inspection you will see, like some of the other blocks we have used to this point, the servo block expects two input values:
+Now that our computer is talking to our Barnabas Noggin, let's get started with ArduBlock!  ArduBlock is a block-based programming language that is great for those who are new to programming.  
 
-![fig 13.6](fig-13_6.png){:class="image "}
+Open ArduBlock by going to TOOLS->ARDUBLOCK.
 
-The first, unsurprisingly, refers to the pin the motor has been placed on. In our case this is pin 9. The second is called the angle. The angle refers to the position that the motor will move to, not the total amount of motion that will take place. For example inputting an angle of 90 will not make the motor move 90 degrees, it will move to whatever position is associated with 90 degrees, no matter how near or far that is from the motor’s current position.
+![fig 10.1](fig-10_1.jpg){:class="image "}
 
-While programming the servo motor, don’t forget to consider its physical limitations. The servo motor is capable of rotating in half a circle, 180 degrees. Because of this the angle from 0 to 180 are valid inputs for the servo block. You are welcome to try other angles, it will not damage the motor to do so but you should not expect the motor to behave itself if you do.
+Once ArduBlock opens, you should see the following screen.  Note that your screen may differ a little depending on which version of Ardublock you have installed.
 
-With all that being said I think it is time to experiment. Just have your students pick an angle they would like to try and upload their code.
-What happens? Many of your students will claim they say movement, however they can not get the movement to repeat, even after uploading their code again. After giving them some time to experiment and note this behavior recommend to the students that they change the angle before uploading again, and to be more precise they should pick an angle that is drastically different than their current angle. At least 30 degrees different. They should notice that the motor moves to a new position, and once again stays there.
+![fig 10.2](fig-10_2.jpg){:class="image "}
 
-This is a good time to reiterate that the angle chosen does not move the motor by that much, but rather moves the motor to the position associated with that angle.
+Go to `CONTROL`, and drag in a `LOOP-DO` block (if it isn't there already).  Click on `SAVE`, type in your name, and click `SAVE` again.  Note that every program needs a `LOOP-DO`.
 
-Can we do better than this? Can we do better than repeatedly uploading code to the robot in order to get constant motion from the robot? If fact we can, and doing so won’t require knowledge of any new blocks. Much like the set digital pin and tone blocks we can use delay in tandem with the servo block to create repeated effects, such as what is shown below:
+![fig 10.3](fig-10_3.jpg){:class="image "}
 
-![fig 13.7](fig-13_7.png){:class="image "}
+Now click `UPLOAD`, type in your name, and click `SAVE`.  Your program will now upload code into your robot. 
 
-The code above will move one of the robot’s motors back and forth over the span of two seconds.
+![fig 10.4](fig-10_4.jpg){:class="image "}
 
-{% include youtube.html id="x2z0ARKediA" %}
+Congratulations, you just wrote your first program!  In the future, you will want to always click `SAVE`, and then `UPLOAD` when loading your program to your Barnabas-Bot.
 
 
 #### Vocabulary
-  * **Servo Block**: The servo block is the block used to control the servo motors on the robot. It requires two things, the pin the motor is located on and the angle the motor is meant to move to. The angle can accept any number but the physical limitations of the servo motor limit the effective range from 0 to 180.
+
+   * **Ardublock**: A GUI (graphic user interface… another place to code) that runs with Arduino. This means that closing Arduino also closes Ardublock so be careful! Ardublock is a block based coding platform, allowing us to sidestep the need to type.
+
+{% include badge.html type='best_practice' content='Uploading blank code may seem frivolous but it is important. By attempting to upload now any technical issues can be addressed. If the Arduino window shows any kind of error, you know there is a problem. The three most likely reasons a student would get an error message here are: They did not choose the correct port, they did not choose the correct board, or their robot is not connected to the computer.' %}
+
+### Step 3: Ardublock Basics (5 minutes) 
+
+Before we can begin coding we should familiarize ourselves with the basics of ardublock. How to move around, create and delete code.
+
+The first thing to mention is the loop do. The loop do is the most important block in Ardublock. Code is only able to be uploaded to your robot if there is one and only one loop do. The loop do will house any other blocks used in our code and will change its size to accommodate. As inferred by its name, the loop do will loop through your code. When it reaches the end of your code, it will start again at the beginning. Luckily for us, this integral part of our code will always be in a new Ardublock file by default. 
+
+Let’s say that the loop do is not there when opening Ardublock. We can add the loop do to the code, as well as any add any other block, by the following method. All of the colored tabs on the left side of the Ardublock window can be selected. After selecting one of them a menu will pop up with several similarly colored blocks. You can drag any of the blocks into the grey coding area (generally putting them inside of the loop do.
+
+In the case of the loop do you would navigate to the yellow tab labelled control, then drag and drop loop do into the gray area.
+
+![fig 10.5](fig-10_5.png){:class="image "}
+
+The last skill we need to learn is how to delete blocks of code. Say we have the case of multiple loop do’s, and we want to get rid of the extras. Just use your cursor to grab one of the unwanted blocks and drag it over to the tabs on the left side of the window. Then, just drop it and it should disappear.
+
+#### Vocabulary
+
+   * **Loop Do**: The most important block in Ardublock. It is important that one and only one loop do is in the code at a time, otherwise your code cannot be uploaded. The loop do will run whatever code is placed inside it repeatedly, starting again at the beginning whenever the end is reached.
+
+### Step 4: Our First Program, Programming The LED (20 minutes) 
+
+With that out of the way let’s begin coding by grabbing a Set Digital Pin block out of the Pins tab and place it in the loop do.
+
+![fig 10.7](fig-10_7.png){:class="image "}
+
+The `Set Digital Pin` block should snap into place when dropped on the loop do.
+
+![fig 10.8](fig-10_8.png){:class="image "}
+
+There are two smaller blocks attached to the `Set Digital Pin` block. The number 1 and the word `HIGH`. The number 1 refers to the pin on the robot that this block will attempt to control. Remember that we placed the LED circuit on pin 7, so that 1 needs to be changed to a 7. This can be done by clicking on the block, pressing 7, then pressing enter.
+
+The `HIGH` block is telling us that it will be turning the pin on (giving it power). By mousing over this block with your mouse cursor and clicking on the upside down triangle that appears on it a menu will appear. That menu has only two options `HIGH` and `LOW`. As you may have guessed LOW will turn the pin off.
+
+After changing the pin number to 7 have all the students press upload to arduino at the top of the Ardublock window. You will be prompted to save, go ahead and do so. Afterwards you will see a green progress bar in the Arduino window showing the code being uploaded. You should see the LED turn on. 
+
+Next you should ask the students to turn the LED off by changing the code. Let them figure out how to do so on their own (Switch the HIGH to LOW). In order to see the change the students will need to upload their code again. The Barnabas Noggin is only capable of holding one program at a time. This means that uploading the LED off code will permanently erase the LED on code from the robot. To turn the LED on again they would have to re-upload a set digital pin HIGH code to the robot.
+
+{% include youtube.html id="UfxJx9LQ9u0" %}
+{% include youtube.html id="JHJoiSG9jWw" %}
+
+LED on ![fig 10.9](pinHigh.png){:class="image "}  ![fig 10.10](pinLow.png){:class="image "} LED off
+
+#### Vocabulary
+
+   * **Programmable pin**: One of the pins on the Barnabas Noggin labelled 0-13 (it has more labelled A0-A5, but we are not using those in this class). These pins can be controlled by the code we create in Ardublock rather than just being innately on or off.
+   * **Set Digital Pin**: Located in the aqua colored pins tab, this is the block we use to turn the LED on and off. To properly use this block we need to pick a pin number (for us 7) and choose between HIGH or LOW (on or off). This block must be placed inside the loop do.
+
+
+### Step 5: Blinking The LED (20 minutes) 
+
+Now it’s time for the big challenge, blinking the LED. I generally start by asking the class for suggestions on how to do this. The answer I’m looking for at this point is that we should place another Set Digital Pin block into our loop do. By having two `Set Digital Pin` blocks, one `HIGH` and the other `LOW`, We should see both behaviors happen. Have the students do this and upload the code. What kind of behavior do they see?
+
+![fig 10.11](fig-10_11.png){:class="image "}
+
+They should see the light turn off momentarily before turning back on, and staying on there after. Don’t be fooled by the initial turning off of the LED, that is not do to our code working as intended. The Noggin will always stop whatever it is doing to accept new code. In this case turning the LED off just after our code is uploaded. Unfortunately this is not part of a blink. Because the loop do repeats we should see the LED blink over and over, which we do not with the code as written.
+
+The reason we can not see a repeated blink is due to the speed at which the Barnabas Noggin is processing commands. The Barnabas Noggin thinks fast enough to do hundreds of commands in a second, far to fast for our eyes to keep up with. The LED is blinking, but too fast for us to make out.
+
+There is a way to slow our code down deliberately. In the controls tab there are two blocks labelled Delay. One says `Delay milliseconds` (a _milli_ second is one *thousandth* of a second), and the other says `delay microseconds` (a _micro_ second is one *millionth* of a second). We will always use the Delay milliseconds block, as the Delay microseconds block yields the same problem as before; the LED will be blinking too fast for us to see. The question is where do we place the Delay millisecond block in our current code. There are two immediate options:  
+
+![fig 10.12](fig-10_12.png){:class="image "} ![fig 10.13](fig-10_13.png){:class="image "}
+
+You're probably wondering why there isn’t a third option for the delay block bing at the top of the code. It turns out that would be identical to the code on the left due to the code repeating. Unfortunately, these don’t work either. The one on the left seems to stay off, and the one on the right seems to stay on. In either case the delay block is only pausing after one of the actions, either turning off or turning on. We need to pause our code after each action, allowing both of them to happen for some observable amount of time, like below:
+
+![fig 10.14](fig-10_14.png){:class="image "}
+
+#### Vocabulary
+
+   * **Delay**: The delay block comes in two different flavors, delay milliseconds and delay microseconds. We only make use of the delay milliseconds block. The delay block will stop code from progressing forward until a certain amount of time has elapsed.
+
+{% include badge.html type='activity' content='Once your students have the LED blinking challenge them to change the numbers inside the delay block and identify how that changes the behavior of the LED. Challenge the students to find the smallest delay where they can still see the LED blink.' %}
