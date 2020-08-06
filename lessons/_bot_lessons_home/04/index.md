@@ -116,6 +116,14 @@ Use 4 x #2-5/16” screws to attach the noggin to the body.
 
 
 
+
+
+
+
+
+
+
+
 ### Attaching The Arms
 
 Now you will connect your arms to your robot’s body.![fig 4.11](fig-4_11.png){:class="image right"}  Take one #2-9/16” screw and put it through one of the arm’s holes.
