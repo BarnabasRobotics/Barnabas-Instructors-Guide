@@ -123,7 +123,8 @@ Now you will connect your arms to your robot’s body.![fig 4.11](fig-4_11.png){
 
 Notice that there will be a gap between the blue part of the motor and the arm.  
 
-Be careful not to over tighten.  Once the arm is snug, you’re good to go!{:style="overflow: hidden;"}
+Be careful not to over tighten.  Once the arm is snug, you’re good to go! 
+{:style="overflow: hidden;"}
 
 ![fig 4.13](fig-4_13.png){:class="image right"} Repeat for the other arm.
 {:style="overflow: hidden;"}
@@ -131,7 +132,7 @@ Be careful not to over tighten.  Once the arm is snug, you’re good to go!{:sty
 ### Attaching The Head
 Every robot needs a head! You will be fastening the head to the servo motor sticking out of the top of the robot.
 
-![fig 4.14](fig-4_14.png){:class="image right"}  Find the bottom of your head (i.e. the base) and align the hole to the top of the hole on the servo motor shaft head. 
+![fig 4.14](fig-4_14.png){:class="image right"}  Find the bottom of your head (i.e. the base) and align the hole to the top of the hole on the servo motor shaft head.
 {:style="overflow: hidden;"}
 
 ![fig 4.15](fig-4_15.png){:class="image right"} Use 1 x #2-5/16” screw to fasten the head base to your head servo motor.  You want it to be tight enough so that the base doesn’t wobble.
