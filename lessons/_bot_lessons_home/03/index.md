@@ -40,7 +40,14 @@ materials:
 
 ---
 
+### What You'll Need
+
+Before we get started, let's make sure that we have all the parts.
+
+![fig 3.0](fig-3_0.png){:class="image center"}
+
 ### Examining The Parts
+
 Take out your robot body parts (body, arms & head). Examine them and think about how each 3-D printed part was laying on the bed as it was printed. HINT: look at how the lines on the 3-D printed bots are oriented.
 
 Check out the 3-D model of your robot to make sure the components on the screen match what you have in your kit. This was the original 3-D printed file that was used to print your robot!
