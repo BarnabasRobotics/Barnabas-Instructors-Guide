@@ -118,20 +118,11 @@ In this step, you will now cover the backside of your robot’s body by installi
 
 
 
-
-
-
-
-![fig 4.10](fig-4_10.png){:class="image right"} 
-
-Use 4 x #2-5/16” screws to attach the noggin to the body.
-{:style="overflow: hidden;"}
-
-
-
 ### Attaching The Arms
 
-Now you will connect your arms to your robot’s body.![fig 4.11](fig-4_11.png){:class="image right"}  Take one #2-9/16” screw and put it through one of the arm’s holes.
+Now you will connect your arms to your robot’s body.
+
+![fig 4.11](fig-4_11.png){:class="image right"} Take one #2-9/16” screw and put it through one of the arm’s holes.
 {:style="overflow: hidden;"}
 
 ![fig 4.12](fig-4_12.png){:class="image right"} Using the allen wrench, attach the arm to either the left or right arm servo motor.  Make sure that the tip of the screw goes into the hole on the white tip of the servo motor.
