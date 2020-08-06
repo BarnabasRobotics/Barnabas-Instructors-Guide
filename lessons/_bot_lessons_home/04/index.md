@@ -113,7 +113,7 @@ In this step, you will now cover the backside of your robot’s body by installi
 
 
 
-![fig 4.9](fig-4_9.png){:class="image right"} Find the back of your robot. (Hint: It is the open side of the body that is furthest from the arm motors with 4 holes.) Align your Barnabas Noggin to your robot’s body. The screw holes on the four corners of the robot body and the Barnabas Noggin should line up.
+![fig 4.10](fig-4_10.png){:class="image right"} Use 4 x #2-5/16” screws to attach the noggin to the body.
 {:style="overflow: hidden;"}
 
 
