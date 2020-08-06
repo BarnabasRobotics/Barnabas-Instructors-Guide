@@ -64,7 +64,7 @@ reflection:
       - Name some similarities between robots and humans?  
       - Name some differences between robots and humans?
       - What are the 4 major parts of a robot?
-      - at type of engineering is related to each of those parts?
+      - What type of engineering is related to each of those parts?
       
 ---
 
