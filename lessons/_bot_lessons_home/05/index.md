@@ -52,6 +52,10 @@ Electricity in robots works in a very similar way. For electricity to travel thr
 
 If a circuit does not create a complete loop or if the loop is broken, then electricity cannot flow.  This is called an open circuit because there is an opening in the circuit.  An open circuit in a robot will power the robot off or make it inoperable. 
 
+
+
+
+
 <img src="fig-5_3.png" alt="fig-5_3" style="zoom:100%;" class="image center" />
 
 ### Designing Your Light Circuit
