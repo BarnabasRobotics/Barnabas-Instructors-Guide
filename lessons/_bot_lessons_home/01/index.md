@@ -72,7 +72,7 @@ reflection:
 
 A robot is a type of moving machine powered by electricity that can automatically perform one or more tasks based on a computer program.  We can learn about the essential parts of a robot by comparing it to the human body.
 
-<img src="fig-01_1.png" alt="fig-01_1" style="zoom:10%;" class="image left" />
+<img src="fig-01_1.png" alt="fig-01_1" style="zoom:10%;" class="image right" />
 
 
 
