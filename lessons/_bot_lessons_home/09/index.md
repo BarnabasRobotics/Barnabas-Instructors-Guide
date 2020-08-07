@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 8 &middot; Make Your Robot Move (Part 1)
+title: Lesson 9 &middot; Make Your Robot Move (Part 1)
 suggested_time: 60-75 minutes
 ---
 
