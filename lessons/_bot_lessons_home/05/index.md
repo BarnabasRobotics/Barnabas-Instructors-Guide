@@ -16,6 +16,8 @@ reflection:
 
 Before we get started, let’s make sure that we have all the parts.
 
+![fig-5_0](fig-5_0.png){:class="image center"}
+
 ### Overview
 
 Now that your robot is decorated and assembled, the next step is to give your robot a heart, or give it power. In this lesson, we’ll learn more about electrical engineering. We’ll be covering:
@@ -25,6 +27,8 @@ Now that your robot is decorated and assembled, the next step is to give your ro
 3. *How to change the amount of power that is used in a robot*
 
 ### Give Your Robot a Heart
+
+![fig 5.1](fig-5_1.png){:class="image right"}
 
 To give your robot a heart (or give it a power), take the USB cable included in your kit and connect it between the Barnabas Noggin (connected to the back of your robot) and your computer.  
 
