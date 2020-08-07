@@ -91,7 +91,9 @@ The terminal is a place where you can use the keyboard to type direct commands t
 
    ​								**curl -L -o barnabas.pkg go.barnabasrobotics.com/pkg**
 
-   Hint!  Make sure to type it exactly right. Upper-case letters, lower-case letters, spaces, no spaces, dots, slashes and dashes all matter!  When you’re done, press enter on your keyboard to execute the command.  If you get it wrong, no need to panic.  Your terminal will just respond with an error because it can’t understand the command.  Just type it again, double-check everything and press enter again.
+   | Hint!                                                        |
+   | ------------------------------------------------------------ |
+   | Make sure to type it exactly right. Upper-case letters, lower-case letters, spaces, no spaces, dots, slashes and dashes all matter!  When you’re done, press enter on your keyboard to execute the command.  If you get it wrong, no need to panic.  Your terminal will just respond with an error because it can’t understand the command.  Just type it again, double-check everything and press enter again. |
 
    The curl command downloads the barnabas.pkg file from the web address go.barnabasrobotics.com/pkg.  We will later run the barnabas.pkg file to install the IDE onto our Macbook. If you get it right, the file will begin to download.  This download confirmation comes out at the end.
 
@@ -101,7 +103,9 @@ The terminal is a place where you can use the keyboard to type direct commands t
 
    ​											**sudo installer -pkg barnabas.pkg -target /**
    
-   Hint!  Don’t forget the -target / at the end of the command!
+   |                         Hint!                         |
+   | :---------------------------------------------------: |
+   | Don’t forget the -target / at the end of the command! |
    
    If you get it right, a password prompt will come up.  Type in the password for your administratie profile here and press enter.  After you do that, the Macbook will begin installing your IDE.
 
@@ -109,15 +113,13 @@ The terminal is a place where you can use the keyboard to type direct commands t
 
 ​		If installation was successful, you’ll see the following confirmation from the terminal:
 
-​								installer: Package name is BarnabasArdublock
+​		installer: Package name is BarnabasArdublock
+​        installer: Upgrading at base path /
+​        installer: The upgrade was successful.
 
-​								installer: Upgrading at base path /
-
-​								installer: The upgrade was successful.
-
-| Troubleshooting Tip!                                         |
-| :----------------------------------------------------------- |
-| If you get the prompt below, it means that the current profile can’t install the banabas.pkg file.<img src="fig-6_15.png" alt="fig-6_15" style="zoom:90%;" class="image center" />To fix this, you’ll need to log out of your profile and log back into an administrative profile (this is likely a parent profile).  Once you’ve done that, start again on step 1. |
+|                     Troubleshooting Tip!                     |
+| :----------------------------------------------------------: |
+| If you get the prompt below, it means that the current profile can’t install the banabas.pkg file.<br /><img src="fig-6_15.png" alt="fig-6_15" style="zoom:90%;" class="image center" /><br />To fix this, you’ll need to log out of your profile and log back into an administrative profile (this is likely a parent profile).  Once you’ve done that, start again on step 1. |
 
 5. Now that our IDE is installed, we no longer need the barnabas.pkg file.  Let’s remove it from our computer.  To do this, use the rm command.  Remember to press enter to execute the command.
 
@@ -160,8 +162,11 @@ The terminal is a place where you can use the keyboard to type direct commands t
 
    ​									**wget go.barnabasrobotics.com/exe -o barnabas.exe**
 
+   
 
-   Hint!  Make sure to type it exactly right. Upper-case letters, lower-case letters, spaces, no spaces, dots, slashes and dashes all matter!  When you’re done, press enter on your keyboard to execute the command.  If you get it wrong, no need to panic.  Your terminal will just respond with an error because it can’t understand the command.  Just type it again, double-check everything and press enter again.
+|                            Hint!                             |
+| :----------------------------------------------------------: |
+| Make sure to type it exactly right. Upper-case letters, lower-case letters, spaces, no spaces, dots, slashes and dashes all matter!  When you’re done, press enter on your keyboard to execute the command.  If you get it wrong, no need to panic.  Your terminal will just respond with an error because it can’t understand the command.  Just type it again, double-check everything and press enter again. |
 
    The wget command downloads the barnabas.exe file from the web address go.barnabasrobotics.com/exe.  We will later run the barnabas.exe file to install the IDE onto our Windows PC. When done correctly, a download pop-up will show up in your terminal.  The download pop-up will go away once it finishes downloading.  It may take a few minutes, so be patient!  
 
@@ -171,8 +176,11 @@ The terminal is a place where you can use the keyboard to type direct commands t
 
    ​																		**.\barnabas.exe**
 
+   
 
-   Hint!  There is no space between . and \ or between \ and b!
+| Hint!                                                 |
+| ----------------------------------------------------- |
+| There is no space between . and \ or between \ and b! |
 
 
    When done correctly, a screen will pop up asking: “Do you want to allow this app from an unknown publisher to make changes to your device?”.  
