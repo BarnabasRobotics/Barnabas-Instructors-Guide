@@ -64,7 +64,7 @@ Now that your robot has power and we understand how circuits work, let’s build
 
 
 
-<img src="fig-5_5.png" alt="fig-5_5" style="zoom:50%;" class="image center" />
+<img src="fig-5_5.png" alt="fig-5_5" style="zoom:20%;" class="image center" />
 
 In the schematic above, you’ll notice a heart with “3V3” and “GND” on it.  The heart represents the power source for your robot’s light.  The other triangle symbol with a line underneath in the schematic represents your light.  In this project, we'll be using a special type of light called an LED, which stands for Light Emitting Diode. LEDs are great because they are inexpensive and don’t require much energy to turn on. You probably even have LEDs in your home since they help us save energy (and save money on our electricity bills). 
 
@@ -126,7 +126,7 @@ Instructions:
 
 See the diagram below to help.  The white lines show a connections between two holes that are already made on the Barnabas Noggin. This is like a tunnel underground that connects these two holes together to create a complete loop or closed circuit once your LED and resistor are connected.  Can you see the closed circuit that electricity travels through starting from 3V3 to GND?
 
-<img src="fig-5_11.png" alt="fig-5_11" style="zoom:30%;" class="image center" /><img src="fig-5_12.png" alt="fig-5_12" style="zoom:30%;" class="image center" />
+<img src="fig-5_11.png" alt="fig-5_11" style="zoom:30%;" class="image left" /><img src="fig-5_12.png" alt="fig-5_12" style="zoom:30%;" class="image left" />
 
 
 
