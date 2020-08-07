@@ -116,7 +116,7 @@ See below for a new schematic that connects to 3.3V but adds a resistor.  The re
 
 ### Building a New Light Circuit with a Resistor
 
-<img src="fig-5_10.png" alt="fig-5_10" style="zoom:50%;" class="image center" />
+<img src="fig-5_10.png" alt="fig-5_10" style="zoom:30%;" class="image right" />
 
 Find your resistor included in your kit.  It resembles a small bead on a thin metal wire.  Follow the diagram and the instructions below to build your new light circuit with a resistor.   
 
@@ -130,21 +130,9 @@ Instructions:
 
 See the diagram below to help.  The white lines show a connections between two holes that are already made on the Barnabas Noggin. This is like a tunnel underground that connects these two holes together to create a complete loop or closed circuit once your LED and resistor are connected.  Can you see the closed circuit that electricity travels through starting from 3V3 to GND?
 
-<img src="fig-5_11.png" alt="fig-5_11" style="zoom:30%;" class="image center" /><img src="fig-5_12.png" alt="fig-5_12" style="zoom:30%;" class="image left" />   
+<img src="fig-5_11.png" alt="fig-5_11" style="zoom:30%;" class="image center" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="fig-5_12.png" alt="fig-5_12" style="zoom:30%;" class="image center" />
 
 The path of electricity is shown in yellow.
 
