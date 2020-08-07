@@ -16,7 +16,7 @@ reflection:
 
 Before we get started, let’s make sure that we have all the parts.
 
-![fig-5_0](fig-5_0.png){:class="image center"}
+<img src="fig-5_0.png" alt="fig-5_0" style="zoom:70%;" class="image center" />
 
 ### Overview
 
@@ -28,7 +28,7 @@ Now that your robot is decorated and assembled, the next step is to give your ro
 
 ### Give Your Robot a Heart
 
-![fig-5_1](fig-5_1.png){:class="image left"}
+<img src="fig-5_1.png" alt="fig-5_1" style="zoom:70%;" class="image center" />
 
 To give your robot a heart (or give it a power), take the USB cable included in your kit and connect it between the Barnabas Noggin (connected to the back of your robot) and your computer. 
 
@@ -44,7 +44,7 @@ Just as humans cannot live without a heart pumping blood to the brain and body p
 
 #### Electricity Needs a Complete Loop to Travel
 
-<img src="fig-5_2.png" alt="fig-5_2" style="zoom:25%;" class="image left" />
+<img src="fig-5_2.png" alt="fig-5_2" style="zoom:10%;" class="image left" />
 
 In our bodies, blood pumps out of the heart, into our body parts, and then loops back into the heart. This series of loops for blood to travel is called the human circulation system. The loops in our human body must be complete and unbroken. If there is a broken loop, then blood can’t reach the rest of our organs, and we wouldn’t be able to live.  
 
@@ -58,13 +58,13 @@ If a circuit does not create a complete loop or if the loop is broken, then elec
 
 Now that your robot has power and we understand how circuits work, let’s build a light circuit so that your robot can light up! The diagram below is a schematic (pronounced “ske-mad-dic”) for your light circuit.  A schematic is a diagram showing the plan for building a circuit.
 
-<img align="center" src="fig-5_4.png" width="300">
+<img src="fig-5_4.png" alt="fig-5_4" style="zoom:100%;" class="image center" />
 
 #### LEDs
 
 
 
-<img src="fig-5_5.png" alt="fig-5_5" style="zoom:25%;" class="image left" />
+<img src="fig-5_5.png" alt="fig-5_5" style="zoom:10%;" class="image left" />
 
 In the schematic above, you’ll notice a heart with “3V3” and “GND” on it.  The heart represents the power source for your robot’s light.  The other triangle symbol with a line underneath in the schematic represents your light.  In this project, we'll be using a special type of light called an LED, which stands for Light Emitting Diode. LEDs are great because they are inexpensive and don’t require much energy to turn on. You probably even have LEDs in your home since they help us save energy (and save money on our electricity bills). 
 
@@ -76,7 +76,7 @@ One thing to note about LEDs is that they only allow electricity to flow one way
 
 Notice that the schematic above is a closed circuit in our schematic.  As a reminder, a closed circuit is an unbroken loop for electricity to travel through.  When built correctly, the electricity in your light circuit will flow in a loop from 3V3 all the way around to GND.  See the green path below that shows how electricity flows through your light circuit.  See how it flows through the positive (+) end of the LED to the negative (-) end.
 
-<img align="center" src="fig-5_6.png" width="300">
+<img src="fig-5_6.png" alt="fig-5_6" style="zoom:100%;" class="image center" />
 
 ### Building Your Light Circuit
 
@@ -86,9 +86,11 @@ First, examine the LED included in your kit. Notice how the LED has 2 legs and h
 
 Follow the diagram below and carefully insert the LED into your Barnabas Noggin. Make sure the positive (+) end of the LED is inserted into the hole marked “3V3” on the Barnabas Noggin.  The rectangular holes along the top and bottom of the Barnabas Noggin are called “pins,” which will be important to remember when we start coding in the next lesson. Make sure the negative (-) end of the LED is inserted into the “GND” pin in the Barnabas Noggin.
 
-<img align="left" src="fig-5_7.png" width="300">
+<img src="fig-5_7.png" alt="fig-5_7" style="zoom:50%;" class="image center" />
 
-<img align="left" src="fig-5_8.png" width="300">
+<img src="fig-5_8.png" alt="fig-5_8" style="zoom:50%;" class="image center" />
+
+
 
 Voila!  Your light should turn on!  You did it! You just built your first circuit.  
 
@@ -106,11 +108,11 @@ The way you can reduce power through the LED is by adding a resistor to your lig
 
 See below for a new schematic that connects to 3.3V but adds a resistor.  The resistor is represented by the zig zag line at the top of the schematic.
 
-<img align="center" src="fig-5_9.png" width="300">
+<img src="fig-5_9.png" alt="fig-5_9" style="zoom:100%;" class="image center" />
 
 ### Building a New Light Circuit with a Resistor
 
-<img align="right" src="fig-5_10.png" width="200">
+<img src="fig-5_10.png" alt="fig-5_10" style="zoom:50%;" class="image center" />
 
 Find your resistor included in your kit.  It resembles a small bead on a thin metal wire.  Follow the diagram and the instructions below to build your new light circuit with a resistor.   
 
@@ -124,26 +126,14 @@ Instructions:
 
 See the diagram below to help.  The white lines show a connections between two holes that are already made on the Barnabas Noggin. This is like a tunnel underground that connects these two holes together to create a complete loop or closed circuit once your LED and resistor are connected.  Can you see the closed circuit that electricity travels through starting from 3V3 to GND?
 
+<img src="fig-5_11.png" alt="fig-5_11" style="zoom:50%;" class="image center" />
+
+<img src="fig-5_12.png" alt="fig-5_12" style="zoom:50%;" class="image center" />
 
 
- <img align="left" src="fig-5_11.png" width="300">
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img align="left" src="fig-5_12.png" width="300">
 
 The path of electricity is shown in yellow.
 
-<img align="center" src="fig-5_13.png" width="300">
+<img src="fig-5_13.png" alt="fig-5_13" style="zoom:50%;" class="image center" />
 
 Once you have your new light circuit wired correctly, the light should turn on.  However, it’ll be just a little dimmer than before.  This is because the resistor is helping to reduce the power.
