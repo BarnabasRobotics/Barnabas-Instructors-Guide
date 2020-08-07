@@ -22,15 +22,7 @@
 			height: auto ;
 		}
 
-		///&.left,
-		&.left {
-			max-width: 40%;
-
-			img {
-				width: 100%;
-			}
-
-		}
+		&.left,
 		&.right {
 			max-width: 40%;
 
@@ -41,8 +33,7 @@
 
 		&.left {
 			float: left;
-			///padding: 0 1.5em 1em 0;
-			padding: 0 1.5em 1em 0;
+                        padding: 0 1.5em 1em 0;
 			top: 0.25em;
 		}
 
