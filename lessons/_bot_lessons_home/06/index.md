@@ -201,6 +201,3 @@ The terminal is a place where you can use the keyboard to type direct commands t
 6. You’re done!  Double-click on the BarnabasArdublock icon to check out your IDE!
 
    <img src="fig-6_13.png" alt="fig-6_13" style="zoom:80%;" class="image right" />
-
-
-
