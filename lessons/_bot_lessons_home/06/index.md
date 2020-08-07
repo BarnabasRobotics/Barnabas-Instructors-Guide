@@ -52,7 +52,7 @@ Your Chromebook has special secret features that we need to enable so that it wi
 
 3. Select “Enabled” on the “Experimental Web Platform features”
 
-   <img src="fig-6_2.png" alt="fig-6_2" style="zoom:90%;" class="image center" />
+   <img src="fig-6_2.png" alt="fig-6_2" style="zoom:40%;" class="image center" />
 
 4. Click “Relaunch”
 
@@ -100,10 +100,9 @@ The terminal is a place where you can use the keyboard to type direct commands t
 4. Next, let’s use the sudo installer command to run barnabas.pkg, which will install the IDE.  Remember to press enter to execute the command.
 
    ​											**sudo installer -pkg barnabas.pkg -target /**
-
-
+   
    Hint!  Don’t forget the -target / at the end of the command!
-
+   
    If you get it right, a password prompt will come up.  Type in the password for your administratie profile here and press enter.  After you do that, the Macbook will begin installing your IDE.
 
    <img src="fig-6_14.png" alt="fig-6_14" style="zoom:90%;" class="image center" />
@@ -116,18 +115,9 @@ The terminal is a place where you can use the keyboard to type direct commands t
 
 ​								installer: The upgrade was successful.
 
-
-
-​		Troubleshooting Tip!
-
-
-​		If you get the prompt below, it means that the current profile can’t install the banabas.pkg file.
-
-<img src="fig-6_15.png" alt="fig-6_15" style="zoom:90%;" class="image center" />
-
-
-
-​		To fix this, you’ll need to log out of your profile and log back into an administrative profile (this is likely 		a parent profile).  Once you’ve done that, start again on step 1.
+| Troubleshooting Tip!                                         |
+| :----------------------------------------------------------- |
+| If you get the prompt below, it means that the current profile can’t install the banabas.pkg file.<img src="fig-6_15.png" alt="fig-6_15" style="zoom:90%;" class="image center" />To fix this, you’ll need to log out of your profile and log back into an administrative profile (this is likely a parent profile).  Once you’ve done that, start again on step 1. |
 
 5. Now that our IDE is installed, we no longer need the barnabas.pkg file.  Let’s remove it from our computer.  To do this, use the rm command.  Remember to press enter to execute the command.
 
@@ -141,7 +131,7 @@ The terminal is a place where you can use the keyboard to type direct commands t
 
 ### Windows PC IDE Setup
 
-<img src="fig-6_8.png" alt="fig-6_8" style="zoom:15%;" class="image right" />
+<img src="fig-6_8.png" alt="fig-6_8" style="zoom:15%;" class="image center" />
 
 For Windows PCs, your IDE is called Ardublock.  We’re going to need to download something called an executable file (.exe) from the internet and then run the .exe so that it can install the IDE onto your Windows PC.  
 
@@ -164,7 +154,7 @@ The terminal is a place where you can use the keyboard to type direct commands t
 
 2. We will use a terminal called PowerShell on your computer.  To access it, type “powershell” in your search bar and click on the “Windows PowerShell” App to launch it.
 
-   <img src="fig-6_16.png" alt="fig-6_16" style="zoom:40%;" class="image right" />
+   <img src="fig-6_16.png" alt="fig-6_16" style="zoom:40%;" class="image center" />
 
 3. After PowerShell opens, we’re going to use the wget command to download the barnabas.exe file.  To do this, type in the following command.  
 
@@ -175,7 +165,7 @@ The terminal is a place where you can use the keyboard to type direct commands t
 
    The wget command downloads the barnabas.exe file from the web address go.barnabasrobotics.com/exe.  We will later run the barnabas.exe file to install the IDE onto our Windows PC. When done correctly, a download pop-up will show up in your terminal.  The download pop-up will go away once it finishes downloading.  It may take a few minutes, so be patient!  
 
-   <img src="fig-6_10.png" alt="fig-6_10" style="zoom:80%;" class="image right" />
+   <img src="fig-6_10.png" alt="fig-6_10" style="zoom:80%;" class="image center" />
 
 4. Next, let’s run barnabas.exe, which will help us install the IDE.  To do this, we need to use the .\ command.  Remember to press enter on your keyboard to execute the command.
 
@@ -189,11 +179,11 @@ The terminal is a place where you can use the keyboard to type direct commands t
 
    Click **Yes**.
 
-   <img src="fig-6_11.png" alt="fig-6_11" style="zoom:60%;" class="image right" />
+   <img src="fig-6_11.png" alt="fig-6_11" style="zoom:60%;" class="image center" />
 
    When installation finishes, you’ll see the BarnabasArdublock icon appear on your computer desktop.
 
-<img src="fig-6_13.png" alt="fig-6_13" style="zoom:80%;" class="image right" />
+<img src="fig-6_13.png" alt="fig-6_13" style="zoom:80%;" class="image center" />
 
 5. Now that our IDE is installed, we no longer need the barnabas.exe file.  Let’s delete it from our computer.  To do this, use the del command.  Remember to press enter to execute the command.
 
@@ -201,4 +191,4 @@ The terminal is a place where you can use the keyboard to type direct commands t
 
 6. You’re done!  Double-click on the BarnabasArdublock icon to check out your IDE!
 
-   <img src="fig-6_13.png" alt="fig-6_13" style="zoom:80%;" class="image right" />
+   <img src="fig-6_13.png" alt="fig-6_13" style="zoom:80%;" class="image center" />
