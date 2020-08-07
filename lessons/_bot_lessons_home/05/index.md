@@ -16,7 +16,7 @@ reflection:
 
 Before we get started, let’s make sure that we have all the parts.
 
-<img src="fig-5_0.png" alt="fig-5_0" style="zoom:70%;" class="image center" />
+<img src="fig-5_0.png" alt="fig-5_0" style="zoom:90%;" class="image center" />
 
 ### Overview
 
@@ -28,7 +28,7 @@ Now that your robot is decorated and assembled, the next step is to give your ro
 
 ### Give Your Robot a Heart
 
-<img src="fig-5_1.png" alt="fig-5_1" style="zoom:70%;" class="image center" />
+<img src="fig-5_1.png" alt="fig-5_1" style="zoom:40%;" class="image center" />
 
 To give your robot a heart (or give it a power), take the USB cable included in your kit and connect it between the Barnabas Noggin (connected to the back of your robot) and your computer. 
 
@@ -44,7 +44,7 @@ Just as humans cannot live without a heart pumping blood to the brain and body p
 
 #### Electricity Needs a Complete Loop to Travel
 
-<img src="fig-5_2.png" alt="fig-5_2" style="zoom:10%;" class="image left" />
+<img src="fig-5_2.png" alt="fig-5_2" style="zoom:20%;" class="image left" />
 
 In our bodies, blood pumps out of the heart, into our body parts, and then loops back into the heart. This series of loops for blood to travel is called the human circulation system. The loops in our human body must be complete and unbroken. If there is a broken loop, then blood can’t reach the rest of our organs, and we wouldn’t be able to live.  
 
@@ -52,7 +52,7 @@ Electricity in robots works in a very similar way. For electricity to travel thr
 
 If a circuit does not create a complete loop or if the loop is broken, then electricity cannot flow.  This is called an open circuit because there is an opening in the circuit.  An open circuit in a robot will power the robot off or make it inoperable. 
 
-<img align="center" src="fig-5_3.png" width="500">
+<img src="fig-5_3.png" alt="fig-5_3" style="zoom:100%;" class="image center" />
 
 ### Designing Your Light Circuit
 
@@ -64,7 +64,7 @@ Now that your robot has power and we understand how circuits work, let’s build
 
 
 
-<img src="fig-5_5.png" alt="fig-5_5" style="zoom:10%;" class="image left" />
+<img src="fig-5_5.png" alt="fig-5_5" style="zoom:50%;" class="image center" />
 
 In the schematic above, you’ll notice a heart with “3V3” and “GND” on it.  The heart represents the power source for your robot’s light.  The other triangle symbol with a line underneath in the schematic represents your light.  In this project, we'll be using a special type of light called an LED, which stands for Light Emitting Diode. LEDs are great because they are inexpensive and don’t require much energy to turn on. You probably even have LEDs in your home since they help us save energy (and save money on our electricity bills). 
 
@@ -86,9 +86,9 @@ First, examine the LED included in your kit. Notice how the LED has 2 legs and h
 
 Follow the diagram below and carefully insert the LED into your Barnabas Noggin. Make sure the positive (+) end of the LED is inserted into the hole marked “3V3” on the Barnabas Noggin.  The rectangular holes along the top and bottom of the Barnabas Noggin are called “pins,” which will be important to remember when we start coding in the next lesson. Make sure the negative (-) end of the LED is inserted into the “GND” pin in the Barnabas Noggin.
 
-<img src="fig-5_7.png" alt="fig-5_7" style="zoom:50%;" class="image center" />
+<img src="fig-5_7.png" alt="fig-5_7" style="zoom:30%;" class="image center" />
 
-<img src="fig-5_8.png" alt="fig-5_8" style="zoom:50%;" class="image center" />
+<img src="fig-5_8.png" alt="fig-5_8" style="zoom:30%;" class="image center" />
 
 
 
@@ -126,14 +126,12 @@ Instructions:
 
 See the diagram below to help.  The white lines show a connections between two holes that are already made on the Barnabas Noggin. This is like a tunnel underground that connects these two holes together to create a complete loop or closed circuit once your LED and resistor are connected.  Can you see the closed circuit that electricity travels through starting from 3V3 to GND?
 
-<img src="fig-5_11.png" alt="fig-5_11" style="zoom:50%;" class="image center" />
-
-<img src="fig-5_12.png" alt="fig-5_12" style="zoom:50%;" class="image center" />
+<img src="fig-5_11.png" alt="fig-5_11" style="zoom:30%;" class="image center" /><img src="fig-5_12.png" alt="fig-5_12" style="zoom:30%;" class="image center" />
 
 
 
 The path of electricity is shown in yellow.
 
-<img src="fig-5_13.png" alt="fig-5_13" style="zoom:50%;" class="image center" />
+<img src="fig-5_13.png" alt="fig-5_13" style="zoom:30%;" class="image center" />
 
 Once you have your new light circuit wired correctly, the light should turn on.  However, it’ll be just a little dimmer than before.  This is because the resistor is helping to reduce the power.
