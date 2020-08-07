@@ -26,11 +26,11 @@ Now that your robot is decorated and assembled, the next step is to give your ro
 2. *How to turn on a light using the robot’s heart*
 3. *How to change the amount of power that is used in a robot*
 
-![fig-5_1](fig-5_1.png){:class="image right"}
-
 ### Give Your Robot a Heart
 
-To give your robot a heart (or give it a power), take the USB cable included in your kit and connect it between the Barnabas Noggin (connected to the back of your robot) and your computer.  git co
+![fig-5_1](fig-5_1.png){:class="image left"}
+
+To give your robot a heart (or give it a power), take the USB cable included in your kit and connect it between the Barnabas Noggin (connected to the back of your robot) and your computer. 
 
 A little red light on your Barnabas Noggin should turn on.  This means that your robot now has a heart!  Your computer is acting as the power source that is giving your robot power.  If the red light did not turn on, check to make sure that your computer is turned on.
 
@@ -44,7 +44,7 @@ Just as humans cannot live without a heart pumping blood to the brain and body p
 
 #### Electricity Needs a Complete Loop to Travel
 
-<img align="right" src="fig-5_2.png" width="400">
+<img src="fig-5_2.png" alt="fig-5_2" style="zoom:25%;" class="image left" />
 
 In our bodies, blood pumps out of the heart, into our body parts, and then loops back into the heart. This series of loops for blood to travel is called the human circulation system. The loops in our human body must be complete and unbroken. If there is a broken loop, then blood can’t reach the rest of our organs, and we wouldn’t be able to live.  
 
@@ -62,7 +62,9 @@ Now that your robot has power and we understand how circuits work, let’s build
 
 #### LEDs
 
-<img align="right" src="fig-5_5.png" width="200">
+
+
+<img src="fig-5_5.png" alt="fig-5_5" style="zoom:25%;" class="image left" />
 
 In the schematic above, you’ll notice a heart with “3V3” and “GND” on it.  The heart represents the power source for your robot’s light.  The other triangle symbol with a line underneath in the schematic represents your light.  In this project, we'll be using a special type of light called an LED, which stands for Light Emitting Diode. LEDs are great because they are inexpensive and don’t require much energy to turn on. You probably even have LEDs in your home since they help us save energy (and save money on our electricity bills). 
 
