@@ -28,7 +28,7 @@ Now that your robot is decorated and assembled, the next step is to give your ro
 
 ### Give Your Robot a Heart
 
-<img align="right" src="fig-5_1.png" width="400">
+![fig-5_1](fig-5_1.png){:class="image right"}
 
 To give your robot a heart (or give it a power), take the USB cable included in your kit and connect it between the Barnabas Noggin (connected to the back of your robot) and your computer.  git co
 
