@@ -7,6 +7,8 @@
         {% if page.url != "/" %}
         <li><a href="{{ site.baseurl }}/"><i class="icon fa-home"></i> Home</a></li>
         {% endif %}
+       
+        <!---
         <li>
             <span class="opener"><i class="icon fa-android"></i> Bot Lessons (Classroom Version) </span>
             <ul>
@@ -15,6 +17,8 @@
                     {% endfor %}
             </ul>
         </li>
+        
+        
         {% assign ifLesson = '' %}
         {% if page.url contains "lessons" %}
         {% assign ifLesson = 'lessons/' %}
@@ -23,6 +27,7 @@
         {% if page.collection == "bot_lessons" %}
         {% include sidebar/lessonsegment.html %}
         {% endif %}
+        --->
         
         <li>
             <span class="opener"><i class="icon fa-android"></i> Bot Lessons (Home Version) </span>
