@@ -47,7 +47,7 @@ Your Chromebook has special secret features that we need to enable so that it wi
 
 ##### 2. Copy and paste this text into your address bar.  
 
-<span style="background-color:blue; color:white">**chrome://flags/#enable-experimental-web-platform-features**</span>
+<span style="color:red">**chrome://flags/#enable-experimental-web-platform-features**</span>
 
 ##### 3. Select “Enabled” on the “Experimental Web Platform features”
 
