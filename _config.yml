@@ -35,8 +35,8 @@ kramdown:
     math_engine: katex
 
 collections:
-#  bot_lessons:
-#    output: true
+  bot_lessons:
+    output: true
   bot_lessons_home:
     output: true
   racer_lessons:
