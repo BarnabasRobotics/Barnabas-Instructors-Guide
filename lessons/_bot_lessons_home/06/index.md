@@ -47,7 +47,7 @@ Your Chromebook has special secret features that we need to enable so that it wi
 
 #### 2. Copy and paste this text into your address bar.  
 
-<p style="text-align:right"><cmd>chrome://flags/#enable-experimental-web-platform-features 3</cmd></p>
+<p style="text-align:center"><cmd>chrome://flags/#enable-experimental-web-platform-features</cmd></p>
 
 #### 3. Select “Enabled” on the “Experimental Web Platform features”
 
@@ -57,7 +57,7 @@ Your Chromebook has special secret features that we need to enable so that it wi
 
 Your Chromebook is now ready.  That was easy, right?  Type the link below (or copy and paste) into your address bar to check out your IDE!
 
-<cmd style="text-align:center;">https://code.barnabasrobotics.com/webserial/</cmd>
+<p style="text-align:center"><cmd>https://code.barnabasrobotics.com/webserial/</cmd></p>
 
 
 
@@ -96,7 +96,7 @@ Press **Command (or Cmd) ⌘ + space** on your keyboard at the same time to open
 
 After the Terminal opens, we’re going to use the **curl** command to download the **barnabas.pkg** file.  In the terminal, type the following command.  
 
-<cmd style="text-align:center;">curl -L -o barnabas.pkg go.barnabasrobotics.com/pkg</cmd>
+<p style="text-align:center"><cmd>curl -L -o barnabas.pkg go.barnabasrobotics.com/pkg</cmd></p>
 
 
 
