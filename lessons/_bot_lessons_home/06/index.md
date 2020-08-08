@@ -43,17 +43,17 @@ Before starting:
 
 Your Chromebook has special secret features that we need to enable so that it will be able to communicate with our Barnabas Noggin.  We’ll go through how to enable this cool feature.
 
-##### 1. Open your Google Chrome browser
+#### 1. Open your Google Chrome browser
 
-##### 2. Copy and paste this text into your address bar.  
+#### 2. Copy and paste this text into your address bar.  
 
 <cmd>chrome://flags/#enable-experimental-web-platform-features</cmd>
 
-##### 3. Select “Enabled” on the “Experimental Web Platform features”
+#### 3. Select “Enabled” on the “Experimental Web Platform features”
 
 <img src="fig-6_2.png" alt="fig-6_2" style="zoom:40%;" class="image center" />
 
-##### 5. Click “Relaunch”
+#### 5. Click “Relaunch”
 
 Your Chromebook is now ready.  That was easy, right?  Type the link below (or copy and paste) into your address bar to check out your IDE!
 
@@ -182,8 +182,6 @@ The **wget** command downloads the barnabas.exe file from the web address **go.b
    <img src="fig-6_10.png" alt="fig-6_10" style="zoom:80%;" class="image center" />
 
 #### 4. Run The Installer
-
-
 
 Next, let’s run barnabas.exe, which will help us install the IDE.  To do this, we need to use the **.\** command.  Remember to press enter on your keyboard to execute the command.
 
