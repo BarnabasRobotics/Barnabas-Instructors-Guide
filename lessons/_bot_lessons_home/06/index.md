@@ -47,7 +47,9 @@ Your Chromebook has special secret features that we need to enable so that it wi
 
 #### 2. Copy and paste this text into your address bar.  
 
-<cmd>chrome://flags/#enable-experimental-web-platform-features</cmd>
+<cmd style="text-align:center;">chrome://flags/#enable-experimental-web-platform-features</cmd>
+
+
 
 #### 3. Select “Enabled” on the “Experimental Web Platform features”
 
@@ -57,7 +59,9 @@ Your Chromebook has special secret features that we need to enable so that it wi
 
 Your Chromebook is now ready.  That was easy, right?  Type the link below (or copy and paste) into your address bar to check out your IDE!
 
-<p style="text-align: center;"><span style="background-color: #0000ff; color: #ffffff;"><strong><span class="md-link md-pair-s" spellcheck="false"><a style="background-color: #0000ff; color: #ffffff;" href="https://code.barnabasrobotics.com/webserial/">https://code.barnabasrobotics.com/webserial/</a></span></strong></span></p>
+<cmd style="text-align:center;">https://code.barnabasrobotics.com/webserial/</cmd>
+
+
 
 ### Macbook IDE Setup
 
@@ -94,7 +98,9 @@ Press **Command (or Cmd) ⌘ + space** on your keyboard at the same time to open
 
 After the Terminal opens, we’re going to use the **curl** command to download the **barnabas.pkg** file.  In the terminal, type the following command.  
 
-<cmd>curl -L -o barnabas.pkg go.barnabasrobotics.com/pkg</cmd>
+<cmd style="text-align:center;">curl -L -o barnabas.pkg go.barnabasrobotics.com/pkg</cmd>
+
+
 
 {% include badge.html type='troubleshoot' content='Make sure to type it exactly right. Upper-case letters, lower-case letters, spaces, no spaces, dots, slashes and dashes all matter!  When you’re done, press enter on your keyboard to execute the command.  If you get it wrong, no need to panic.  Your terminal will just respond with an error because it can’t understand the command.  Just type it again, double-check everything and press enter again.' %}
 
@@ -106,7 +112,7 @@ The **curl** command downloads the **barnabas.pkg** file from the web address **
 
 Next, let’s use the **sudo installer** command to run **barnabas.pkg**, which will install the IDE.  Remember to press enter to execute the command
 
-<cmd>sudo installer -pkg barnabas.pkg -target /</cmd>
+<cmd style="text-align:center;">sudo installer -pkg barnabas.pkg -target /</cmd>
 
 
 
@@ -118,9 +124,11 @@ If you get it right, a password prompt will come up.  Type in the password for y
 
 If installation was successful, you’ll see the following confirmation from the terminal:
 
-*installer: Package name is BarnabasArdublock*
-*installer: Upgrading at base path /*
-*installer: The upgrade was successful.*
+installer: Package name is BarnabasArdublock
+
+installer: Upgrading at base path /
+
+installer: The upgrade was successful.
 
 {% include badge.html type='troubleshoot' content='If you get the prompt below, it means that the current profile can’t install the banabas.pkg file.<img src="fig-6_15.png" alt="fig-6_15" style="zoom:90%;" class="image center"  /> To fix this, you’ll need to log out of your profile and log back into an administrative profile (this is likely a parent profile).  Once you’ve done that, start again on step 1.' %}
 
@@ -128,7 +136,9 @@ If installation was successful, you’ll see the following confirmation from the
 
 Now that our IDE is installed, we no longer need the **barnabas.pkg file**.  Let’s remove it from our computer.  To do this, use the **rm** command.  Remember to press enter to execute the command.
 
-<cmd>rm barnabas.pkg</cmd>
+<cmd style="text-align:center;">rm barnabas.pkg</cmd>
+
+
 
 #### 6. Start The IDE
 
@@ -173,7 +183,9 @@ We will use a terminal called **PowerShell** on your computer.  To access it, ty
 
 After PowerShell opens, we’re going to use the **wget** command to download the barnabas.exe file.  To do this, type in the following command.  
 
-<cmd>wget go.barnabasrobotics.com/exe -o barnabas.exe</cmd>
+<cmd style="text-align:center;">wget go.barnabasrobotics.com/exe -o barnabas.exe</cmd>
+
+
 
 {% include badge.html type='troubleshoot' content='Make sure to type it exactly right. Upper-case letters, lower-case letters, spaces, no spaces, dots, slashes and dashes all matter!  When you’re done, press enter on your keyboard to execute the command.  If you get it wrong, no need to panic.  Your terminal will just respond with an error because it can’t understand the command.  Just type it again, double-check everything and press enter again.' %}
 
@@ -185,7 +197,9 @@ The **wget** command downloads the barnabas.exe file from the web address **go.b
 
 Next, let’s run barnabas.exe, which will help us install the IDE.  To do this, we need to use the **.\** command.  Remember to press enter on your keyboard to execute the command.
 
-<cmd>.\barnabas.exe</cmd>
+<cmd style="text-align:center;">.\barnabas.exe</cmd>
+
+
 
 {% include badge.html type='troubleshoot' content='There is no space between . and \ or between \ and b!' %}
 
@@ -205,7 +219,9 @@ When installation finishes, you’ll see the **BarnabasArdublock** icon appear o
 
 Now that our IDE is installed, we no longer need the **barnabas.exe** file.  Let’s delete it from our computer.  To do this, use the **del** command.  Remember to press enter to execute the command.
 
-<cmd>del barnabas.exe</cmd>
+<cmd style="text-align:center;">del barnabas.exe</cmd>
+
+
 
 #### 6. Start The IDE
 
