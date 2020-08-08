@@ -50,9 +50,12 @@
 		font-weight: _font(weight-bold);
 	}
 
+	/// command line text styling 
 	cmd {
 		color: white;
 		background-color: blue;
+		font-weight: _font(weight-bold);
+		text-align: center;
 	}
 
 	em, i {
