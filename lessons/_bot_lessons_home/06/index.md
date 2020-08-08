@@ -57,7 +57,7 @@ Your Chromebook has special secret features that we need to enable so that it wi
 
 Your Chromebook is now ready.  That was easy, right?  Type the link below (or copy and paste) into your address bar to check out your IDE!
 
-<p style="text-align:center"><cmd>https://code.barnabasrobotics.com/webserial/</cmd></p>
+<p style="text-align:center"><cmd><a href=https://code.barnabasrobotics.com/webserial/></a></cmd></p>
 
 
 
@@ -110,8 +110,8 @@ The **curl** command downloads the **barnabas.pkg** file from the web address **
 
 Next, let’s use the **sudo installer** command to run **barnabas.pkg**, which will install the IDE.  Remember to press enter to execute the command
 
-<cmd style="text-align:center;">sudo installer -pkg barnabas.pkg -target /</cmd>
 
+<p style="text-align:center"><cmd>sudo installer -pkg barnabas.pkg -target /</cmd></p>
 
 
 {% include badge.html type='troubleshoot' content='Don’t forget the -target / at the end of the command!' %}
@@ -134,7 +134,7 @@ installer: The upgrade was successful.
 
 Now that our IDE is installed, we no longer need the **barnabas.pkg file**.  Let’s remove it from our computer.  To do this, use the **rm** command.  Remember to press enter to execute the command.
 
-<cmd style="text-align:center;">rm barnabas.pkg</cmd>
+<p style="text-align:center"><cmd>rm barnabas.pkg</cmd></p>
 
 
 
@@ -181,8 +181,7 @@ We will use a terminal called **PowerShell** on your computer.  To access it, ty
 
 After PowerShell opens, we’re going to use the **wget** command to download the barnabas.exe file.  To do this, type in the following command.  
 
-<cmd style="text-align:center;">wget go.barnabasrobotics.com/exe -o barnabas.exe</cmd>
-
+<p style="text-align:center"><cmd>wget go.barnabasrobotics.com/exe -o barnabas.exe</cmd></p>
 
 
 {% include badge.html type='troubleshoot' content='Make sure to type it exactly right. Upper-case letters, lower-case letters, spaces, no spaces, dots, slashes and dashes all matter!  When you’re done, press enter on your keyboard to execute the command.  If you get it wrong, no need to panic.  Your terminal will just respond with an error because it can’t understand the command.  Just type it again, double-check everything and press enter again.' %}
@@ -195,7 +194,7 @@ The **wget** command downloads the barnabas.exe file from the web address **go.b
 
 Next, let’s run barnabas.exe, which will help us install the IDE.  To do this, we need to use the **.\** command.  Remember to press enter on your keyboard to execute the command.
 
-<cmd style="text-align:center;">.\barnabas.exe</cmd>
+<p style="text-align:center"><cmd>.\barnabas.exe</cmd></p>
 
 
 
@@ -217,7 +216,7 @@ When installation finishes, you’ll see the **BarnabasArdublock** icon appear o
 
 Now that our IDE is installed, we no longer need the **barnabas.exe** file.  Let’s delete it from our computer.  To do this, use the **del** command.  Remember to press enter to execute the command.
 
-<cmd style="text-align:center;">del barnabas.exe</cmd>
+<p style="text-align:center"><cmd>del barnabas.exe</cmd></p>
 
 
 
