@@ -47,8 +47,9 @@ Your Chromebook has special secret features that we need to enable so that it wi
 
 #### 2. Copy and paste this text into your address bar.  
 
-<cmd class="align-center">chrome://flags/#enable-experimental-web-platform-features asdfasdf</cmd>
+<cmd class="align-center">chrome://flags/#enable-experimental-web-platform-features 1</cmd>
 
+<code>chrome://flags/#enable-experimental-web-platform-features 1</code>
 
 
 #### 3. Select “Enabled” on the “Experimental Web Platform features”
