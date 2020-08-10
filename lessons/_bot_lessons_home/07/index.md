@@ -56,7 +56,7 @@ If Pin 13 turns off, it will be as if the battery is shut off.  This would cause
 
 <img src="fig-7_5.png" alt="fig-7_5" style="zoom:90%;" class="image center" />
 
-The pins on the Barnabas Noggin are labeled 2-13.  Can you locate them?
+{% include badge.html type='activity' content='The pins on the Barnabas Noggin are labeled 2-13.  Can you locate them?' %}
 
 Let’s now build this circuit.
 
@@ -195,28 +195,24 @@ Now it’s time for the big challenge, blinking the LED. To do this, we can star
 
 Remembering what we have learned about how code works, the first block will turn the LED on, and the second block will turn the led off.  This will happen in order and then repeat over and over again.  You might think that this would give us a blinking light right?  Well actually, the code is correct, but we can’t tell that it’s correct.  The reason has to do with speed.  Each block is an instruction, and the Barnabas Noggin processes instructions super fast.  That is one of the benefits of computers.  They process instructions much faster than humans!  The downside is that sometimes they work so fast that we can’t even tell what they are doing.  
 
+Try uploading the code and see what happens.  You should see the light just seem to be on all the time rather than blinking.  
 
-Try uploading the code and see what happens.  You should see the light just seem to be on all the time rather than blinking.  The reason we can not see a repeated blink.
 
-
-There is a way to slow our code down deliberately. We will use the wait block.  The wait block will stop code from progressing forward until a certain amount of time has elapsed.  It is the amount of time that the robot brain DOES NOT execute any new instructions.
+Now there is a way to slow our code down deliberately. We will use the wait block.  The wait block will stop code from progressing forward until a certain amount of time has elapsed.  It is the amount of time that the robot brain DOES NOT execute any new instructions.
 
 
 Put a 1 second wait block after both LED blocks and upload again.  You should see a blinking light!
 
 <img src="fig-7_18.png" alt="fig-7_18" style="zoom:60%;" class="image center" />
 
-
-
 ### Practice!
 
-Try the following exercises to get the hang of playing with the light
+Try the following exercises to get the hang of playing with the light.
 
-
-Try writing a program that turns your light on for 2 seconds off for 2 seconds and then repeats forever
-Write a program that turns your light on for 0.5 seconds, off for 0.5 seconds, and then repeats forever.
+1. Try writing a program that turns your light on for 2 seconds off for 2 seconds and then repeats forever
+2. Write a program that turns your light on for 0.5 seconds, off for 0.5 seconds, and then repeats forever.
 
 ### Challenge!
 
-Write a program that makes your light blink as fast as possible!
-Write a program that blinks slowly a few times and then blinks fast a few times!
+1. Write a program that makes your light blink as fast as possible!
+2. Write a program that blinks slowly a few times and then blinks fast a few times!
