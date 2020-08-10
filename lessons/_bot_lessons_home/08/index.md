@@ -8,7 +8,7 @@ suggested_time: 60-75 minutes
 
 Before we get started, let’s make sure that we have all the parts.
 
-<img src="fig-8_0.png" alt="fig-8_0" style="zoom:90%;" class="image center" />
+<img src="fig-8_0.png" alt="fig-8_0" style="zoom:70%;" class="image center" />
 
 ### Overview
 
@@ -87,21 +87,15 @@ The tone block, like the LED block, requires us to input two pieces of informati
 
 #### What is a frequency?
 
-A frequency is the rate or speed that something goes back and forth.  Did you know that all the sounds that you hear are from air being pushed back and forth at different speeds?  If it is getting pushed back and forth very fast, you get a higher frequency sound, which is a high pitch sound.  If it is getting pushed back and forth very slowly, you get a lower frequency sound, which is a low pitch sound.  
-
-We’ll be creating these low and high frequency sounds using our buzzer circuit.
+A frequency is the rate or speed that something goes back and forth.  Did you know that all the sounds that you hear are from air being pushed back and forth at different speeds?  If it is getting pushed back and forth very fast, you get a higher frequency sound, which is a high pitch sound.  If it is getting pushed back and forth very slowly, you get a lower frequency sound, which is a low pitch sound.  We’ll be creating these low and high frequency sounds using our buzzer circuit.
 
 #### Frequencies and Music
 
-Have you ever played piano?  Each key on a piano creates a musical note, which is actually done through hammer striking strings that vibrate at specific frequencies.  
-
-Musicians take these notes and combine them to sound good, which forms music!  We’ll eventually be able to do this same thing but through our robot.
+Have you ever played piano?  Each key on a piano creates a musical note, which is actually done through hammer striking strings that vibrate at specific frequencies.  Musicians take these notes and combine them to sound good, which forms music!  We’ll eventually be able to do this same thing but through our robot.
 
 #### Our First Note
 
-To start, let’s just play a single note.  The code below plays frequency 440 forever.  Try it out!  The “TONE” block can be found by clicking on “Sounds”.
-
-If everything is wired correctly, you should hear a sound come out of your robot.  Notice that we set the pin to #6 since the buzzer circuit is wiring to pin #6.  Remember that you need to upload your code before your robot will start following your code instructions!  
+To start, let’s just play a single note.  The code below plays frequency 440 forever.  Try it out!  The “TONE” block can be found by clicking on “Sounds”.  If everything is wired correctly, you should hear a sound come out of your robot.  Notice that we set the pin to #6 since the buzzer circuit is wiring to pin #6.  Remember that you need to upload your code before your robot will start following your code instructions!  
 
 <img src="fig-8_13.png" alt="fig-8_13" style="zoom:80%;" class="image center" />
 
@@ -117,16 +111,11 @@ Now that your robot is making sounds, you might be wondering how we tell it to t
 
 <img src="fig-8_15.png" alt="fig-8_15" style="zoom:80%;" class="image center" />
 
-However, much like the LED, we need to be clever in how we code the buzzer so that the buzzer actually behaves the way we want it to.
-
-
-Let us say that we are trying to have the buzzer make a tone for a small amount of time, then be silent for a similar amount of time. A common mistake is to just put the tone and no tone blocks into the “LOOP do” with nothing else accompanying them.  Try uploading the coding and see what you hear.  Remember to upload!
+However, much like the LED, we need to be clever in how we code the buzzer so that the buzzer actually behaves the way we want it to.  Let us say that we are trying to have the buzzer make a tone for a small amount of time, then be silent for a similar amount of time. A common mistake is to just put the tone and no tone blocks into the “LOOP do” with nothing else accompanying them.  Try uploading the coding and see what you hear.  Remember to upload!
 
 <img src="fig-8_16.png" alt="fig-8_16" style="zoom:80%;" class="image center" />
 
-I’m not sure how I would describe the noise the above code makes, but it is definitely not what we are looking for.  What’s happening is that the code is playing A4 and then turning it off right away before you can enjoy the sound, and then repeating forever.  
-
-We have the same issue here that we had when first attempting the blinking light code.  We need to add some wait blocks to slow it down so that we can hear the note and the silence.
+I’m not sure how I would describe the noise the above code makes, but it is definitely not what we are looking for.  What’s happening is that the code is playing A4 and then turning it off right away before you can enjoy the sound, and then repeating forever.  We have the same issue here that we had when first attempting the blinking light code.  We need to add some wait blocks to slow it down so that we can hear the note and the silence.
 
 <img src="fig-8_17.png" alt="fig-8_17" style="zoom:80%;" class="image center" />
 
@@ -155,13 +144,13 @@ Try the following exercises to get the hang of playing with the buzzer
 Now challenge yourself to take things to the next step and have your robot play some more music!
 
 1. Write code to do the following:
-   1. Play “B4 for 1 sec
-   2. Rest for 1 sec
-   3. Play “A4” for 1 sec
-   4. Rest for 1 sec
-   5. Play “G4” for 1 sec
-   6. Rest for 1 second
-   7. Repeat forever
+   - Play “B4 for 1 sec
+   - Rest for 1 sec
+   - Play “A4” for 1 sec
+   - Rest for 1 sec
+   - Play “G4” for 1 sec
+   - Rest for 1 second
+   - Repeat forever
 2. Play “Twinkle, Twinkle, Little Star”  (CC GG AA G FF EE DD C GG).
 3. Play the “Happy Birthday” song (G G A G C B G G A G D C G G G E C C B A).
 4. Play “Mary Had a Little Lamb” (B A G A BB B <> AA A <> BB B <> B A G A BBBB AAA BAG).  Note: <> Means rest
