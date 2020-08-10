@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 6 &middot; Setting Up Our Computer
+title: Lesson 6 &middot; Setting Up Your Computer
 suggested_time: 60-75 minutes
 ---
 ### What You'll Need

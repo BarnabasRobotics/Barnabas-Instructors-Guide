@@ -83,15 +83,11 @@ These instructions will be followed by the computer in the order that they are w
 
 After you’ve created your computer code, you’ll need to send the code to the Barnabas Noggin so that it can actually be stored in the brain.  This process is called uploading.
 
-#### Opening the IDE
-
-Go ahead and open your IDE to begin coding.  Detailed instructions can be found at the links below.
-
-- Chromebook
-- Macbook
-- Windows PC
-
 ### The LOOP do Block
+
+It's time to start coding!  Go ahead and open your IDE
+
+{% include badge.html type='suggestion' content='If you need a refresher on the IDE, go to: <a href="../05">Setting Up Your Computer</a>.' %}
 
 Let’s first learn the basics of your IDE.  In your IDE, your code will be made up of a series of blocks that snap together like puzzle pieces.  
 

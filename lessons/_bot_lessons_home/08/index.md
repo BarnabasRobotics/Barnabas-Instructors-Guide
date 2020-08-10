@@ -62,9 +62,9 @@ Find your buzzer.  Find the little “+” on the top of the buzzer.  That refer
 
 Go ahead and insert your buzzer into the holes next to the label BUZZER6.  Make sure to match the plus leg with + on the noggin and the minus leg with - on the noggin.
 
-<img src="fig-8_9.png" alt="fig-8_9" style="zoom:30%;" class="image left" />
+<img src="fig-8_9.png" alt="fig-8_9" style="zoom:30%;" class="image center" />
 
-<img src="fig-8_10.png" alt="fig-8_10" style="zoom:20%;" class="image" />
+<img src="fig-8_10.png" alt="fig-8_10" style="zoom:20%;" class="image center" />
 
 #### The Path Of Electricity
 
