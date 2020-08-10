@@ -12,7 +12,7 @@ suggested_time: 60-75 minutes
 
 Before we get started, let’s make sure that we have all the parts.
 
-<img src="fig-7_0.png" alt="fig-7_0" style="zoom:90%;" class="image center" />
+<img src="fig-7_0.png" alt="fig-7_0" style="zoom:60%;" class="image center" />
 
 ### Overview
 
@@ -63,9 +63,9 @@ Let’s now build this circuit.
 1. Connect the positive (+) end of your LED to pin 13 on your Barnabas Noggin and the negative (-) end of the LED to the GND right next to it.
 2. We’re done!  You may be asking, “What about the resistor?”  Well, there is a tiny resistor already built into the Barnabas Noggin, so that part is already done for you!
 
-<img src="fig-7_6.png" alt="fig-7_6" style="zoom:30%;" class="image center" />
+<img src="fig-7_6.png" alt="fig-7_6" style="zoom:30%;" class="image" />
 
-<img src="fig-7_7.png" alt="fig-7_7" style="zoom:40%;" class="image center" />
+<img src="fig-7_7.png" alt="fig-7_7" style="zoom:40%;" class="image" />
 
 ### Introduction To Coding
 
