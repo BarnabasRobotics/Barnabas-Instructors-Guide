@@ -4,135 +4,227 @@ title: Lesson 7 &middot; The Blinking Light
 suggested_time: 60-75 minutes
 ---
 
+### Tutorial Video(s)
+
+{% include youtube.html id="5EYhmntCALg" %}
+
 ### What You'll Need
 
 Before we get started, let’s make sure that we have all the parts.
 
-{% include badge.html type='troubleshoot' content='Please see our <a href="https://www.barnabasrobotics.com/resources/" target="_blank">Software</a> page for setting up your computers.' %}
+<img src="fig-7_0.png" alt="fig-7_0" style="zoom:90%;" class="image center" />
 
-#### Vocabulary
+### Overview
 
-   * **Arduino**: Both hardware and software. The hardware is a line of microcontrollers (very simple computers). In fact, the Barnabas Noggin utilizes an Arduino microcontroller itself. The software is a C based IDE (integrated development environment… A place where you code). Because Arduino handles both sides of things the process of coding, then uploading your code to a microcontroller is very easy. The Arduino IDE can be out of scope for younger classes as the ability to type acts as a barrier to entry.
+In this lesson, we’ll be introducing computer engineering and software engineering by connecting your LED to your robot’s brain and programming the brain to control the LED.  We’ll be covering:
 
-{% include badge.html type='best_practice' content='Have the students make a step by step checklist in their journal on how to connect the Barnabas-Bot to the computer in explicit detail.' %}
+1. How to connect a light to your robot’s brain.
+2. How the robot’s brain and personality work together to make the light blink on and off.
 
-Use the following checklist to prepare your robot for coding:
-
-      1. Turn on the computer.
-      2. Input password.
-      3. Open Arduino.
-      4. Plug the robot into the computer via the USB cable.
-      5. Go to tools -> port -> select port (not com1 or serial port ex. for windows pc).
-      6. Go to tools -> board -> select Arduino Nano
-
-_This process must be done each lesson that you intend to program._
-
-### Step 1: Changing The Circuit (5 minutes)
-
-In this section we are finally going to code our LED. However, we must make a small change to the current circuit first. 
-
-The wire that is currently in the 5V pin must be placed in the pin labelled 7.
-
-![fig 10.6](fig-10_6.png){:class="image fit"}
-
-You may notice that the LED no longer turns on. This is because while the 5V pin is always on, pin 7 is what is called a programmable pin, meaning we decide whether it is on or off with code. 
-
-### Step 2: Getting Started With Ardublock (5 minutes) 
-
-Now that our computer is talking to our Barnabas Noggin, let's get started with ArduBlock!  ArduBlock is a block-based programming language that is great for those who are new to programming.  
-
-Open ArduBlock by going to TOOLS->ARDUBLOCK.
-
-![fig 10.1](fig-10_1.jpg){:class="image "}
-
-Once ArduBlock opens, you should see the following screen.  Note that your screen may differ a little depending on which version of Ardublock you have installed.
-
-![fig 10.2](fig-10_2.jpg){:class="image "}
-
-Go to `CONTROL`, and drag in a `LOOP-DO` block (if it isn't there already).  Click on `SAVE`, type in your name, and click `SAVE` again.  Note that every program needs a `LOOP-DO`.
-
-![fig 10.3](fig-10_3.jpg){:class="image "}
-
-Now click `UPLOAD`, type in your name, and click `SAVE`.  Your program will now upload code into your robot. 
-
-![fig 10.4](fig-10_4.jpg){:class="image "}
-
-Congratulations, you just wrote your first program!  In the future, you will want to always click `SAVE`, and then `UPLOAD` when loading your program to your Barnabas-Bot.
+<img src="fig-7_1.png" alt="fig-7_1" style="zoom:10%;" class="image right" />
 
 
-#### Vocabulary
 
-   * **Ardublock**: A GUI (graphic user interface… another place to code) that runs with Arduino. This means that closing Arduino also closes Ardublock so be careful! Ardublock is a block based coding platform, allowing us to sidestep the need to type.
+### Getting To Know Your Robot’s Brain
 
-{% include badge.html type='best_practice' content='Uploading blank code may seem frivolous but it is important. By attempting to upload now any technical issues can be addressed. If the Arduino window shows any kind of error, you know there is a problem. The three most likely reasons a student would get an error message here are: They did not choose the correct port, they did not choose the correct board, or their robot is not connected to the computer.' %}
-
-### Step 3: Ardublock Basics (5 minutes) 
-
-Before we can begin coding we should familiarize ourselves with the basics of ardublock. How to move around, create and delete code.
-
-The first thing to mention is the loop do. The loop do is the most important block in Ardublock. Code is only able to be uploaded to your robot if there is one and only one loop do. The loop do will house any other blocks used in our code and will change its size to accommodate. As inferred by its name, the loop do will loop through your code. When it reaches the end of your code, it will start again at the beginning. Luckily for us, this integral part of our code will always be in a new Ardublock file by default. 
-
-Let’s say that the loop do is not there when opening Ardublock. We can add the loop do to the code, as well as any add any other block, by the following method. All of the colored tabs on the left side of the Ardublock window can be selected. After selecting one of them a menu will pop up with several similarly colored blocks. You can drag any of the blocks into the grey coding area (generally putting them inside of the loop do.
-
-In the case of the loop do you would navigate to the yellow tab labelled control, then drag and drop loop do into the gray area.
-
-![fig 10.5](fig-10_5.png){:class="image "}
-
-The last skill we need to learn is how to delete blocks of code. Say we have the case of multiple loop do’s, and we want to get rid of the extras. Just use your cursor to grab one of the unwanted blocks and drag it over to the tabs on the left side of the window. Then, just drop it and it should disappear.
-
-#### Vocabulary
-
-   * **Loop Do**: The most important block in Ardublock. It is important that one and only one loop do is in the code at a time, otherwise your code cannot be uploaded. The loop do will run whatever code is placed inside it repeatedly, starting again at the beginning whenever the end is reached.
-
-### Step 4: Our First Program, Programming The LED (20 minutes) 
-
-With that out of the way let’s begin coding by grabbing a Set Digital Pin block out of the Pins tab and place it in the loop do.
-
-![fig 10.7](fig-10_7.png){:class="image "}
-
-The `Set Digital Pin` block should snap into place when dropped on the loop do.
-
-![fig 10.8](fig-10_8.png){:class="image "}
-
-There are two smaller blocks attached to the `Set Digital Pin` block. The number 1 and the word `HIGH`. The number 1 refers to the pin on the robot that this block will attempt to control. Remember that we placed the LED circuit on pin 7, so that 1 needs to be changed to a 7. This can be done by clicking on the block, pressing 7, then pressing enter.
-
-The `HIGH` block is telling us that it will be turning the pin on (giving it power). By mousing over this block with your mouse cursor and clicking on the upside down triangle that appears on it a menu will appear. That menu has only two options `HIGH` and `LOW`. As you may have guessed LOW will turn the pin off.
-
-After changing the pin number to 7 have all the students press upload to arduino at the top of the Ardublock window. You will be prompted to save, go ahead and do so. Afterwards you will see a green progress bar in the Arduino window showing the code being uploaded. You should see the LED turn on. 
-
-Next you should ask the students to turn the LED off by changing the code. Let them figure out how to do so on their own (Switch the HIGH to LOW). In order to see the change the students will need to upload their code again. The Barnabas Noggin is only capable of holding one program at a time. This means that uploading the LED off code will permanently erase the LED on code from the robot. To turn the LED on again they would have to re-upload a set digital pin HIGH code to the robot.
-
-{% include youtube.html id="UfxJx9LQ9u0" %}
-{% include youtube.html id="JHJoiSG9jWw" %}
-
-LED on ![fig 10.9](pinHigh.png){:class="image "}  ![fig 10.10](pinLow.png){:class="image "} LED off
-
-#### Vocabulary
-
-   * **Programmable pin**: One of the pins on the Barnabas Noggin labelled 0-13 (it has more labelled A0-A5, but we are not using those in this class). These pins can be controlled by the code we create in Ardublock rather than just being innately on or off.
-   * **Set Digital Pin**: Located in the aqua colored pins tab, this is the block we use to turn the LED on and off. To properly use this block we need to pick a pin number (for us 7) and choose between HIGH or LOW (on or off). This block must be placed inside the loop do.
+Just like the human brain, your robot’s brain has hundreds of wire pathways that are connected together to help your robot store information and make decisions. Each of these wire pathways in your robot is a circuit. As we learned in the previous lesson, a circuit is just another way of describing a pathway for electricity to flow.  
 
 
-### Step 5: Blinking The LED (20 minutes) 
+Your robot’s brain is called the Barnabas Noggin.  
 
-Now it’s time for the big challenge, blinking the LED. I generally start by asking the class for suggestions on how to do this. The answer I’m looking for at this point is that we should place another Set Digital Pin block into our loop do. By having two `Set Digital Pin` blocks, one `HIGH` and the other `LOW`, We should see both behaviors happen. Have the students do this and upload the code. What kind of behavior do they see?
+For the most part, the Barnabas Noggin is already designed and built, but you’re going to be adding a few electrical pathways (or circuits) for your robot to have special functions. In this lesson, you’ll not only be connecting your LED to your brain, but you’ll be learning how to control the LED through code!
 
-![fig 10.11](fig-10_11.png){:class="image "}
+### Connecting Your LED To Your Robot’s Brain
 
-They should see the light turn off momentarily before turning back on, and staying on there after. Don’t be fooled by the initial turning off of the LED, that is not do to our code working as intended. The Noggin will always stop whatever it is doing to accept new code. In this case turning the LED off just after our code is uploaded. Unfortunately this is not part of a blink. Because the loop do repeats we should see the LED blink over and over, which we do not with the code as written.
+First, if you haven’t already done so, go ahead and remove your LED and resistor from the Barnabas Noggin.  Make sure your Barnabas Noggin is plugged into your computer via the USB cord.  The red light on your Barnabas Noggin should be on.
 
-The reason we can not see a repeated blink is due to the speed at which the Barnabas Noggin is processing commands. The Barnabas Noggin thinks fast enough to do hundreds of commands in a second, far to fast for our eyes to keep up with. The LED is blinking, but too fast for us to make out.
+<img src="fig-7_2.png" alt="fig-7_2" style="zoom:40%;" class="image center" />
 
-There is a way to slow our code down deliberately. In the controls tab there are two blocks labelled Delay. One says `Delay milliseconds` (a _milli_ second is one *thousandth* of a second), and the other says `delay microseconds` (a _micro_ second is one *millionth* of a second). We will always use the Delay milliseconds block, as the Delay microseconds block yields the same problem as before; the LED will be blinking too fast for us to see. The question is where do we place the Delay millisecond block in our current code. There are two immediate options:  
+Next, we need to connect the LED to the Barnabas Noggin.  In the previous lesson, the LED would stay on as long as the Barnabas Noggin had power.  This time we want to connect it in a way so that it only turns on *if* the Barnabas Noggin has code to tell it to turn on.  In order to do this, we need to connect the LED to a special place, called a **pin**.
 
-![fig 10.12](fig-10_12.png){:class="image "} ![fig 10.13](fig-10_13.png){:class="image "}
+A **pin** on the Barnabas Noggin is a power source that can be turned off and on depending on its computer code.
 
-You're probably wondering why there isn’t a third option for the delay block bing at the top of the code. It turns out that would be identical to the code on the left due to the code repeating. Unfortunately, these don’t work either. The one on the left seems to stay off, and the one on the right seems to stay on. In either case the delay block is only pausing after one of the actions, either turning off or turning on. We need to pause our code after each action, allowing both of them to happen for some observable amount of time, like below:
+Observe the circuit below that includes a pin connection, LED and a resistor.  
 
-![fig 10.14](fig-10_14.png){:class="image "}
+<img src="fig-7_3.png" alt="fig-7_3" style="zoom:90%;" class="image center" />
 
-#### Vocabulary
+If Pin 13 turns on, it will be as if there is a battery in the circuit.  This would cause electricity to flow, causing the LED to turn on.
 
-   * **Delay**: The delay block comes in two different flavors, delay milliseconds and delay microseconds. We only make use of the delay milliseconds block. The delay block will stop code from progressing forward until a certain amount of time has elapsed.
+<img src="fig-7_4.png" alt="fig-7_4" style="zoom:90%;" class="image center" />
 
-{% include badge.html type='activity' content='Once your students have the LED blinking challenge them to change the numbers inside the delay block and identify how that changes the behavior of the LED. Challenge the students to find the smallest delay where they can still see the LED blink.' %}
+If Pin 13 turns off, it will be as if the battery is shut off.  This would cause electricity to NOT flow, causing the LED to turn off.
+
+<img src="fig-7_5.png" alt="fig-7_5" style="zoom:90%;" class="image center" />
+
+The pins on the Barnabas Noggin are labeled 2-13.  Can you locate them?
+
+Let’s now build this circuit.
+
+1. Connect the positive (+) end of your LED to pin 13 on your Barnabas Noggin and the negative (-) end of the LED to the GND right next to it.
+2. We’re done!  You may be asking, “What about the resistor?”  Well, there is a tiny resistor already built into the Barnabas Noggin, so that part is already done for you!
+
+<img src="fig-7_6.png" alt="fig-7_6" style="zoom:30%;" class="image center" />
+
+<img src="fig-7_7.png" alt="fig-7_7" style="zoom:40%;" class="image center" />
+
+### Introduction To Coding
+
+It’s now time to get your robot to turn your LED on and off in your circuit. To do this, we first need to create instructions to send to your robot’s brain to tell it to turn the LED on. The process of creating instructions for your robot is called **computer programming** or software engineering.  The actual set of instructions that we create is called **computer code**.
+
+#### What is Computer Code?
+
+Let’s go back to our human brain analogy.  A human brain without any information stored in it wouldn’t be able to accomplish any of the functions that we do every day (e.g. walking, running and talking).  Likewise, a computer needs to have information in it to make a robot function.
+
+
+As humans, we learn instructions so that we can accomplish tasks like washing our hands or making a sandwich.  We learn these tasks by reading, listening or observation.  
+
+Computers learn by receiving computer code, written by humans.
+
+#### How Computer Code Works
+
+These instructions will be followed by the computer in the order that they are written.  When the computer gets to the end of the list of instructions, it goes back to the beginning of the list of instructions and starts over.
+
+#### Sending Computer Code to the Noggin
+
+After you’ve created your computer code, you’ll need to send the code to the Barnabas Noggin so that it can actually be stored in the brain.  This process is called uploading.
+
+#### Opening the IDE
+
+Go ahead and open your IDE to begin coding.  Detailed instructions can be found at the links below.
+
+- Chromebook
+- Macbook
+- Windows PC
+
+### The LOOP do Block
+
+Let’s first learn the basics of your IDE.  In your IDE, your code will be made up of a series of blocks that snap together like puzzle pieces.  
+
+<img src="fig-7_8.png" alt="fig-7_8" style="zoom:90%;" class="image right" />
+
+The first block to introduce is called the “LOOP do.”  The “LOOP do” will house all of the other blocks used in your code.  It is like the outside cover of a book, which houses all of its pages.   The computer reads the pages (i.e. code blocks) within the “LOOP do” block from the beginning to the end.  When it gets to the end, it starts back at the beginning and begins again.  This process repeats forever as long as your Noggin has power.
+
+Note: You can only have one “LOOP do” in your code.
+
+### How to Add a Block
+
+Let’s add a “LOOP do” block to our code!
+
+1. Find the colored buttons on the left side of your screen labeled “Control,” “Lights,” “Sounds,” and “Motors.” Click on the yellow “Control” button to the left.
+2. After you click on the yellow “Control” button, you’ll see a menu of yellow blocks open up.  Click (and hold down) on the “LOOP do” block and drag it into the large area to the right of the colored buttons.  When it is in the large area, release the click.
+
+<img src="fig-7_9.png" alt="fig-7_9" style="zoom:40%;" class="image center" />
+
+### How to Delete a Block
+
+There may be times when you’ll need to delete blocks of code. For example, if we have multiple “LOOP do” blocks in our code (remember your code can only have one “LOOP do” to work), we need to get rid of the extras.
+
+Let’s practice by deleting the “LOOP do” block from our code.
+
+1. Click (and hold down) on the “LOOP do” block and drag it over to the tabs on the left side of the window.
+2. Release the click and the “LOOP do” block should disappear.
+
+Now that we know how to delete a block that we don’t want, let’s go ahead and bring in a “LOOP do” block again so that we can continue building our code.
+
+### Turn The LED On
+
+We are now ready to program our LED to turn on.
+
+1. Click on the green “Lights” button on the left side of your screen.
+2. You’ll see a menu of green blocks open up.  Click (and hold down) on the “LED” block and drag it immediately to the right of the “Loop do” block so that it clicks into the “LOOP do” block.
+
+<img src="fig-7_10.png" alt="fig-7_10" style="zoom:70%;" class="image center" />
+
+Notice the “pin#” and “status” pieces on the right side of this block.  
+
+
+The “pin#” setting allows you to specify the pin that you want to control.
+
+
+The “status” setting allows you to turn your pin on and off.
+
+
+Be default the “pin#” is set to 1.  Because our LED circuit is connected to Pin 13, we need to change it to 13.
+
+1. Click on the “1”
+2. Replace “1” with “13” by typing it in.
+3. Press Enter
+
+<img src="fig-7_11.png" alt="fig-7_11" style="zoom:70%;" class="image center" />
+
+
+The “ON” setting tells us that this block will be turning pin 13 on (i.e. giving it power). Let’s leave that as is for now since we do want our LED to turn on!
+
+#### Our First Upload
+
+We are now ready to upload our code to our robot.  Before doing so, let’s check a few things.
+
+1. Confirm power.  Make sure that the USB cable is connecting your Noggin to your computer.  A red light on your noggin should be on.
+
+   {% include badge.html type='troubleshoot' content='If the red light on your Barnabas Noggin is not on, check to make sure that your USB cable is plugged in all the way on both your Noggin side as well as computer side.' %}
+
+2. Set your hardware.  Make sure to select “Barnabas Noggin” under the “Select Hardware” drop down.  This tells your computer what type of robot brain you are trying to communicate with.
+
+3. Set your port.  The port is like an address for your Barnabas Noggin.  If it’s not set correctly, your computer won’t know where to send the code that you just wrote!
+
+   {% include badge.html type='best_practice' content='For **Windows and Chromebooks**, the port will begin with “**COM”**.  For **Mac**, the port will be begin with: “**/dev/cu.wchusbserial1410**.  For Chromebooks, you’ll need to set your port a little later (after you click upload)' %}
+
+   {% include badge.html type='troubleshoot' content='Does your computer say “No Devices Detected”? You may need to wait a few minutes if it’s the first time that you’ve connected your Barnabas Noggin to your computer.  If you’ve waited for more than 5 minutes, try clicking on “Update Device Driver” on the bottom right.  This installs some software that helps your computer find your Barnabas Noggin. <img src="fig-7_12.png" alt="fig-7_12" style="zoom:50%;" class="image center" />' %}
+
+4. Upload.  Now click “Upload” at the top of the Ardublock window to begin the upload process.
+
+   <img src="fig-7_13.png" alt="fig-7_13" style="zoom:50%;" class="image center" />
+
+
+
+It will take a little time, but once it finishes, the window on the bottom should turn green.  Once upload completes, your LED should turn on!
+
+<img src="fig-7_14.png" alt="fig-7_14" style="zoom:50%;" class="image center" />
+
+{% include badge.html type='troubleshoot' content='If the log screen turns red instead of green, check the following and try uploading again.  (1) Make sure that “Barnabas Noggin” is selected under “Select Hardware”.  (2) Make sure that a port is selected. (3) Click “Update Software” and allow the update to finish. <img src="fig-7_15.png" alt="fig-7_15" style="zoom:50%;" class="image center" />' %}
+
+### Turn The LED Off
+
+Great job!  Now, let’s change our code so that our Noggin turns the LED off.  
+
+1. Move your mouse to the right of “ON” until you see a triangle show up.  
+2. Click on that triangle
+3. Select “OFF”
+
+<img src="fig-7_16.png" alt="fig-7_16" style="zoom:90%;" class="image center" />
+
+After changing the status, upload the code again so that the Barnabas Noggin gets the new instructions.  Once upload completes, your LED will turn off!
+
+### The Blinking Light Challenge
+
+Now it’s time for the big challenge, blinking the LED. To do this, we can start by placing another LED block into our “LOOP do”.
+
+<img src="fig-7_17.png" alt="fig-7_17" style="zoom:60%;" class="image center" />
+
+Remembering what we have learned about how code works, the first block will turn the LED on, and the second block will turn the led off.  This will happen in order and then repeat over and over again.  You might think that this would give us a blinking light right?  Well actually, the code is correct, but we can’t tell that it’s correct.  The reason has to do with speed.  Each block is an instruction, and the Barnabas Noggin processes instructions super fast.  That is one of the benefits of computers.  They process instructions much faster than humans!  The downside is that sometimes they work so fast that we can’t even tell what they are doing.  
+
+
+Try uploading the code and see what happens.  You should see the light just seem to be on all the time rather than blinking.  The reason we can not see a repeated blink.
+
+
+There is a way to slow our code down deliberately. We will use the wait block.  The wait block will stop code from progressing forward until a certain amount of time has elapsed.  It is the amount of time that the robot brain DOES NOT execute any new instructions.
+
+
+Put a 1 second wait block after both LED blocks and upload again.  You should see a blinking light!
+
+<img src="fig-7_18.png" alt="fig-7_18" style="zoom:60%;" class="image center" />
+
+
+
+### Practice!
+
+Try the following exercises to get the hang of playing with the light
+
+
+Try writing a program that turns your light on for 2 seconds off for 2 seconds and then repeats forever
+Write a program that turns your light on for 0.5 seconds, off for 0.5 seconds, and then repeats forever.
+
+### Challenge!
+
+Write a program that makes your light blink as fast as possible!
+Write a program that blinks slowly a few times and then blinks fast a few times!
