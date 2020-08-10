@@ -8,77 +8,162 @@ suggested_time: 60-75 minutes
 
 Before we get started, let’s make sure that we have all the parts.
 
-### Step 1: Building The Buzzer Circuit (10 minutes) 
+<img src="fig-8_0.png" alt="fig-8_0" style="zoom:90%;" class="image center" />
 
-In this lesson we will be adding the buzzer to our robot in the same way we added the LED. There is no need to take the LED circuit off the breadboard. We are not replacing it, we are adding to it. Start by drawing the circuit schematic on the board:
+### Overview
 
-![fig 12.1](fig-12_1.png){:class="image "}
+Now that our robot can blink on and off with the LED, it’s time to get it to make some sound!  We’ll again be learning about electrical engineering, computer engineering, and software engineering. Specifically, this lesson will cover:
 
-In addition to giving the students a schematic to follow have them closely examine the buzzer. They should recognize that one leg of the buzzer is longer than the other, much like the LED. The different length legs, much like the LED indicate that one leg must be placed closer to the positive end of the circuit (the long leg), the high voltage end of the circuit if you will. With this information the students should be able to build the buzzer circuit. It would be wise to construct it a fair distance away from the LED circuit on the breadboard to avoid confusion. If this is not enough then as a class attempt to create a diagram of the circuit on the whiteboard, which would look like the following:
+1. How to connect a buzzer to your robot’s brain;
+2. How the heart gives power to the buzzer and robot’s brain; and
+3. How the robot’s brain and personality work together to make music.
 
-![fig 12.2](fig-12_2.png){:class="image fit"}
+### Connecting Your Buzzer To Your Robot’s Brain
 
-This diagram has the LED circuit on it as well, but that is not necessary unless you intend to have GND common like in the diagram above. What I mean by that is the green wire that is going between the buzzer circuit and the LED circuit is connecting the negative legs (the short ones) of both components. That way, if one is connected to GND, both are connected to GND.
+Make sure your Barnabas Noggin is plugged into your computer via the USB cord.  The red light on your Barnabas Noggin should be on.
 
-{% include badge.html type='best_practice' content='If it is necessary to draw the diagram on the board try having the students participate. Have students suggest additions to the diagram and engage in a conversation about how the circuit needs to be put together' %}
+<img src="fig-8_1.png" alt="fig-8_1" style="zoom:40%;" class="image center" />
 
-{% include youtube.html id="dQNqwrBMXYU" %}
+Before we build the buzzer circuit, let’s look at the plan for the circuit.
 
-### Step 2: How Does The Buzzer Work (5 minutes) 
+<img src="fig-8_2.png" alt="fig-8_2" style="zoom:100%;" class="image center" />
 
-The choice of putting the buzzer on pin 6 is not arbitrary. Pin 6 is what is called a PWM pin, which stands for pulse width modulation. PWM is a fairly complicated process to describe and is beyond the scope of this class. However we can talk about how it functions. A pin that is capable of PWM can vary the voltage that comes from it, as opposed to the other pins which can only give 5 Volts or 0 Volts.
 
-The buzzer will utilize the different voltages by emitting different sounds, different frequencies, depending on the voltage that is currently powering it.
+Just like the LED circuit, we want to connect to a pin on the Barnabas Noggin.  In this case, however, we are connecting to pin number 6 instead of pin number 13.  
 
-### Step 3:  Making Tones With The Buzzer (45 minutes) 
+If pin 6 turns on, it will be as if there is a battery in the circuit.  This would cause electricity to flow, causing the buzzer to turn on.
 
-To program our buzzer we will use the tone block found in the pins tab in Ardublock:
+<img src="fig-8_3.png" alt="fig-8_3" style="zoom:100%;" class="image center" />
 
-![fig 12.3](fig-12_3.png){:class="image fit"}
+If Pin 6 turns off, it will be as if the battery is shut off.  This would cause electricity to NOT flow, causing the buzzer to turn off.
 
-The tone block, like the set digital pin block, requires us to input two pieces of information. Both the pin the buzzer is located on (pin 6), and the frequency of the tone we would like the buzzer to make:
+<img src="fig-8_4.png" alt="fig-8_4" style="zoom:100%;" class="image center" />
 
-![fig 12.4](fig-12_4.png){:class="image "}
+#### Inserting the Resistor
 
-The frequencies that can be chosen relate to different musical note like those shown below:
+We’ll begin building our buzzer circuit by first inserting a resistor.  This time the resistor is not built into the Noggin, so you’ll need to add it yourself.
 
-![fig 12.5](fig-12_5.png){:class="image fit"}
+<img src="fig-8_5.png" alt="fig-8_5" style="zoom:30%;" class="image right" />
 
-Each of the frequencies shown will make the corresponding musical note. Frequencies that are not seen above can be used, but are generally much less functional. Have your students experiment with different frequencies and share any interesting results they may find.
+Find your resistor.  It is the object that looks like a sausage.  Just like in the LED circuit, the resistor limits the amount of electricity that goes through the buzzer.  
 
-Once the students have had 2-5 minutes to experience with the tone block you should introduce the no tone block:
 
-![fig 12.6](fig-12_6.png){:class="image fit"}
+Go ahead and insert your resistor into the holes next to the R2 label.  It doesn’t matter which legs go into which holes for the resistor, so no need to worry about getting it mixed up :).
 
-The no tone block silences the buzzer. However, much like the LED, we need to be clever in how we code the buzzer so that the buzzer actually behaves the way we want it to.
+<img src="fig-8_6.png" alt="fig-8_6" style="zoom:30%;" class="image center" />
 
-Let us say that we are trying to have the buzzer make a tone for a small amount of time, then be silent for a similar amount of time. A common mistake is to just put the tone and no tone blocks into the loop do with nothing else accompanying them:
+<img src="fig-8_7.png" alt="fig-8_7" style="zoom:80%;" class="image center" />
 
-![fig 12.7](fig-12_7.png){:class="image "}
+#### Inserting the Buzzer
 
-I’m not sure how I would describe the noise the above code makes, but it is definitely not what we are looking for. We have the same issue here that we had when first attempting the blinking light code. Neither of these blocks are given time to take place. Delays need to be added so each block has an opportunity to influence the buzzer:
+<img src="fig-8_8.png" alt="fig-8_8" style="zoom:80%;" class="image right" />
 
-![fig 12.8](fig-12_8.png){:class="image "}
+Find your buzzer.  Find the little “+” on the top of the buzzer.  That refers to the “+” leg of the buzzer.  Just like the LED, electricity only flows one direction (from + to -).
 
-Instead of the no tone block, we can just place another tone block of a different frequency to make a siren:
+Go ahead and insert your buzzer into the holes next to the label BUZZER6.  Make sure to match the plus leg with + on the noggin and the minus leg with - on the noggin.
 
-![fig 12.9](fig-12_9.png){:class="image "}
+<img src="fig-8_9.png" alt="fig-8_9" style="zoom:30%;" class="image center" />
 
-#### Vocabulary
+<img src="fig-8_10.png" alt="fig-8_10" style="zoom:20%;" class="image center" />
 
-  * **Tone**: The tone block is capable of making the buzzer emit sounds of different frequencies. To do so the tone block must be given the correct pin number (for us 6) as well as a frequency. The frequency given dictates how high or low the pitch of the sound is and can be related back to musical notes.
-  * **No Tone**: The no tone block silences the the buzzer, assuming the correct pin (6) is specified. It does so simply by setting the pin LOW.
+#### The Path Of Electricity
 
-{% include youtube.html id="DjNMpiLLQb4" %}
+Let’s examine the path of electricity here.  As we’ve learned, we always need a complete loop in order for a circuit to work.  In this case, the main power comes from pin 6, which we will program to turn off and on.  Again, we have subways that connect pins together.  Can you find the path of electricity below?  It has been marked in yellow.
 
-{% include badge.html type='tidbit' content='Did you know that the human ear can hear frequencies from 20Hz to 20,000Hz. Unfortunately the buzzer isn’t capable of making all those sounds. It has an effective range of about 200Hz to 1,000Hz. The buzzer will make noise if you input a frequency outside of that range, but do not expect the sound it makes to match the frequency given.' %}
+<img src="fig-8_11.png" alt="fig-8_11" style="zoom:30%;" class="image center" />
 
-{% include badge.html type='best_practice' content='The buzzer can be a force for good or for evil. It is often the case that the sound of several buzzers will be overwhelming. This of course depends on the number of students in your class as well as the physical size of your class. Using the 4.7K Ohm resistors like suggested should mitigate this. You should also keep an ear out for clever students that bypass their resistors altogether, which will create an unmistakably loud tone. Typically I will confiscate buzzers if this occurs.' %}
+### Getting Our Buzzer To Make A Sound!
 
-It is not uncommon to not hear sound after uploading the first time. There are a few common errors that students make when attempting to use the buzzers. Your checklist of things to look for is the following:
+#### The Tone Block
 
-  * The general mistakes that prevent code from properly uploading. Also the robot being unpowered. In addition the code may be referencing an incorrect pin.
-  * Put your ear to the buzzer. It may in fact be making noise. The 4.7k Ohm resistor reduces the volume tremendously.
-  * The circuit may be wired incorrectly. Most often the mistake is that wires are not on the same rows as the legs of the buzzer. The shape of the buzzer can make it difficult to tell which rows the buzzer is sitting on.
+It’s time to teach our robot to make a sound!  Let’s start coding!  To program our buzzer we will use the tone block.
 
-The students are capable of doing more than just creating simple sirens using the buzzer. They can create a musical scale easily by following the frequency chart. Some of the more ambitious or musically inclined students can attempt to recreate common songs. Perhaps twinkle twinkle little star, or mary had a little lamb. The internet is a useful tool for this activity.
+<img src="fig-8_12.png" alt="fig-8_12" style="zoom:80%;" class="image center" />
+
+The tone block, like the LED block, requires us to input two pieces of information. These pins include:
+
+- The pin the buzzer is located on (pin 6), and
+- The frequency of the tone we would like the buzzer to make
+
+#### What is a frequency?
+
+A frequency is the rate or speed that something goes back and forth.  Did you know that all the sounds that you hear are from air being pushed back and forth at different speeds?  If it is getting pushed back and forth very fast, you get a higher frequency sound, which is a high pitch sound.  If it is getting pushed back and forth very slowly, you get a lower frequency sound, which is a low pitch sound.  
+
+We’ll be creating these low and high frequency sounds using our buzzer circuit.
+
+#### Frequencies and Music
+
+Have you ever played piano?  Each key on a piano creates a musical note, which is actually done through hammer striking strings that vibrate at specific frequencies.  
+
+Musicians take these notes and combine them to sound good, which forms music!  We’ll eventually be able to do this same thing but through our robot.
+
+#### Our First Note
+
+To start, let’s just play a single note.  The code below plays frequency 440 forever.  Try it out!  The “TONE” block can be found by clicking on “Sounds”.
+
+If everything is wired correctly, you should hear a sound come out of your robot.  Notice that we set the pin to #6 since the buzzer circuit is wiring to pin #6.  Remember that you need to upload your code before your robot will start following your code instructions!  
+
+<img src="fig-8_13.png" alt="fig-8_13" style="zoom:80%;" class="image center" />
+
+#### Frequency Table
+
+The table below shows you all the different notes that you can play with your Barnabas-Bot.  Can you find what note your code is playing?  It’s A4!
+
+<img src="fig-8_14.png" alt="fig-8_14" style="zoom:80%;" class="image center" />
+
+#### Silence Is Golden
+
+Now that your robot is making sounds, you might be wondering how we tell it to turn off.  Well, we need the no tone block.  The no tone block silences the buzzer.  Notice again the pin # is 6.
+
+<img src="fig-8_15.png" alt="fig-8_15" style="zoom:80%;" class="image center" />
+
+However, much like the LED, we need to be clever in how we code the buzzer so that the buzzer actually behaves the way we want it to.
+
+
+Let us say that we are trying to have the buzzer make a tone for a small amount of time, then be silent for a similar amount of time. A common mistake is to just put the tone and no tone blocks into the “LOOP do” with nothing else accompanying them.  Try uploading the coding and see what you hear.  Remember to upload!
+
+<img src="fig-8_16.png" alt="fig-8_16" style="zoom:80%;" class="image center" />
+
+I’m not sure how I would describe the noise the above code makes, but it is definitely not what we are looking for.  What’s happening is that the code is playing A4 and then turning it off right away before you can enjoy the sound, and then repeating forever.  
+
+We have the same issue here that we had when first attempting the blinking light code.  We need to add some wait blocks to slow it down so that we can hear the note and the silence.
+
+<img src="fig-8_17.png" alt="fig-8_17" style="zoom:80%;" class="image center" />
+
+### Practice!
+
+Try the following exercises to get the hang of playing with the buzzer
+
+1. Play “C4” forever!
+
+   <img src="fig-8_18.png" alt="fig-8_18" style="zoom:80%;" class="image center" />
+
+2. Play “C4” for 1 second, and rest for 1 second.  Repeat forever.
+
+   <img src="fig-8_19.png" alt="fig-8_19" style="zoom:80%;" class="image center" />
+
+3. Play “C4” for ½ a second,, rest ½ a second.  Repeat forever.  Hint: ½ a second is the same as 0.5 seconds.
+
+   <img src="fig-8_20.png" alt="fig-8_20" style="zoom:80%;" class="image center" />
+
+4. Make a siren sound using A4 and C4.
+
+   <img src="fig-8_20.png" alt="fig-8_20" style="zoom:80%;" class="image center" />
+
+### Challenge!
+
+Now challenge yourself to take things to the next step and have your robot play some more music!
+
+1. Write code to do the following:
+   1. Play “B4 for 1 sec
+   2. Rest for 1 sec
+   3. Play “A4” for 1 sec
+   4. Rest for 1 sec
+   5. Play “G4” for 1 sec
+   6. Rest for 1 second
+   7. Repeat forever
+2. Play “Twinkle, Twinkle, Little Star”  (CC GG AA G FF EE DD C GG).
+3. Play the “Happy Birthday” song (G G A G C B G G A G D C G G G E C C B A).
+4. Play “Mary Had a Little Lamb” (B A G A BB B <> AA A <> BB B <> B A G A BBBB AAA BAG).  Note: <> Means rest
+5. Play the “Super Mario Brothers” Theme Song! Note that there are both low notes and high notes on this one!
+6. Play any song that you would like!
