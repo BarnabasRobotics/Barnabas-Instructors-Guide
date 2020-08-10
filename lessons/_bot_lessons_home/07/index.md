@@ -87,7 +87,7 @@ After you’ve created your computer code, you’ll need to send the code to the
 
 It's time to start coding!  Go ahead and open your IDE
 
-{% include badge.html type='suggestion' content='If you need a refresher on the IDE, go to: <a href="../05">Setting Up Your Computer</a>.' %}
+{% include badge.html type='suggestion' content='If you need a refresher on the IDE, go to: <a href="../06">Setting Up Your Computer</a>.' %}
 
 Let’s first learn the basics of your IDE.  In your IDE, your code will be made up of a series of blocks that snap together like puzzle pieces.  
 
