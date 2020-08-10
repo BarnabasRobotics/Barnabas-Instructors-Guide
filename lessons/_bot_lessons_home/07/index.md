@@ -159,7 +159,7 @@ Make sure to select “Barnabas Noggin” under the “Select Hardware” drop d
 
 The port is like an address for your Barnabas Noggin.  If it’s not set correctly, your computer won’t know where to send the code that you just wrote!
 
-{% include badge.html type='best_practice' content='For **Windows and Chromebooks**, the port will begin with “**COM”**.  For **Mac**, the port will be begin with: “**/dev/cu.wchusbserial1410**.  For Chromebooks, you’ll need to set your port a little later (after you click upload)' %}
+{% include badge.html type='best_practice' content='The port will begin with “COM” for Windows and Chromebook.  For Mac, the port will be begin with: “/dev/cu.wchusbserial1410".  Also, on Chromebooks, you’ll need to set your port after you click upload.' %}
 
 {% include badge.html type='troubleshoot' content='Does your computer say “No Devices Detected”? <img src="fig-7_12.png" alt="fig-7_12" style="zoom:30%;" class="image center" />You may need to wait a few minutes if it’s the first time that you’ve connected your Barnabas Noggin to your computer.  If you’ve waited for more than 5 minutes, try clicking on “Update Device Driver” on the bottom right.  This installs some software that helps your computer find your Barnabas Noggin. ' %}
 
