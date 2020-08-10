@@ -73,12 +73,7 @@ It’s now time to get your robot to turn your LED on and off in your circuit. T
 
 #### What is Computer Code?
 
-Let’s go back to our human brain analogy.  A human brain without any information stored in it wouldn’t be able to accomplish any of the functions that we do every day (e.g. walking, running and talking).  Likewise, a computer needs to have information in it to make a robot function.
-
-
-As humans, we learn instructions so that we can accomplish tasks like washing our hands or making a sandwich.  We learn these tasks by reading, listening or observation.  
-
-Computers learn by receiving computer code, written by humans.
+Let’s go back to our human brain analogy.  A human brain without any information stored in it wouldn’t be able to accomplish any of the functions that we do every day (e.g. walking, running and talking).  Likewise, a computer needs to have information in it to make a robot function.  As humans, we learn instructions so that we can accomplish tasks like washing our hands or making a sandwich.  We learn these tasks by reading, listening or observation.  Computers learn by receiving computer code, written by humans.
 
 #### How Computer Code Works
 
@@ -135,16 +130,7 @@ We are now ready to program our LED to turn on.
 
 <img src="fig-7_10.png" alt="fig-7_10" style="zoom:70%;" class="image center" />
 
-Notice the “pin#” and “status” pieces on the right side of this block.  
-
-
-The “pin#” setting allows you to specify the pin that you want to control.
-
-
-The “status” setting allows you to turn your pin on and off.
-
-
-Be default the “pin#” is set to 1.  Because our LED circuit is connected to Pin 13, we need to change it to 13.
+Notice the “pin#” and “status” pieces on the right side of this block.  The “pin#” setting allows you to specify the pin that you want to control.  The “status” setting allows you to turn your pin on and off.  Be default the “pin#” is set to 1.  Because our LED circuit is connected to Pin 13, we need to change it to 13.  Follow these instructions:
 
 1. Click on the “1”
 2. Replace “1” with “13” by typing it in.
@@ -159,29 +145,35 @@ The “ON” setting tells us that this block will be turning pin 13 on (i.e. gi
 
 We are now ready to upload our code to our robot.  Before doing so, let’s check a few things.
 
-1. Confirm power.  Make sure that the USB cable is connecting your Noggin to your computer.  A red light on your noggin should be on.
+##### 1. Confirm power.  
 
-   {% include badge.html type='troubleshoot' content='If the red light on your Barnabas Noggin is not on, check to make sure that your USB cable is plugged in all the way on both your Noggin side as well as computer side.' %}
+Make sure that the USB cable is connecting your Noggin to your computer.  A red light on your noggin should be on.
 
-2. Set your hardware.  Make sure to select “Barnabas Noggin” under the “Select Hardware” drop down.  This tells your computer what type of robot brain you are trying to communicate with.
+{% include badge.html type='troubleshoot' content='If the red light on your Barnabas Noggin is not on, check to make sure that your USB cable is plugged in all the way on both your Noggin side as well as computer side.' %}
 
-3. Set your port.  The port is like an address for your Barnabas Noggin.  If it’s not set correctly, your computer won’t know where to send the code that you just wrote!
+##### 2. Set your hardware.  
 
-   {% include badge.html type='best_practice' content='For **Windows and Chromebooks**, the port will begin with “**COM”**.  For **Mac**, the port will be begin with: “**/dev/cu.wchusbserial1410**.  For Chromebooks, you’ll need to set your port a little later (after you click upload)' %}
+Make sure to select “Barnabas Noggin” under the “Select Hardware” drop down.  This tells your computer what type of robot brain you are trying to communicate with.
 
-   {% include badge.html type='troubleshoot' content='Does your computer say “No Devices Detected”? You may need to wait a few minutes if it’s the first time that you’ve connected your Barnabas Noggin to your computer.  If you’ve waited for more than 5 minutes, try clicking on “Update Device Driver” on the bottom right.  This installs some software that helps your computer find your Barnabas Noggin. <img src="fig-7_12.png" alt="fig-7_12" style="zoom:50%;" class="image center" />' %}
+##### 3. Set your port.  
 
-4. Upload.  Now click “Upload” at the top of the Ardublock window to begin the upload process.
+The port is like an address for your Barnabas Noggin.  If it’s not set correctly, your computer won’t know where to send the code that you just wrote!
 
-   <img src="fig-7_13.png" alt="fig-7_13" style="zoom:50%;" class="image center" />
+{% include badge.html type='best_practice' content='For **Windows and Chromebooks**, the port will begin with “**COM”**.  For **Mac**, the port will be begin with: “**/dev/cu.wchusbserial1410**.  For Chromebooks, you’ll need to set your port a little later (after you click upload)' %}
 
+{% include badge.html type='troubleshoot' content='Does your computer say “No Devices Detected”? <img src="fig-7_12.png" alt="fig-7_12" style="zoom:30%;" class="image center" />You may need to wait a few minutes if it’s the first time that you’ve connected your Barnabas Noggin to your computer.  If you’ve waited for more than 5 minutes, try clicking on “Update Device Driver” on the bottom right.  This installs some software that helps your computer find your Barnabas Noggin. ' %}
 
+##### 4. Upload.  
+
+Now click “Upload” at the top of the Ardublock window to begin the upload process.
+
+<img src="fig-7_13.png" alt="fig-7_13" style="zoom:40%;" class="image center" />
 
 It will take a little time, but once it finishes, the window on the bottom should turn green.  Once upload completes, your LED should turn on!
 
-<img src="fig-7_14.png" alt="fig-7_14" style="zoom:50%;" class="image center" />
+<img src="fig-7_14.png" alt="fig-7_14" style="zoom:40%;" class="image center" />
 
-{% include badge.html type='troubleshoot' content='If the log screen turns red instead of green, check the following and try uploading again.  (1) Make sure that “Barnabas Noggin” is selected under “Select Hardware”.  (2) Make sure that a port is selected. (3) Click “Update Software” and allow the update to finish. <img src="fig-7_15.png" alt="fig-7_15" style="zoom:50%;" class="image center" />' %}
+{% include badge.html type='troubleshoot' content='If the log screen turns red instead of green, check the following and try uploading again. <img src="fig-7_15.png" alt="fig-7_15" style="zoom:30%;" class="image center" /> (1) Make sure that “Barnabas Noggin” is selected under “Select Hardware”.  (2) Make sure that a port is selected. (3) Click “Update Software” and allow the update to finish. ' %}
 
 ### Turn The LED Off
 
