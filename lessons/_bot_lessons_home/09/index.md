@@ -30,17 +30,15 @@ The picture below is of a protractor, which is something that mechanical enginee
 
 <img src="fig-9_2.png" alt="fig-9_2" style="zoom:80%;" class="image center" />
 
-<img src="fig-9_3.png" alt="fig-9_3" style="zoom:100%;" class="image center" />
+  Think of a windshield wiper going back and forth.  
 
-Think of a windshield wiper going back and forth.  When the windshield wiper is here, it is at 0 degrees.  Notice that the arrow is point at 0.
 
-<img src="fig-9_4.png" alt="fig-9_4" style="zoom:100%;" class="image center" />
 
-Now the windshield wiper is at 90 degrees.
-
-<img src="fig-9_5.png" alt="fig-9_5" style="zoom:100%;" class="image center" />
-
-Now the windshield wiper is at 180 degrees.
+|                                                              |                                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <img src="fig-9_3.png" alt="fig-9_3" style="zoom:100%;" class="image center" /> | When the windshield wiper is here, it is at 0 degrees.  Notice that the arrow is pointing at 0. |
+| <img src="fig-9_4.png" alt="fig-9_4" style="zoom:100%;" class="image center" /> | Now the windshield wiper is at 90 degrees.  Notice that the arrow is pointing at 90. |
+| <img src="fig-9_5.png" alt="fig-9_5" style="zoom:100%;" class="image center" /> | Now the windshield wiper is at 180 degrees.  Notice that the arrow is pointing at 180. |
 
 Later on we'll be moving your robot arm like a windshield wiper (back and forth).  When we start putting in degrees to change the position, think back to these pictures!
 
