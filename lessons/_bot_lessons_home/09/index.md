@@ -1,76 +1,110 @@
 ---
 layout: lesson
-title: Lesson 9 &middot; Make Your Robot Move (Part 1)
+title: Lesson 9 &middot; Make Your Robot Wave
 suggested_time: 60-75 minutes
+reflection:
+    comprehension: 
+      - Why are there three wires attached to the servo motor and what do each of them do?
+      - Why are there three wires attached to the servo motor and what do each of them do?
 ---
 
 ### What You'll Need
 
 Before we get started, let’s make sure that we have all the parts.
 
-### Step 1: How Does The Servo Motor Work? (5 min)
+<img src="fig-9_0.png" alt="fig-9_0" style="zoom:60%;" class="image center" />
 
-![fig 13.1](fig-13_1.jpg){:class="image "}
+### Servo Motor Basics
 
-Above is a picture of a servo motor. There are multiple types of servo motor, however the important characteristic of our servo motors is that they can only move in half a circle, 180 degrees. 
+#### Range of Motion
 
-Each servo motor has three wires attached to it: an orange wire, a red wire and a brown wire. If you consider the previous components, the LED and buzzer, you may remember that each of them only needed two wires to function. The main difference between the motor and our previous components is how much current the motor requires. The motor constantly needs 5V fed to it in order to function, where the buzzer and LED only needed 5V intermittently. The motor has two wires dedicated to pumping current in and out of the motor, these are the red (5V) and brown (GND) wires. In our robot human analogy these wires would be the veins. The orange wire, on the other hand, is responsible for sending a signal to the motor which will tell the motor to move. This wire would be more analogous to the nerves that extend across our bodies, carrying signals from our brain to the muscles.
+We’ve finally arrived at the point in our project where you’ll get your robot to move!  
 
-#### Vocabulary
+<img src="fig-9_1.png" alt="fig-9_1" style="zoom:40%;" class="image center" />
 
-  * **Servo Motor**: The servo motors our robot uses are 180 degree rotation servo motors, meaning they only have a range of motion of about half a circle. The servo motors require much more power than the LED or the buzzer, which necessitates a third wire attached to the motor. The motor has one wire dedicated to ground (GND), one dedicated to power (5V), and one dedicated to receiving a signal from the Arduino.
+You may recall from assembling your robot that the Barnabas-Bot has 3 servo motors.  These motors function like joints for your robot’s arms and head to move back and forth.  While there are different types of servo motors that exist in the world, the servo motors in your robot are unique because they only have a range of motion of 180 degrees (i.e. they can only move half a circle).  
 
-{% include youtube.html id="gviUtLsHDtg" %}
+#### More On Degrees
 
-### Step 2: Connecting The Motor (10min)
+The picture below is of a protractor, which is something that mechanical engineers use to measure degrees.  The numbers that you see go from 0 to 180, and each number represents a position.  Let's go over some examples to learn how degrees work.
 
-Start by drawing the circuit schematic below:
+<img src="fig-9_2.png" alt="fig-9_2" style="zoom:80%;" class="image center" />
 
-![fig 13.2](fig-13_2.png){:class="image "}
-![fig 13.3](fig-13_3.jpg){:class="image "}
+<img src="fig-9_3.png" alt="fig-9_3" style="zoom:100%;" class="image center" />
 
-The first image is a more official looking schematic, however it may be difficult for your students to understand what this schematic is saying.
+Think of a windshield wiper going back and forth.  When the windshield wiper is here, it is at 0 degrees.  Notice that the arrow is point at 0.
 
-While the following schematic looks more primitive, it will probably seem less abstract to the students.
+<img src="fig-9_4.png" alt="fig-9_4" style="zoom:100%;" class="image center" />
 
-In general I would advise drawing the schematic on the right, however if you are looking to challenge your students you can draw the more abstract schematic on the left.
+Now the windshield wiper is at 90 degrees.
 
-In order to attach our motors to the breadboard we will need to augment the servo motor wires. You will need three jumper wires, preferably yellow, red and black, to correspond with the orange, red and brown wires of the servo motor. Place one end of each of the jumper wires into the ends of the motor wires, being sure to color code the wires appropriately; yellow->orange, red->red, black->brown.
+<img src="fig-9_5.png" alt="fig-9_5" style="zoom:100%;" class="image center" />
 
-Just like it was recommended in past lessons, try having your students collectively build a breadboard diagram of the circuit based on the schematic you have drawn. Below is a diagram with all of the components we currently have attached to the robot:
+Now the windshield wiper is at 180 degrees.
 
-![fig 13.4](fig-13_4.png){:class="image fit"}
+Later on we'll be moving your robot arm like a windshield wiper (back and forth).  When we start putting in degrees to change the position, think back to these pictures!
 
-{% include youtube.html id="iTdQKmu6R1o" %}
+#### Servo Motor Wires
 
-### Step 3: Getting Our Robot To Wave (45 min)
+Notice how each of your robot’s 3 servo motors have 3 wires attached: (1) an orange wire, (2) red wire, and (3) brown wire.  Each of these colored wires plays a specific role.
 
-To control the servo motor we will need the servo block, located in the pins tab:
+<img src="fig-9_6.png" alt="fig-9_6" style="zoom:70%;" class="image center" />
 
-![fig 13.5](fig-13_5.png){:class="image fit"}
+The **red** (5 Volts) and **brown** (GND) wires are dedicated to pumping electricity in and out of the motor.  If you were to connect just the red and brown, your motor would turn on, but we wouldn’t be able to tell the motor where to go. This is where the orange wire comes in.
 
-Upon closer inspection you will see, like some of the other blocks we have used to this point, the servo block expects two input values:
 
-![fig 13.6](fig-13_6.png){:class="image "}
+The **orange** wire helps send a signal from the Barnabas Noggin (i.e. the brain) to the motor to tell the motor exactly where to go.  You can think of the orange wire as a nerve in our body that the brain uses to send signals to body parts to move them.
 
-The first, unsurprisingly, refers to the pin the motor has been placed on. In our case this is pin 9. The second is called the angle. The angle refers to the position that the motor will move to, not the total amount of motion that will take place. For example inputting an angle of 90 will not make the motor move 90 degrees, it will move to whatever position is associated with 90 degrees, no matter how near or far that is from the motor’s current position.
+### Connecting The Servo Motor
+
+The circuit below shows the connections that we need to make to get one motor to turn on.  Notice that the orange wire is connected to pin # 9.  Red is connected to 5V (5 volts) and brown to GND.  No resistor is needed here because the servo motor has built-in circuits to control the amount of electricity that it uses.
+
+<img src="fig-9_7.png" alt="fig-9_7" style="zoom:100%;" class="image center" />
+
+The Barnabas Noggin has 3-pin headers that the servo motor wires can plug into.  They are located on the top right.
+
+<img src="fig-9_8.png" alt="fig-9_8" style="zoom:40%;" class="image center" />
+
+Take the servo motor cable that corresponds to one of the arm motors.  You’ll need to look inside the hole on the bottom of your robot to try to find it.  Once you find it, stick it into the appropriate 3-pin header.  Make sure that the colors match up to the right labels!
+
+<img src="fig-9_9.png" alt="fig-9_9" style="zoom:30%;" class="image center" />
+
+### Getting Our Robot To Wave
+
+#### The Servo Block
+
+To control the servo motor we will need the “Servo” block, which is located under “Motors”.  The servo block expects two input values:
+
+<img src="fig-9_10.png" alt="fig-9_10" style="zoom:80%;" class="image center" />
+
+The first refers to the pin the motor has been placed on. In our case this is pin 9. The second is the angle.
 
 While programming the servo motor, don’t forget to consider its physical limitations. The servo motor is capable of rotating in half a circle, 180 degrees. Because of this the angle from 0 to 180 are valid inputs for the servo block. You are welcome to try other angles, it will not damage the motor to do so but you should not expect the motor to behave itself if you do.
 
-With all that being said I think it is time to experiment. Just have your students pick an angle they would like to try and upload their code.
-What happens? Many of your students will claim they say movement, however they can not get the movement to repeat, even after uploading their code again. After giving them some time to experiment and note this behavior recommend to the students that they change the angle before uploading again, and to be more precise they should pick an angle that is drastically different than their current angle. At least 30 degrees different. They should notice that the motor moves to a new position, and once again stays there.
+With all that being said, it is time to experiment!
 
-This is a good time to reiterate that the angle chosen does not move the motor by that much, but rather moves the motor to the position associated with that angle.
+### Practice!
 
-Can we do better than this? Can we do better than repeatedly uploading code to the robot in order to get constant motion from the robot? If fact we can, and doing so won’t require knowledge of any new blocks. Much like the set digital pin and tone blocks we can use delay in tandem with the servo block to create repeated effects, such as what is shown below:
+1. Move your robot arm to angle 0
 
-![fig 13.7](fig-13_7.png){:class="image "}
+   <img src="fig-9_11.png" alt="fig-9_11" style="zoom:80%;" class="image center" />
 
-The code above will move one of the robot’s motors back and forth over the span of two seconds.
+2. Move your robot arm to angle 90
 
-{% include youtube.html id="x2z0ARKediA" %}
+   <img src="fig-9_12.png" alt="fig-9_12" style="zoom:80%;" class="image center" />
 
+3. Move your robot arm to angle 180
 
-#### Vocabulary
+   <img src="fig-9_13.png" alt="fig-9_13" style="zoom:80%;" class="image center" />
 
-  * **Servo Block**: The servo block is the block used to control the servo motors on the robot. It requires two things, the pin the motor is located on and the angle the motor is meant to move to. The angle can accept any number but the physical limitations of the servo motor limit the effective range from 0 to 180.
+### Challenge!
+
+1. Move your robot arm back and forth between 0 and 180 with 1 second in between each move.
+
+   <img src="fig-9_14.png" alt="fig-9_14" style="zoom:80%;" class="image center" />
+
+2. Make your robot arm move faster
+
+3. Move your robot arm move slower
+
+4. Experiment with different angles!
