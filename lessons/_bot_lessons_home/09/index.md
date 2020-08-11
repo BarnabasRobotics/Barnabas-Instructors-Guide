@@ -5,7 +5,7 @@ suggested_time: 60-75 minutes
 reflection:
     comprehension: 
       - Why are there three wires attached to the servo motor and what do each of them do?
-      - Why are there three wires attached to the servo motor and what do each of them do?
+      - If the motor has previously been set to 20 degrees and is then set to 90, how many degrees does the motor move?
 ---
 
 ### What You'll Need
