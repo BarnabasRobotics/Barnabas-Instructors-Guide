@@ -3,6 +3,10 @@ layout: lesson
 title: Lesson 11 &middot; Bonus Activities
 suggested_time: 60-75 minutes
 ---
+### Overview
+This section includes additional challenges for you to expand your learning.  Projects includes:
+1. Morse Code with LEDs
+2. Blink, Buzz and Dance!
 
 ### Morse Code Challenge
 
