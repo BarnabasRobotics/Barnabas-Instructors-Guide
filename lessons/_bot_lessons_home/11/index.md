@@ -8,5 +8,5 @@ suggested_time: 60-75 minutes
 
 Expand the blinking LED to create morse code messages.
 
-{% include youtube.html id="5EYhmntCALg" %}
+{% include youtube.html id="NUUSjKGyywo" %}
 
