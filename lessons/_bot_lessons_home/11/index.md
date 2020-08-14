@@ -8,7 +8,7 @@ This section includes additional challenges for you to expand your learning.  Pr
 1. Morse Code with LEDs
 2. Blink, Buzz and Dance!
 
-### Morse Code Challenge
+## Morse Code with LEDs
 
 Expand the blinking LED to create morse code messages.
 
