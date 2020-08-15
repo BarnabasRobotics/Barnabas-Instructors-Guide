@@ -49,12 +49,12 @@
         <li>
             <span class="opener"><i class="icon fa-car"></i> Barnabas Racer </span>
             <ul>
-                    {% for lesson in site.racer_lessons %}
+                    {% for lesson in site.racer_lessons_home %}
                     <li><a href="{{ site.baseurl }}{{ lesson.url }}">{{ lesson.title }}</a></li>
                     {% endfor %}
             </ul>
         </li>
-        {% if page.collection == "racer_lessons"%}
+        {% if page.collection == "racer_lessons_home"%}
         {% include sidebar/lessonsegment.html %}
         {% endif %}
 
