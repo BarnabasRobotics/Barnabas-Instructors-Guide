@@ -40,5 +40,14 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 In the Barnabas docs the lesson images are stored in their respective lesson folder. All other site images are stored under assets. This is subject to change to a library as many of the images will be used in other cirriculum. All images should be no larger than 640 pixels wide and preferrably in png format. A service like [tinyPNG](https://tinypng.com) can also compress these images based on color depth while preserving transparent backgrounds. A compressed file improves site delivery and puts less load on mobile devices. 
 
+### Adding New Lessons
+
+To add new lessons, the following files need to be updated:
+1. _config.yml - deterimines the files to load
+2. index.html - home page
+3. /_includes/sidebar/lessonsegment.html - show lesson in the sidebar
+4. /_includes/sidebar/menu.html - show lesson in the sidebar
+5. /_layouts/lesson.html - lesson page layout
+
 Revision History
 - 1.00
