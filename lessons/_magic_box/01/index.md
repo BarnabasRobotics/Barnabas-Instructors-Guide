@@ -8,9 +8,7 @@ suggested_time: 30-60 minutes
 
 ### Project Overview
 
-Learn about coding, circuits, and mechanical design as you make a box that "magically" opens when you walk up to it! Free online classes available with purchase.
-
-Recommended Ages: 10+
+Learn about coding, circuits, and mechanical design as you make a box that "magically" opens when you walk up to it! 
 
 ### Materials
 
