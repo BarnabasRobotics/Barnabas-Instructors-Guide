@@ -1,6 +1,7 @@
 ---
 layout: lesson
-title: Lesson 2 &middot; 3D Printing and Design
+title: Lesson 2 &middot; Learn About 3-D Printing And Design
+suggested_time: 20-30 minutes
 
 reflection:
     comprehension: 

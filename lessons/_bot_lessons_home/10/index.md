@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 10 &middot; Make Your Robot Dance!
+title: Lesson 10 &middot; Move All The Motors
 suggested_time: 60-75 minutes
 ---
 

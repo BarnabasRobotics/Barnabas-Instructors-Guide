@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 7 &middot; The Blinking Light
+title: Lesson 7 &middot; Create A Blinking Light
 suggested_time: 60-75 minutes
 ---
 

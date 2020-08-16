@@ -1,7 +1,7 @@
 ---
 layout: lesson
-title: Lesson 3 &middot; Time To Decorate!
-suggested_time: 60-75 minutes
+title: Lesson 3 &middot; Decorate Your Robot
+suggested_time: 30-60 minutes
 
 disciplines:
 

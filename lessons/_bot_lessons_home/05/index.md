@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 5 &middot; Turning On Your Light
+title: Lesson 5 &middot; Turn On Your Light
 suggested_time: 60-75 minutes
 reflection:
     comprehension: 

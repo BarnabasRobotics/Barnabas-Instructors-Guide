@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 8 &middot; The Buzzer
+title: Lesson 8 &middot; Make Robot Music
 suggested_time: 60-75 minutes
 ---
 

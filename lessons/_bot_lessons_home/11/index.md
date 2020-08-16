@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 11 &middot; Bonus Activities
+title: Lesson 11 &middot; Do Bonus Activities
 suggested_time: 60-75 minutes
 ---
 ### Overview
