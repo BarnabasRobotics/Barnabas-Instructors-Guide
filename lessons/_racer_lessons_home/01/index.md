@@ -12,6 +12,7 @@ videos:
     - link: https://youtu.be/VlEWea9keUY
       text: Programming the Button with Ardublock 
       
+
 ---
 
 ### Materials
@@ -58,6 +59,7 @@ Let's first connect our button to our brain (Barnabas Noggin) so that it turns o
 
 
 ### Wiring the Button as Input
+
 Now we will wire your button to pin 2 so that our Barnabas Noggin can be programmed to sense when you have pushed it. 
 
 Build the circuit using the schematic below!
@@ -71,6 +73,7 @@ The diagram belows shows a correct circuit build.
 ### Programming the Button
 
 #### Conditional Logic
+
 In programming, conditional logic is used to decide a course of action depending on a condition. For example; an LED turning on if the button is pressed and turning off if the button is not pressed. Conditional logic is something we use in our everyday life without even recognizing it. If hungry, eat; if cold, wear a jacket, etc. In this section we will learn how to use conditional logic which will become the basis of how our robot makes decisions.
 
 #### Practice
@@ -110,11 +113,13 @@ void loop()
   }
 }
 ```
+
 {% include youtube.html id='OA2PoLzCDMI' %}
 
 {:.text-based}
 
 #### Challenges
+
 Now that you know how to program a button, try the following challenges:  
 
 1. Modify your program so that it turns OFF when you press the button and ON when you let go.
