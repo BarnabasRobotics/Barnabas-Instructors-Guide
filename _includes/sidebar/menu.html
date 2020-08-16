@@ -57,6 +57,18 @@
         {% if page.collection == "racer_lessons_home"%}
         {% include sidebar/lessonsegment.html %}
         {% endif %}
+        
+        <li>
+            <span class="opener"><i class="icon fa-child"></i> Magic Box</span>
+            <ul>
+                    {% for lesson in site.magic_box %}
+                    <li><a href="{{ site.baseurl }}{{ lesson.url }}">{{ lesson.title }}</a></li>
+                    {% endfor %}
+            </ul>
+        </li>
+        {% if page.collection == "magic_box"%}
+        {% include sidebar/lessonsegment.html %}
+        {% endif %}
 
  <!---
         <li>
