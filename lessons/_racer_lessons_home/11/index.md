@@ -119,10 +119,11 @@ The _and_ block allows you to have two conditions rather than just one, and asks
 
 ![fig 14.12](fig-14_12.png){:class="image "}
 
+```
 ### Programming The Ultrasonic Sensor Text Based
 #### Sample Code
 The following code below will take the distance and write it into an integer variable called “distance”.  See if you can understand what the code is doing.
-```
+
 // connect pin 3 to the trigger pin
 // connect pin 4 to the echoPin
 
@@ -167,7 +168,8 @@ void loop()
 {
     distance = ultrasonic( 3, 4 ) ;
 }
-```
+
+
 
 #### Challenge #1
 Try modifying the code to print the distance of the ultrasonic sensor onto the serial monitor.
@@ -204,7 +206,6 @@ First, in the **void** _setup_ we need to add `Serial.begin(9600);` and/or `pinM
 
 Second, to utilize our new communication tools we need to add a way to read them. After we have received a value for distance in our **void** _loop_ we can display it with `Serial.println(distance);` and/or visual a pulse through the LED with something as follows:
 
-```
 if(distance)
 {
     int t = distance * 10;
@@ -214,7 +215,9 @@ if(distance)
     delay(t);
 
 }
-```
+
 Because our ultrasonic subroutine handles the distance value, we can check if the return value of our ultrasonic subroutine is a usable value in our test `if(distance)`.
+```
+{:.text-based}
 
 {% include badge.html type="suggestion" content='This could be a great place to introduce switch cases or multiple if statements for the LED' %}
