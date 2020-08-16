@@ -43,6 +43,8 @@ collections:
     output: true
   racer_lessons_home:
     output: true
+  magic_box:
+    output: true
   tinker_lessons:
     output: true
 collections_dir: lessons
