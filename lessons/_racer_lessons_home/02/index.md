@@ -106,6 +106,4 @@ Modify the message so that it says "the button status is: _____".
 Now that you know how to store input values and display them, try the following challenges!
 - Display your robot's name on the screen
 - Display on the screen whether the light is on or off.  Display "YES" for on and "NO" for off.  If programmed correctly, the message should change whenever you push the button.
-- *Advanced* Create a program so that your Arduino can display the total number of times the button has been pressed.  It should keep counting higher each time you press the button.
-
-{% include badge.html type='suggestion' content='Student had idea to add light sensor, photo sensor and sound sensor. The buzzer can be modified to be used as a sound sensor' %}
+- Create a program so that your Arduino can display the total number of times the button has been pressed.  It should keep counting higher each time you press the button.

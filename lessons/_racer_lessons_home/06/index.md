@@ -104,26 +104,21 @@ You're probably thinking 'What was the point of all this? This was more work tha
 
 ### Step 2: Now it is your turn !(45 minutes) 
 #### Create The Following Subroutines
-| Name | Action |
-|*stop* | Stops all motors |
-|*rstop* | Stops the right motor only |
-|*lstop* | Stops the left motor only |
-|*left* | Moves the left motor forward only |
-|*lback* | Move the left motor backward only |
-|*right* | Moves the right motor forward only |
-|*rback* | Moves the right motor backward only |
-|*forward* | Moves both the left and right motor forward. |
-|*back* | Moves both the left and right motor backwards. |
-|*blink* | Blinks the LED light at whatever speed you want |
-|*forwardhalf* | Move forward at half speed. |
-|*backhalf* | Move backwards at half speed. |
 
-### Test It Out!
-1. Write a program that moves the car forward for 1 second, stops for 1 second, goes backwards for 1 seconds and stops for 1 second using your subroutines.
-2. Retry your turning challenges from the previous lesson by using your subroutines.
-3. Create a subroutine that tells your robot to turn left 90 degrees.
-4. Create a subroutine that tells yoru robot to turn right 90 degrees.
-5. Make up a programming complex programming challenge and use your new subroutines to achieve your goal!
+| Name          | Action                                          |
+| ------------- | ----------------------------------------------- |
+| *stop*        | Stops all motors                                |
+| *rstop*       | Stops the right motor only                      |
+| *lstop*       | Stops the left motor only                       |
+| *left*        | Moves the left motor forward only               |
+| *lback*       | Move the left motor backward only               |
+| *right*       | Moves the right motor forward only              |
+| *rback*       | Moves the right motor backward only             |
+| *forward*     | Moves both the left and right motor forward.    |
+| *back*        | Moves both the left and right motor backwards.  |
+| *blink*       | Blinks the LED light at whatever speed you want |
+| *forwardhalf* | Move forward at half speed.                     |
+| *backhalf*    | Move backwards at half speed.                   |
 
 #### Answers
 
@@ -131,3 +126,12 @@ You're probably thinking 'What was the point of all this? This was more work tha
 ![fig 8.8](fig-8_8.png){:.image .block-based}
 ![fig 8.9](fig-8_9.png){:.image .block-based}
 ![fig 8.10](fig-8_10.png){:.image .block-based}
+
+### Test It Out!
+
+1. Write a program that moves the car forward for 1 second, stops for 1 second, goes backwards for 1 seconds and stops for 1 second using your subroutines.
+2. Retry your turning challenges from the previous lesson by using your subroutines.
+3. Create a subroutine that tells your robot to turn left 90 degrees.
+4. Create a subroutine that tells your robot to turn right 90 degrees.
+5. Make up a programming complex programming challenge and use your new subroutines to achieve your goal!
+

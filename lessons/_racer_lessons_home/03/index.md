@@ -56,5 +56,3 @@ Place the 9 Volt battery on the underside of the chassis with double stick foam.
 
 {% include youtube.html id='tjeida4DhIM' %}
 [Mounting Hardware](https://youtu.be/tjeida4DhIM){:target="_blank"}
-
-{% include badge.html type='suggestion' content='Have the kids work together to build the robot. You can have each kid decide for the team what to build first. Remind everyone that we want to do it together.' %}

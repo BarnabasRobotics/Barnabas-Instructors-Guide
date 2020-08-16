@@ -113,7 +113,3 @@ Now that you know how to program a button, try the following challenges:
 1. Modify your program so that it blinks 5 times and then turns off whenever you push the button.
 2. Try adding the buzzer to your circuit (pin 6) and make it buzz only if the button is pushed.
 3. Try having the button blink 5 times only if you push the button twice.
-
-{% include badge.html type='best_practice' content="notes from today's lesson 3 class. - it worked well to have the students log in to schoology and walk through all the connections together as a class - we should add the led circuit to the diagram as well - add a note about squeezing the button so that it doesn't take up 4 rows. you want it to take up 3 rows - the way the button needs to be oriented on the breadboard is tricky. this is something that we need to think about - after wiring was confirmed, it was good to have the students figure out how to copy the ardublock program to program their first sensing program - we only got to worksheet 2 in our 55 min class. The whole lesson would probably take 1.5 hrs. - it was good to go over what is now possible using the switch. I explained pseudo code and states of the circuit.. add this to the lesson plan curriculum" %}
-
-{% include badge.html type='suggestion' content='Challenges for kids who do not have entire robot wired up. 1) have the light flash 3 times when you press the button and then turn off 2) have the light turn on when you push the button and have it turn off when you let go.' %}

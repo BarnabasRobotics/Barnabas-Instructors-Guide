@@ -140,8 +140,4 @@ void loop()
 {:.text-based}
 
 #### Calibration
-{% include badge.html type='troubleshoot' content='If you notice that your motors are not moving at the right speed, or they do not stop entirely, you will need to calibrate your motors.  We will cover this in the next section, though I highly recommend looking through it before attempting to complete this section, as it will answer many questions and better allow you to problem solve.s it will prove helpful in the problem solving process.' %}
-
-{% include badge.html type='troubleshoot' content='Before making any moves, make sure to first program the motors to stop, otherwise the behavior will be erratic' %}
-
-{% include badge.html type='suggestion' content='Explain variables and repeat or while blocks' %}
+{% include badge.html type='troubleshoot' content='If you notice that your motors are not moving at the right speed, or they do not stop entirely, you will need to calibrate your motors.  We will cover this in the next section.' %}

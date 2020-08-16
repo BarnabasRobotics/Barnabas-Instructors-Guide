@@ -63,12 +63,10 @@ This is the equation we must consider in our code for the sensor to behave appro
 Before wiring your sensor, you'll want to place your sensor onto your breadboard.  See the picture below.  Notice that the pins are aligned in a way that they are each on different rows.  This is important because each pin needs to go to a different signal.  You also want to make sure that your sensor is facing outward on the front.  If you need to reposition your breadboard to do so, go ahead and do that.
 
 ##### FRONT VIEW
-![fig 14.3(fig-14_3.jpg){:class="image "}
+![fig 14.3](fig-14_3.png){:class="image "}
 
 ##### TOP VIEW
-![fig 14.4(fig-14_4.jpg){:class="image "}
-
-VCC, GND, TRIGGER AND ECHO CONNECTED   
+![fig 14.4](fig-14_4.png){:class="image "}VCC, GND, TRIGGER AND ECHO CONNECTED   
 Notice that each signal is in a different row!
 
 ##### Ultrasonic Sensor Wiring Diagram
