@@ -137,7 +137,7 @@ Try the following exercises to get the hang of playing with the buzzer
 
 4. Make a siren sound using A4 and C4.
 
-   <img src="fig-8_20.png" alt="fig-8_20" style="zoom:80%;" class="image center" />
+   <img src="fig-8_21.png" alt="fig-8_21" style="zoom:80%;" class="image center" />
 
 ### Challenge!
 
