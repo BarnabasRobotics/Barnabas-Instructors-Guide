@@ -27,6 +27,8 @@ Each type of computer has their own version of the IDE, so your first task is to
 
 Click on either the [Chromebook](#chromebook-ide-setup), [Macbook](#macbook-ide-setup) or [Windows PC](#windows-pc-ide-setup) link to find the right instructions on how to set up your IDE.
 
+***
+
 ### Chromebook IDE Setup
 
 <img src="fig-6_1.png" alt="fig-6_1" style="zoom:90%;" class="image center" />
@@ -58,6 +60,8 @@ Your Chromebook has special secret features that we need to enable so that it wi
 Your Chromebook is now ready.  That was easy, right?  Type the link below (or copy and paste) into your address bar to check out your IDE!
 
 <p style="text-align:center"><cmd><a style="color:white" href="https://code.barnabasrobotics.com/webserial/">https://code.barnabasrobotics.com/webserial/</a></cmd></p>
+
+***
 
 ### Macbook IDE Setup
 
@@ -143,6 +147,8 @@ You’re done!  Go to Finder-> Applications and double-click on **BarnabasArdubl
 <img src="fig-6_7.png" alt="fig-6_2" style="zoom:90%;" class="image center" />
 
 
+
+---
 
 ### Windows PC IDE Setup
 
