@@ -25,7 +25,7 @@ There are lots of types of IDEs.  There are IDEs for video games, apps for your 
 
 Each type of computer has their own version of the IDE, so your first task is to figure out which type of computer you have: Chromebook, Macbook or Windows PC.
 
-Click on either the [Chromebook](#reflection), [Macbook](#Macbook-IDE-Setup) or [Windows PC](#Windows-PC-IDE-Setup) link to find the right instructions on how to set up your IDE.
+Click on either the [Chromebook](#chromebook-ide-setup), [Macbook](#macbook-ide-setup) or [Windows PC](#windows-pc-ide-setup) link to find the right instructions on how to set up your IDE.
 
 ### Chromebook IDE Setup
 
