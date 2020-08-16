@@ -4,12 +4,6 @@ layout: index
 title: Additional Links &middot; Racer
 
 documents:
-    - link: https://youtu.be/L7ud2i_yfRI
-      text: Basic Viewing 
-    - link: https://goo.gl/DlDJ53
-      text: Barnabas Template File
-    - link: https://youtu.be/L7ud2i_yfRI
-      text: Designing your Barnabas-Bot
 ---
 
 # {{ page.title }}

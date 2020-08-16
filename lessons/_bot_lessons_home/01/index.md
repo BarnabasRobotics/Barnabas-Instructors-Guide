@@ -19,6 +19,12 @@ reflection:
       
 ---
 
+### Materials
+
+Need materials?  [Purchase the Barnabas-Bot at our e-store](https://shop.barnabasrobotics.com/collections/kits-1/products/barnabas-bot-kit).  
+
+Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire. 
+
 ### What is a Robot?
 
 A robot is a type of moving machine powered by electricity that can automatically perform one or more tasks based on a computer program.  We can learn about the essential parts of a robot by comparing it to the human body.

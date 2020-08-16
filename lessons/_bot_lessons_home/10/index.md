@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 10 &middot; Move All The Motors
+title: Lesson 10 &middot; Move All Your Motors
 suggested_time: 60-75 minutes
 ---
 

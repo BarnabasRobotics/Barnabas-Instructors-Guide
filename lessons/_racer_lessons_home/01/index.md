@@ -22,7 +22,14 @@ documents:
       text: Wiring The Button as an Input
 ---
 
+### Materials
+
+Need materials?  [Purchase the Barnabas Racer at our e-store](https://shop.barnabasrobotics.com/collections/kits-1/products/barnabas-racer-kit).  
+
+Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire. 
+
 ### Step 1: First Button Circuit (15 minutes) 
+
 In order to use your button, you need to tell your Barnabas Noggin to do something IF it is pushed.  
 How do you do that?
 
