@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 3 &middot; Program Your Servo
+title: Lesson 3 &middot; Allow Your Box To See
 suggested_time: 30-60 minutes
 
       
