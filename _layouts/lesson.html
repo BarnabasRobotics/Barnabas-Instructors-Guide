@@ -261,6 +261,8 @@ layout: index
     {% assign this_collection = site.racer_lessons_home %}
 {% elsif page.collection == "racer_lessons" %}
     {% assign this_collection = site.racer_lessons %}
+{% elsif page.collection == "magic_box" %}
+    {% assign this_collection = site.magic_box %}
 {% endif %}
 
 {% for links in this_collection %}
