@@ -29,7 +29,7 @@ Click on either the [Chromebook](#chromebook-ide-setup), [Macbook](#macbook-ide-
 
 ### Chromebook IDE Setup
 
-<img src="fig-6_1.png" alt="fig-6_1" style="zoom:90%;" class="image right" />
+<img src="fig-6_1.png" alt="fig-6_1" style="zoom:90%;" class="image center" />
 
 For Chromebooks, your IDE will be a website called Barnabas Blocks.  Follow the instructions below to get it working.  
 
@@ -61,7 +61,7 @@ Your Chromebook is now ready.  That was easy, right?  Type the link below (or co
 
 ### Macbook IDE Setup
 
-<img src="fig-6_3.png" alt="fig-6_3" style="zoom:15%;" class="image right" />
+<img src="fig-6_3.png" alt="fig-6_3" style="zoom:15%;" class="image center" />
 
 For Macbooks, your IDE is called Ardublock.  We’re going to need to download something called a package file (**.pkg**) from the internet and then run the **.pkg** so that it can install the IDE onto your Macbook.  
 
@@ -76,7 +76,7 @@ Before starting:
 
 #### The Terminal
 
-<img src="fig-6_4.png" alt="fig-6_4" style="zoom:30%;" class="image right" />
+<img src="fig-6_4.png" alt="fig-6_4" style="zoom:30%;" class="image center" />
 
 The terminal is a place where you can use the keyboard to type direct commands to tell your computer what to do.  In the early days of computers, the terminal was the only way to communicate with a computer.  Whether you wanted to open an app, print something out, or even shut down your computer, you needed to use the terminal.  This was because there were no computer mice or touch screens yet!  Software engineers today still use the terminal because it is the best way to give special commands to your computer.  In fact, there are secret commands that you can use in the terminal that you can’t use with a mouse or touch screen.  It’s an important tool for any software engineer to master.  Let’s try it out! 
 
@@ -146,7 +146,7 @@ You’re done!  Go to Finder-> Applications and double-click on **BarnabasArdubl
 
 ### Windows PC IDE Setup
 
-<img src="fig-6_8.png" alt="fig-6_8" style="zoom:15%;" class="image right" />
+<img src="fig-6_8.png" alt="fig-6_8" style="zoom:15%;" class="image center" />
 
 For Windows PCs, your IDE is called **Ardublock**.  We’re going to need to download something called an executable file (.exe) from the internet and then run the .exe so that it can install the IDE onto your Windows PC.  
 
