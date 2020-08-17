@@ -39,11 +39,13 @@ We're going to introduce a sense, specifically the *touch* sense so that your ro
 
 Let's first connect our button to our brain (Barnabas Noggin) so that it turns on and off without any programming.   The schematic of the circuit that we need to build is shown below.
 
-![fig 3.1](fig-3_1.png){:class="image "}
+<img src="fig-3_1.png" alt="fig-3_1" style="zoom:70%;" class="image center" />
+
+
 
 1. Place the button onto your bread board (see below).  Make sure to that the button is oriented the right way (the legs should be sticking out toward the sides, not the top)!
 
-   ![fig 3.2](fig-3_2.png){:class="image "}
+   <img src="fig-3_2.png" alt="fig-3_2" style="zoom:70%;" class="image center" />
 
 2. Add the resistor
 
@@ -51,7 +53,7 @@ Let's first connect our button to our brain (Barnabas Noggin) so that it turns o
 
 4. The diagram belows shows a correct circuit build.
 
-   ![fig 3.3](fig-3_3.png){:class="image "}
+   <img src="fig-3_3.png" alt="fig-3_3" style="zoom:50%;" class="image center" />
 
 5. Once you are done, power up the noggin by connecting it to your computer using the USB.  Your LED should only turn on if you push the button down.  If it's not working correctly, double check your circuit! 
 
@@ -61,11 +63,11 @@ Now we will wire your button to pin 2 so that our Barnabas Noggin can be program
 
 Build the circuit using the schematic below!
 
-![fig 3.4](fig-3_4.png){:class="image "}
+<img src="fig-3_4.png" alt="fig-3_4" style="zoom:70%;" class="image right" />
 
 The diagram belows shows a correct circuit build.
 
-![fig 3.5](fig-3_5.png){:class="image "}
+<img src="fig-3_5.png" alt="fig-3_5" style="zoom:70%;" class="image right" />
 
 ##### Video Tutorial: Circuit Basics, Breadboarding, LED + Button Circuit Builds
 
