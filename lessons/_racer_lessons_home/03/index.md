@@ -33,7 +33,7 @@ Attach the servo motors with the nuts and bolts.  Be sure to have the bolts inse
 
 ### Install Caster Wheel
 
-<img src="fig-5_1.jpg" alt="fig-5_1" style="zoom:30%;" class="image right" />
+![fig 4.2](fig-5_1.jpg){:class="image right"}
 
 Attach the castor with the wider and shorter bolts in the front section of the plate.
 
