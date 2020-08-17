@@ -65,7 +65,7 @@ Build the circuit using the schematic below!
 
 <img src="fig-3_4.png" alt="fig-3_4" style="zoom:70%;" class="image center" />
 
-The diagram belows shows a correct circuit build.
+The diagram below shows a correct circuit build.
 
 <img src="fig-3_5.png" alt="fig-3_5" style="zoom:70%;" class="image center" />
 
