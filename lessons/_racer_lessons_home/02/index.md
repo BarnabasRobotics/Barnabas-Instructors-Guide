@@ -66,22 +66,21 @@ During a closed-circuit, two things determine how your circuit behaves.  *Voltag
 
 ### The Breadboard
 
-
 A breadboard helps us connect our wires (analogous to blood vessels) together.  We can connect our wires to the holes in the breadboard to make secure connections without needing to tie the wires together.  This is useful especially when we need to change the connections often, which is common as engineers figure out how to best make their ideas happen. 
 
-![fig 9.1](empty_breadboard.png){:class="image "}
+<img src="empty_breadboard.png" alt="breadboard" style="zoom:75%;" class="image center" />
 
 In a breadboard, all the holes on each row of 5 are connected to each other.  This means that any two wires placed into the same row will be connected to each other.   Remember this as we'll be using this later to build circuits!
 
 ### Building A Circuit Using Our Breadboard
 
+<img src="fig-5_10.png" alt="fig-5_10" style="zoom:30%;" class="image right" />
+
 We are now going to use the Barnabas Noggin to create a circuit. With the Noggin we will be powering the circuit with 5 volts. 
 
 We do have to note that our LED is rated at 3 volts, which means that if we give it more than 3 volts, it can burn out.  We need to add something to slow down the flow of electricity, which is why we add in a resistor.
 
-<img src="fig-5_10.png" alt="fig-5_10" style="zoom:30%;" class="image right" />
-
-![fig 9.5](fig-9_5.png){:class="image "}
+<img src="fig-9_5.png" alt="fig-9_5" style="zoom:100%;" class="image center" />
 
 Follow the wiring diagram below.  Plug the 9V battery into the jack on the Noggin and your LED should light up!  Note: The longer leg of the LED is + and the short leg of the LED is -.
 
@@ -91,8 +90,6 @@ Follow the wiring diagram below.  Plug the 9V battery into the jack on the Noggi
 
    * **Barnabas Noggin**: The brain of our soon to be robot! The Barnabas Noggin houses the brain of the Barnabas bot. It also contains a large amount of internal circuitry, making it somewhat related to the robot’s heart as well. We will often treat the Noggin as a power source, as it can give us 5V, a voltage we are comfortable with.
    * **Resistance**: The difficulty of passing an electric current through an object. If an object is very difficult to pass current through, it has a high resistance.
-
-{% include youtube.html id="iY3Ygg6Ucq0" %}
 
 {% include badge.html type="tidbit" content="Resistance, along with voltage and current are the three fundamental quantities in a circuit. In fact, there is an equation that relates all three of these inside of a circuit. The equation is known as Ohm’s Law V=IxR, where V is the voltage, R is the resistance, and I is the current. This simple equation gives us a very good understanding of the behavior of any circuit." %}
 
@@ -124,7 +121,7 @@ Once you are done, power up the Barnabas Noggin.  Your LED should only turn on i
 
 You may have noticed the two different types of resistor that we have are differentiated based on the colors of their bands. As it turns out we can tell the exact strength of a resistor based on the color of those bands.
 
-![fig 9.7 resistor table](resistor_table.png){:class="image fit"}
+<img src="resistor_table.png" alt="resistor_table" style="zoom:90%;" class="image right" />
 
 Let’s walk through this chart together. In the Numeric Value column we see that each color is given a number value associated with it. These numbers are only applied to the first two colored bands on a resistor. Those two numbers are combined into one 2 digit number. For example our 4,700 Ohm resistor has the colors yellow and violet as it’s first two color bands, in that order. From this we know that resistor’s value must start with the number 47, which we know it does. The third band on the resistor is the multiplier. We take the number denoted by the color of that band (in this case 100-red) and multiply that number and the 2 digit number from earlier together (47x100), giving us 4,700 Ohms. 
 
