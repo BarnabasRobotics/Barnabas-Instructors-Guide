@@ -26,7 +26,7 @@ Before we get started, let's make sure that we have all the parts.
 
 {% include youtube.html id='bSCSOL20SIw' %}{:.text-based}
 
-{% include youtube.html id='er4kNM6rLvg' %}{:.block-based}
+{% include youtube.html id='-UxbsqI5vh0' %}{:.block-based}
 
 {% include youtube.html id='VlEWea9keUY' %}{:.block-based}
 
