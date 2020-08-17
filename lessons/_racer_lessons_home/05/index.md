@@ -151,7 +151,7 @@ void loop()
 
 You can change the speed of your motor by using different angle values.  See the table below.  This will come in handy later one when you are trying fine tune your wheel movements.
 
-<img src="fig-9_1.png" alt="fig-9_1" style="zoom:50%;" class="image right" />
+<img src="fig-9_1.png" alt="fig-9_1" style="zoom:70%;" class="image center" />
 
 
 | Angle  | Direction         | Speed   |
