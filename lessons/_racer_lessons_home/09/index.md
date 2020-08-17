@@ -78,18 +78,18 @@ Before wiring your sensor, you'll want to place your sensor onto your breadboard
 ### Coding the Ultrasonic Sensor
 #### Our First Steps With The Sensor
 #### Reading the Distance
-We’ll start with the ultrasonic sensor by showing that it can actually do what I am claiming it does, measure the distance to an object. This will take a new block to accomplish;
+We’ll start with the ultrasonic sensor by showing that it can actually do what I am claiming it does, measure the distance to an object. This will take a new block to accomplish.
 
-![fig 14.6](fig-14_6.png){:class="image "}
+![fig 14.6](fig-14_6.png){:.image .block-based}
 
-This is the ultrasonic block, which simply gives us the number associated with the distance from an object. We need to somehow take the number it provides and get the robot to communicate that number to us. Luckily for us there is an entire tab in Ardublock called communication. In communication is a block called serial println. Using that block as well as the ultrasonic block we can make a very simple code;
+This is the ultrasonic block, which simply gives us the number associated with the distance from an object. We need to somehow take the number it provides and get the robot to communicate that number to us. Luckily for us there is an entire tab in Ardublock called communication. In communication is a block called serial println. Using that block as well as the ultrasonic block we can make a very simple code.
 
-![fig 14.7](fig-14_7.png){:class="image "}
+![fig 14.7](fig-14_7.png){:.image .block-based}
 
 Notice the pin numbers used in the ultrasonic block. They match the wiring diagram used to place the sensor.
 After uploading this code go to the Ardublock window and click on the button that says `Serial Monitor`;
 
-![fig 14.8](fig-14_8.png){:class="image fit"}
+![fig 14.8](fig-14_8.png){:.image .block-based}
 
 After pressing this button a window should pop up that begins to display numbers (note that the robot needs to be connected to the computer for these numbers to appear).You should be able to see those numbers change as you point your robot towards different object, or wave your hand in front of it.
 
@@ -101,30 +101,26 @@ As an activity, take your robot and computer in hand and walk up to a nearby wal
 #### Reading the Distance Visually
 There are other ways of reading the value for distance. Ways that do not involve leaving the robot attached to the computer. After all, what use is this sensor if if it only works while tethered to a computer. How about we use the LED in tandem with the ultrasonic sensor to notify us of the distance. The simplest code that allows us to do that is the following;
 
-![fig 14.9](fig-14_9.png){:class="image "}
+![fig 14.9](fig-14_9.png){:.image .block-based}
 
 The above code is just a simple blink code with the added wrinkle of having the distance measured by the sensor dictate the length of the blink. After uploading this code you can power the robot via a 9V battery and experiment with the bot. You should see the light blink faster or slower depending on the distance between the robot and the nearest object.
 
 #### Challenge
 Can you, instead of the code above, create code that will blink at specific time intervals for specific distance intervals. For example, the LED will blink at 80ms intervals if the distance is less than 20cm, it will blink at 160ms intervals if the distance is between 20cm and 40cm, and so on.
 
-To do this you will need to make use of the if block(possibly needing several of them);
+To do this you will need to make use of the if block (possibly needing several of them);
 
-![fig 14.10](fig-14_10.png){:class="image "}
+![fig 14.10](fig-14_10.png){:.image .block-based}
 
 As well as the _and_ block;
 
-![fig 14.11](fig-14_11.png){:class="image "}
+![fig 14.11](fig-14_11.png){:.image .block-based}
 
 The _and_ block allows you to have two conditions rather than just one, and asks if both are true;
 
-![fig 14.12](fig-14_12.png){:class="image "}
+![fig 14.12](fig-14_12.png){:.image .block-based}
 
 ```c
-### Programming The Ultrasonic Sensor Text Based
-#### Sample Code
-The following code below will take the distance and write it into an integer variable called “distance”.  See if you can understand what the code is doing.
-
 // connect pin 3 to the trigger pin
 // connect pin 4 to the echoPin
 
