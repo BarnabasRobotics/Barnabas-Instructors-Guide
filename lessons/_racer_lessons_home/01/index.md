@@ -26,6 +26,8 @@ A robot is a type of moving machine powered by electricity that can automaticall
 
 **Body (Skin & Skeleton)** - Just as the human body is made up of skin and bones to give our bodies structure and protects our internal organs, a robot’s body also has an exterior protective shell to protect its fragile components inside.  While the human body is made up of joints that allow us to move, a robot may have a motor, lever, or gear to help it move.  
 
+<p></p>
+
 <img src="fig-01_2.png" alt="fig-01_2" style="zoom:10%;" class="image left" />
 
 **Heart** - The human heart pumps blood from the heart to the rest of our organs for our bodies to function. Similarly, a battery or power source is like the robot’s “heart” which supplies electricity to the rest of the robot’s body parts so that the robot can function. While human bodies have veins and arteries for blood to travel through to reach organs in the human body, robots have a network of wires and circuits for electricity to move throughout the robot’s body.
@@ -45,6 +47,8 @@ A robot is a type of moving machine powered by electricity that can automaticall
 <img src="fig-01_4.png" alt="fig-01_4" style="zoom:10%;" class="image left" />
 
 **Personality** - Personality refers to a person’s unique pattern of thinking, feeling, and behaving. Everyone’s personality is different and it’s one of the things that makes you so special. Similarly, the computer code for a robot is like the robot’s personality because it determines how the robot will behave.  The robot’s computer code is processed through its “brain” or circuit board.  We can see the output of the code through the robot’s movement and function. 
+
+<p></p>
 
 <img align="center" src="fig-01_11.png" width="300">{:.block-based}
 
