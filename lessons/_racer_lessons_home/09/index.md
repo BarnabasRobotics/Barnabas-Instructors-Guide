@@ -37,7 +37,7 @@ Our sonar sensor is going to give our robot the ability to sense the world aroun
 
 What you see below is a picture of our HC-SRO4 sonar sensor; 
 
-![fig 14.1](fig-14_1.png){:class="image "}
+<img src="fig-14_1.png" alt="fig-14_1" style="zoom:25%;" class="image center" />
 
 Almost looks like it's staring at you, huh? The sensor board notably has two wide eyed speakers among its notable parts. On its backside it has a lot of parts you may be familiar with: resistors, capacitors, ICs and the like. Fortunately we don't need to go into detail about those parts to operate this sensor. The only thing we need to worry about are those speakers and the four pins extruding from the bottom of the board.
 
@@ -51,7 +51,7 @@ Knowing this let's get back to our two remaining pins. The Trig pin is the outpu
 ### The Science
 So for now, we know all we need to know about the hardware and are ready to dive into the physics of this sensor works. First of all, I'd like to go over how the sonar sensor sends and receives signals. Below is a diagram of how our sonar system works.
 
-![fig 14.2](fig-14_2.png){:class="image "}
+<img src="fig-14_2.png" alt="fig-14_2" style="zoom:25%;" class="image center" />
 
 We are utilizing a very handy bit of physics knowledge to use our sensors; The speed of sound in air is always about the same, 340 meters/second. For those of you who are mathematically inclined the distance something has travelled is equal to the speed it is travelling multiplied by the time it has been travelling; Distance = speed x time. Because we are fully aware of the speed of the sound wave we are creating we can alter that equation; Distance = 340m/s x time. From that equation we know that the only way the distance of the object changes is if the time is has been travelling changes.  
 In addition the sound wave needs to travel to the object, bounce off of the object, then travel back to the sensor. So the distance that the sound wave travels is actually twice the distance between the sensor and the object. For that reason the equation describing the distance read by the sensor is as follows;
@@ -67,10 +67,10 @@ This is the equation we must consider in our code for the sensor to behave appro
 Before wiring your sensor, you'll want to place your sensor onto your breadboard.  See the picture below.  Notice that the pins are aligned in a way that they are each on different rows.  This is important because each pin needs to go to a different signal.  You also want to make sure that your sensor is facing outward on the front.  If you need to reposition your breadboard to do so, go ahead and do that.
 
 ##### FRONT VIEW
-<img src="fig-14_3.png" alt="fig-14_3" style="zoom:50%;" class="image center" />
+<img src="fig-14_3.png" alt="fig-14_3" style="zoom:25%;" class="image center" />
 
 ##### TOP VIEW
-<img src="fig-14_4.png" alt="fig-14_4" style="zoom:50%;" class="image center" />
+<img src="fig-14_4.png" alt="fig-14_4" style="zoom:25%;" class="image center" />
 
 
 ##### Ultrasonic Sensor Wiring Diagram
