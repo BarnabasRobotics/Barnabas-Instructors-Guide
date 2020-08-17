@@ -11,8 +11,8 @@ videos:
       text: Printing Ultrasonic Sensor Distance On Serial Monitor
     - link: https://youtu.be/D_xfOxR7BAE
       text: The Blinking Light Challenge Using The Ultrasonic Sensor
-	- link: https://youtu.be/vf95FwYDsv8
-	  text: Ultrasonic Lesson (Text-based)
+    - link: https://youtu.be/vf95FwYDsv8
+      text: Ultrasonic Lesson (Text-based)
 ---
 
 ### Overview
