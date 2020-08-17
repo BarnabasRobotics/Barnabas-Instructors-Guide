@@ -37,19 +37,15 @@ Continuous servos are similar to the servos that we used from Barnabas-Bot, exce
 | 90    |        None        |  Zero |
 | 180   | Counter Clock-wise |  Full |
 
-##### 
-
 ### Wire Your Continuous Servo Motors
 
 {% include youtube.html id='byMBsEjQ6rY' %}
-
-### 
 
 ![fig 6.0](fig-6_0.png){:class="image "}
 
 Keep in mind that the servo motors can also be attached via the servo pin headers on the Barnabas Noggin. Doing so will ensure, however, that that motor function will be greatly diminished while the noggin is only powered by USB.
 
-### Coding Motors To Move
+### Coding Your Motors To Move
 
 #### Move Forward
 
