@@ -33,11 +33,9 @@ In this section you will be learning how to add an ultrasonic sensor to your Bar
 
 ### The Hardware
 
+<img src="fig-14_1.png" alt="fig-14_1" style="zoom:35%;" class="image right" />
+
 Our sonar sensor is going to give our robot the ability to sense the world around it. What we have been working with up to this point, our LEDs, motors, buzzers, etc. have been what we call outputs. This means that the component is meant to function by sending an electrical signal to the component from the robot's brain. The sonar sensor however, is what's known as an input. This means that our robot will receive a signal from the component rather than sending one to to it. I like to say that an output component listens and an input component talks. 
-
-What you see below is a picture of our HC-SRO4 sonar sensor; 
-
-<img src="fig-14_1.png" alt="fig-14_1" style="zoom:25%;" class="image center" />
 
 Almost looks like it's staring at you, huh? The sensor board notably has two wide eyed speakers among its notable parts. On its backside it has a lot of parts you may be familiar with: resistors, capacitors, ICs and the like. Fortunately we don't need to go into detail about those parts to operate this sensor. The only thing we need to worry about are those speakers and the four pins extruding from the bottom of the board.
 
@@ -49,9 +47,9 @@ That leaves only the Trig and Echo pins to explain, but before I do that I would
 Knowing this let's get back to our two remaining pins. The Trig pin is the output pin, it is going to listen for signals we give it. with this in mind we will need to connect it to one of the programmable pins on the Uno board. That pin will later be programmed as an output. The Echo pin is the input pin, and we will be listening for the signals it gives us. The Echo pin will be connected to another programmable pin on the Uno board which will later be programmed as an input.
 
 ### The Science
-So for now, we know all we need to know about the hardware and are ready to dive into the physics of this sensor works. First of all, I'd like to go over how the sonar sensor sends and receives signals. Below is a diagram of how our sonar system works.
+<img src="fig-14_2.png" alt="fig-14_2" style="zoom:50%;" class="image right" />
 
-<img src="fig-14_2.png" alt="fig-14_2" style="zoom:25%;" class="image center" />
+So for now, we know all we need to know about the hardware and are ready to dive into the physics of this sensor works. First of all, I'd like to go over how the sonar sensor sends and receives signals. Below is a diagram of how our sonar system works.
 
 We are utilizing a very handy bit of physics knowledge to use our sensors; The speed of sound in air is always about the same, 340 meters/second. For those of you who are mathematically inclined the distance something has travelled is equal to the speed it is travelling multiplied by the time it has been travelling; Distance = speed x time. Because we are fully aware of the speed of the sound wave we are creating we can alter that equation; Distance = 340m/s x time. From that equation we know that the only way the distance of the object changes is if the time is has been travelling changes.  
 In addition the sound wave needs to travel to the object, bounce off of the object, then travel back to the sensor. So the distance that the sound wave travels is actually twice the distance between the sensor and the object. For that reason the equation describing the distance read by the sensor is as follows;
