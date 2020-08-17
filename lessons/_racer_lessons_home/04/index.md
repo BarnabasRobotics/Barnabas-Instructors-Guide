@@ -9,7 +9,12 @@ videos:
       text: Variables and Serial Monitor
 ---
 
+### Tutorial Video(s)
+
+{% include youtube.html id='u_sgzyL4H04' %}{:.block-based}
+
 ### Put The Input Value Into A Variable
+
 A variable is like a bucket that stores information.  A variable has a name, which is the name of the bucket, and it also has a value, which is the stuff that is inside the bucket.
 
 The program below creates a variable named "button", and it sets it the value "1" if the button is pushed, and "0" if the button is not pushed.
@@ -85,8 +90,6 @@ Once you upload the code, click on "Serial Monitor" to see your data displayed!
 Modify the message so that it says "the button status is: _____". 
 
 ![fig 4.3](fig-4_3.png){:.image .block-based }
-
-{% include youtube.html id='u_sgzyL4H04' %}{:.block-based}
 
 ### Challenges
 Now that you know how to store input values and display them, try the following challenges!
