@@ -141,3 +141,13 @@ void loop()
 }
 ```
 {:.text-based}
+
+{% include youtube.html id='Kr0Qempo_gI' %}{:.block-based}
+{% include youtube.html id='EcphrH3rvFQ' %}{:.text-based}
+
+### Challenge
+
+1. Change the delay vaules of this code and see how the robot reacts. 
+2. Move the robot forwards and backwards in the same program.
+
+**Note**: Remember that you want to make a portion of your code at the end of any movement that brings your robot to a stop before having it move again. Without this it will be difficult to determine how far the robot is turning in a single command, as it will appear to turn continuously.
