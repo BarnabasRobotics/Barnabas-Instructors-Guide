@@ -53,19 +53,16 @@ void setup()
 {
   pinMode( 2 , INPUT);
   pinMode( 7 , OUTPUT);
+
 }
 
 void loop()
 {
-  if (digitalRead(2) == HIGH)
-  {
-    digitalWrite( 7 , LOW );
-    button = 0;
+  if (digitalRead(2) == HIGH) {
+    digitalWrite(7,LOW);
   }
-  else
-  {
-    digitalWrite( 7 , HIGH );
-    button = 1;
+  else {
+    digitalWrite(7,HIGH);
   }
 }
 ```
