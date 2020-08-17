@@ -20,7 +20,7 @@ In this section we'll combine everything to program our car to move and avoid ob
 
 {% include youtube.html id='0wk1WM62UDg' %}{:.block-based}
 
-<div>
+<div markdown="1">
 
 ### The Road Thus Far
 
