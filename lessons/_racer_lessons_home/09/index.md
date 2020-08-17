@@ -21,15 +21,7 @@ In this section you will be learning how to add an ultrasonic sensor to your Bar
 
 ### Tutorial Video(s)
 
-{% include youtube.html id='QiMypxfT6PQ' %}{:.text-based}
-
-{% include youtube.html id='-2v4RSW-1O8' %}{:.block-based}
-
-{% include youtube.html id='Ht2f9Uy5xb0' %}{:.block-based}
-
-{% include youtube.html id='D_xfOxR7BAE' %}{:.block-based}
-
-{% include youtube.html id='vf95FwYDsv8' %}{:.block-based}
+{% include youtube.html id='vf95FwYDsv8' %}{:.text-based}
 
 ### The Hardware
 
@@ -61,7 +53,10 @@ This is the equation we must consider in our code for the sensor to behave appro
 {% include badge.html type='troubleshoot' content='If you experience erratic issues with the sensor or motors, try replacing the 9V battery.  Note that some of the cheaper 9V batteries may not have enough charge to power the entire system.  We recommend the Procell or Duracell brand.' %}
 
 ### Wiring The Ultrasonic Sensor
+{% include youtube.html id='-2v4RSW-1O8' %}{:.block-based}
+
 #### Placing Your Hardware
+
 Before wiring your sensor, you'll want to place your sensor onto your breadboard.  See the picture below.  Notice that the pins are aligned in a way that they are each on different rows.  This is important because each pin needs to go to a different signal.  You also want to make sure that your sensor is facing outward on the front.  If you need to reposition your breadboard to do so, go ahead and do that.
 
 ##### FRONT VIEW
@@ -76,12 +71,10 @@ Before wiring your sensor, you'll want to place your sensor onto your breadboard
 
 
 ### Coding the Ultrasonic Sensor
-#### Our First Steps With The Sensor
-
 <div markdown="1">
-
-
 #### Reading the Distance
+{% include youtube.html id='Ht2f9Uy5xb0' %}{:.block-based}
+
 We’ll start with the ultrasonic sensor by showing that it can actually do what I am claiming it does, measure the distance to an object. This will take a new block to accomplish.
 
 ![fig 14.6](fig-14_6.png){:.image .block-based}
@@ -102,7 +95,9 @@ Notice that your ultrasonic can only sense up to a certain range. Beyond that ra
 
 As an activity, take your robot and computer in hand and walk up to a nearby wall. Point your robot at the wall and slowly start to walk backwards. Try and find the maximum range of your sensor by seeing what the biggest number it displays before reaching 0 is. Also see if you can figure out what units the numbers represent.
 
-#### Reading the Distance Visually
+#### Displaying The Distance With The LED
+{% include youtube.html id='D_xfOxR7BAE' %}{:.block-based}
+
 There are other ways of reading the value for distance. Ways that do not involve leaving the robot attached to the computer. After all, what use is this sensor if if it only works while tethered to a computer. How about we use the LED in tandem with the ultrasonic sensor to notify us of the distance. The simplest code that allows us to do that is the following;
 
 ![fig 14.9](fig-14_9.png){:.image .block-based}
@@ -175,8 +170,6 @@ void loop()
 {:.text-based}
 
 <div markdown="1">
-
-
 #### Challenge #1
 
 
