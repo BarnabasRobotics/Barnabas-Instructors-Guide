@@ -102,7 +102,7 @@ Rather than the simple code above, you could add your newfound knowledge of subr
 #### How Do Subroutines Help Me?
 You're probably thinking 'What was the point of all this? This was more work than before!' Well for now it seems that way, but before we're done with this class our robot is going to be navigating through very complicated paths, and we will need to give our robot several commands. At that point this process becomes extremely worthwhile. The way I put it is that we do a lot of work up front so that the rest our code is easier to write.
 
-### Step 2: Now it is your turn !(45 minutes) 
+### Step 2: Now it is your turn !
 #### Create The Following Subroutines
 
 | Name          | Action                                          |
