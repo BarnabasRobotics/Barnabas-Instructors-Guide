@@ -28,9 +28,7 @@ A robot is a type of moving machine powered by electricity that can automaticall
 
 <br>
 
-<br>
-
-
+<img src="fig-01_2.png" alt="fig-01_2" style="zoom:10%;" class="image left" />
 
 **Heart** - The human heart pumps blood from the heart to the rest of our organs for our bodies to function. Similarly, a battery or power source is like the robot’s “heart” which supplies electricity to the rest of the robot’s body parts so that the robot can function. While human bodies have veins and arteries for blood to travel through to reach organs in the human body, robots have a network of wires and circuits for electricity to move throughout the robot’s body.
 
@@ -82,11 +80,15 @@ Robotics is a type of engineering that combines 4 other engineering disciplines 
 
 1) *Mechanical Engineering* focuses on the design, construction, and movement of machines. Mechanical engineers help design the parts of the robot that help it move.  They also help design the outside of a robot to help to protect the fragile parts inside.
 
+<br>
+
 <p></p>
 
 <img src="fig-01_6.png" alt="fig-01_6" style="zoom:10%;" class="image left" />
 
 2) *Electrical Engineering* focuses on the design and distribution of electricity within machines. A robot must have a power source for electricity in order to turn on. A robot’s power source may be a battery or an electrical outlet that it plugs into. Imagine how the human heart pumps blood from the heart to the rest of our organs for our bodies to function. Similarly, a battery or power source is like the robot’s “heart” which supplies electricity to the rest of the robot’s body parts so that the robot can function. For electricity to move throughout the robot’s body, it must have a network of wires and circuits through which electricity can travel. This is similar to how human bodies have veins and arteries for blood to travel through to reach organs in the human body. 
+
+<br>
 
 <p></p>
 
