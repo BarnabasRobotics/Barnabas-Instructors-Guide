@@ -26,6 +26,11 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
+Switch between text-based and block-based
+{:.text-based}
+{:.block-based}
+
+
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
@@ -48,6 +53,7 @@ To add new lessons, the following files need to be updated:
 3. /_includes/sidebar/lessonsegment.html - show lesson in the sidebar
 4. /_includes/sidebar/menu.html - show lesson in the sidebar
 5. /_layouts/lesson.html - lesson page layout
+
 
 Revision History
 - 1.00
