@@ -80,18 +80,17 @@ In programming, conditional logic is used to decide a course of action depending
 
 #### Practice
 
-Let's write a program that turns ON the light if we press the button and turns OFF the light if we let go of the button
+Let's write a program that turns ON the light if we press the button and turns OFF the light if we let go of the button.
 
-We're going to use the if/else block to test for the condition.{:.block-based}
+We're going to use the if/else block to test for the condition.
+
+{:.block-based}
 
 ![fig 3.6](fig-3_6.png){:.image .block-based}
 
 ![fig 3.7](fig-3_7.png){:.image .block-based}
 
 {% include youtube.html id='VlEWea9keUY' %}{:.block-based}
-
-
-You'll need to use a new conditional function called if/else. See below:{:.text-based}
 
 ```c
 void setup()
