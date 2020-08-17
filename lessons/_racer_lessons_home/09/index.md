@@ -67,13 +67,15 @@ This is the equation we must consider in our code for the sensor to behave appro
 Before wiring your sensor, you'll want to place your sensor onto your breadboard.  See the picture below.  Notice that the pins are aligned in a way that they are each on different rows.  This is important because each pin needs to go to a different signal.  You also want to make sure that your sensor is facing outward on the front.  If you need to reposition your breadboard to do so, go ahead and do that.
 
 ##### FRONT VIEW
-![fig 14.3](fig-14_3.png){:class="image "}
+<img src="fig-14_3.png" alt="fig-14_3" style="zoom:50%;" class="image center" />
 
 ##### TOP VIEW
-![fig 14.4](fig-14_4.png){:class="image "}
+<img src="fig-14_4.png" alt="fig-14_4" style="zoom:50%;" class="image center" />
+
 
 ##### Ultrasonic Sensor Wiring Diagram
-![fig 14.5](fig-14_5.png){:class="image "}
+<img src="fig-14_5.png" alt="fig-14_5" style="zoom:50%;" class="image center" />
+
 
 ### Coding the Ultrasonic Sensor
 #### Our First Steps With The Sensor
