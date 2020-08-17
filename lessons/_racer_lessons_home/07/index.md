@@ -14,8 +14,6 @@ In this section we will be programming our racer to move forwards, backwards and
 
 {% include youtube.html id='Kr0Qempo_gI' %}{:.block-based}
 
-
-
 {% include youtube.html id='EcphrH3rvFQ' %}{:.text-based}
 
 ### Review
@@ -183,9 +181,7 @@ One of these, the subroutine commands block, is the block we use to teach our ro
 
 The first subroutine we are going to make will move our robot forward, something we have done twice already. We will start by dragging a Loop Do into the coding environment (unless one is already there) and also dragging a subroutine commands block into the environment as well. Unlike all the other blocks in Ardublock, we are not going to attach the subroutine commands block to the Loop Do.
 
-![fig 8.2](fig-8_2.png){:.image .fit .block-based
-
-If you are following along using Arduino without Ardublock, notice in the code below that we first declare a function called “forward()”.  We must do this before we call it in the “loop()” function.  
+![fig 8.2](fig-8_2.png){:.image .fit .block-based}If you are following along using Arduino without Ardublock, notice in the code below that we first declare a function called “forward()”.  We must do this before we call it in the “loop()” function.  
 
 ```c
 #include <Servo.h>

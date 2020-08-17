@@ -182,7 +182,7 @@ void loop()
 
 Try modifying the code to print the distance of the ultrasonic sensor onto the serial monitor.
 
-This is not terribly difficult to do. But first we need to understand what the serial monitor is;
+This is not terribly difficult to do. But first we need to understand what the serial monitor is:
 
 ![fig 14.13](fig-14_13.png){:class="image "}
 
