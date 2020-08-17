@@ -4,22 +4,19 @@ title: Lesson 5 &middot; Motion
 
 suggested_time: 60-75 minutes  
 
-disciplines:
-    - "Define a simple design problem that can be solved through the development of an object, tool, process, or system and includes several criteria for success and constraints on materials, time, or cost. (3-5-ETS1-1)"
-    - "Connections to Engineering, Technology, and Applications of Science: Influence of Engineering, Technology, and Science on Society and the Natural World Engineers improve existing technologies or develop new ones. (4-PS3-4)"
-
 videos:
     - link: https://youtu.be/GnWS4G7Db4g
       text: Turning your bot 90 degrees
-documents:
-    - link: https://docs.google.com/document/d/1mGtP2Jm0QKs6r3DXELENc2tx7vsxqzGifeTC2-UnncA/view
-      text: Forward, Backward, Left, Right [Blocks]
-    - link: https://docs.google.com/document/d/1xSy60_IaOytoE99T48l9CXTqfJzHeJJflQWpMUp3uGA/view
-      text: Forward, Backward, Left, Right [Text]
+    - link: https://youtu.be/Kr0Qempo_gI
+      text: Navigating your robot (Block-based)
+	- link: https://youtu.be/EcphrH3rvFQ 
+      text: Navigating your robot (Text-based)
+
 ---
 
 #### Review
-Let's recall The code that ultimately got our robot moving forward;
+
+Let's recall the code that ultimately got our robot moving forward;
 
 ![fig 7.1](fig-7_1.png){:.image .block-based}
 
@@ -153,8 +150,13 @@ void loop()
 ```
 {:.text-based}
 
-{:.block-based}
+{% include youtube.html id='Kr0Qempo_gI %}{:.block-based}
 
-Have your students change the delay vaules of this code and see how the robot reacts. Afterwards, challenge them to move the robot in all directions; forwards, backwards, left and right in one program.
+{% include youtube.html id='EcphrH3rvFQ %}{:.text-based}
 
-- **Note**: Remember that you want to make a portion of your code at the end of any movement that brings your robot to a stop before having it move again. Without this it will be difficult to determine how far the robot is turning in a single command, as it will appear to turn continuously.
+### Challenge
+
+1. Change the delay vaules of this code and see how the robot reacts. 
+2. Move the robot forwards and backwards in the same program.
+
+**Note**: Remember that you want to make a portion of your code at the end of any movement that brings your robot to a stop before having it move again. Without this it will be difficult to determine how far the robot is turning in a single command, as it will appear to turn continuously.
