@@ -110,3 +110,34 @@ void loop()
 You should find that changing the amount of time one wheel turns either shortens or lengthens the time the robot spends turning and therefore changes how far the robot turns.  Take some time to experiment!
 
 Just remember that it will be impossible to see how long a turn lasts for if the turn is the only command being given. Instead, the robot will just turn continuously and appear to spin in place. Instead, have code that will move either forward or backward for some amount of time before turning, like so:
+
+![fig 7.2](fig-7_2.png){:.image .block-based}
+
+```c
+#include <Servo.h>
+
+Servo servo_pin_11;
+Servo servo_pin_10;
+
+void setup()
+{
+  servo_pin_11.attach(11);
+  servo_pin_10.attach(10);
+
+  while (digitalWrite(2)==HIGH){
+    servo_pin_11.write( 90 );
+    servo_pin_10.write( 90 );
+  }
+}
+
+void loop()
+{
+  servo_pin_11.write(1);
+  servo_pin_10.write(180);
+  delay(500);
+  servo_pin_11.write( 1 ); //both being 1 will turn the robot left
+  servo_pin_10.write( 1 ); //both being 180 will turn the robot right
+  delay(500);
+}
+```
+{:.text-based}
