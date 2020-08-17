@@ -23,7 +23,7 @@ Study the instructions below before you assemble the car chassis.
 
 ### Install Servo Motors
 
-<img src="fig-5_4.jpg" alt="fig-5_4" style="zoom:30%;" class="image right" /> 
+![fig 4.2](fig-5_4.jpg){:class="image right"}
 
 Attach the servo motors with the nuts and bolts.  Be sure to have the bolts insert from the outside
 
