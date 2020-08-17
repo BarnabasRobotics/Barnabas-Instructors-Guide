@@ -63,11 +63,11 @@ Now we will wire your button to pin 2 so that our Barnabas Noggin can be program
 
 Build the circuit using the schematic below!
 
-<img src="fig-3_4.png" alt="fig-3_4" style="zoom:70%;" class="image right" />
+<img src="fig-3_4.png" alt="fig-3_4" style="zoom:70%;" class="image center" />
 
 The diagram belows shows a correct circuit build.
 
-<img src="fig-3_5.png" alt="fig-3_5" style="zoom:70%;" class="image right" />
+<img src="fig-3_5.png" alt="fig-3_5" style="zoom:70%;" class="image center" />
 
 ##### Video Tutorial: Circuit Basics, Breadboarding, LED + Button Circuit Builds
 
