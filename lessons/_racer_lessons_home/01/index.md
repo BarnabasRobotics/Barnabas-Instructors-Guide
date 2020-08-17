@@ -69,8 +69,6 @@ The diagram below shows a correct circuit build.
 
 <img src="fig-3_5.png" alt="fig-3_5" style="zoom:70%;" class="image center" />
 
-##### Video Tutorial: Circuit Basics, Breadboarding, LED + Button Circuit Builds
-
 {% include youtube.html id='er4kNM6rLvg' %}
 
 ### Programming the Button
