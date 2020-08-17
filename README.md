@@ -27,8 +27,8 @@ Syntax highlighted code block
 ```
 
 Switch between text-based and block-based
-{:.text-based}
-{:.block-based}
+- {:.text-based}
+- {:.block-based}
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
