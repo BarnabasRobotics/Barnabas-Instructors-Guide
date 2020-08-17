@@ -20,10 +20,13 @@ In this section we'll combine everything to program our car to move and avoid ob
 
 {% include youtube.html id='0wk1WM62UDg' %}{:.block-based}
 
+<div>
+
 ### The Road Thus Far
 
-<div>With both the motors and the ultrasonic sensor working properly we have all the tools we need to create an autonomous program that can avoid obstacles. Our robot has finally gotten to the point that it can act independently of us in a semi-intelligent way. All that is left of us to do is effectively marry the motion of the robot to its ability to sense objects. Effectively utilize the robot’s inputs to direct its outputs.</div>{:.block-based}
-	
+With both the motors and the ultrasonic sensor working properly we have all the tools we need to create an autonomous program that can avoid obstacles. Our robot has finally gotten to the point that it can act independently of us in a semi-intelligent way. All that is left of us to do is effectively marry the motion of the robot to its ability to sense objects. Effectively utilize the robot’s inputs to direct its outputs.
+
+
 To help us create the avoidance code we are going to use a few of the tools we have constructed over the course of this class. The first being all of the subroutines we made previously;
 
 ![fig 15.1](fig-15_1.png){:.image .block-based}
@@ -69,3 +72,5 @@ There is one more potential hurdle to getting your avoidance code to work, and i
 As it turns out, we can account for these shortcomings in our hardware through code. We can add another statement to our conditional logic so that the distance read needs to be lower that 20, but not zero, in order to turn;
 
 ![fig 15.8](fig-15_8.png){:.image .block-based}
+
+</div>{:.block-based}

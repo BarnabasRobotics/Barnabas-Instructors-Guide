@@ -77,6 +77,9 @@ Before wiring your sensor, you'll want to place your sensor onto your breadboard
 
 ### Coding the Ultrasonic Sensor
 #### Our First Steps With The Sensor
+
+<div>
+
 #### Reading the Distance
 We’ll start with the ultrasonic sensor by showing that it can actually do what I am claiming it does, measure the distance to an object. This will take a new block to accomplish.
 
@@ -119,6 +122,8 @@ As well as the _and_ block;
 The _and_ block allows you to have two conditions rather than just one, and asks if both are true;
 
 ![fig 14.12](fig-14_12.png){:.image .block-based}
+
+</div>{:.block-based}
 
 ```c
 // connect pin 3 to the trigger pin
@@ -167,3 +172,57 @@ void loop()
 }
 ```
 {:.text-based}
+
+<div>
+    #### Challenge #1
+
+Try modifying the code to print the distance of the ultrasonic sensor onto the serial monitor.
+
+This is not terribly difficult to do. But first we need to understand what the serial monitor is;
+
+![fig 14.13](fig-14_13.png){:class="image "}
+
+The serial monitor is an otherwise blank window where our robot can write information, but only if it is still connected to the computer. If you look back on our sample code the ultrasonic function we made ends with a number that represents distance. Somehow we need to take that number and print it onto the serial monitor. 
+
+Only two lines of code need to be added to accomplish this. First, in the void setup we need to ‘turn on’ the serial monitor, making sure that information can be written to it. Inside the void setup insert the line;
+
+`Serial.begin(9600);`
+
+Next, at the bottom of the void loop create the line;
+
+`Serial.println(distance);`
+
+Now you can upload this code and open the serial monitor. You should see numbers flying by as the robot continuously writes the distance to the serial monitor. Perhaps including a delay block after the Serial.print command would be helpful in slowing down the rate that numbers appear. The numbers shown should change as you put your hand in front of the sensor, or point the sensor at various objects.
+
+#### Finding The Max Distance
+
+You may notice that while pointing at very distant objects the number displayed falls to zero. This is a common problem with the ultrasonic sensor. It has a limited range and can’t accurately read distance. When this happens our code forces the robot to give a value of zero;
+
+`if ((duration < 2) || (duration > 300)) return false;`
+
+Remember that to a computer the word false and the number zero mean the same thing.
+
+However the way the sensor has been coded is not the only reason for this error. The sensors are not made perfectly. Each one is slightly different from the next and because of that each behaves slightly differently, each may have a slightly different maximum range.
+
+If we would like to add the LED or other means of communicating the distance found we will need to make a few adjustments.
+
+First, in the **void** _setup_ we need to add `Serial.begin(9600);` and/or `pinMode(7, OUTPUT);`.
+
+Second, to utilize our new communication tools we need to add a way to read them. After we have received a value for distance in our **void** _loop_ we can display it with `Serial.println(distance);` and/or visual a pulse through the LED with something as follows:
+
+```
+if(distance)
+{
+    int t = distance * 10;
+    digitalWrite(7,HIGH);
+    delay(t);
+    digitalWrite(7,LOW);
+    delay(t);
+
+}
+```
+
+Because our ultrasonic subroutine handles the distance value, we can check if the return value of our ultrasonic subroutine is a usable value in our test `if(distance)`.
+    
+</div>{:.text-based}
+
