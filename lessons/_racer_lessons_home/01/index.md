@@ -37,6 +37,8 @@ We're going to introduce a sense, specifically the *touch* sense so that your ro
 
 ### A Simple Button Circuit
 
+##### Video Tutorial: Circuit Basics, Breadboarding, LED + Button Circuit Builds
+
 {% include youtube.html id='er4kNM6rLvg' %}
 
 Let's first connect our button to our brain (Barnabas Noggin) so that it turns on and off without any programming.   The schematic of the circuit that we need to build is shown below.
@@ -78,22 +80,19 @@ In programming, conditional logic is used to decide a course of action depending
 
 #### Practice
 
-Let's write a program that turns ON the light if we press the button and turns OFF the light if we let go of the button. 
+Let's write a program that turns ON the light if we press the button and turns OFF the light if we let go of the button
 
-{:.block-based}
-
-We're going to use the if/else block to test for the condition.  
+We're going to use the if/else block to test for the condition.{:.block-based}
 
 ![fig 3.6](fig-3_6.png){:.image .block-based}
 
 ![fig 3.7](fig-3_7.png){:.image .block-based}
 
-{% include youtube.html id='VlEWea9keUY' %}
+{% include youtube.html id='VlEWea9keUY' %}{:.block-based}
 
-{:.block-based}
 
-{:.text-based}
-You'll need to use a new conditional function called if/else. See below;
+
+You'll need to use a new conditional function called if/else. See below:{:.text-based}
 
 ```c
 void setup()
@@ -114,9 +113,9 @@ void loop()
 }
 ```
 
-{% include youtube.html id='OA2PoLzCDMI' %}
-
 {:.text-based}
+
+{% include youtube.html id='OA2PoLzCDMI' %}{:.text-based}
 
 #### Challenges
 
