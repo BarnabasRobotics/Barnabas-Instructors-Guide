@@ -29,7 +29,7 @@ Syntax highlighted code block
 Switch between text-based and block-based
 
 Block-based Image:
-- ![fig 3.6](fig-3_6.png){:.image .block-based}
+<div>![fig 3.6](fig-3_6.png){:.image .block-based}</div>
 
 General tag:
 - {:.text-based}
