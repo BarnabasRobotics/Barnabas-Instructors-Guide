@@ -160,7 +160,9 @@ void loop()
 
 ### Subroutines
 
-Up to this point we have been issuing commands to our robot in a painstaking way. To move the robot forward we need to give orders to two different pins and then specify a time that they continue obeying that order. It would be nice if we could instead give only one order to our robot, like move forward, and have it understand what we mean. I like to think of this like being told to take the trash out. Your parents don't tell you: 
+Up to this point we have been issuing commands to our robot in a painstaking way. To move the robot forward we need to give orders to two different pins and then specify a time that they continue obeying that order. It would be nice if we could instead give only one order to our robot, like move forward, and have it understand what we mean. 
+
+Think of when you're told to take out the trash.  Your parents don't tell you: 
 
 1. Open the trash can, then take the trashbag out
 2. Tie it
@@ -168,20 +170,16 @@ Up to this point we have been issuing commands to our robot in a painstaking way
 4. Come inside and put another trashbag in the can
 5. Then close the lid
 
-They just tell you to take the trash out, and you understand the list of steps that make up that chore. How can we make our robot do this? How do we make it understand one command as a longer list of orders?
+Instead, they just tell you to "take the trash out".  The reason is because at some point you were already taught all the necessary steps required to accomplish the task.  Our robot can do this same thing where we make it understand one command as a longer list of orders.
 
-We are going to achieve this by using what Ardublock refers to as subroutines. The two subroutine blocks are found at the bottom of the control tab as shown below;
+We are going to achieve this by using **subroutines**. 
 
-![fig 8.1](fig-8_1.png){:.image .fit .block-based}
+<div markdown="1">
 
+### Creating And Call A Subroutine    
 
-One of these, the subroutine commands block, is the block we use to teach our robot to do a certain list of orders under a single named command. The other block simply says subroutine, but I like to refer to it as the subroutine run block. This block when placed into our Loop Do will run the list of commands we created earlier. Using the subroutine blocks is different than using the other blocks we have utilized this far. Because of this I'm going to walk through our first subroutine in great detail.
+Notice in the code below that we first declare and define a subroutine called “forward()”.  We must do this before we call it in the “loop()” function.  In the loop() function, we call the subroutine by writing "forward()".
 
-### What Is A Subroutine?
-
-The first subroutine we are going to make will move our robot forward, something we have done twice already. We will start by dragging a Loop Do into the coding environment (unless one is already there) and also dragging a subroutine commands block into the environment as well. Unlike all the other blocks in Ardublock, we are not going to attach the subroutine commands block to the Loop Do.
-
-![fig 8.2](fig-8_2.png){:.image .fit .block-based}If you are following along using Arduino without Ardublock, notice in the code below that we first declare a function called “forward()”.  We must do this before we call it in the “loop()” function.  
 
 ```c
 #include <Servo.h>
@@ -215,10 +213,20 @@ void loop()
   forward();
 }
 ```
+<div>{:.text-based}
+<div markdown="1">
 
-{:.block-based}
+### Create A Subroutine
 
-### Let's Make One…
+The two subroutine blocks are found at the bottom of the control tab as shown below.
+
+![fig 8.1](fig-8_1.png){:.image .fit}
+
+One of these, the subroutine commands block, is the block we use to teach our robot to do a certain list of orders under a single named command. The other block simply says subroutine, which we'll call the subroutine run block. When this block is placed into our **Loop Do**, it will run the list of commands we created earlier. Using the subroutine blocks is different than using the other blocks we have utilized this far. Because of this we'll walk through our first subroutine in great detail.
+
+The first subroutine we are going to make will move our robot forward, something we have done twice already. We will start by dragging a Loop Do into the coding environment (unless one is already there) and also dragging a subroutine commands block into the environment as well. Unlike all the other blocks in Ardublock, we are not going to attach the subroutine commands block to the Loop Do.
+
+![fig 8.2](fig-8_2.png){:.image .fit .block-based}
 
 The subroutine commands block is strange for another reason. We can change what it is called in the same way we can change number values in our other blocks, by left clicking on the word subroutine you open a text box that you can type in. I'm going to erase the word subroutine and replace it with forward.
 
@@ -228,7 +236,7 @@ I'm just doing this so that in the future, when we have more than one subroutine
 
 ![fig 8.4](fig-8_4.png){:.image .block-based}
 
-### Calling A Subroutine
+### Call A Subroutine
 
 Now we only need to put a subroutine run block inside of our Loop Do and rename it forward as well;
 
@@ -238,13 +246,15 @@ Rather than the simple code above, you could add your newfound knowledge of subr
 
 ![fig 8.6](fig-8_6.png){:.image .block-based}
 
+</div>{:.block-based}
+
 ### How Do Subroutines Help Me?
 
 You're probably thinking 'What was the point of all this? This was more work than before!' Well for now it seems that way, but before we're done with this class our robot is going to be navigating through very complicated paths, and we will need to give our robot several commands. At that point this process becomes extremely worthwhile. The way I put it is that we do a lot of work up front so that the rest our code is easier to write.
 
 ### Practice
 
-Create The Following Subroutines
+Create the following subroutines
 
 | Name          | Action                                          |
 | ------------- | ----------------------------------------------- |
