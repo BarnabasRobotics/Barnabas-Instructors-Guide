@@ -25,21 +25,20 @@ A robot is a type of moving machine powered by electricity that can automaticall
 
 
 **Body (Skin & Skeleton)** - Just as the human body is made up of skin and bones to give our bodies structure and protects our internal organs, a robot’s body also has an exterior protective shell to protect its fragile components inside.  While the human body is made up of joints that allow us to move, a robot may have a motor, lever, or gear to help it move. 
-{:style="overflow: hidden;"}  
 
-<img src="fig-01_2.png" alt="fig-01_2" style="zoom:10%;" class="image left" />
-
+<p align="left" markdown = "1">
+    <img src="fig-01_2.png" alt="fig-01_2" style="zoom:10%;" class="image left" />
 **Heart** - The human heart pumps blood from the heart to the rest of our organs for our bodies to function. Similarly, a battery or power source is like the robot’s “heart” which supplies electricity to the rest of the robot’s body parts so that the robot can function. While human bodies have veins and arteries for blood to travel through to reach organs in the human body, robots have a network of wires and circuits for electricity to move throughout the robot’s body.
-{:style="overflow: hidden;"}  
-
-<p align="center">
+    <p align="center">
     <img align="center" src="fig-01_9.png" width="300">
 </p>
+</p>
+
+
 
 <img src="fig-01_3.png" alt="fig-01_3" style="zoom:10%;" class="image left" />
 
 **Brain** -  To process information, the human body has a central nervous system consisting of a brain and a network of nerves. Likewise, a robot needs a “brain” to tell its body parts how to move and function. The “brain” of the robot is a computer chip or circuit board.
-{:style="overflow: hidden;"}
 
 <p align="center">
     <img align="center" src="fig-01_10.png" width="300">
