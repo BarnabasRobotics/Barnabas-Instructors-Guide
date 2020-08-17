@@ -78,7 +78,8 @@ Before wiring your sensor, you'll want to place your sensor onto your breadboard
 ### Coding the Ultrasonic Sensor
 #### Our First Steps With The Sensor
 
-<div>
+<div markdown="1">
+
 
 #### Reading the Distance
 We’ll start with the ultrasonic sensor by showing that it can actually do what I am claiming it does, measure the distance to an object. This will take a new block to accomplish.
@@ -173,7 +174,8 @@ void loop()
 ```
 {:.text-based}
 
-<div>
+<div markdown="1">
+
 
 #### Challenge #1
 
