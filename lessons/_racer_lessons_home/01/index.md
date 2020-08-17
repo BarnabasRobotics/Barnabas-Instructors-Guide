@@ -26,12 +26,6 @@ A robot is a type of moving machine powered by electricity that can automaticall
 
 **Body (Skin & Skeleton)** - Just as the human body is made up of skin and bones to give our bodies structure and protects our internal organs, a robot’s body also has an exterior protective shell to protect its fragile components inside.  While the human body is made up of joints that allow us to move, a robot may have a motor, lever, or gear to help it move.  
 
-<p align="center">
-    <img align="center" src="fig-01_8.png" width="400">
-</p>
-
-
-
 <img src="fig-01_2.png" alt="fig-01_2" style="zoom:10%;" class="image left" />
 
 **Heart** - The human heart pumps blood from the heart to the rest of our organs for our bodies to function. Similarly, a battery or power source is like the robot’s “heart” which supplies electricity to the rest of the robot’s body parts so that the robot can function. While human bodies have veins and arteries for blood to travel through to reach organs in the human body, robots have a network of wires and circuits for electricity to move throughout the robot’s body.
@@ -56,8 +50,31 @@ A robot is a type of moving machine powered by electricity that can automaticall
 
 <p align="center">
     <img align="center" src="fig-01_11.png" width="300">
-</p>
+</p>{:.block-based}
 
+```c
+void setup()
+{
+  pinMode( 2 , INPUT);
+  pinMode( 7 , OUTPUT);
+}
+
+void loop()
+{
+  if (digitalRead(2) == HIGH)
+  {
+    digitalWrite( 7 , LOW );
+    button = 0;
+  }
+  else
+  {
+    digitalWrite( 7 , HIGH );
+    button = 1;
+  }
+}
+```
+
+{:.text-based}
 
 
 ### Robots Bring Together Different Engineering Disciplines
@@ -80,6 +97,4 @@ Robotics is a type of engineering that combines 4 other engineering disciplines 
 
 Professional engineers who design and build robots need to depend on others in the above engineering fields and a team of artists and other types of designers. In other words, building a robot requires teamwork among individuals with varying skills. 
 
-As you go through the Barnabas-Bot project, you’ll get a taste of each of these engineering disciplines and how they work together in the process of building a robot from the ground up!
-
-{% include badge.html type='activity' content='Draw a picture of a robot. Next, give your robot drawing a body, heart,  brain, and personality.  Next, write the engineering disciplines (Mechanical, Electrical, Computer (Hardware), and Software) next to the robot’s body, heart, brain, and personality.' %}
+As you go through the Barnabas Racer project, you’ll get a taste of each of these engineering disciplines and how they work together in the process of building a robot from the ground up!
