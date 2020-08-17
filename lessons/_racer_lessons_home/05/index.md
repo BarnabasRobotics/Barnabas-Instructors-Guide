@@ -9,9 +9,8 @@ videos:
       text: Turning your bot 90 degrees
     - link: https://youtu.be/Kr0Qempo_gI
       text: Navigating your robot (Block-based)
-	- link: https://youtu.be/EcphrH3rvFQ 
+    - link: https://youtu.be/EcphrH3rvFQ 
       text: Navigating your robot (Text-based)
-
 ---
 
 #### Review
