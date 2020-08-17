@@ -91,7 +91,6 @@ We're going to use the if/else block to test for the condition.{:.block-based}
 {% include youtube.html id='VlEWea9keUY' %}{:.block-based}
 
 
-
 You'll need to use a new conditional function called if/else. See below:{:.text-based}
 
 ```c
@@ -112,7 +111,6 @@ void loop()
   }
 }
 ```
-
 {:.text-based}
 
 {% include youtube.html id='OA2PoLzCDMI' %}{:.text-based}
