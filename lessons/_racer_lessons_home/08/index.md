@@ -21,9 +21,9 @@ In this lesson you'll be challenged to program your robot through a series of ch
 
 ### There And Back Challenge
 
-Now that we have built a library of subroutines we can take what we have learned to perform a simple task. This lesson will allow the students to become more familiar with the material taught in the last few weeks and give them an objective to work towards. The 'obstacle course' they will be navigating is very simple, they will get more complicated in coming weeks. This week we will simply navigate around a cone (or similar obstacle) as shown below;
+Now that we have built a library of subroutines we can take what we have learned to perform a simple task. This lesson will allow the students to become more familiar with the material taught in the last few weeks and give them an objective to work towards. The 'obstacle course' they will be navigating is very simple, they will get more complicated in coming weeks. This week we will simply navigate around a cone (or similar obstacle) as shown below.
 
-![fig Obstacle Path.1](obstacle_1.png){:class="image fit"}
+<img src="obstacle_1.png" alt="obstacle_1" style="zoom:75%;" class="image center" />
 
 Some things to keep in mind during this lesson:
 
@@ -34,7 +34,7 @@ Some things to keep in mind during this lesson:
 
  Have your robot travel around the box until it reaches its starting location. 
 
-![fig 12.1](fig-12_1.png){:class="image fit"}
+<img src="fig-12_1.png" alt="fig-12_1" style="zoom:75%;" class="image center" />
 
 #### Things to consider
 - Like the other challenges the appropriate delays for forward and turn will take experimentation to find.
@@ -43,11 +43,11 @@ Some things to keep in mind during this lesson:
 ### Letters Challenge
 
 Now that we can go to a goal and come back, let's take it up a notch.  See if your car can travel along the ground to create the following letters below.  
-Draw the letters A, E, F and D on a piece of paper and see if your car can drive along it.  
-See the red arrows for the path that your car should travel.
 
+- Draw the letters A, E, F and D on a piece of paper and see if your car can drive along it.  
+- See the red arrows for the path that your car should travel.
 
-![fig 11.1](fig-11_1.png){:class="image fit"}
+<img src="fig-11_1.png" alt="fig-11_1" style="zoom:35%;" class="image center" />
 
 #### Some things to keep in mind:
 
