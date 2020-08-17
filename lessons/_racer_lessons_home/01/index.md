@@ -1,17 +1,12 @@
 ---
 layout: lesson
-title: Lesson 1 &middot; Build And Program A Button Circuit
+title: Lesson 1 &middot; Learn The Basics Of Robotics
+suggested_time: 20-30 minutes
 
-suggested_time: 60-75 minutes  
-
-videos:
-    - link: https://youtu.be/er4kNM6rLvg
-      text: Circuit Basics and Wiring The Button
-    - link: https://youtu.be/-UxbsqI5vh0
-      text: Wiring the Button and LED for programming
-    - link: https://youtu.be/VlEWea9keUY
-      text: Programming the Button with Ardublock 
-      
+reflection:
+    comprehension: 
+      - What are the 4 major parts of a robot?
+      - What type of engineering is related to each of those parts?
 
 ---
 
@@ -21,100 +16,70 @@ Need materials?  [Purchase the Barnabas Racer at our e-store](https://shop.barna
 
 Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire. 
 
-### Project Overview
+### What is a Robot?
 
-The Barnabas Racer is a continuation project for the [Barnabas-Bot](https://lessons.barnabasrobotics.com/bot_lessons_home/01/index.html). This robot is a car that is able to think and act on its own. You will review concepts from Barnabas Bot (circuits, coding, mechanical build) and will also be introduced to sensors!  Recommended Ages: 11+
+A robot is a type of moving machine powered by electricity that can automatically perform one or more tasks based on a computer program.  We can learn about the essential parts of a robot by comparing it to the human body.
 
-### Giving A Robot Senses
-
-A robot is made of four different parts [(Body, Heart, Brain, Personality)](https://lessons.barnabasrobotics.com/bot_lessons_home/01/index.html).  These parts need to work together in order for our robot to function.
-
-Throughout the level 1 class the only type of components used were **output** components. This simply means that the LED, buzzer and motors needed to get a signal **from** the robot's brain to work. 
-
-In this section, we'll be introduced to a new component, the button, which is fundamentally different. It is an **input** component, meaning that it will send a signal **to** the robot's brain. Inputs, also known as sensors, will help our robot interact with the world around it, starting with the button.
-
-We're going to introduce a sense, specifically the *touch* sense so that your robot will be able to *feel* when something touches it.  We'll be using a **button** component to accomplish this.  You'll experience how the heart, brain and personality come together to make this happen.
-
-### A Simple Button Circuit
-
-Let's first connect our button to our brain (Barnabas Noggin) so that it turns on and off without any programming.   The schematic of the circuit that we need to build is shown below.
-
-<img src="fig-3_1.png" alt="fig-3_1" style="zoom:70%;" class="image center" />
+<img src="fig-01_1.png" alt="fig-01_1" style="zoom:10%;" class="image left" />
 
 
 
-1. Place the button onto your bread board (see below).  Make sure to that the button is oriented the right way (the legs should be sticking out toward the sides, not the top)!
+**Body (Skin & Skeleton)** - Just as the human body is made up of skin and bones to give our bodies structure and protects our internal organs, a robot’s body also has an exterior protective shell to protect its fragile components inside.  While the human body is made up of joints that allow us to move, a robot may have a motor, lever, or gear to help it move.  
 
-   <img src="fig-3_2.png" alt="fig-3_2" style="zoom:70%;" class="image center" />
+<p align="center">
+    <img align="center" src="fig-01_8.png" width="400">
+</p>
 
-2. Add the resistor
 
-3. Add the LED
 
-4. The diagram belows shows a correct circuit build.
+<img src="fig-01_2.png" alt="fig-01_2" style="zoom:10%;" class="image left" />
 
-   <img src="fig-3_3.png" alt="fig-3_3" style="zoom:50%;" class="image center" />
+**Heart** - The human heart pumps blood from the heart to the rest of our organs for our bodies to function. Similarly, a battery or power source is like the robot’s “heart” which supplies electricity to the rest of the robot’s body parts so that the robot can function. While human bodies have veins and arteries for blood to travel through to reach organs in the human body, robots have a network of wires and circuits for electricity to move throughout the robot’s body.
 
-5. Once you are done, power up the noggin by connecting it to your computer using the USB.  Your LED should only turn on if you push the button down.  If it's not working correctly, double check your circuit! 
+<p align="center">
+    <img align="center" src="fig-01_9.png" width="300">
+</p>
 
-### Wiring the Button as Input
 
-Now we will wire your button to pin 2 so that our Barnabas Noggin can be programmed to sense when you have pushed it. 
+<img src="fig-01_3.png" alt="fig-01_3" style="zoom:10%;" class="image left" />
 
-Build the circuit using the schematic below!
+**Brain** -  To process information, the human body has a central nervous system consisting of a brain and a network of nerves. Likewise, a robot needs a “brain” to tell its body parts how to move and function. The “brain” of the robot is a computer chip or circuit board.  
 
-<img src="fig-3_4.png" alt="fig-3_4" style="zoom:70%;" class="image center" />
+<p align="center">
+    <img align="center" src="fig-01_10.png" width="300">
+</p>
 
-The diagram below shows a correct circuit build.
 
-<img src="fig-3_5.png" alt="fig-3_5" style="zoom:70%;" class="image center" />
+<img src="fig-01_4.png" alt="fig-01_4" style="zoom:10%;" class="image left" />
 
-{% include youtube.html id='er4kNM6rLvg' %}
+**Personality** - Personality refers to a person’s unique pattern of thinking, feeling, and behaving. Everyone’s personality is different and it’s one of the things that makes you so special. Similarly, the computer code for a robot is like the robot’s personality because it determines how the robot will behave.  The robot’s computer code is processed through its “brain” or circuit board.  We can see the output of the code through the robot’s movement and function. 
 
-### Programming the Button
+<p align="center">
+    <img align="center" src="fig-01_11.png" width="300">
+</p>
 
-#### Conditional Logic
 
-In programming, conditional logic is used to decide a course of action depending on a condition. For example; an LED turning on if the button is pressed and turning off if the button is not pressed. Conditional logic is something we use in our everyday life without even recognizing it. If hungry, eat; if cold, wear a jacket, etc. In this section we will learn how to use conditional logic which will become the basis of how our robot makes decisions.
 
-#### Practice
+### Robots Bring Together Different Engineering Disciplines
 
-Let's write a program that turns ON the light if we press the button and turns OFF the light if we let go of the button.
+Robotics is a type of engineering that combines 4 other engineering disciplines to create a moving machine: (1) mechanical engineering; (2) electrical engineering; (3) computer engineering; and (4) software engineering. Below is a brief explanation of each of the different types of engineering and the important role they play in robots:
 
-![fig 3.6](fig-3_6.png){:.image .block-based}
+<img src="fig-01_5.png" alt="fig-01_5" style="zoom:10%;" class="image left" />
 
-![fig 3.7](fig-3_7.png){:.image .block-based}
+1) *Mechanical Engineering* focuses on the design, construction, and movement of machines. Mechanical engineers help design the parts of the robot that help it move.  They also help design the outside of a robot to help to protect the fragile parts inside.
 
-{% include youtube.html id='VlEWea9keUY' %}{:.block-based}
+<img src="fig-01_6.png" alt="fig-01_6" style="zoom:10%;" class="image left" />
 
-```c
-void setup()
-{
-  pinMode( 2 , INPUT);
-  pinMode( 7 , OUTPUT);
+2) *Electrical Engineering* focuses on the design and distribution of electricity within machines. A robot must have a power source for electricity in order to turn on. A robot’s power source may be a battery or an electrical outlet that it plugs into. Imagine how the human heart pumps blood from the heart to the rest of our organs for our bodies to function. Similarly, a battery or power source is like the robot’s “heart” which supplies electricity to the rest of the robot’s body parts so that the robot can function. For electricity to move throughout the robot’s body, it must have a network of wires and circuits through which electricity can travel. This is similar to how human bodies have veins and arteries for blood to travel through to reach organs in the human body. 
 
-}
+<img src="fig-01_7.png" alt="fig-01_7" style="zoom:10%;" class="image left" />
 
-void loop()
-{
-  if (digitalRead(2) == HIGH) {
-    digitalWrite(7,LOW);
-  }
-  else {
-    digitalWrite(7,HIGH);
-  }
-}
-```
-{:.text-based}
+3) *Computer Engineering* involves the design of circuits, computers.   A computer is a robot’s brain which is a complex network of electrical circuits like nerves.  These circuits come together to help the robot store information (memory) and to make decisions.  Computer engineers design the computer of a robot. Computer engineers may also work on a system's software. However, the design of complex software systems is often the domain of software engineering, which is usually considered a separate discipline. Desktop computers represent a tiny fraction of the devices a computer engineer might work on, as computer-like architectures are now found in a range of devices including video game consoles and DVD players.
 
-{% include youtube.html id='bSCSOL20SIw' %}{:.text-based}
+4) *Software Engineering* is the study of how computers function and process information. For humans to move their arms, our brain must send a message to the arm telling it to move. This message is similar to a computer program/code. The program/code dictates the way a robot behaves and functions. This is essentially the robot’s “personality.”
 
-#### Challenges
+Professional engineers who design and build robots need to depend on others in the above engineering fields and a team of artists and other types of designers. In other words, building a robot requires teamwork among individuals with varying skills. 
 
-Now that you know how to program a button, try the following challenges:  
+As you go through the Barnabas-Bot project, you’ll get a taste of each of these engineering disciplines and how they work together in the process of building a robot from the ground up!
 
-1. Modify your program so that it turns OFF when you press the button and ON when you let go.
-
-2. Modify your program so that it blinks when you press the button and just stays OFF when you let go.
-
-   
+{% include badge.html type='activity' content='Draw a picture of a robot. Next, give your robot drawing a body, heart,  brain, and personality.  Next, write the engineering disciplines (Mechanical, Electrical, Computer (Hardware), and Software) next to the robot’s body, heart, brain, and personality.' %}

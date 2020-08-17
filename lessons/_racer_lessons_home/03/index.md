@@ -1,64 +1,95 @@
 ---
 layout: lesson
-title: Lesson 3 &middot; Build The Car
+title: Lesson 3 &middot; Build And Program A Button Circuit
 
 suggested_time: 60-75 minutes  
 
 videos:
-    - link: https://youtu.be/2nT8sNoHYMo
-      text: Car Chassis Assembly + Mounting Hardware
+    - link: https://youtu.be/-UxbsqI5vh0
+      text: Wiring the Button and LED for programming
+    - link: https://youtu.be/VlEWea9keUY
+      text: Programming the Button with Ardublock 
 ---
 
-### Tutorial Video
+### What You'll Need
 
-{% include youtube.html id='2nT8sNoHYMo' %}
+Before we get started, let's make sure that we have all the parts.
 
-### Review Instructions
+- 1 x Barnabas Noggin
+- 1 x 10 kOhm Resistor
+- 1 x 470 Ohm Resistor
+- 1 x 4-pin Button
+- 1 x USB Cable
+- 1 x Computer
 
-Study the instructions below before you assemble the car chassis.
+### Tutorial Video(s)
 
-<img src="fig-5_3.png" alt="fig-5_3" style="zoom:70%;" class="image center" />
+{% include youtube.html id='bSCSOL20SIw' %}{:.text-based}
 
-Study the instructions below before you assemble the car chassis.
+{% include youtube.html id='er4kNM6rLvg' %}{:.block-based}
 
-### Install Servo Motors
+{% include youtube.html id='VlEWea9keUY' %}{:.block-based}
 
-<img src="fig-5_4.jpg" alt="fig-5_4" style="zoom:25%;" class="image center" />
+### Wiring the Button as Input
 
-Attach the servo motors with the nuts and bolts.  Be sure to have the bolts insert from the outside
+Now we will wire your button to pin 2 so that our Barnabas Noggin can be programmed to sense when you have pushed it. 
 
-{:style="overflow: hidden;"}
+Build the circuit using the schematic below!
 
+<img src="fig-3_4.png" alt="fig-3_4" style="zoom:70%;" class="image center" />
 
+The diagram below shows a correct circuit build.
 
-### Install Caster Wheel
+<img src="fig-3_5.png" alt="fig-3_5" style="zoom:70%;" class="image center" />
 
-<img src="fig-5_1.jpg" alt="fig-5_1" style="zoom:25%;" class="image center" />
+### Programming the Button
 
-Attach the castor with the wider and shorter bolts in the front section of the plate.
+#### Computer Setup
 
-### Install Motor Wheels
+As we begin computer coding, we'll have to first setup our software.  
 
-<img src="fig-5_2.jpg" alt="fig-5_2" style="zoom:30%;" class="image center" />
+{% include badge.html type='troubleshoot' content='See our <a href="https://www.barnabasrobotics.com/resources/" target="_blank">Software</a> page for setting up your computer for coding.' %}
 
-Finally, add the wheels to the servo motors with the pin tipped screws.
+#### Conditional Logic
 
+In programming, conditional logic is used to decide a course of action depending on a condition. For example; an LED turning on if the button is pressed and turning off if the button is not pressed. Conditional logic is something we use in our everyday life without even recognizing it. If hungry, eat; if cold, wear a jacket, etc. In this section we will learn how to use conditional logic which will become the basis of how our robot makes decisions.
 
+#### Practice
 
+Let's write a program that turns ON the light if we press the button and turns OFF the light if we let go of the button.
 
+![fig 3.6](fig-3_6.png){:.image .block-based}
 
-### Place the Hardware
-
-<img src="fig-5_5.png" alt="fig-5_5" style="zoom:60%;" class="image center" />
-
-Using your zip ties, tie your hardware down onto the car.  Use the double stick foam tape on the back of the bread board to stick it onto the car chassis.  Attach the Noggin to the top side of chassis with zip ties. Be sure to leave the barrel jack accessible.  Using the sticky backside of the breadboard, place the breadboard firmly in the front edge of the chassis.
-
-### Place The Battery
-
-<img src="fig-5_6.jpg" alt="fig-5_6" style="zoom:25%;" class="image center" />
-
-Place the 9 Volt battery on the underside of the chassis with double stick foam.
+![fig 3.7](fig-3_7.png){:.image .block-based}
 
 
 
+```c
+void setup()
+{
+  pinMode( 2 , INPUT);
+  pinMode( 7 , OUTPUT);
 
+}
+
+void loop()
+{
+  if (digitalRead(2) == HIGH) {
+    digitalWrite(7,LOW);
+  }
+  else {
+    digitalWrite(7,HIGH);
+  }
+}
+```
+{:.text-based}
+
+#### Challenges
+
+Now that you know how to program a button, try the following challenges:  
+
+1. Modify your program so that it turns OFF when you press the button and ON when you let go.
+
+2. Modify your program so that it blinks when you press the button and just stays OFF when you let go.
+
+   

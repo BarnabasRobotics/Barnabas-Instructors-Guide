@@ -1,17 +1,69 @@
 ---
 layout: lesson
-title: Lesson 5 &middot; Move Backwards And Turn
+title: Lesson 5 &middot; Wire And Program Motors
 
 suggested_time: 60-75 minutes  
 
+videos:
+    - link: https://youtu.be/byMBsEjQ6rY
+      text: Wiring The Motors (without using the servo headers)
+    - link: https://youtu.be/aM6ilpNDK0E
+      text: Wiring The Motors (servo headers)
+    - link: https://youtu.be/Db-M5C3b7DA
+      text: How to calibrate continuous servos
 ---
-### Review
 
-Let's recall the code that ultimately got our robot moving forward;
+Overview
 
-![fig 7.1](fig-7_1.png){:.image .block-based}
+In this section we will explore how continuous servo motors are controlled.  Topics covered include:
 
-Getting each motor to move depends on geving it a non 90 degree angle. An angle further from 90 will cause the motor to move faster, and choosing a number on the other side of 90 will cause the motor to change directions. As we learned in the last lesson the two motors are flipped, so that one motor must be given the "opposite" angle to move in the same direction as each other.
+- How to wire your servo motors to your Barnabas Noggin
+- How to program your servo motors to to turn on, stop and spin both directions
+- How to change the speed of your servo motors
+
+### Tutorial Video(s)
+
+{% include youtube.html id='aPI11noSG28' %}{:.text-based}
+
+{% include youtube.html id='Db-M5C3b7DA' %}{:.block-based}
+
+{% include youtube.html id='byMBsEjQ6rY' %}
+
+### Continuous Servo Motor Control
+
+#### Throttle
+
+A throttle is an instrument used in some kinds of motorized vehicles, such as boats, to control speed. These throttles behave in a particular way; the position of the throttle is what dictates the speed and direction of the motor. For example, a throttle may begin in a position which has the motor stopped. When the throttle is pushed forward from that position the motor begins to move forward. The farther forward the throttle is pushed, the faster the motor moves in that direction. If, instead, I pull the throttle backwards, the motor will begin moving backwards, with it picking up speed as I pull the throttle back further and further. 
+
+As it turns out, our continuous servo motors behave very similarly.
+
+<img src="fig-6_5.png" alt="fig-6_5" style="zoom:50%;" class="image center" />
+
+We can give our motors a command including an angle. Our continuous servo motors understand that angle as moving a throttle back and forth. You can see by the picture above that 90 degrees represents the middle position of the throttle, which would have the motor stopped. An angle larger than 90 will begin moving the motor in one direction, with the speed increasing as the angle approaches 180. Likewise, an angle less than 90 moves the motor in the opposite direction, with the speed increasing as you approach 1.
+
+#### How Continuous Servos Work
+
+Continuous servos are similar to the servos that we used from Barnabas-Bot, except that they move like wheels, rather than just from 0 degrees to 180 degrees.  You will be using the same "Servo" block that you used from your Barnabas-Bot project.  See below for a table that explains what happens when you input different angle values.
+
+| Angle |     Direction      | Speed |
+| :---- | :----------------: | ----: |
+| 0     |     Clock-wise     |  Full |
+| 90    |        None        |  Zero |
+| 180   | Counter Clock-wise |  Full |
+
+### Wire Your Continuous Servo Motors
+
+![fig 6.0](fig-6_0.png){:class="image "}
+
+Keep in mind that the servo motors can also be attached via the servo pin headers on the Barnabas Noggin. Doing so will ensure, however, that that motor function will be greatly diminished while the noggin is only powered by USB.
+
+### Coding Your Motors To Move
+
+#### Move Forward
+
+The code below should move your car forward.  Notice that it seems like the motor should be moving in opposite directions.  Look at how your car is constructed and see if you can see why the car moves forward even though the motors are moving in opposite directions.
+
+![fig 6.6](fig-6_6.png){:.image .block-based}
 
 ```c
 #include <Servo.h>
@@ -23,12 +75,6 @@ void setup()
 {
   servo_pin_11.attach(11);
   servo_pin_10.attach(10);
-  
-  while (digitalWrite(2)==HIGH)
-  {
-    servo_pin_11.write( 90 );
-    servo_pin_10.write( 90 );
-  }
 }
 
 void loop()
@@ -39,12 +85,10 @@ void loop()
 ```
 {:.text-based}
 
+#### Stop Your Motors
+The code below will move both motors for 1 second, stop and then loop forever.
 
-### Step 1: Let's Move Backwards!
-
-Drawing from the knowledge we gained to make the racer move forward, we should easily be able to make it move backwards as well. Simply remember that a number on the other side of 90 will make a motor move in the opposite direction:
-
-![fig 7.3](fig-7_3.png){:.image .block-based}
+![fig 6.8](fig-6_8.png){:.image .block-based}
 
 ```c
 #include <Servo.h>
@@ -56,30 +100,24 @@ void setup()
 {
   servo_pin_11.attach(11);
   servo_pin_10.attach(10);
-
-while (digitalWrite(2)==HIGH){
-    servo_pin_11.write( 90 );
-    servo_pin_10.write( 90 );
-  }
 }
 
 void loop()
 {
-  servo_pin_11.write( 180 );
-  servo_pin_10.write( 1 );
+  servo_pin_11.write( 1 );
+  servo_pin_10.write( 180 );
+  delay( 1000 );
+  servo_pin_11.write( 90 );
+  servo_pin_10.write( 90 );
+  delay( 1000 );
 }
 ```
 {:.text-based}
 
-That's great! We now know how to put our robots into reverse. 
+Because there is a button attached to our robot we can create a far more convenient code. We can use the button to trigger movement of the car. In other words have the car be stopped until the button is pressed;
 
-### Step 2: Can We Make Our Car Turn?
+![fig 6.10](fig-6_10.png){:.image .block-based}
 
-Now let's say that from here we instead want to turn in one direction, how do we do that? Thinking about the direction we want to turn our motors if I wanted to turn left I would have the right motor continue moving forward but change the direction of the left motor. I could do likewise with the right motor if I wanted to turn right instead. The code to do either is below;
-
-![fig 7.4](fig-7_4.png){:.image .block-based}
-
-![fig 7.6](fig-7_5.png){:.image .block-based}
 
 ```c
 #include <Servo.h>
@@ -91,63 +129,35 @@ void setup()
 {
   servo_pin_11.attach(11);
   servo_pin_10.attach(10);
-
-  while (digitalWrite(2)==HIGH){
-    servo_pin_11.write( 90 );
-    servo_pin_10.write( 90 );
+  While (digitalRead(2)==HIGH){
+    servo_pin_11.write(90);
+    servo_pin_10.write(90);
   }
-}
-
-void loop()
-{
-  servo_pin_11.write( 1 ); //both being 1 will turn the robot left
-  servo_pin_10.write( 1 ); //both being 180 will turn the robot right
-}
-```
-{:.text-based}
-
-#### Beginning To Turn...
-You should find that changing the amount of time one wheel turns either shortens or lengthens the time the robot spends turning and therefore changes how far the robot turns.  Take some time to experiment!
-
-Just remember that it will be impossible to see how long a turn lasts for if the turn is the only command being given. Instead, the robot will just turn continuously and appear to spin in place. Instead, have code that will move either forward or backward for some amount of time before turning, like so:
-
-![fig 7.2](fig-7_2.png){:.image .block-based}
-
-```c
-#include <Servo.h>
-
-Servo servo_pin_11;
-Servo servo_pin_10;
-
-void setup()
-{
-  servo_pin_11.attach(11);
-  servo_pin_10.attach(10);
-
-  while (digitalWrite(2)==HIGH){
-    servo_pin_11.write( 90 );
-    servo_pin_10.write( 90 );
-  }
-}
-
-void loop()
-{
-  servo_pin_11.write(1);
-  servo_pin_10.write(180);
-  delay(500);
-  servo_pin_11.write( 1 ); //both being 1 will turn the robot left
-  servo_pin_10.write( 1 ); //both being 180 will turn the robot right
   delay(500);
 }
+
+void loop()
+{
+  servo_pin_11.write( 1 );
+  servo_pin_10.write( 180 );
+}
 ```
 {:.text-based}
 
-{% include youtube.html id='Kr0Qempo_gI' %}{:.block-based}
-{% include youtube.html id='EcphrH3rvFQ' %}{:.text-based}
+### Calibration
+{% include badge.html type='troubleshoot' content='If you notice that your motors are not moving at the right speed, or they do not stop entirely, you will need to calibrate your motors. ' %}
 
-### Challenge
+### Speed Control
 
-1. Change the delay vaules of this code and see how the robot reacts. 
-2. Move the robot forwards and backwards in the same program.
+You can change the speed of your motor by using different angle values.  See the table below.  This will come in handy later one when you are trying fine tune your wheel movements.
 
-**Note**: Remember that you want to make a portion of your code at the end of any movement that brings your robot to a stop before having it move again. Without this it will be difficult to determine how far the robot is turning in a single command, as it will appear to turn continuously.
+
+| Angle  | Direction         | Speed   |
+| ------ | ----------------- | ------- |
+| 0      | Clockwise         | Full    |
+| 1-89   | Clockwise         | Partial |
+| 90     | None              | Zero    |
+| 91-179 | Counter Clockwise | Partial |
+| 180    | Counter Clockwise | Full    |
+
+![fig 9.1](fig-9_1.png){:class="image "}
