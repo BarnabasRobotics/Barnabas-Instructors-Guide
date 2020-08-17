@@ -4,16 +4,9 @@ title: Lesson 5 &middot; Move Backwards And Turn
 
 suggested_time: 60-75 minutes  
 
-videos:
-    - link: https://youtu.be/GnWS4G7Db4g
-      text: Turning your bot 90 degrees
-    - link: https://youtu.be/Kr0Qempo_gI
-      text: Navigating your robot (Block-based)
-    - link: https://youtu.be/EcphrH3rvFQ 
-      text: Navigating your robot (Text-based)
 ---
 
-#### Review
+### Review
 
 Let's recall the code that ultimately got our robot moving forward;
 
