@@ -124,7 +124,7 @@ The _and_ block allows you to have two conditions rather than just one, and asks
 
 ![fig 14.12](fig-14_12.png){:class="image "}
 
-```
+```c
 ### Programming The Ultrasonic Sensor Text Based
 #### Sample Code
 The following code below will take the distance and write it into an integer variable called “distance”.  See if you can understand what the code is doing.
@@ -173,10 +173,13 @@ void loop()
 {
     distance = ultrasonic( 3, 4 ) ;
 }
+```
+{:.text-based}
 
+<div>
 
+### Challenge #1
 
-#### Challenge #1
 Try modifying the code to print the distance of the ultrasonic sensor onto the serial monitor.
 
 This is not terribly difficult to do. But first we need to understand what the serial monitor is;
@@ -221,6 +224,4 @@ if(distance)
 
 }
 
-Because our ultrasonic subroutine handles the distance value, we can check if the return value of our ultrasonic subroutine is a usable value in our test `if(distance)`.
-```
-{:.text-based}
+Because our ultrasonic subroutine handles the distance value, we can check if the return value of our ultrasonic subroutine is a usable value in our test `if(distance)`.</div>{:.text-based}
