@@ -176,7 +176,7 @@ We are going to achieve this by using **subroutines**.
 
 <div markdown="1">
 
-### Creating And Call A Subroutine    
+### Create And Call A Subroutine    
 
 Notice in the code below that we first declare and define a subroutine called “forward()”.  We must do this before we call it in the “loop()” function.  In the loop() function, we call the subroutine by writing "forward()".
 
@@ -213,8 +213,11 @@ void loop()
   forward();
 }
 ```
-<div>{:.text-based}
+</div>{:.text-based}
+    
+
 <div markdown="1">
+
 
 ### Create A Subroutine
 
