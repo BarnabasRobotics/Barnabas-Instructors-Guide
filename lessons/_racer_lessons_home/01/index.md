@@ -37,10 +37,6 @@ We're going to introduce a sense, specifically the *touch* sense so that your ro
 
 ### A Simple Button Circuit
 
-##### Video Tutorial: Circuit Basics, Breadboarding, LED + Button Circuit Builds
-
-{% include youtube.html id='er4kNM6rLvg' %}
-
 Let's first connect our button to our brain (Barnabas Noggin) so that it turns on and off without any programming.   The schematic of the circuit that we need to build is shown below.
 
 ![fig 3.1](fig-3_1.png){:class="image "}
@@ -59,7 +55,6 @@ Let's first connect our button to our brain (Barnabas Noggin) so that it turns o
 
 5. Once you are done, power up the noggin by connecting it to your computer using the USB.  Your LED should only turn on if you push the button down.  If it's not working correctly, double check your circuit! 
 
-
 ### Wiring the Button as Input
 
 Now we will wire your button to pin 2 so that our Barnabas Noggin can be programmed to sense when you have pushed it. 
@@ -72,6 +67,10 @@ The diagram belows shows a correct circuit build.
 
 ![fig 3.5](fig-3_5.png){:class="image "}
 
+##### Video Tutorial: Circuit Basics, Breadboarding, LED + Button Circuit Builds
+
+{% include youtube.html id='er4kNM6rLvg' %}
+
 ### Programming the Button
 
 #### Conditional Logic
@@ -81,10 +80,6 @@ In programming, conditional logic is used to decide a course of action depending
 #### Practice
 
 Let's write a program that turns ON the light if we press the button and turns OFF the light if we let go of the button.
-
-We're going to use the if/else block to test for the condition.
-
-{:.block-based}
 
 ![fig 3.6](fig-3_6.png){:.image .block-based}
 
@@ -112,7 +107,7 @@ void loop()
 ```
 {:.text-based}
 
-{% include youtube.html id='OA2PoLzCDMI' %}{:.text-based}
+{% include youtube.html id='bSCSOL20SIw' %}{:.text-based}
 
 #### Challenges
 
