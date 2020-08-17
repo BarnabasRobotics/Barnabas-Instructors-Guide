@@ -56,8 +56,6 @@ Now that we can go to a goal and come back, let's take it up a notch.  See if yo
 
 Challenge yourself to design your own course and program your Barnabas Racer to get through it!
 
-|                                                            |                                                            |
-| ---------------------------------------------------------- | ---------------------------------------------------------- |
-| {% include youtube.html id='1TjB1pev0N8' %}{:.block-based} | {% include youtube.html id='rb6BCl6V8yo' %}{:.block-based} |
+{% include youtube.html id='rb6BCl6V8yo' %}{:.block-based}
 
-
+{% include youtube.html id='1TjB1pev0N8' %}{:.block-based}
