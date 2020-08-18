@@ -39,7 +39,7 @@ That leaves only the Trig and Echo pins to explain, but before I do that I would
 Knowing this let's get back to our two remaining pins. The Trig pin is the output pin, it is going to listen for signals we give it. with this in mind we will need to connect it to one of the programmable pins on the Uno board. That pin will later be programmed as an output. The Echo pin is the input pin, and we will be listening for the signals it gives us. The Echo pin will be connected to another programmable pin on the Uno board which will later be programmed as an input.
 
 ### The Science
-<img src="fig-14_2.png" alt="fig-14_2" style="zoom:70%;" class="image right" />
+<img src="fig-14_2.png" alt="fig-14_2" style="zoom:90%;" class="image right" />
 
 So for now, we know all we need to know about the hardware and are ready to dive into the physics of this sensor works. First of all, I'd like to go over how the sonar sensor sends and receives signals. Below is a diagram of how our sonar system works.
 
