@@ -215,9 +215,9 @@ void loop() {
 }
 ```
 
-Now you can upload this code and open the serial monitor. You should see numbers flying by as the robot continuously writes the distance to the serial monitor. Perhaps including a delay block after the Serial.print command would be helpful in slowing down the rate that numbers appear. The numbers shown should change as you put your hand in front of the sensor, or point the sensor at various objects.
+</div>{:.text-based}
 
-</div>{:.block-based}
+Now you can upload this code and open the serial monitor. You should see numbers flying by as the robot continuously writes the distance to the serial monitor. Perhaps including a delay block after the Serial.print command would be helpful in slowing down the rate that numbers appear. The numbers shown should change as you put your hand in front of the sensor, or point the sensor at various objects.
 
 After uploading this code, go to the software window and click on the button that says `Serial Monitor`.  After pressing this button, a window should pop up that begins to display numbers.  Note that the Noggin needs to be connected to the computer for these numbers to appear.  
 
@@ -249,6 +249,8 @@ The above code blinks a light on and off with the added wrinkle of having the di
 Create code to turn the light on when an object is close and off when an object is far off.
 
 <div markdown = "1">
+
+
 ```c
 int trig = 3;
 int echo = 4;
@@ -269,7 +271,6 @@ void setup() {
   pinMode(led,OUTPUT);
 
   Serial.begin(9600);
-
 }
 
 float ultrasonic() {
@@ -295,7 +296,6 @@ float ultrasonic() {
  distance_cm = distance_meters*100;
 
  return distance_cm;
- 
 }
 
 void loop() {
