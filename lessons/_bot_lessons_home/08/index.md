@@ -4,6 +4,10 @@ title: Lesson 8 &middot; Make Robot Music
 suggested_time: 60-75 minutes
 ---
 
+### Tutorial Video(s)
+
+{% include youtube.html id="ERxso8iQo_E" %}
+
 ### What You'll Need
 
 Before we get started, let’s make sure that we have all the parts.
