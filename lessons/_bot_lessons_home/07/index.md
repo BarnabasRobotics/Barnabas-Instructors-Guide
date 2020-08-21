@@ -215,4 +215,4 @@ Try the following exercises to get the hang of playing with the light.
 
 ### Bonus Activity
 
-Check out the [bonus activity lesson](../11) if you want to learn how to add a second LED!
+Want to add a second LED and/or learn how to make secret codes (Morse Code) with your LED?  Check out the [bonus activities](../11)!
