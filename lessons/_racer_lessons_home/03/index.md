@@ -111,7 +111,7 @@ Before starting:
 
 [Download the windows installer and run it.](https://www.barnabasrobotics.com/barnabas-driver-installer-1-0-5/)
 
-{% include youtube.html id='-T9EyaAX91Rg' %}
+{% include youtube.html id='T9EyaAX91Rg' %}
 
 #### 2. Upload Code
 
