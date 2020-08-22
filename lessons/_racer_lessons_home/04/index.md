@@ -1,98 +1,95 @@
 ---
 layout: lesson
-title: Lesson 4 &middot; Experiment With Variables
+title: Lesson 4 &middot; Build And Program A Button Circuit
 
 suggested_time: 60-75 minutes  
 
 videos:
-    - link: https://youtu.be/u_sgzyL4H04
-      text: Variables and Serial Monitor
+    - link: https://youtu.be/-UxbsqI5vh0
+      text: Wiring the Button and LED for programming
+    - link: https://youtu.be/VlEWea9keUY
+      text: Programming the Button with Ardublock 
 ---
+
+### What You'll Need
+
+Before we get started, let's make sure that we have all the parts.
+
+- 1 x Barnabas Noggin
+- 1 x 10 kOhm Resistor
+- 1 x 470 Ohm Resistor
+- 1 x 4-pin Button
+- 1 x USB Cable
+- 1 x Computer
 
 ### Tutorial Video(s)
 
-{% include youtube.html id='u_sgzyL4H04' %}{:.block-based}
+{% include youtube.html id='bSCSOL20SIw' %}{:.text-based}
 
-### Put The Input Value Into A Variable
+{% include youtube.html id='-UxbsqI5vh0' %}{:.block-based}
 
-A variable is like a bucket that stores information.  A variable has a name, which is the name of the bucket, and it also has a value, which is the stuff that is inside the bucket.
+{% include youtube.html id='VlEWea9keUY' %}{:.block-based}
 
-The program below creates a variable named "button", and it sets it the value "1" if the button is pushed, and "0" if the button is not pushed.
+### Wiring the Button as Input
 
-Study the program below to make sure that you understand how it works.
+Now we will wire your button to pin 2 so that our Barnabas Noggin can be programmed to sense when you have pushed it. 
 
-![fig 4.1](fig-4_1.png){:.image .block-based}
+Build the circuit using the schematic below!
+
+<img src="fig-3_4.png" alt="fig-3_4" style="zoom:70%;" class="image center" />
+
+The diagram below shows a correct circuit build.
+
+<img src="fig-3_5.png" alt="fig-3_5" style="zoom:70%;" class="image center" />
+
+### Programming the Button
+
+#### Computer Setup
+
+As we begin computer coding, we'll have to first setup our software.  
+
+{% include badge.html type='troubleshoot' content='See our <a href="https://www.barnabasrobotics.com/resources/" target="_blank">Software</a> page for setting up your computer for coding.' %}
+
+#### Conditional Logic
+
+In programming, conditional logic is used to decide a course of action depending on a condition. For example; an LED turning on if the button is pressed and turning off if the button is not pressed. Conditional logic is something we use in our everyday life without even recognizing it. If hungry, eat; if cold, wear a jacket, etc. In this section we will learn how to use conditional logic which will become the basis of how our robot makes decisions.
+
+#### Practice
+
+Let's write a program that turns ON the light if we press the button and turns OFF the light if we let go of the button.
+
+![fig 3.6](fig-3_6.png){:.image .block-based}
+
+![fig 3.7](fig-3_7.png){:.image .block-based}
+
+
 
 ```c
-int button = 0 ;
-
 void setup()
 {
   pinMode( 2 , INPUT);
   pinMode( 7 , OUTPUT);
+
 }
 
 void loop()
 {
-  if (digitalRead(2) == HIGH)
-  {
-    digitalWrite( 7 , LOW );
-    button = 0;
+  if (digitalRead(2) == HIGH) {
+    digitalWrite(7,LOW);
   }
-  else
-  {
-    digitalWrite( 7 , HIGH );
-    button = 1;
+  else {
+    digitalWrite(7,HIGH);
   }
 }
 ```
 {:.text-based}
 
-### Display The Variable On The Serial Monitor
+#### Challenges
 
-Now we will display our variable to the screen.  We do this by using `serial println`.
+Now that you know how to program a button, try the following challenges:  
 
-![fig 4.2](fig-4_2.png){:.image .block-based}
+1. Modify your program so that it turns OFF when you press the button and ON when you let go.
 
-```c
-int button = 0 ;
+2. Modify your program so that it blinks when you press the button and just stays OFF when you let go.
 
-void setup()
-{
-  pinMode( 2 , INPUT);
-  pinMode( 7 , OUTPUT);
-  Serial.begin(9600);  
-}
-
-void loop()
-{
-  if (digitalRead(2) == HIGH)
-  {
-    digitalWrite( 7 , LOW );
-    button = 0;
-  }
-  else
-  {
-    digitalWrite( 7 , HIGH );
-    button = 1;
-  }
-  Serial.print("The button is: ");
-  Serial.print(button);
-  Serial.println();
-  delay(500);
-}
-```
-{:.text-based}
-
-Once you upload the code, click on "Serial Monitor" to see your data displayed!
-
-### Customize Your Message
-Modify the message so that it says "the button status is: _____". 
-
-![fig 4.3](fig-4_3.png){:.image .block-based }
-
-### Challenges
-Now that you know how to store input values and display them, try the following challenges!
-1. Display your robot's name on the screen
-2. Display on the screen whether the light is on or off.  Display "YES" for on and "NO" for off.  If programmed correctly, the message should change whenever you push the button.
-3. Create a program so that your Arduino can display the total number of times the button has been pressed.  It should keep counting higher each time you press the button.
+   
