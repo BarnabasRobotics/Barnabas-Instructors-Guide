@@ -74,9 +74,6 @@ Your Chromebook is now ready.  That was easy, right?  Type the link below (or co
 For Macbooks, your IDE is called Ardublock.  We’re going to need to download something called a package file (**.pkg**) from the internet and then run the **.pkg** so that it can install the IDE onto your Macbook.  
 
 
-We’re going to use a super cool software engineering tool called the terminal to do this.
-
-
 Before starting:
 
 - [ ] Make sure that your Macbook is powered on and charged (or charging)
