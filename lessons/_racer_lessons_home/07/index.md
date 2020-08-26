@@ -8,14 +8,6 @@ suggested_time: 60-75 minutes
 
 In this section we will be programming our racer to move forwards, backwards and turn.  We'll also be learning how to streamline our code with something called subroutines.
 
-### Tutorial Video(s)
-
-{% include youtube.html id='GnWS4G7Db4g' %}{:.block-based}
-
-{% include youtube.html id='Kr0Qempo_gI' %}{:.block-based}
-
-{% include youtube.html id='EcphrH3rvFQ' %}{:.text-based}
-
 ### Review
 
 Let's recall the code that ultimately got our robot moving forward;
@@ -83,6 +75,10 @@ void loop()
 {:.text-based}
 
 ### Make Our Racer Turn
+
+{% include youtube.html id='GnWS4G7Db4g' %}{:.block-based}
+
+{% include youtube.html id='EcphrH3rvFQ?t=1415' %}{:.text-based}
 
 Now let's say that from here we instead want to turn in one direction, how do we do that? Thinking about the direction we want to turn our motors if I wanted to turn left I would have the right motor continue moving forward but change the direction of the left motor. I could do likewise with the right motor if I wanted to turn right instead. The code to do either is below;
 
@@ -159,6 +155,8 @@ void loop()
 **Note**: Remember that you want to make a portion of your code at the end of any movement that brings your robot to a stop before having it move again. Without this it will be difficult to determine how far the robot is turning in a single command, as it will appear to turn continuously.
 
 ### Subroutines
+
+{% include youtube.html id='Kr0Qempo_gI' %}{:.block-based}
 
 Up to this point we have been issuing commands to our robot in a painstaking way. To move the robot forward we need to give orders to two different pins and then specify a time that they continue obeying that order. It would be nice if we could instead give only one order to our robot, like move forward, and have it understand what we mean. 
 
