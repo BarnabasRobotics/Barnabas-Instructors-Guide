@@ -59,6 +59,10 @@ To add new lessons, the following files need to be updated:
 4. /_includes/sidebar/menu.html - show lesson in the sidebar
 5. /_layouts/lesson.html - lesson page layout
 
+### Icons
+
+Side menu icons reference Font Awesome: https://fontawesome.com/v4.7.0/icons/
+
 
 Revision History
 - 1.00
