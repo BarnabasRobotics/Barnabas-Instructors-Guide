@@ -23,7 +23,7 @@ In this section we will explore how continuous servo motors are controlled.  Top
 
 ### Continuous Servo Motor Control
 
-{% include youtube.html id='aPI11noSG28' %}{:.text-based}
+{% include youtube.html id='aPI11noSG28?start=0' %}{:.text-based}
 
 #### Throttle
 
@@ -47,7 +47,7 @@ Continuous servos are similar to the servos that we used from Barnabas-Bot, exce
 
 ### Wire Your Continuous Servo Motors
 
-{% include youtube.html id='aPI11noSG28?t=553' %}{:.text-based}
+{% include youtube.html id='aPI11noSG28?start=553' %}{:.text-based}
 
 <div markdown="1">
 
@@ -149,11 +149,11 @@ void loop()
 
 {% include youtube.html id='Db-M5C3b7DA' %}{:.block-based}
 
-{% include youtube.html id='aPI11noSG28?t=1102' %}{:.text-based}
+{% include youtube.html id='aPI11noSG28?start=1102' %}{:.text-based}
 
 ### Speed Control
 
-{% include youtube.html id='aPI11noSG28?t=1939' %}{:.text-based}
+{% include youtube.html id='aPI11noSG28?start=1939' %}{:.text-based}
 
 You can change the speed of your motor by using different angle values.  See the table below.  This will come in handy later one when you are trying fine tune your wheel movements.
 

@@ -12,7 +12,6 @@ In this section we'll combine everything to program our car to move and avoid ob
 
 {% include youtube.html id='QiMypxfT6PQ' %}{:.text-based}
 
-<div markdown="1">
 
 ### Our Previous Tools
 
@@ -70,5 +69,3 @@ Note: In the code above, the robot will turn right ONLY if the ultrasonic sensor
 #### Bonus Activity (Turn Randomly)
 
 {% include youtube.html id='0wk1WM62UDg' %}
-
-</div>{:.block-based}
