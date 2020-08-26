@@ -31,23 +31,27 @@ We're going to use our button start code so that we can trigger the program usin
 
 ### Stop Before We Crash
 
-{% include youtube.html id='nqGW6I5kZv0' %}
+{% include youtube.html id='nqGW6I5kZv0' %}{:.block-based}
 
-### Turn Before We Crash
-
-{% include youtube.html id='yfgcoLhec7E' %}
-
-Lastly, let's use what we have learned about the ultrasonic sensor to program our robot to avoid obstacles.  To avoid obstacles it needs to be able to do different things depending on what the situation is.  For that reason we'll need to use if/else.
+Let's program that car to stop before we hit a wall!  Let's use what we have learned about the ultrasonic sensor to program our robot to do this.  We'll need to use if/else.
 
 ![fig 15.3](fig-15_3.png){:.image .block-based}
 
-Using these tools, let's program the robot to turn right if it sees an object less than 20 cm away, else move forward.   See the code below.
+
+
+### Turn Before We Crash
+
+Let's program our car to not only stop before we hit a wall, but also turn to avoid it!
+
+<div markdown="1">
+
+{% include youtube.html id='yfgcoLhec7E' %}{:.block-based}
+
+Let's program the robot to turn right if it sees an object less than 20 cm away, else move forward.   See the code below.
 
 ![fig 15.5](fig-15_5.png){:.image .block-based}
 
 Note: The 400 ms delay after the right subroutine determines how long it will turn right for before moving on to the next section of code.  
-
-
 
 ### Adding Delays 
 
@@ -66,6 +70,11 @@ As your robot's battery gets drained, it's a known issue that the ultrasonic sen
 
 Note: In the code above, the robot will turn right ONLY if the ultrasonic sensor sees a value that is less than 20 AND it's not 0.  
 
+</div>{:.block-based}
+
 #### Bonus Activity (Turn Randomly)
 
-{% include youtube.html id='0wk1WM62UDg' %}
+{% include youtube.html id='0wk1WM62UDg' %}{:.block-based}
+
+{% include youtube.html id='Qy43DEdsn0I' %}{:.text-based}
+
