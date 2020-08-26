@@ -22,15 +22,11 @@ Before we get started, let's make sure that we have all the parts.
 - 1 x USB Cable
 - 1 x Computer
 
-### Tutorial Video(s)
-
 {% include youtube.html id='bSCSOL20SIw' %}{:.text-based}
 
-{% include youtube.html id='-UxbsqI5vh0' %}{:.block-based}
-
-{% include youtube.html id='VlEWea9keUY' %}{:.block-based}
-
 ### Wiring the Button as Input
+
+{% include youtube.html id='-UxbsqI5vh0' %}{:.block-based}
 
 Now we will wire your button to pin 2 so that our Barnabas Noggin can be programmed to sense when you have pushed it. 
 
@@ -43,6 +39,8 @@ The diagram below shows a correct circuit build.
 <img src="fig-3_5.png" alt="fig-3_5" style="zoom:70%;" class="image center" />
 
 ### Programming the Button
+
+{% include youtube.html id='VlEWea9keUY' %}{:.block-based}
 
 #### Computer Setup
 

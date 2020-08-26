@@ -29,8 +29,6 @@ In this lesson we will cover the basics of engineering.  Topics include:
 3. Breadboarding
 4. Buttons
 
-### Tutorial Video
-
 {% include youtube.html id='er4kNM6rLvg' %}
 
 ### The Path Of Electricity

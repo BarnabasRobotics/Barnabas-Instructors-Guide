@@ -115,6 +115,3 @@ Before starting:
 Learn how to connect your Noggin to your computer and upload code by watching this video.
 
 {% include youtube.html id='gJliBVUUOKk' %}
-
-#### 
-

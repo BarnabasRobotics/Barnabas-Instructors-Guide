@@ -13,7 +13,7 @@ videos:
       text: How to calibrate continuous servos
 ---
 
-Overview
+### Overview
 
 In this section we will explore how continuous servo motors are controlled.  Topics covered include:
 
@@ -21,15 +21,9 @@ In this section we will explore how continuous servo motors are controlled.  Top
 - How to program your servo motors to to turn on, stop and spin both directions
 - How to change the speed of your servo motors
 
-### Tutorial Video(s)
+### Continuous Servo Motor Control
 
 {% include youtube.html id='aPI11noSG28' %}{:.text-based}
-
-{% include youtube.html id='Db-M5C3b7DA' %}{:.block-based}
-
-{% include youtube.html id='byMBsEjQ6rY' %}
-
-### Continuous Servo Motor Control
 
 #### Throttle
 
@@ -53,9 +47,15 @@ Continuous servos are similar to the servos that we used from Barnabas-Bot, exce
 
 ### Wire Your Continuous Servo Motors
 
+{% include youtube.html id='aPI11noSG28?t=553' %}{:.text-based}
+
+<div markdown="1">
+
+{% include youtube.html id='byMBsEjQ6rY' %}
+
 ![fig 6.0](fig-6_0.png){:class="image "}
 
-Keep in mind that the servo motors can also be attached via the servo pin headers on the Barnabas Noggin. Doing so will ensure, however, that that motor function will be greatly diminished while the noggin is only powered by USB.
+</div>{:.block-based}
 
 ### Coding Your Motors To Move
 
@@ -147,7 +147,13 @@ void loop()
 ### Calibration
 {% include badge.html type='troubleshoot' content='If you notice that your motors are not moving at the right speed, or they do not stop entirely, you will need to calibrate your motors. ' %}
 
+{% include youtube.html id='Db-M5C3b7DA' %}{:.block-based}
+
+{% include youtube.html id='aPI11noSG28?t=1102' %}{:.text-based}
+
 ### Speed Control
+
+{% include youtube.html id='aPI11noSG28?t=1939' %}{:.text-based}
 
 You can change the speed of your motor by using different angle values.  See the table below.  This will come in handy later one when you are trying fine tune your wheel movements.
 
