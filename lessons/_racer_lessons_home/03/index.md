@@ -63,7 +63,7 @@ Your Chromebook has special secret features that we need to enable so that it wi
 
 Your Chromebook is now ready.  That was easy, right?  Type the link below (or copy and paste) into your address bar to check out your IDE!
 
-<p style="text-align:center"><cmd><a style="color:white" href="https://code.barnabasrobotics.com/webserial/">https://code.barnabasrobotics.com/webserial/</a></cmd></p>
+<p style="text-align:center"><cmd><a style="color:white" href="https://code.barnabasrobotics.com">https://code.barnabasrobotics.com</a></cmd></p>
 
 ***
 
