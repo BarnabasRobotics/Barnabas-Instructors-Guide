@@ -22,6 +22,8 @@ Some things to keep in mind during this lesson:
 
 ### Box Challenge
 
+{% include youtube.html id='w_IwFDshB0s' %}{:.block-based}
+
  Have your robot travel around the box until it reaches its starting location. 
 
 <img src="fig-12_1.png" alt="fig-12_1" style="zoom:75%;" class="image center" />
@@ -30,13 +32,11 @@ Some things to keep in mind during this lesson:
 - Like the other challenges the appropriate delays for forward and turn will take experimentation to find.
 - There are multiple ways to complete this challenge. For example, you can closely follow the outside of the box and make sharp turns, or you can create a large arcing circle around the box that doesn’t come remotely close to it.
 
-{% include youtube.html id='w_IwFDshB0s' %}{:.block-based}
-
 ### Alternative Surface Challenge
 
-Challenge your Barnabas Racer to travel on a path that crosses different types of surfaces.  
-
 {% include youtube.html id='uyxmD29NPp0' %}{:.block-based}
+
+Challenge your Barnabas Racer to travel on a path that crosses different types of surfaces.  
 
 ### Letters Challenge
 
@@ -54,7 +54,9 @@ Now that we can go to a goal and come back, let's take it up a notch.  See if yo
 
 ### Choose Your Own Adventure
 
-Challenge yourself to design your own course and program your Barnabas Racer to get through it!
+{% include youtube.html id='1TjB1pev0N8' %}{:.block-based}
 
 {% include youtube.html id='rb6BCl6V8yo' %}{:.block-based}
-{% include youtube.html id='1TjB1pev0N8' %}{:.block-based}
+
+Challenge yourself to design your own course and program your Barnabas Racer to get through it!
+
