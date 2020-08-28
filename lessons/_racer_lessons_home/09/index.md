@@ -7,11 +7,11 @@ suggested_time: 60-75 minutes
 videos:
     - link: https://youtu.be/w_IwFDshB0s
       text: Box Challenge (Block-based)
-	- link: https://youtu.be/uyxmD29NPp0
+    - link: https://youtu.be/uyxmD29NPp0
       text: Alternative Surface Challenge (Block-based)
-	- link: https://youtu.be/1TjB1pev0N8
+    - link: https://youtu.be/1TjB1pev0N8
       text: Design A Custom Challenge 1 (Block-based)
-	- link: https://youtu.be/rb6BCl6V8yo
+    - link: https://youtu.be/rb6BCl6V8yo
       text: Design A Custom Challenge 2 (Block-based)
 
 
