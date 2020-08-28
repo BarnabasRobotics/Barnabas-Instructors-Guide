@@ -9,7 +9,7 @@ suggested_time: 10-15 minutes
 <img align="center" src="fig-01_05.jpg" width="500">
 </p>
 
-The Barnabas Racer is a continuation project for the [Barnabas-Bot](https://shop.barnabasrobotics.com/collections/kits-1/products/barnabas-bot-kit) project.  This robot is a car that is able to think and act on its own.  Builders will cover concepts from Barnabas Bot (circuits, coding, mechanical build) and will also be introduced to sensors!  Recommended Ages: 11+
+The Barnabas Racer is a continuation project for Barnabas-Bot](https://shop.barnabasrobotics.com/collections/kits-1/products/barnabas-bot-kit).  This robot is a car that is able to think and act on its own.  Builders will cover concepts from Barnabas Bot (circuits, coding, mechanical build) in addition to sensors.  Recommended Ages: 11+
 
 ### Project Materials
 
@@ -39,9 +39,13 @@ This learning portal portal includes written instructions as well as videos.  He
 
 #### Decide On Your Coding Style
 
-When doing the Barnabas Racer project, you will be creating code on the computer, which is what is used to control your robot.  When creating code, you can choose between *block-based* coding and text-based coding.  The main difference between the two is that block-based coding does not require very much typing while the text-based coding does.  
+A big part of the Barnabas Racer project includes creating code on the computer, which will be used to control your robot.  When creating code, you can choose between *block-based* coding and *text-based* coding.  
 
-Typically, we recommend block-based coding for ages 9-11 and text-based coding for ages 12 and up.  In our classes, we start younger students with block-based and eventually graduate them to text-based coding.  
+*Block-based* coding is an innovation in education that allows younger students to learn and experiment with the logic flow of computer coding without needing to type very much.  Code is creating by snapping commands together like puzzle pieces.
+
+*Text-based* coding requires that every command in the code to be typed out explicitly.  The commands need to be spelled correctly and are case-sensitive (capitals and lower-case matters!).  This style is the popular method used within the software industry.  
+
+Typically, we recommend block-based coding for ages 8-11 and text-based coding for ages 12 and up.  In our classes, we start younger students (ages 8-11) with block-based and eventually graduate them to text-based coding as they gain experience.
 
 See below for examples of what block-based code looks like versus text-based code.
 
@@ -76,11 +80,11 @@ void loop()
 }
 ```
 
-If you're having trouble deciding which one, I recommend starting with blocks and you can always transition to text-based in the middle of the project.  
+If you're having trouble deciding which one, we recommend starting with blocks.  You can always transition to text-based code in the middle of the project if you choose to do so.
 
 #### Set Your Coding Style
 
-Once, you've decided on your coding style, you need to make sure to set it on the learning portal so that you are able to view the correct content.  
+Once you've decided on your coding style, you need to make sure to set it on the learning portal so that you are able to view the correct content.  
 
 ##### 1. Click on the gear icon on the top right
 
@@ -94,18 +98,20 @@ Once, you've decided on your coding style, you need to make sure to set it on th
 
 
 
-<img src="fig-01_02.png" alt="fig-01_02" style="zoom:40%;" class="image center" />
+<img src="fig-01_02.png" alt="fig-01_02" style="zoom:48%;" class="image center" />
 
 
 
 ### Extra Resources
 
-Some lessons include extra resources (videos, documents, etc).  Scroll to the bottom of the page to find them.
+Some lessons include extra resources (videos, documents, etc.).  Scroll to the bottom of the page to find them.
 
 <img src="fig-01_04.png" alt="fig-01_01" style="zoom:50%;" class="image center" />
 
-### Move On Or Go Back
+### Navigate Between Lessons
 
-After you finish a lesson, scroll to the bottom of the back and click "Next Lesson" to go to the next lesson.  You can also go back to the previous lesson by clicking on "Prev Lesson".
+After you finish a lesson, scroll to the bottom of the page and click "Next Lesson" to go to the next lesson.  
+
+You can also go back to the previous lesson by clicking on "Prev Lesson".
 
 <img src="fig-01_03.png" alt="fig-01_03" style="zoom:40%;" class="image center" />
