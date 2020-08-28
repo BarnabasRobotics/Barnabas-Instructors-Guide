@@ -8,27 +8,29 @@ suggested_time: 10-15 minutes
 
 <img align="center" src="fig-01_05.jpg" width="500">
 
+
+
 The Barnabas Racer is a continuation project for the [Barnabas-Bot](https://shop.barnabasrobotics.com/collections/kits-1/products/barnabas-bot-kit) project.  This robot is a car that is able to think and act on its own.  Builders will cover concepts from Barnabas Bot (circuits, coding, mechanical build) and will also be introduced to sensors!  Recommended Ages: 11+
 
 ### Project Materials
 
 This project is done with robot parts that are readily available.  Parts needed include:
 
-1 x Barnabas Noggin (Arduino-based controlled)
-1 x 2WD Metal Chassis
-1 x Ultrasonic Sensor
-2 x Continuous Servo Motors
-1 x Bread Board
-1 x LED
-1 x Buzzer
-1 x 4-Pin Button
-6 x Resistors
-15 x Male to Male Jumper Wires Bundle
-1 x 9V Arduino battery plug
-1 x 9V battery
-3 x Zip Ties
-1 x Philips Head Screw Driver
-1 x Bag of Assorted Screws and Nuts
+- 1 x Barnabas Noggin (Arduino-based controlled)
+- 1 x 2WD Metal Chassis
+- 1 x Ultrasonic Sensor
+- 2 x Continuous Servo Motors
+- 1 x Bread Board
+- 1 x LED
+- 1 x Buzzer
+- 1 x 4-Pin Button
+- 6 x Resistors
+- 15 x Male to Male Jumper Wires Bundle
+- 1 x 9V Arduino battery plug
+- 1 x 9V battery
+- 3 x Zip Ties
+- 1 x Philips Head Screw Driver
+- 1 x Bag of Assorted Screws and Nuts
 
 Need materials?  [Purchase the Barnabas Racer kit at our e-store](https://shop.barnabasrobotics.com/collections/kits-1/products/barnabas-racer-kit).  Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire. 
 
@@ -46,6 +48,9 @@ See below for examples of what block-based code looks like versus text-based cod
 
 <p align="center" markdown = "1">
     Block-Based Code
+</p>
+
+<p align="center" markdown = "1">
 <img align="center" src="fig-01_11.png" width="300">
 </p>
 
@@ -80,24 +85,28 @@ Once, you've decided on your coding style, you need to make sure to set it on th
 
 ##### 1. Click on the gear icon on the top right
 
-<img align="center" src="fig-01_00.png" width="800">
+<img src="fig-01_00.png" alt="fig-01_2" style="zoom:32%;" class="image center" />
 
 
 
 ##### 2. Click on the toggle button to switch modes
 
-<img align="center" src="fig-01_01.png" width="800">
+<img src="fig-01_01.png" alt="fig-01_01" style="zoom:40%;" class="image center" />
 
-<img align="center" src="fig-01_02.png" width="800">
+
+
+<img src="fig-01_02.png" alt="fig-01_02" style="zoom:40%;" class="image center" />
+
+
 
 ### Extra Resources
 
 Some lessons include extra resources (videos, documents, etc).  Scroll to the bottom of the page to find them.
 
-<img align="center" src="fig-01_04.png" width="800">
+<img src="fig-01_04.png" alt="fig-01_01" style="zoom:50%;" class="image center" />
 
 ### Move On Or Go Back
 
 After you finish a lesson, scroll to the bottom of the back and click "Next Lesson" to go to the next lesson.  You can also go back to the previous lesson by clicking on "Prev Lesson".
 
-<img align="center" src="fig-01_03.png" width="800">
+<img src="fig-01_03.png" alt="fig-01_03" style="zoom:40%;" class="image center" />
