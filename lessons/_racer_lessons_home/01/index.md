@@ -5,10 +5,9 @@ suggested_time: 10-15 minutes
 ---
 
 ### What Is Barnabas Racer?
-
+<p align="center" markdown = "1">
 <img align="center" src="fig-01_05.jpg" width="500">
-
-
+</p>
 
 The Barnabas Racer is a continuation project for the [Barnabas-Bot](https://shop.barnabasrobotics.com/collections/kits-1/products/barnabas-bot-kit) project.  This robot is a car that is able to think and act on its own.  Builders will cover concepts from Barnabas Bot (circuits, coding, mechanical build) and will also be introduced to sensors!  Recommended Ages: 11+
 
