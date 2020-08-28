@@ -7,13 +7,13 @@ suggested_time: 60-75 minutes
 videos:
     - link: https://youtu.be/nqGW6I5kZv0
       text: Stop Before You Crash (Block-based)
-	- link: https://youtu.be/yfgcoLhec7E
+    - link: https://youtu.be/yfgcoLhec7E
       text: Turn Before You Crash (Block-based)
-	- link: https://youtu.be/0wk1WM62UDg
+    - link: https://youtu.be/0wk1WM62UDg
       text: Turn Randomly (Block-based)
-	- link: https://youtu.be/QiMypxfT6PQ
+    - link: https://youtu.be/QiMypxfT6PQ
       text: Avoiding Obstacles (Text-based)
-	- link: https://youtu.be/Qy43DEdsn0I
+    - link: https://youtu.be/Qy43DEdsn0I
       text: Turn Randomly (Text-based)
 ---
 
