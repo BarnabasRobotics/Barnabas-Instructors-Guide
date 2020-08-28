@@ -1,172 +1,95 @@
 ---
 layout: lesson
-title: Lesson 5 &middot; Wire And Program Motors
+title: Lesson 5 &middot; Build And Program A Button Circuit
 
 suggested_time: 60-75 minutes  
 
 videos:
-    - link: https://youtu.be/byMBsEjQ6rY
-      text: Wiring The Motors (without using the servo headers)
-    - link: https://youtu.be/aM6ilpNDK0E
-      text: Wiring The Motors (servo headers)
-    - link: https://youtu.be/Db-M5C3b7DA
-      text: How to calibrate continuous servos
+    - link: https://youtu.be/-UxbsqI5vh0
+      text: Wiring the Button and LED for programming (Block-Based)
+    - link: https://youtu.be/VlEWea9keUY
+      text: Programming the Button (Block-Based)
+    - link: https://youtu.be/bSCSOL20SIw 
+      text: Wiring and Program the LED and Button (Text-Based)
 ---
 
-### Overview
+### What You'll Need
 
-In this section we will explore how continuous servo motors are controlled.  Topics covered include:
+Before we get started, let's make sure that we have all the parts.
 
-- How to wire your servo motors to your Barnabas Noggin
-- How to program your servo motors to to turn on, stop and spin both directions
-- How to change the speed of your servo motors
+- 1 x Barnabas Noggin
+- 1 x 10 kOhm Resistor
+- 1 x 470 Ohm Resistor
+- 1 x 4-pin Button
+- 1 x USB Cable
+- 1 x Computer
 
-### Continuous Servo Motor Control
+{% include youtube.html id='bSCSOL20SIw' %}{:.text-based}
 
-{% include youtube.html id='aPI11noSG28?start=0' %}{:.text-based}
+### Wiring the Button as Input
 
-#### Throttle
+{% include youtube.html id='-UxbsqI5vh0' %}{:.block-based}
 
-A throttle is an instrument used in some kinds of motorized vehicles, such as boats, to control speed. These throttles behave in a particular way; the position of the throttle is what dictates the speed and direction of the motor. For example, a throttle may begin in a position which has the motor stopped. When the throttle is pushed forward from that position the motor begins to move forward. The farther forward the throttle is pushed, the faster the motor moves in that direction. If, instead, I pull the throttle backwards, the motor will begin moving backwards, with it picking up speed as I pull the throttle back further and further. 
+Now we will wire your button to pin 2 so that our Barnabas Noggin can be programmed to sense when you have pushed it. 
 
-As it turns out, our continuous servo motors behave very similarly.
+Build the circuit using the schematic below!
 
-<img src="fig-6_5.png" alt="fig-6_5" style="zoom:50%;" class="image center" />
+<img src="fig-3_4.png" alt="fig-3_4" style="zoom:70%;" class="image center" />
 
-We can give our motors a command including an angle. Our continuous servo motors understand that angle as moving a throttle back and forth. You can see by the picture above that 90 degrees represents the middle position of the throttle, which would have the motor stopped. An angle larger than 90 will begin moving the motor in one direction, with the speed increasing as the angle approaches 180. Likewise, an angle less than 90 moves the motor in the opposite direction, with the speed increasing as you approach 1.
+The diagram below shows a correct circuit build.
 
-#### How Continuous Servos Work
+<img src="fig-3_5.png" alt="fig-3_5" style="zoom:70%;" class="image center" />
 
-Continuous servos are similar to the servos that we used from Barnabas-Bot, except that they move like wheels, rather than just from 0 degrees to 180 degrees.  You will be using the same "Servo" block that you used from your Barnabas-Bot project.  See below for a table that explains what happens when you input different angle values.
+### Programming the Button
 
-| Angle |     Direction      | Speed |
-| :---- | :----------------: | ----: |
-| 0     |     Clock-wise     |  Full |
-| 90    |        None        |  Zero |
-| 180   | Counter Clock-wise |  Full |
+{% include youtube.html id='VlEWea9keUY' %}{:.block-based}
 
-### Wire Your Continuous Servo Motors
+#### Computer Setup
 
-{% include youtube.html id='aPI11noSG28?start=553' %}{:.text-based}
+As we begin computer coding, we'll have to first setup our software.  
 
-<div markdown="1">
+{% include badge.html type='troubleshoot' content='See our <a href="https://www.barnabasrobotics.com/resources/" target="_blank">Software</a> page for setting up your computer for coding.' %}
 
-{% include youtube.html id='byMBsEjQ6rY' %}
+#### Conditional Logic
 
-![fig 6.0](fig-6_0.png){:class="image "}
+In programming, conditional logic is used to decide a course of action depending on a condition. For example; an LED turning on if the button is pressed and turning off if the button is not pressed. Conditional logic is something we use in our everyday life without even recognizing it. If hungry, eat; if cold, wear a jacket, etc. In this section we will learn how to use conditional logic which will become the basis of how our robot makes decisions.
 
-</div>{:.block-based}
+#### Practice
 
-### Coding Your Motors To Move
+Let's write a program that turns ON the light if we press the button and turns OFF the light if we let go of the button.
 
-#### Move Forward
+![fig 3.6](fig-3_6.png){:.image .block-based}
 
-The code below should move your car forward.  Notice that it seems like the motor should be moving in opposite directions.  Look at how your car is constructed and see if you can see why the car moves forward even though the motors are moving in opposite directions.
+![fig 3.7](fig-3_7.png){:.image .block-based}
 
-![fig 6.6](fig-6_6.png){:.image .block-based}
+
 
 ```c
-#include <Servo.h>
-
-Servo servo_pin_11;
-Servo servo_pin_10;
-
 void setup()
 {
-  servo_pin_11.attach(11);
-  servo_pin_10.attach(10);
+  pinMode( 2 , INPUT);
+  pinMode( 7 , OUTPUT);
+
 }
 
 void loop()
 {
-  servo_pin_11.write( 1 );
-  servo_pin_10.write( 180 );
-}
-```
-{:.text-based}
-
-#### Stop Your Motors
-The code below will move both motors for 1 second, stop and then loop forever.
-
-![fig 6.8](fig-6_8.png){:.image .block-based}
-
-```c
-#include <Servo.h>
-
-Servo servo_pin_11;
-Servo servo_pin_10;
-
-void setup()
-{
-  servo_pin_11.attach(11);
-  servo_pin_10.attach(10);
-}
-
-void loop()
-{
-  servo_pin_11.write( 1 );
-  servo_pin_10.write( 180 );
-  delay( 1000 );
-  servo_pin_11.write( 90 );
-  servo_pin_10.write( 90 );
-  delay( 1000 );
-}
-```
-{:.text-based}
-
-Because there is a button attached to our robot we can create a far more convenient code. We can use the button to trigger movement of the car. In other words have the car be stopped until the button is pressed;
-
-![fig 6.10](fig-6_10.png){:.image .block-based}
-
-
-```c
-#include <Servo.h>
-
-Servo servo_pin_11;
-Servo servo_pin_10;
-
-void setup()
-{
-  servo_pin_11.attach(11);
-  servo_pin_10.attach(10);
-  While (digitalRead(2)==HIGH){
-    servo_pin_11.write(90);
-    servo_pin_10.write(90);
+  if (digitalRead(2) == HIGH) {
+    digitalWrite(7,LOW);
   }
-  delay(500);
-}
-
-void loop()
-{
-  servo_pin_11.write( 1 );
-  servo_pin_10.write( 180 );
+  else {
+    digitalWrite(7,HIGH);
+  }
 }
 ```
 {:.text-based}
 
-### Calibration
-{% include badge.html type='troubleshoot' content='If you notice that your motors are not moving at the right speed, or they do not stop entirely, you will need to calibrate your motors. ' %}
+#### Challenges
 
-{% include youtube.html id='Db-M5C3b7DA' %}{:.block-based}
+Now that you know how to program a button, try the following challenges:  
 
-{% include youtube.html id='aPI11noSG28?start=1102' %}{:.text-based}
+1. Modify your program so that it turns OFF when you press the button and ON when you let go.
 
-### Speed Control
+2. Modify your program so that it blinks when you press the button and just stays OFF when you let go.
 
-{% include youtube.html id='aPI11noSG28?start=1939' %}{:.text-based}
-
-You can change the speed of your motor by using different angle values.  See the table below.  This will come in handy later one when you are trying fine tune your wheel movements.
-
-<img src="fig-9_1.png" alt="fig-9_1" style="zoom:70%;" class="image center" />
-
-
-| Angle  | Direction         | Speed   |
-| ------ | ----------------- | ------- |
-| 0      | Clockwise         | Full    |
-| 1-89   | Clockwise         | Partial |
-| 90     | None              | Zero    |
-| 91-179 | Counter Clockwise | Partial |
-| 180    | Counter Clockwise | Full    |
-
-
-
+   

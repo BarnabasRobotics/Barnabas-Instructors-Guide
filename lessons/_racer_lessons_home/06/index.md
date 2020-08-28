@@ -1,64 +1,184 @@
 ---
 layout: lesson
-title: Lesson 6 &middot; Build Your Car
+title: Lesson 6 &middot; Wire And Program Motors
 
 suggested_time: 60-75 minutes  
 
 videos:
-    - link: https://youtu.be/2nT8sNoHYMo
-      text: Car Chassis Assembly + Mounting Hardware
+	- link: https://youtu.be/aPI11noSG28
+      text: Introduction to Servo Motor Control
+    - link: https://youtu.be/aPI11noSG28?start=553
+      text: Wiring The Motors (using pin headers 1)
+    - link: https://youtu.be/aM6ilpNDK0E
+      text: Wiring The Motors (using pin headers 2)
+	- link: https://youtu.be/byMBsEjQ6rY
+      text: Wiring The Motors (without pin headers)
+	- link: https://youtu.be/Db-M5C3b7DA
+      text: How To Calibrate Servos (Block-Based)
+	- link: https://youtu.be/aPI11noSG28?start=1102
+      text: How To Calibrate Servos (Text-Based)
+	- link: https://youtu.be/aPI11noSG28?start=1939
+      text: Speed Control (Text-Based)
 ---
 
-### Tutorial Video
-
-{% include youtube.html id='2nT8sNoHYMo' %}
-
-### Review Instructions
-
-Study the instructions below before you assemble the car chassis.
-
-<img src="fig-5_3.png" alt="fig-5_3" style="zoom:70%;" class="image center" />
-
-Study the instructions below before you assemble the car chassis.
-
-### Install Servo Motors
-
-<img src="fig-5_4.jpg" alt="fig-5_4" style="zoom:25%;" class="image center" />
-
-Attach the servo motors with the nuts and bolts.  Be sure to have the bolts insert from the outside
-
-{:style="overflow: hidden;"}
-
-
-
-### Install Caster Wheel
-
-<img src="fig-5_1.jpg" alt="fig-5_1" style="zoom:25%;" class="image center" />
-
-Attach the castor with the wider and shorter bolts in the front section of the plate.
-
-### Install Motor Wheels
-
-<img src="fig-5_2.jpg" alt="fig-5_2" style="zoom:30%;" class="image center" />
-
-Finally, add the wheels to the servo motors with the pin tipped screws.
 
 
 
 
+### Overview
 
-### Place the Hardware
+In this section we will explore how continuous servo motors are controlled.  Topics covered include:
 
-<img src="fig-5_5.png" alt="fig-5_5" style="zoom:60%;" class="image center" />
+- How to wire your servo motors to your Barnabas Noggin
+- How to program your servo motors to to turn on, stop and spin both directions
+- How to change the speed of your servo motors
 
-Using your zip ties, tie your hardware down onto the car.  Use the double stick foam tape on the back of the bread board to stick it onto the car chassis.  Attach the Noggin to the top side of chassis with zip ties. Be sure to leave the barrel jack accessible.  Using the sticky backside of the breadboard, place the breadboard firmly in the front edge of the chassis.
+### Continuous Servo Motor Control
 
-### Place The Battery
+{% include youtube.html id='aPI11noSG28?start=0' %}
 
-<img src="fig-5_6.jpg" alt="fig-5_6" style="zoom:25%;" class="image center" />
+#### Throttle
 
-Place the 9 Volt battery on the underside of the chassis with double stick foam.
+A throttle is an instrument used in some kinds of motorized vehicles, such as boats, to control speed. These throttles behave in a particular way; the position of the throttle is what dictates the speed and direction of the motor. For example, a throttle may begin in a position which has the motor stopped. When the throttle is pushed forward from that position the motor begins to move forward. The farther forward the throttle is pushed, the faster the motor moves in that direction. If, instead, I pull the throttle backwards, the motor will begin moving backwards, with it picking up speed as I pull the throttle back further and further. 
 
+As it turns out, our continuous servo motors behave very similarly.
+
+<img src="fig-6_5.png" alt="fig-6_5" style="zoom:50%;" class="image center" />
+
+We can give our motors a command including an angle. Our continuous servo motors understand that angle as moving a throttle back and forth. You can see by the picture above that 90 degrees represents the middle position of the throttle, which would have the motor stopped. An angle larger than 90 will begin moving the motor in one direction, with the speed increasing as the angle approaches 180. Likewise, an angle less than 90 moves the motor in the opposite direction, with the speed increasing as you approach 1.
+
+#### How Continuous Servos Work
+
+Continuous servos are similar to the servos that we used from Barnabas-Bot, except that they move like wheels, rather than just from 0 degrees to 180 degrees.  You will be using the same "Servo" block that you used from your Barnabas-Bot project.  See below for a table that explains what happens when you input different angle values.
+
+| Angle |     Direction      | Speed |
+| :---- | :----------------: | ----: |
+| 0     |     Clock-wise     |  Full |
+| 90    |        None        |  Zero |
+| 180   | Counter Clock-wise |  Full |
+
+### Wire Your Continuous Servo Motors
+
+{% include youtube.html id='aPI11noSG28?start=553' %}{:.text-based}
+
+<div markdown="1">
+
+{% include youtube.html id='byMBsEjQ6rY' %}
+
+![fig 6.0](fig-6_0.png){:class="image "}
+
+</div>{:.block-based}
+
+### Coding Your Motors To Move
+
+#### Move Forward
+
+The code below should move your car forward.  Notice that it seems like the motor should be moving in opposite directions.  Look at how your car is constructed and see if you can see why the car moves forward even though the motors are moving in opposite directions.
+
+![fig 6.6](fig-6_6.png){:.image .block-based}
+
+```c
+#include <Servo.h>
+
+Servo servo_pin_11;
+Servo servo_pin_10;
+
+void setup()
+{
+  servo_pin_11.attach(11);
+  servo_pin_10.attach(10);
+}
+
+void loop()
+{
+  servo_pin_11.write( 1 );
+  servo_pin_10.write( 180 );
+}
+```
+{:.text-based}
+
+#### Stop Your Motors
+The code below will move both motors for 1 second, stop and then loop forever.
+
+![fig 6.8](fig-6_8.png){:.image .block-based}
+
+```c
+#include <Servo.h>
+
+Servo servo_pin_11;
+Servo servo_pin_10;
+
+void setup()
+{
+  servo_pin_11.attach(11);
+  servo_pin_10.attach(10);
+}
+
+void loop()
+{
+  servo_pin_11.write( 1 );
+  servo_pin_10.write( 180 );
+  delay( 1000 );
+  servo_pin_11.write( 90 );
+  servo_pin_10.write( 90 );
+  delay( 1000 );
+}
+```
+{:.text-based}
+
+Because there is a button attached to our robot we can create a far more convenient code. We can use the button to trigger movement of the car. In other words have the car be stopped until the button is pressed;
+
+![fig 6.10](fig-6_10.png){:.image .block-based}
+
+
+```c
+#include <Servo.h>
+
+Servo servo_pin_11;
+Servo servo_pin_10;
+
+void setup()
+{
+  servo_pin_11.attach(11);
+  servo_pin_10.attach(10);
+  While (digitalRead(2)==HIGH){
+    servo_pin_11.write(90);
+    servo_pin_10.write(90);
+  }
+  delay(500);
+}
+
+void loop()
+{
+  servo_pin_11.write( 1 );
+  servo_pin_10.write( 180 );
+}
+```
+{:.text-based}
+
+### Calibration
+{% include badge.html type='troubleshoot' content='If you notice that your motors are not moving at the right speed, or they do not stop entirely, you will need to calibrate your motors. ' %}
+
+{% include youtube.html id='Db-M5C3b7DA' %}{:.block-based}
+
+{% include youtube.html id='aPI11noSG28?start=1102' %}{:.text-based}
+
+### Speed Control
+
+{% include youtube.html id='aPI11noSG28?start=1939' %}{:.text-based}
+
+You can change the speed of your motor by using different angle values.  See the table below.  This will come in handy later one when you are trying fine tune your wheel movements.
+
+<img src="fig-9_1.png" alt="fig-9_1" style="zoom:70%;" class="image center" />
+
+
+| Angle  | Direction         | Speed   |
+| ------ | ----------------- | ------- |
+| 0      | Clockwise         | Full    |
+| 1-89   | Clockwise         | Partial |
+| 90     | None              | Zero    |
+| 91-179 | Counter Clockwise | Partial |
+| 180    | Counter Clockwise | Full    |
 
 
 

@@ -1,93 +1,126 @@
 ---
 layout: lesson
-title: Lesson 4 &middot; Build And Program A Button Circuit
-
-suggested_time: 60-75 minutes  
+title: Lesson 4 &middot; Set Up Your Computer
+suggested_time: 30-45 minutes
 
 videos:
-    - link: https://youtu.be/-UxbsqI5vh0
-      text: Wiring the Button and LED for programming
-    - link: https://youtu.be/VlEWea9keUY
-      text: Programming the Button with Ardublock 
+    - link: https://youtu.be/3CW-bDeKVi4
+      text: How To Upload Code (Mac)
+    - link: https://youtu.be/T9EyaAX91Rg
+      text: Software Installation (Windows)
+    - link: https://youtu.be/gJliBVUUOKk
+      text: How To Upload Code (Windows)
 ---
+
+
 
 ### What You'll Need
 
-Before we get started, let's make sure that we have all the parts.
+Before we get started, let’s make sure that we have all the parts.
 
-- 1 x Barnabas Noggin
-- 1 x 10 kOhm Resistor
-- 1 x 470 Ohm Resistor
-- 1 x 4-pin Button
-- 1 x USB Cable
-- 1 x Computer
+<img src="fig-6_0.png" alt="fig-6_0" style="zoom:90%;" class="image center" />
 
-{% include youtube.html id='bSCSOL20SIw' %}{:.text-based}
+### Overview
 
-### Wiring the Button as Input
+In this lesson, we’ll be learning about the tool that software engineers need to do their job and also how to set up that tool on your computer.
 
-{% include youtube.html id='-UxbsqI5vh0' %}{:.block-based}
+### The Tool For Software Engineering
 
-Now we will wire your button to pin 2 so that our Barnabas Noggin can be programmed to sense when you have pushed it. 
+To start, we need to set up your computer with an integrated development environment (IDE).  An IDE is just like any tool that allows someone to do their job.  For example, a chef needs a knife.  A car mechanic needs a wrench.  A software engineer needs their IDE.  Specifically, an IDE is the thing that allows a software engineer to:
 
-Build the circuit using the schematic below!
+1. Write code
+2. Prepare the code to be sent out
 
-<img src="fig-3_4.png" alt="fig-3_4" style="zoom:70%;" class="image center" />
-
-The diagram below shows a correct circuit build.
-
-<img src="fig-3_5.png" alt="fig-3_5" style="zoom:70%;" class="image center" />
-
-### Programming the Button
-
-{% include youtube.html id='VlEWea9keUY' %}{:.block-based}
-
-#### Computer Setup
-
-As we begin computer coding, we'll have to first setup our software.  
-
-{% include badge.html type='troubleshoot' content='See our <a href="https://www.barnabasrobotics.com/resources/" target="_blank">Software</a> page for setting up your computer for coding.' %}
-
-#### Conditional Logic
-
-In programming, conditional logic is used to decide a course of action depending on a condition. For example; an LED turning on if the button is pressed and turning off if the button is not pressed. Conditional logic is something we use in our everyday life without even recognizing it. If hungry, eat; if cold, wear a jacket, etc. In this section we will learn how to use conditional logic which will become the basis of how our robot makes decisions.
-
-#### Practice
-
-Let's write a program that turns ON the light if we press the button and turns OFF the light if we let go of the button.
-
-![fig 3.6](fig-3_6.png){:.image .block-based}
-
-![fig 3.7](fig-3_7.png){:.image .block-based}
+There are lots of types of IDEs.  There are IDEs for video games, apps for your smartphone, making websites and lots more.  The IDE we will be using is designed to allow us to write code for our robot and to prepare that code to be sent out to our robot’s brain.
 
 
+Each type of computer has their own version of the IDE, so your first task is to figure out which type of computer you have: Chromebook, Macbook or Windows PC.
 
-```c
-void setup()
-{
-  pinMode( 2 , INPUT);
-  pinMode( 7 , OUTPUT);
+Click on either the [Chromebook](#chromebook-ide-setup), [Macbook](#macbook-ide-setup) or [Windows PC](#windows-pc-ide-setup) link to find the right instructions on how to set up your IDE.
 
-}
+***
 
-void loop()
-{
-  if (digitalRead(2) == HIGH) {
-    digitalWrite(7,LOW);
-  }
-  else {
-    digitalWrite(7,HIGH);
-  }
-}
-```
-{:.text-based}
+### Chromebook IDE Setup
 
-#### Challenges
+<img src="fig-6_1.png" alt="fig-6_1" style="zoom:90%;" class="image center" />
 
-Now that you know how to program a button, try the following challenges:  
+For Chromebooks, your IDE will be a website called Barnabas Blocks.  Follow the instructions below to get it working.  
 
-1. Modify your program so that it turns OFF when you press the button and ON when you let go.
 
-2. Modify your program so that it blinks when you press the button and just stays OFF when you let go.
+Before starting:
 
-   
+- [ ] Make sure that your Chromebook is powered on and charged (or charging)
+- [ ] Make sure that your Chromebook has access to the internet
+
+#### Enable Experimental Web Platform features
+
+Your Chromebook has special secret features that we need to enable so that it will be able to communicate with our Barnabas Noggin.  We’ll go through how to enable this cool feature.
+
+#### 1. Open your Google Chrome browser
+
+#### 2. Copy and paste this text into your address bar.  
+
+<p style="text-align:center"><cmd>chrome://flags/#enable-experimental-web-platform-features</cmd></p>
+
+#### 3. Select “Enabled” on the “Experimental Web Platform features”
+
+<img src="fig-6_2.png" alt="fig-6_2" style="zoom:40%;" class="image center" />
+
+#### 4. Click “Relaunch”
+
+#### 5. Visit The IDE
+
+Your Chromebook is now ready.  That was easy, right?  Type the link below (or copy and paste) into your address bar to check out your IDE!
+
+<p style="text-align:center"><cmd><a style="color:white" href="https://code.barnabasrobotics.com">https://code.barnabasrobotics.com</a></cmd></p>
+
+***
+
+### Macbook IDE Setup
+
+<img src="fig-6_3.png" alt="fig-6_3" style="zoom:15%;" class="image center" />
+
+For Macbooks, your IDE is called Ardublock.  We’re going to need to download something called a package file (**.pkg**) from the internet and then run the **.pkg** so that it can install the IDE onto your Macbook.  
+
+
+Before starting:
+
+- [ ] Make sure that your Macbook is powered on and charged (or charging)
+- [ ] Make sure that your Macbook has access to the internet
+
+#### 1. Download And Install
+
+[Download the .pkg file](https://www.barnabasrobotics.com/wp-content/uploads/2020/06/Barnabas-Robotics-Installer-1.0.5.zip) and run it.  Detailed instruction can be found [here](https://docs.google.com/document/d/1tsMGBy15fQZ3zAlQ6SgKNf2kBoIs2Iwzoe5aNDDQ-aQ/edit).
+
+#### 2. Upload Code
+
+Learn how to connect your Noggin to your computer and upload code by watching this video.
+
+{% include youtube.html id='3CW-bDeKVi4' %}
+
+### Windows PC IDE Setup
+
+<img src="fig-6_8.png" alt="fig-6_8" style="zoom:15%;" class="image center" />
+
+For Windows PCs, your IDE is called **Ardublock**.  We’re going to need to download something called an executable file (.exe) from the internet and then run the .exe so that it can install the IDE onto your Windows PC.  
+
+
+We’re going to use a super cool software engineering tool called the terminal to do this.
+
+
+Before starting:
+
+- [ ] Make sure that your Windows PC is powered on and charged (or charging)
+- [ ] Make sure that your Windows PC has access to the internet
+
+#### 1. Download And Install
+
+[Download the windows installer and run it.](https://www.barnabasrobotics.com/barnabas-driver-installer-1-0-5/)
+
+{% include youtube.html id='T9EyaAX91Rg' %}
+
+#### 2. Upload Code
+
+Learn how to connect your Noggin to your computer and upload code by watching this video.
+
+{% include youtube.html id='gJliBVUUOKk' %}
