@@ -7,9 +7,9 @@ suggested_time: 60-75 minutes
 videos:
     - link: https://youtu.be/GnWS4G7Db4g
       text: Make Your Racer Turn (Block-based)
-	- link: https://youtu.be/EcphrH3rvFQ
+    - link: https://youtu.be/EcphrH3rvFQ
       text: Navigate Your Car (Text-based)
-	- link: https://youtu.be/Kr0Qempo_gI
+    - link: https://youtu.be/Kr0Qempo_gI
       text: Subroutines (Block-based)
 ---
 
