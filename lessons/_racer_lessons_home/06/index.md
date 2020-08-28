@@ -5,19 +5,19 @@ title: Lesson 6 &middot; Wire And Program Motors
 suggested_time: 60-75 minutes  
 
 videos:
-	- link: https://youtu.be/aPI11noSG28
+    - link: https://youtu.be/aPI11noSG28
       text: Introduction to Servo Motor Control
     - link: https://youtu.be/aPI11noSG28?start=553
       text: Wiring The Motors (using pin headers 1)
     - link: https://youtu.be/aM6ilpNDK0E
       text: Wiring The Motors (using pin headers 2)
-	- link: https://youtu.be/byMBsEjQ6rY
+    - link: https://youtu.be/byMBsEjQ6rY
       text: Wiring The Motors (without pin headers)
-	- link: https://youtu.be/Db-M5C3b7DA
+    - link: https://youtu.be/Db-M5C3b7DA
       text: How To Calibrate Servos (Block-Based)
-	- link: https://youtu.be/aPI11noSG28?start=1102
+    - link: https://youtu.be/aPI11noSG28?start=1102
       text: How To Calibrate Servos (Text-Based)
-	- link: https://youtu.be/aPI11noSG28?start=1939
+    - link: https://youtu.be/aPI11noSG28?start=1939
       text: Speed Control (Text-Based)
 ---
 
