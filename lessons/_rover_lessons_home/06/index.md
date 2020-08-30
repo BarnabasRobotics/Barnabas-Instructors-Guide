@@ -130,7 +130,8 @@ void loop()
   digitalWrite(8,HIGH);
   digitalWrite(11,LOW);
 }
-```{:.text-based}
+```
+{:.text-based}
 
 This code moves the same motor A in the opposite direction.  Notice we just change the high/low for both pins.  Try uploading this code.  Your motor should spin in the opposite direction
 
@@ -151,7 +152,6 @@ void loop()
   digitalWrite(11,HIGH);
 }
 ```
-
 {:.text-based}
 
 Now let's stop the motor.  Following the chart from the previous section, we just need to set both signals to low or both to high.  Try both to make sure that both emergency stop and deceleration stop do what they are supposed to do.
@@ -174,7 +174,8 @@ void loop()
   digitalWrite(8,LOW);
   digitalWrite(11,LOW);
 }
-```{:.text-based}
+```
+{:.text-based}
 
 
 
@@ -190,7 +191,8 @@ void loop()
   digitalWrite(8,HIGH);
   digitalWrite(11,HIGH);
 }
-```{:.text-based}
+```
+{:.text-based}
 
 #### Challenge #1: Motor B
 
@@ -222,7 +224,8 @@ void loop()
   digitalWrite(10,HIGH);
   digitalWrite(12,LOW);
 }
-```{:.text-based}
+```
+{:.text-based}
 
 Do both motors spin in the same direction?  Or are they opposite?  Try the challenges below.
 
@@ -272,7 +275,8 @@ void loop()
   delay(1000);
     
 }
-```{:.text-based}
+```
+{:.text-based}
 
 A few notes:
 
@@ -314,4 +318,5 @@ void loop()
   delay(500);
     
 }
-```{:.text-based}
+```
+{:.text-based}
