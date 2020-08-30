@@ -275,10 +275,14 @@ void loop()
 ```
 {:.text-based}
 
-#### Challenge #1: Adjust The Turn Amount
+#### Challenge #1: Adjust The Turn Amount To Ex
 
 Change the delay inside the subroutines to adjust how much it turns.
 
-#### Challenge #2: Adjust The Turn Direction
+#### Challenge #2: Create Right Angle Turns
+
+Change the delay inside the subroutines so that the left and right turns create exactly 90 degree turns.
+
+#### Challenge #3: Adjust The Turn Direction
 
 Change the low/high values to change the direction of the turn so that it turns backwards instead of forwards.
