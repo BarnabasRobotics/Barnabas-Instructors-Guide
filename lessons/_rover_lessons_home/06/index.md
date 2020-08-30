@@ -31,7 +31,7 @@ Find your DC motors (you should have two of them).  Notice that each motor has t
 
 ### DC Driver Board
 
-<img src="fig-6_0.jpg" alt="fig-6_0" style="zoom:15%;" class="image center" />{.:block-based}
+<img src="fig-6_0.jpg" alt="fig-6_0" style="zoom:15%;" class="image center" />
 
 The DC driver board can be thought of as the muscle that gives the DC motor the power to move.  Our Uno board, which is the brain, will send signals to the DC driver to move and the DC driver converts the signals into actual movement in the motor.
 
@@ -116,7 +116,7 @@ See below for a control table for Motor B.  Notice that everything is the same e
 
 The code below moves motor A in one direction.  Try uploading this code to your Uno board and see if the motor starts spinning.
 
-<img src="fig-6_4.png" alt="fig-6_4" style="zoom:90%;" class="image center" />
+<img src="fig-6_4.png" alt="fig-6_4" style="zoom:90%;" class="image center block-based" />
 
 This code moves the same motor A in the opposite direction.  Notice we just change the high/low for both pins.  Try uploading this code.  Your motor should spin in the opposite direction
 
