@@ -130,9 +130,7 @@ void loop()
   digitalWrite(8,HIGH);
   digitalWrite(11,LOW);
 }
-```
-
-{:.text-based}
+```{:.text-based}
 
 This code moves the same motor A in the opposite direction.  Notice we just change the high/low for both pins.  Try uploading this code.  Your motor should spin in the opposite direction
 
@@ -176,9 +174,7 @@ void loop()
   digitalWrite(8,LOW);
   digitalWrite(11,LOW);
 }
-```
-
-{:.text-based}
+```{:.text-based}
 
 
 
@@ -194,9 +190,7 @@ void loop()
   digitalWrite(8,HIGH);
   digitalWrite(11,HIGH);
 }
-```
-
-{:.text-based}
+```{:.text-based}
 
 #### Challenge #1: Motor B
 
@@ -228,9 +222,7 @@ void loop()
   digitalWrite(10,HIGH);
   digitalWrite(12,LOW);
 }
-```
-
-{:.text-based}
+```{:.text-based}
 
 Do both motors spin in the same direction?  Or are they opposite?  Try the challenges below.
 
@@ -280,9 +272,7 @@ void loop()
   delay(1000);
     
 }
-```
-
-{:.text-based}
+```{:.text-based}
 
 A few notes:
 
@@ -297,8 +287,6 @@ A few notes:
 Modify the code so that it only waits 1/2 a second after stopping and going.  See the answer below.  Note that 500 milliseconds is 1 second.
 
 <img src="fig-6_10.png" alt="fig-6_10" style="zoom:90%;" class="image center block-based" />
-
-
 
 ```c
 void setup()
@@ -326,6 +314,4 @@ void loop()
   delay(500);
     
 }
-```
-
-{:.text-based}
+```{:.text-based}
