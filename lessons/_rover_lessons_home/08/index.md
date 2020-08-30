@@ -273,7 +273,6 @@ void loop()
   delay(3000);
 }
 ```
-
 {:.text-based}
 
 #### Challenge #1: Adjust The Turn Amount
