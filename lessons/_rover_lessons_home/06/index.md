@@ -118,17 +118,85 @@ The code below moves motor A in one direction.  Try uploading this code to your 
 
 <img src="fig-6_4.png" alt="fig-6_4" style="zoom:90%;" class="image center block-based" />
 
+```c
+void setup()
+{
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(8,HIGH);
+  digitalWrite(11,LOW);
+}
+```
+
+{:.text-based}
+
 This code moves the same motor A in the opposite direction.  Notice we just change the high/low for both pins.  Try uploading this code.  Your motor should spin in the opposite direction
 
-<img src="fig-6_5.png" alt="fig-6_5" style="zoom:90%;" class="image center" />
+<img src="fig-6_5.png" alt="fig-6_5" style="zoom:90%;" class="image center block-based" />
+
+
+
+```c
+void setup()
+{
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+}
+```
+
+{:.text-based}
 
 Now let's stop the motor.  Following the chart from the previous section, we just need to set both signals to low or both to high.  Try both to make sure that both emergency stop and deceleration stop do what they are supposed to do.
 
-<img src="fig-6_6.png" alt="fig-6_6" style="zoom:90%;" class="image center" />
+<img src="fig-6_6.png" alt="fig-6_6" style="zoom:90%;" class="image center block-based" />
 
-<img src="fig-6_7.png" alt="fig-6_7" style="zoom:90%;" class="image center" />
+<img src="fig-6_7.png" alt="fig-6_7" style="zoom:90%;" class="image center block-based" />
 
 
+
+```c
+void setup()
+{
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(8,LOW);
+  digitalWrite(11,LOW);
+}
+```
+
+{:.text-based}
+
+
+
+```c
+void setup()
+{
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(8,HIGH);
+  digitalWrite(11,HIGH);
+}
+```
+
+{:.text-based}
 
 #### Challenge #1: Motor B
 
@@ -140,7 +208,29 @@ Hint: Change pin 8 to pin 10 and change pin 11 to pin 12.
 
 Now that we know how to move a single motor in both directions, let's see if we can move both motors at the same time.  The code below has four blocks because need two blocks to control each motors.  Try uploading the code.
 
-<img src="fig-6_8.png" alt="fig-6_8" style="zoom:90%;" class="image center" />
+<img src="fig-6_8.png" alt="fig-6_8" style="zoom:90%;" class="image center block-based" />
+
+
+
+```c
+void setup()
+{
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(12,OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+  digitalWrite(10,HIGH);
+  digitalWrite(12,LOW);
+}
+```
+
+{:.text-based}
 
 Do both motors spin in the same direction?  Or are they opposite?  Try the challenges below.
 
@@ -160,18 +250,82 @@ Using what you have learned, program the motors spin in opposite directions.
 
 Now that we know how to move the motors back and forth, let's create a simple program where the motor moves both motors for 1 second, stops both motors for 1 second and the continues in a forever loop.
 
-<img src="fig-6_9.png" alt="fig-6_9" style="zoom:90%;" class="image center" />
+<img src="fig-6_9.png" alt="fig-6_9" style="zoom:90%;" class="image center block-based" />
+
+
+
+```c
+void setup()
+{
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(12,OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+  digitalWrite(10,HIGH);
+  digitalWrite(12,LOW);
+    
+  delay(1000);
+    
+  digitalWrite(8,LOW);
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+  digitalWrite(12,LOW);
+    
+  delay(1000);
+    
+}
+```
+
+{:.text-based}
 
 A few notes:
 
-- Blocks 1-4 command both motors to spin
-- Block 5 (delay MILLIS) tells the code to wait there for 1000 milliseconds (same as 1 second) before executing any new commands
-- The 6-9 command both motors to decelerate to a stop
-- Block 10 (delay MILLIS) tells the code to wait there for 1000 milliseconds (same as 1 second) before executing any new commands
-- After block 10 finishes executing, the code loops to block 1 and keeps going
+- Commands 1-4 command both motors to spin
+- Command 5 (delay MILLIS) tells the code to wait there for 1000 milliseconds (same as 1 second) before executing any new commands
+- Commands 6-9 both motors to decelerate to a stop
+- Command 10 (delay MILLIS) tells the code to wait there for 1000 milliseconds (same as 1 second) before executing any new commands
+- After command 10 finishes executing, the code loops to command 1 and keeps going
 
 #### Practice #1: Reduce The Delay
 
 Modify the code so that it only waits 1/2 a second after stopping and going.  See the answer below.  Note that 500 milliseconds is 1 second.
 
-<img src="fig-6_10.png" alt="fig-6_10" style="zoom:90%;" class="image center" />
+<img src="fig-6_10.png" alt="fig-6_10" style="zoom:90%;" class="image center block-based" />
+
+
+
+```c
+void setup()
+{
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(12,OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+  digitalWrite(10,HIGH);
+  digitalWrite(12,LOW);
+    
+  delay(500);
+    
+  digitalWrite(8,LOW);
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+  digitalWrite(12,LOW);
+    
+  delay(500);
+    
+}
+```
+
+{:.text-based}
