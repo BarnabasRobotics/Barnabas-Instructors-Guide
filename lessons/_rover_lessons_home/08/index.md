@@ -5,101 +5,20 @@ title: Lesson 8 &middot; Navigate Your Car
 suggested_time: 60-75 minutes  
 
 videos:
-    - link: https://youtu.be/UmDw_1gU778
-      text: Subroutine And Navigation Review (Block-based)
 
 ---
 
 ### Overview
 
-In this section we will be programming our Barnabas Rover to move forwards, backwards and turn.  We'll also be learning how to streamline our code with something called subroutines.
+In this section we will be programming our Barnabas Rover to do all the basic operations of navigation: move forward, move backwards and turn.  In order to d this, we'll need to cover:
 
-{% include youtube.html id='UmDw_1gU778' %}{:.block-based}
+- Subroutines
+- Basic subroutines (forward, backward, turn)
+- How to trigger your code with your button
 
+### About Subroutines
 
-### Let's Move Backwards!
-
-### Make Our Rover Turn
-
-Now let's say that from here we instead want to turn in one direction, how do we do that? Thinking about the direction we want to turn our motors if I wanted to turn left I would have the right motor continue moving forward but change the direction of the left motor. I could do likewise with the right motor if I wanted to turn right instead. The code to do either is below;
-
-![fig 7.4](fig-7_4.png){:.image .block-based}
-
-![fig 7.6](fig-7_5.png){:.image .block-based}
-
-```c
-#include <Servo.h>
-
-Servo servo_pin_11;
-Servo servo_pin_10;
-
-void setup()
-{
-  servo_pin_11.attach(11);
-  servo_pin_10.attach(10);
-
-  while (digitalWrite(2)==HIGH){
-    servo_pin_11.write( 90 );
-    servo_pin_10.write( 90 );
-  }
-}
-
-void loop()
-{
-  servo_pin_11.write( 1 ); //both being 1 will turn the robot left
-  servo_pin_10.write( 1 ); //both being 180 will turn the robot right
-}
-```
-{:.text-based}
-
-#### Beginning To Turn...
-You should find that changing the amount of time one wheel turns either shortens or lengthens the time the robot spends turning and therefore changes how far the robot turns.  Take some time to experiment!
-
-Just remember that it will be impossible to see how long a turn lasts for if the turn is the only command being given. Instead, the robot will just turn continuously and appear to spin in place. Instead, have code that will move either forward or backward for some amount of time before turning, like so:
-
-![fig 7.2](fig-7_2.png){:.image .block-based}
-
-```c
-#include <Servo.h>
-
-Servo servo_pin_11;
-Servo servo_pin_10;
-
-void setup()
-{
-  servo_pin_11.attach(11);
-  servo_pin_10.attach(10);
-
-  while (digitalWrite(2)==HIGH){
-    servo_pin_11.write( 90 );
-    servo_pin_10.write( 90 );
-  }
-}
-
-void loop()
-{
-  servo_pin_11.write(1);
-  servo_pin_10.write(180);
-  delay(500);
-  servo_pin_11.write( 1 ); //both being 1 will turn the robot left
-  servo_pin_10.write( 1 ); //both being 180 will turn the robot right
-  delay(500);
-}
-```
-{:.text-based}
-
-### Challenge
-
-1. Change the delay values of this code and see how the robot reacts. 
-2. Move the robot forwards and backwards in the same program.
-
-**Note**: Remember that you want to make a portion of your code at the end of any movement that brings your robot to a stop before having it move again. Without this it will be difficult to determine how far the robot is turning in a single command, as it will appear to turn continuously.
-
-### Subroutines
-
-{% include youtube.html id='Kr0Qempo_gI' %}{:.block-based}
-
-Up to this point we have been issuing commands to our robot in a painstaking way. To move the robot forward we need to give orders to two different pins and then specify a time that they continue obeying that order. It would be nice if we could instead give only one order to our robot, like move forward, and have it understand what we mean. 
+Up to this point we have been issuing commands to our robot in a painstaking way. To move the robot forward we need to give orders to four different pins (8,11, 10, 12) and then specify a time that they continue obeying that order. It would be nice if we could instead give only one order to our robot, like move forward, and have it understand what we mean. 
 
 Think of when you're told to take out the trash.  Your parents don't tell you: 
 
@@ -113,38 +32,50 @@ Instead, they just tell you to "take the trash out".  The reason is because at s
 
 We are going to achieve this by using **subroutines**. 
 
-<div markdown="1">
+### Creating A Subroutine
 
-### Create And Call A Subroutine    
+To create a subroutine is to create a little sub-program within your code.  Take a look at the code below where we create a subroutine that moves the car forward.  Notice that the name of the subroutine matches what it does.  This way it is easy to keep track what our subroutines do.
 
-Notice in the code below that we first declare and define a subroutine called “forward()”.  We must do this before we call it in the “loop()” function.  In the loop() function, we call the subroutine by writing "forward()".
+<img src="fig-8_1.png" alt="fig-6_0" style="zoom:65%;" class="image center block-based" />
+
+<img src="fig-8_2.png" alt="fig-6_0" style="zoom:70%;" class="image center block-based" />
+
+<img src="fig-8_3.png" alt="fig-6_0" style="zoom:100%;" class="image center block-based" />
+
+
 
 
 ```c
-#include <Servo.h>
-
-Servo servo_pin_11;
-Servo servo_pin_10;
-
-
-void forward(){
-  servo_pin_11.write( 1 );
-  servo_pin_10.write( 180 );
+void forward() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+  digitalWrite(10,HIGH);
+  digitalWrite(12,LOW);
 }
+```
+{:.text-based}
 
-void stop(){
-  servo_pin_11.write(90);
-  servo_pin_10.write(90;
+### Calling A Subroutine
+
+To call a subroutine, simple use the name of the subroutine in your main loop.  Try uploading the code to see if your robot moves forward.  If it doesn't, you'll need to modify the code.  Remember if one of the wheels is spinning the wrong way, you just need to flip the high/low on your motor pair (8,11 or 10, 12).
+
+<img src="fig-7_1.png" alt="fig-6_0" style="zoom:100%;" class="image center block-based" />
+
+
+```c
+void forward() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+  digitalWrite(10,HIGH);
+  digitalWrite(12,LOW);
 }
 
 void setup()
 {
-  servo_pin_11.attach(11);
-  servo_pin_10.attach(10);
-
-  While (digitalRead(2)==HIGH){
-    stop();
-  }
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(12,OUTPUT);
 }
 
 void loop()
@@ -152,76 +83,203 @@ void loop()
   forward();
 }
 ```
-</div>{:.text-based}
-    
+{:.text-based}
 
-<div markdown="1">
+#### Practice #1: Move Forward and Backward
+
+Using subroutines, create code that moves your car forward for a second, stops for a second, moves backwards for a second, stops for a second and then repeats.
+
+<img src="fig-7_2.png" alt="fig-6_0" style="zoom:100%;" class="image center block-based" />
 
 
-### Create A Subroutine
 
-The two subroutine blocks are found at the bottom of the control tab as shown below.
 
-![fig 8.1](fig-8_1.png){:.image .fit}
+```c
+void forward() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+  digitalWrite(10,HIGH);
+  digitalWrite(12,LOW);
+}
 
-One of these, the subroutine commands block, is the block we use to teach our robot to do a certain list of orders under a single named command. The other block simply says subroutine, which we'll call the subroutine run block. When this block is placed into our **Loop Do**, it will run the list of commands we created earlier. Using the subroutine blocks is different than using the other blocks we have utilized this far. Because of this we'll walk through our first subroutine in great detail.
+void backward() {
+  digitalWrite(8,HIGH);
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+  digitalWrite(12,HIGH);
+}
 
-The first subroutine we are going to make will move our robot forward, something we have done twice already. We will start by dragging a Loop Do into the coding environment (unless one is already there) and also dragging a subroutine commands block into the environment as well. Unlike all the other blocks in Ardublock, we are not going to attach the subroutine commands block to the Loop Do.
+void stop() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+  digitalWrite(12,LOW);
+}
 
-![fig 8.2](fig-8_2.png){:.image .fit .block-based}
+void setup()
+{
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(12,OUTPUT);
+}
 
-The subroutine commands block is strange for another reason. We can change what it is called in the same way we can change number values in our other blocks, by left clicking on the word subroutine you open a text box that you can type in. I'm going to erase the word subroutine and replace it with forward.
+void loop()
+{
+  forward();
+  delay(1000);
+  stop();
+  delay(1000);
+  backward();
+  delay(1000);
+  stop();
+  delay(1000);
+}
+```
+{:.text-based}
 
-![fig 8.3](fig-8_3.png){:.image .block-based}
+#### Practice #2: Make more subroutines
 
-I'm just doing this so that in the future, when we have more than one subroutine, giving my robot the command I want will be easy. The only thing I'll need to remember to go forward is the word forward. Now we need to input the list of orders that the robot will do whenever we say forward. We'll just use the code from the last section;
+Create the following subroutines and test them inside your main loop to make sure that they work
 
-![fig 8.4](fig-8_4.png){:.image .block-based}
+| Name        | Action                                         |
+| ----------- | ---------------------------------------------- |
+| *stop*      | Stops all motors                               |
+| *rstop*     | Stops the right motor only                     |
+| *lstop*     | Stops the left motor only                      |
+| *left*      | Moves the left motor forward only              |
+| *lbackward* | Move the left motor backward only              |
+| *right*     | Moves the right motor forward only             |
+| *rback*ward | Moves the right motor backward only            |
+| *forward*   | Moves both the left and right motor forward.   |
+| *backward*  | Moves both the left and right motor backwards. |
 
-### Call A Subroutine
 
-Now we only need to put a subroutine run block inside of our Loop Do and rename it forward as well;
 
-![fig 8.5](fig-8_5.png){:.image .block-based}
+### Adding Your Button
 
-Rather than the simple code above, you could add your newfound knowledge of subroutines to the code we've created which utilizes the button;
+Since we have started to program our car to move, you may have noticed that at times your car starts moving before you're ready to test your code.  To make things a bit more convenient for us, we're going to add a bit of code so that you car doesn't begin its program until you press your button.  
 
-![fig 8.6](fig-8_6.png){:.image .block-based}
+In order to accomplish this, we're going to need to use something called a while loop.  The while loop is like an if/else block.  How it works is: 
 
-</div>{:.block-based}
+"Do what ever is inside the loop WHILE this thing is true"
 
-### How Do Subroutines Help Me?
+So what we're going to do is tell it to do nothing WHILE the button is not pressed, and then jump out of the while loop once the button is pressed.  This is what it looks like in code.  Give it a try!
 
-You're probably thinking 'What was the point of all this? This was more work than before!' Well for now it seems that way, but before we're done with this class our robot is going to be navigating through very complicated paths, and we will need to give our robot several commands. At that point this process becomes extremely worthwhile. The way I put it is that we do a lot of work up front so that the rest our code is easier to write.
+<img src="fig-7_3.png" style="zoom:100%;" class="image center block-based" />
 
-### Practice
+```c
+void forward() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+  digitalWrite(10,HIGH);
+  digitalWrite(12,LOW);
+}
 
-Create the following subroutines
+void backward() {
+  digitalWrite(8,HIGH);
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+  digitalWrite(12,HIGH);
+}
 
-| Name          | Action                                          |
-| ------------- | ----------------------------------------------- |
-| *stop*        | Stops all motors                                |
-| *rstop*       | Stops the right motor only                      |
-| *lstop*       | Stops the left motor only                       |
-| *left*        | Moves the left motor forward only               |
-| *lback*       | Move the left motor backward only               |
-| *right*       | Moves the right motor forward only              |
-| *rback*       | Moves the right motor backward only             |
-| *forward*     | Moves both the left and right motor forward.    |
-| *back*        | Moves both the left and right motor backwards.  |
-| *blink*       | Blinks the LED light at whatever speed you want |
-| *forwardhalf* | Move forward at half speed.                     |
-| *backhalf*    | Move backwards at half speed.                   |
+void stop() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+  digitalWrite(12,LOW);
+}
 
-![fig 8.7](fig-8_7.png){:.image .block-based}
-![fig 8.8](fig-8_8.png){:.image .block-based}
-![fig 8.9](fig-8_9.png){:.image .block-based}
-![fig 8.10](fig-8_10.png){:.image .block-based}
+void setup()
+{
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(12,OUTPUT);
+  pinMode(2,INTPUT);
+}
 
-### Challenge
+void loop()
+{
+  while (digitalRead(2)==HIGH) {
+     //- do nothing
+  }
+  forward();
+  delay(1000);
+  stop();
+  delay(1000);
+  backward();
+  delay(1000);
+  stop();
+  delay(1000);
+}
+```
+{:.text-based}
 
-1. Write a program that moves the car forward for 1 second, stops for 1 second, goes backwards for 1 seconds and stops for 1 second using your subroutines.
-2. Retry your turning challenges from the previous lesson by using your subroutines.
-3. Create a subroutine that tells your robot to turn left 90 degrees.
-4. Create a subroutine that tells your robot to turn right 90 degrees.
-5. Make up a programming complex programming challenge and use your new subroutines to achieve your goal!
+### Create A Turn
+
+To create a turn, we'll need to:
+
+1. Program on wheel to move forward while the other one is stopped.  
+2. Determine how long we want the one wheel to turn before we stop it
+
+See below for code that turns right, stops for 3 seconds and then turns left and stops for 3 seconds.  Try it out!  Remember that you need to push the button first before it moves because of the button code inside the while loop.
+
+<img src="fig-7_4.png" style="zoom:100%;" class="image center block-based" />
+
+```c
+void rightTurn() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+  digitalWrite(10,LOW);
+  digitalWrite(12,LOW);
+  delay(300);
+  stop();
+}
+
+void leftTurn() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,LOW);
+  digitalWrite(10,HIGH);
+  digitalWrite(12,LOW);
+  delay(300);
+  stop();
+}
+
+void stop() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+  digitalWrite(12,LOW);
+}
+
+void setup()
+{
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(12,OUTPUT);
+  pinMode(2,INTPUT);
+}
+
+void loop()
+{
+  while (digitalRead(2)==HIGH) {
+     //- do nothing
+  }
+  rightTurn();
+  delay(3000);
+  leftTurn();
+  delay(3000);
+}
+```
+
+{:.text-based}
+
+#### Challenge #1: Adjust The Turn Amount
+
+Change the delay inside the subroutines to adjust how much it turns.
+
+#### Challenge #2: Adjust The Turn Direction
+
+Change the low/high values to change the direction of the turn so that it turns backwards instead of forwards.
