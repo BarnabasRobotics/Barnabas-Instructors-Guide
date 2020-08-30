@@ -31,7 +31,7 @@ Find your DC motors (you should have two of them).  Notice that each motor has t
 
 ### DC Driver Board
 
-<img src="fig-6_0.jpg" alt="fig-6_0" style="zoom:15%;" class="image center" />
+<img src="fig-6_0.jpg" alt="fig-6_0" style="zoom:15%;" class="image center" />{.:block-based}
 
 The DC driver board can be thought of as the muscle that gives the DC motor the power to move.  Our Uno board, which is the brain, will send signals to the DC driver to move and the DC driver converts the signals into actual movement in the motor.
 
