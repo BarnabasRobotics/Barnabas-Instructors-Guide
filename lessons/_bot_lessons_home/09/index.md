@@ -8,11 +8,17 @@ reflection:
       - If the motor has previously been set to 20 degrees and is then set to 90, how many degrees does the motor move?
 ---
 
+
+
 ### What You'll Need
 
 Before we get started, let’s make sure that we have all the parts.
 
 <img src="fig-9_0.png" alt="fig-9_0" style="zoom:60%;" class="image center" />
+
+### Tutorial Video
+
+{% include youtube.html id="JQB0ISas9ow" %}
 
 ### Servo Motor Basics
 
