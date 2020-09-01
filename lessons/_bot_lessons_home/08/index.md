@@ -18,13 +18,9 @@ Now that our robot can blink on and off with the LED, it’s time to get it to m
 2. How the heart gives power to the buzzer and robot’s brain; and
 3. How the robot’s brain and personality work together to make music.
 
-### Tutorial Video(s)
+### Connecting Your Buzzer To Your Robot’s Brain
 
 {% include youtube.html id="ERxso8iQo_E" %}
-
-{% include youtube.html id="8PZ5Y22Un5o" %}
-
-### Connecting Your Buzzer To Your Robot’s Brain
 
 Make sure your Barnabas Noggin is plugged into your computer via the USB cord.  The red light on your Barnabas Noggin should be on.
 
@@ -150,6 +146,8 @@ Try the following exercises to get the hang of playing with the buzzer
 ### Challenge!
 
 Now challenge yourself to take things to the next step and have your robot play some more music!
+
+{% include youtube.html id="8PZ5Y22Un5o" %}
 
 1. Write code to do the following:
    - Play “B4 for 1 sec
