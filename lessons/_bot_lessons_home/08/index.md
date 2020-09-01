@@ -4,10 +4,6 @@ title: Lesson 8 &middot; Make Robot Music
 suggested_time: 60-75 minutes
 ---
 
-### Tutorial Video(s)
-
-{% include youtube.html id="ERxso8iQo_E" %}
-
 ### What You'll Need
 
 Before we get started, let’s make sure that we have all the parts.
@@ -21,6 +17,12 @@ Now that our robot can blink on and off with the LED, it’s time to get it to m
 1. How to connect a buzzer to your robot’s brain;
 2. How the heart gives power to the buzzer and robot’s brain; and
 3. How the robot’s brain and personality work together to make music.
+
+### Tutorial Video(s)
+
+{% include youtube.html id="ERxso8iQo_E" %}
+
+{% include youtube.html id="8PZ5Y22Un5o" %}
 
 ### Connecting Your Buzzer To Your Robot’s Brain
 
