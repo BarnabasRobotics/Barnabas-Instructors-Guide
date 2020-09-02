@@ -45,8 +45,12 @@ A big part of the Barnabas Racer project includes creating code on the computer,
 
 <p align="center" markdown = "1">
     Block-Based Code
-    <img align="center" src="fig-01_11.png" width="300">
+</p>
+
+<p>    <img align="center" src="fig-01_11.png" width="300"></p>
+
 *Text-based* coding requires that every command in the code to be typed out explicitly.  The commands need to be spelled correctly and are case-sensitive (capitals and lower-case matters!).  This style is the popular method used within the software industry.  
+
 
 Typically, we recommend block-based coding for ages 8-11 and text-based coding for ages 12 and up.  In our classes, we start younger students (ages 8-11) with block-based and eventually graduate them to text-based coding as they gain experience.
 
