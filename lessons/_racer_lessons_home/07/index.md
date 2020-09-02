@@ -9,7 +9,11 @@ videos:
       text: Car Chassis Assembly + Mounting Hardware
 ---
 
-### Tutorial Video
+### Overview
+
+In this lesson we'll assemble our robot car and also mount our hardware.
+
+### Full Video Tutorial
 
 {% include youtube.html id='2nT8sNoHYMo' %}
 

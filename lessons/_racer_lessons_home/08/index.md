@@ -9,8 +9,6 @@ videos:
       text: Make Your Racer Turn (Block-based)
     - link: https://youtu.be/EcphrH3rvFQ
       text: Navigate Your Car (Text-based)
-    - link: https://youtu.be/aPI11noSG28?start=1446
-      text: Programming A Button Start (Text-based)
 ---
 
 ### Overview
@@ -97,83 +95,7 @@ void loop()
 <div markdown = "1">
 Notice in the code below that we first declare and define a subroutine called “forward()”.  We must do this before we call it in the “loop()” function.  In the loop() function, we call the subroutine by writing "forward()".
 </div>{:.text-based}
-
-### Adding Your Button
-
-{% include youtube.html id='aPI11noSG28?start=1446' %}{:.text-based}
-
-{% include youtube.html id='GnWS4G7Db4g?start=210?end=282' %}{:.block-based}
-
-Since we have started to program our car to move, you may have noticed that at times your car starts moving before you're ready to test your code.  To make things a bit more convenient for us, we're going to add a bit of code so that you car doesn't begin its program until you press your button.  
-
-In order to accomplish this, we're going to need to use something called a while loop.  The while loop is like an if/else block.  How it works is: 
-
-"Do what ever is inside the loop WHILE this thing is true"
-
-So what we're going to do is tell it to do nothing WHILE the button is not pressed, and then jump out of the while loop once the button is pressed.  This is what it looks like in code.  Give it a try!
-
-#### Move Forward When You Press The Button
-
-![fig 7.1](fig-7_1.png){:.image .block-based}
-
-
-
-```c
-#include <Servo.h>
-
-Servo servo_pin_11;
-Servo servo_pin_10;
-
-void setup()
-{
-  servo_pin_11.attach(11);
-  servo_pin_10.attach(10);
-  
-  while (digitalWrite(2)==HIGH)
-  {
-    servo_pin_11.write( 90 );
-    servo_pin_10.write( 90 );
-  }
-}
-
-void loop()
-{
-  servo_pin_11.write( 1 );
-  servo_pin_10.write( 180 );
-}
-```
-{:.text-based}
-
-#### Practice #1: Move Backwards When You Press The Button
-
-![fig 7.3](fig-7_3.png){:.image .block-based}
-
-```c
-#include <Servo.h>
-
-Servo servo_pin_11;
-Servo servo_pin_10;
-
-void setup()
-{
-  servo_pin_11.attach(11);
-  servo_pin_10.attach(10);
-
-while (digitalWrite(2)==HIGH){
-    servo_pin_11.write( 90 );
-    servo_pin_10.write( 90 );
-  }
-}
-
-void loop()
-{
-  servo_pin_11.write( 180 );
-  servo_pin_10.write( 1 );
-}
-```
-{:.text-based}
-
-#### Practice #2: Make more subroutines
+#### Practice #1: Make more subroutines
 
 Create the following subroutines and test them inside your main loop to make sure that they work.
 
