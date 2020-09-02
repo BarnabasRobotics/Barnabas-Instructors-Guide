@@ -8,7 +8,16 @@ reflection:
 videos:
     - link: https://youtu.be/er4kNM6rLvg
       text: Circuit Basics
+    - link: https://youtu.be/QFm8Gkofgs8
+      text: How A Breadboard Works
+other:
+    - link: https://components101.com/switches/push-button
+      text: Push Button (Components 101)
 ---
+
+
+
+
 
 ### What You'll Need
 
@@ -27,16 +36,18 @@ Before we start, make sure that you have everything that you need for this lesso
 
 In this lesson we will cover the basics of engineering.  Topics include:
 
-1. Circuits (Closed Circuit, Short Circuit, Open Circuit)
-2. Resistors
-3. Breadboarding
-4. Buttons
+- Circuits (Closed Circuit, Short Circuit, Open Circuit)
+- Resistors
+- Breadboarding
+- Buttons
+
+### Tutorial Video
 
 {% include youtube.html id='er4kNM6rLvg' %}
 
 ### The Path Of Electricity
 
-Now that your robot has power, let’s look at some basics of how electricity flows throughout your robot.  We’ll need to learn what a circuit is. A circuit can simply be defined as a pathway for electricity to flow.
+Let’s look at some basics of how electricity flows throughout your robot.  We’ll need to learn what a circuit is. A circuit can simply be defined as a pathway for electricity to flow.
 
 #### Heart = Power source Blood = Electricity
 
@@ -71,50 +82,86 @@ A breadboard helps us connect our wires (analogous to blood vessels) together.  
 
 <img src="empty_breadboard.png" alt="breadboard" style="zoom:75%;" class="image center" />
 
-In a breadboard, all the holes on each row of 5 are connected to each other.  This means that any two wires placed into the same row will be connected to each other.   Remember this as we'll be using this later to build circuits!
+In a breadboard, all the holes on each row of 5 are connected to each other (see above).  This means that any two wires placed into the same row will be connected to each other.   Remember this as we'll be using this later to build circuits!
+
+{% include youtube.html id='QFm8Gkofgs8' %}
 
 ### Building A Circuit Using Our Breadboard
 
 <img src="fig-5_10.png" alt="fig-5_10" style="zoom:30%;" class="image right" />
 
-We are now going to use the Barnabas Noggin to create a circuit. With the Noggin we will be powering the circuit with 5 volts. 
+We are now going to use the Barnabas Noggin to create our first circuit.  In this first circuit, we're going to be using the Barnabas Noggin (the green controller board) to provide 5 volts of power to turn on a LED.  
 
-We do have to note that our LED is rated at 3 volts, which means that if we give it more than 3 volts, it can burn out.  We need to add something to slow down the flow of electricity, which is why we add in a resistor.
+We do have to note that our LED is rated at 3 volts, which means that if we give it more than 3 volts, it can burn out.  Don't worry though, we can fix this by adding a resistor, which helps us slow down the flow of electricity in a circuit.  You have a few different types of resistors in your kit.  Grab the one that has a red stripe on it.  This is the 4.7K Ohm (or 4,700 Ohm) resistor.
+
+Take a look at the diagram below to see how everything needs to be connected.  The 5V and 3-lined triangle (also known as GND or Ground) will come from the Barnabas Noggin.  They are like the + and - of a battery.  If created correctly, current will flow from the 5V, through the resistor and LED, into the GND and back up to the 5V - creating a closed circuit.
 
 <img src="fig-9_5.png" alt="fig-9_5" style="zoom:100%;" class="image center" />
 
-Follow the wiring diagram below.  Plug the 9V battery into the jack on the Noggin and your LED should light up!  Note: The longer leg of the LED is + and the short leg of the LED is -.
+Follow the wiring diagram below to see to create this circuit.  A few notes:
+
+- Breadboard fact: If holes are on the same row BUT on opposite sides of the middle valley, the are NOT connected.
+- Breadboard fact: If holes are on the same row AND on the same side of the middle valley, they ARE connected.
+- The longer leg of the LED is + and the short leg of the LED is -.
+- Electrical engineers typically use red for power connections.  Use a red wire for the 5V connection!
+- Electrical engineers typically use black for ground connections.  Use a black wire for the GND connection!
 
 ![fig 9.6](fig-9_6.png){:class="image fit"}
+
+Plug in the 9V battery into the jack on the Noggin and your LED should light up!  
 
 #### Vocabulary
 
    * **Barnabas Noggin**: The brain of our soon to be robot! The Barnabas Noggin houses the brain of the Barnabas bot. It also contains a large amount of internal circuitry, making it somewhat related to the robot’s heart as well. We will often treat the Noggin as a power source, as it can give us 5V, a voltage we are comfortable with.
-   * **Resistance**: The difficulty of passing an electric current through an object. If an object is very difficult to pass current through, it has a high resistance.
+   * **Resistor**: An electrical component that slows down or resists the current in a circuit.
+   * **Resistance**: The difficulty of passing an electric current through an object. The higher the resistance, the more it resists electricity.  It is measured in Ohms.
 
 {% include badge.html type="tidbit" content="Resistance, along with voltage and current are the three fundamental quantities in a circuit. In fact, there is an equation that relates all three of these inside of a circuit. The equation is known as Ohm’s Law V=IxR, where V is the voltage, R is the resistance, and I is the current. This simple equation gives us a very good understanding of the behavior of any circuit." %}
 
-{% include badge.html type="activity" content="Switch between the two different kind of resistors and observe the behavior of the LED as the resistor is changed. You should see the LED dim when the red banded resistor is in the circuit. This is the larger resistor. Because it is larger, it slows down current more, leading to the dimmer light." %}
+{% include badge.html type="activity" content="Switch between the three different kind of resistors and observe the behavior of the LED as the resistor is changed. You should see the LED brighten when the non-red banded resistor is in the circuit. This is the smallest resistor (470 Ohms). Because it is smaller, it allows current to move faster, leading to a brighter light." %}
 
 {% include badge.html type="best_practice" content="Why is it important to color code wires? Color coding wires helps us both construct and troubleshoot our circuits. If I know that a certain color of wire always means a certain thing, it will be obvious when that wire is out of place" %}
 
 ### Giving A Robot Senses
 
-A robot is made of four different parts [(Body, Heart, Brain, Personality)](https://lessons.barnabasrobotics.com/bot_lessons_home/01/index.html).  These parts need to work together in order for our robot to function.
+#### Outputs vs. Inputs
 
-Throughout the level 1 class the only type of components used were **output** components. This simply means that the LED, buzzer and motors needed to get a signal **from** the robot's brain to work. 
+In the introductory [Barnabas-Bot project](https://shop.barnabasrobotics.com/collections/kits-1/products/barnabas-bot-kit), we used a LED, buzzer and motor.  These are considered *output* components, meaning that they need to get a signal *from* the robot's brain to work. 
 
-In this section, we'll be introduced to a new component, the button, which is fundamentally different. It is an **input** component, meaning that it will send a signal **to** the robot's brain. Inputs, also known as sensors, will help our robot interact with the world around it, starting with the button.
+In this section, we'll be introduced to *input* components, which send a signal **to** the robot's brain. Inputs (also known as sensors) will give our robot information about the world around it.
 
-We're going to introduce a sense, specifically the *touch* sense so that your robot will be able to *feel* when something touches it.  We'll be using a **button** component to accomplish this.  You'll experience how the heart, brain and personality come together to make this happen.
+{% include badge.html type="tidbit" content="Think of our human senses (touch, see, feel, smell and taste).  They all come together as inputs so that our brain can use them to help us interact with the world around us." %}
+
+#### Touch
+
+We're going to introduce our first *sense* or *input* to our robot, specifically the *touch* sense.  In other words, your robot will be able to *feel* when something touches it.  We'll be using a **button** component to accomplish this.  We'll have to connect the button to the brain, heart and personality in order to make this all work.  Let's get started!
+
+### Button Basics
+
+<img src="fig-3_7.jpg" style="zoom:100%;" class="image center" />
+
+We are going to be using a 4-pin button.  The diagram below shows how it works.  Notice that the legs are connected in pairs.  - 
+
+- When the button is pressed, the two leg pairs are connected.
+- When the button is not pressed, the two leg pairs are disconnected.
+
+Keeping this behavior in mind, we can use the button to control the opening and closing of a circuit.  
+
+<img src="Push-button-Pinout.gif" style="zoom:100%;" class="image center" />
+
+<p align="center">https://components101.com/switches/push-button</p>
 
 ### A Simple Button Circuit
 
-Let's now connect our button to our brain (Barnabas Noggin) so that it turns on and off without any programming.   The schematic of the circuit that we need to build is shown below.
+Let's now connect our button to our brain (Barnabas Noggin) so that it can turn a light on and off.   The diagram of the circuit that we need to build is shown below.
 
 <img src="fig-3_1.png" alt="fig-3_1" style="zoom:70%;" class="image center" />
 
-Once you are done, power up the Barnabas Noggin.  Your LED should only turn on if you push the button down.  If it's not working correctly, double check your circuit!
+Follow the diagram below to make sure that you build it correctly.  
+
+{% include badge.html type="tidbit" content="Make sure that your LED is connected the right way (long leg connected to 5V, short leg connected to the button).  If you need a refresher on LEDs, review [Lesson 5 of Barnabas-Bot](https://lessons.barnabasrobotics.com/bot_lessons_home/05/index.html)" %}
+
+Once you are done, power up the Barnabas Noggin with the 9V battery and test your button circuit.  Your LED should only turn on if you push the button down.  If it's not working correctly, double check your connections!  
 
 <img src="fig-3_3.png" alt="fig-3_3" style="zoom:50%;" class="image center" />
 
