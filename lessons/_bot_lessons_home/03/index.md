@@ -2,7 +2,15 @@
 layout: lesson
 title: Lesson 3 &middot; Decorate Your Robot
 suggested_time: 30-60 minutes
+
+other:
+    - link: https://www.tinkercad.com/things/9RUh82CEU99
+      text: Barnabas-Bot TinkerCAD File
+    - link: https://github.com/BarnabasRobotics/barnabas-bot-body
+      text: Barnabas-Bot 3-D Files (STL Format)
 ---
+
+
 
 ### What You'll Need
 
@@ -25,3 +33,6 @@ To see what your robot will look like with different colors, click <a href="http
 
 ### Decorating Your Robot
 It's time to decorate!  Use permanent markers, acrylic paints or even spray paint!
+
+
+

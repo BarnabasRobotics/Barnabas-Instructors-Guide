@@ -2,6 +2,15 @@
 layout: lesson
 title: Lesson 6 &middot; Set Up Your Computer
 suggested_time: 30-45 minutes
+other:
+    - link: chrome://flags/#enable-experimental-web-platform-features
+      text: Chromebook Settings Link
+    - link: https://code.barnabasrobotics.com
+      text: Chromebook IDE (code.barnabasrobotics.com)
+    - link: https://go.barnabasrobotics.com/pkg
+      text: Download Mac IDE (.pkg)
+    - link: https://go.barnabasrobotics.com/exe
+      text: Download Windows IDE (.exe)
 ---
 ### What You'll Need
 

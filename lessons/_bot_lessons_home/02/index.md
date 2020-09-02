@@ -6,6 +6,12 @@ suggested_time: 20-30 minutes
 videos:
     - link: https://youtu.be/JGHyz8-7zwk
       text: Barnabas-Bot Body 3-D Printing Simulation
+other:
+    - link: https://github.com/BarnabasRobotics/barnabas-bot-body
+      text: Barnabas-Bot 3-D Files (STL Format)
+    - link: https://bgr.com/2018/05/24/samsung-apple-lawsuit-patents-rounded-corners-setllement/
+      text: Samsung vs. Apple Dispute Over A Rounded Edge
+
 reflection:
     comprehension: 
       - What does C.A.D. stand for?
