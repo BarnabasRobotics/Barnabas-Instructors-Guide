@@ -242,7 +242,7 @@ void loop()
 
 ### Speed Control
 
-You can change the speed of your motor by using different angle values.  See the table below.  This will come in handy later one when you are trying fine tune your wheel movements.
+You can change the speed of your motor by using different angle values.  See the table below.  This will come in handy later when you are trying to fine tune your wheel speeds.  For example, you may be trying to drive straight, but one wheel is going faster than the other.  You can speed one wheel up or slow one wheel down using these angles.
 
 <img src="fig-9_1.png" style="zoom:60%;" class="image center" />
 
@@ -254,6 +254,11 @@ You can change the speed of your motor by using different angle values.  See the
 | 90     | None              | Zero    |
 | 91-179 | Counter Clockwise | Partial |
 | 180    | Counter Clockwise | Full    |
+
+#### Speed Challenges
+
+1. Program your wheels to move at half speed.
+2. Program your wheels to move as slowly as possible.
 
 ### Calibration
 
