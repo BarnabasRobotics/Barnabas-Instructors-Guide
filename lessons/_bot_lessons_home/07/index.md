@@ -218,6 +218,6 @@ Try the following exercises to get the hang of playing with the light.
 1. Write a program that makes your light blink as fast as possible!
 2. Write a program that blinks slowly a few times and then blinks fast a few times!
 
-### Bonus Activity
+### Bonus Activities
 
 Want to add a second LED and/or learn how to make secret codes (Morse Code) with your LED?  Check out the [bonus activities](../11)!
