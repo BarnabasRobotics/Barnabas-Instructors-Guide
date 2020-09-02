@@ -33,6 +33,14 @@ In this section we will explore how continuous servo motors are controlled.  Top
 - How to program your servo motors to to turn on, stop and spin both directions
 - How to change the speed of your servo motors
 
+<div markdown="1">
+
+### Full Video Tutorial
+
+{% include youtube.html id='aPI11noSG28' %}{:.text-based}
+
+</div>
+
 ### Continuous Servo Motor Control
 
 #### Throttle
@@ -55,11 +63,9 @@ Continuous servos are similar to the servos that we used from Barnabas-Bot, exce
 | 90    |        None        |  Zero |
 | 180   | Counter Clock-wise |  Full |
 
-{% include youtube.html id='aPI11noSG28?start=0&end=544' %}
+{% include youtube.html id='aPI11noSG28?start=0&end=544' %}{:.block-based}
 
 ### Wire Your Continuous Servo Motors
-
-{% include youtube.html id='aPI11noSG28?start=544&end=797' %}{:.text-based}
 
 <div markdown="1">
 Let's go ahead and wire our servo motors!  Follow the wiring diagram below.
@@ -75,8 +81,6 @@ Let's go ahead and wire our servo motors!  Follow the wiring diagram below.
 
 
 ### Coding Your Motors To Move
-
-{% include youtube.html id='aPI11noSG28?start=1259?end=1436' %}{:.text-based}
 
 #### Move Forward
 
@@ -165,8 +169,6 @@ void loop()
 
 ### Speed Control
 
-{% include youtube.html id='aPI11noSG28?start=1939' %}{:.text-based}
-
 You can change the speed of your motor by using different angle values.  See the table below.  This will come in handy later one when you are trying fine tune your wheel movements.
 
 <img src="fig-9_1.png" alt="fig-9_1" style="zoom:70%;" class="image center" />
@@ -185,6 +187,3 @@ You can change the speed of your motor by using different angle values.  See the
 {% include badge.html type='troubleshoot' content='If you notice that your motors are not moving at the right speed, or they do not stop entirely, you will need to calibrate your motors. ' %}
 
 {% include youtube.html id='Db-M5C3b7DA' %}{:.block-based}
-
-{% include youtube.html id='aPI11noSG28?start=797}end=1260' %}{:.text-based}
-
