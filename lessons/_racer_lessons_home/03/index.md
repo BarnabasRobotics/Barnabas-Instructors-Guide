@@ -159,7 +159,7 @@ Let's now connect our button to our brain (Barnabas Noggin) so that it can turn 
 
 Follow the diagram below to make sure that you build it correctly.  
 
-{% include badge.html type="tidbit" content="Make sure that your LED is connected the right way (long leg connected to 5V, short leg connected to the button).  If you need a refresher on LEDs, review [Lesson 5 of Barnabas-Bot](https://lessons.barnabasrobotics.com/bot_lessons_home/05/index.html)" %}
+{% include badge.html type="tidbit" content="Make sure that your LED is connected the right way (long leg connected to 5V, short leg connected to the button).  If you need a refresher on LEDs, review <a href="https://lessons.barnabasrobotics.com/bot_lessons_home/05/index.html"> Barnabas-Bot: Lesson 5</a>" %}
 
 Once you are done, power up the Barnabas Noggin with the 9V battery and test your button circuit.  Your LED should only turn on if you push the button down.  If it's not working correctly, double check your connections!  
 
