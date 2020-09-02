@@ -8,7 +8,18 @@ videos:
     - link: https://youtu.be/1tKu0fvJ4ic
       text: Blink Two LEDs At The Same Time
 ---
+### What You'll Need
+
+Before we get started, let’s make sure that we have all the parts.
+
+- 1 x Fully Assembled Barnabas-Bot
+- 1 x Computer
+- 1 x USB Cable
+- 1 x Additional Resistor (included in kit)
+- 1 x Additional LED (included in kit)
+
 ### Overview
+
 This section includes additional challenges for you to expand your learning.  Projects includes:
 1. Morse Code with LEDs
 2. Blink Two LEDs at the same time
