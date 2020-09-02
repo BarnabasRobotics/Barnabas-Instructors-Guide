@@ -23,34 +23,26 @@ videos:
 
 In this section we'll combine everything to program our car to move and avoid objects
 
+<div markdown="1">
+
+### Full Tutorial Video
+
 {% include youtube.html id='QiMypxfT6PQ' %}{:.text-based}
+
+</div>{:.text-based}
 
 
 ### Our Previous Tools
 
 With both the motors and the ultrasonic sensor working properly, we have all the tools we need to create an autonomous program that can avoid obstacles.  All that is left of us to do is effectively marry the motion of the robot to its ability to sense objects.  To help us create the avoidance code we are going to use a few of the tools we have constructed thus far. 
 
-#### Subroutines
-
-We're going to use the subroutines that we created previously to program motion commands with ease.
-
-![fig 15.1](fig-15_1.png){:.image .block-based}
-
-#### Button Start Code
-
-We're going to use our button start code so that we can trigger the program using our hand.
-
-![fig 15.2](fig-15_2.png){:.image .block-based}
-
 ### Stop Before We Crash
 
-{% include youtube.html id='nqGW6I5kZv0' %}{:.block-based}
-
-Let's program that car to stop before we hit a wall!  Let's use what we have learned about the ultrasonic sensor to program our robot to do this.  We'll need to use if/else.
+Let's program that car to stop before we hit a wall.  We'll use what we have learned about the ultrasonic sensor to program our robot to do this.  Here is some code below to get your started.
 
 ![fig 15.3](fig-15_3.png){:.image .block-based}
 
-
+{% include youtube.html id='nqGW6I5kZv0' %}{:.block-based}
 
 ### Turn Before We Crash
 
