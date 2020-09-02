@@ -47,7 +47,7 @@ A big part of the Barnabas Racer project includes creating code on the computer,
     Block-Based Code
 </p>
 
-<p>    <img align="center" src="fig-01_11.png" width="300"></p>
+<img src="fig-01_11.png" alt="fig-01_01" style="zoom:60%;" class="image center" />
 
 *Text-based* coding requires that every command in the code to be typed out explicitly.  The commands need to be spelled correctly and are case-sensitive (capitals and lower-case matters!).  This style is the popular method used within the software industry.  
 
