@@ -124,7 +124,11 @@ void loop() {
 
 In your IDE, your code will be made up of a series of blocks that snap together like puzzle pieces.  
 
-<img src="C:/Users/edwardbarnabas/dev/Barnabas-Instructors-Guide/lessons/_bot_lessons_home/07/fig-7_8.png" alt="fig-7_8" style="zoom:90%;" class="image right" />
+<img src="fig-7_8.png" alt="fig-7_8" style="zoom:90%;" class="image center" />
+
+<img src="fig-7_9.png" style="zoom:50%;" class="image center" />
+
+Note: On code.barnabasrobotics.com, the "LOOP do:" is inside a "Program block" (see above).
 
 The first block to introduce is called the “LOOP do.”  The “LOOP do” will house all of the other blocks used in your code.  It is like the outside cover of a book, which houses all of its pages.   The computer reads the pages (i.e. code blocks) within the “LOOP do” block from the beginning to the end.  When it gets to the end, it starts back at the beginning and begins again.  This process repeats forever as long as your Noggin has power.
 
@@ -134,10 +138,8 @@ Note: You can only have one “LOOP do” in your code.
 
 Let’s add a “LOOP do” block to our code!
 
-1. Find the colored buttons on the left side of your screen labeled “Control,” “Lights,” “Sounds,” and “Motors.” Click on the yellow “Control” button to the left.
+1. Find the colored button on the left side of your screen labeled “Control,”
 2. After you click on the yellow “Control” button, you’ll see a menu of yellow blocks open up.  Click (and hold down) on the “LOOP do” block and drag it into the large area to the right of the colored buttons.  When it is in the large area, release the click.
-
-<img src="C:/Users/edwardbarnabas/dev/Barnabas-Instructors-Guide/lessons/_bot_lessons_home/07/fig-7_9.png" alt="fig-7_9" style="zoom:40%;" class="image center" />
 
 ### How to Delete a Block
 
