@@ -21,10 +21,6 @@ videos:
       text: Speed Control (Text-Based)
 ---
 
-
-
-
-
 ### Overview
 
 In this section we will explore how continuous servo motors are controlled.  Topics covered include:
@@ -39,7 +35,7 @@ In this section we will explore how continuous servo motors are controlled.  Top
 
 {% include youtube.html id='aPI11noSG28' %}{:.text-based}
 
-</div>
+</div>{:.text-based}
 
 ### Continuous Servo Motor Control
 
