@@ -35,13 +35,13 @@ Need materials?  [Purchase the Barnabas Racer kit at our e-store](https://shop.b
 
 ### How To Use Our Learning Portal
 
-This learning portal portal includes written instructions as well as videos.  Here are a few things that will be helpful for you as you begin.
+This learning portal includes written instructions as well as videos.  Here are a few things that will be helpful for you as you begin.
 
 #### Decide On Your Coding Style
 
-A big part of the Barnabas Racer project includes creating code on the computer, which will be used to control your robot.  When creating code, you can choose between *block-based* coding and *text-based* coding.  
+A big part of the Barnabas Racer project includes creating code on the computer, which will be used to control your robot.  When creating code, you can choose between *block-based* coding and *text-based* coding.  Let's explore these two types of coding.
 
-*Block-based* coding is an innovation in education that allows younger students to learn and experiment with the logic flow of computer coding without needing to type very much.  Code is creating by snapping commands together like puzzle pieces.
+*Block-based* coding is an innovation in education that allows younger students to learn and experiment with the logic flow of computer coding without needing to type very much.  Code is creating by snapping commands together like puzzle pieces.  See below for an example of what it looks like.
 
 <p align="center" markdown = "1">
     Block-Based Code
@@ -49,15 +49,12 @@ A big part of the Barnabas Racer project includes creating code on the computer,
 
 <img src="fig-01_11.png" alt="fig-01_01" style="zoom:60%;" class="image center" />
 
-*Text-based* coding requires that every command in the code to be typed out explicitly.  The commands need to be spelled correctly and are case-sensitive (capitals and lower-case matters!).  This style is the popular method used within the software industry.  
-
-
-Typically, we recommend block-based coding for ages 8-11 and text-based coding for ages 12 and up.  In our classes, we start younger students (ages 8-11) with block-based and eventually graduate them to text-based coding as they gain experience.
-
+*Text-based* coding requires that every command in the code to be typed out explicitly.  The commands need to be spelled correctly and are case-sensitive (capitals and lower-case matter!).  This style is the popular method used by software programmers (video game, website developers, app developers, etc.) in the real world.  See below for an example of what it looks like.
 
 <p align="center" markdown = "1">
     Text-Based Code
 </p>
+
 
 ```c
 void setup()
@@ -78,11 +75,14 @@ void loop()
 }
 ```
 
-If you're having trouble deciding which one to choose, we recommend starting with blocks.  You can always transition to text-based code in the middle of the project, if you choose to do so.
+
+In our classes, we start younger students (ages 8-11) with block-based coding and eventually graduate them to text-based coding as they gain experience.
+
+If you're having trouble deciding which one to choose, we recommend starting with block-based to ease into the coding.  You can always change to text-based code in the middle of the project (if you choose to do so).
 
 #### Set Your Coding Style
 
-Once you've decided on your coding style, make sure to configure your learning portal so that you are able to view the correct content.   Follow the steps below.
+Once you've decided on your coding style, make sure to configure your learning portal so that you are able to view the correct instructions.   Follow the steps below.
 
 ##### 1. Click on the gear icon on the top right
 
@@ -108,10 +108,12 @@ Some lessons include extra resources (videos, documents, etc.).  Scroll to the b
 
 ### Navigate Between Lessons
 
-After you finish a lesson, scroll to the bottom of the page and click "Next Lesson" to go to the next lesson.  
+After you finish a lesson, scroll to the bottom of the page and click *"Next Lesson"* to go to the next lesson.  
 
-You can also go back to the previous lesson by clicking on "Prev Lesson".
+You can also go back to the previous lesson by clicking on *"Prev Lesson".*
 
 <img src="fig-01_03.png" alt="fig-01_03" style="zoom:40%;" class="image center" />
+
+### Let's Go!
 
 Now that you know the basics of this portal, let's get started!
