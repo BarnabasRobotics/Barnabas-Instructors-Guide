@@ -9,7 +9,7 @@ videos:
       text: Program Your Barnabas-Bot To Play Music!
     - link: https://youtu.be/p9tW3n6aO9Q?t=19
       text: How To Play Twinkle, Twinkle, Little Star
-    - link: https://youtu.be/kAHNkTYDrTU
+    - link: https://youtu.be/5nSdseM_aYY
       text: How To Play Happy Birthday
     - link: https://youtu.be/XVU9ch06MxA?t=46
       text: How To Play Mary Had A Little Lamb
