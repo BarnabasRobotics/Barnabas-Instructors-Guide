@@ -79,7 +79,7 @@ Robotics is a type of engineering that combines 4 other engineering disciplines 
 
 <img src="fig-01_7.png" alt="fig-01_7" style="zoom:10%;" class="image left" />
 
-3) *Computer Engineering* involves the design of circuits, computers.   A computer is a robot’s brain which is a complex network of electrical circuits like nerves.  These circuits come together to help the robot store information (memory) and to make decisions.  Computer engineers design the computer of a robot. Computer engineers may also work on a system's software. However, the design of complex software systems is often the domain of software engineering, which is usually considered a separate discipline. Desktop computers represent a tiny fraction of the devices a computer engineer might work on, as computer-like architectures are now found in a range of devices including video game consoles and DVD players.
+3) *Computer Engineering* involves the design of circuits and computers.   A computer is a robot’s brain, which is a complex network of electrical circuits, like nerves.  These circuits come together to help the robot store information (memory) and to make decisions.  Computer engineers design the computer or "brain" of a robot. 
 
 4) *Software Engineering* is the study of how computers function and process information. For humans to move their arms, our brain must send a message to the arm telling it to move. This message is similar to a computer program/code. The program/code dictates the way a robot behaves and functions. This is essentially the robot’s “personality.”
 
