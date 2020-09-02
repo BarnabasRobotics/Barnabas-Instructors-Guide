@@ -173,7 +173,7 @@ void loop()
 
 You can change the speed of your motor by using different angle values.  See the table below.  This will come in handy later one when you are trying fine tune your wheel movements.
 
-<img src="fig-9_1.png" alt="fig-9_1" style="zoom:70%;" class="image center" />
+<img src="fig-9_1.png" style="zoom:60%;" class="image center" />
 
 
 | Angle  | Direction         | Speed   |
@@ -193,5 +193,7 @@ Motor calibration steps include:
 1. Programming the motor to the stop position (90 degrees) 
 2. Check to see if the motor stops moving.  If so, no calibration is needed.
 3. If the motor is not stopped, turn the screw under the motor until the motor stops moving.
+
+<img src="fig-6_11.png" style="zoom:60%;" class="image center" />
 
 {% include youtube.html id='Db-M5C3b7DA' %}{:.block-based}
