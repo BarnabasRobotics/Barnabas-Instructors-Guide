@@ -10,6 +10,10 @@ Before we get started, let’s make sure that we have all the parts.
 
 <img src="fig-10_0.png" alt="fig-10_0" style="zoom:60%;" class="image center" />
 
+### Tutorial Video
+
+{% include youtube.html id="dW8usatxzn4" %}
+
 ### Wiring All Three Motors
 
 The two remaining servo motors will be wired in the same way the first motor was. See the wiring diagram below, which includes the first motor as well.  Go ahead and make your final connections!

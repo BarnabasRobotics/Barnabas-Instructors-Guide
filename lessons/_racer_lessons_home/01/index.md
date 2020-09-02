@@ -43,19 +43,13 @@ A big part of the Barnabas Racer project includes creating code on the computer,
 
 *Block-based* coding is an innovation in education that allows younger students to learn and experiment with the logic flow of computer coding without needing to type very much.  Code is creating by snapping commands together like puzzle pieces.
 
+<p align="center" markdown = "1">
+    Block-Based Code
+    <img align="center" src="fig-01_11.png" width="300">
 *Text-based* coding requires that every command in the code to be typed out explicitly.  The commands need to be spelled correctly and are case-sensitive (capitals and lower-case matters!).  This style is the popular method used within the software industry.  
 
 Typically, we recommend block-based coding for ages 8-11 and text-based coding for ages 12 and up.  In our classes, we start younger students (ages 8-11) with block-based and eventually graduate them to text-based coding as they gain experience.
 
-See below for examples of what block-based code looks like versus text-based code.
-
-<p align="center" markdown = "1">
-    Block-Based Code
-</p>
-
-<p align="center" markdown = "1">
-<img align="center" src="fig-01_11.png" width="300">
-</p>
 
 <p align="center" markdown = "1">
     Text-Based Code
@@ -80,11 +74,11 @@ void loop()
 }
 ```
 
-If you're having trouble deciding which one, we recommend starting with blocks.  You can always transition to text-based code in the middle of the project if you choose to do so.
+If you're having trouble deciding which one to choose, we recommend starting with blocks.  You can always transition to text-based code in the middle of the project, if you choose to do so.
 
 #### Set Your Coding Style
 
-Once you've decided on your coding style, you need to make sure to set it on the learning portal so that you are able to view the correct content.  
+Once you've decided on your coding style, make sure to configure your learning portal so that you are able to view the correct content.   Follow the steps below.
 
 ##### 1. Click on the gear icon on the top right
 
@@ -92,7 +86,7 @@ Once you've decided on your coding style, you need to make sure to set it on the
 
 
 
-##### 2. Click on the toggle button to switch modes
+##### 2. Click on the toggle button to select your coding mode.
 
 <img src="fig-01_01.png" alt="fig-01_01" style="zoom:40%;" class="image center" />
 
@@ -115,3 +109,5 @@ After you finish a lesson, scroll to the bottom of the page and click "Next Less
 You can also go back to the previous lesson by clicking on "Prev Lesson".
 
 <img src="fig-01_03.png" alt="fig-01_03" style="zoom:40%;" class="image center" />
+
+Now that you know the basics of this portal, let's get started!
