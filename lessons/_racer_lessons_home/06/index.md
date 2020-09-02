@@ -68,7 +68,15 @@ Continuous servos are similar to the servos that we used from Barnabas-Bot, exce
 ### Wire Your Continuous Servo Motors
 
 <div markdown="1">
+Let's go ahead and wire our servo motors! Instructions can be found in the full tutorial video above.
+    
+</div>
+
+</div>
+
+<div markdown="1">
 Let's go ahead and wire our servo motors!  Follow the wiring diagram below.
+
 
 ![fig 6.0](fig-6_0.png){:class="image "}
 
