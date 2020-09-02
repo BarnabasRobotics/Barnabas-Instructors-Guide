@@ -33,10 +33,9 @@ In this lesson we will wire our button and light directly to our brain (Barnabas
 - Wiring a button and LED 
 
 <div markdown="1">
-###Tutorial Video
+### Tutorial Video
 {% include youtube.html id='bSCSOL20SIw' %}
-
-</div>
+</div>{:.text-based}
 
 <img src="C:/Users/edwardbarnabas/dev/Barnabas-Instructors-Guide/lessons/_bot_lessons_home/07/fig-7_1.png" alt="fig-7_1" style="zoom:10%;" class="image right" />
 
@@ -114,8 +113,6 @@ void loop() {
 }
 ```
 
-
-
 </div>{:.text-based}
 
 <div markdown="1">
@@ -152,7 +149,7 @@ Let’s practice by deleting the “LOOP do” block from our code.
 
 Now that we know how to delete a block that we don’t want, let’s go ahead and bring in a “LOOP do” block again so that we can continue building our code.
 
-</div>
+</div>{:.block-based}
 
 ### Programming the Button
 
