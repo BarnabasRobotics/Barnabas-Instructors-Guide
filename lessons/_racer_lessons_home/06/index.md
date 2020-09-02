@@ -55,21 +55,28 @@ Continuous servos are similar to the servos that we used from Barnabas-Bot, exce
 | 90    |        None        |  Zero |
 | 180   | Counter Clock-wise |  Full |
 
-{% include youtube.html id='aPI11noSG28?start=0&end=543' %}
+{% include youtube.html id='aPI11noSG28?start=0&end=544' %}
 
 ### Wire Your Continuous Servo Motors
 
-{% include youtube.html id='aPI11noSG28?start=553' %}{:.text-based}
+{% include youtube.html id='aPI11noSG28?start=544&end=797' %}{:.text-based}
 
 <div markdown="1">
-
-{% include youtube.html id='byMBsEjQ6rY' %}
+Let's go ahead and wire our servo motors!  Follow the wiring diagram below.
 
 ![fig 6.0](fig-6_0.png){:class="image "}
 
+
+
+{% include youtube.html id='byMBsEjQ6rY' %}
+
 </div>{:.block-based}
 
+
+
 ### Coding Your Motors To Move
+
+{% include youtube.html id='aPI11noSG28?start=1259?end=1436' %}{:.text-based}
 
 #### Move Forward
 
@@ -156,13 +163,6 @@ void loop()
 ```
 {:.text-based}
 
-### Calibration
-{% include badge.html type='troubleshoot' content='If you notice that your motors are not moving at the right speed, or they do not stop entirely, you will need to calibrate your motors. ' %}
-
-{% include youtube.html id='Db-M5C3b7DA' %}{:.block-based}
-
-{% include youtube.html id='aPI11noSG28?start=1102' %}{:.text-based}
-
 ### Speed Control
 
 {% include youtube.html id='aPI11noSG28?start=1939' %}{:.text-based}
@@ -180,5 +180,11 @@ You can change the speed of your motor by using different angle values.  See the
 | 91-179 | Counter Clockwise | Partial |
 | 180    | Counter Clockwise | Full    |
 
+### Calibration
 
+{% include badge.html type='troubleshoot' content='If you notice that your motors are not moving at the right speed, or they do not stop entirely, you will need to calibrate your motors. ' %}
+
+{% include youtube.html id='Db-M5C3b7DA' %}{:.block-based}
+
+{% include youtube.html id='aPI11noSG28?start=797}end=1260' %}{:.text-based}
 
