@@ -17,13 +17,13 @@ videos:
 
 In this section we will be programming our racer to move forwards, backwards, turn and start motion when you press a button.  We'll also be learning how to streamline our code with something called subroutines.
 
-<div markdown="1'">
+<div markdown="1">
 
 ### Full Video Tutorial
 
-{% include youtube.html id='EcphrH3rvFQ' %}{:.text-based}
+{% include youtube.html id='EcphrH3rvFQ' %}
 
-</div>
+</div>{:.text-based}
 
 ### What Is A Subroutine?
 
@@ -61,7 +61,6 @@ void forward()
   servo_pin_10.write( 180 );
 }
 ```
-
 {:.text-based}
 
 ### Calling A Subroutine
@@ -93,7 +92,6 @@ void loop()
   forward();
 }
 ```
-
 {:.text-based}
 
 <div markdown = "1">
@@ -144,7 +142,6 @@ void loop()
   servo_pin_10.write( 180 );
 }
 ```
-
 {:.text-based}
 
 #### Practice #1: Move Backwards When You Press The Button
@@ -174,7 +171,6 @@ void loop()
   servo_pin_10.write( 1 );
 }
 ```
-
 {:.text-based}
 
 #### Practice #2: Make more subroutines
@@ -234,7 +230,6 @@ void loop()
   servo_pin_10.write( 1 ); 
 }
 ```
-
 {:.text-based}
 
 We could do likewise with the right motor if I wanted to turn right instead. 
@@ -266,7 +261,6 @@ void loop()
   servo_pin_10.write( 180 ); //both being 180 will turn the robot right
 }
 ```
-
 {:.text-based}
 
 #### Go Straight Then Turn
@@ -304,7 +298,6 @@ void loop()
   delay(500);
 }
 ```
-
 {:.text-based}
 
 #### Challenge #1: Adjust The Turn Amount
