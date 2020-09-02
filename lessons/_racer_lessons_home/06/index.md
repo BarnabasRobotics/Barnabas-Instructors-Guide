@@ -69,10 +69,8 @@ Continuous servos are similar to the servos that we used from Barnabas-Bot, exce
 
 <div markdown="1">
 Let's go ahead and wire our servo motors! Instructions can be found in the full tutorial video above.
-    
-</div>
 
-</div>
+</div>{:.text-based}
 
 <div markdown="1">
 Let's go ahead and wire our servo motors!  Follow the wiring diagram below.
@@ -193,5 +191,11 @@ You can change the speed of your motor by using different angle values.  See the
 ### Calibration
 
 {% include badge.html type='troubleshoot' content='If you notice that your motors are not moving at the right speed, or they do not stop entirely, you will need to calibrate your motors. ' %}
+
+Motor calibration steps include:
+
+1. Programming the motor to the stop position (90 degrees) 
+2. Check to see if the motor stops moving.  If so, no calibration is needed.
+3. If the motor is not stopped, turn the screw under the motor until the motor stops moving.
 
 {% include youtube.html id='Db-M5C3b7DA' %}{:.block-based}
