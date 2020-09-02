@@ -22,19 +22,22 @@ Before we get started, let’s make sure that we have all the parts.
 
 In this lesson, we’ll be learning about the tool that software engineers need to do their job and also how to set up that tool on your computer.
 
-### The Tool For Software Engineering
+### IDE - The Tool For Software Engineers
 
-To start, we need to set up your computer with an integrated development environment (IDE).  An IDE is just like any tool that allows someone to do their job.  For example, a chef needs a knife.  A car mechanic needs a wrench.  A software engineer needs their IDE.  Specifically, an IDE is the thing that allows a software engineer to:
+To start, we need to set up your computer with an integrated development environment (IDE).  An IDE is just like any tool that allows someone to do their job.  For example, a chef needs a knife.  A car mechanic needs a wrench.  A software engineer needs their IDE.  An IDE allows a software engineer to:
 
 1. Write code
 2. Prepare the code to be sent out
 
-There are lots of types of IDEs.  There are IDEs for video games, apps for your smartphone, making websites and lots more.  The IDE we will be using is designed to allow us to write code for our robot and to prepare that code to be sent out to our robot’s brain.
+There are IDEs to make video games, apps for your smartphone, websites and lots more.  The IDE that we will be using is designed to allow us to write code for our robot and to prepare that code to be sent out to our robot’s brain (Barnabas Noggin).
 
+### What Type of Computer Do You Have?
 
-Each type of computer has their own version of the IDE, so your first task is to figure out which type of computer you have: Chromebook, Macbook or Windows PC.
+Each type of computer has their own version of the IDE, so your first task is to figure out which type of computer you have: Chromebook, Macbook or Windows PC.  Click on your computer type below to jump to the right instructions so that you can setup your IDE.
 
-Click on either the [Chromebook](#chromebook-ide-setup), [Macbook](#macbook-ide-setup) or [Windows PC](#windows-pc-ide-setup) link to find the right instructions on how to set up your IDE.
+- [Chromebook](#chromebook-ide-setup)
+- [Macbook](#macbook-ide-setup)
+- [Windows PC](#windows-pc-ide-setup)
 
 ***
 
