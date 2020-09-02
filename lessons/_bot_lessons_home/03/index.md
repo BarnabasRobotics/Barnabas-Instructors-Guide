@@ -2,42 +2,6 @@
 layout: lesson
 title: Lesson 3 &middot; Decorate Your Robot
 suggested_time: 30-60 minutes
-
-disciplines:
-
-technical_skills:
-- Industrial Design
-life_skills:
-- Creativity
-- Communication
-
-essential_questions:
-- What complications might you come across when bringing a design to life?
-- As humans, how important are our looks?  
-- How important are our functions (talents, skills, etc)?  
-
-barriers: 
-- Students who change their minds  
-
-anticipatory:
-- Norms for painting, rules for scissors, sharing materials, following a design or changing designs as necessary
-
-practice:
-- Students painting and carrying out their designs
-
-assessment:
-- Fully decorated robot
-
-materials:
-- Engineering Journal
-- Acrylic paint, various colors
-- Paint brush, various sizes
-- Construction paper, various colors
-- Scissors
-- Glue
-- Permanent markers, if paint not avail.
-- Newspaper or scratch paper to protect work surfaces
-
 ---
 
 ### What You'll Need

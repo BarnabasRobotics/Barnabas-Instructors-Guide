@@ -2,6 +2,19 @@
 layout: lesson
 title: Lesson 8 &middot; Make Robot Music
 suggested_time: 60-75 minutes
+videos:
+    - link: https://youtu.be/ERxso8iQo_E
+      text: Program Your Barnabas-Bot To Beep!
+    - link: https://youtu.be/8PZ5Y22Un5o
+      text: Program Your Barnabas-Bot To Play Music!
+    - link: https://youtu.be/p9tW3n6aO9Q?t=19
+      text: How To Play Twinkle, Twinkle, Little Star
+    - link: https://youtu.be/kAHNkTYDrTU
+      text: How To Play Happy Birthday
+    - link: https://youtu.be/XVU9ch06MxA?t=46
+      text: How To Play Mary Had A Little Lamb
+    - link: https://youtu.be/kAHNkTYDrTU
+      text: How To Play Super Mario Brothers
 ---
 
 ### What You'll Need
@@ -149,7 +162,7 @@ Now challenge yourself to take things to the next step and have your robot play 
 
 {% include youtube.html id="8PZ5Y22Un5o" %}
 
-1. Write code to do the following:
+1. Write code to do the following below.  This is the first few notes of "Hot Cross Buns!"
    - Play “B4 for 1 sec
    - Rest for 1 sec
    - Play “A4” for 1 sec
@@ -157,8 +170,9 @@ Now challenge yourself to take things to the next step and have your robot play 
    - Play “G4” for 1 sec
    - Rest for 1 second
    - Repeat forever
-2. Play “Twinkle, Twinkle, Little Star”  (CC GG AA G FF EE DD C GG).
-3. Play the “Happy Birthday” song (G G A G C B G G A G D C G G G E C C B A).
-4. Play “Mary Had a Little Lamb” (B A G A BB B <> AA A <> BB B <> B A G A BBBB AAA BAG).  Note: <> Means rest
-5. Play the “Super Mario Brothers” Theme Song! Note that there are both low notes and high notes on this one!
-6. Play any song that you would like!
+2. Try playing these songs!  Watch the videos to learn the notes.  Next, create the code by matching the notes to the correct frequencies using the  [frequency table](#frequency-table).  You'll need tone blocks, no tone blocks and wait blocks!
+   - [“Twinkle, Twinkle, Little Star”](https://youtu.be/p9tW3n6aO9Q?t=19)
+   -  [“Happy Birthday” song](https://www.youtube.com/watch?v=5nSdseM_aYY)
+   - [“Mary Had a Little Lamb”](https://youtu.be/XVU9ch06MxA?t=46)
+   - [“Super Mario Brothers” Theme Song](https://youtu.be/kAHNkTYDrTU)
+3. Play any song that you would like!

@@ -2,6 +2,11 @@
 layout: lesson
 title: Lesson 7 &middot; Create A Blinking Light
 suggested_time: 60-75 minutes
+
+videos:
+    - link: https://youtu.be/0IW08Q2-FKk
+      text: Program Your Barnabas-Bot To Blink!
+
 ---
 
 ### Tutorial Video(s)

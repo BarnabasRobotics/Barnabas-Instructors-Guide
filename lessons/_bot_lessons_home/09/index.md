@@ -2,6 +2,11 @@
 layout: lesson
 title: Lesson 9 &middot; Make Your Robot Wave
 suggested_time: 60-75 minutes
+
+videos:
+    - link: https://youtu.be/JQB0ISas9ow
+      text: Program One Servo Motor On Your Barnabas-Bot
+
 reflection:
     comprehension: 
       - Why are there three wires attached to the servo motor and what do each of them do?

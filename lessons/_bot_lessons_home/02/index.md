@@ -3,6 +3,9 @@ layout: lesson
 title: Lesson 2 &middot; Learn About 3-D Printing And Design
 suggested_time: 20-30 minutes
 
+videos:
+    - link: https://youtu.be/JGHyz8-7zwk
+      text: Barnabas-Bot Body 3-D Printing Simulation
 reflection:
     comprehension: 
       - What does C.A.D. stand for?

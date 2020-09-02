@@ -2,6 +2,9 @@
 layout: lesson
 title: Lesson 5 &middot; Turn On Your Light
 suggested_time: 60-75 minutes
+
+videos:
+
 reflection:
     comprehension: 
       - What does LED stand for?  Why do we use LEDs?

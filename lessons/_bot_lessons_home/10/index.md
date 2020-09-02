@@ -2,6 +2,9 @@
 layout: lesson
 title: Lesson 10 &middot; Move All Your Motors
 suggested_time: 60-75 minutes
+videos:
+    - link: https://youtu.be/dW8usatxzn4
+      text: Program All Three Motors On Your Barnabas-Bot
 ---
 
 ### What You'll Need

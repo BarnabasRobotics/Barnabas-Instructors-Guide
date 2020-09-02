@@ -2,12 +2,16 @@
 layout: lesson
 title: Lesson 11 &middot; Do Bonus Activities
 suggested_time: 60-75 minutes per actiity
+videos:
+    - link: https://youtu.be/NUUSjKGyywo
+      text: Create Morse Code With Your LED
+    - link: https://youtu.be/1tKu0fvJ4ic
+      text: Blink Two LEDs At The Same Time
 ---
 ### Overview
 This section includes additional challenges for you to expand your learning.  Projects includes:
 1. Morse Code with LEDs
 2. Blink Two LEDs at the same time
-3. Blink, Buzz and Dance!
 
 ## Morse Code with LEDs
 
