@@ -35,8 +35,6 @@ In this section we will explore how continuous servo motors are controlled.  Top
 
 ### Continuous Servo Motor Control
 
-{% include youtube.html id='aPI11noSG28?start=0' %}
-
 #### Throttle
 
 A throttle is an instrument used in some kinds of motorized vehicles, such as boats, to control speed. These throttles behave in a particular way; the position of the throttle is what dictates the speed and direction of the motor. For example, a throttle may begin in a position which has the motor stopped. When the throttle is pushed forward from that position the motor begins to move forward. The farther forward the throttle is pushed, the faster the motor moves in that direction. If, instead, I pull the throttle backwards, the motor will begin moving backwards, with it picking up speed as I pull the throttle back further and further. 
@@ -56,6 +54,8 @@ Continuous servos are similar to the servos that we used from Barnabas-Bot, exce
 | 0     |     Clock-wise     |  Full |
 | 90    |        None        |  Zero |
 | 180   | Counter Clock-wise |  Full |
+
+{% include youtube.html id='aPI11noSG28?start=0&end=543' %}
 
 ### Wire Your Continuous Servo Motors
 
