@@ -5,6 +5,8 @@ title: Lesson 9 &middot; Navigation Challenges
 suggested_time: 60-75 minutes  
 
 videos:
+    - link: https://youtu.be/Kr0Qempo_gI
+      text: Subroutine Review (Block-based)
     - link: https://youtu.be/w_IwFDshB0s
       text: Box Challenge (Block-based)
     - link: https://youtu.be/uyxmD29NPp0
@@ -22,6 +24,16 @@ videos:
 ### Overview
 
 In this lesson you'll be challenged to program your robot through a series of challenges
+
+<div markdown="1">
+### Navigation Review
+
+{% include youtube.html id='Kr0Qempo_gI' %}{:.block-based}
+
+
+</div>
+
+
 
 ### There And Back Challenge
 

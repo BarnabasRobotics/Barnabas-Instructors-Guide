@@ -45,7 +45,7 @@ We are going to achieve this by using **subroutines**.
 
 To create a subroutine is to create a little sub-program within your code.  Take a look at the code below where we create a subroutine that moves the car forward.  Notice that the name of the subroutine matches what it does.  This way it is easy to keep track what our subroutines do.
 
-![fig 8.1](fig-8_1.png){:.image .fit}
+![fig 8.1](fig-8_1.png){:.image .fit .block-based}
 
 ![fig 8.2](fig-8_2.png){:.image .fit .block-based}
 
