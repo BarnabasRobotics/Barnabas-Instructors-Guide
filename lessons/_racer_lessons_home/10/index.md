@@ -42,8 +42,6 @@ The Trig pin is an output pin.  It is going to be used to send sound signals out
 The Echo pin is an input pin.  It will be used to listen for sounds coming back to the sensor. This pin will be connected to the Noggin and will be programmed as an input. 
 
 ### Wiring The Ultrasonic Sensor
-{% include youtube.html id='-2v4RSW-1O8' %}{:.block-based}
-
 #### Placing Your Hardware
 
 Before wiring your sensor, place your sensor onto your breadboard (see below).
@@ -77,6 +75,8 @@ The wiring chart below shows the connections that we need to make between the ul
 Follow the wiring diagram below to make the necessary electrical connections.
 
 <img src="fig-14_5.png" alt="fig-14_5" style="zoom:50%;" class="image center" />
+
+{% include youtube.html id='-2v4RSW-1O8' %}{:.block-based}
 
 ### Coding the Ultrasonic Sensor
 
@@ -123,8 +123,6 @@ In the  communication tab you'll find blocks called "serial println" and "glue".
 {% include youtube.html id='Ht2f9Uy5xb0' %}{:.block-based}
 
 </div>{:.block-based}
-
-
 
 <div markdown = "1">
 
@@ -321,6 +319,7 @@ Upload the code to test it.  After uploading this code, you can power the robot 
 Create code to turn the light on when an object is close and off when an object is far off.
 
 <div markdown = "1">
+
 ```c
 int trig = 3;
 int echo = 4;
@@ -382,7 +381,6 @@ void loop() {
 
 }
 ```
-
 </div>{:.text-based}
 
 ##### Blinking With Intervals
