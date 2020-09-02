@@ -49,11 +49,11 @@ Let's try the "There And Back" Challenge.  See the diagram below and see if you 
 
 ### Box Challenge
 
-{% include youtube.html id='w_IwFDshB0s' %}{:.block-based}
-
  Find a box and have your robot travel around it.
 
 <img src="fig-12_1.png" alt="fig-12_1" style="zoom:75%;" class="image center" />
+
+{% include youtube.html id='w_IwFDshB0s' %}{:.block-based}
 
 #### Some things to keep in mind during this challenge:
 
