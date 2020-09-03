@@ -42,7 +42,7 @@ Let's program that car to stop before we hit a wall.  We'll use what we have lea
 Let's program our car to not only stop before we hit a wall, but also turn to avoid it!
 
 <div markdown="1">
-This code will make the robot to turn right if it sees an object less than 20 cm away, otherwise it will move forward.   Try it out!
+This code will make the robot turn right if it sees an object less than 20 cm away, otherwise it will move forward.   Try it out!
 
 ![fig 15.5](fig-15_5.png){:.image .block-based}
 
