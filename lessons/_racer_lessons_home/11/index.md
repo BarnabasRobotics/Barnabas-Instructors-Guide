@@ -38,9 +38,7 @@ With both the motors and the ultrasonic sensor working properly, we have all the
 
 ### Stop Before We Crash
 
-Let's program that car to stop before we hit a wall.  We'll use what we have learned about the ultrasonic sensor to program our robot to do this.  Here is some code below to get your started.
-
-![fig 15.3](fig-15_3.png){:.image .block-based}
+Let's program that car to stop before we hit a wall.  We'll use what we have learned about the ultrasonic sensor to program our robot to do this.  
 
 {% include youtube.html id='nqGW6I5kZv0' %}{:.block-based}
 
@@ -49,14 +47,13 @@ Let's program that car to stop before we hit a wall.  We'll use what we have lea
 Let's program our car to not only stop before we hit a wall, but also turn to avoid it!
 
 <div markdown="1">
-
-{% include youtube.html id='yfgcoLhec7E' %}{:.block-based}
-
 Let's program the robot to turn right if it sees an object less than 20 cm away, else move forward.   See the code below.
 
 ![fig 15.5](fig-15_5.png){:.image .block-based}
 
 Note: The 400 ms delay after the right subroutine determines how long it will turn right for before moving on to the next section of code.  
+
+{% include youtube.html id='yfgcoLhec7E' %}{:.block-based}
 
 ### Adding Delays 
 
