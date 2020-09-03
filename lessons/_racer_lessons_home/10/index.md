@@ -82,9 +82,11 @@ Follow the wiring diagram below to make the necessary electrical connections.
 
 #### Science
 
+<img src="fig-14_2.png" alt="fig-14_2" style="zoom:90%;" class="image right" />
+
 Before we start coding, we need to first understand the science of how this sensor works.  Let's first go over how the ultrasonic sensor sends and receives signals.  The diagram on the right shows how a sensor sends an outgoing sound to an object which is reflected back to the sensor when it bounces off the same object.  The sensor does some math on the time that it takes the initial sound to come back to the sensor to find out how far away the object is.  This is how animals like bats and whales use echo location to tell how far objects are.  
 
-<img src="fig-14_2.png" alt="fig-14_2" style="zoom:90%;" class="image right" />
+
 
 #### The Math 
 
@@ -304,6 +306,7 @@ void loop() {
  delay(ultrasonic());
 }
 ```
+{:.text-based}
 
 The above code blinks a light on and off with the added wrinkle of having the distance measured by the sensor control the length of the blink. 
 
