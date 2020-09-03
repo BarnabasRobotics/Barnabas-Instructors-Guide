@@ -121,8 +121,6 @@ Create the following subroutines and test them inside your main loop to make sur
 
 ### Make Our Racer Turn
 
-{% include youtube.html id='GnWS4G7Db4g' %}{:.block-based}
-
 #### Turning Left Or Right
 
 Now let's say that from here we instead want to turn in one direction, how do we do that? Thinking about the direction we want to turn our motors if I wanted to turn left I would have the right motor continue moving forward but change the direction of the left motor. 
@@ -184,6 +182,8 @@ void loop()
 }
 ```
 {:.text-based}
+
+{% include youtube.html id='GnWS4G7Db4g' %}{:.block-based}
 
 #### Go Straight Then Turn
 

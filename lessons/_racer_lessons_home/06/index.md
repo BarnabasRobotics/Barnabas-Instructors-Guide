@@ -169,15 +169,15 @@ void loop()
 
 ### Adding Your Button
 
-{% include youtube.html id='GnWS4G7Db4g?start=210' %}{:.block-based}
-
 To make things a bit more convenient for us when we start testing with a moving car, we're going to add a bit of code so that you car doesn't begin its program until you press your button.  
 
 In order to accomplish this, we're going to need to use something called a while loop.  The while loop is like an if/else block.  How it works is: 
 
 "Do what ever is inside the loop WHILE this thing is true"
 
-So what we're going to do is tell it to do nothing WHILE the button is not pressed, and then jump out of the while loop once the button is pressed.  This is what it looks like in code.  Give it a try!
+So what we're going to do is tell it to do nothing WHILE the button is not pressed, and then jump out of the while loop once the button is pressed.  
+
+{% include youtube.html id='GnWS4G7Db4g?start=210' %}{:.block-based}
 
 #### Move Forward When You Press The Button
 
