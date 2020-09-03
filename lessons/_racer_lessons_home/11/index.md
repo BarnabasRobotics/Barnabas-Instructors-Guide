@@ -31,11 +31,6 @@ In this section we'll combine everything to program our car to move and avoid ob
 
 </div>{:.text-based}
 
-
-### Our Previous Tools
-
-With both the motors and the ultrasonic sensor working properly, we have all the tools we need to create an autonomous program that can avoid obstacles.  All that is left of us to do is effectively marry the motion of the robot to its ability to sense objects.  To help us create the avoidance code we are going to use a few of the tools we have constructed thus far. 
-
 ### Stop Before We Crash
 
 Let's program that car to stop before we hit a wall.  We'll use what we have learned about the ultrasonic sensor to program our robot to do this.  
