@@ -33,7 +33,7 @@ In this section we'll combine everything to program our car to move and avoid ob
 
 ### Stop Before We Crash
 
-Let's program that car to stop before we hit a wall.  We'll use what we have learned about the ultrasonic sensor to program our robot to do this.  
+Let's program our car to stop before we hit a wall.  We'll use what we have learned about the ultrasonic sensor to program our robot to do this.  
 
 {% include youtube.html id='nqGW6I5kZv0' %}{:.block-based}
 
