@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 8 &middot; Navigate Your Car
+title: Lesson 8 &middot; Basic Navigation
 
 suggested_time: 60-75 minutes  
 

@@ -8,6 +8,11 @@ reflection:
 videos:
     - link: https://youtu.be/er4kNM6rLvg
       text: Circuit Basics
+    - link: https://youtu.be/QFm8Gkofgs8
+      text: How A Breadboard Works
+other:
+    - link: https://components101.com/switches/push-button
+      text: Push Button (Components 101)
 ---
 
 ### What You'll Need
@@ -30,6 +35,8 @@ In this lesson we will cover the basics of engineering.  Topics include:
 2. Resistors
 3. Breadboarding
 4. Buttons
+
+### Full Tutorial Video
 
 {% include youtube.html id='er4kNM6rLvg' %}
 
@@ -72,6 +79,8 @@ A breadboard helps us connect our wires (analogous to blood vessels) together.  
 
 In a breadboard, all the holes on each row of 5 are connected to each other.  This means that any two wires placed into the same row will be connected to each other.   Remember this as we'll be using this later to build circuits!
 
+{% include youtube.html id='QFm8Gkofgs8' %}
+
 ### Building A Circuit Using Our Breadboard
 
 <img src="fig-5_10.png" alt="fig-5_10" style="zoom:30%;" class="image right" />
@@ -89,7 +98,8 @@ Follow the wiring diagram below.  Plug the 9V battery into the jack on the Noggi
 #### Vocabulary
 
    * **Arduino Uno Compatible Board**: The brain of our soon to be robot! The Barnabas Noggin houses the brain of the Barnabas bot. It also contains a large amount of internal circuitry, making it somewhat related to the robot’s heart as well. We will often treat the Noggin as a power source, as it can give us 5V, a voltage we are comfortable with.
-   * **Resistance**: The difficulty of passing an electric current through an object. If an object is very difficult to pass current through, it has a high resistance.
+   * **Resistor**: An electrical component that slows down or resists the current in a circuit.
+   * **Resistance**: The difficulty of passing an electric current through an object. The higher the resistance, the more it resists electricity.  It is measured in Ohms.
 
 {% include badge.html type="tidbit" content="Resistance, along with voltage and current are the three fundamental quantities in a circuit. In fact, there is an equation that relates all three of these inside of a circuit. The equation is known as Ohm’s Law V=IxR, where V is the voltage, R is the resistance, and I is the current. This simple equation gives us a very good understanding of the behavior of any circuit." %}
 
@@ -99,13 +109,34 @@ Follow the wiring diagram below.  Plug the 9V battery into the jack on the Noggi
 
 ### Giving A Robot Senses
 
-A robot is made of four different parts [(Body, Heart, Brain, Personality)](https://lessons.barnabasrobotics.com/bot_lessons_home/01/index.html).  These parts need to work together in order for our robot to function.
+#### Outputs vs. Inputs
 
-Throughout the level 1 class the only type of components used were **output** components. This simply means that the LED, buzzer and motors needed to get a signal **from** the robot's brain to work. 
+In the introductory [Barnabas-Bot project](https://shop.barnabasrobotics.com/collections/kits-1/products/barnabas-bot-kit), we used a LED, buzzer and motor.  These are considered *output* components, meaning that they need to get a signal *from* the robot's brain to work. 
 
-In this section, we'll be introduced to a new component, the button, which is fundamentally different. It is an **input** component, meaning that it will send a signal **to** the robot's brain. Inputs, also known as sensors, will help our robot interact with the world around it, starting with the button.
+In this section, we'll be introduced to *input* components, which send a signal **to** the robot's brain. Inputs (also known as sensors) will give our robot information about the world around it.
 
-We're going to introduce a sense, specifically the *touch* sense so that your robot will be able to *feel* when something touches it.  We'll be using a **button** component to accomplish this.  You'll experience how the heart, brain and personality come together to make this happen.
+{% include badge.html type="tidbit" content="Think of our human senses (touch, see, feel, smell and taste).  They all come together as inputs so that our brain can use them to help us interact with the world around us." %}
+
+#### Touch
+
+We're going to introduce our first *sense* or *input* to our robot, specifically the *touch* sense.  In other words, your robot will be able to *feel* when something touches it.  We'll be using a **button** component to accomplish this.  We'll have to connect the button to the brain, heart and personality in order to make this all work.  Let's get started!
+
+### Button Basics
+
+<img src="fig-3_7.jpg" style="zoom:100%;" class="image center" />
+
+We are going to be using a 4-pin button.  The diagram below shows how it works.  Notice that the legs are connected in pairs.  - 
+
+- When the button is pressed, the two leg pairs are connected.
+- When the button is not pressed, the two leg pairs are disconnected.
+
+Keeping this behavior in mind, we can use the button to control the opening and closing of a circuit.  
+
+<img src="Push-button-Pinout.gif" style="zoom:100%;" class="image center" />
+
+<p align="center">https://components101.com/switches/push-button</p>
+
+### 
 
 ### A Simple Button Circuit
 
@@ -113,9 +144,17 @@ Let's now connect our button to our brain (Barnabas Noggin) so that it turns on 
 
 <img src="fig-3_1.png" alt="fig-3_1" style="zoom:70%;" class="image center" />
 
-Once you are done, power up the Barnabas Noggin.  Your LED should only turn on if you push the button down.  If it's not working correctly, double check your circuit!
+Follow the diagram below to make sure that you build it correctly.  Make sure that your LED is connected the right way (long leg connected to 5V, short leg connected to the button).  If you need a refresher on LEDs, review [Barnabas-Bot - Lesson 5](https://lessons.barnabasrobotics.com/bot_lessons_home/05/index.html)
 
 <img src="fig-3_3.png" alt="fig-3_3" style="zoom:50%;" class="image center" />
+
+Once you are done, power up the Uno with the battery and test your button circuit.  Your LED should only turn on if you push the button down.  If it's not working correctly, double check your connections!  
+
+<img src="fig_7_ (5).jpg" alt="fig-3_3" style="zoom:10%;" class="image center" />
+
+<img src="fig_7_ (6).jpg" alt="fig-3_3" style="zoom:10%;" class="image center" />
+
+<img src="fig_7_ (7).jpg" alt="fig-3_3" style="zoom:10%;" class="image center" />
 
 ### Bonus Activity: Going Further With Resistance
 
@@ -139,4 +178,4 @@ With knowledge of Ohm’s law, we can calculate the current going through the ci
 
 {% include badge.html type="tidbit" content="Not all resistors are 'Ohmic' resistors, as in ones that follow Ohm's laws. An Ohmic resistor always has the same resistance, where as a non Ohmic resistor has a fluctuating resistance based on some parameter. For example if you were to measure the resistance of a light bulb while it is off, you would measure a fairly low resistance. But if you turned the lightbulb on, the resistance would skyrocket due to how much hotter the lightbulb became. If non Ohmic resistors are used in simple circuits such as this one, some interesting effects can be created." %}
 
-{% include badge.html type="best_practice" content="Do not dismantle the circuits at the end of this lesson. We will be building on these circuits for the rest of class and it would be convenient if we did not have to start from scratch! Just make sure to unplug your battery before putting the circuits away." %}
+{% include badge.html type="best_practice" content="Do not dismantle the circuits at the end of this lesson. We will be building on these circuits for the rest of the project and it would be convenient if we did not have to start from scratch! Just make sure to unplug your battery before putting the circuits away." %}

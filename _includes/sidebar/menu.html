@@ -71,6 +71,19 @@
         {% endif %}
 
         <li>
+            <span class="opener"><i class="icon fa-truck"></i> Barnabas Rover</span>
+            <ul>
+                    {% for lesson in site.rover_lessons_home %}
+                    <li><a href="{{ site.baseurl }}{{ lesson.url }}">{{ lesson.title }}</a></li>
+                    {% endfor %}
+            </ul>
+        </li>
+        {% if page.collection == "rover_lessons_home"%}
+        {% include sidebar/lessonsegment.html %}
+        {% endif %}
+
+
+        <li>
             <span class="opener"><i class="icon fa-child"></i> Tinker Series</span>
             <ul>
                     {% for lesson in site.tinker_lessons %}

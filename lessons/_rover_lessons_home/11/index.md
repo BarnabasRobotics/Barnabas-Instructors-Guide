@@ -5,6 +5,10 @@ title: Lesson 11 &middot; Program Your Car To Avoid Obstacles
 suggested_time: 60-75 minutes  
 
 videos:
+    - link: https://youtu.be/fgngci1Lno4
+      text: Stop Before You Crash (Block-based)
+    - link: https://youtu.be/qRF44RI5khk
+      text: Finishing Touches On Ultrasonic Code (Block-based)
 
 ---
 
@@ -14,17 +18,13 @@ videos:
 
 In this section we'll combine everything to program our car to move and avoid objects
 
-https://youtu.be/fgngci1Lno4
-
-https://youtu.be/qRF44RI5khk
-
 ### Stop Before We Crash
 
 Let's program that car to stop before we hit a wall!  Let's use what we have learned about the ultrasonic sensor to program our robot to do this.  We'll need to use if/else.
 
 ![fig 15.3](fig-15_3.png){:.image .block-based}
 
-
+{% include youtube.html id='fgngci1Lno4' %}{:.block-based}
 
 ### Turn Before We Crash
 
@@ -54,11 +54,7 @@ As your robot's battery gets drained, it's a known issue that the ultrasonic sen
 
 Note: In the code above, the robot will turn right ONLY if the ultrasonic sensor sees a value that is less than 20 AND it's not 0.  
 
+{% include youtube.html id='qRF44RI5khk' %}{:.block-based}
+
 </div>{:.block-based}
-
-#### Bonus Activity (Turn Randomly)
-
-{% include youtube.html id='0wk1WM62UDg' %}{:.block-based}
-
-{% include youtube.html id='Qy43DEdsn0I' %}{:.text-based}
 
