@@ -102,7 +102,6 @@ void loop() {
     //- after the setup code runs once, the code in here runs forever in a loop
 }
 ```
-
 </div>{:.text-based}
 
 <div markdown="1">
@@ -169,7 +168,6 @@ else {
     //- do something else
 }
 ```
-
 {:.text-based}
 
 #### Practice
@@ -217,7 +215,6 @@ void loop()
   }
 }
 ```
-
 {:.text-based}
 
 #### Our First Upload
