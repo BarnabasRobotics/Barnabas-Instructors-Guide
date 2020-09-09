@@ -52,7 +52,7 @@ Notes:
 - Make sure that none of the four pins of the ultrasonic sensor are in the same row as any other component (resistor, LED or button)
 - The speakers of the ultrasonic sensor are facing out in front of the car
 
-<img src="fig-10_0.jpg" alt="fig-14_1" style="zoom:15%;" class="image right" />
+<img src="fig-10_0.jpg" alt="fig-14_1" style="zoom:15%;" class="image center" />
 
 ##### Ultrasonic Sensor Wiring Chart
 
@@ -69,7 +69,7 @@ The wiring chart below shows the connections that we need to make between the ul
 
 Go ahead and wire your ultrasonic sensor based on the wiring diagram below. 
 
-<img src="ultrasonic.png" alt="fig-14_1" style="zoom:75%;" class="image right" />
+<img src="ultrasonic.png" alt="fig-14_1" style="zoom:75%;" class="image center" />
 
 ### Coding the Ultrasonic Sensor
 
@@ -303,7 +303,6 @@ void loop() {
  delay(ultrasonic());
 }
 ```
-
 {:.text-based}
 
 The above code blinks a light on and off with the added wrinkle of having the distance measured by the sensor control the length of the blink. 
@@ -384,7 +383,6 @@ void loop() {
 
 }
 ```
-
 </div>{:.text-based}
 
 ##### Blinking With Intervals
