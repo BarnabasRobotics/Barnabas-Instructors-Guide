@@ -40,7 +40,7 @@ collections:
   bot_lessons_home:
     output: true
   racer_lessons:
-    output: true
+    output: false
   racer_lessons_home:
     output: true
   rover_lessons_home:
@@ -48,6 +48,8 @@ collections:
   magic_box:
     output: true
   tinker_lessons:
+    output: true
+  rover_lessons_home:
     output: true
 collections_dir: lessons
 
