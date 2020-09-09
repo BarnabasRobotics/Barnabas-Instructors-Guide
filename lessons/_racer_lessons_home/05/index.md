@@ -36,8 +36,7 @@ In this lesson we will wire our button and light directly to our brain (Barnabas
 ### Tutorial Video
 {% include youtube.html id='bSCSOL20SIw' %}
 </div>{:.text-based}
-
-<img src="C:/Users/edwardbarnabas/dev/Barnabas-Instructors-Guide/lessons/_bot_lessons_home/07/fig-7_1.png" alt="fig-7_1" style="zoom:10%;" class="image right" />
+<img src="fig-7_1.png" alt="fig-7_1" style="zoom:10%;" class="image right" />
 
 
 
