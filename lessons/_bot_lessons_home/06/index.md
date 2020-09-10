@@ -87,7 +87,7 @@ Your Chromebook is now ready.  That was easy, right?  Type the link below (or co
 
 5. Click "Upload"
 
-   <img src="C:/Users/Edward/Documents/dev/Barnabas-Instructors-Guide/lessons/_racer_lessons_home/04/fig-4_5.png" style="zoom:60%;" class="image center" />
+   <img src="fig-4_5.png" style="zoom:60%;" class="image center" />
 
 6. Select the COM port and click "Connect"
 
