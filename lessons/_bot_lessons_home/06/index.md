@@ -73,6 +73,24 @@ Your Chromebook is now ready.  That was easy, right?  Type the link below (or co
 
 <p style="text-align:center"><cmd><a style="color:white" href="https://code.barnabasrobotics.com">https://code.barnabasrobotics.com</a></cmd></p>
 
+#### 6. Upload Code
+
+1. Connect your Barnabas Noggin (Green board) to your Chromebook using a USB cable.  A red light should turn on on your Barnabas Noggin.
+
+2. Set "Select a board" to "Noggin
+
+3. Set "Select a lesson" to "Advanced"
+
+4. Drag an empty yellow program loop into your workspace
+
+   <img src="fig-6_17.png" alt="fig-6_0" style="zoom:40%;" class="image center" />
+
+5. Click "Upload"
+
+   <img src="C:/Users/Edward/Documents/dev/Barnabas-Instructors-Guide/lessons/_racer_lessons_home/04/fig-4_5.png" style="zoom:60%;" class="image center" />
+
+6. Select the COM port and click "Connect"
+
 ***
 
 ### Macbook IDE Setup

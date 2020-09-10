@@ -5,9 +5,9 @@ suggested_time: 10-15 minutes
 ---
 
 ### What Is Barnabas Rover?
-<p align="center" markdown = "1">
-<img align="center" src="fig-01_05.jpg" width="500">
-</p>
+
+<img src="fig-01_05.jpg" style="zoom:10%;" class="image center" />
+
 
 The Barnabas Rover is robot car that is able to think and act on its own.  Builders will cover concepts such as circuits, coding, mechanics and sensors.  Recommended ages: 11+
 
