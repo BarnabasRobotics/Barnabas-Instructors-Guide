@@ -2,6 +2,11 @@
 layout: lesson
 title: Lesson 6 &middot; Set Up Your Computer
 suggested_time: 30-45 minutes
+
+videos:
+    - link: https://youtu.be/KCxQFMmqkMU
+      text: Install Your IDE (Macbook)
+      
 other:
     - link: chrome://flags/#enable-experimental-web-platform-features
       text: Chromebook Settings Link
@@ -96,6 +101,10 @@ Your Chromebook is now ready.  That was easy, right?  Type the link below (or co
 ### Macbook IDE Setup
 
 <img src="fig-6_3.png" alt="fig-6_3" style="zoom:15%;" class="image center" />
+
+#### Tutorial Video
+
+{% include youtube.html id="KCxQFMmqkMU" %}
 
 For Macbooks, your IDE is called Ardublock.  We’re going to need to download something called a package file (**.pkg**) from the internet and then run the **.pkg** so that it can install the IDE onto your Macbook.  
 
