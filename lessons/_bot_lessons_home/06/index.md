@@ -6,7 +6,9 @@ suggested_time: 30-45 minutes
 videos:
     - link: https://youtu.be/KCxQFMmqkMU
       text: Install Your IDE (Macbook)
-      
+    - link: https://youtu.be/IA5jnPW4noQ
+      text: Install Your IDE (Windows)      
+            
 other:
     - link: chrome://flags/#enable-experimental-web-platform-features
       text: Chromebook Settings Link
@@ -102,20 +104,18 @@ Your Chromebook is now ready.  That was easy, right?  Type the link below (or co
 
 <img src="fig-6_3.png" alt="fig-6_3" style="zoom:15%;" class="image center" />
 
-#### Tutorial Video
-
-{% include youtube.html id="KCxQFMmqkMU" %}
-
 For Macbooks, your IDE is called Ardublock.  We’re going to need to download something called a package file (**.pkg**) from the internet and then run the **.pkg** so that it can install the IDE onto your Macbook.  
 
-
 We’re going to use a super cool software engineering tool called the terminal to do this.
-
 
 Before starting:
 
 - [ ] Make sure that your Macbook is powered on and charged (or charging)
 - [ ] Make sure that your Macbook has access to the internet
+
+#### Tutorial Video
+
+{% include youtube.html id="KCxQFMmqkMU" %}
 
 #### The Terminal
 
@@ -198,11 +198,14 @@ For Windows PCs, your IDE is called **Ardublock**.  We’re going to need to dow
 
 We’re going to use a super cool software engineering tool called the terminal to do this.
 
-
 Before starting:
 
 - [ ] Make sure that your Windows PC is powered on and charged (or charging)
 - [ ] Make sure that your Windows PC has access to the internet
+
+#### Tutorial Video
+
+{% include youtube.html id="IA5jnPW4noQ" %}
 
 #### The Terminal
 
