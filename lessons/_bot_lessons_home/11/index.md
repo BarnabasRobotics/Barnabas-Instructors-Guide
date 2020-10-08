@@ -31,7 +31,8 @@ Expand the blinking LED to create Morse Code messages.
 {% include youtube.html id="NUUSjKGyywo" %}
 
 [Morse Code Cheat Sheet](https://upload.wikimedia.org/wikipedia/commons/b/b5/International_Morse_Code.svg)
-[Morse Code Downloadable PDF  ](https://drive.google.com/file/d/1liBuEK5mu3E04ymCv_On7b9cEDAkBJO1/view?usp=drive_open)
+
+[Morse Code Downloadable PDF](https://drive.google.com/file/d/1liBuEK5mu3E04ymCv_On7b9cEDAkBJO1/view?usp=drive_open)
 
 ## Blink Two LEDs at the same time
 
