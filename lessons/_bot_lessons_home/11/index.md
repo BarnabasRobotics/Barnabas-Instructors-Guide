@@ -7,11 +7,6 @@ videos:
       text: Create Morse Code With Your LED
     - link: https://youtu.be/1tKu0fvJ4ic
       text: Blink Two LEDs At The Same Time
-documents:
-    - link: https://upload.wikimedia.org/wikipedia/commons/b/b5/International_Morse_Code.svg
-    - text: Morse Code Cheat Sheet
-    - link: https://drive.google.com/file/d/1liBuEK5mu3E04ymCv_On7b9cEDAkBJO1/view?usp=drive_open
-    - text: Morse Code Downloadable PDF    
 ---
 ### What You'll Need
 
@@ -32,10 +27,11 @@ This section includes additional challenges for you to expand your learning.  Pr
 ## Morse Code with LEDs
 
 Expand the blinking LED to create Morse Code messages.
-
+ 
 {% include youtube.html id="NUUSjKGyywo" %}
 
-
+[Morse Code Cheat Sheet](https://upload.wikimedia.org/wikipedia/commons/b/b5/International_Morse_Code.svg)
+[Morse Code Downloadable PDF  ](https://drive.google.com/file/d/1liBuEK5mu3E04ymCv_On7b9cEDAkBJO1/view?usp=drive_open)
 
 ## Blink Two LEDs at the same time
 
