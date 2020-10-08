@@ -2,6 +2,11 @@
 layout: lesson
 title: Lesson 11 &middot; Do Bonus Activities
 suggested_time: 60-75 minutes per actiity
+documents:
+    - link: https://upload.wikimedia.org/wikipedia/commons/b/b5/International_Morse_Code.svg
+    - text: Morse Code Cheat Sheet
+    - link: https://drive.google.com/file/d/1liBuEK5mu3E04ymCv_On7b9cEDAkBJO1/view?usp=drive_open
+    - text: Morse Code Downloadable PDF
 videos:
     - link: https://youtu.be/NUUSjKGyywo
       text: Create Morse Code With Your LED
