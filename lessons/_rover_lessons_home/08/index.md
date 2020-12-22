@@ -228,6 +228,20 @@ See below for code that turns right, stops for 3 seconds and then turns left and
 <img src="fig-7_4.png" style="zoom:100%;" class="image center block-based" />
 
 ```c
+void forward() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+  digitalWrite(10,HIGH);
+  digitalWrite(12,LOW);
+}
+
+void backward() {
+  digitalWrite(8,HIGH);
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+  digitalWrite(12,HIGH);
+}
+
 void rightTurn() {
   digitalWrite(8,LOW);
   digitalWrite(11,HIGH);
@@ -275,7 +289,7 @@ void loop()
 ```
 {:.text-based}
 
-#### Challenge #1: Adjust The Turn Amount To Ex
+#### Challenge #1: Adjust The Turn Amount
 
 Change the delay inside the subroutines to adjust how much it turns.
 
