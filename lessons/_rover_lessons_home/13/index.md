@@ -5,7 +5,8 @@ title: Lesson 13 &middot; Light Following
 suggested_time: 60-75 minutes  
 
 videos:
-
+    - link: https://youtu.be/xmdW76WxKyo?start=13
+      text: Line & Light Following Demo With Barnabas Rover
 ---
 
 
@@ -13,3 +14,135 @@ videos:
 ### Overview
 
 In this section we'll learn how to use light sensors to program our robot to follow a light!
+
+### What You'll Need
+
+Before we get started, let's make sure that we have all the parts.
+
+- 1 x Arduino Uno Compatible Board
+- 2 x Photoresistors
+
+### Demo Video
+
+{% include youtube.html id='xmdW76WxKyo?start=13' %}
+
+### The Photoresistor
+
+<img src="photo resistor.jpg" alt="fig-3_4" style="zoom:50%;" class="image center" />
+
+The photoresistor is a resistor that changes it's resistance value based on the amount of light that it sees.  We can use this characteristic to detect the intensity of light! 
+
+The photoresistor has two legs,and both of them are the same (i.e. it doesn't matter which way you connect it.)
+
+### Wiring The Photoresistors
+
+Let's wire two photo resistors so that we can use them to program our Barnabas Rover to follow a light!
+
+We will be connecting the photoresistors between analog inputs and GND.
+
+| Photoresistor #1 | Arduino-Uno Compatible Board |
+| ---------------- | ---------------------------- |
+| Leg #1           | A0                           |
+| Leg #2           | GND                          |
+
+| Photoresistor #2 | Arduino-Uno Compatible Board |
+| ---------------- | ---------------------------- |
+| Leg #1           | A1                           |
+| Leg #2           | GND                          |
+
+### Coding Light Following
+
+```c
+
+int light_init = 0;
+
+void forward() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+  digitalWrite(10,HIGH);
+  digitalWrite(12,LOW);
+}
+
+void backward() {
+  digitalWrite(8,HIGH);
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+  digitalWrite(12,HIGH);
+}
+
+void rightTurn() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+  digitalWrite(10,LOW);
+  digitalWrite(12,LOW);
+  delay(300);
+  stop();
+}
+
+void leftTurn() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,LOW);
+  digitalWrite(10,HIGH);
+  digitalWrite(12,LOW);
+  delay(300);
+  stop();
+}
+
+void forwardLeft() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+}
+
+void backwardLeft() {
+  digitalWrite(8,HIGH);
+  digitalWrite(11,LOW);
+}
+
+void backwardRight() {
+  digitalWrite(10,LOW);
+  digitalWrite(12,HIGH);
+}
+
+void forwardRight() {
+  digitalWrite(10,HIGH);
+  digitalWrite(12,LOW);
+}
+
+void stop() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+  digitalWrite(12,LOW);
+}
+
+void setup() {
+  pinMode(A0, INPUT_PULLUP);
+  pinMode(A1, INPUT_PULLUP);
+}
+
+void loop() {
+
+    // Code for light following
+    int left_light = analogRead(A0);
+    int right_light = analogRead(A1);
+
+    if (right_light < light_init - 10 && left_light < right_light - 10) {
+      backwardLeft();
+      forwardRight();
+    }
+
+    else if (left_light < light_init - 10 && right_light < left_light - 10) {
+      forwardLeft();
+      backwardRight();
+    }
+
+    else if (left_light < light_init - 10) {
+      forwardLeft();
+      forwardRight();
+    }
+    else {
+      stop();
+    }
+}
+```
+
