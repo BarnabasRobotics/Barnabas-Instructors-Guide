@@ -55,22 +55,25 @@ VCC and GND provide power to the module.  OUT is the signal that goes to the con
 
 Let's wire the IR modules to your Arduino-Compatible board using the following connections.
 
-| IR Module #1 Pin | Arduino-Uno Compatible Board |
-| ---------------- | ---------------------------- |
-| VCC              | 5V                           |
-| GND              | GND                          |
-| OUT              | 5                            |
+| Left Sensor | Arduino-Uno Compatible Board |
+| ----------- | ---------------------------- |
+| VCC         | 5V                           |
+| GND         | GND                          |
+| OUT         | 5                            |
 
-| IR Module #2 Pin | Arduino-Uno Compatible Board |
-| ---------------- | ---------------------------- |
-| VCC              | 5V                           |
-| GND              | GND                          |
-| OUT              | 6                            |
+| Right Sensor | Arduino-Uno Compatible Board |
+| ------------ | ---------------------------- |
+| VCC          | 5V                           |
+| GND          | GND                          |
+| OUT          | 6                            |
 
 ### Coding Your IR Modules
 
 ```c
 
+int trig = 3;
+int echo = 4;
+int led = 7;
 int leftSensor = 5;
 int rightSensor = 6;
 
@@ -135,34 +138,53 @@ void stop() {
 }
 
 void setup() {
+  pinMode(trig, OUTPUT);
+  pinMode(echo, INPUT);
+  pinMode(led, OUTPUT);
+  
   pinMode(leftSensor, INPUT);
   pinMode(rightSensor, INPUT);
+  
+  pinMode(8, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(12, OUTPUT);
+    
+  pinMode(2, INPUT);
 }
 
 void loop() {
 
-    // 0: no line, 1: line
-    int leftStatus = digitalRead(leftSensor); 
-    int rightStatus = digitalRead(rightSensor);
-
-    if (leftStatus == 0 && rightStatus == 0) {
-      forward();
+    //- wait for button press before doing anything
+    while (digitalRead(2) == HIGH) {
+      //- do nothing
     }
+    delay(500);
 
-    if (leftStatus == 0 && rightStatus != 0) {
-      forwardLeft();
-      backwardRight();
+    //- loop here forever after the button is pressed
+    while (true) {
+      // 0: no line, 1: line
+      int leftStatus = digitalRead(leftSensor); 
+      int rightStatus = digitalRead(rightSensor);
+  
+      if (leftStatus == 0 && rightStatus == 0) {
+        forward();
+      }
+  
+      if (leftStatus == 0 && rightStatus != 0) {
+        forwardLeft();
+        backwardRight();
+      }
+  
+      if (leftStatus != 0 && rightStatus == 0) {
+        backwardLeft();
+        forwardRight();
+      }
+  
+      if (leftStatus != 0 && rightStatus != 0) {
+        stop();
+      }
     }
-
-    if (leftStatus != 0 && rightStatus == 0) {
-      backwardLeft();
-      forwardRight();
-    }
-
-    if (leftStatus != 0 && rightStatus != 0) {
-      stop();
-    }
-
 }
 ```
 
