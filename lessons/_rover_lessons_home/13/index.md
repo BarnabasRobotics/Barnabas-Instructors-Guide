@@ -40,20 +40,25 @@ Let's wire two photo resistors so that we can use them to program our Barnabas R
 
 We will be connecting the photoresistors between analog inputs and GND.
 
-| Photoresistor #1 | Arduino-Uno Compatible Board |
-| ---------------- | ---------------------------- |
-| Leg #1           | A0                           |
-| Leg #2           | GND                          |
+| Left Photoresistor | Arduino-Uno Compatible Board |
+| ------------------ | ---------------------------- |
+| Leg #1             | A0                           |
+| Leg #2             | GND                          |
 
-| Photoresistor #2 | Arduino-Uno Compatible Board |
-| ---------------- | ---------------------------- |
-| Leg #1           | A1                           |
-| Leg #2           | GND                          |
+| Right Photoresistor | Arduino-Uno Compatible Board |
+| ------------------- | ---------------------------- |
+| Leg #1              | A1                           |
+| Leg #2              | GND                          |
 
 ### Coding Light Following
 
 ```c
 
+int trig = 3;
+int echo = 4;
+int led = 7;
+int leftSensor = 5;
+int rightSensor = 6;
 int light_init = 0;
 
 void forward() {
@@ -116,32 +121,69 @@ void stop() {
 }
 
 void setup() {
+  pinMode(trig, OUTPUT);
+  pinMode(echo, INPUT);
+  pinMode(led, OUTPUT);
+  
+  pinMode(leftSensor, INPUT);
+  pinMode(rightSensor, INPUT);
+  
+  pinMode(8, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(12, OUTPUT);
+  
+  pinMode(2, INPUT);
+
   pinMode(A0, INPUT_PULLUP);
   pinMode(A1, INPUT_PULLUP);
+
+  Serial.begin(9600);
+
+  //- get initial light intensity of room
+  light_init = analogRead(A0);
 }
 
 void loop() {
 
-    // Code for light following
-    int left_light = analogRead(A0);
-    int right_light = analogRead(A1);
-
-    if (right_light < light_init - 10 && left_light < right_light - 10) {
-      backwardLeft();
-      forwardRight();
+    //- wait for button press before doing anything
+    while (digitalRead(2) == HIGH) {
+      //- do nothing
     }
+    delay(500);
 
-    else if (left_light < light_init - 10 && right_light < left_light - 10) {
-      forwardLeft();
-      backwardRight();
-    }
-
-    else if (left_light < light_init - 10) {
-      forwardLeft();
-      forwardRight();
-    }
-    else {
-      stop();
+    //- loop here forever after the button is pressed
+    while (true) {
+      // Code for light following
+      
+      //- Darkest: Analog Value = 255;
+      //- Brightest: Analog Value = 0;
+            
+      int left_light = analogRead(A0);
+      int right_light = analogRead(A1);
+      
+      Serial.print("Left Light Value:" );
+      Serial.println(left_light);
+      Serial.print("Right Light Value:" );
+      Serial.println(right_light);
+  
+      if (right_light < light_init - 10 && left_light < right_light - 10) {
+        backwardLeft();
+        forwardRight();
+      }
+  
+      else if (left_light < light_init - 10 && right_light < left_light - 10) {
+        forwardLeft();
+        backwardRight();
+      }
+  
+      else if (left_light < light_init - 10) {
+        forwardLeft();
+        forwardRight();
+      }
+      else {
+        stop();
+      }
     }
 }
 ```
