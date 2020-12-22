@@ -196,7 +196,7 @@ void setup()
   pinMode(11,OUTPUT);
   pinMode(10,OUTPUT);
   pinMode(12,OUTPUT);
-  pinMode(2,INTPUT);
+  pinMode(2,INPUT);
 }
 
 void loop()
@@ -273,7 +273,7 @@ void setup()
   pinMode(11,OUTPUT);
   pinMode(10,OUTPUT);
   pinMode(12,OUTPUT);
-  pinMode(2,INTPUT);
+  pinMode(2,INPUT);
 }
 
 void loop()
