@@ -6,7 +6,8 @@ title: Lesson 12 &middot; Line Following
 suggested_time: 60-75 minutes  
 
 videos:
-
+    - link: https://youtu.be/xmdW76WxKyo
+      text: Line & Light Following Demo With Barnabas Rover
 ---
 
 
@@ -24,7 +25,11 @@ Before we get started, let's make sure that we have all the parts.
 - 6 x Pin to Socket Arduino Wires
 - 2 x Double-stick foam
 
-#### IR Sensor Module 
+### Demo Video
+
+{% include youtube.html id='xmdW76WxKyo' %}
+
+### IR Sensor Module 
 
 <img src="ir module.jpg" alt="fig-3_4" style="zoom:50%;" class="image center" />
 
@@ -36,13 +41,13 @@ There is a caveat here, though.  If IR hits black color, it won't bounce back be
 
 Use two modules, and you now have the ability to cause the robot to follow a line!
 
-#### Mounting Your Modules 
+### Mounting Your Modules 
 
 Mount your modules to the front bumper using double-stick foam.
 
 <img src="rover (3).png" alt="fig-3_4" style="zoom:40%;" class="image center" />
 
-#### Wire Your IR Modules
+### Wire Your IR Modules
 
 The IR modules have three pins: VCC, GND and OUT.  
 
@@ -62,7 +67,7 @@ Let's wire the IR modules to your Arduino-Compatible board using the following c
 | GND              | GND                          |
 | OUT              | 6                            |
 
-#### Coding Your IR Modules
+### Coding Your IR Modules
 
 ```c
 
@@ -160,6 +165,4 @@ void loop() {
 
 }
 ```
-
-### Demo Video
 
