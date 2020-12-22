@@ -22,8 +22,6 @@ In this section we'll combine everything to program our car to move and avoid ob
 
 Let's program that car to stop before we hit a wall!  Let's use what we have learned about the ultrasonic sensor to program our robot to do this.  We'll need to use if/else.
 
-
-
 ![fig 15.3](fig-15_3.png){:.image .block-based}
 
 {% include youtube.html id='fgngci1Lno4' %}{:.block-based}
