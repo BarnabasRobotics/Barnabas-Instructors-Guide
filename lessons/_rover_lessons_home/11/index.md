@@ -40,98 +40,100 @@ float distance_cm;
 void setup() {
   // put your setup code here, to run once:
 
-  pinMode(trig,OUTPUT);
-  pinMode(echo,INPUT);
-  pinMode(led,OUTPUT);
+  pinMode(trig, OUTPUT);
+  pinMode(echo, INPUT);
+  pinMode(led, OUTPUT);
 
   Serial.begin(9600);
 
-  pinMode(8,OUTPUT);
-  pinMode(11,OUTPUT);
-  pinMode(10,OUTPUT);
-  pinMode(12,OUTPUT);
-  pinMode(2,INPUT);
+  pinMode(8, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(2, INPUT);
 }
 
 float ultrasonic() {
   // reset the ultrasonic sensor
- digitalWrite(trig,LOW);
- delayMicroseconds(5);
+  digitalWrite(trig, LOW);
+  delayMicroseconds(5);
 
- // send a 10 microsecond pulse out through the trigger
- digitalWrite(trig, HIGH);
- delayMicroseconds(10);
- digitalWrite(trig, LOW);
+  // send a 10 microsecond pulse out through the trigger
+  digitalWrite(trig, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trig, LOW);
 
- // wait for the response and store it in duration.  It will return in microseconds.
- duration_microSeconds = pulseIn(echo,HIGH);
+  // wait for the response and store it in duration.  It will return in microseconds.
+  duration_microSeconds = pulseIn(echo, HIGH);
 
- // convert duration to seconds
- duration_seconds = duration_microSeconds / 1000000;
+  // convert duration to seconds
+  duration_seconds = duration_microSeconds / 1000000;
 
- // get distance traveled in meters.  distance = (speed * time)/2
- distance_meters = (speedOfSoundMetersPerSec * duration_seconds)/2;
+  // get distance traveled in meters.  distance = (speed * time)/2
+  distance_meters = (speedOfSoundMetersPerSec * duration_seconds) / 2;
 
- // convert to cm
- distance_cm = distance_meters*100;
+  // convert to cm
+  distance_cm = distance_meters * 100;
 
- return distance_cm;
+  return distance_cm;
 }
 
 
 void forward() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(12, LOW);
 }
 
 void backward() {
-  digitalWrite(8,HIGH);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(12, HIGH);
 }
 
 void rightTurn() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(12, LOW);
   delay(300);
   stop();
 }
 
 void leftTurn() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(12, LOW);
   delay(300);
   stop();
 }
 
 void stop() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(12, LOW);
 }
 
 void loop()
 {
   //- wait for button press before doing anything
-  while (digitalRead(2)==HIGH) {
-     //- do nothing
+  while (digitalRead(2) == HIGH) {
+    //- do nothing
   }
   
-  if (ultrasonic() < 20) {
-    stop();
+  //- loop here forever after the button is pressed
+  while (true) {
+    if (ultrasonic() < 20) {
+      stop();
+    }
+    else {
+      forward();
+    }
   }
-  else {
-    forward();
-  }
-  
 }
 ```
 {:.text-based}
@@ -160,97 +162,100 @@ float distance_cm;
 void setup() {
   // put your setup code here, to run once:
 
-  pinMode(trig,OUTPUT);
-  pinMode(echo,INPUT);
-  pinMode(led,OUTPUT);
+  pinMode(trig, OUTPUT);
+  pinMode(echo, INPUT);
+  pinMode(led, OUTPUT);
 
   Serial.begin(9600);
 
-  pinMode(8,OUTPUT);
-  pinMode(11,OUTPUT);
-  pinMode(10,OUTPUT);
-  pinMode(12,OUTPUT);
-  pinMode(2,INPUT);
+  pinMode(8, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(2, INPUT);
 }
 
 float ultrasonic() {
   // reset the ultrasonic sensor
- digitalWrite(trig,LOW);
- delayMicroseconds(5);
+  digitalWrite(trig, LOW);
+  delayMicroseconds(5);
 
- // send a 10 microsecond pulse out through the trigger
- digitalWrite(trig, HIGH);
- delayMicroseconds(10);
- digitalWrite(trig, LOW);
+  // send a 10 microsecond pulse out through the trigger
+  digitalWrite(trig, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trig, LOW);
 
- // wait for the response and store it in duration.  It will return in microseconds.
- duration_microSeconds = pulseIn(echo,HIGH);
+  // wait for the response and store it in duration.  It will return in microseconds.
+  duration_microSeconds = pulseIn(echo, HIGH);
 
- // convert duration to seconds
- duration_seconds = duration_microSeconds / 1000000;
+  // convert duration to seconds
+  duration_seconds = duration_microSeconds / 1000000;
 
- // get distance traveled in meters.  distance = (speed * time)/2
- distance_meters = (speedOfSoundMetersPerSec * duration_seconds)/2;
+  // get distance traveled in meters.  distance = (speed * time)/2
+  distance_meters = (speedOfSoundMetersPerSec * duration_seconds) / 2;
 
- // convert to cm
- distance_cm = distance_meters*100;
+  // convert to cm
+  distance_cm = distance_meters * 100;
 
- return distance_cm;
+  return distance_cm;
 }
 
 
 void forward() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(12, LOW);
 }
 
 void backward() {
-  digitalWrite(8,HIGH);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(12, HIGH);
 }
 
 void rightTurn() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(12, LOW);
   delay(300);
   stop();
 }
 
 void leftTurn() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(12, LOW);
   delay(300);
   stop();
 }
 
 void stop() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(12, LOW);
 }
 
 void loop()
 {
   //- wait for button press before doing anything
-  while (digitalRead(2)==HIGH) {
-     //- do nothing
+  while (digitalRead(2) == HIGH) {
+    //- do nothing
   }
 
-  if (ultrasonic() < 20) {
-    rightTurn();
-    delay(400);
-  }
-  else {
-    forward();
+  //- loop here forever after the button is pressed
+  while (true) {
+    if (ultrasonic() < 20) {
+      rightTurn();
+      delay(400);
+    }
+    else {
+      forward();
+    }
   }
 }
 ```
@@ -282,99 +287,102 @@ float distance_cm;
 void setup() {
   // put your setup code here, to run once:
 
-  pinMode(trig,OUTPUT);
-  pinMode(echo,INPUT);
-  pinMode(led,OUTPUT);
+  pinMode(trig, OUTPUT);
+  pinMode(echo, INPUT);
+  pinMode(led, OUTPUT);
 
   Serial.begin(9600);
 
-  pinMode(8,OUTPUT);
-  pinMode(11,OUTPUT);
-  pinMode(10,OUTPUT);
-  pinMode(12,OUTPUT);
-  pinMode(2,INPUT);
+  pinMode(8, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(2, INPUT);
 }
 
 float ultrasonic() {
   // reset the ultrasonic sensor
- digitalWrite(trig,LOW);
- delayMicroseconds(5);
+  digitalWrite(trig, LOW);
+  delayMicroseconds(5);
 
- // send a 10 microsecond pulse out through the trigger
- digitalWrite(trig, HIGH);
- delayMicroseconds(10);
- digitalWrite(trig, LOW);
+  // send a 10 microsecond pulse out through the trigger
+  digitalWrite(trig, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trig, LOW);
 
- // wait for the response and store it in duration.  It will return in microseconds.
- duration_microSeconds = pulseIn(echo,HIGH);
+  // wait for the response and store it in duration.  It will return in microseconds.
+  duration_microSeconds = pulseIn(echo, HIGH);
 
- // convert duration to seconds
- duration_seconds = duration_microSeconds / 1000000;
+  // convert duration to seconds
+  duration_seconds = duration_microSeconds / 1000000;
 
- // get distance traveled in meters.  distance = (speed * time)/2
- distance_meters = (speedOfSoundMetersPerSec * duration_seconds)/2;
+  // get distance traveled in meters.  distance = (speed * time)/2
+  distance_meters = (speedOfSoundMetersPerSec * duration_seconds) / 2;
 
- // convert to cm
- distance_cm = distance_meters*100;
+  // convert to cm
+  distance_cm = distance_meters * 100;
 
- return distance_cm;
+  return distance_cm;
 }
 
 
 void forward() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(12, LOW);
 }
 
 void backward() {
-  digitalWrite(8,HIGH);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(12, HIGH);
 }
 
 void rightTurn() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(12, LOW);
   delay(300);
   stop();
 }
 
 void leftTurn() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(12, LOW);
   delay(300);
   stop();
 }
 
 void stop() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(12, LOW);
 }
 
 void loop()
 {
   //- wait for button press before doing anything
-  while (digitalRead(2)==HIGH) {
-     //- do nothing
+  while (digitalRead(2) == HIGH) {
+    //- do nothing
   }
   delay(500);
 
-  if (ultrasonic() < 20) {
-    rightTurn();
-    delay(400);
-  }
-  else {
-    forward();
-    delay(20);
+  //- loop here forever after the button is pressed
+  while (true) {
+    if (ultrasonic() < 20) {
+      rightTurn();
+      delay(400);
+    }
+    else {
+      forward();
+      delay(20);
+    }
   }
 }
 ```
@@ -402,99 +410,102 @@ float distance_cm;
 void setup() {
   // put your setup code here, to run once:
 
-  pinMode(trig,OUTPUT);
-  pinMode(echo,INPUT);
-  pinMode(led,OUTPUT);
+  pinMode(trig, OUTPUT);
+  pinMode(echo, INPUT);
+  pinMode(led, OUTPUT);
 
   Serial.begin(9600);
 
-  pinMode(8,OUTPUT);
-  pinMode(11,OUTPUT);
-  pinMode(10,OUTPUT);
-  pinMode(12,OUTPUT);
-  pinMode(2,INPUT);
+  pinMode(8, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(2, INPUT);
 }
 
 float ultrasonic() {
   // reset the ultrasonic sensor
- digitalWrite(trig,LOW);
- delayMicroseconds(5);
+  digitalWrite(trig, LOW);
+  delayMicroseconds(5);
 
- // send a 10 microsecond pulse out through the trigger
- digitalWrite(trig, HIGH);
- delayMicroseconds(10);
- digitalWrite(trig, LOW);
+  // send a 10 microsecond pulse out through the trigger
+  digitalWrite(trig, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trig, LOW);
 
- // wait for the response and store it in duration.  It will return in microseconds.
- duration_microSeconds = pulseIn(echo,HIGH);
+  // wait for the response and store it in duration.  It will return in microseconds.
+  duration_microSeconds = pulseIn(echo, HIGH);
 
- // convert duration to seconds
- duration_seconds = duration_microSeconds / 1000000;
+  // convert duration to seconds
+  duration_seconds = duration_microSeconds / 1000000;
 
- // get distance traveled in meters.  distance = (speed * time)/2
- distance_meters = (speedOfSoundMetersPerSec * duration_seconds)/2;
+  // get distance traveled in meters.  distance = (speed * time)/2
+  distance_meters = (speedOfSoundMetersPerSec * duration_seconds) / 2;
 
- // convert to cm
- distance_cm = distance_meters*100;
+  // convert to cm
+  distance_cm = distance_meters * 100;
 
- return distance_cm;
+  return distance_cm;
 }
 
 
 void forward() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(12, LOW);
 }
 
 void backward() {
-  digitalWrite(8,HIGH);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(12, HIGH);
 }
 
 void rightTurn() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, HIGH);
+  digitalWrite(10, LOW);
+  digitalWrite(12, LOW);
   delay(300);
   stop();
 }
 
 void leftTurn() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(12, LOW);
   delay(300);
   stop();
 }
 
 void stop() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(12, LOW);
 }
 
 void loop()
 {
   //- wait for button press before doing anything
-  while (digitalRead(2)==HIGH) {
-     //- do nothing
+  while (digitalRead(2) == HIGH) {
+    //- do nothing
   }
   delay(500);
 
-  if ((ultrasonic() < 20) && (ultrasonic() != 0)) {
-    rightTurn();
-    delay(400);
-  }
-  else {
-    forward();
-    delay(20);
+  //- loop here forever after the button is pressed
+  while (true) {
+    if ((ultrasonic() < 20) && (ultrasonic() != 0)) {
+      rightTurn();
+      delay(400);
+    }
+    else {
+      forward();
+      delay(20);
+    }
   }
 }
 ```
