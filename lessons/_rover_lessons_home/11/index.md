@@ -130,9 +130,7 @@ void loop()
     forward();
   }
 }
-```
-
-{.text-based}
+```{.text-based}
 
 ### Turn Before We Crash
 
