@@ -130,7 +130,8 @@ void loop()
     forward();
   }
 }
-```{.text-based}
+```
+{.text-based}
 
 ### Turn Before We Crash
 
@@ -164,5 +165,3 @@ Note: In the code above, the robot will turn right ONLY if the ultrasonic sensor
 
 </div>{:.block-based}
 
-
-```
