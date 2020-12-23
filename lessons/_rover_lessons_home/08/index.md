@@ -344,6 +344,8 @@ Now let's experiment!  We'll need to use the command, **analogWrite()**.
 
 The code below converts the original subroutines to include the use of analog and also adds two new subroutines to move forward and backwards at half speed.  Give it a try!
 
+<img src="halfspeedardu.png" alt="fig-6_0" style="zoom:100%;" class="image center block-based" />
+
 ```c
 void forward() {
   digitalWrite(8,LOW);
