@@ -166,21 +166,22 @@ void loop() {
       Serial.println(left_light);
       Serial.print("Right Light Value:" );
       Serial.println(right_light);
-  
+
+      //- turn right if light is more intense on the right
       if (right_light < light_init - 10 && left_light < right_light - 10) {
         backwardLeft();
         forwardRight();
       }
-  
+      //- turn left if light is more intense on the left
       else if (left_light < light_init - 10 && right_light < left_light - 10) {
-        forwardLeft();
         backwardRight();
-      }
-  
-      else if (left_light < light_init - 10) {
         forwardLeft();
-        forwardRight();
       }
+      //- go forward if light is evenly intense on both sides
+      else if (left_light < light_init - 10 && right_light < light_init - 10) {
+        forward();
+      }
+      //- don't move if light is not intense at all
       else {
         stop();
       }
