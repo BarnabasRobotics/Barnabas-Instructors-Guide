@@ -69,8 +69,9 @@ Let's wire the IR modules to your Arduino-Compatible board using the following c
 
 ### Coding Your IR Modules
 
-```c
+<img src="linefollowrover.png" alt="fig-6_0" style="zoom:100%;" class="image center block-based" />
 
+```c
 int trig = 3;
 int echo = 4;
 int led = 7;
@@ -187,4 +188,11 @@ void loop() {
     }
 }
 ```
+{:.text-based}
 
+
+
+### Troubleshooting Tips
+
+- Your rover may be heading in the wrong direction when it sees the line.  If that's the case, you probably have your left/right sensor mixed up.  Check your wiring and code.
+- You may find that your rover reacts too slowly and and veers off the track before it can turn.  If that's the case, try slowing down your racer by moving at half speed.  See lesson 8 if you need a refresher on how to do that.
