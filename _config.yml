@@ -51,6 +51,8 @@ collections:
     output: true
   rover_lessons_home:
     output: true
+  robot_arm
+    output: true
 collections_dir: lessons
 
 
