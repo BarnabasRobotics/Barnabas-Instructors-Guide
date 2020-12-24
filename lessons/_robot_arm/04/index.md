@@ -2,15 +2,20 @@
 layout: lesson
 title: Lesson 4 &middot; Operate The Arm
 suggested_time: 30-60 minutes
-
-      
-
-
+videos:
+    - link: https://youtu.be/aPI11noSG28
+      text: Robot Arm Demo (Dial)
+    - link: https://youtu.be/F_K7G25mS4k
+      text: Robot Arm Demo (Autonomous)
 ---
 
 ### Dial Mode 
 
 Program your robot arm in dial mode so that you can control all 4 axes using the dial.  Simply copy the code and upload it using the Arduino IDE.
+
+{% include youtube.html id='aPI11noSG28' %}
+
+#### Sample Code
 
 ```c
 #include <Servo.h>
@@ -90,7 +95,11 @@ void loop() {
 
 ### Autonomous Mode
 
-You can also program your robot to follow pre-programmed moves.  Sample code below.  Have fun customizing it!
+You can also program your robot to follow pre-programmed moves.  Simply copy the code and upload it using the Arduino IDE.  Have fun customizing it!
+
+{% include youtube.html id='F_K7G25mS4k' %}
+
+#### Sample Code
 
 ```c
 #include <Servo.h>
@@ -116,7 +125,7 @@ Servo tiltMotor;
 Servo extendMotor;
 Servo clawMotor;
 
-int panMotorPin = 5;
+int panMotorPin = 6;
 int tiltMotorPin = 9;
 int extendMotorPin = 10;
 int clawMotorPin = 11;

@@ -25,5 +25,13 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 
 ### Lesson Overview
 
-Let's build our robot arm!
+In this lesson we will assemble the mechanical parts of our robot arm
+
+### Arm Assembly
+
+Follow steps 3-15
+
+https://www.instructables.com/meArmJoystick-DIY/
+
+
 
