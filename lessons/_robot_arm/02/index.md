@@ -23,7 +23,7 @@ First let's mount the Arduino compatible board to the robot arm using the includ
 
 Follow step 16
 
-https://www.instructables.com/meArmJoystick-DIY/
+[https://www.instructables.com/meArmJoystick-DIY/](https://www.instructables.com/meArmJoystick-DIY/)
 
 ### Attach The Daughter Board
 

@@ -31,7 +31,7 @@ In this lesson we will assemble the mechanical parts of our robot arm
 
 Follow steps 3-15
 
-https://www.instructables.com/meArmJoystick-DIY/
+[https://www.instructables.com/meArmJoystick-DIY/](https://www.instructables.com/meArmJoystick-DIY/)
 
 
 
