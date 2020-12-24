@@ -3,9 +3,9 @@ layout: lesson
 title: Lesson 4 &middot; Operate The Arm
 suggested_time: 30-60 minutes
 videos:
-    - link: https://youtu.be/aPI11noSG28
-      text: Robot Arm Demo (Dial)
     - link: https://youtu.be/F_K7G25mS4k
+      text: Robot Arm Demo (Dial)
+    - link: https://youtu.be/Gxu7uIzHSiM
       text: Robot Arm Demo (Autonomous)
 ---
 
@@ -13,7 +13,7 @@ videos:
 
 Program your robot arm in dial mode so that you can control all 4 axes using the dial.  Simply copy the code and upload it using the Arduino IDE.
 
-{% include youtube.html id='aPI11noSG28' %}
+{% include youtube.html id='F_K7G25mS4k' %}
 
 #### Sample Code
 
@@ -97,7 +97,7 @@ void loop() {
 
 You can also program your robot to follow pre-programmed moves.  Simply copy the code and upload it using the Arduino IDE.  Have fun customizing it!
 
-{% include youtube.html id='F_K7G25mS4k' %}
+{% include youtube.html id='Gxu7uIzHSiM' %}
 
 #### Sample Code
 

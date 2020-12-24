@@ -89,5 +89,3 @@ Your computer is now ready to access your IDE.  That was easy, right?  Type the 
 ### Stuck? Need Help?
 
 If you need technical support, feel free to contact us at support@barnabasrobotics.com!
-
-### 
