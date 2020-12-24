@@ -35,6 +35,7 @@ Take the daughter board and stick it on top of the Arduino Uno-Compatible board.
 
 Now let's wire the motors.  Be careful to match up the correct motor to the correct pins.  Also take care to make sure the wire colors match the photo below.
 
-<img src="1_labeled.jpg" style="zoom:50%;" class="image center" />
+|                         Motor Names                          |                   Motor Cable Connections                    |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="1_labeled.jpg" style="zoom:30%;" class="image center" /> | <img src="2_labeled.jpg" style="zoom:30%;" class="image center" /> |
 
-<img src="2_labeled.jpg" style="zoom:50%;" class="image center" />

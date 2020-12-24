@@ -11,7 +11,7 @@ videos:
 
 In this project you will build and code a robot arm!
 
-<img src="robotarm.jpg" style="zoom:10%;" class="image center" />
+<img src="robotarm.jpg" style="zoom:50%;" class="image center" />
 
 ### Materials
 
