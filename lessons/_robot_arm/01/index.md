@@ -29,9 +29,7 @@ In this lesson we will assemble the mechanical parts of our robot arm
 
 ### Arm Assembly
 
-Follow steps 3-15
-
-[https://www.instructables.com/meArmJoystick-DIY/](https://www.instructables.com/meArmJoystick-DIY/)
+[Follow PDF guide](https://www.barnabasrobotics.com/wp-content/uploads/2021/02/Barnabas-Robot-Arm-Assembly-Instructions.pdf)
 
 
 
