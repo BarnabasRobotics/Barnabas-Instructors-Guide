@@ -19,11 +19,7 @@ The hardware consists of two parts:
 
 ### Mount The Arduino Uno-Compatible Board
 
-First let's mount the Arduino compatible board to the robot arm using the included screws.
-
-Follow step 16
-
-[https://www.instructables.com/meArmJoystick-DIY/](https://www.instructables.com/meArmJoystick-DIY/)
+First let's mount the Arduino compatible board to the robot arm.
 
 ### Attach The Daughter Board
 
