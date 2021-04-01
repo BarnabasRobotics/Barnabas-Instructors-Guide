@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: 01 &middot; Critter Bot
+title: 02 &middot; Mini Bus DC Motor Kit
 materials:
     - Mini Bus DC Motor Kit
 ---
