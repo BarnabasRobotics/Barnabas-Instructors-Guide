@@ -26,7 +26,7 @@ In this section we will assemble the car and mount our hardware
 
 ### Mount The Motors And Wheels
 
-Note: Older versions of the chassis have additional holes in the acrylic.  If you have an older version, watch the [Older Assembly Video](#assembly-video-(for-older-version-of-chassis-only)) below instead of following these steps.
+Note: Older versions of the chassis have additional holes in the acrylic.  If you have an older version, watch the [Older Assembly Video](#assembly-video-for-older-chassis) below instead of following these steps.
 
 #### 1. Attach the caster wheel
 
@@ -118,7 +118,7 @@ Repeat steps for the second motor + wheel.
 
 <img src="3l.jpg" style="zoom:10%;" class="image center" />
 
-### Assembly Video (For older version of chassis only)
+### Assembly Video For Older Chassis
 
 {% include youtube.html id='3a-bE1VlaU8' %}
 
