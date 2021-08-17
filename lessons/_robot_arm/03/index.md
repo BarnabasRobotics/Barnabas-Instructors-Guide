@@ -46,7 +46,7 @@ We have an online coding platform that allows you to program your Arduino-based 
 
 Your computer is now ready to access your IDE.  That was easy, right?  Type the link below (or copy and paste) into your address bar to check it out!
 
-<p style="text-align:center"><cmd><a style="color:white" href="https://code.barnabasrobotics.com">https://code.barnabasrobotics.com</a></cmd></p>
+<p style="text-align:center"><cmd><a style="color:white" target="_blank" href="https://code.barnabasrobotics.com">https://code.barnabasrobotics.com</a></cmd></p>
 
 #### 6. Upload Code
 
