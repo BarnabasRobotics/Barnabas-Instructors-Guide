@@ -82,6 +82,16 @@ Your computer is now ready to access your IDE.  That was easy, right?  Type the 
 
    <img src="fig-4_5.png" style="zoom:60%;" class="image center" />
 
+   
+
+   **Troubleshooting:** If you don't see any device show up, try installing the USB driver and trying again.  After installing the USB driver, you may need to unplug and re-plug the board and also refresh the website.
+
+   - [Windows USB Driver](https://cdn.sparkfun.com/assets/learn_tutorials/8/4/4/CH341SER.EXE)
+
+   - [Mac USB Driver](https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver/raw/master/CH34x_Install_V1.5.pkg)
+
+   
+
 7. If you see a green check mark message, you have successfully uploaded! If you get an error, check your connections and try again. 
 
    <img src="check.jpg" style="zoom:60%;" class="image center" />
