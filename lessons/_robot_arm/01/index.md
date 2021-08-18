@@ -45,9 +45,41 @@ In this lesson we will assemble the mechanical parts of our robot arm
 
 #### 6. Build Right (Extend) Motor Assembly
 
+Assemble right (extend) motor mount using:
+
+- 1 x Servo Motor
+- 2 x M3x10 Screws
+- 2 x Wood Pieces
+
+<img src="extend (7).jpg" style="zoom:15%;" class="image center" />
+
+|                           Top View                           |                         Bottom View                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="extend (5).jpg" style="zoom:75%;" class="image center" /> | <img src="extend (6).jpg" style="zoom:75%;" class="image center" /> |
+
+Assemble large servo arm using:
+
+- 2 x Servo Screws
+- 1 x Servo Horn
+- 1 x Wood Piece
+
+|                           Top View                           |                         Bottom View                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="extend (4).jpg" style="zoom:75%;" class="image center" /> | <img src="extend (3).jpg" style="zoom:75%;" class="image center" /> |
+
+Attach large servo arm using:
+
+- 1 x Servo Screw
+
+Note that the servo motor can only move 180 degrees.  Make sure that the arm can turn fully between the two positions shown below before fastening the screw.
+
+|                          Position 1                          |                          Position 2                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="extend (1).jpg" style="zoom:75%;" class="image center" /> | <img src="extend (2).jpg" style="zoom:75%;" class="image center" /> |
+
 #### 7. Build Main Arm Support
 
-Assembly main arm support using:
+Assemble main arm support using:
 
 - 1 x M3x10 Screw
 - 1 x M3 Nut (Nylon Lock)
