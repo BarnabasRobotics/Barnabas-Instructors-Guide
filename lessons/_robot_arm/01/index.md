@@ -63,8 +63,9 @@ In this lesson we will assemble the mechanical parts of our robot arm
 
 <img src="claw2 (9).jpg" style="zoom:50%;" class="image center" />
 
+|                            Side 1                            |                            Side 2                            |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="claw2 (8).jpg" style="zoom:75%;" class="image center" /> | <img src="claw2 (10).jpg" style="zoom:50%;" class="image center" /> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 #### 12. Attach Pinchers
 
@@ -86,8 +87,9 @@ You'll need to be careful to slide the wood piece in between the left pincher as
 
 <img src="claw2 (6).jpg" style="zoom:50%;" class="image center" />
 
+|                           Top View                           |                         Bottom View                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="claw3 (1).jpg" style="zoom:50%;" class="image center" /> | <img src="claw3 (2).jpg" style="zoom:50%;" class="image center" /> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 ##### Attach right pincher using:
 
@@ -98,8 +100,9 @@ When inserting the right pincher, align the gears so that the claw can open and 
 
 Don't tighten the screw all the way.  Be careful to make sure that the screw does not protrude past the wood surface (see below in the red circle)  If it does, the claw will get stuck when the drive motor tries to move it.
 
+|                           Top View                           |              Make sure screw does not protrude!              |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="claw2 (3).jpg" style="zoom:50%;" class="image center" /> | <img src="claw2 (5).jpg" style="zoom:50%;" class="image center" /> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 #### 13. Build Claw Drive Gear Assembly
 
@@ -110,8 +113,11 @@ Don't tighten the screw all the way.  Be careful to make sure that the screw doe
 - 1 x Servo Screw
 - 2 x Wood Pieces
 
+|                           Top View                           |                         Bottom View                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="claw2 (11).jpg" style="zoom:50%;" class="image center" /> | <img src="claw2 (12).jpg" style="zoom:50%;" class="image center" /> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+
+
 
 #### 14. Attach Claw Drive Gear Assembly
 
@@ -121,8 +127,9 @@ Don't tighten the screw all the way.  Be careful to make sure that the screw doe
 
 Note that the servo motor can only move 180 degrees.  Make sure that the claw can open and close (see positions below) before tightening the screw.
 
+|                       Closed Alignment                       |                        Open Alignment                        |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="claw2 (2).jpg" style="zoom:50%;" class="image center" /> | <img src="claw2 (1).jpg" style="zoom:50%;" class="image center" /> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 #### 15. Attach Claw Assembly
 
@@ -133,12 +140,9 @@ Note that the servo motor can only move 180 degrees.  Make sure that the claw ca
 
 Be sure to use wood washers on the sides.  Do no overtighten.
 
-
-
+|                          Top Screw                           |                       Side Screws (2x)                       |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="claw (1).jpg" style="zoom:57%;" class="image center" /> | <img src="claw (2).jpg" style="zoom:50%;" class="image center" /> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-
-
 
 
 
