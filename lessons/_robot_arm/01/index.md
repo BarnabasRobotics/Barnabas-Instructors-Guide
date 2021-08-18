@@ -53,9 +53,26 @@ In this lesson we will assemble the mechanical parts of our robot arm
 
 #### 10. Attach Secondary Arm
 
+Attach secondary arm using:
+
+- 5 x M3x6 Screws
+- 2 x M3x10 Screws
+- 1 x Nylon Lock Nut
+- 7 x Wood Pieces
+
+Do not overtighten.  Make sure that the parts can freely move very easily.  If they are too tight, the motors will not be able to move the arm.
+
+|                            Side 1                            |                            Side 2                            |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="secondary (2).jpg" style="zoom:75%;" class="image center" /> | <img src="secondary (3).jpg" style="zoom:75%;" class="image center" /> |
+
+Use the supplied wrench to tighten the lock nut.  Do not overtighten.
+
+<img src="secondary (1).jpg" style="zoom:15%;" class="image center" />
+
 #### 11. Build Claw Motor Assembly
 
-##### Build claw motor assembly using:
+Build claw motor assembly using:
 
 - 1 x Servo Motor
 - 4 x Wood Pieces
@@ -69,7 +86,7 @@ In this lesson we will assemble the mechanical parts of our robot arm
 
 #### 12. Attach Pinchers
 
-##### Build left pincher assembly using:
+Build left pincher assembly using:
 
 - 1 x M3x12 Screw
 - 3 x Wood Pieces
@@ -78,7 +95,7 @@ This pincher will be driven by the claw drive gear.
 
 <img src="claw2 (7).jpg" style="zoom:15%;" class="image center" />
 
-##### Attach left pincher using:
+Attach left pincher using:
 
 - 1 x M3x12 Screw
 - 1 x Wood piece
@@ -91,7 +108,7 @@ You'll need to be careful to slide the wood piece in between the left pincher as
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="claw3 (1).jpg" style="zoom:50%;" class="image center" /> | <img src="claw3 (2).jpg" style="zoom:50%;" class="image center" /> |
 
-##### Attach right pincher using:
+Attach right pincher using:
 
 - 1 x M3x10 Screw
 - 1 x Wood Piece
@@ -106,7 +123,7 @@ Don't tighten the screw all the way.  Be careful to make sure that the screw doe
 
 #### 13. Build Claw Drive Gear Assembly
 
-##### Assemble claw drive gear using:
+Assemble claw drive gear using:
 
 - 2 x M3x6 Screws
 - 1 x Servo Horn
@@ -121,7 +138,7 @@ Don't tighten the screw all the way.  Be careful to make sure that the screw doe
 
 #### 14. Attach Claw Drive Gear Assembly
 
-##### Attach claw drive gear to servo using:
+Attach claw drive gear to servo using:
 
 - 1 x Servo Screw
 
@@ -133,7 +150,7 @@ Note that the servo motor can only move 180 degrees.  Make sure that the claw ca
 
 #### 15. Attach Claw Assembly
 
-##### Attach claw to the arm using:
+Attach claw to the arm using:
 
 - 1 x M3x6 Screw (top)
 - 2 x M3x12 Screws (sides)
