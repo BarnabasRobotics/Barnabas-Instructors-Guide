@@ -43,6 +43,38 @@ In this lesson we will assemble the mechanical parts of our robot arm
 
 #### 5. Build Left (Lift) Motor Assembly
 
+Assemble left (lift) motor mount using:
+
+- 1 x Servo Motor
+- 2 x M3x10 Screws
+- 2 x Wood Pieces
+
+<img src="lift (6).jpg" style="zoom:15%;" class="image center" />
+
+|                           Top View                           |                         Bottom View                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="lift (4).jpg" style="zoom:75%;" class="image center" /> | <img src="lift (5).jpg" style="zoom:75%;" class="image center" /> |
+
+Assemble small servo arm using:
+
+- 2 x Servo Screws
+- 1 x Servo Horn
+- 1 x Wood Piece
+
+|                           Top View                           |                         Bottom View                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="lift (7).jpg" style="zoom:75%;" class="image center" /> | <img src="lift1.jpg" style="zoom:75%;" class="image center" /> |
+
+Attach small servo arm using:
+
+- 1 x Servo Screw
+
+Note that the servo motor can only move 180 degrees.  Make sure that the arm can turn fully between the two positions shown below before fastening the screw.
+
+|                          Position 1                          |                          Position 2                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="lift (3).jpg" style="zoom:75%;" class="image center" /> | <img src="lift (2).jpg" style="zoom:75%;" class="image center" /> |
+
 #### 6. Build Right (Extend) Motor Assembly
 
 Assemble right (extend) motor mount using:
