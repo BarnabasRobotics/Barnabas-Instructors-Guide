@@ -23,9 +23,9 @@ First let's mount the Arduino compatible board to the robot arm.
 
 Attach 4 x spacers to the bottom of the board using 4 x screws.  The screws will go through the bottom of the board.
 
-<img src="1 (4).jpg" style="zoom:40%;" class="image center" />
-
-<img src="1 (3).jpg" style="zoom:40%;" class="image center" />
+|                          Side View                           |                           Top View                           |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="1 (4).jpg" style="zoom:55%;" class="image center" /> | <img src="1 (3).jpg" style="zoom:40%;" class="image center" /> |
 
 Next, mount the Arduino-Compatible board to the spacers using 4 x screws.  The spacers should match the mounting holes on the board exactly.  If they do not, double check the holes that you used for your spacers.
 
