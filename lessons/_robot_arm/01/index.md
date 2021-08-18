@@ -51,13 +51,21 @@ In this lesson we will assemble the mechanical parts of our robot arm
 
 #### 9. Attach Main Arm
 
+Attach main arm using:
+
+- 2 x M3x12 Screws
+- 2 x M3 Nuts (Regular)
+- 1 x Wood Piece
+
+<img src="main.jpg" style="zoom:15%;" class="image center" />
+
 #### 10. Attach Secondary Arm
 
 Attach secondary arm using:
 
 - 5 x M3x6 Screws
 - 2 x M3x10 Screws
-- 1 x Nylon Lock Nut
+- 1 x M3 Nut (Nylon Lock)
 - 7 x Wood Pieces
 
 Do not overtighten.  Make sure that the parts can freely move very easily.  If they are too tight, the motors will not be able to move the arm.
