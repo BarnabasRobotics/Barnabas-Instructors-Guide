@@ -47,9 +47,23 @@ In this lesson we will assemble the mechanical parts of our robot arm
 
 #### 7. Build Main Arm Support
 
+Assembly main arm support using:
+
+- 1 x M3x10 Screw
+- 1 x M3 Nut (Nylon Lock)
+- 2 x Wood Pieces
+
+Use supplied wrench to hold the lock nut while you tighten the screw.  Do not overtighten.  Make sure that the joint can move easily.
+
+<img src="support.jpg" style="zoom:15%;" class="image center" />
+
+|                           Top View                           |                         Bottom View                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="support (1).jpg" style="zoom:75%;" class="image center" /> | <img src="support (2).jpg" style="zoom:75%;" class="image center" /> |
+
 #### 8. Assemble Main Body
 
-Assemble Main Body Using:
+Assemble main body using:
 
 <img src="main body (9).jpg" style="zoom:15%;" class="image center" />
 
