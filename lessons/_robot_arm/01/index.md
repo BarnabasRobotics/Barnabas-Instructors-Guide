@@ -39,7 +39,7 @@ In this lesson we will assemble the mechanical parts of our robot arm
 
 #### 3. Attach Base Motor To Base
 
-#### 4. Attach Base Motor Plate
+#### 4. Build Main Body Bottom Plate
 
 #### 5. Build Left (Lift) Motor Assembly
 
@@ -49,7 +49,49 @@ In this lesson we will assemble the mechanical parts of our robot arm
 
 #### 8. Assemble Main Body
 
-#### 9. Attach Main Arm
+Assemble Main Body Using:
+
+<img src="main body (9).jpg" style="zoom:15%;" class="image center" />
+
+- Left (Lift) Motor Assembly
+- Right (Extend) Motor Assembly
+- Main Body Bottom Plate
+- Main Arm Support
+- 2 x Wood Pieces (Joiners)
+- 4 x M3x12 Screws
+- 4 x M3 Nuts (Regular)
+
+Use the two joiners to join all the assemblies together.  
+
+To do this, put all the sides together like a 3-D jigsaw puzzle.  After that, you can fasten the joints by sliding nuts into the appropriate slots and screwing in the M3x12 screws.  As the screws tighten, they will fasten the joints.  
+
+Note: It may be easier to join two pieces together at a time rather than all of them at the same time.
+
+|                          Front View                          |                          Side View                           |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="main body (1).jpg" style="zoom:75%;" class="image center" /> | <img src="main body (8).jpg" style="zoom:75%;" class="image center" /> |
+
+|                          Front View                          |                          Back View                           |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="main body (6).jpg" style="zoom:75%;" class="image center" /> | <img src="main body (7).jpg" style="zoom:75%;" class="image center" /> |
+
+#### 9. Attach Main Body To Motor
+
+Attach main body using to base servo motor using:
+
+- 1 x Servo Screw
+
+Note that the servo motor can only move 180 degrees.  Make sure that the body can turn fully between the two positions shown below before fastening the screw.
+
+|                      Confirm Position 1                      |                      Confirm Position 2                      |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="main body (4).jpg" style="zoom:75%;" class="image center" /> | <img src="main body (5).jpg" style="zoom:75%;" class="image center" /> |
+
+|                           Screw In                           |                           Finished                           |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="main body (2).jpg" style="zoom:75%;" class="image center" /> | <img src="main body (3).jpg" style="zoom:75%;" class="image center" /> |
+
+#### 10. Attach Main Arm
 
 Attach main arm using:
 
@@ -59,7 +101,7 @@ Attach main arm using:
 
 <img src="main.jpg" style="zoom:15%;" class="image center" />
 
-#### 10. Attach Secondary Arm
+#### 11. Attach Secondary Arm
 
 Attach secondary arm using:
 
@@ -78,7 +120,7 @@ Use the supplied wrench to tighten the lock nut.  Do not overtighten.
 
 <img src="secondary (1).jpg" style="zoom:15%;" class="image center" />
 
-#### 11. Build Claw Motor Assembly
+#### 12. Build Claw Motor Assembly
 
 Build claw motor assembly using:
 
@@ -92,7 +134,7 @@ Build claw motor assembly using:
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="claw2 (8).jpg" style="zoom:75%;" class="image center" /> | <img src="claw2 (10).jpg" style="zoom:50%;" class="image center" /> |
 
-#### 12. Attach Pinchers
+#### 13. Attach Pinchers
 
 Build left pincher assembly using:
 
@@ -129,7 +171,7 @@ Don't tighten the screw all the way.  Be careful to make sure that the screw doe
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="claw2 (3).jpg" style="zoom:50%;" class="image center" /> | <img src="claw2 (5).jpg" style="zoom:50%;" class="image center" /> |
 
-#### 13. Build Claw Drive Gear Assembly
+#### 14. Build Claw Drive Gear Assembly
 
 Assemble claw drive gear using:
 
@@ -142,9 +184,7 @@ Assemble claw drive gear using:
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="claw2 (11).jpg" style="zoom:50%;" class="image center" /> | <img src="claw2 (12).jpg" style="zoom:50%;" class="image center" /> |
 
-
-
-#### 14. Attach Claw Drive Gear Assembly
+#### 15. Attach Claw Drive Gear Assembly
 
 Attach claw drive gear to servo using:
 
@@ -156,7 +196,7 @@ Note that the servo motor can only move 180 degrees.  Make sure that the claw ca
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="claw2 (2).jpg" style="zoom:50%;" class="image center" /> | <img src="claw2 (1).jpg" style="zoom:50%;" class="image center" /> |
 
-#### 15. Attach Claw Assembly
+#### 16. Attach Claw Assembly
 
 Attach claw to the arm using:
 
