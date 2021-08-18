@@ -29,13 +29,13 @@ Attach 4 x spacers to the bottom of the board using 4 x screws.  The screws will
 
 Next, mount the Arduino-Compatible board to the spacers using 4 x screws.  The spacers should match the mounting holes on the board exactly.  If they do not, double check the holes that you used for your spacers.
 
-<img src="1 (2).jpg" style="zoom:40%;" class="image center" />
+<img src="1 (2).jpg" style="zoom:15%;" class="image center" />
 
 ### Attach The Daughter Board
 
 Take the daughter board and stick it on top of the Arduino Uno-Compatible board.  It should look like the picture below once completed.  Make sure to match up the pins.  They should align exactly.
 
-<img src="1 (1).jpg" style="zoom:40%;" class="image center" />
+<img src="1 (1).jpg" style="zoom:15%;" class="image center" />
 
 ### Wire The Motors
 

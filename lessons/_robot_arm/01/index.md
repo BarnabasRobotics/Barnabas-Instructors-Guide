@@ -61,7 +61,7 @@ In this lesson we will assemble the mechanical parts of our robot arm
 - 4 x Wood Pieces
 - 4 x M3x10 Screws
 
-<img src="claw2 (9).jpg" style="zoom:50%;" class="image center" />
+<img src="claw2 (9).jpg" style="zoom:15%;" class="image center" />
 
 |                            Side 1                            |                            Side 2                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -76,7 +76,7 @@ In this lesson we will assemble the mechanical parts of our robot arm
 
 This pincher will be driven by the claw drive gear.
 
-<img src="claw2 (7).jpg" style="zoom:50%;" class="image center" />
+<img src="claw2 (7).jpg" style="zoom:15%;" class="image center" />
 
 ##### Attach left pincher using:
 
@@ -85,7 +85,7 @@ This pincher will be driven by the claw drive gear.
 
 You'll need to be careful to slide the wood piece in between the left pincher assembly like a sandwich and then align the holes so that the screw can go through all of the pieces.
 
-<img src="claw2 (6).jpg" style="zoom:50%;" class="image center" />
+<img src="claw2 (6).jpg" style="zoom:10%;" class="image center" />
 
 |                           Top View                           |                         Bottom View                          |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
