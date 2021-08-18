@@ -41,6 +41,16 @@ In this lesson we will assemble the mechanical parts of our robot arm
 
 #### 4. Build Main Body Bottom Plate
 
+Assemble main body bottom plate using:
+
+- 1 x Servo Horn
+- 2 x Servo Screws
+- 1 x Wood Piece
+
+|                           Top View                           |                         Bottom View                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="bot (2).jpg" style="zoom:75%;" class="image center" /> | <img src="bot (1).jpg" style="zoom:75%;" class="image center" /> |
+
 #### 5. Build Left (Lift) Motor Assembly
 
 Assemble left (lift) motor mount using:
