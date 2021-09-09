@@ -26,7 +26,7 @@ In this section we'll be setting up your computer for coding.
 
 ### Barnabas Web Coding
 
-We have an online coding platform that allows you to program your Arduino-based robot controller without installing new software.  Our online site runs on Google Chrome or Microsoft Edge browsers so you'll need to install either one on your PC or Mac if you don't have it already.  Chromebooks come with Chrome browser built in.  
+We have an online coding platform that allows you to program your Arduino-based robot controller without installing new software.  Our online site runs on Google Chrome or Microsoft Edge browsers, so you'll need to install either one on your PC or Mac if you don't have it already.  Chromebooks come with Chrome browser built-in.  
 
 ### Browser Setup
 
@@ -34,13 +34,19 @@ We have an online coding platform that allows you to program your Arduino-based 
 
 #### 2. Copy and paste this text into your address bar.  
 
+Note: This step may not be necessary for newer versions of Chrome/Edge.
+
 <p style="text-align:center"><cmd>chrome://flags/#enable-experimental-web-platform-features</cmd></p>
 
 #### 3. Select “Enabled” on the “Experimental Web Platform features”
 
+Note: This step may not be necessary for newer versions of Chrome/Edge.
+
 <img src="fig-6_2.png" alt="fig-6_2" style="zoom:40%;" class="image center" />
 
 #### 4. Click “Relaunch”
+
+Note: This step may not be necessary for newer versions of Chrome/Edge.
 
 #### 5. Visit The Coding Site
 

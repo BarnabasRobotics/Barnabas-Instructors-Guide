@@ -5,6 +5,8 @@ suggested_time: 30-60 minutes
 videos:
     - link: https://youtu.be/F_K7G25mS4k
       text: Robot Arm Demo (Dial)
+    - link: https://youtu.be/RPg-ayzt8RA
+      text: Wood Robot Arm Demo (Dial)
     - link: https://youtu.be/Gxu7uIzHSiM
       text: Robot Arm Demo (Autonomous)
 ---
@@ -14,6 +16,8 @@ videos:
 Program your robot arm in dial mode so that you can control all 4 axes using the dial.  Simply copy the code and upload it using the Arduino IDE.
 
 {% include youtube.html id='F_K7G25mS4k' %}
+
+{% include youtube.html id='RPg-ayzt8RA' %}
 
 #### Sample Code
 
