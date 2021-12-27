@@ -69,14 +69,16 @@ GND and VCC will provide the power to the driver board.  Connect VCC to 5V on th
 
 The other four pins can be separated into pairs: (A-IA, A-IB) and (B-IA, B-IB). Each of these pairs of pins are used to control one motor.  (A-IA, A-IB) control Motor A and (B-IA, B-IB) control Motor B.
 
+**Note:** Some driver boards have the Motor B pain labels as (B-1A, B-2A). 
+
 Go ahead and make the follow connections.
 
 | DC Driver Board | Arduino Uno Compatible Board |
 | :-------------: | :--------------------------: |
-|      A-IA       |            Pin 8             |
-|      A-IB       |            Pin 11            |
-|      B-IA       |            Pin 10            |
-|      B-IB       |            Pin 12            |
+|      A-1A       |            Pin 8             |
+|      A-1B       |            Pin 11            |
+|      B-1A       |            Pin 10            |
+| B-1B  (or B-2A) |            Pin 12            |
 
 ### DC Driver Board Control
 
@@ -103,12 +105,12 @@ See below for a control table for Motor B.  Notice that everything is the same e
 
 <p align=center>Motor B Control Table</p>
 
-| B-IA Signal (Pin 10) | B-IB Signal (Pin 12) | DC Motor Movement                |
-| :------------------: | :------------------: | -------------------------------- |
-|         Low          |         Low          | Stop Slowly (Deceleration Stop)  |
-|         Low          |         High         | Turn One Way                     |
-|         High         |         Low          | Turn The Other Way               |
-|         High         |         High         | Stop Right Away (Emergency Stop) |
+| B-IA Signal (Pin 10) | B-IB (or B-2A) Signal (Pin 12) | DC Motor Movement                |
+| :------------------: | :----------------------------: | -------------------------------- |
+|         Low          |              Low               | Stop Slowly (Deceleration Stop)  |
+|         Low          |              High              | Turn One Way                     |
+|         High         |              Low               | Turn The Other Way               |
+|         High         |              High              | Stop Right Away (Emergency Stop) |
 
 
 
