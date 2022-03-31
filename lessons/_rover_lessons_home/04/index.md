@@ -54,7 +54,7 @@ Before starting:
 
 #### Enable Experimental Web Platform features
 
-Your Chromebook has special secret features that we need to enable so that it will be able to communicate with our Barnabas Noggin.  We’ll go through how to enable this cool feature.
+Your Chromebook has special secret features that we need to enable so that it will be able to communicate with your Uno.  We’ll go through how to enable this cool feature.
 
 #### 1. Open your Google Chrome browser
 
@@ -76,7 +76,7 @@ Your Chromebook is now ready.  That was easy, right?  Type the link below (or co
 
 #### 6. Upload Code
 
-1. Connect your Uno to your Chromebook using a USB cable.  A red light should turn on on your Barnabas Noggin.
+1. Connect your Uno to your Chromebook using a USB cable.  A red light should turn on on your Uno board.
 
 2. Set "Select a board" to "Uno"
 
@@ -112,7 +112,7 @@ Before starting:
 
 #### 2. Upload Code
 
-Learn how to connect your Noggin to your computer and upload code by watching this video.
+Learn how to connect your Uno board to your computer and upload code by watching this video.
 
 {% include youtube.html id='3CW-bDeKVi4' %}
 
@@ -139,6 +139,6 @@ Before starting:
 
 #### 2. Upload Code
 
-Learn how to connect your Noggin to your computer and upload code by watching this video.
+Learn how to connect your Uno to your computer and upload code by watching this video.
 
 {% include youtube.html id='gJliBVUUOKk' %}
