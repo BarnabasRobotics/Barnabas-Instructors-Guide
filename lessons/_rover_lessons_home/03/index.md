@@ -134,9 +134,7 @@ Keeping this behavior in mind, we can use the button to control the opening and 
 
 <img src="Push-button-Pinout.gif" style="zoom:100%;" class="image center" />
 
-<p align="center">https://components101.com/switches/push-button</p>
-
-### 
+<p align="center">https://components101.com/switches/push-button</p> 
 
 ### A Simple Button Circuit
 
