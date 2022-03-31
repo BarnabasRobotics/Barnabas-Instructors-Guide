@@ -41,7 +41,7 @@ The DC driver board can be thought of as the muscle that gives the DC motor the 
 
 The wiring diagram below shows the connections that we need to make between our Uno and our driver board.
 
-<img src="fig-6_1.png" alt="fig-6_1" style="zoom:60%;" class="image center" />
+<img src="fig-6_1A.png" alt="fig-6_1A" style="zoom:60%;" class="image center" />
 
 #### Wire DC Motors
 
@@ -57,19 +57,19 @@ If the screws aren't loosened yet, go ahead and loosen all four screws so that w
 
 Now wire the DC motors!
 
-Make sure that the pair of wires from DC Motor 1 is connected to the two ports labeled Motor A and the pair of wires from DC Motor 2 is connected to the two ports labeled Motor B.
+Make sure that the pair of wires from DC Motor A is connected to the two ports labeled Motor A and the pair of wires from DC Motor B is connected to the two ports labeled Motor B.
 
 #### Wire Control Signals
 
 Now we need to connect the motor drive board to the Uno board.  
 
-Find the 6 pin headers on the other side of the driver board.  They are labeled from left to right: B-IA, B-IB, GND, VCC, A-IA, A-IB. 
+Find the 6 pin headers on the other side of the driver board.  They are labeled from left to right: B-1A, B-1B, GND, VCC, A-1A, A-1B. 
 
 GND and VCC will provide the power to the driver board.  Connect VCC to 5V on the Uno and GND to GND on the Uno.
 
-The other four pins can be separated into pairs: (A-IA, A-IB) and (B-IA, B-IB). Each of these pairs of pins are used to control one motor.  (A-IA, A-IB) control Motor A and (B-IA, B-IB) control Motor B.
+The other four pins can be separated into pairs: (A-1A, A-1B) and (B-1A, B-1B). Each of these pairs of pins are used to control one motor.  (A-1A, A-1B) control Motor A and (B-1A, B-1B) control Motor B.
 
-**Note:** Some driver boards have the Motor B pain labels as (B-1A, B-2A). 
+**Note:** Some driver boards have the Motor B control pin labels as (B-1A, B-2A) instead of (B-1A, B-1B). 
 
 Go ahead and make the follow connections.
 
@@ -84,11 +84,11 @@ Go ahead and make the follow connections.
 
 Before we begin to program, let's first examine how the Uno Board will use pins 8, 11, 10 and 12 to control the motors.  The Uno will be able to change the status of these pins between LOW and HIGH, which basically turns the power on and off on those pins.  One way to think about it is that you have 4 light switches that you can turn on and off.  If you have them all on, all off, one on and three off, etc.  All these different combinations will cause your DC motors to turn on, turn off, move backward, move forward, etc.
 
-The table below describes what happens to Motor A as you control A-IA (Pin 8) and A-IB (Pin 11).  
+The table below describes what happens to Motor A as you control A-1A (Pin 8) and A-1B (Pin 11).  
 
 <p align=center>Motor A Control Table</p>
 
-| A-IA Signal (Pin 8) | A-IB Signal (Pin 11) | DC Motor Movement                |
+| A-1A Signal (Pin 8) | A-1B Signal (Pin 11) | DC Motor Movement                |
 | :-----------------: | :------------------: | -------------------------------- |
 |         Low         |         Low          | Stop Slowly (Deceleration Stop)  |
 |         Low         |         High         | Turn One Way                     |
@@ -101,11 +101,11 @@ A few notes:
 - If both signals are high, the motor stops right away.  This is called an **emergency stop**.  You would want to do this if you're about to crash and you want to stop immediately.  The downside of this type of stop is that you cause stress to your car.  Imagine you're in a car and you press on the brake fully all of a sudden.  Your body feel some stress!  Your robot will feel this same kind of stress and it can wear down over time.
 - If both signals are low, the motor stops slowly.  This is called a **deceleration stop**.  It is a lot smoother and is the preferred way to stop your motor.  Unlike the emergency stop, it provides less stress to your robot.
 
-See below for a control table for Motor B.  Notice that everything is the same except we're looking at B-IB and B-IB signals.
+See below for a control table for Motor B.  Notice that everything is the same except we're looking at B-1B and B-1B signals.
 
 <p align=center>Motor B Control Table</p>
 
-| B-IA Signal (Pin 10) | B-IB (or B-2A) Signal (Pin 12) | DC Motor Movement                |
+| B-1A Signal (Pin 10) | B-1B (or B-2A) Signal (Pin 12) | DC Motor Movement                |
 | :------------------: | :----------------------------: | -------------------------------- |
 |         Low          |              Low               | Stop Slowly (Deceleration Stop)  |
 |         Low          |              High              | Turn One Way                     |
