@@ -88,6 +88,8 @@ It's time to start coding!  Go ahead and open your IDE
 
 {% include badge.html type='suggestion' content='If you need a refresher on the IDE, go to: <a href="../04">Setting Up Your Computer</a>.' %}
 
+<div markdown="1">
+
 ### Setup And Loop
 
 In our code, we're going to have to main functions - setup() and loop().  The code inside setup runs only one time when your robot's brain turns on.  The code inside loop() will run after the setup code runs and then continue to run that code until the robot is turned off or runs out of battery.
@@ -117,7 +119,7 @@ In your IDE, your code will be made up of a series of blocks that snap together 
 
 Note: On code.barnabasrobotics.com, the "LOOP do:" is inside a "Program block" (see above).
 
-The first block to introduce is called the “LOOP do.”  The “LOOP do” will house all of the other blocks used in your code.  It is like the outside cover of a book, which houses all of its pages.   The computer reads the pages (i.e. code blocks) within the “LOOP do” block from the beginning to the end.  When it gets to the end, it starts back at the beginning and begins again.  This process repeats forever as long as your Noggin has power.
+The first block to introduce is called the “LOOP do.”  The “LOOP do” will house all of the other blocks used in your code.  It is like the outside cover of a book, which houses all of its pages.   The computer reads the pages (i.e. code blocks) within the “LOOP do” block from the beginning to the end.  When it gets to the end, it starts back at the beginning and begins again.  This process repeats forever as long as your Uno has power.
 
 Note: You can only have one “LOOP do” in your code.
 
@@ -221,7 +223,7 @@ void loop()
 
 We are now ready to upload our code to our robot.  Before doing so, let’s check a few things.
 
-- [ ] Confirm power.  Make sure that the USB cable is connecting your Noggin to your computer.  A red light on your noggin should be on.
+- [ ] Confirm power.  Make sure that the USB cable is connecting your Uno to your computer.  A red light on your Uno should be on.
 - [ ] Set your Board and Port.
 - [ ] Click upload.
 
