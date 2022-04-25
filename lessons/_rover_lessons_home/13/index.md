@@ -7,6 +7,9 @@ suggested_time: 60-75 minutes
 videos:
     - link: https://youtu.be/xmdW76WxKyo?start=13
       text: Line & Light Following Demo With Barnabas Rover
+    - link: https://youtu.be/S2HLdrF7zZU
+      text: Control Rover with one sensor
+    
 ---
 
 
@@ -25,6 +28,12 @@ Before we get started, let's make sure that we have all the parts.
 ### Demo Video
 
 {% include youtube.html id='xmdW76WxKyo?start=13' %}
+
+### Introduction To Photoresistors Video
+
+{% include youtube.html id='S2HLdrF7zZU' %}
+
+Video on how to wire and code a single photoresistor to control your robot
 
 ### The Photoresistor
 
