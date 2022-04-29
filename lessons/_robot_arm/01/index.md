@@ -11,7 +11,7 @@ videos:
 
 In this project you will build and code a robot arm!
 
-|                       Acrylic Version                        |                         Wood Version                         |
+|              Acrylic Version (Black or Yellow)               |                             Wood                             |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="robotarm.jpg" style="zoom:75%;" class="image center" /> | <img src="wood2.jpg" style="zoom:75%;" class="image center" /> |
 
@@ -31,11 +31,7 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 
 In this lesson we will assemble the mechanical parts of our robot arm
 
-### Arm Assembly (Acrylic Model)
-
-#### [Follow PDF guide](https://www.barnabasrobotics.com/wp-content/uploads/2021/02/Barnabas-Robot-Arm-Assembly-Instructions.pdf)
-
-### Arm Assembly (Wood Model)
+### Arm Assembly (Same for Wood and Acrylic Model)
 
 #### 1. Build Base Motor Assembly
 
