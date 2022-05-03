@@ -9,6 +9,9 @@ videos:
       text: Line & Light Following Demo With Barnabas Rover
     - link: https://youtu.be/S2HLdrF7zZU
       text: Control Rover with one sensor
+    - link: https://youtu.be/e_tf5DuSSrQ
+      text: Control Rover with two sensors
+
     
 ---
 
@@ -42,6 +45,12 @@ Video on how to wire and code a single photoresistor to control your robot
 The photoresistor is a resistor that changes it's resistance value based on the amount of light that it sees.  We can use this characteristic to detect the intensity of light! 
 
 The photoresistor has two legs,and both of them are the same (i.e. it doesn't matter which way you connect it.)
+
+### Using Two Photo Photoresistors
+
+{% include youtube.html id='e_tf5DuSSrQ' %}
+
+Video on how to wire and code two photoresistors to control your robot
 
 ### Wiring The Photoresistors
 
