@@ -6,6 +6,8 @@ title: Lesson 12 &middot; Line Following
 suggested_time: 60-75 minutes  
 
 videos:
+    - link: https://youtu.be/MGxP-yhvOD8
+      text: How to wire and code a single IR sensor module
     - link: https://youtu.be/xmdW76WxKyo
       text: Line & Light Following Demo With Barnabas Rover
 ---
@@ -46,6 +48,14 @@ Use two modules, and you now have the ability to cause the robot to follow a lin
 Mount your modules to the front bumper using double-stick foam.
 
 <img src="rover (3).png" alt="fig-3_4" style="zoom:40%;" class="image center" />
+
+<div markdown = "1">
+
+### Video Lesson - How to wire and code a single IR module
+
+{% include youtube.html id='MGxP-yhvOD8' %}
+
+</div>{:.text-based}
 
 ### Wire Your IR Modules
 
