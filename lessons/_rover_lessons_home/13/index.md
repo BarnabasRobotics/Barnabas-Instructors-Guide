@@ -46,7 +46,7 @@ The photoresistor is a resistor that changes it's resistance value based on the 
 
 The photoresistor has two legs,and both of them are the same (i.e. it doesn't matter which way you connect it.)
 
-### Using Two Photo Photoresistors
+### Using Two Photoresistors
 
 {% include youtube.html id='e_tf5DuSSrQ' %}
 
