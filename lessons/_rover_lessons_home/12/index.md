@@ -7,7 +7,9 @@ suggested_time: 60-75 minutes
 
 videos:
     - link: https://youtu.be/MGxP-yhvOD8
-      text: How to wire and code a single IR sensor module
+      text: How to wire and code a single IR sensor module (Text-code)
+    - link: https://youtu.be/6JP4tyrF_q8
+      text: How to code line following (Text-code)
     - link: https://youtu.be/xmdW76WxKyo
       text: Line & Light Following Demo With Barnabas Rover
 ---
@@ -69,13 +71,22 @@ Let's wire the IR modules to your Arduino-Compatible board using the following c
 | ----------- | ---------------------------- |
 | VCC         | 5V                           |
 | GND         | GND                          |
-| OUT         | 5                            |
+| OUT         | 5 (or 12)                    |
 
 | Right Sensor | Arduino-Uno Compatible Board |
 | ------------ | ---------------------------- |
 | VCC          | 5V                           |
 | GND          | GND                          |
 | OUT          | 6                            |
+
+
+<div markdown = "1">
+
+### Video Lesson - How to code line following
+
+{% include youtube.html id='6JP4tyrF_q8' %}
+
+</div>{:.text-based}
 
 ### Coding Your IR Modules
 
