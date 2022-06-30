@@ -51,14 +51,13 @@ Mount your modules to the front bumper using double-stick foam.
 
 <img src="rover (3).png" alt="fig-3_4" style="zoom:40%;" class="image center" />
 
-<div markdown = "1">
 **Note:** Newer versions include 2 x 90 degree angle mounts to ease mounting.  See photos below for mounting instructions.
 
 | <img src="90mount (3).jpg" alt="fig-3_4" style="zoom:40%;" class="image center" /> | <img src="90mount (4).jpg" alt="fig-3_4" style="zoom:40%;" class="image center" /> |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <img src="90mount (1).jpg" alt="fig-3_4" style="zoom:40%;" class="image center" /> | <img src="90mount (2).jpg" alt="fig-3_4" style="zoom:40%;" class="image center" /> |
 
-
+<div markdown = "1">
 
 ### Video Lesson - How to wire and code a single IR module
 
