@@ -37,6 +37,8 @@ kramdown:
 collections:
   bot_lessons:
     output: true
+  bot_basics:
+    output: true
   bot_lessons_home:
     output: true
   racer_lessons:
