@@ -54,6 +54,23 @@
                     {% endfor %}
             </ul>
         </li>
+
+        {% if page.collection == "bot_basics" %}
+        {% include sidebar/lessonsegment.html %}
+        {% endif %}
+
+        <li>
+
+            <span class="opener"><i class="icon fa-solid fa-traffic-light"></i> Bot Basics </span>
+            <ul>
+                    {% for lesson in site.bot_basics %}
+                    <li><a href="{{ site.baseurl }}{{ lesson.url }}">{{ lesson.title }}</a></li>
+                    {% endfor %}
+            </ul>
+        </li>
+
+
+
         {% if page.collection == "racer_lessons_home"%}
         {% include sidebar/lessonsegment.html %}
         {% endif %}
