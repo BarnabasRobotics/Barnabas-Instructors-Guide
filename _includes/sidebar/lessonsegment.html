@@ -12,6 +12,8 @@
     {% assign this_collection = site.robot_arm %}
 {% elsif page.collection == "tinker_lessons" %}
     {% assign this_collection = site.tinker_lessons %}
+{% elsif page.collection == "bot_basics" %}
+    {% assign this_collection = site.bot_basics %}
 {% endif %}
 
 {% for links in this_collection %}
