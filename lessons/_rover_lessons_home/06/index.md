@@ -1,324 +1,152 @@
 ---
 layout: lesson
-title: Lesson 6 &middot; Wire And Program DC Motors
+title: Lesson 6 &middot; Build Your Car
 
 suggested_time: 60-75 minutes  
 
 videos:
+    - link: https://www.youtube.com/channel/UCnhQ_zZHJToYRvNWkhEYYKA
+      text: How To Assemble 2WD DC Motor Chassis (YIKESHU)
 ---
 
-### What You'll Need
+What You'll Need
 
-Before beginning, make sure you have these items
+Check to make sure that you have all the parts for this lesson before you get started. 
 
+- 1 x 2WD Chassis + Wheels
+- 2 x DC Motors
 - 1 x Arduino Uno Compatible Board
 - 1 x DC Driver Board
-- 1 x Mini Screwdriver
-- 6 x Pin-to-Socket Arduino Wires
+- 1 x Battery Holder
+- 6 x Sticky Foam
 
 ### Overview
 
-In this section we will explore how DC motors are controlled.  Topics covered include:
+In this section we will assemble the car and mount our hardware
 
-- How to wire your servo motors to your Arduino Uno Compatible board
-- How to program your DC motors to to turn on, stop and spin both directions
+### Mount The Motors And Wheels
 
-### DC Motors
+Note: Older versions of the chassis have additional holes in the acrylic.  If you have an older version, watch the [Older Assembly Video](#assembly-video-for-older-chassis) below instead of following these steps.
 
-DC motors are commonly used in car projects because they are able to spin continuously in either direction (like a wheel).  They are pretty easy to turn on and off.  If you give it power, it turns on.  If you disconnect the power, it turns off.  The trickier part is changing the direction that the motor spins, changing its speed and giving the motor enough power so that it can actually spin.  Because of this, we use another piece of hardware that makes working with DC motors a little easier - the DC driver board.
+#### 1. Attach the caster wheel
 
-Find your DC motors (you should have two of them).  Notice that each motor has two wires coming out of it.  These wires will be used to connect your motors to the DC driver board.
+Gather the parts below.
 
-### DC Driver Board
+<img src="1a.jpg" style="zoom:15%;" class="image center" />
 
-<img src="fig-6_0.jpg" alt="fig-6_0" style="zoom:15%;" class="image center" />
+Fasten the 4 x pillars to the acrylic chassis using 4 x short screws.  Fasten each one by one following the pictures below.
 
-The DC driver board can be thought of as the muscle that gives the DC motor the power to move.  Our Uno board, which is the brain, will send signals to the DC driver to move and the DC driver converts the signals into actual movement in the motor.
+<img src="1b.jpg" style="zoom:10%;" class="image center" />
 
-### Wire Your DC Motors
+<img src="1c.jpg" style="zoom:10%;" class="image center" />
 
-#### Wiring Diagram
+<img src="1d.jpg" style="zoom:10%;" class="image center" />
 
-The wiring diagram below shows the connections that we need to make between our Uno and our driver board.
+<img src="1e.jpg" style="zoom:10%;" class="image center" />
 
-<img src="fig-6_1A.png" alt="fig-6_1A" style="zoom:60%;" class="image center" />
+<img src="1f.jpg" style="zoom:10%;" class="image center" />
 
-#### Wire DC Motors
+Flip the chassis over and fasten the caster wheel onto the pillars by lining up the holes and using 4 x short screws.
 
-Let's go ahead and wire your DC Motors to your DC driver!
+<img src="1g.jpg" style="zoom:10%;" class="image center" />
 
-To begin, let's start with the green connectors on the driver board. Looking straight down onto them, you can see four screws (labeled #1).  From the side view you will find four contact ports where you can connect wires (labeled #2).  
+<img src="1h.jpg" style="zoom:10%;" class="image center" />
 
-<img src="fig-6_2.png" alt="fig-6_2" style="zoom:30%;" class="image center" />
+<img src="1i.jpg" style="zoom:10%;" class="image center" />
 
-The screws are used loosened to allow wires to be pushed in and out, and tightened to fasten wires in place.  
+<img src="1j.jpg" style="zoom:10%;" class="image center" />
 
-If the screws aren't loosened yet, go ahead and loosen all four screws so that we can stick wires into the contact ports.  Be careful not to loosen too much as you don't want to screw to come all the way out and fall out!
+#### 2. Attach Motor Mounts
 
-Now wire the DC motors!
+Gather the parts below.
 
-Make sure that the pair of wires from DC Motor A is connected to the two ports labeled Motor A and the pair of wires from DC Motor B is connected to the two ports labeled Motor B.
+<img src="2a.jpg" style="zoom:15%;" class="image center" />
 
-#### Wire Control Signals
+Turn the motor mounts and notice the 2 x holes on one of the side.  Screws will be inserted into these holes to fasten them to your chassis.
 
-Now we need to connect the motor drive board to the Uno board.  
+<img src="2b.jpg" style="zoom:10%;" class="image center" />
 
-Find the 6 pin headers on the other side of the driver board.  They are labeled from left to right: B-1A, B-1B, GND, VCC, A-1A, A-1B. 
+Fasten one of the motor mounts using 2 x short screws.
 
-GND and VCC will provide the power to the driver board.  Connect VCC to 5V on the Uno and GND to GND on the Uno.
+<img src="2c.jpg" style="zoom:10%;" class="image center" />
 
-The other four pins can be separated into pairs: (A-1A, A-1B) and (B-1A, B-1B). Each of these pairs of pins are used to control one motor.  (A-1A, A-1B) control Motor A and (B-1A, B-1B) control Motor B.
+<img src="2d.jpg" style="zoom:10%;" class="image center" />
 
-**Note:** Some driver boards have the Motor B control pin labels as (B-1A, B-2A) instead of (B-1A, B-1B). 
+<img src="2e.jpg" style="zoom:10%;" class="image center" />
 
-Go ahead and make the follow connections.
+Repeat for the other motor mount
 
-| DC Driver Board | Arduino Uno Compatible Board |
-| :-------------: | :--------------------------: |
-|      A-1A       |            Pin 8             |
-|      A-1B       |            Pin 11            |
-|      B-1A       |            Pin 10            |
-| B-1B  (or B-2A) |            Pin 12            |
+<img src="2f.jpg" style="zoom:10%;" class="image center" />
 
-### DC Driver Board Control
+<img src="2g.jpg" style="zoom:10%;" class="image center" />
 
-Before we begin to program, let's first examine how the Uno Board will use pins 8, 11, 10 and 12 to control the motors.  The Uno will be able to change the status of these pins between LOW and HIGH, which basically turns the power on and off on those pins.  One way to think about it is that you have 4 light switches that you can turn on and off.  If you have them all on, all off, one on and three off, etc.  All these different combinations will cause your DC motors to turn on, turn off, move backward, move forward, etc.
+#### 3. Attach Motors
 
-The table below describes what happens to Motor A as you control A-1A (Pin 8) and A-1B (Pin 11).  
+Gather the parts below.
 
-<p align=center>Motor A Control Table</p>
+<img src="3a.jpg" style="zoom:15%;" class="image center" />
 
-| A-1A Signal (Pin 8) | A-1B Signal (Pin 11) | DC Motor Movement                |
-| :-----------------: | :------------------: | -------------------------------- |
-|         Low         |         Low          | Stop Slowly (Deceleration Stop)  |
-|         Low         |         High         | Turn One Way                     |
-|        High         |         Low          | Turn The Other Way               |
-|        High         |         High         | Stop Right Away (Emergency Stop) |
+Line up the holes from one of the yellow motors with one of the motor mounts.
 
-A few notes:
+<img src="3c.jpg" style="zoom:10%;" class="image center" />
 
-- If one signal is low and the other signal high, the motor moves.  Will the motor spin forwards or backwards (clockwise or counter-clockwise)?  This will actually be determined by how you wired the DC motor to Motor A.  The key thing to note here is that if you flip the Low/High status between the two control signals, the motor will spin the opposite direction.  This will be useful to you when you are trying to figure out how to make your car go backwards and forwards.
-- If both signals are high, the motor stops right away.  This is called an **emergency stop**.  You would want to do this if you're about to crash and you want to stop immediately.  The downside of this type of stop is that you cause stress to your car.  Imagine you're in a car and you press on the brake fully all of a sudden.  Your body feel some stress!  Your robot will feel this same kind of stress and it can wear down over time.
-- If both signals are low, the motor stops slowly.  This is called a **deceleration stop**.  It is a lot smoother and is the preferred way to stop your motor.  Unlike the emergency stop, it provides less stress to your robot.
+<img src="3b.jpg" style="zoom:10%;" class="image center" />
 
-See below for a control table for Motor B.  Notice that everything is the same except we're looking at B-1B and B-1B signals.
+Use a long screw and matching nut to fasten the motor to the motor mount by using the bottom hole.  
 
-<p align=center>Motor B Control Table</p>
+<img src="3d.jpg" style="zoom:10%;" class="image center" />
 
-| B-1A Signal (Pin 10) | B-1B (or B-2A) Signal (Pin 12) | DC Motor Movement                |
-| :------------------: | :----------------------------: | -------------------------------- |
-|         Low          |              Low               | Stop Slowly (Deceleration Stop)  |
-|         Low          |              High              | Turn One Way                     |
-|         High         |              Low               | Turn The Other Way               |
-|         High         |              High              | Stop Right Away (Emergency Stop) |
+<img src="3e.jpg" style="zoom:10%;" class="image center" />
 
+Repeat for the top hole
 
+<img src="3f.jpg" style="zoom:10%;" class="image center" />
 
-### Move A Single Motor Both Directions
+Insert the large wheel into the outside motor shaft of the fastened motor.  Note that the flat part of the hole in the wheel must match with the flat side of the motor shaft.  The shaft will not show when it is fully inserted.
 
-The code below moves motor A in one direction.  Try uploading this code to your Uno board and see if the motor starts spinning.
+<img src="3g.jpg" style="zoom:10%;" class="image center" />
 
-<img src="fig-6_4.png" alt="fig-6_4" style="zoom:90%;" class="image center block-based" />
+<img src="3h.jpg" style="zoom:10%;" class="image center" />
 
-```c
-void setup()
-{
-  pinMode(8,OUTPUT);
-  pinMode(11,OUTPUT);
-}
+<img src="3i.jpg" style="zoom:10%;" class="image center" />
 
-void loop()
-{
-  digitalWrite(8,HIGH);
-  digitalWrite(11,LOW);
-}
-```
-{:.text-based}
+<img src="3j.jpg" style="zoom:10%;" class="image center" />
 
-This code moves the same motor A in the opposite direction.  Notice we just change the high/low for both pins.  Try uploading this code.  Your motor should spin in the opposite direction
+Repeat steps for the second motor + wheel.
 
-<img src="fig-6_5.png" alt="fig-6_5" style="zoom:90%;" class="image center block-based" />
+<img src="3k.jpg" style="zoom:10%;" class="image center" />
 
+<img src="3l.jpg" style="zoom:10%;" class="image center" />
 
+### Assembly Video For Older Chassis
 
-```c
-void setup()
-{
-  pinMode(8,OUTPUT);
-  pinMode(11,OUTPUT);
-}
+{% include youtube.html id='3a-bE1VlaU8' %}
 
-void loop()
-{
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-}
-```
-{:.text-based}
+Special thanks to: [YIKESHU](https://www.youtube.com/channel/UCnhQ_zZHJToYRvNWkhEYYKA)
 
-Now let's stop the motor.  Following the chart from the previous section, we just need to set both signals to low or both to high.  Try both to make sure that both emergency stop and deceleration stop do what they are supposed to do.
+### Attach the Hardware
 
-<img src="fig-6_6.png" alt="fig-6_6" style="zoom:90%;" class="image center block-based" />
+#### 1. Attach the Breadboard
 
-<img src="fig-6_7.png" alt="fig-6_7" style="zoom:90%;" class="image center block-based" />
+<img src="fig_7_ (2).jpg" style="zoom:15%;" class="image center" />
 
+Remove the sticker paper from the back of the breadboard and stick it onto the chassis as shown in the picture below.
 
+#### 2. Attach the Uno
 
-```c
-void setup()
-{
-  pinMode(8,OUTPUT);
-  pinMode(11,OUTPUT);
-}
+<img src="fig_7_ (3).jpg" style="zoom:15%;" class="image center" />
 
-void loop()
-{
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-}
-```
-{:.text-based}
+Using 2 x sticky foams to attach the Arduino Uno Compatible board to the chassis.  Make sure to place the board so that the power connector and USB connector is not being blocked by the a wheel.
 
+#### 3. Attach the Battery Holder
 
+<img src="fig_7_ (4).jpg" style="zoom:15%;" class="image center" />
 
-```c
-void setup()
-{
-  pinMode(8,OUTPUT);
-  pinMode(11,OUTPUT);
-}
+Attach the battery holder to chassis.
 
-void loop()
-{
-  digitalWrite(8,HIGH);
-  digitalWrite(11,HIGH);
-}
-```
-{:.text-based}
+#### 3. Attach the Driver
 
-#### Challenge #1: Motor B
+Using 2 x sticky foams to attach the driver board to the chassis.
 
-Now try to get Motor B to move both directions and stop by uploading similar code.  
+<img src="fig_7_ (8).jpg" style="zoom:15%;" class="image center" />
 
-Hint: Change pin 8 to pin 10 and change pin 11 to pin 12.
-
-### Move Both Motors
-
-Now that we know how to move a single motor in both directions, let's see if we can move both motors at the same time.  The code below has four blocks because need two blocks to control each motors.  Try uploading the code.
-
-<img src="fig-6_8.png" alt="fig-6_8" style="zoom:90%;" class="image center block-based" />
-
-
-
-```c
-void setup()
-{
-  pinMode(8,OUTPUT);
-  pinMode(11,OUTPUT);
-  pinMode(10,OUTPUT);
-  pinMode(12,OUTPUT);
-}
-
-void loop()
-{
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
-}
-```
-{:.text-based}
-
-Do both motors spin in the same direction?  Or are they opposite?  Try the challenges below.
-
-#### Challenge #1: Same Direction
-
-Program the motors spin in the same direction.  
-
-Hint: To change the direction of a motor, just flip the high/low on the signal pair.  
-
-Another Hint:  8 and 11 is the signal pair for motor A.  10 and 12 is the signal pair for motor B.
-
-#### Challenge #2: Opposite Direction
-
-Using what you have learned, program the motors spin in opposite directions.
-
-### Move And Stop
-
-Now that we know how to move the motors back and forth, let's create a simple program where the motor moves both motors for 1 second, stops both motors for 1 second and the continues in a forever loop.
-
-<img src="fig-6_9.png" alt="fig-6_9" style="zoom:90%;" class="image center block-based" />
-
-
-
-```c
-void setup()
-{
-  pinMode(8,OUTPUT);
-  pinMode(11,OUTPUT);
-  pinMode(10,OUTPUT);
-  pinMode(12,OUTPUT);
-}
-
-void loop()
-{
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
-    
-  delay(1000);
-    
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
-    
-  delay(1000);
-    
-}
-```
-{:.text-based}
-
-A few notes:
-
-- Commands 1-4 command both motors to spin
-- Command 5 (delay MILLIS) tells the code to wait there for 1000 milliseconds (same as 1 second) before executing any new commands
-- Commands 6-9 both motors to decelerate to a stop
-- Command 10 (delay MILLIS) tells the code to wait there for 1000 milliseconds (same as 1 second) before executing any new commands
-- After command 10 finishes executing, the code loops to command 1 and keeps going
-
-#### Practice #1: Reduce The Delay
-
-Modify the code so that it only waits 1/2 a second after stopping and going.  See the answer below.  Note that 500 milliseconds is 1 second.
-
-<img src="fig-6_10.png" alt="fig-6_10" style="zoom:90%;" class="image center block-based" />
-
-```c
-void setup()
-{
-  pinMode(8,OUTPUT);
-  pinMode(11,OUTPUT);
-  pinMode(10,OUTPUT);
-  pinMode(12,OUTPUT);
-}
-
-void loop()
-{
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
-    
-  delay(500);
-    
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
-    
-  delay(500);
-    
-}
-```
-{:.text-based}
