@@ -18,18 +18,6 @@ videos:
 
 In this section you will be learning how to add an ultrasonic sensor to your Barnabas Racer, which will allow it to see objects in front of it!
 
-
-
-<div markdown = "1">
-
-### The Math behind ultrasonic code for Arduino
-
-{% include youtube.html id='pMzp3fG5EeM' %}
-
-Note: This uses pins 4 and 5 for trigger and echo connections, respectively.
-
-</div>{:.text-based}
-
 ### The Ultrasonic Sensor
 
 <img src="fig-14_1.png" alt="fig-14_1" style="zoom:35%;" class="image right" />
@@ -61,18 +49,27 @@ Notes:
 
 The wiring chart below shows the connections that we need to make between the ultrasonic sensor and the Uno.
 
-| Ultrasonic Sensor | Uno              | Type of Connection |
-| ----------------- | ---------------- | ------------------ |
-| Vcc               | 5V               | Power (+)          |
-| Trig              | Pin 3 (Or Pin 4) | Output             |
-| Echo              | Pin 4 (Or Pin 5) | Input              |
-| Gnd               | Gnd              | Power (-)          |
+| Ultrasonic Sensor | Uno   | Type of Connection |
+| ----------------- | ----- | ------------------ |
+| Vcc               | 5V    | Power (+)          |
+| Trig              | Pin 3 | Output             |
+| Echo              | Pin 4 | Input              |
+| Gnd               | Gnd   | Power (-)          |
+{:.block-based}
+
+| Ultrasonic Sensor | Uno   | Type of Connection |
+| ----------------- | ----- | ------------------ |
+| Vcc               | 5V    | Power (+)          |
+| Trig              | Pin 4 | Output             |
+| Echo              | Pin 5 | Input              |
+| Gnd               | Gnd   | Power (-)          |
+{:.text-based}
 
 ##### Ultrasonic Sensor Wiring Diagram
 
 Go ahead and wire your ultrasonic sensor based on the wiring diagram below. 
 
-<img src="ultrasonic.png" alt="fig-14_1" style="zoom:75%;" class="image center" />
+<img src="ultrasonic.png" alt="fig-14_1" style="zoom:75%;" class="image center .block-based" />
 
 ### Coding the Ultrasonic Sensor
 
@@ -110,130 +107,205 @@ This is the equation we will use in our computer code for the sensor to behave a
 Our first coding challenge is to take what the ultrasonic sensor is reading and display it on our computer screen.  
 
 <div markdown = "1">
+### The Math behind ultrasonic code for Arduino
+
+{% include youtube.html id='pMzp3fG5EeM' %}
+
+Note: This uses pins 4 and 5 for trigger and echo connections, respectively.
+
+```c
+int motb_pin1 = 3;
+int motb_pin2 = 11;
+
+int mota_pin1 = 9;
+int mota_pin2 = 10;
+
+int button_pin = 2;
+
+int trig_pin = 4;
+int echo_pin = 5;
+
+void setup() {
+  
+  //-Control Motor B
+  pinMode(motb_pin1,OUTPUT);
+  pinMode(motb_pin2,OUTPUT);
+  
+  //-Control Motor A
+  pinMode(mota_pin1,OUTPUT);
+  pinMode(mota_pin2,OUTPUT);
+  
+  //- button
+  pinMode(button_pin,INPUT_PULLUP);
+  
+  //-ultrasonic pin
+  pinMode(trig_pin,OUTPUT);
+  pinMode(echo_pin,INPUT);
+  
+  Serial.begin(9600);
+  
+}
+
+//-sends sound out and receives sound
+//-returns the distance in centimeters
+int ultrasonic() {
+  
+  long time;
+  float distance;
+  
+  //-trigger a sound 
+  // send out trigger signal
+  digitalWrite(trig_pin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trig_pin, HIGH);
+  delayMicroseconds(20);
+  digitalWrite(trig_pin, LOW);
+  
+  //- a sound has gone out!!
+  //- wait for a sound to come back
+  
+  time = pulseIn(echo_pin, HIGH);
+  
+  //- calculate the distance in centimeters
+  distance = 0.01715 * time;
+  
+  return distance;
+
+}
+
+//- turn 90 degrees
+void turnRight() {
+  
+  //- motor b is stopped
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,0);
+  
+  //- motor a moves forward
+  analogWrite(mota_pin1,255);
+  analogWrite(mota_pin2,0);
+  
+  delay(600);
+  
+  //- stop motor a
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,0);
+  
+}
+
+void turnLeft() {
+  
+  //- motor a is stopped
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b moves forward
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,255);
+  
+  delay(800);
+  
+  //- stop motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,0);
+  
+}
+
+void stop() {
+  //- motor a
+  analogWrite(mota_pin1,255);
+  analogWrite(mota_pin2,255);
+  
+  //- motor b
+  analogWrite(motb_pin1,255);
+  analogWrite(motb_pin2,255);
+}
+
+
+void moveToWall(int speeda, int speedb) {
+  
+  //- move forward!
+  //- motor a
+  analogWrite(mota_pin1,speeda);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  //-stop when you hit a wall!!
+  
+  int distance = ultrasonic();
+  
+  while (distance > 5) {
+    //-do nothing except check distance
+    distance = ultrasonic();
+  }
+  
+  //-stop!!!
+  stop();
+  
+}
+
+
+void moveForward(int speeda, int speedb, int inches) {
+  
+  int myDelay;
+  
+  //- motor a
+  analogWrite(mota_pin1,speeda);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  //- move forward the distance in inches
+  
+  
+  
+  myDelay = inches*125;
+  delay(myDelay);
+  
+  //- stop
+  stop();
+  
+}
+
+void moveBackward(int speeda, int speedb) {
+  
+  //- motor a
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,speeda);
+  
+  //- motor b
+  analogWrite(motb_pin1,speedb);
+  analogWrite(motb_pin2,0);
+  
+}
+
+
+
+void loop() {
+  
+  Serial.println(ultrasonic());
+  delay(100);
+
+}
+```
+
+
+</div>{:.text-based}
+
+<div markdown = "1">
 On Ardublock, we'll need to use the ultrasonic block.   When used, this block gives us the distance (in centimeters) between the sensor and the closest object that it sees.  We need to take the number and display it using the "serial println" block.
 
-![fig 14.6](fig-14_6.png){:.image .block-based}
+![fig 14.6](fig-14_6.png)
 
 In the  communication tab you'll find blocks called "serial println" and "glue".  Combine them to make this simple program.  Notice that the pin numbers settings in the ultrasonic block match the wiring diagram that we used to wire the sensor earlier.
 
-![fig 14.7](fig-14_7.png){:.image .block-based}
+![fig 14.7](fig-14_7.png)
 
-{% include youtube.html id='pK9GB7W3-bk?start=805' %}{:.block-based}
-
-</div>{:.block-based}
-
-
-
-<div markdown = "1">
-
-The code below includes the subroutine ultrasonic().  Read the code and see if you find the formula that we derived in the math section of the lesson.  The distance value is returned in centimeters.
-
-```c
-int trig = 4;
-int echo = 5;
-int led = 7;
-
-// float so that we can handle decimals
-float speedOfSoundMetersPerSec = 343;
-float duration_microSeconds;
-float duration_seconds;
-float distance_meters;
-float distance_cm;
-
-void setup() {
-  // put your setup code here, to run once:
-  pinMode(trig,OUTPUT);
-  pinMode(echo,INPUT);
-}
-
-float ultrasonic() {
-  // reset the ultrasonic sensor
- digitalWrite(trig,LOW);
- delayMicroseconds(5);
-
- // send a 10 microsecond pulse out through the trigger
- digitalWrite(trig, HIGH);
- delayMicroseconds(10);
- digitalWrite(trig, LOW);
-
- // wait for the response and store it in duration.  It will return in microseconds.
- duration_microSeconds = pulseIn(echo,HIGH);
-
- // convert duration to seconds
- duration_seconds = duration_microSeconds / 1000000;
-
- // get distance traveled in meters.  distance = (speed * time)/2
- distance_meters = (speedOfSoundMetersPerSec * duration_seconds)/2;
-
- // convert to cm
- distance_cm = distance_meters*100;
- return distance_cm;
-}
-
-void loop() {
- // do nothing for now
-}
-```
-
-Only two lines of code need to be added to print the distance out to the computer. First, in the void setup we need to ‘turn on’ the serial monitor, making sure that information can be written to it. Inside the void setup insert the line;
-
-`Serial.begin(9600);`
-
-Next, in the loop add
-
-`Serial.println(ultrasonic());`
-
-The final code:
-
-```c
-int trig = 4;
-int echo = 5;
-int led = 7;
-
-// float so that we can handle decimals
-float speedOfSoundMetersPerSec = 343;
-float duration_microSeconds;
-float duration_seconds;
-float distance_meters;
-float distance_cm;
-
-void setup() {
-  // put your setup code here, to run once:
-  pinMode(trig,OUTPUT);
-  pinMode(echo,INPUT);
-  Serial.begin(9600);
-}
-
-float ultrasonic() {
-  // reset the ultrasonic sensor
- digitalWrite(trig,LOW);
- delayMicroseconds(5);
-
- // send a 10 microsecond pulse out through the trigger
- digitalWrite(trig, HIGH);
- delayMicroseconds(10);
- digitalWrite(trig, LOW);
-
- // wait for the response and store it in duration.  It will return in microseconds.
- duration_microSeconds = pulseIn(echo,HIGH);
-
- // convert duration to seconds
- duration_seconds = duration_microSeconds / 1000000;
-
- // get distance traveled in meters.  distance = (speed * time)/2
- distance_meters = (speedOfSoundMetersPerSec * duration_seconds)/2;
-
- // convert to cm
- distance_cm = distance_meters*100;
- return distance_cm;
-}
-
-void loop() {
- Serial.println(ultrasonic());
-}
-```
-
-</div>{:.text-based}
+{% include youtube.html id='pK9GB7W3-bk?start=805' %}
 
 Now you can upload this code and open the serial monitor. You should see numbers flying by as the robot continuously writes the distance to the serial monitor. Perhaps including a delay block after the Serial.print command would be helpful in slowing down the rate that numbers appear. The numbers shown should change as you put your hand in front of the sensor, or point the sensor at various objects.
 
@@ -242,10 +314,8 @@ After uploading this code, go to the software window and click on the button tha
 You should be able to see those numbers change as you point your robot towards different objects, or move your hand back and forth in front of it.
 
 
-
 ![fig 14.8](fig-14_8.png){:.image .block-based}
 
-![fig 14.13](fig-14_13.png){:.image .text-based}
 
 {% include badge.html type='activity' content=' Notice that your ultrasonic can only sense up to a certain range. Beyond that range the number that is returned to the computer becomes 0.  Take your robot and computer in hand and walk up to a nearby wall. Point your robot at the wall and slowly start to walk backwards. Try and find the maximum range of your sensor by seeing what the biggest number it displays before reaching 0 is.  The value should be between 200 and 300 cm.' %}
 
@@ -254,59 +324,6 @@ You should be able to see those numbers change as you point your robot towards d
 How about we use the LED in tandem with the ultrasonic sensor to notify us of the distance? The simplest code that allows us to do that is the following:
 
 ![fig 14.9](fig-14_9.png){:.image .block-based}
-
-```c
-int trig = 4;
-int echo = 5;
-int led = 7;
-
-// float so that we can handle decimals
-float speedOfSoundMetersPerSec = 343;
-float duration_microSeconds;
-float duration_seconds;
-float distance_meters;
-float distance_cm;
-
-void setup() {
-  // put your setup code here, to run once:
-  pinMode(trig,OUTPUT);
-  pinMode(echo,INPUT);
-  pinMode(led,OUTPUT);
-}
-
-float ultrasonic() {
-  // reset the ultrasonic sensor
- digitalWrite(trig,LOW);
- delayMicroseconds(5);
-
- // send a 10 microsecond pulse out through the trigger
- digitalWrite(trig, HIGH);
- delayMicroseconds(10);
- digitalWrite(trig, LOW);
-
- // wait for the response and store it in duration.  It will return in microseconds.
- duration_microSeconds = pulseIn(echo,HIGH);
-
- // convert duration to seconds
- duration_seconds = duration_microSeconds / 1000000;
-
- // get distance traveled in meters.  distance = (speed * time)/2
- distance_meters = (speedOfSoundMetersPerSec * duration_seconds)/2;
-
- // convert to cm
- distance_cm = distance_meters*100;
-
- return distance_cm;
-}
-
-void loop() {
- digitalWrite(led,HIGH);
- delay(ultrasonic());
- digitalWrite(led,LOW);
- delay(ultrasonic());
-}
-```
-{:.text-based}
 
 The above code blinks a light on and off with the added wrinkle of having the distance measured by the sensor control the length of the blink. 
 
@@ -322,78 +339,9 @@ Upload the code to test it.  After uploading this code, you can power the robot 
 
 Create code to turn the light on when an object is close and off when an object is far off.
 
-<div markdown = "1">
-
-
-```c
-int trig = 4;
-int echo = 5;
-int led = 7;
-
-// float so that we can handle decimals
-float speedOfSoundMetersPerSec = 343;
-float duration_microSeconds;
-float duration_seconds;
-float distance_meters;
-float distance_cm;
-
-void setup() {
-  // put your setup code here, to run once:
-
-  pinMode(trig,OUTPUT);
-  pinMode(echo,INPUT);
-  pinMode(led,OUTPUT);
-
-  Serial.begin(9600);
-}
-
-float ultrasonic() {
-  // reset the ultrasonic sensor
- digitalWrite(trig,LOW);
- delayMicroseconds(5);
-
- // send a 10 microsecond pulse out through the trigger
- digitalWrite(trig, HIGH);
- delayMicroseconds(10);
- digitalWrite(trig, LOW);
-
- // wait for the response and store it in duration.  It will return in microseconds.
- duration_microSeconds = pulseIn(echo,HIGH);
-
- // convert duration to seconds
- duration_seconds = duration_microSeconds / 1000000;
-
- // get distance traveled in meters.  distance = (speed * time)/2
- distance_meters = (speedOfSoundMetersPerSec * duration_seconds)/2;
-
- // convert to cm
- distance_cm = distance_meters*100;
-
- return distance_cm;
-}
-
-void loop() {
- Serial.println(ultrasonic());
-
- if (ultrasonic() < 5) {
-  //do something
-  digitalWrite(led,HIGH);
- }
- else {
-  //do something else
-  digitalWrite(led,LOW);
- }
-
-}
-```
-</div>{:.text-based}
-
 ##### Blinking With Intervals
 
 Create code to blink the light at specific time intervals for specific distance intervals. For example, make the LED blink at 80ms intervals if the distance is less than 20cm, 160ms intervals if the distance is between 20cm and 40cm, and so on.  
-
-<div markdown = "1">
-
 
 Hint: To do this you will need to make use of **if** and **and**.  The **and** block allows you to have two conditions rather than just one, and asks if both are true.
 
