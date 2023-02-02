@@ -9,7 +9,8 @@ videos:
       text: Stop Before You Crash (Block-based)
     - link: https://youtu.be/qRF44RI5khk
       text: Finishing Touches On Ultrasonic Code (Block-based)
-
+    - link: https://youtu.be/pMzp3fG5EeM
+      text: Math behind ultrasonic code for Arduino, Stopping Robot At A Wall 2WD (Text-Based)
 ---
 
 
@@ -17,6 +18,21 @@ videos:
 ### Overview
 
 In this section we'll combine everything to program our car to move and avoid objects
+
+
+
+<div markdown = "1">
+
+
+### The Math behind ultrasonic code for Arduino, Stopping Robot At A Wall 2WD
+
+{% include youtube.html id='pMzp3fG5EeM' %}
+
+Note: This uses pins 4 and 5 for trigger and echo connections, respectively.
+
+</div>{:.text-based}
+
+
 
 ### Stop Before We Crash
 
@@ -26,117 +42,196 @@ Let's program that car to stop before we hit a wall!  Let's use what we have lea
 
 {% include youtube.html id='fgngci1Lno4' %}{:.block-based}
 ```c
-int trig = 3;
-int echo = 4;
-int led = 7;
+int motb_pin1 = 3;
+int motb_pin2 = 11;
 
-// float so that we can handle decimals
-float speedOfSoundMetersPerSec = 343;
-float duration_microSeconds;
-float duration_seconds;
-float distance_meters;
-float distance_cm;
+int mota_pin1 = 9;
+int mota_pin2 = 10;
+
+int button_pin = 2;
+
+int trig_pin = 4;
+int echo_pin = 5;
 
 void setup() {
-  // put your setup code here, to run once:
-
-  pinMode(trig, OUTPUT);
-  pinMode(echo, INPUT);
-  pinMode(led, OUTPUT);
-
+  
+  //-Control Motor B
+  pinMode(motb_pin1,OUTPUT);
+  pinMode(motb_pin2,OUTPUT);
+  
+  //-Control Motor A
+  pinMode(mota_pin1,OUTPUT);
+  pinMode(mota_pin2,OUTPUT);
+  
+  //- button
+  pinMode(button_pin,INPUT_PULLUP);
+  
+  //-ultrasonic pin
+  pinMode(trig_pin,OUTPUT);
+  pinMode(echo_pin,INPUT);
+  
   Serial.begin(9600);
-
-  pinMode(8, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(2, INPUT);
+  
 }
 
-float ultrasonic() {
-  // reset the ultrasonic sensor
-  digitalWrite(trig, LOW);
-  delayMicroseconds(5);
+//-sends sound out and receives sound
+//-returns the distance in centimeters
+int ultrasonic() {
+  
+  long time;
+  float distance;
+  
+  //-trigger a sound 
+  // send out trigger signal
+  digitalWrite(trig_pin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trig_pin, HIGH);
+  delayMicroseconds(20);
+  digitalWrite(trig_pin, LOW);
+  
+  //- a sound has gone out!!
+  //- wait for a sound to come back
+  
+  time = pulseIn(echo_pin, HIGH);
+  
+  //- calculate the distance in centimeters
+  distance = 0.01715 * time;
+  
+  return distance;
 
-  // send a 10 microsecond pulse out through the trigger
-  digitalWrite(trig, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trig, LOW);
-
-  // wait for the response and store it in duration.  It will return in microseconds.
-  duration_microSeconds = pulseIn(echo, HIGH);
-
-  // convert duration to seconds
-  duration_seconds = duration_microSeconds / 1000000;
-
-  // get distance traveled in meters.  distance = (speed * time)/2
-  distance_meters = (speedOfSoundMetersPerSec * duration_seconds) / 2;
-
-  // convert to cm
-  distance_cm = distance_meters * 100;
-
-  return distance_cm;
 }
 
-
-void forward() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
+//- turn 90 degrees
+void turnRight() {
+  
+  //- motor b is stopped
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,0);
+  
+  //- motor a moves forward
+  analogWrite(mota_pin1,255);
+  analogWrite(mota_pin2,0);
+  
+  delay(600);
+  
+  //- stop motor a
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,0);
+  
 }
 
-void backward() {
-  digitalWrite(8, HIGH);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, HIGH);
-}
-
-void rightTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
-  delay(300);
-  stop();
-}
-
-void leftTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
-  delay(300);
-  stop();
+void turnLeft() {
+  
+  //- motor a is stopped
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b moves forward
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,255);
+  
+  delay(800);
+  
+  //- stop motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,0);
+  
 }
 
 void stop() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
+  //- motor a
+  analogWrite(mota_pin1,255);
+  analogWrite(mota_pin2,255);
+  
+  //- motor b
+  analogWrite(motb_pin1,255);
+  analogWrite(motb_pin2,255);
 }
 
-void loop()
-{
-  //- wait for button press before doing anything
-  while (digitalRead(2) == HIGH) {
-    //- do nothing
+
+void moveToWall(int speeda, int speedb) {
+  
+  //- move forward!
+  //- motor a
+  analogWrite(mota_pin1,speeda);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  //-stop when you hit a wall!!
+  
+  int distance = ultrasonic();
+  
+  while (distance > 5) {
+    //-do nothing except check distance
+    distance = ultrasonic();
   }
   
-  //- loop here forever after the button is pressed
-  while (true) {
-    if (ultrasonic() < 20) {
-      stop();
-    }
-    else {
-      forward();
-    }
+  //-stop!!!
+  stop();
+  
+}
+
+
+void moveForward(int speeda, int speedb, int inches) {
+  
+  int myDelay;
+  
+  //- motor a
+  analogWrite(mota_pin1,speeda);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  //- move forward the distance in inches
+  
+  
+  
+  myDelay = inches*125;
+  delay(myDelay);
+  
+  //- stop
+  stop();
+  
+}
+
+void moveBackward(int speeda, int speedb) {
+  
+  //- motor a
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,speeda);
+  
+  //- motor b
+  analogWrite(motb_pin1,speedb);
+  analogWrite(motb_pin2,0);
+  
+}
+
+
+
+void loop() {
+  
+  Serial.println(ultrasonic());
+  
+  delay(100);
+  
+  
+  if (digitalRead(button_pin)==LOW) {
+      moveToWall(120,120);
   }
+  else {
+    stop();
+  }
+
 }
 ```
 {:.text-based}
+
+
 
 ### Turn Before We Crash
 
@@ -145,123 +240,202 @@ Let's program our car to not only stop before we hit a wall, but also turn to av
 
 Let's program the robot to turn right if it sees an object less than 20 cm away, else move forward.   See the code below.
 
-
 ![fig 15.5](fig-15_5.png){:.image .block-based}
-```c
-int trig = 3;
-int echo = 4;
-int led = 7;
 
-// float so that we can handle decimals
-float speedOfSoundMetersPerSec = 343;
-float duration_microSeconds;
-float duration_seconds;
-float distance_meters;
-float distance_cm;
+Note: The 400 ms delay after the right subroutine determines how long it will turn right for before moving on to the next section of code.{:.block-based}
+
+```c
+int motb_pin1 = 3;
+int motb_pin2 = 11;
+
+int mota_pin1 = 9;
+int mota_pin2 = 10;
+
+int button_pin = 2;
+
+int trig_pin = 4;
+int echo_pin = 5;
 
 void setup() {
-  // put your setup code here, to run once:
-
-  pinMode(trig, OUTPUT);
-  pinMode(echo, INPUT);
-  pinMode(led, OUTPUT);
-
+  
+  //-Control Motor B
+  pinMode(motb_pin1,OUTPUT);
+  pinMode(motb_pin2,OUTPUT);
+  
+  //-Control Motor A
+  pinMode(mota_pin1,OUTPUT);
+  pinMode(mota_pin2,OUTPUT);
+  
+  //- button
+  pinMode(button_pin,INPUT_PULLUP);
+  
+  //-ultrasonic pin
+  pinMode(trig_pin,OUTPUT);
+  pinMode(echo_pin,INPUT);
+  
   Serial.begin(9600);
-
-  pinMode(8, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(2, INPUT);
+  
 }
 
-float ultrasonic() {
-  // reset the ultrasonic sensor
-  digitalWrite(trig, LOW);
-  delayMicroseconds(5);
+//-sends sound out and receives sound
+//-returns the distance in centimeters
+int ultrasonic() {
+  
+  long time;
+  float distance;
+  
+  //-trigger a sound 
+  // send out trigger signal
+  digitalWrite(trig_pin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trig_pin, HIGH);
+  delayMicroseconds(20);
+  digitalWrite(trig_pin, LOW);
+  
+  //- a sound has gone out!!
+  //- wait for a sound to come back
+  
+  time = pulseIn(echo_pin, HIGH);
+  
+  //- calculate the distance in centimeters
+  distance = 0.01715 * time;
+  
+  return distance;
 
-  // send a 10 microsecond pulse out through the trigger
-  digitalWrite(trig, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trig, LOW);
-
-  // wait for the response and store it in duration.  It will return in microseconds.
-  duration_microSeconds = pulseIn(echo, HIGH);
-
-  // convert duration to seconds
-  duration_seconds = duration_microSeconds / 1000000;
-
-  // get distance traveled in meters.  distance = (speed * time)/2
-  distance_meters = (speedOfSoundMetersPerSec * duration_seconds) / 2;
-
-  // convert to cm
-  distance_cm = distance_meters * 100;
-
-  return distance_cm;
 }
 
-
-void forward() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
+//- turn 90 degrees
+void turnRight() {
+  
+  //- motor b is stopped
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,0);
+  
+  //- motor a moves forward
+  analogWrite(mota_pin1,255);
+  analogWrite(mota_pin2,0);
+  
+  delay(600);
+  
+  //- stop motor a
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,0);
+  
 }
 
-void backward() {
-  digitalWrite(8, HIGH);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, HIGH);
-}
-
-void rightTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
-  delay(300);
-  stop();
-}
-
-void leftTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
-  delay(300);
-  stop();
+void turnLeft() {
+  
+  //- motor a is stopped
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b moves forward
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,255);
+  
+  delay(800);
+  
+  //- stop motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,0);
+  
 }
 
 void stop() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
+  //- motor a
+  analogWrite(mota_pin1,255);
+  analogWrite(mota_pin2,255);
+  
+  //- motor b
+  analogWrite(motb_pin1,255);
+  analogWrite(motb_pin2,255);
 }
 
-void loop()
-{
-  //- wait for button press before doing anything
-  while (digitalRead(2) == HIGH) {
-    //- do nothing
+
+void moveToWall(int speeda, int speedb) {
+  
+  //- move forward!
+  //- motor a
+  analogWrite(mota_pin1,speeda);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  //-stop when you hit a wall!!
+  
+  int distance = ultrasonic();
+  
+  while (distance > 5) {
+    //-do nothing except check distance
+    distance = ultrasonic();
+  }
+  
+  //-stop!!!
+  stop();
+  
+}
+
+
+void moveForward(int speeda, int speedb, int inches) {
+  
+  int myDelay;
+  
+  //- motor a
+  analogWrite(mota_pin1,speeda);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  //- move forward the distance in inches
+  
+  
+  
+  myDelay = inches*125;
+  delay(myDelay);
+  
+  //- stop
+  stop();
+  
+}
+
+void moveBackward(int speeda, int speedb) {
+  
+  //- motor a
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,speeda);
+  
+  //- motor b
+  analogWrite(motb_pin1,speedb);
+  analogWrite(motb_pin2,0);
+  
+}
+
+
+
+void loop() {
+  
+  Serial.println(ultrasonic());
+  
+  delay(100);
+  
+  
+  if (digitalRead(button_pin)==LOW) {
+      moveToWall(120,120);
+      turnRight();
+  }
+  else {
+    moveForward();
   }
 
-  //- loop here forever after the button is pressed
-  while (true) {
-    if (ultrasonic() < 20) {
-      rightTurn();
-      delay(400);
-    }
-    else {
-      forward();
-    }
-  }
 }
 ```
 {:.text-based}
 
-Note: The 400 ms delay after the right subroutine determines how long it will turn right for before moving on to the next section of code.  
+
 
 ### Adding Delays 
 
@@ -273,242 +447,210 @@ Let's add some delays into our code to increase our performance.
 ![fig 15.6](fig-15_6.png){:.image .block-based}
 
 ```c
-int trig = 3;
-int echo = 4;
-int led = 7;
+int motb_pin1 = 3;
+int motb_pin2 = 11;
 
-// float so that we can handle decimals
-float speedOfSoundMetersPerSec = 343;
-float duration_microSeconds;
-float duration_seconds;
-float distance_meters;
-float distance_cm;
+int mota_pin1 = 9;
+int mota_pin2 = 10;
+
+int button_pin = 2;
+
+int trig_pin = 4;
+int echo_pin = 5;
 
 void setup() {
-  // put your setup code here, to run once:
-
-  pinMode(trig, OUTPUT);
-  pinMode(echo, INPUT);
-  pinMode(led, OUTPUT);
-
+  
+  //-Control Motor B
+  pinMode(motb_pin1,OUTPUT);
+  pinMode(motb_pin2,OUTPUT);
+  
+  //-Control Motor A
+  pinMode(mota_pin1,OUTPUT);
+  pinMode(mota_pin2,OUTPUT);
+  
+  //- button
+  pinMode(button_pin,INPUT_PULLUP);
+  
+  //-ultrasonic pin
+  pinMode(trig_pin,OUTPUT);
+  pinMode(echo_pin,INPUT);
+  
   Serial.begin(9600);
-
-  pinMode(8, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(2, INPUT);
+  
 }
 
-float ultrasonic() {
-  // reset the ultrasonic sensor
-  digitalWrite(trig, LOW);
-  delayMicroseconds(5);
+//-sends sound out and receives sound
+//-returns the distance in centimeters
+int ultrasonic() {
+  
+  long time;
+  float distance;
+  
+  //-trigger a sound 
+  // send out trigger signal
+  digitalWrite(trig_pin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trig_pin, HIGH);
+  delayMicroseconds(20);
+  digitalWrite(trig_pin, LOW);
+  
+  //- a sound has gone out!!
+  //- wait for a sound to come back
+  
+  time = pulseIn(echo_pin, HIGH);
+  
+  //- calculate the distance in centimeters
+  distance = 0.01715 * time;
+  
+  return distance;
 
-  // send a 10 microsecond pulse out through the trigger
-  digitalWrite(trig, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trig, LOW);
-
-  // wait for the response and store it in duration.  It will return in microseconds.
-  duration_microSeconds = pulseIn(echo, HIGH);
-
-  // convert duration to seconds
-  duration_seconds = duration_microSeconds / 1000000;
-
-  // get distance traveled in meters.  distance = (speed * time)/2
-  distance_meters = (speedOfSoundMetersPerSec * duration_seconds) / 2;
-
-  // convert to cm
-  distance_cm = distance_meters * 100;
-
-  return distance_cm;
 }
 
-
-void forward() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
+//- turn 90 degrees
+void turnRight() {
+  
+  //- motor b is stopped
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,0);
+  
+  //- motor a moves forward
+  analogWrite(mota_pin1,255);
+  analogWrite(mota_pin2,0);
+  
+  delay(600);
+  
+  //- stop motor a
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,0);
+  
 }
 
-void backward() {
-  digitalWrite(8, HIGH);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, HIGH);
-}
-
-void rightTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
-  delay(300);
-  stop();
-}
-
-void leftTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
-  delay(300);
-  stop();
+void turnLeft() {
+  
+  //- motor a is stopped
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b moves forward
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,255);
+  
+  delay(800);
+  
+  //- stop motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,0);
+  
 }
 
 void stop() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
+  //- motor a
+  analogWrite(mota_pin1,255);
+  analogWrite(mota_pin2,255);
+  
+  //- motor b
+  analogWrite(motb_pin1,255);
+  analogWrite(motb_pin2,255);
 }
 
-void loop()
-{
-  //- wait for button press before doing anything
-  while (digitalRead(2) == HIGH) {
-    //- do nothing
-  }
-  delay(500);
 
-  //- loop here forever after the button is pressed
-  while (true) {
-    if (ultrasonic() < 20) {
-      rightTurn();
-      delay(400);
-    }
-    else {
-      forward();
-      delay(20);
-    }
+void moveToWall(int speeda, int speedb) {
+  
+  //- move forward!
+  //- motor a
+  analogWrite(mota_pin1,speeda);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  //-stop when you hit a wall!!
+  
+  int distance = ultrasonic();
+  
+  while (distance > 5) {
+    //-do nothing except check distance
+    distance = ultrasonic();
   }
+  
+  //-stop!!!
+  stop();
+  
+}
+
+
+void moveForward(int speeda, int speedb, int inches) {
+  
+  int myDelay;
+  
+  //- motor a
+  analogWrite(mota_pin1,speeda);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  //- move forward the distance in inches
+  
+  
+  
+  myDelay = inches*125;
+  delay(myDelay);
+  
+  //- stop
+  stop();
+  
+}
+
+void moveBackward(int speeda, int speedb) {
+  
+  //- motor a
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,speeda);
+  
+  //- motor b
+  analogWrite(motb_pin1,speedb);
+  analogWrite(motb_pin2,0);
+  
+}
+
+
+
+void loop() {
+  
+  Serial.println(ultrasonic());
+  
+  delay(100);
+    
+  if (digitalRead(button_pin)==LOW) {
+      delay(500);
+      moveToWall(120,120);
+      turnRight();
+  }
+  else {
+    moveForward();
+      delay(20);
+  }
+
 }
 ```
 {:.text-based}
+
+<div markdown = "1">
 
 ### Improving Our Ultrasonic Sensor's Performance 
 
 As your robot's battery gets drained, it's a known issue that the ultrasonic sensor will begin responding with 0 even when there is something in front of it.  We can actually take care of this through code by ignoring 0 values.  The AND block helps us do this.
 
-![fig 15.8](fig-15_8.png){:.image .block-based}
+![fig 15.8](fig-15_8.png)
 
 Note: In the code above, the robot will turn right ONLY if the ultrasonic sensor sees a value that is less than 20 AND it's not 0.  
-```c
-int trig = 3;
-int echo = 4;
-int led = 7;
 
-// float so that we can handle decimals
-float speedOfSoundMetersPerSec = 343;
-float duration_microSeconds;
-float duration_seconds;
-float distance_meters;
-float distance_cm;
-
-void setup() {
-  // put your setup code here, to run once:
-
-  pinMode(trig, OUTPUT);
-  pinMode(echo, INPUT);
-  pinMode(led, OUTPUT);
-
-  Serial.begin(9600);
-
-  pinMode(8, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(2, INPUT);
-}
-
-float ultrasonic() {
-  // reset the ultrasonic sensor
-  digitalWrite(trig, LOW);
-  delayMicroseconds(5);
-
-  // send a 10 microsecond pulse out through the trigger
-  digitalWrite(trig, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trig, LOW);
-
-  // wait for the response and store it in duration.  It will return in microseconds.
-  duration_microSeconds = pulseIn(echo, HIGH);
-
-  // convert duration to seconds
-  duration_seconds = duration_microSeconds / 1000000;
-
-  // get distance traveled in meters.  distance = (speed * time)/2
-  distance_meters = (speedOfSoundMetersPerSec * duration_seconds) / 2;
-
-  // convert to cm
-  distance_cm = distance_meters * 100;
-
-  return distance_cm;
-}
+{% include youtube.html id='qRF44RI5khk' %}
 
 
-void forward() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
-}
 
-void backward() {
-  digitalWrite(8, HIGH);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, HIGH);
-}
+</div>{:.block-based}
 
-void rightTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
-  delay(300);
-  stop();
-}
-
-void leftTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
-  delay(300);
-  stop();
-}
-
-void stop() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
-}
-
-void loop()
-{
-  //- wait for button press before doing anything
-  while (digitalRead(2) == HIGH) {
-    //- do nothing
-  }
-  delay(500);
-
-  //- loop here forever after the button is pressed
-  while (true) {
-    if ((ultrasonic() < 20) && (ultrasonic() != 0)) {
-      rightTurn();
-      delay(400);
-    }
-    else {
-      forward();
-      delay(20);
-    }
-  }
-}
-```
-{:.text-based}
-
-{% include youtube.html id='qRF44RI5khk' %}{:.block-based}

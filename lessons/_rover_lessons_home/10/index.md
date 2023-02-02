@@ -1,66 +1,123 @@
 ---
 layout: lesson
-title: Lesson 10 &middot; Turning
+title: Lesson 10 &middot; Changing Speed
 
 suggested_time: 60-75 minutes  
 
 videos:
-
+    - link: https://youtu.be/eLpbRqXdTR0
+      text: How to code DC driver L9110S with different speeds Arduino (CORRECTED WIRING)
 ---
 
 ### Overview
 
-In this section we will be programming our Barnabas Rover to turn!
+In this section we will be programming our Barnabas Rover to change speeds.
 
-### Create A Turn
+### Changing Speed
 
-To create a turn, we'll need to:
+So what happens if you want to change the speed of your motor?  Well the answer here is that we need to switch our thinking from digital to analog.  Until now we've been controlling our DC drive control pins (8,11,10,12) by either turning them fully on (HIGH) or fully off (LOW).  This results in either full speed (HIGH) or not moving at all (LOW).  To set the speed in between these two values, we need to use something called analog control.  The table below shows how digital and analog relate to one another when coding
 
-1. Program on wheel to move forward while the other one is stopped.  
-2. Determine how long we want the one wheel to turn before we stop it
+| Digital Value | Analog Value | Motor Driver Control Speed |
+| ------------- | ------------ | -------------------------- |
+| HIGH          | 255          | Fully on                   |
+| LOW           | 0            | Fully off                  |
+| - (NA)        | 128          | Half on                    |
 
-See below for code that turns right, stops for 3 seconds and then turns left and stops for 3 seconds.  Try it out!  Remember that you need to push the button first before it moves because of the button code inside the while loop.
+You can see that analog value of 255 is the same as HIGH, and analog value of 0 is the same as LOW.  Using analog value 128 will allow you to set the pin to be half on (Note: 128 is half of 255)  This is something that you can't do with digital.  
 
-<img src="fig-7_4.png" style="zoom:100%;" class="image center block-based" />
+See the updated motor control tables for both motor A and motor B using analog control.  
+
+Note: Only pins 8 and 11 can be controlled via analog so pins 8 and 12 can still only be HIGH or LOW.  
+
+**Motor A Control Table Using Analog**
+
+| A-IA Signal (Pin 8) - Digital | A-IB Signal (Pin 11) - Analog | DC Motor Movement                |
+| :---------------------------: | :---------------------------: | -------------------------------- |
+|            LOW (0)            |               0               | Stop Slowly (Deceleration Stop)  |
+|            LOW (0)            |              255              | Turn One Way                     |
+|            LOW (0)            |              128              | Turn One Way (Half Speed)        |
+|          HIGH (255)           |               0               | Turn The Other Way               |
+|          HIGH (255)           |              128              | Turn The Other Way (Half Speed)  |
+|          HIGH (255)           |              255              | Stop Right Away (Emergency Stop) |
+
+**Motor B Control Table Using analog**
+
+| B-IB Signal (Pin 12) - Digital | B-IA Signal (Pin 10) - Analog | DC Motor Movement                |
+| :----------------------------: | :---------------------------: | -------------------------------- |
+|            LOW (0)             |               0               | Stop Slowly (Deceleration Stop)  |
+|            LOW (0)             |              255              | Turn One Way                     |
+|            LOW (0)             |              128              | Turn One Way  (Half Speed)       |
+|           HIGH (255)           |               0               | Turn The Other Way               |
+|           HIGH (255)           |              128              | Turn The Other Way (Half Speed)  |
+|           HIGH (255)           |              255              | Stop Right Away (Emergency Stop) |
+
+Now let's experiment!  We'll need to use the command, **analogWrite()**.
+
+The code below converts the original subroutines to include the use of analog and also adds two new subroutines to move forward and backwards at half speed.  Give it a try!
+
+<img src="halfspeedardu.png" alt="fig-6_0" style="zoom:100%;" class="image center block-based" />
 
 ```c
 void forward() {
   digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,HIGH);
+  analogWrite(11,255);
+
   digitalWrite(12,LOW);
+  analogWrite(10,255);
 }
 
 void backward() {
   digitalWrite(8,HIGH);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
+  analogWrite(11,0);
+
   digitalWrite(12,HIGH);
+  analogWrite(10,0);
+}
+
+void forwardHalf() {
+  digitalWrite(8,LOW);
+  analogWrite(11,128);
+
+  digitalWrite(12,LOW);
+  analogWrite(10,128);
+}
+
+void backwardHalf() {
+  digitalWrite(8,HIGH);
+  analogWrite(11,128);
+
+  digitalWrite(12,HIGH);
+  analogWrite(10,128);
 }
 
 void rightTurn() {
   digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,LOW);
+  analogWrite(11,255);
+
   digitalWrite(12,LOW);
+  analogWrite(10,0);
+  
   delay(300);
   stop();
 }
 
 void leftTurn() {
   digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,HIGH);
+  analogWrite(11,0);
+
   digitalWrite(12,LOW);
+  analogWrite(10,255);
+  
   delay(300);
   stop();
 }
 
 void stop() {
   digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
+  analogWrite(11,0);
+
   digitalWrite(12,LOW);
+  analogWrite(10,0);
 }
 
 void setup()
@@ -77,22 +134,36 @@ void loop()
   while (digitalRead(2)==HIGH) {
      //- do nothing
   }
-  rightTurn();
-  delay(3000);
-  leftTurn();
-  delay(3000);
+ 
+  forward();
+  delay(1000);
+  stop();
+  delay(1000);
+  
+  forwardHalf();
+  delay(1000);
+  stop();
+  delay(1000);
+  
+  backward();
+  delay(1000);
+  stop();
+  delay(1000);
+
+  backwardHalf();
+  delay(1000);
+  stop();
+  delay(1000);
 }
 ```
 {:.text-based}
 
-#### Challenge #1: Adjust The Turn Amount
+<div markdown = "1">
 
-Change the delay inside the subroutines to adjust how much it turns.
+### Video Lesson - How to code DC driver L9110S with different speeds Arduino (CORRECTED WIRING)
 
-#### Challenge #2: Create Right Angle Turns
+{% include youtube.html id='eLpbRqXdTR0' %}
 
-Change the delay inside the subroutines so that the left and right turns create exactly 90 degree turns.
+Note: This version rewires the DC Driver pins to 3,11 and 9,11.  Details explained in the video.
 
-#### Challenge #3: Adjust The Turn Direction
-
-Change the low/high values to change the direction of the turn so that it turns backwards instead of forwards.
+</div>{:.text-based}

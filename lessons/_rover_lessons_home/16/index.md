@@ -72,138 +72,246 @@ We will be connecting the photoresistors between analog inputs and GND.
 
 ```c
 
-int trig = 3;
-int echo = 4;
-int led = 7;
-int leftSensor = 5;
-int rightSensor = 6;
-int light_init = 0;
+int motb_pin1 = 3;
+int motb_pin2 = 11;
 
-void forward() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
+int mota_pin1 = 9;
+int mota_pin2 = 10;
+
+int button_pin = 2;
+
+int trig_pin = 4;
+int echo_pin = 5;
+
+void setup() {
+  
+  //-Control Motor B
+  pinMode(motb_pin1,OUTPUT);
+  pinMode(motb_pin2,OUTPUT);
+  
+  //-Control Motor A
+  pinMode(mota_pin1,OUTPUT);
+  pinMode(mota_pin2,OUTPUT);
+  
+  //- button
+  pinMode(button_pin,INPUT_PULLUP);
+  
+  //-ultrasonic pin
+  pinMode(trig_pin,OUTPUT);
+  pinMode(echo_pin,INPUT);
+  
+  //- photoresistor pin
+  pinMode(A0,INPUT_PULLUP);
+  pinMode(A1,INPUT_PULLUP);
+  
+  Serial.begin(9600);
+  
 }
 
-void backward() {
-  digitalWrite(8,HIGH);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,HIGH);
+//-sends sound out and receives sound
+//-returns the distance in centimeters
+int ultrasonic() {
+  
+  long time;
+  float distance;
+  
+  //-trigger a sound 
+  // send out trigger signal
+  digitalWrite(trig_pin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trig_pin, HIGH);
+  delayMicroseconds(20);
+  digitalWrite(trig_pin, LOW);
+  
+  //- a sound has gone out!!
+  //- wait for a sound to come back
+  
+  time = pulseIn(echo_pin, HIGH);
+  
+  //- calculate the distance in centimeters
+  distance = 0.01715 * time;
+  
+  return distance;
+
 }
 
-void rightTurn() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
-  delay(300);
+//- turn 90 degrees
+void turnRight() {
+  
+  //- motor b is stopped
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,0);
+  
+  //- motor a moves forward
+  analogWrite(mota_pin1,255);
+  analogWrite(mota_pin2,0);
+  
+  delay(200);
+  //delay(600);
+  
+  //- stop motor a
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,0);
+  
+}
+
+void tankTurn(int speeda, int speedb) {
+  //- motor a moves ... backwards
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,speeda);
+  
+  //- motor b moves forward
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  delay(1650);
+  
+  //- stop both motors
   stop();
+  
 }
 
-void leftTurn() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
-  delay(300);
-  stop();
+void turnAround(int speeda, int speedb) {
+  
+  //- motor a is stopped
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b moves forward
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  delay(1650);
+  
+  //- stop motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,0);
+  
 }
 
-void forwardLeft() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-}
-
-void backwardLeft() {
-  digitalWrite(8,HIGH);
-  digitalWrite(11,LOW);
-}
-
-void backwardRight() {
-  digitalWrite(10,LOW);
-  digitalWrite(12,HIGH);
-}
-
-void forwardRight() {
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
+void turnLeft() {
+  
+  //- motor a is stopped
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b moves forward
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,255);
+  
+  delay(200);
+  //delay(800);
+  
+  //- stop motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,0);
+  
 }
 
 void stop() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
+  //- motor a
+  analogWrite(mota_pin1,255);
+  analogWrite(mota_pin2,255);
+  
+  //- motor b
+  analogWrite(motb_pin1,255);
+  analogWrite(motb_pin2,255);
 }
 
-void setup() {
-  pinMode(trig, OUTPUT);
-  pinMode(echo, INPUT);
-  pinMode(led, OUTPUT);
-  
-  pinMode(leftSensor, INPUT);
-  pinMode(rightSensor, INPUT);
-  
-  pinMode(8, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(12, OUTPUT);
-  
-  pinMode(2, INPUT);
 
-  pinMode(A0, INPUT_PULLUP);
-  pinMode(A1, INPUT_PULLUP);
+void moveToWall(int speeda, int speedb) {
+  
+  //- move forward!
+  //- motor a
+  analogWrite(mota_pin1,speeda);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  //-stop when you hit a wall!!
+  
+  int distance = ultrasonic();
+  
+  while (distance > 5) {
+    //-do nothing except check distance
+    distance = ultrasonic();
+  }
+  
+  //-stop!!!
+  stop();
+  
+}
 
-  Serial.begin(9600);
 
-  //- get initial light intensity of room
-  light_init = analogRead(A0);
+
+void moveForward_no_distance(int speeda, int speedb) {
+  //- motor a
+  analogWrite(mota_pin1,speeda);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+}
+
+
+void moveForward(int speeda, int speedb, int inches) {
+  
+  int myDelay;
+  
+  //- motor a
+  analogWrite(mota_pin1,speeda);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  //- move forward the distance in inches
+  
+  myDelay = inches*125;
+  delay(myDelay);
+  
+  //- stop
+  stop();
+  
+}
+
+void moveBackward(int speeda, int speedb) {
+  
+  //- motor a
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,speeda);
+  
+  //- motor b
+  analogWrite(motb_pin1,speedb);
+  analogWrite(motb_pin2,0);
+  
 }
 
 void loop() {
-
-    //- wait for button press before doing anything
-    while (digitalRead(2) == HIGH) {
-      //- do nothing
-    }
-    delay(500);
-
-    //- loop here forever after the button is pressed
-    while (true) {
-      // Code for light following
-      
-      //- Darkest: Analog Value = 255;
-      //- Brightest: Analog Value = 0;
-            
-      int left_light = analogRead(A0);
-      int right_light = analogRead(A1);
-      
-      Serial.print("Left Light Value:" );
-      Serial.println(left_light);
-      Serial.print("Right Light Value:" );
-      Serial.println(right_light);
-
-      //- turn right if light is more intense on the right
-      if (right_light < light_init - 10 && left_light < right_light - 10) {
-        backwardLeft();
-        forwardRight();
-      }
-      //- turn left if light is more intense on the left
-      else if (left_light < light_init - 10 && right_light < left_light - 10) {
-        backwardRight();
-        forwardLeft();
-      }
-      //- go forward if light is evenly intense on both sides
-      else if (left_light < light_init - 10 && right_light < light_init - 10) {
-        forward();
-      }
-      //- don't move if light is not intense at all
-      else {
-        stop();
-      }
-    }
-}
+  
+  Serial.println(analogRead(A1));
+  
+  delay(100);
+  
+  //- if the A1 light is on, move the left wheel forward
+  if (analogRead(A1) < 30) {
+    //-move the left wheel forward
+    turnRight();
+  }
+  else {
+    //-stop the left wheel
+  }
+  
+  //- if the A0 light is on, move the right wheel forward
+  if (analogRead(A0) < 45) {
+    turnLeft();
+  }
+  else {
+    
+  }
 ```
 

@@ -99,120 +99,296 @@ Let's wire the IR modules to your Arduino-Compatible board using the following c
 <img src="linefollowrover.png" alt="fig-6_0" style="zoom:100%;" class="image center block-based" />
 
 ```c
-int trig = 3;
-int echo = 4;
-int led = 7;
-int leftSensor = 5;
-int rightSensor = 6;
+/*
+Line following code
+Video tutorial at: https://youtu.be/6JP4tyrF_q8
+*/
 
 
-void forward() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
+int motb_pin1 = 3;
+int motb_pin2 = 11;
+
+int mota_pin1 = 9;
+int mota_pin2 = 10;
+
+int button_pin = 2;
+
+int trig_pin = 4;
+int echo_pin = 5;
+
+int right_sensor_pin = 6;
+int left_sensor_pin = 12;
+
+void setup() {
+  
+  //-Control Motor B
+  pinMode(motb_pin1,OUTPUT);
+  pinMode(motb_pin2,OUTPUT);
+  
+  //-Control Motor A
+  pinMode(mota_pin1,OUTPUT);
+  pinMode(mota_pin2,OUTPUT);
+  
+  //- button
+  pinMode(button_pin,INPUT_PULLUP);
+  
+  //-ultrasonic pin
+  pinMode(trig_pin,OUTPUT);
+  pinMode(echo_pin,INPUT);
+  
+  //-IR sensor pin
+  pinMode(right_sensor_pin,INPUT);
+  pinMode(left_sensor_pin,INPUT);
+  
+  Serial.begin(9600);
+  
 }
 
-void backward() {
-  digitalWrite(8,HIGH);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,HIGH);
+//-sends sound out and receives sound
+//-returns the distance in centimeters
+int ultrasonic() {
+  
+  long time;
+  float distance;
+  
+  //-trigger a sound 
+  // send out trigger signal
+  digitalWrite(trig_pin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trig_pin, HIGH);
+  delayMicroseconds(20);
+  digitalWrite(trig_pin, LOW);
+  
+  //- a sound has gone out!!
+  //- wait for a sound to come back
+  
+  time = pulseIn(echo_pin, HIGH);
+  
+  //- calculate the distance in centimeters
+  distance = 0.01715 * time;
+  
+  return distance;
+
 }
 
-void rightTurn() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
-  delay(300);
+//- turn 90 degrees
+void turnRight() {
+  
+  //- motor b is stopped
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,0);
+  
+  //- motor a moves forward
+  analogWrite(mota_pin1,255);
+  analogWrite(mota_pin2,0);
+  
+  delay(600);
+  
+  //- stop motor a
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,0);
+  
+}
+
+void tankTurn(int speeda, int speedb) {
+  //- motor a moves ... backwards
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,speeda);
+  
+  //- motor b moves forward
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  delay(1650);
+  
+  //- stop both motors
   stop();
+  
 }
 
-void leftTurn() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
-  delay(300);
-  stop();
+void turnAround(int speeda, int speedb) {
+  
+  //- motor a is stopped
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b moves forward
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  delay(1650);
+  
+  //- stop motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,0);
+  
 }
 
-void forwardLeft() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-}
-
-void backwardLeft() {
-  digitalWrite(8,HIGH);
-  digitalWrite(11,LOW);
-}
-
-void backwardRight() {
-  digitalWrite(10,LOW);
-  digitalWrite(12,HIGH);
-}
-
-void forwardRight() {
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
+void turnLeft() {
+  
+  //- motor a is stopped
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b moves forward
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,255);
+  
+  delay(800);
+  
+  //- stop motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,0);
+  
 }
 
 void stop() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
+  //- motor a
+  analogWrite(mota_pin1,255);
+  analogWrite(mota_pin2,255);
+  
+  //- motor b
+  analogWrite(motb_pin1,255);
+  analogWrite(motb_pin2,255);
 }
 
-void setup() {
-  pinMode(trig, OUTPUT);
-  pinMode(echo, INPUT);
-  pinMode(led, OUTPUT);
+
+void moveToWall(int speeda, int speedb) {
   
-  pinMode(leftSensor, INPUT);
-  pinMode(rightSensor, INPUT);
+  //- move forward!
+  //- motor a
+  analogWrite(mota_pin1,speeda);
+  analogWrite(mota_pin2,0);
   
-  pinMode(8, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(12, OUTPUT);
-    
-  pinMode(2, INPUT);
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  //-stop when you hit a wall!!
+  
+  int distance = ultrasonic();
+  
+  while (distance > 5) {
+    //-do nothing except check distance
+    distance = ultrasonic();
+  }
+  
+  //-stop!!!
+  stop();
+  
+}
+
+
+
+void moveForward_no_distance(int speeda, int speedb) {
+  //- motor a
+  analogWrite(mota_pin1,speeda);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+}
+
+void forward() {
+  //- motor a
+  analogWrite(mota_pin1,150);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,150);
+}
+
+void tankRight() {
+  //- motor a
+  analogWrite(mota_pin1,150);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b
+  analogWrite(motb_pin1,150);
+  analogWrite(motb_pin2,0);
+}
+
+void tankLeft() {
+  //- motor a
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,150);
+  
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,150);
+}
+
+
+void moveForward(int speeda, int speedb, int inches) {
+  
+  int myDelay;
+  
+  //- motor a
+  analogWrite(mota_pin1,speeda);
+  analogWrite(mota_pin2,0);
+  
+  //- motor b
+  analogWrite(motb_pin1,0);
+  analogWrite(motb_pin2,speedb);
+  
+  //- move forward the distance in inches
+  
+  myDelay = inches*125;
+  delay(myDelay);
+  
+  //- stop
+  stop();
+  
+}
+
+void moveBackward(int speeda, int speedb) {
+  
+  //- motor a
+  analogWrite(mota_pin1,0);
+  analogWrite(mota_pin2,speeda);
+  
+  //- motor b
+  analogWrite(motb_pin1,speedb);
+  analogWrite(motb_pin2,0);
+  
 }
 
 void loop() {
+  
+  //- 1 -> senses black
+  //- 0 -> senses white
+ 
+  
+  int leftStatus = digitalRead(left_sensor_pin);
+  int rightStatus = digitalRead(right_sensor_pin);
+  
 
-    //- wait for button press before doing anything
-    while (digitalRead(2) == HIGH) {
-      //- do nothing
-    }
-    delay(500);
+  if (leftStatus == 1 && rightStatus == 0) {
+    //-left sensor sees black
+    //-tank left
+    tankLeft();
+  }
+  
+  if (rightStatus == 1 && leftStatus == 0) {
+    //- right sensor sees black
+    //- tank right
+    tankRight();
+  }
+  
+  if (leftStatus == 0 && rightStatus == 0) {
+    //- both sensors see white
+    //- go straight
+    forward();
+  }
+  
+  if (leftStatus == 1 && rightStatus == 1) {
+    //- both sensors see black/nothing 
+    //- stop
+    stop();
+  }
 
-    //- loop here forever after the button is pressed
-    while (true) {
-      // 0: no line, 1: line
-      int leftStatus = digitalRead(leftSensor); 
-      int rightStatus = digitalRead(rightSensor);
-  
-      if (leftStatus == 0 && rightStatus == 0) {
-        forward();
-      }
-  
-      if (leftStatus == 0 && rightStatus != 0) {
-        forwardLeft();
-        backwardRight();
-      }
-  
-      if (leftStatus != 0 && rightStatus == 0) {
-        backwardLeft();
-        forwardRight();
-      }
-  
-      if (leftStatus != 0 && rightStatus != 0) {
-        stop();
-      }
-    }
 }
 ```
 {:.text-based}
