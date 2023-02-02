@@ -39,6 +39,9 @@ Let's program that car to stop before we hit a wall!  Let's use what we have lea
 ![fig 15.3](fig-15_3.png){:.image .block-based}
 
 {% include youtube.html id='fgngci1Lno4' %}{:.block-based}
+
+<div markdown = "1">
+
 ```c
 int motb_pin1 = 3;
 int motb_pin2 = 11;
@@ -205,27 +208,25 @@ void loop() {
     stop();
   }
 }
-```{:.text-based}
-
+```
+</div>{:.text-based}
 
 
 ### Turn Before We Crash
 
 Let's program our car to not only stop before we hit a wall, but also turn to avoid it!
 
-
 Let's program the robot to turn right if it sees an object less than 20 cm away, else move forward.   See the code below.
 
 ![fig 15.5](fig-15_5.png){:.image .block-based}
-
-
 
 <div markdown = "1">
 
 Note: The 400 ms delay after the right subroutine determines how long it will turn right for before moving on to the next section of code.
 
-<div>{:.block-based}
+</div>{:.block-based}
 
+<div markdown = "1">
 ```c
 int motb_pin1 = 3;
 int motb_pin2 = 11;
@@ -405,7 +406,8 @@ void loop() {
     moveForward();
   }
 }
-```{:.text-based}
+```
+</div>{:.text-based}
 
 <div markdown = "1">
 
@@ -414,7 +416,7 @@ void loop() {
 - When you stop at the wall, back up and then turn around
 - Once you see a wall, stop, back up and turn around.. and then keep going looking for walls.  Once you see another wall, repeat!
 
-{:.text-based}
+</div>{:.text-based}
 
 <div markdown = "1">
 
