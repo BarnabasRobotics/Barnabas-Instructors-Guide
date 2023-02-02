@@ -65,11 +65,15 @@ The wiring chart below shows the connections that we need to make between the ul
 | Gnd               | Gnd   | Power (-)          |
 {:.text-based}
 
+<div markdown = "1">
+
 ##### Ultrasonic Sensor Wiring Diagram
 
 Go ahead and wire your ultrasonic sensor based on the wiring diagram below. 
 
-<img src="ultrasonic.png" alt="fig-14_1" style="zoom:75%;" class="image center .block-based" />
+<img src="ultrasonic.png" alt="fig-14_1" style="zoom:75%;" class="image center" />
+
+</div>{:.block-based}
 
 ### Coding the Ultrasonic Sensor
 
