@@ -40,7 +40,7 @@ Note: In the table below, only pins 8 and 11 can be controlled via analog so pin
 |          HIGH (255)           |              128              | Turn The Other Way (Half Speed)  |
 |          HIGH (255)           |              255              | Stop Right Away (Emergency Stop) |
 
-**Motor B Control Table Using analog**
+**Motor B Control Table Using Analog**
 
 | B-IB Signal (Pin 12) - Digital | B-IA Signal (Pin 10) - Analog | DC Motor Movement                |
 | :----------------------------: | :---------------------------: | -------------------------------- |
@@ -181,10 +181,14 @@ void loop() {
 ```
 {:.text-based}
 
-### Extra Challenges{:.text-based}
+<div markdown = "1">
 
-1) Make functions for forward, backwards and stop{:.text-based}
-2) Make function for forward and backwards that allows you to set speed{:.text-based}
-3) Make your car move and slow down by using the for loop{:.text-based}
-4) Change forward and backwards functions so that you can set the speed for BOTH motors.{:.text-based}
-5) Create function to turnRight() and turnLeft(){:.text-based}
+### Extra Challenges
+
+- Make functions for forward, backwards and stop
+- Make function for forward and backwards that allows you to set speed
+- Make your car move and slow down by using the for loop
+- Change forward and backwards functions so that you can set the speed for BOTH motors.
+- Create function to turnRight() and turnLeft()
+
+{:.text-based}
