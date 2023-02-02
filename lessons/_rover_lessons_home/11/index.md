@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 11 &middot; Turning
+title: Lesson 11 &middot; Turning & Other Navigation Moves
 
 suggested_time: 60-75 minutes  
 
@@ -12,6 +12,17 @@ videos:
 ### Overview
 
 In this section we will be programming our Barnabas Rover to turn!
+
+<div markdown = "1">
+
+
+### Video Lesson - Create Subroutines To Make Your Car Go Straight, Turn and Move Based On Distance
+
+{% include youtube.html id='TBSFREXMHs4' %}
+
+Note: This version rewires the DC Driver pins to 3,11 and 9,11.
+
+</div>{:.text-based}
 
 ### Create A Turn
 
@@ -97,14 +108,4 @@ Change the delay inside the subroutines so that the left and right turns create 
 #### Challenge #3: Adjust The Turn Direction
 
 Change the low/high values to change the direction of the turn so that it turns backwards instead of forwards.
-
-<div markdown = "1">
-
-### Video Lesson - Create Subroutines To Make Your Car Go Straight, Turn and Move Based On Distance
-
-{% include youtube.html id='TBSFREXMHs4' %}
-
-Note: This version rewires the DC Driver pins to 3,11 and 9,11.
-
-</div>{:.text-based}
 
