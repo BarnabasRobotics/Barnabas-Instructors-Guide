@@ -107,11 +107,10 @@ This is the equation we will use in our computer code for the sensor to behave a
 Our first coding challenge is to take what the ultrasonic sensor is reading and display it on our computer screen.  
 
 <div markdown = "1">
-### The Math behind ultrasonic code for Arduino
 
 {% include youtube.html id='pMzp3fG5EeM' %}
 
-Note: This uses pins 4 and 5 for trigger and echo connections, respectively.
+Note: The ultrasonic sensor uses pins 4 and 5 for trigger and echo connections, respectively.
 
 ```c
 int motb_pin1 = 3;
