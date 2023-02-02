@@ -22,8 +22,6 @@ In this section we'll combine everything to program our car to move and avoid ob
 
 
 <div markdown = "1">
-
-
 ### Stopping Your Robot At A Wall
 
 {% include youtube.html id='pMzp3fG5EeM?t=2047' %} 
@@ -408,8 +406,7 @@ void loop() {
     moveForward();
   }
 }
-```
-{:.text-based}
+```{:.text-based}
 
 <div markdown = "1">
 
@@ -441,8 +438,6 @@ As your robot's battery gets drained, it's a known issue that the ultrasonic sen
 Note: In the code above, the robot will turn right ONLY if the ultrasonic sensor sees a value that is less than 20 AND it's not 0.  
 
 {% include youtube.html id='qRF44RI5khk' %}
-
-
 
 </div>{:.block-based}
 
