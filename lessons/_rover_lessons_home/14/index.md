@@ -9,7 +9,7 @@ videos:
       text: Stop Before You Crash (Block-based)
     - link: https://youtu.be/qRF44RI5khk
       text: Finishing Touches On Ultrasonic Code (Block-based)
-    - link: https://youtu.be/pMzp3fG5EeM?t=2040
+    - link: https://youtu.be/pMzp3fG5EeM?t=2047
       text: Math behind ultrasonic code for Arduino, Stopping Robot At A Wall 2WD (Text-Based)
 ---
 
@@ -26,7 +26,7 @@ In this section we'll combine everything to program our car to move and avoid ob
 
 ### Stopping Your Robot At A Wall
 
-{% include youtube.html id='pMzp3fG5EeM?t=2040' %} 
+{% include youtube.html id='pMzp3fG5EeM?t=2047' %} 
 
 Note: This uses pins 4 and 5 for trigger and echo connections, respectively.
 

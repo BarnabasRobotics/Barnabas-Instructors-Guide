@@ -13,6 +13,19 @@ videos:
 
 In this section we will be programming our Barnabas Rover to trigger your code with your button
 
+
+
+<div markdown = "1">
+
+
+### Video Lesson - How to add button to control motor movement
+
+{% include youtube.html id='SHaALfbN5wc' %}
+
+Note: This version uses the pinMode(2,INPUT_PULLUP) command so that you do not need to connect a 10K pull-up resistor.  Details are explained in the video.
+
+</div>{:.text-based}
+
 ### Adding Your Button
 
 Since we have started to program our car to move, you may have noticed that at times your car starts moving before you're ready to test your code.  To make things a bit more convenient for us, we're going to add a bit of code so that you car doesn't begin its program until you press your button.  
@@ -72,13 +85,3 @@ void loop()
 }
 ```
 {:.text-based}
-
-<div markdown = "1">
-
-### Video Lesson - How to add button to control motor movement (Text-Code)
-
-{% include youtube.html id='SHaALfbN5wc' %}
-
-Note: This version uses the pinMode(2,INPUT_PULLUP) command so that you do not need to connect a 10K pull-up resistor.  Details are explained in the video.
-
-</div>{:.text-based}

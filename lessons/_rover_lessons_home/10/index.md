@@ -53,6 +53,21 @@ Note: Only pins 8 and 11 can be controlled via analog so pins 8 and 12 can still
 
 Now let's experiment!  We'll need to use the command, **analogWrite()**.
 
+
+
+<div markdown = "1">
+
+
+### Video Lesson - How to code DC driver L9110S with different speeds Arduino (CORRECTED WIRING)
+
+{% include youtube.html id='eLpbRqXdTR0' %}
+
+Note: This version rewires the DC Driver pins to 3,11 and 9,11.  Details explained in the video.
+
+</div>{:.text-based}
+
+
+
 The code below converts the original subroutines to include the use of analog and also adds two new subroutines to move forward and backwards at half speed.  Give it a try!
 
 <img src="halfspeedardu.png" alt="fig-6_0" style="zoom:100%;" class="image center block-based" />
@@ -157,13 +172,3 @@ void loop()
 }
 ```
 {:.text-based}
-
-<div markdown = "1">
-
-### Video Lesson - How to code DC driver L9110S with different speeds Arduino (CORRECTED WIRING)
-
-{% include youtube.html id='eLpbRqXdTR0' %}
-
-Note: This version rewires the DC Driver pins to 3,11 and 9,11.  Details explained in the video.
-
-</div>{:.text-based}
