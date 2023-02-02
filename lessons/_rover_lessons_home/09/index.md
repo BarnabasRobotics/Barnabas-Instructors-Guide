@@ -20,7 +20,7 @@ In this section we will be programming our Barnabas Rover to trigger your code w
 
 Since we have started to program our car to move, you may have noticed that at times your car starts moving before you're ready to test your code.  To make things a bit more convenient for us, we're going to add a bit of code so that you car doesn't begin its program until you press your button.  
 
-In order to accomplish this, we're going to need include button sensing into our code using IF/ELSE blocks.  Check out the code below!
+In order to accomplish this, we're going to need to include button sensing into our code using IF/ELSE blocks.  Check out the code below!
 
 NOTE: Previously we used a 10K resistor as a pull-up resistor to pull the voltage at the button to HIGH whenever the button is not pushed.  In the video above, we will learn about an internal pull-up resistor so that we can rewire our circuit and remove that 10K resistor.
 
@@ -58,10 +58,10 @@ void loop() {
 ### Extra Challenges
 
 1) Get motor B to move when you press and stop when don't press
-3) Get both motor A and B to move when you press and both to stop when you don't press
-4) When you press, move both motors forward for 1 second and then stop.
-5) When you press, move both motors backward for 1 second and then stop.
-6) Place a piece of tape on your table then program your car to move right to the tape when you press the button.
+2) Get both motor A and B to move when you press and both to stop when you don't press
+3) When you press, move both motors forward for 1 second and then stop.
+4) When you press, move both motors backward for 1 second and then stop.
+5) Place a piece of tape on your table then program your car to move right to the tape when you press the button.
 
 </div>{:.text-based}
 
