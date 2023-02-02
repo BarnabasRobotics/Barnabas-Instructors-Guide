@@ -1,43 +1,82 @@
 ---
 layout: lesson
-title: Lesson 9 &middot; Navigation Challenges
+title: Lesson 9 &middot; Triggering Movement With Your Button
 
 suggested_time: 60-75 minutes  
 
 videos:
-
-    - link: https://youtu.be/FZrIQ_5z6RE
-      text: Box Challenge (Block-based)
-
-
+    - link: https://youtu.be/SHaALfbN5wc
+      text: How To Control Your Motors Using A Button (Text-Code)
 ---
-
-
 
 ### Overview
 
-In this lesson you'll be challenged to program your robot through a series of challenges
+In this section we will be programming our Barnabas Rover to trigger your code with your button
 
-### There And Back Challenge
+### Adding Your Button
 
-Now that we have built a library of subroutines we can take what we have learned to perform a simple task. This lesson will allow the students to become more familiar with the material taught in the last few weeks and give them an objective to work towards. The 'obstacle course' they will be navigating is very simple, they will get more complicated in coming weeks. This week we will simply navigate around a cone (or similar obstacle) as shown below.
+Since we have started to program our car to move, you may have noticed that at times your car starts moving before you're ready to test your code.  To make things a bit more convenient for us, we're going to add a bit of code so that you car doesn't begin its program until you press your button.  
 
-<img src="obstacle_1.png" alt="obstacle_1" style="zoom:75%;" class="image center" />
+In order to accomplish this, we're going to need to use something called a while loop.  The while loop is like an if/else block.  How it works is: 
 
-Some things to keep in mind during this lesson:
+"Do what ever is inside the loop WHILE this thing is true"
 
-- The delay in your forward subroutine probably will not move the robot forward the exact distance needed. You will either need to adjust that delay or use the forward subroutine multiple times.
-- The turn will likely need to be two separate 90 degree turns. 
+So what we're going to do is tell it to do nothing WHILE the button is not pressed, and then jump out of the while loop once the button is pressed.  This is what it looks like in code.  Give it a try!
 
-### Box Challenge
+<div markdown = "1">
 
-{% include youtube.html id='FZrIQ_5z6RE' %}{:.block-based}
+### Video Lesson - How to add button to control motor movement (Text-Code)
 
- Have your robot travel around the box until it reaches its starting location. 
+{% include youtube.html id='SHaALfbN5wc' %}
 
-<img src="fig-12_1.png" alt="fig-12_1" style="zoom:75%;" class="image center" />
+</div>{:.text-based}
 
-#### Things to consider
-- Like the other challenges the appropriate delays for forward and turn will take experimentation to find.
-- There are multiple ways to complete this challenge. For example, you can closely follow the outside of the box and make sharp turns, or you can create a large arcing circle around the box that doesn’t come remotely close to it.
+<img src="fig-7_3.png" style="zoom:100%;" class="image center block-based" />
 
+```c
+void forward() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+  digitalWrite(10,HIGH);
+  digitalWrite(12,LOW);
+}
+
+void backward() {
+  digitalWrite(8,HIGH);
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+  digitalWrite(12,HIGH);
+}
+
+void stop() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,LOW);
+  digitalWrite(10,LOW);
+  digitalWrite(12,LOW);
+}
+
+void setup()
+{
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(12,OUTPUT);
+  pinMode(2,INPUT);
+}
+
+void loop()
+{
+  while (digitalRead(2)==HIGH) {
+     //- do nothing
+  }
+  forward();
+  delay(1000);
+  stop();
+  delay(1000);
+  backward();
+  delay(1000);
+  stop();
+  delay(1000);
+}
+```
+{:.text-based}

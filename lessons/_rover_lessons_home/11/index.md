@@ -1,514 +1,159 @@
 ---
 layout: lesson
-title: Lesson 11 &middot; Program Your Car To Avoid Obstacles
+title: Lesson 11 &middot; Changing Speed
 
 suggested_time: 60-75 minutes  
 
 videos:
-    - link: https://youtu.be/fgngci1Lno4
-      text: Stop Before You Crash (Block-based)
-    - link: https://youtu.be/qRF44RI5khk
-      text: Finishing Touches On Ultrasonic Code (Block-based)
 
 ---
 
-
-
 ### Overview
 
-In this section we'll combine everything to program our car to move and avoid objects
+In this section we will be programming our Barnabas Rover to change speeds.
 
-### Stop Before We Crash
+### Changing Speed
 
-Let's program that car to stop before we hit a wall!  Let's use what we have learned about the ultrasonic sensor to program our robot to do this.  We'll need to use if/else.
+So what happens if you want to change the speed of your motor?  Well the answer here is that we need to switch our thinking from digital to analog.  Until now we've been controlling our DC drive control pins (8,11,10,12) by either turning them fully on (HIGH) or fully off (LOW).  This results in either full speed (HIGH) or not moving at all (LOW).  To set the speed in between these two values, we need to use something called analog control.  The table below shows how digital and analog relate to one another when coding
 
-![fig 15.3](fig-15_3.png){:.image .block-based}
+| Digital Value | Analog Value | Motor Driver Control Speed |
+| ------------- | ------------ | -------------------------- |
+| HIGH          | 255          | Fully on                   |
+| LOW           | 0            | Fully off                  |
+| - (NA)        | 128          | Half on                    |
 
-{% include youtube.html id='fgngci1Lno4' %}{:.block-based}
+You can see that analog value of 255 is the same as HIGH, and analog value of 0 is the same as LOW.  Using analog value 128 will allow you to set the pin to be half on (Note: 128 is half of 255)  This is something that you can't do with digital.  
+
+See the updated motor control tables for both motor A and motor B using analog control.  
+
+Note: Only pins 8 and 11 can be controlled via analog so pins 8 and 12 can still only be HIGH or LOW.  
+
+**Motor A Control Table Using Analog**
+
+| A-IA Signal (Pin 8) - Digital | A-IB Signal (Pin 11) - Analog | DC Motor Movement                |
+| :---------------------------: | :---------------------------: | -------------------------------- |
+|            LOW (0)            |               0               | Stop Slowly (Deceleration Stop)  |
+|            LOW (0)            |              255              | Turn One Way                     |
+|            LOW (0)            |              128              | Turn One Way (Half Speed)        |
+|          HIGH (255)           |               0               | Turn The Other Way               |
+|          HIGH (255)           |              128              | Turn The Other Way (Half Speed)  |
+|          HIGH (255)           |              255              | Stop Right Away (Emergency Stop) |
+
+**Motor B Control Table Using analog**
+
+| B-IB Signal (Pin 12) - Digital | B-IA Signal (Pin 10) - Analog | DC Motor Movement                |
+| :----------------------------: | :---------------------------: | -------------------------------- |
+|            LOW (0)             |               0               | Stop Slowly (Deceleration Stop)  |
+|            LOW (0)             |              255              | Turn One Way                     |
+|            LOW (0)             |              128              | Turn One Way  (Half Speed)       |
+|           HIGH (255)           |               0               | Turn The Other Way               |
+|           HIGH (255)           |              128              | Turn The Other Way (Half Speed)  |
+|           HIGH (255)           |              255              | Stop Right Away (Emergency Stop) |
+
+Now let's experiment!  We'll need to use the command, **analogWrite()**.
+
+The code below converts the original subroutines to include the use of analog and also adds two new subroutines to move forward and backwards at half speed.  Give it a try!
+
+<img src="halfspeedardu.png" alt="fig-6_0" style="zoom:100%;" class="image center block-based" />
+
 ```c
-int trig = 3;
-int echo = 4;
-int led = 7;
-
-// float so that we can handle decimals
-float speedOfSoundMetersPerSec = 343;
-float duration_microSeconds;
-float duration_seconds;
-float distance_meters;
-float distance_cm;
-
-void setup() {
-  // put your setup code here, to run once:
-
-  pinMode(trig, OUTPUT);
-  pinMode(echo, INPUT);
-  pinMode(led, OUTPUT);
-
-  Serial.begin(9600);
-
-  pinMode(8, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(2, INPUT);
-}
-
-float ultrasonic() {
-  // reset the ultrasonic sensor
-  digitalWrite(trig, LOW);
-  delayMicroseconds(5);
-
-  // send a 10 microsecond pulse out through the trigger
-  digitalWrite(trig, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trig, LOW);
-
-  // wait for the response and store it in duration.  It will return in microseconds.
-  duration_microSeconds = pulseIn(echo, HIGH);
-
-  // convert duration to seconds
-  duration_seconds = duration_microSeconds / 1000000;
-
-  // get distance traveled in meters.  distance = (speed * time)/2
-  distance_meters = (speedOfSoundMetersPerSec * duration_seconds) / 2;
-
-  // convert to cm
-  distance_cm = distance_meters * 100;
-
-  return distance_cm;
-}
-
-
 void forward() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
+  digitalWrite(8,LOW);
+  analogWrite(11,255);
+
+  digitalWrite(12,LOW);
+  analogWrite(10,255);
 }
 
 void backward() {
-  digitalWrite(8, HIGH);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, HIGH);
+  digitalWrite(8,HIGH);
+  analogWrite(11,0);
+
+  digitalWrite(12,HIGH);
+  analogWrite(10,0);
+}
+
+void forwardHalf() {
+  digitalWrite(8,LOW);
+  analogWrite(11,128);
+
+  digitalWrite(12,LOW);
+  analogWrite(10,128);
+}
+
+void backwardHalf() {
+  digitalWrite(8,HIGH);
+  analogWrite(11,128);
+
+  digitalWrite(12,HIGH);
+  analogWrite(10,128);
 }
 
 void rightTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
-  delay(300);
-  stop();
-}
+  digitalWrite(8,LOW);
+  analogWrite(11,255);
 
-void leftTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
-  delay(300);
-  stop();
-}
-
-void stop() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
-}
-
-void loop()
-{
-  //- wait for button press before doing anything
-  while (digitalRead(2) == HIGH) {
-    //- do nothing
-  }
+  digitalWrite(12,LOW);
+  analogWrite(10,0);
   
-  //- loop here forever after the button is pressed
-  while (true) {
-    if (ultrasonic() < 20) {
-      stop();
-    }
-    else {
-      forward();
-    }
-  }
-}
-```
-{:.text-based}
-
-### Turn Before We Crash
-
-Let's program our car to not only stop before we hit a wall, but also turn to avoid it!
-
-
-Let's program the robot to turn right if it sees an object less than 20 cm away, else move forward.   See the code below.
-
-
-![fig 15.5](fig-15_5.png){:.image .block-based}
-```c
-int trig = 3;
-int echo = 4;
-int led = 7;
-
-// float so that we can handle decimals
-float speedOfSoundMetersPerSec = 343;
-float duration_microSeconds;
-float duration_seconds;
-float distance_meters;
-float distance_cm;
-
-void setup() {
-  // put your setup code here, to run once:
-
-  pinMode(trig, OUTPUT);
-  pinMode(echo, INPUT);
-  pinMode(led, OUTPUT);
-
-  Serial.begin(9600);
-
-  pinMode(8, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(2, INPUT);
-}
-
-float ultrasonic() {
-  // reset the ultrasonic sensor
-  digitalWrite(trig, LOW);
-  delayMicroseconds(5);
-
-  // send a 10 microsecond pulse out through the trigger
-  digitalWrite(trig, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trig, LOW);
-
-  // wait for the response and store it in duration.  It will return in microseconds.
-  duration_microSeconds = pulseIn(echo, HIGH);
-
-  // convert duration to seconds
-  duration_seconds = duration_microSeconds / 1000000;
-
-  // get distance traveled in meters.  distance = (speed * time)/2
-  distance_meters = (speedOfSoundMetersPerSec * duration_seconds) / 2;
-
-  // convert to cm
-  distance_cm = distance_meters * 100;
-
-  return distance_cm;
-}
-
-
-void forward() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
-}
-
-void backward() {
-  digitalWrite(8, HIGH);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, HIGH);
-}
-
-void rightTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
   delay(300);
   stop();
 }
 
 void leftTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
+  digitalWrite(8,LOW);
+  analogWrite(11,0);
+
+  digitalWrite(12,LOW);
+  analogWrite(10,255);
+  
   delay(300);
   stop();
 }
 
 void stop() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
+  digitalWrite(8,LOW);
+  analogWrite(11,0);
+
+  digitalWrite(12,LOW);
+  analogWrite(10,0);
+}
+
+void setup()
+{
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(12,OUTPUT);
+  pinMode(2,INPUT);
 }
 
 void loop()
 {
-  //- wait for button press before doing anything
-  while (digitalRead(2) == HIGH) {
-    //- do nothing
+  while (digitalRead(2)==HIGH) {
+     //- do nothing
   }
+ 
+  forward();
+  delay(1000);
+  stop();
+  delay(1000);
+  
+  forwardHalf();
+  delay(1000);
+  stop();
+  delay(1000);
+  
+  backward();
+  delay(1000);
+  stop();
+  delay(1000);
 
-  //- loop here forever after the button is pressed
-  while (true) {
-    if (ultrasonic() < 20) {
-      rightTurn();
-      delay(400);
-    }
-    else {
-      forward();
-    }
-  }
+  backwardHalf();
+  delay(1000);
+  stop();
+  delay(1000);
 }
 ```
 {:.text-based}
 
-Note: The 400 ms delay after the right subroutine determines how long it will turn right for before moving on to the next section of code.  
-
-### Adding Delays 
-
-Let's add some delays into our code to increase our performance.
-
-1. Adding a 500 ms delay after the while loop will give us time to remove our hand from the robot after pressing it.  This is to help prevent us from accidently bumping the robot off its course.
-2. Adding a 20 ms delay after the forward subroutine adds a little time for the code to rest before it loops back to the ultrasonic part of the code.  Without the rest, the ultrasonic sensor may malfunction from time to time by getting overloaded by requests.
-
-![fig 15.6](fig-15_6.png){:.image .block-based}
-
-```c
-int trig = 3;
-int echo = 4;
-int led = 7;
-
-// float so that we can handle decimals
-float speedOfSoundMetersPerSec = 343;
-float duration_microSeconds;
-float duration_seconds;
-float distance_meters;
-float distance_cm;
-
-void setup() {
-  // put your setup code here, to run once:
-
-  pinMode(trig, OUTPUT);
-  pinMode(echo, INPUT);
-  pinMode(led, OUTPUT);
-
-  Serial.begin(9600);
-
-  pinMode(8, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(2, INPUT);
-}
-
-float ultrasonic() {
-  // reset the ultrasonic sensor
-  digitalWrite(trig, LOW);
-  delayMicroseconds(5);
-
-  // send a 10 microsecond pulse out through the trigger
-  digitalWrite(trig, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trig, LOW);
-
-  // wait for the response and store it in duration.  It will return in microseconds.
-  duration_microSeconds = pulseIn(echo, HIGH);
-
-  // convert duration to seconds
-  duration_seconds = duration_microSeconds / 1000000;
-
-  // get distance traveled in meters.  distance = (speed * time)/2
-  distance_meters = (speedOfSoundMetersPerSec * duration_seconds) / 2;
-
-  // convert to cm
-  distance_cm = distance_meters * 100;
-
-  return distance_cm;
-}
-
-
-void forward() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
-}
-
-void backward() {
-  digitalWrite(8, HIGH);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, HIGH);
-}
-
-void rightTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
-  delay(300);
-  stop();
-}
-
-void leftTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
-  delay(300);
-  stop();
-}
-
-void stop() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
-}
-
-void loop()
-{
-  //- wait for button press before doing anything
-  while (digitalRead(2) == HIGH) {
-    //- do nothing
-  }
-  delay(500);
-
-  //- loop here forever after the button is pressed
-  while (true) {
-    if (ultrasonic() < 20) {
-      rightTurn();
-      delay(400);
-    }
-    else {
-      forward();
-      delay(20);
-    }
-  }
-}
-```
-{:.text-based}
-
-### Improving Our Ultrasonic Sensor's Performance 
-
-As your robot's battery gets drained, it's a known issue that the ultrasonic sensor will begin responding with 0 even when there is something in front of it.  We can actually take care of this through code by ignoring 0 values.  The AND block helps us do this.
-
-![fig 15.8](fig-15_8.png){:.image .block-based}
-
-Note: In the code above, the robot will turn right ONLY if the ultrasonic sensor sees a value that is less than 20 AND it's not 0.  
-```c
-int trig = 3;
-int echo = 4;
-int led = 7;
-
-// float so that we can handle decimals
-float speedOfSoundMetersPerSec = 343;
-float duration_microSeconds;
-float duration_seconds;
-float distance_meters;
-float distance_cm;
-
-void setup() {
-  // put your setup code here, to run once:
-
-  pinMode(trig, OUTPUT);
-  pinMode(echo, INPUT);
-  pinMode(led, OUTPUT);
-
-  Serial.begin(9600);
-
-  pinMode(8, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(2, INPUT);
-}
-
-float ultrasonic() {
-  // reset the ultrasonic sensor
-  digitalWrite(trig, LOW);
-  delayMicroseconds(5);
-
-  // send a 10 microsecond pulse out through the trigger
-  digitalWrite(trig, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trig, LOW);
-
-  // wait for the response and store it in duration.  It will return in microseconds.
-  duration_microSeconds = pulseIn(echo, HIGH);
-
-  // convert duration to seconds
-  duration_seconds = duration_microSeconds / 1000000;
-
-  // get distance traveled in meters.  distance = (speed * time)/2
-  distance_meters = (speedOfSoundMetersPerSec * duration_seconds) / 2;
-
-  // convert to cm
-  distance_cm = distance_meters * 100;
-
-  return distance_cm;
-}
-
-
-void forward() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
-}
-
-void backward() {
-  digitalWrite(8, HIGH);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, HIGH);
-}
-
-void rightTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, HIGH);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
-  delay(300);
-  stop();
-}
-
-void leftTurn() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, HIGH);
-  digitalWrite(12, LOW);
-  delay(300);
-  stop();
-}
-
-void stop() {
-  digitalWrite(8, LOW);
-  digitalWrite(11, LOW);
-  digitalWrite(10, LOW);
-  digitalWrite(12, LOW);
-}
-
-void loop()
-{
-  //- wait for button press before doing anything
-  while (digitalRead(2) == HIGH) {
-    //- do nothing
-  }
-  delay(500);
-
-  //- loop here forever after the button is pressed
-  while (true) {
-    if ((ultrasonic() < 20) && (ultrasonic() != 0)) {
-      rightTurn();
-      delay(400);
-    }
-    else {
-      forward();
-      delay(20);
-    }
-  }
-}
-```
-{:.text-based}
-
-{% include youtube.html id='qRF44RI5khk' %}{:.block-based}

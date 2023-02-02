@@ -1,225 +1,43 @@
 ---
-
 layout: lesson
-title: Lesson 12 &middot; Line Following
+title: Lesson 9 &middot; Navigation Challenges
 
 suggested_time: 60-75 minutes  
 
 videos:
-    - link: https://youtu.be/MGxP-yhvOD8
-      text: How to wire and code a single IR sensor module (Text-code)
-    - link: https://youtu.be/6JP4tyrF_q8
-      text: How to code line following (Text-code)
-    - link: https://youtu.be/xmdW76WxKyo
-      text: Line & Light Following Demo With Barnabas Rover
+
+    - link: https://youtu.be/FZrIQ_5z6RE
+      text: Box Challenge (Block-based)
+
+
 ---
 
 
 
 ### Overview
 
-In this section we'll learn how to use IR sensors to get our robot to follow a line!
+In this lesson you'll be challenged to program your robot through a series of challenges
 
-### What You'll Need
+### There And Back Challenge
 
-Before we get started, let's make sure that we have all the parts.
+Now that we have built a library of subroutines we can take what we have learned to perform a simple task. This lesson will allow the students to become more familiar with the material taught in the last few weeks and give them an objective to work towards. The 'obstacle course' they will be navigating is very simple, they will get more complicated in coming weeks. This week we will simply navigate around a cone (or similar obstacle) as shown below.
 
-- 1 x Arduino Uno Compatible Board
-- 2 x IR Sensor Modules
-- 6 x Pin to Socket Arduino Wires
-- 2 x Double-stick foam
+<img src="obstacle_1.png" alt="obstacle_1" style="zoom:75%;" class="image center" />
 
-### Demo Video
+Some things to keep in mind during this lesson:
 
-{% include youtube.html id='xmdW76WxKyo' %}
+- The delay in your forward subroutine probably will not move the robot forward the exact distance needed. You will either need to adjust that delay or use the forward subroutine multiple times.
+- The turn will likely need to be two separate 90 degree turns. 
 
-### IR Sensor Module 
+### Box Challenge
 
-<img src="ir module.jpg" alt="fig-3_4" style="zoom:50%;" class="image center" />
+{% include youtube.html id='FZrIQ_5z6RE' %}{:.block-based}
 
-IR Sensor modules include two special LEDs.  One LED is a IR transmitter (the clear one) and the other is a IR receiver (the dark one).  
+ Have your robot travel around the box until it reaches its starting location. 
 
-The transmitter sends a IR signal into the air.  While the IR travels through the air, it will bounce off of near by objects, sending IR back to the module.  The IR receiver looks for any IR signals that are bounced back and reports back to your robot if it does - which means that there is an object near by.  
+<img src="fig-12_1.png" alt="fig-12_1" style="zoom:75%;" class="image center" />
 
-There is a caveat here, though.  If IR hits black color, it won't bounce back because the black color absorbs the IR.  We can use this caveat to tell the different between white and black!  
+#### Things to consider
+- Like the other challenges the appropriate delays for forward and turn will take experimentation to find.
+- There are multiple ways to complete this challenge. For example, you can closely follow the outside of the box and make sharp turns, or you can create a large arcing circle around the box that doesn’t come remotely close to it.
 
-Use two modules, and you now have the ability to cause the robot to follow a line!
-
-### Mounting Your Modules 
-
-Mount your modules to the front bumper using double-stick foam.
-
-<img src="rover (3).png" alt="fig-3_4" style="zoom:40%;" class="image center" />
-
-**Note:** Newer versions include 2 x 90 degree angle mounts to ease mounting.  See photos below for mounting instructions.
-
-| <img src="90mount (3).jpg" alt="fig-3_4" style="zoom:40%;" class="image center" /> | <img src="90mount (4).jpg" alt="fig-3_4" style="zoom:40%;" class="image center" /> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="90mount (1).jpg" alt="fig-3_4" style="zoom:40%;" class="image center" /> | <img src="90mount (2).jpg" alt="fig-3_4" style="zoom:40%;" class="image center" /> |
-
-<div markdown = "1">
-
-### Video Lesson - How to wire and code a single IR module
-
-{% include youtube.html id='MGxP-yhvOD8' %}
-
-</div>{:.text-based}
-
-### Wire Your IR Modules
-
-The IR modules have three pins: VCC, GND and OUT.  
-
-VCC and GND provide power to the module.  OUT is the signal that goes to the controller board, which our code will look at to see whether we see white or black.
-
-Let's wire the IR modules to your Arduino-Compatible board using the following connections.
-
-| Left Sensor | Arduino-Uno Compatible Board |
-| ----------- | ---------------------------- |
-| VCC         | 5V                           |
-| GND         | GND                          |
-| OUT         | 5 (or 12)                    |
-
-| Right Sensor | Arduino-Uno Compatible Board |
-| ------------ | ---------------------------- |
-| VCC          | 5V                           |
-| GND          | GND                          |
-| OUT          | 6                            |
-
-
-<div markdown = "1">
-
-### Video Lesson - How to code line following
-
-{% include youtube.html id='6JP4tyrF_q8' %}
-
-</div>{:.text-based}
-
-### Coding Your IR Modules
-
-<img src="linefollowrover.png" alt="fig-6_0" style="zoom:100%;" class="image center block-based" />
-
-```c
-int trig = 3;
-int echo = 4;
-int led = 7;
-int leftSensor = 5;
-int rightSensor = 6;
-
-
-void forward() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
-}
-
-void backward() {
-  digitalWrite(8,HIGH);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,HIGH);
-}
-
-void rightTurn() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
-  delay(300);
-  stop();
-}
-
-void leftTurn() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
-  delay(300);
-  stop();
-}
-
-void forwardLeft() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-}
-
-void backwardLeft() {
-  digitalWrite(8,HIGH);
-  digitalWrite(11,LOW);
-}
-
-void backwardRight() {
-  digitalWrite(10,LOW);
-  digitalWrite(12,HIGH);
-}
-
-void forwardRight() {
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
-}
-
-void stop() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
-}
-
-void setup() {
-  pinMode(trig, OUTPUT);
-  pinMode(echo, INPUT);
-  pinMode(led, OUTPUT);
-  
-  pinMode(leftSensor, INPUT);
-  pinMode(rightSensor, INPUT);
-  
-  pinMode(8, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(12, OUTPUT);
-    
-  pinMode(2, INPUT);
-}
-
-void loop() {
-
-    //- wait for button press before doing anything
-    while (digitalRead(2) == HIGH) {
-      //- do nothing
-    }
-    delay(500);
-
-    //- loop here forever after the button is pressed
-    while (true) {
-      // 0: no line, 1: line
-      int leftStatus = digitalRead(leftSensor); 
-      int rightStatus = digitalRead(rightSensor);
-  
-      if (leftStatus == 0 && rightStatus == 0) {
-        forward();
-      }
-  
-      if (leftStatus == 0 && rightStatus != 0) {
-        forwardLeft();
-        backwardRight();
-      }
-  
-      if (leftStatus != 0 && rightStatus == 0) {
-        backwardLeft();
-        forwardRight();
-      }
-  
-      if (leftStatus != 0 && rightStatus != 0) {
-        stop();
-      }
-    }
-}
-```
-{:.text-based}
-
-
-
-### Troubleshooting Tips
-
-- Your rover may be heading in the wrong direction when it sees the line.  If that's the case, you probably have your left/right sensor mixed up.  Check your wiring and code.
-- You may find that your rover reacts too slowly and and veers off the track before it can turn.  If that's the case, try slowing down your racer by moving at half speed.  See lesson 8 if you need a refresher on how to do that.
