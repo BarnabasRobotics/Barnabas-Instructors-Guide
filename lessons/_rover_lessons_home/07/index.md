@@ -5,6 +5,8 @@ title: Lesson 7 &middot; Wire And Program DC Motors
 suggested_time: 60-75 minutes  
 
 videos:
+    - link: https://youtu.be/fbnLJJpaAGk
+      text: How To Wire & Code (Text) Your DC Motors (Text-Code)
 ---
 
 ### What You'll Need
@@ -22,6 +24,14 @@ In this section we will explore how DC motors are controlled.  Topics covered in
 
 - How to wire your servo motors to your Arduino Uno Compatible board
 - How to program your DC motors to to turn on, stop and spin both directions
+
+<div markdown = "1">
+
+### Video Lesson - How To Wire & Code (Text) Your DC Motors (Text-Code)
+
+{% include youtube.html id='fbnLJJpaAGk' %}
+
+</div>{:.text-based}
 
 ### DC Motors
 
