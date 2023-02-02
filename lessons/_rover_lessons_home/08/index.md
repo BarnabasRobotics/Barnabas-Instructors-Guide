@@ -1,11 +1,14 @@
 ---
 layout: lesson
-title: Lesson 8 &middot; Basic Navigation
+title: Lesson 8 &middot; Subroutines, Adding a Button & Basic Navigation
 
 suggested_time: 60-75 minutes  
 
 videos:
-
+    - link: https://youtu.be/Zi0cBWEh6nM
+      text: How to code Arduino DC Motor Drivers using functions and subroutines (Text-Code)
+    - link: https://youtu.be/SHaALfbN5wc
+      text: How To Control Your Motors Using A Button (Text-Code)
 ---
 
 ### Overview
@@ -32,6 +35,14 @@ Think of when you're told to take out the trash.  Your parents don't tell you:
 Instead, they just tell you to "take the trash out".  The reason is because at some point you were already taught all the necessary steps required to accomplish the task.  Our robot can do this same thing where we make it understand one command as a longer list of orders.
 
 We are going to achieve this by using **subroutines**. 
+
+<div markdown = "1">
+
+### Video Lesson - How to code Arduino DC Motor Drivers using functions and subroutines (Text-Code)
+
+{% include youtube.html id='Zi0cBWEh6nM' %}
+
+</div>{:.text-based}
 
 ### Creating A Subroutine
 
@@ -166,6 +177,14 @@ In order to accomplish this, we're going to need to use something called a while
 "Do what ever is inside the loop WHILE this thing is true"
 
 So what we're going to do is tell it to do nothing WHILE the button is not pressed, and then jump out of the while loop once the button is pressed.  This is what it looks like in code.  Give it a try!
+
+<div markdown = "1">
+
+### Video Lesson - How to add button to control motor movement (Text-Code)
+
+{% include youtube.html id='SHaALfbN5wc' %}
+
+</div>{:.text-based}
 
 <img src="fig-7_3.png" style="zoom:100%;" class="image center block-based" />
 
