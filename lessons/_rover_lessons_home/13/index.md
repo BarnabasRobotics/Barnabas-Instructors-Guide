@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 10 &middot; Allow Your Robot To See
+title: Lesson 13 &middot; Allow Your Robot To See
 
 suggested_time: 60-75 minutes  
 

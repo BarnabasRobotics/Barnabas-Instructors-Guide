@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 13 &middot; Light Following
+title: Lesson 16 &middot; Light Following
 
 suggested_time: 60-75 minutes  
 

@@ -23,14 +23,6 @@ In order to accomplish this, we're going to need to use something called a while
 
 So what we're going to do is tell it to do nothing WHILE the button is not pressed, and then jump out of the while loop once the button is pressed.  This is what it looks like in code.  Give it a try!
 
-<div markdown = "1">
-
-### Video Lesson - How to add button to control motor movement (Text-Code)
-
-{% include youtube.html id='SHaALfbN5wc' %}
-
-</div>{:.text-based}
-
 <img src="fig-7_3.png" style="zoom:100%;" class="image center block-based" />
 
 ```c
@@ -80,3 +72,13 @@ void loop()
 }
 ```
 {:.text-based}
+
+<div markdown = "1">
+
+### Video Lesson - How to add button to control motor movement (Text-Code)
+
+{% include youtube.html id='SHaALfbN5wc' %}
+
+Note: This version uses the pinMode(2,INPUT_PULLUP) command so that you do not need to connect a 10K pull-up resistor.  Details are explained in the video.
+
+</div>{:.text-based}

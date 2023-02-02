@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 9 &middot; Navigation Challenges
+title: Lesson 12 &middot; Navigation Challenges
 
 suggested_time: 60-75 minutes  
 

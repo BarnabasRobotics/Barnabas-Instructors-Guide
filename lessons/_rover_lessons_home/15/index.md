@@ -1,7 +1,7 @@
 ---
 
 layout: lesson
-title: Lesson 12 &middot; Line Following
+title: Lesson 15 &middot; Line Following
 
 suggested_time: 60-75 minutes  
 
