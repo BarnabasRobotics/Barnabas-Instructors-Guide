@@ -57,14 +57,13 @@ void loop() {
 ```
 ### Extra Challenges
 
-1) Get motor B to move when you press and stop when don't press
-2) Get both motor A and B to move when you press and both to stop when you don't press
-3) When you press, move both motors forward for 1 second and then stop.
-4) When you press, move both motors backward for 1 second and then stop.
-5) Place a piece of tape on your table then program your car to move right to the tape when you press the button.
+<li>Get motor B to move when you press and stop when don't press</li>
+<li>Get both motor A and B to move when you press and both to stop when you don't press</li>
+<li>When you press, move both motors forward for 1 second and then stop.</li>
+<li>When you press, move both motors backward for 1 second and then stop.</li>
+<li>Place a piece of tape on your table then program your car to move right to the tape when you press the button.</li>
 
 </div>{:.text-based}
-
 
 
 <div markdown = "1">
