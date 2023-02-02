@@ -205,8 +205,7 @@ void loop() {
     stop();
   }
 }
-```
-{:.text-based}
+```{:.text-based}
 
 
 
