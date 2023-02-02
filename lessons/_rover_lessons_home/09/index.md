@@ -13,20 +13,63 @@ videos:
 
 In this section we will be programming our Barnabas Rover to trigger your code with your button
 
+<div markdown = "1">
+### Trigger Motion With Your Button
+
+{% include youtube.html id='SHaALfbN5wc' %}
+
+Since we have started to program our car to move, you may have noticed that at times your car starts moving before you're ready to test your code.  To make things a bit more convenient for us, we're going to add a bit of code so that you car doesn't begin its program until you press your button.  
+
+In order to accomplish this, we're going to need include button sensing into our code using IF/ELSE blocks.  Check out the code below!
+
+NOTE: Previously we used a 10K resistor as a pull-up resistor to pull the voltage at the button to HIGH whenever the button is not pushed.  In the video above, we will learn about an internal pull-up resistor so that we can rewire our circuit and remove that 10K resistor.
+
+```c
+void setup() {
+   
+  //-Button Setup
+  pinMode(2,INPUT_PULLUP);
+  
+  //-Control Motor B
+  pinMode(10,OUTPUT);
+  pinMode(12,OUTPUT);
+   
+  //-Control Motor A
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+  
+}
+
+void loop() {
+  
+  //-if I press the button, move motor A
+  if ( digitalRead(2) == LOW ) {
+    digitalWrite(8,LOW);
+    digitalWrite(11,HIGH);
+  }
+  
+  //-if I don't press the button, stop motor A
+  if ( digitalRead(2) == HIGH ) {
+    digitalWrite(8,HIGH);
+    digitalWrite(11,HIGH);
+  }
+}
+```
+### Extra Challenges
+
+1) Get motor B to move when you press and stop when don't press
+3) Get both motor A and B to move when you press and both to stop when you don't press
+4) When you press, move both motors forward for 1 second and then stop.
+5) When you press, move both motors backward for 1 second and then stop.
+6) Place a piece of tape on your table then program your car to move right to the tape when you press the button.
+
+</div>{:.text-based}
+
 
 
 <div markdown = "1">
 
-
-### Video Lesson - How to add button to control motor movement
-
-{% include youtube.html id='SHaALfbN5wc' %}
-
-Note: This version uses the pinMode(2,INPUT_PULLUP) command so that you do not need to connect a 10K pull-up resistor.  Details are explained in the video.
-
-</div>{:.text-based}
-
-### Adding Your Button
+### Trigger Motion With Your Button
 
 Since we have started to program our car to move, you may have noticed that at times your car starts moving before you're ready to test your code.  To make things a bit more convenient for us, we're going to add a bit of code so that you car doesn't begin its program until you press your button.  
 
@@ -36,52 +79,7 @@ In order to accomplish this, we're going to need to use something called a while
 
 So what we're going to do is tell it to do nothing WHILE the button is not pressed, and then jump out of the while loop once the button is pressed.  This is what it looks like in code.  Give it a try!
 
-<img src="fig-7_3.png" style="zoom:100%;" class="image center block-based" />
+<img src="fig-7_3.png" style="zoom:100%;" class="image center" />
 
-```c
-void forward() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
-}
+</div>{:.block-based}
 
-void backward() {
-  digitalWrite(8,HIGH);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,HIGH);
-}
-
-void stop() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
-}
-
-void setup()
-{
-  pinMode(8,OUTPUT);
-  pinMode(11,OUTPUT);
-  pinMode(10,OUTPUT);
-  pinMode(12,OUTPUT);
-  pinMode(2,INPUT);
-}
-
-void loop()
-{
-  while (digitalRead(2)==HIGH) {
-     //- do nothing
-  }
-  forward();
-  delay(1000);
-  stop();
-  delay(1000);
-  backward();
-  delay(1000);
-  stop();
-  delay(1000);
-}
-```
-{:.text-based}
