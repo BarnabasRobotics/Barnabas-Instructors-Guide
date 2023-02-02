@@ -54,7 +54,6 @@ int trig_pin = 4;
 int echo_pin = 5;
 
 void setup() {
-  
   //-Control Motor B
   pinMode(motb_pin1,OUTPUT);
   pinMode(motb_pin2,OUTPUT);
@@ -77,10 +76,9 @@ void setup() {
 //-sends sound out and receives sound
 //-returns the distance in centimeters
 int ultrasonic() {
-  
   long time;
   float distance;
-  
+ 
   //-trigger a sound 
   // send out trigger signal
   digitalWrite(trig_pin, LOW);
@@ -96,14 +94,11 @@ int ultrasonic() {
   
   //- calculate the distance in centimeters
   distance = 0.01715 * time;
-  
   return distance;
-
 }
 
 //- turn 90 degrees
 void turnRight() {
-  
   //- motor b is stopped
   analogWrite(motb_pin1,0);
   analogWrite(motb_pin2,0);
@@ -117,11 +112,9 @@ void turnRight() {
   //- stop motor a
   analogWrite(mota_pin1,0);
   analogWrite(mota_pin2,0);
-  
 }
 
 void turnLeft() {
-  
   //- motor a is stopped
   analogWrite(mota_pin1,0);
   analogWrite(mota_pin2,0);
@@ -135,7 +128,6 @@ void turnLeft() {
   //- stop motor b
   analogWrite(motb_pin1,0);
   analogWrite(motb_pin2,0);
-  
 }
 
 void stop() {
@@ -150,7 +142,6 @@ void stop() {
 
 
 void moveToWall(int speeda, int speedb) {
-  
   //- move forward!
   //- motor a
   analogWrite(mota_pin1,speeda);
@@ -168,10 +159,8 @@ void moveToWall(int speeda, int speedb) {
     //-do nothing except check distance
     distance = ultrasonic();
   }
-  
   //-stop!!!
   stop();
-  
 }
 
 
@@ -188,9 +177,6 @@ void moveForward(int speeda, int speedb, int inches) {
   analogWrite(motb_pin2,speedb);
   
   //- move forward the distance in inches
-  
-  
-  
   myDelay = inches*125;
   delay(myDelay);
   
@@ -208,25 +194,18 @@ void moveBackward(int speeda, int speedb) {
   //- motor b
   analogWrite(motb_pin1,speedb);
   analogWrite(motb_pin2,0);
-  
 }
-
-
 
 void loop() {
   
   Serial.println(ultrasonic());
-  
   delay(100);
-  
-  
   if (digitalRead(button_pin)==LOW) {
       moveToWall(120,120);
   }
   else {
     stop();
   }
-
 }
 ```
 {:.text-based}
@@ -319,8 +298,7 @@ void turnRight() {
   
   //- stop motor a
   analogWrite(mota_pin1,0);
-  analogWrite(mota_pin2,0);
-  
+  analogWrite(mota_pin2,0);  
 }
 
 void turnLeft() {
@@ -338,7 +316,6 @@ void turnLeft() {
   //- stop motor b
   analogWrite(motb_pin1,0);
   analogWrite(motb_pin2,0);
-  
 }
 
 void stop() {
@@ -371,7 +348,6 @@ void moveToWall(int speeda, int speedb) {
     //-do nothing except check distance
     distance = ultrasonic();
   }
-  
   //-stop!!!
   stop();
   
@@ -391,9 +367,6 @@ void moveForward(int speeda, int speedb, int inches) {
   analogWrite(motb_pin2,speedb);
   
   //- move forward the distance in inches
-  
-  
-  
   myDelay = inches*125;
   delay(myDelay);
   
@@ -411,7 +384,6 @@ void moveBackward(int speeda, int speedb) {
   //- motor b
   analogWrite(motb_pin1,speedb);
   analogWrite(motb_pin2,0);
-  
 }
 
 
@@ -421,8 +393,7 @@ void loop() {
   Serial.println(ultrasonic());
   
   delay(100);
-  
-  
+
   if (digitalRead(button_pin)==LOW) {
       moveToWall(120,120);
       turnRight();
@@ -430,7 +401,6 @@ void loop() {
   else {
     moveForward();
   }
-
 }
 ```
 {:.text-based}
@@ -476,7 +446,6 @@ void setup() {
   pinMode(echo_pin,INPUT);
   
   Serial.begin(9600);
-  
 }
 
 //-sends sound out and receives sound
@@ -573,7 +542,6 @@ void moveToWall(int speeda, int speedb) {
     //-do nothing except check distance
     distance = ultrasonic();
   }
-  
   //-stop!!!
   stop();
   
@@ -593,9 +561,6 @@ void moveForward(int speeda, int speedb, int inches) {
   analogWrite(motb_pin2,speedb);
   
   //- move forward the distance in inches
-  
-  
-  
   myDelay = inches*125;
   delay(myDelay);
   
@@ -616,8 +581,6 @@ void moveBackward(int speeda, int speedb) {
   
 }
 
-
-
 void loop() {
   
   Serial.println(ultrasonic());
@@ -631,7 +594,7 @@ void loop() {
   }
   else {
     moveForward();
-      delay(20);
+    delay(20);
   }
 
 }
