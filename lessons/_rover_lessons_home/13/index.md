@@ -9,7 +9,7 @@ videos:
       text: Printing Ultrasonic Sensor Distance On Serial Monitor (Block-Based)
     - link: https://youtu.be/vf95FwYDsv8
       text: Ultrasonic Lesson (Text-based)
-    - link: https://youtu.be/D_xfOxR7BAE
+    - link: https://youtu.be/pMzp3fG5EeM
       text: The Blinking Light Challenge Using The Ultrasonic Sensor
 
 ---
@@ -18,12 +18,15 @@ videos:
 
 In this section you will be learning how to add an ultrasonic sensor to your Barnabas Racer, which will allow it to see objects in front of it!
 
-<div markdown="1">
 
 
-### Full Tutorial Video
+<div markdown = "1">
 
-{% include youtube.html id='vf95FwYDsv8' %}
+### The Math behind ultrasonic code for Arduino
+
+{% include youtube.html id='pMzp3fG5EeM' %}
+
+Note: This uses pins 4 and 5 for trigger and echo connections, respectively.
 
 </div>{:.text-based}
 
@@ -58,12 +61,12 @@ Notes:
 
 The wiring chart below shows the connections that we need to make between the ultrasonic sensor and the Uno.
 
-| Ultrasonic Sensor | Uno   | Type of Connection |
-| ----------------- | ----- | ------------------ |
-| Vcc               | 5V    | Power (+)          |
-| Trig              | Pin 3 | Output             |
-| Echo              | Pin 4 | Input              |
-| Gnd               | Gnd   | Power (-)          |
+| Ultrasonic Sensor | Uno              | Type of Connection |
+| ----------------- | ---------------- | ------------------ |
+| Vcc               | 5V               | Power (+)          |
+| Trig              | Pin 3 (Or Pin 4) | Output             |
+| Echo              | Pin 4 (Or Pin 5) | Input              |
+| Gnd               | Gnd              | Power (-)          |
 
 ##### Ultrasonic Sensor Wiring Diagram
 
@@ -126,8 +129,8 @@ In the  communication tab you'll find blocks called "serial println" and "glue".
 The code below includes the subroutine ultrasonic().  Read the code and see if you find the formula that we derived in the math section of the lesson.  The distance value is returned in centimeters.
 
 ```c
-int trig = 3;
-int echo = 4;
+int trig = 4;
+int echo = 5;
 int led = 7;
 
 // float so that we can handle decimals
@@ -183,8 +186,8 @@ Next, in the loop add
 The final code:
 
 ```c
-int trig = 3;
-int echo = 4;
+int trig = 4;
+int echo = 5;
 int led = 7;
 
 // float so that we can handle decimals
@@ -253,8 +256,8 @@ How about we use the LED in tandem with the ultrasonic sensor to notify us of th
 ![fig 14.9](fig-14_9.png){:.image .block-based}
 
 ```c
-int trig = 3;
-int echo = 4;
+int trig = 4;
+int echo = 5;
 int led = 7;
 
 // float so that we can handle decimals
@@ -323,8 +326,8 @@ Create code to turn the light on when an object is close and off when an object 
 
 
 ```c
-int trig = 3;
-int echo = 4;
+int trig = 4;
+int echo = 5;
 int led = 7;
 
 // float so that we can handle decimals
