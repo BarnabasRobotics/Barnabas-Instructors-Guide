@@ -51,21 +51,20 @@ Note: In the table below, only pins 8 and 11 can be controlled via analog so pin
 |           HIGH (255)           |              128              | Turn The Other Way (Half Speed)  |
 |           HIGH (255)           |              255              | Stop Right Away (Emergency Stop) |
 
+<div markdown = "1">
+
 ### Changing Our Motor Wires To Analog Pins
 
 It is a good idea to change all of our pins to analog pins instead of digital.  This way you can adjust the analog level of both control pins, simplifying the logic.  8 and 12 are digital pins, so let's change them to 3 and 9.  See the updated table and video below.
 
-<div markdown = "1">
 
 ### How to code DC driver L9110S with different speeds Arduino (CORRECTED WIRING)
 
 {% include youtube.html id='eLpbRqXdTR0' %}
 
-Note: This version rewires the DC Driver pins to 3,11 and 9,11.  Details explained in the video.
-
 </div>{:.text-based}
 
-**Motor A Control Table Using Analog**
+**Motor A Control Table Using Analog**{:.text-based}
 
 | A-IA Signal (Pin 3) - Analog | A-IB Signal (Pin 11) - Analog | DC Motor Movement                |
 | :--------------------------: | :---------------------------: | -------------------------------- |
@@ -75,8 +74,9 @@ Note: This version rewires the DC Driver pins to 3,11 and 9,11.  Details explain
 |             255              |               0               | Turn The Other Way               |
 |             128              |               0               | Turn The Other Way (Half Speed)  |
 |             255              |              255              | Stop Right Away (Emergency Stop) |
+{:.text-based}
 
-**Motor B Control Table Using analog**
+**Motor B Control Table Using analog**{:.text-based}
 
 | B-IB Signal (Pin 10) - Analog | B-IA Signal (Pin 9) - Analog | DC Motor Movement                |
 | :---------------------------: | :--------------------------: | -------------------------------- |
@@ -86,6 +86,7 @@ Note: This version rewires the DC Driver pins to 3,11 and 9,11.  Details explain
 |              255              |              0               | Turn The Other Way               |
 |              128              |              0               | Turn The Other Way (Half Speed)  |
 |              255              |             255              | Stop Right Away (Emergency Stop) |
+{:.text-based}
 
 <div markdown = "1">
 
