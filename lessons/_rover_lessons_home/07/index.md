@@ -133,12 +133,14 @@ The code below moves motor A in one direction.  Try uploading this code to your 
 ```c
 void setup()
 {
+  //-Control Motor A 
   pinMode(8,OUTPUT);
   pinMode(11,OUTPUT);
 }
 
 void loop()
 {
+  //-Turn on Motor A
   digitalWrite(8,HIGH);
   digitalWrite(11,LOW);
 }
@@ -154,12 +156,14 @@ This code moves the same motor A in the opposite direction.  Notice we just chan
 ```c
 void setup()
 {
+  //-Control Motor A 
   pinMode(8,OUTPUT);
   pinMode(11,OUTPUT);
 }
 
 void loop()
 {
+  //-Turn on Motor A (other direction) 
   digitalWrite(8,LOW);
   digitalWrite(11,HIGH);
 }
@@ -177,12 +181,14 @@ Now let's stop the motor.  Following the chart from the previous section, we jus
 ```c
 void setup()
 {
+  //-Control Motor A  
   pinMode(8,OUTPUT);
   pinMode(11,OUTPUT);
 }
 
 void loop()
 {
+  //-Turn off Motor A (decelerate)
   digitalWrite(8,LOW);
   digitalWrite(11,LOW);
 }
@@ -194,12 +200,14 @@ void loop()
 ```c
 void setup()
 {
+  //-Control Motor A  
   pinMode(8,OUTPUT);
   pinMode(11,OUTPUT);
 }
 
 void loop()
 {
+  //-Turn off Motor A (immediate)
   digitalWrite(8,HIGH);
   digitalWrite(11,HIGH);
 }
@@ -223,8 +231,11 @@ Now that we know how to move a single motor in both directions, let's see if we 
 ```c
 void setup()
 {
+  //-Control Motor A 
   pinMode(8,OUTPUT);
   pinMode(11,OUTPUT);
+  
+  //-Control Motor B 
   pinMode(10,OUTPUT);
   pinMode(12,OUTPUT);
 }
@@ -233,6 +244,7 @@ void loop()
 {
   digitalWrite(8,LOW);
   digitalWrite(11,HIGH);
+    
   digitalWrite(10,HIGH);
   digitalWrite(12,LOW);
 }
@@ -264,8 +276,11 @@ Now that we know how to move the motors back and forth, let's create a simple pr
 ```c
 void setup()
 {
+  //-Control Motor A 
   pinMode(8,OUTPUT);
   pinMode(11,OUTPUT);
+  
+  //-Control Motor B 
   pinMode(10,OUTPUT);
   pinMode(12,OUTPUT);
 }
@@ -274,6 +289,7 @@ void loop()
 {
   digitalWrite(8,LOW);
   digitalWrite(11,HIGH);
+    
   digitalWrite(10,HIGH);
   digitalWrite(12,LOW);
     
@@ -281,6 +297,7 @@ void loop()
     
   digitalWrite(8,LOW);
   digitalWrite(11,LOW);
+    
   digitalWrite(10,LOW);
   digitalWrite(12,LOW);
     
@@ -307,8 +324,11 @@ Modify the code so that it only waits 1/2 a second after stopping and going.  Se
 ```c
 void setup()
 {
+  //-Control Motor A 
   pinMode(8,OUTPUT);
   pinMode(11,OUTPUT);
+  
+  //-Control Motor B 
   pinMode(10,OUTPUT);
   pinMode(12,OUTPUT);
 }
