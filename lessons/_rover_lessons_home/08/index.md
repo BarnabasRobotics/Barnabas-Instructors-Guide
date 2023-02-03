@@ -31,11 +31,102 @@ We are going to achieve this by using **subroutines**.
 
 <div markdown = "1">
 
-### Video Lesson - How to code Arduino DC Motor Drivers using functions and subroutines (Text-Code)
+### How to code Arduino DC Motor Drivers using functions and subroutines (Text-Code)
 
 {% include youtube.html id='Zi0cBWEh6nM' %}
 
+### Creating A Subroutine
+
+To create a subroutine is to create a little sub-program within your code.  Take a look at the code below where we create a subroutine that moves motor A forward.  Notice that the name of the subroutine matches what it does.  This way it is easy to keep track what our subroutines do.
+
+```c
+void motorAForward() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+}
+```
+
+### Calling A Subroutine
+
+To call a subroutine, simple use the name of the subroutine in your main loop.  Try uploading the code to see if your robot moves forward.  If it doesn't, you'll need to modify the code.  Remember if one of the wheels is spinning the wrong way, you just need to flip the high/low on your motor pair (8,11 or 10, 12).
+
+```c
+void setup() {
+  
+  //-Control Motor B
+  pinMode(10,OUTPUT);
+  pinMode(12,OUTPUT);
+    
+  //-Control Motor A
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+
+}
+
+void motorAForward() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+}
+
+void loop() {
+  motorAForward();
+}
+```
+
+### Practice #1: Move Forward and Backward
+
+Using subroutines, create code that moves your motor A forward for a second, stops for a second, moves backwards for a second, stops for a second and then repeats.
+
+```c
+void setup() {
+  
+  //-Control Motor B
+  pinMode(10,OUTPUT);
+  pinMode(12,OUTPUT);
+    
+  //-Control Motor A
+  pinMode(8,OUTPUT);
+  pinMode(11,OUTPUT);
+    
+}
+
+void motorABackward() {
+  digitalWrite(8,HIGH);
+  digitalWrite(11,LOW);
+}
+
+void motorAForward() {
+  digitalWrite(8,LOW);
+  digitalWrite(11,HIGH);
+}
+
+void motorAStop() {
+  digitalWrite(8,HIGH);
+  digitalWrite(11,HIGH);
+}
+
+void loop() {
+  motorAForward();
+  delay(1000);
+  motorAStop();
+  delay(1000);
+  
+  motorABackward();
+  delay(1000);
+  motorAStop();
+  delay(1000);
+}
+```
+
+### Additional Challenges
+
+- Create motorBForward, motorBBackward functions that move and stop motor B.  Test to make sure that they work.
+- Create forward, backward and stop functions that move and stop both motors. Test to make sure that they work.
+- Using functions, create a program that goes forward 24", wait 1 second, then goes backwards 12", wait 1 second, and then goes forward 20".  The entire sequence should be triggered when you press your button.
+
 </div>{:.text-based}
+
+<div markdown = "1">
 
 ### Creating A Subroutine
 
@@ -48,100 +139,17 @@ To create a subroutine is to create a little sub-program within your code.  Take
 <img src="fig-8_3.png" alt="fig-6_0" style="zoom:100%;" class="image center block-based" />
 
 
-
-
-```c
-void forward() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
-}
-```
-{:.text-based}
-
 ### Calling A Subroutine
 
 To call a subroutine, simple use the name of the subroutine in your main loop.  Try uploading the code to see if your robot moves forward.  If it doesn't, you'll need to modify the code.  Remember if one of the wheels is spinning the wrong way, you just need to flip the high/low on your motor pair (8,11 or 10, 12).
 
 <img src="fig-7_1.png" alt="fig-6_0" style="zoom:100%;" class="image center block-based" />
 
-
-```c
-void forward() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
-}
-
-void setup()
-{
-  pinMode(8,OUTPUT);
-  pinMode(11,OUTPUT);
-  pinMode(10,OUTPUT);
-  pinMode(12,OUTPUT);
-}
-
-void loop()
-{
-  forward();
-}
-```
-{:.text-based}
-
 #### Practice #1: Move Forward and Backward
 
 Using subroutines, create code that moves your car forward for a second, stops for a second, moves backwards for a second, stops for a second and then repeats.
 
 <img src="fig-7_2.png" alt="fig-6_0" style="zoom:100%;" class="image center block-based" />
-
-
-
-
-```c
-void forward() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,HIGH);
-  digitalWrite(10,HIGH);
-  digitalWrite(12,LOW);
-}
-
-void backward() {
-  digitalWrite(8,HIGH);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,HIGH);
-}
-
-void stop() {
-  digitalWrite(8,LOW);
-  digitalWrite(11,LOW);
-  digitalWrite(10,LOW);
-  digitalWrite(12,LOW);
-}
-
-void setup()
-{
-  pinMode(8,OUTPUT);
-  pinMode(11,OUTPUT);
-  pinMode(10,OUTPUT);
-  pinMode(12,OUTPUT);
-}
-
-void loop()
-{
-  forward();
-  delay(1000);
-  stop();
-  delay(1000);
-  backward();
-  delay(1000);
-  stop();
-  delay(1000);
-}
-```
-{:.text-based}
 
 #### Practice #2: Make more subroutines
 
@@ -158,3 +166,5 @@ Create the following subroutines and test them inside your main loop to make sur
 | *rback*ward | Moves the right motor backward only            |
 | *forward*   | Moves both the left and right motor forward.   |
 | *backward*  | Moves both the left and right motor backwards. |
+
+</div>{:.block-based}

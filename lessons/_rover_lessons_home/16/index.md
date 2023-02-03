@@ -62,9 +62,9 @@ Photoresistor coding is currently only available on text-based.  Change to text-
 
 </div>{:.block-based} 
 
-### Code A Single Photoresistor to Control Movement
-
 <div markdown="1">
+
+### Code A Single Photoresistor to Control Movement
 
 In the video below we will find out the light/dark values for our photoresistor and code our car to move when a light is on and stop when the light is off.
 
