@@ -37,329 +37,323 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 
 In this lesson we will assemble the mechanical parts of our robot arm
 
-### Arm Assembly (Same for Wood and Acrylic Model)
+## Arm Assembly (Same for Wood and Acrylic Model)
 
 ### Build Videos
 
-#### <u>STEPS 1-3: Assemble Robot Arm Base</u>
+| <u>STEPS 1-3: Assemble Robot Arm Base</u>                    | <u>STEPS 4-9: Assemble Rotating Base / Turret</u> |
+| ------------------------------------------------------------ | ------------------------------------------------- |
+| {% include youtube.html id='NFqWNfnIABY' %} Note: Watch until 22:45 | {% include youtube.html id='tmwG4g5-tf4' %}       |
 
-{% include youtube.html id='NFqWNfnIABY' %}
+| <u>STEPS 10-11: Assemble Main Robot Arm</u> |      |
+| ------------------------------------------- | ---- |
+| {% include youtube.html id='bb9ocu_3jo8' %} |      |
 
-Note: Watch until 22:45
+### <u>Written Instructions</u>
 
-#### <u>STEPS 4-9: Assemble Rotating Base / Turret</u>
+### <u>STEP 1. Build Base Motor Assembly</u>
 
-{% include youtube.html id='tmwG4g5-tf4' %}
+<u>Assemble the base motor assembly using:</u>
 
-#### <u>STEPS 10-11: Assemble Main Robot Arm</u>
+- <u>1 x Servo Motor</u>
+- <u>2 x M3x10 Screws</u>
+- <u>2 x Wood Pieces</u>
 
-{% include youtube.html id='bb9ocu_3jo8' %}
+<u>Make sure that the screw holes on the wood pieces align perfectly so that the screws can go in straight.  You may need to flip/rotate the wood pieces a few times until you get it right.  The screws will self-tap into the wood.</u>
 
-### Written Instructions
+<u><img src="beg (5).jpg" style="zoom:15%;" class="image center" /></u>
 
-### STEP 1. Build Base Motor Assembly
-
-Assemble the base motor assembly using:
-
-- 1 x Servo Motor
-- 2 x M3x10 Screws
-- 2 x Wood Pieces
-
-Make sure that the screw holes on the wood pieces align perfectly so that the screws can go in straight.  You may need to flip/rotate the wood pieces a few times until you get it right.  The screws will self-tap into the wood.
-
-<img src="beg (5).jpg" style="zoom:15%;" class="image center" />
-
-|                           Top View                           |                         Bottom View                          |
+|                       <u>Top View</u>                        |                      <u>Bottom View</u>                      |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="beg (3).jpg" style="zoom:75%;" class="image center" /> | <img src="beg (4).jpg" style="zoom:75%;" class="image center" /> |
+| <u><img src="beg (3).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="beg (4).jpg" style="zoom:75%;" class="image center" /></u> |
 
-### STEP 2. Assemble Platform Screws
+### <u>STEP 2. Assemble Platform Screws</u>
 
-Assemble platform screws using the following:
+<u>Assemble platform screws using the following:</u>
 
-- 4 x M3x30 Screws
-- 4 x Nuts (Regular)
+- <u>4 x M3x30 Screws</u>
+- <u>4 x Nuts (Regular)</u>
 
-Notice that the nuts are not tightened all the way.  We will tighten them in the next step when we attach the base motor assembly.
+<u>Notice that the nuts are not tightened all the way.  We will tighten them in the next step when we attach the base motor assembly.</u>
 
-<img src="beg (6).jpg" style="zoom:15%;" class="image center" />
+<u><img src="beg (6).jpg" style="zoom:15%;" class="image center" /></u>
 
-### STEP 3. Attach Base Motor To Platform
+### <u>STEP 3. Attach Base Motor To Platform</u>
 
-Align the base motor assembly to the platform screws so that they are perfectly matched.  
+<u>Align the base motor assembly to the platform screws so that they are perfectly matched.</u>  
 
-*IMPORTANT:* If you try to do this step without aligning the screws, you may damage the base motor assembly.  You may need to rotate the base motor platform several times until you get the right orientation.  When aligned correctly, ALL screws are perfectly straight.
+<u>*IMPORTANT:* If you try to do this step without aligning the screws, you may damage the base motor assembly.  You may need to rotate the base motor platform several times until you get the right orientation.  When aligned correctly, ALL screws are perfectly straight.</u>
 
-Once aligned, screw the screws into the base motor platform and tighten the nuts.  The screw will self-tap into the base motor assembly wood.
+<u>Once aligned, screw the screws into the base motor platform and tighten the nuts.  The screw will self-tap into the base motor assembly wood.</u>
 
-|                          Side View                           |                           Top View                           |
+|                       <u>Side View</u>                       |                       <u>Top View</u>                        |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="beg (1).jpg" style="zoom:75%;" class="image center" /> | <img src="beg (2).jpg" style="zoom:75%;" class="image center" /> |
+| <u><img src="beg (1).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="beg (2).jpg" style="zoom:75%;" class="image center" /></u> |
 
-### STEP 4. Build Main Body Bottom Plate
+### <u>STEP 4. Build Main Body Bottom Plate</u>
 
-Assemble main body bottom plate using:
+<u>Assemble main body bottom plate using:</u>
 
-- 1 x Servo Horn
-- 2 x Servo Screws
-- 1 x Wood Piece
+- <u>1 x Servo Horn</u>
+- <u>2 x Servo Screws</u>
+- <u>1 x Wood Piece</u>
 
-|                           Top View                           |                         Bottom View                          |
+|                       <u>Top View</u>                        |                      <u>Bottom View</u>                      |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="bot (2).jpg" style="zoom:75%;" class="image center" /> | <img src="bot (1).jpg" style="zoom:75%;" class="image center" /> |
+| <u><img src="bot (2).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="bot (1).jpg" style="zoom:75%;" class="image center" /></u> |
 
-### STEP 5. Build Left (Lift) Motor Assembly
+### <u>STEP 5. Build Left (Lift) Motor Assembly</u>
 
-Assemble left (lift) motor mount using:
+<u>Assemble left (lift) motor mount using:</u>
 
-- 1 x Servo Motor
-- 2 x M3x10 Screws
-- 2 x Wood Pieces
+- <u>1 x Servo Motor</u>
+- <u>2 x M3x10 Screws</u>
+- <u>2 x Wood Pieces</u>
 
-<img src="lift (6).jpg" style="zoom:15%;" class="image center" />
+<u><img src="lift (6).jpg" style="zoom:15%;" class="image center" /></u>
 
-|                           Top View                           |                         Bottom View                          |
+|                       <u>Top View</u>                        |                      <u>Bottom View</u>                      |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="lift (4).jpg" style="zoom:75%;" class="image center" /> | <img src="lift (5).jpg" style="zoom:75%;" class="image center" /> |
+| <u><img src="lift (4).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="lift (5).jpg" style="zoom:75%;" class="image center" /></u> |
 
-Assemble small servo arm using:
+<u>Assemble small servo arm using:</u>
 
-- 2 x Servo Screws
-- 1 x Servo Horn
-- 1 x Wood Piece
+- <u>2 x Servo Screws</u>
+- <u>1 x Servo Horn</u>
+- <u>1 x Wood Piece</u>
 
-|                           Top View                           |                         Bottom View                          |
+|                       <u>Top View</u>                        |                      <u>Bottom View</u>                      |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="lift (7).jpg" style="zoom:75%;" class="image center" /> | <img src="lift1.jpg" style="zoom:75%;" class="image center" /> |
+| <u><img src="lift (7).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="lift1.jpg" style="zoom:75%;" class="image center" /></u> |
 
-Attach small servo arm using:
+<u>Attach small servo arm using:</u>
 
-- 1 x Servo Screw
+- <u>1 x Servo Screw</u>
 
-*IMPORTANT:* Note that the servo motor can only move 180 degrees.  Make sure that the arm can turn fully between the two positions shown below before fastening the screw.  You may need to take the servo coupling off of the servo motor shaft and reposition it a few times to get it right.
+<u>*IMPORTANT:* Note that the servo motor can only move 180 degrees.  Make sure that the arm can turn fully between the two positions shown below before fastening the screw.  You may need to take the servo coupling off of the servo motor shaft and reposition it a few times to get it right.</u>
 
-|                          Position 1                          |                          Position 2                          |
+|                      <u>Position 1</u>                       |                      <u>Position 2</u>                       |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="lift (3).jpg" style="zoom:75%;" class="image center" /> | <img src="lift (2).jpg" style="zoom:75%;" class="image center" /> |
+| <u><img src="lift (3).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="lift (2).jpg" style="zoom:75%;" class="image center" /></u> |
 
-### STEP 6. Build Right (Extend) Motor Assembly
+### <u>STEP 6. Build Right (Extend) Motor Assembly</u>
 
-Assemble right (extend) motor mount using:
+<u>Assemble right (extend) motor mount using:</u>
 
-- 1 x Servo Motor
-- 2 x M3x10 Screws
-- 2 x Wood Pieces
+- <u>1 x Servo Motor</u>
+- <u>2 x M3x10 Screws</u>
+- <u>2 x Wood Pieces</u>
 
-<img src="extend (7).jpg" style="zoom:15%;" class="image center" />
+<u><img src="extend (7).jpg" style="zoom:15%;" class="image center" /></u>
 
-|                           Top View                           |                         Bottom View                          |
+|                       <u>Top View</u>                        |                      <u>Bottom View</u>                      |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="extend (5).jpg" style="zoom:75%;" class="image center" /> | <img src="extend (6).jpg" style="zoom:75%;" class="image center" /> |
+| <u><img src="extend (5).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="extend (6).jpg" style="zoom:75%;" class="image center" /></u> |
 
-Assemble large servo arm using:
+<u>Assemble large servo arm using:</u>
 
-- 2 x Servo Screws
-- 1 x Servo Horn
-- 1 x Wood Piece
+- <u>2 x Servo Screws</u>
+- <u>1 x Servo Horn</u>
+- <u>1 x Wood Piece</u>
 
-|                           Top View                           |                         Bottom View                          |
+|                       <u>Top View</u>                        |                      <u>Bottom View</u>                      |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="extend (4).jpg" style="zoom:75%;" class="image center" /> | <img src="extend (3).jpg" style="zoom:75%;" class="image center" /> |
+| <u><img src="extend (4).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="extend (3).jpg" style="zoom:75%;" class="image center" /></u> |
 
-Attach large servo arm using:
+<u>Attach large servo arm using:</u>
 
-- 1 x Servo Screw
+- <u>1 x Servo Screw</u>
 
-*IMPORTANT:* Note that the servo motor can only move 180 degrees.  Make sure that the arm can turn fully between the two positions shown below before fastening the screw.  You may need to take the servo coupling off of the servo motor shaft and reposition it a few times to get it right.
+<u>*IMPORTANT:* Note that the servo motor can only move 180 degrees.  Make sure that the arm can turn fully between the two positions shown below before fastening the screw.  You may need to take the servo coupling off of the servo motor shaft and reposition it a few times to get it right.</u>
 
-|                          Position 1                          |                          Position 2                          |
+|                      <u>Position 1</u>                       |                      <u>Position 2</u>                       |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="extend (1).jpg" style="zoom:75%;" class="image center" /> | <img src="extend (2).jpg" style="zoom:75%;" class="image center" /> |
+| <u><img src="extend (1).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="extend (2).jpg" style="zoom:75%;" class="image center" /></u> |
 
-### STEP 7. Build Main Arm Support
+### <u>STEP 7. Build Main Arm Support</u>
 
-Assemble main arm support using:
+<u>Assemble main arm support using:</u>
 
-- 1 x M3x10 Screw
-- 1 x M3 Nut (Nylon Lock)
-- 2 x Wood Pieces
+- <u>1 x M3x10 Screw</u>
+- <u>1 x M3 Nut (Nylon Lock)</u>
+- <u>2 x Wood Pieces</u>
 
-Use the supplied wrench to hold the lock nut while you tighten the screw.  
+<u>Use the supplied wrench to hold the lock nut while you tighten the screw.</u>  
 
-*IMPORTANT:* Do not overtighten.  Make sure that the joint can move easily.  If it is too tight, your motors will not be able to move the joint during robot arm operation.
+<u>*IMPORTANT:* Do not overtighten.  Make sure that the joint can move easily.  If it is too tight, your motors will not be able to move the joint during robot arm operation.</u>
 
-<img src="support.jpg" style="zoom:15%;" class="image center" />
+<u><img src="support.jpg" style="zoom:15%;" class="image center" /></u>
 
-|                           Top View                           |                         Bottom View                          |
+|                       <u>Top View</u>                        |                      <u>Bottom View</u>                      |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="support (1).jpg" style="zoom:75%;" class="image center" /> | <img src="support (2).jpg" style="zoom:75%;" class="image center" /> |
+| <u><img src="support (1).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="support (2).jpg" style="zoom:75%;" class="image center" /></u> |
 
-### STEP 8. Assemble Main Body
+### <u>STEP 8. Assemble Main Body</u>
 
-Assemble main body using:
+<u>Assemble main body using:</u>
 
-<img src="main body (9).jpg" style="zoom:15%;" class="image center" />
+<u><img src="main body (9).jpg" style="zoom:15%;" class="image center" /></u>
 
-- 1 x Left (Lift) Motor Assembly
-- 1 x Right (Extend) Motor Assembly
-- 1 x Main Body Bottom Plate
-- 1 x Main Arm Support
-- 2 x Wood Pieces (Joiners)
-- 4 x M3x12 Screws
-- 4 x M3 Nuts (Regular)
+- <u>1 x Left (Lift) Motor Assembly</u>
+- <u>1 x Right (Extend) Motor Assembly</u>
+- <u>1 x Main Body Bottom Plate</u>
+- <u>1 x Main Arm Support</u>
+- <u>2 x Wood Pieces (Joiners)</u>
+- <u>4 x M3x12 Screws</u>
+- <u>4 x M3 Nuts (Regular)</u>
 
-Use the two joiners to join all the assemblies together.  
+<u>Use the two joiners to join all the assemblies together.</u>  
 
-To do this, put all the sides together like a 3-D jigsaw puzzle.  After that you can fasten the joints by sliding nuts into the appropriate slots and screwing in the M3x12 screws.  As the screws tighten, they will fasten the joints.  
+<u>To do this, put all the sides together like a 3-D jigsaw puzzle.  After that you can fasten the joints by sliding nuts into the appropriate slots and screwing in the M3x12 screws.  As the screws tighten, they will fasten the joints.</u>  
 
-Note: It may be easier to join two pieces together at a time rather than all of them at the same time.
+<u>Note: It may be easier to join two pieces together at a time rather than all of them at the same time.</u>
 
-|                          Front View                          |                          Side View                           |
+|                      <u>Front View</u>                       |                       <u>Side View</u>                       |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="main body (1).jpg" style="zoom:75%;" class="image center" /> | <img src="main body (8).jpg" style="zoom:75%;" class="image center" /> |
+| <u><img src="main body (1).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="main body (8).jpg" style="zoom:75%;" class="image center" /></u> |
 
-|                          Front View                          |                          Back View                           |
+|                      <u>Front View</u>                       |                       <u>Back View</u>                       |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="main body (6).jpg" style="zoom:75%;" class="image center" /> | <img src="main body (7).jpg" style="zoom:75%;" class="image center" /> |
+| <u><img src="main body (6).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="main body (7).jpg" style="zoom:75%;" class="image center" /></u> |
 
-### STEP 9. Attach Main Body To Motor
+### <u>STEP 9. Attach Main Body To Motor</u>
 
-Attach main body using to base servo motor using:
+<u>Attach main body using to base servo motor using:</u>
 
-- 1 x Servo Screw
+- <u>1 x Servo Screw</u>
 
-*IMPORTANT:* Note that the servo motor can only move 180 degrees.  Make sure that the arm can turn fully between the two positions shown below before fastening the screw.  You may need to take the servo coupling off of the servo motor shaft and reposition it a few times to get it right.
+<u>*IMPORTANT:* Note that the servo motor can only move 180 degrees.  Make sure that the arm can turn fully between the two positions shown below before fastening the screw.  You may need to take the servo coupling off of the servo motor shaft and reposition it a few times to get it right.</u>
 
-|                          Position 1                          |                          Position 2                          |
+|                      <u>Position 1</u>                       |                      <u>Position 2</u>                       |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="main body (4).jpg" style="zoom:75%;" class="image center" /> | <img src="main body (5).jpg" style="zoom:75%;" class="image center" /> |
+| <u><img src="main body (4).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="main body (5).jpg" style="zoom:75%;" class="image center" /></u> |
 
-|                           Screw In                           |                           Finished                           |
+|                       <u>Screw In</u>                        |                       <u>Finished</u>                        |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="main body (2).jpg" style="zoom:75%;" class="image center" /> | <img src="main body (3).jpg" style="zoom:75%;" class="image center" /> |
+| <u><img src="main body (2).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="main body (3).jpg" style="zoom:75%;" class="image center" /></u> |
 
-### STEP 10. Attach Main Arm
+### <u>STEP 10. Attach Main Arm</u>
 
-Attach main arm using:
+<u>Attach main arm using:</u>
 
-- 2 x M3x12 Screws
-- 2 x M3 Nuts (Regular)
-- 1 x Wood Piece
+- <u>2 x M3x12 Screws</u>
+- <u>2 x M3 Nuts (Regular)</u>
+- <u>1 x Wood Piece</u>
 
-<img src="main.jpg" style="zoom:15%;" class="image center" />
+<u><img src="main.jpg" style="zoom:15%;" class="image center" /></u>
 
-### STEP 11. Attach Secondary Arm
+### <u>STEP 11. Attach Secondary Arm</u>
 
-Attach secondary arm using:
+<u>Attach secondary arm using:</u>
 
-- 5 x M3x6 Screws
-- 2 x M3x10 Screws
-- 1 x M3 Nut (Nylon Lock)
-- 7 x Wood Pieces
+- <u>5 x M3x6 Screws</u>
+- <u>2 x M3x10 Screws</u>
+- <u>1 x M3 Nut (Nylon Lock)</u>
+- <u>7 x Wood Pieces</u>
 
-*IMPORTANT:* Do not overtighten.  Make sure that the joint can move easily.  If it is too tight, your motors will not be able to move the joint during robot arm operation.
+<u>*IMPORTANT:* Do not overtighten.  Make sure that the joint can move easily.  If it is too tight, your motors will not be able to move the joint during robot arm operation.</u>
 
-|                            Side 1                            |                            Side 2                            |
+|                        <u>Side 1</u>                         |                        <u>Side 2</u>                         |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="secondary (2).jpg" style="zoom:75%;" class="image center" /> | <img src="secondary (3).jpg" style="zoom:75%;" class="image center" /> |
+| <u><img src="secondary (2).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="secondary (3).jpg" style="zoom:75%;" class="image center" /></u> |
 
-Use the supplied wrench to tighten the lock nut.  Do not overtighten.
+<u>Use the supplied wrench to tighten the lock nut.  Do not overtighten.</u>
 
-<img src="secondary (1).jpg" style="zoom:15%;" class="image center" />
+<u><img src="secondary (1).jpg" style="zoom:15%;" class="image center" /></u>
 
-### STEP 12. Build Claw Motor Assembly
+### <u>STEP 12. Build Claw Motor Assembly</u>
 
-Build claw motor assembly using:
+<u>Build claw motor assembly using:</u>
 
-- 1 x Servo Motor
-- 4 x Wood Pieces
-- 4 x M3x10 Screws
+- <u>1 x Servo Motor</u>
+- <u>4 x Wood Pieces</u>
+- <u>4 x M3x10 Screws</u>
 
-<img src="claw2 (9).jpg" style="zoom:15%;" class="image center" />
+<u><img src="claw2 (9).jpg" style="zoom:15%;" class="image center" /></u>
 
-|                            Side 1                            |                            Side 2                            |
+|                        <u>Side 1</u>                         |                        <u>Side 2</u>                         |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="claw2 (8).jpg" style="zoom:75%;" class="image center" /> | <img src="claw2 (10).jpg" style="zoom:50%;" class="image center" /> |
+| <u><img src="claw2 (8).jpg" style="zoom:75%;" class="image center" /></u> | <u><img src="claw2 (10).jpg" style="zoom:50%;" class="image center" /></u> |
 
-### STEP 13. Attach Pinchers
+### <u>STEP 13. Attach Pinchers</u>
 
-Build left pincher assembly using:
+<u>Build left pincher assembly using:</u>
 
-- 1 x M3x12 Screw
-- 3 x Wood Pieces
+- <u>1 x M3x12 Screw</u>
+- <u>3 x Wood Pieces</u>
 
-This pincher will be driven by the claw drive gear.
+<u>This pincher will be driven by the claw drive gear.</u>
 
-*IMPORTANT:* Do not overtighten.  Make sure that the joint can move easily.  If it is too tight, your motors will not be able to move the joint during robot arm operation.
+<u>*IMPORTANT:* Do not overtighten.  Make sure that the joint can move easily.  If it is too tight, your motors will not be able to move the joint during robot arm operation.</u>
 
-<img src="claw2 (7).jpg" style="zoom:15%;" class="image center" />
+<u><img src="claw2 (7).jpg" style="zoom:15%;" class="image center" /></u>
 
-Attach left pincher using:
+<u>Attach left pincher using:</u>
 
-- 1 x M3x12 Screw
-- 1 x Wood piece
+- <u>1 x M3x12 Screw</u>
+- <u>1 x Wood piece</u>
 
-You'll need to be careful to slide the wood piece in between the left pincher assembly like meat in a sandwich and then align the holes so that the screw can go through all of the pieces.
+<u>You'll need to be careful to slide the wood piece in between the left pincher assembly like meat in a sandwich and then align the holes so that the screw can go through all of the pieces.</u>
 
-<img src="claw2 (6).jpg" style="zoom:10%;" class="image center" />
+<u><img src="claw2 (6).jpg" style="zoom:10%;" class="image center" /></u>
 
-|                           Top View                           |                         Bottom View                          |
+|                       <u>Top View</u>                        |                      <u>Bottom View</u>                      |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="claw3 (1).jpg" style="zoom:50%;" class="image center" /> | <img src="claw3 (2).jpg" style="zoom:50%;" class="image center" /> |
+| <u><img src="claw3 (1).jpg" style="zoom:50%;" class="image center" /></u> | <u><img src="claw3 (2).jpg" style="zoom:50%;" class="image center" /></u> |
 
-Attach right pincher using:
+<u>Attach right pincher using:</u>
 
-- 1 x M3x10 Screw
-- 1 x Wood Piece
+- <u>1 x M3x10 Screw</u>
+- <u>1 x Wood Piece</u>
 
-When inserting the right pincher, align the gears so that the claw can open and close all the way.  
+<u>When inserting the right pincher, align the gears so that the claw can open and close all the way.</u>  
 
-*IMPORTANT:* Don't tighten the screw all the way.  Be careful to make sure that the screw does not protrude past the wood surface (see below in the red circle)  If it does, the claw will get stuck when the drive motor tries to move it.
+<u>*IMPORTANT:* Don't tighten the screw all the way.  Be careful to make sure that the screw does not protrude past the wood surface (see below in the red circle)  If it does, the claw will get stuck when the drive motor tries to move it.</u>
 
-|                           Top View                           |              Make sure screw does not protrude!              |
+|                       <u>Top View</u>                        |          <u>Make sure screw does not protrude!</u>           |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="claw2 (3).jpg" style="zoom:50%;" class="image center" /> | <img src="claw2 (5).jpg" style="zoom:50%;" class="image center" /> |
+| <u><img src="claw2 (3).jpg" style="zoom:50%;" class="image center" /></u> | <u><img src="claw2 (5).jpg" style="zoom:50%;" class="image center" /></u> |
 
-### STEP 14. Build Claw Drive Gear Assembly
+### <u>STEP 14. Build Claw Drive Gear Assembly</u>
 
-Assemble claw drive gear using:
+<u>Assemble claw drive gear using:</u>
 
-- 2 x M3x6 Screws
-- 1 x Servo Horn
-- 1 x Servo Screw
-- 2 x Wood Pieces
+- <u>2 x M3x6 Screws</u>
+- <u>1 x Servo Horn</u>
+- <u>1 x Servo Screw</u>
+- <u>2 x Wood Pieces</u>
 
-|                           Top View                           |                         Bottom View                          |
+|                       <u>Top View</u>                        |                      <u>Bottom View</u>                      |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="claw2 (11).jpg" style="zoom:50%;" class="image center" /> | <img src="claw2 (12).jpg" style="zoom:50%;" class="image center" /> |
+| <u><img src="claw2 (11).jpg" style="zoom:50%;" class="image center" /></u> | <u><img src="claw2 (12).jpg" style="zoom:50%;" class="image center" /></u> |
 
-### STEP 15. Attach Claw Drive Gear Assembly
+### <u>STEP 15. Attach Claw Drive Gear Assembly</u>
 
-Attach claw drive gear to servo using:
+<u>Attach claw drive gear to servo using:</u>
 
-- 1 x Servo Screw
+- <u>1 x Servo Screw</u>
 
-*IMPORTANT:* Note that the servo motor can only move 180 degrees.  Make sure that the arm can turn fully between the two positions shown below before fastening the screw.  You may need to take the servo coupling off of the servo motor shaft and reposition it a few times to get it right.
+<u>*IMPORTANT:* Note that the servo motor can only move 180 degrees.  Make sure that the arm can turn fully between the two positions shown below before fastening the screw.  You may need to take the servo coupling off of the servo motor shaft and reposition it a few times to get it right.</u>
 
-|                       Closed Position                        |                        Open Position                         |
+|                    <u>Closed Position</u>                    |                     <u>Open Position</u>                     |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="claw2 (2).jpg" style="zoom:50%;" class="image center" /> | <img src="claw2 (1).jpg" style="zoom:50%;" class="image center" /> |
+| <u><img src="claw2 (2).jpg" style="zoom:50%;" class="image center" /></u> | <u><img src="claw2 (1).jpg" style="zoom:50%;" class="image center" /></u> |
 
-### STEP 16. Attach Claw Assembly
+### <u>STEP 16. Attach Claw Assembly</u>
 
-Attach claw to the arm using:
+<u>Attach claw to the arm using:</u>
 
-- 1 x M3x6 Screw (top)
-- 2 x M3x12 Screws (sides)
-- 2 x Wood Pieces (washers)
+- <u>1 x M3x6 Screw (top)</u>
+- <u>2 x M3x12 Screws (sides)</u>
+- <u>2 x Wood Pieces (washers)</u>
 
-Be sure to use wood washers on the sides.  
+<u>Be sure to use wood washers on the sides.</u>  
 
-*IMPORTANT:* Do not overtighten. 
+<u>*IMPORTANT:* Do not overtighten.</u> 
 
-|                          Top Screw                           |                       Side Screws (2x)                       |
+|                       <u>Top Screw</u>                       |                   <u>Side Screws (2x)</u>                    |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="claw (1).jpg" style="zoom:57%;" class="image center" /> | <img src="claw (2).jpg" style="zoom:50%;" class="image center" /> |
+| <u><img src="claw (1).jpg" style="zoom:57%;" class="image center" /></u> | <u><img src="claw (2).jpg" style="zoom:50%;" class="image center" /></u> |
 
 
 
