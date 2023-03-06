@@ -5,9 +5,15 @@ suggested_time: 60-90 minutes
 videos:
     - link: https://youtu.be/aPI11noSG28
       text: Robot Arm Demo
+    - link: https://youtu.be/NFqWNfnIABY
+      text: Assemble Robot Arm Base and Program Motor Arduino Robot Arm
+    - link: https://youtu.be/tmwG4g5-tf4
+      text: Assemble The Rotating Base / Turret
+    - link: https://youtu.be/bb9ocu_3jo8
+      text: Building The Main Robot Arm
 ---
 
-### Project Overview
+## Project Overview
 
 In this project you will build and code a robot arm!
 
@@ -15,25 +21,41 @@ In this project you will build and code a robot arm!
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="robotarm.jpg" style="zoom:75%;" class="image center" /> | <img src="wood2.jpg" style="zoom:75%;" class="image center" /> |
 
-### Materials
+## Materials
 
 Need materials?  [Purchase the Barnabas Robot Arm at our e-store](https://shop.barnabasrobotics.com/collections/classroom-robotics-kits/products/barnabas-arduino-compatible-robot-arm-kit-with-joystick-control-ages-11).  
 
 Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire. 
 
-### Demo Videos
+## Demo Videos
 
 {% include youtube.html id='F_K7G25mS4k' %}
 
 {% include youtube.html id='RPg-ayzt8RA' %}
 
-### Lesson Overview
+## Lesson Overview
 
 In this lesson we will assemble the mechanical parts of our robot arm
 
 ### Arm Assembly (Same for Wood and Acrylic Model)
 
-#### 1. Build Base Motor Assembly
+### Build Videos
+
+#### <u>STEPS 1-3: Assemble Robot Arm Base & Intro To Coding</u>
+
+{% include youtube.html id='NFqWNfnIABY' %}
+
+#### <u>STEPS 4-9: Assemble Rotating Base / Turret</u>
+
+{% include youtube.html id='tmwG4g5-tf4' %}
+
+#### <u>STEPS 10-11: Assemble Main Robot Arm</u>
+
+{% include youtube.html id='bb9ocu_3jo8' %}
+
+### Written Instructions
+
+### STEP 1. Build Base Motor Assembly
 
 Assemble the base motor assembly using:
 
@@ -49,7 +71,7 @@ Make sure that the screw holes on the wood pieces align perfectly so that the sc
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="beg (3).jpg" style="zoom:75%;" class="image center" /> | <img src="beg (4).jpg" style="zoom:75%;" class="image center" /> |
 
-#### 2. Assemble Platform Screws
+### STEP 2. Assemble Platform Screws
 
 Assemble platform screws using the following:
 
@@ -60,7 +82,7 @@ Notice that the nuts are not tightened all the way.  We will tighten them in the
 
 <img src="beg (6).jpg" style="zoom:15%;" class="image center" />
 
-#### 3. Attach Base Motor To Platform
+### STEP 3. Attach Base Motor To Platform
 
 Align the base motor assembly to the platform screws so that they are perfectly matched.  
 
@@ -72,7 +94,7 @@ Once aligned, screw the screws into the base motor platform and tighten the nuts
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="beg (1).jpg" style="zoom:75%;" class="image center" /> | <img src="beg (2).jpg" style="zoom:75%;" class="image center" /> |
 
-#### 4. Build Main Body Bottom Plate
+### STEP 4. Build Main Body Bottom Plate
 
 Assemble main body bottom plate using:
 
@@ -84,7 +106,7 @@ Assemble main body bottom plate using:
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="bot (2).jpg" style="zoom:75%;" class="image center" /> | <img src="bot (1).jpg" style="zoom:75%;" class="image center" /> |
 
-#### 5. Build Left (Lift) Motor Assembly
+### STEP 5. Build Left (Lift) Motor Assembly
 
 Assemble left (lift) motor mount using:
 
@@ -118,7 +140,7 @@ Attach small servo arm using:
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="lift (3).jpg" style="zoom:75%;" class="image center" /> | <img src="lift (2).jpg" style="zoom:75%;" class="image center" /> |
 
-#### 6. Build Right (Extend) Motor Assembly
+### STEP 6. Build Right (Extend) Motor Assembly
 
 Assemble right (extend) motor mount using:
 
@@ -152,7 +174,7 @@ Attach large servo arm using:
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="extend (1).jpg" style="zoom:75%;" class="image center" /> | <img src="extend (2).jpg" style="zoom:75%;" class="image center" /> |
 
-#### 7. Build Main Arm Support
+### STEP 7. Build Main Arm Support
 
 Assemble main arm support using:
 
@@ -170,7 +192,7 @@ Use the supplied wrench to hold the lock nut while you tighten the screw.
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="support (1).jpg" style="zoom:75%;" class="image center" /> | <img src="support (2).jpg" style="zoom:75%;" class="image center" /> |
 
-#### 8. Assemble Main Body
+### STEP 8. Assemble Main Body
 
 Assemble main body using:
 
@@ -198,7 +220,7 @@ Note: It may be easier to join two pieces together at a time rather than all of 
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="main body (6).jpg" style="zoom:75%;" class="image center" /> | <img src="main body (7).jpg" style="zoom:75%;" class="image center" /> |
 
-#### 9. Attach Main Body To Motor
+### STEP 9. Attach Main Body To Motor
 
 Attach main body using to base servo motor using:
 
@@ -214,7 +236,7 @@ Attach main body using to base servo motor using:
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="main body (2).jpg" style="zoom:75%;" class="image center" /> | <img src="main body (3).jpg" style="zoom:75%;" class="image center" /> |
 
-#### 10. Attach Main Arm
+### STEP 10. Attach Main Arm
 
 Attach main arm using:
 
@@ -224,7 +246,7 @@ Attach main arm using:
 
 <img src="main.jpg" style="zoom:15%;" class="image center" />
 
-#### 11. Attach Secondary Arm
+### STEP 11. Attach Secondary Arm
 
 Attach secondary arm using:
 
@@ -243,7 +265,7 @@ Use the supplied wrench to tighten the lock nut.  Do not overtighten.
 
 <img src="secondary (1).jpg" style="zoom:15%;" class="image center" />
 
-#### 12. Build Claw Motor Assembly
+### STEP 12. Build Claw Motor Assembly
 
 Build claw motor assembly using:
 
@@ -257,7 +279,7 @@ Build claw motor assembly using:
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="claw2 (8).jpg" style="zoom:75%;" class="image center" /> | <img src="claw2 (10).jpg" style="zoom:50%;" class="image center" /> |
 
-#### 13. Attach Pinchers
+### STEP 13. Attach Pinchers
 
 Build left pincher assembly using:
 
@@ -296,7 +318,7 @@ When inserting the right pincher, align the gears so that the claw can open and 
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="claw2 (3).jpg" style="zoom:50%;" class="image center" /> | <img src="claw2 (5).jpg" style="zoom:50%;" class="image center" /> |
 
-#### 14. Build Claw Drive Gear Assembly
+### STEP 14. Build Claw Drive Gear Assembly
 
 Assemble claw drive gear using:
 
@@ -309,7 +331,7 @@ Assemble claw drive gear using:
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="claw2 (11).jpg" style="zoom:50%;" class="image center" /> | <img src="claw2 (12).jpg" style="zoom:50%;" class="image center" /> |
 
-#### 15. Attach Claw Drive Gear Assembly
+### STEP 15. Attach Claw Drive Gear Assembly
 
 Attach claw drive gear to servo using:
 
@@ -321,7 +343,7 @@ Attach claw drive gear to servo using:
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="claw2 (2).jpg" style="zoom:50%;" class="image center" /> | <img src="claw2 (1).jpg" style="zoom:50%;" class="image center" /> |
 
-#### 16. Attach Claw Assembly
+### STEP 16. Attach Claw Assembly
 
 Attach claw to the arm using:
 
