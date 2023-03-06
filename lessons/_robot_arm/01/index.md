@@ -41,9 +41,11 @@ In this lesson we will assemble the mechanical parts of our robot arm
 
 ### Build Videos
 
-#### <u>STEPS 1-3: Assemble Robot Arm Base & Intro To Coding</u>
+#### <u>STEPS 1-3: Assemble Robot Arm Base</u>
 
 {% include youtube.html id='NFqWNfnIABY' %}
+
+Note: Watch until 22:45
 
 #### <u>STEPS 4-9: Assemble Rotating Base / Turret</u>
 
