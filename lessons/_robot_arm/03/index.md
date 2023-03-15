@@ -1,107 +1,47 @@
 ---
 layout: lesson
-title: Lesson 3 &middot; Set Up Your Computer
-suggested_time: 30-45 minutes
+title: Lesson 3 &middot; Wiring
+suggested_time: 60-90 minutes
 
-videos:
-    - link: https://youtu.be/3CW-bDeKVi4
-      text: How To Upload Code (Mac)
-    - link: https://youtu.be/T9EyaAX91Rg
-      text: Software Installation (Windows)
-    - link: https://youtu.be/gJliBVUUOKk
-      text: How To Upload Code (Windows)
+      
 ---
 
+### Lesson Overview
 
+In this lesson we'll put your hardware together and connect the motors to it.
 
-### What You'll Need
+### Introducing The Hardware
 
-Before we get started, let’s make sure that we have all the parts.
+The hardware consists of two parts: 
 
-<img src="fig-6_0.png" alt="fig-6_0" style="zoom:90%;" class="image center" />
+- Arduino Uno-Compatible board - This board will be on the bottom, and will be programmed by your computer
+- Daughter Board - This board fits on top of the Arduino Uno-Compatible board and allows you to add the ability to control your robot arm using knobs.  Think of it as an expansion pack.
 
-### Overview
+### Mount The Arduino Uno-Compatible Board
 
-In this section we'll be setting up your computer for coding. 
+First let's mount the Arduino compatible board to the robot arm.
 
-### Barnabas Web Coding
+Attach 4 x spacers to the bottom of the board using 4 x screws.  The screws will go through the bottom of the board.
 
-We have an online coding platform that allows you to program your Arduino-based robot controller without installing new software.  Our online site runs on Google Chrome or Microsoft Edge browsers, so you'll need to install either one on your PC or Mac if you don't have it already.  Chromebooks come with Chrome browser built-in.  
+|                          Side View                           |                           Top View                           |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="1 (4).jpg" style="zoom:55%;" class="image center" /> | <img src="1 (3).jpg" style="zoom:40%;" class="image center" /> |
 
-### Browser Setup
+Next, mount the Arduino-Compatible board to the spacers using 4 x screws.  The spacers should match the mounting holes on the board exactly.  If they do not, double check the holes that you used for your spacers.
 
-#### 1. Open your Google Chrome browser
+<img src="1 (2).jpg" style="zoom:15%;" class="image center" />
 
-#### 2. Copy and paste this text into your address bar.  
+### Attach The Daughter Board
 
-Note: This step may not be necessary for newer versions of Chrome/Edge.
+Take the daughter board and stick it on top of the Arduino Uno-Compatible board.  It should look like the picture below once completed.  Make sure to match up the pins.  They should align exactly.
 
-<p style="text-align:center"><cmd>chrome://flags/#enable-experimental-web-platform-features</cmd></p>
+<img src="1 (1).jpg" style="zoom:15%;" class="image center" />
 
-#### 3. Select “Enabled” on the “Experimental Web Platform features”
+### Wire The Motors
 
-Note: This step may not be necessary for newer versions of Chrome/Edge.
+Now let's wire the motors.  Be careful to match up the correct motor to the correct pins.  Also take care to make sure the wire colors match the photo below.
 
-<img src="fig-6_2.png" alt="fig-6_2" style="zoom:40%;" class="image center" />
+|                         Motor Names                          |                   Motor Cable Connections                    |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="1_labeled.jpg" style="zoom:30%;" class="image center" /> | <img src="2_labeled.jpg" style="zoom:30%;" class="image center" /> |
 
-#### 4. Click “Relaunch”
-
-Note: This step may not be necessary for newer versions of Chrome/Edge.
-
-#### 5. Visit The Coding Site
-
-Your computer is now ready to access your IDE.  That was easy, right?  Type the link below (or copy and paste) into your address bar to check it out!
-
-<p style="text-align:center"><cmd><a style="color:white" target="_blank" href="https://code.barnabasrobotics.com">https://code.barnabasrobotics.com</a></cmd></p>
-
-#### 6. Upload Code
-
-1. Connect your Arduino Uno-Compatible board to your computer using a USB cable.  A  light should turn on on your board.
-
-2. Click on "TEXT CODE" to enable text-based coding
-
-   <img src="block code.jpg" alt="fig-6_0" style="zoom:50%;" class="image center" />
-
-   <img src="textcode.jpg" alt="fig-6_0" style="zoom:50%;" class="image center" />
-
-3. Set "Select a board" to "Uno"
-
-4. Copy and paste sample initial code below
-
-   ```c
-   //- code that runs on boot up (only once)
-   void setup()
-   {
-   
-   }
-   
-   //- code that runs in a loop forever (after setup())
-   void loop()
-   {
-   
-   }
-   ```
-
-5. Click "Upload"
-
-6. Select the COM port and click "Connect"
-
-   <img src="fig-4_5.png" style="zoom:60%;" class="image center" />
-
-   
-
-   **Troubleshooting:** If you don't see any device show up, try installing the USB driver and trying again.  After installing the USB driver, you may need to unplug and re-plug the board and also refresh the website.
-
-   - [Windows USB Driver](https://cdn.sparkfun.com/assets/learn_tutorials/8/4/4/CH341SER.EXE)
-
-   - [Mac USB Driver](https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver/raw/master/CH34x_Install_V1.5.pkg)
-
-   
-
-7. If you see a green check mark message, you have successfully uploaded! If you get an error, check your connections and try again. 
-
-   <img src="check.jpg" style="zoom:60%;" class="image center" />
-
-### Stuck? Need Help?
-
-If you need technical support, feel free to contact us at support@barnabasrobotics.com!

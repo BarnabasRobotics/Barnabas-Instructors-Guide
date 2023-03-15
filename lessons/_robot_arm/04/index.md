@@ -1,207 +1,107 @@
 ---
 layout: lesson
-title: Lesson 4 &middot; Operate The Arm
-suggested_time: 30-60 minutes
+title: Lesson 4 &middot; Set Up Your Computer
+suggested_time: 30-45 minutes
+
 videos:
-    - link: https://youtu.be/F_K7G25mS4k
-      text: Robot Arm Demo (Dial)
-    - link: https://youtu.be/RPg-ayzt8RA
-      text: Wood Robot Arm Demo (Dial)
-    - link: https://youtu.be/Gxu7uIzHSiM
-      text: Robot Arm Demo (Autonomous)
+    - link: https://youtu.be/3CW-bDeKVi4
+      text: How To Upload Code (Mac)
+    - link: https://youtu.be/T9EyaAX91Rg
+      text: Software Installation (Windows)
+    - link: https://youtu.be/gJliBVUUOKk
+      text: How To Upload Code (Windows)
 ---
 
-### Dial Mode 
-
-Program your robot arm in dial mode so that you can control all 4 axes using the dial.  Simply copy the code and upload it using the Arduino IDE.
-
-{% include youtube.html id='F_K7G25mS4k' %}
-
-{% include youtube.html id='RPg-ayzt8RA' %}
-
-#### Sample Code
-
-```c
-#include <Servo.h>
-
-#define CLAWMOTOR_MAX 90
-#define CLAWMOTOR_MIN 65
-#define CLAWMOTOR_MID (CLAWMOTOR_MAX + CLAWMOTOR_MIN)/2
-
-#define TILTMOTOR_MAX 155
-#define TILTMOTOR_MIN 80
-#define TILTMOTOR_MID (TILTMOTOR_MAX + TILTMOTOR_MIN)/2
-
-#define EXTENDMOTOR_MAX 105
-#define EXTENDMOTOR_MIN 10
-#define EXTENDMOTOR_MID (EXTENDMOTOR_MAX + EXTENDMOTOR_MIN)/2
-
-#define PANMOTOR_MAX 180
-#define PANMOTOR_MIN 0
-#define PANMOTOR_MID (PANMOTOR_MAX + PANMOTOR_MIN)/2
-
-Servo panMotor;
-Servo tiltMotor;
-Servo extendMotor;
-Servo clawMotor;
-
-int potPin1 = 0;
-int potPin2 = 1;
-int potPin3 = 2;
-int potPin4 = 3;
-
-int panMotorPin = 6;
-int tiltMotorPin = 9;
-int extendMotorPin = 10;
-int clawMotorPin = 11;
-
-void setup() {
-  // put your setup code here, to run once:
-  panMotor.attach(panMotorPin);
-  tiltMotor.attach(tiltMotorPin);
-  extendMotor.attach(extendMotorPin);
-  clawMotor.attach(clawMotorPin);
-  Serial.begin(9600);
-}
-
-void printPotStatus() {
-  Serial.print("Pot1 = " + String(analogRead(potPin1)));
-  Serial.print(" Pot2 = " + String(analogRead(potPin2)));
-  Serial.print(" Pot3 = " + String(analogRead(potPin3)));
-  Serial.println(" Pot4 = " + String(analogRead(potPin4)));
-}
 
 
-void processPot() {
-  int panMotorAngle = map(analogRead(potPin1),0,1023,0,180);
-  panMotor.write(panMotorAngle);
+### What You'll Need
 
-  int tiltMotorAngle = map(analogRead(potPin2),0,1023,0,180);
-  tiltMotor.write(tiltMotorAngle);
+Before we get started, let’s make sure that we have all the parts.
 
-  int extendMotorAngle = map(analogRead(potPin3),0,1023,0,180);
-  extendMotor.write(extendMotorAngle);
+<img src="fig-6_0.png" alt="fig-6_0" style="zoom:90%;" class="image center" />
 
-  int clawMotorAngle = map(analogRead(potPin4),0,1023,0,180);
-  clawMotor.write(clawMotorAngle);
+### Overview
 
-  //Serial.println(panMotorAngle);
-}
+In this section we'll be setting up your computer for coding. 
 
-void loop() {
-  printPotStatus();
-  delay(100);
-  processPot();
-}
-```
+### Barnabas Web Coding
 
+We have an online coding platform that allows you to program your Arduino-based robot controller without installing new software.  Our online site runs on Google Chrome or Microsoft Edge browsers, so you'll need to install either one on your PC or Mac if you don't have it already.  Chromebooks come with Chrome browser built-in.  
 
+### Browser Setup
 
-### Autonomous Mode
+#### 1. Open your Google Chrome browser
 
-You can also program your robot to follow pre-programmed moves.  Simply copy the code and upload it using the Arduino IDE.  Have fun customizing it!
+#### 2. Copy and paste this text into your address bar.  
 
-{% include youtube.html id='Gxu7uIzHSiM' %}
+Note: This step may not be necessary for newer versions of Chrome/Edge.
 
-#### Sample Code
+<p style="text-align:center"><cmd>chrome://flags/#enable-experimental-web-platform-features</cmd></p>
 
-```c
-#include <Servo.h>
+#### 3. Select “Enabled” on the “Experimental Web Platform features”
 
-#define CLAWMOTOR_MAX 90
-#define CLAWMOTOR_MIN 65
-#define CLAWMOTOR_MID (CLAWMOTOR_MAX + CLAWMOTOR_MIN)/2
+Note: This step may not be necessary for newer versions of Chrome/Edge.
 
-#define TILTMOTOR_MAX 155
-#define TILTMOTOR_MIN 80
-#define TILTMOTOR_MID (TILTMOTOR_MAX + TILTMOTOR_MIN)/2
+<img src="fig-6_2.png" alt="fig-6_2" style="zoom:40%;" class="image center" />
 
-#define EXTENDMOTOR_MAX 105
-#define EXTENDMOTOR_MIN 10
-#define EXTENDMOTOR_MID (EXTENDMOTOR_MAX + EXTENDMOTOR_MIN)/2
+#### 4. Click “Relaunch”
 
-#define PANMOTOR_MAX 180
-#define PANMOTOR_MIN 0
-#define PANMOTOR_MID (PANMOTOR_MAX + PANMOTOR_MIN)/2
+Note: This step may not be necessary for newer versions of Chrome/Edge.
 
-Servo panMotor;
-Servo tiltMotor;
-Servo extendMotor;
-Servo clawMotor;
+#### 5. Visit The Coding Site
 
-int panMotorPin = 6;
-int tiltMotorPin = 9;
-int extendMotorPin = 10;
-int clawMotorPin = 11;
+Your computer is now ready to access your IDE.  That was easy, right?  Type the link below (or copy and paste) into your address bar to check it out!
 
-void setup() {
-  // put your setup code here, to run once:
-  panMotor.attach(panMotorPin);
-  tiltMotor.attach(tiltMotorPin);
-  extendMotor.attach(extendMotorPin);
-  clawMotor.attach(clawMotorPin);
+<p style="text-align:center"><cmd><a style="color:white" target="_blank" href="https://code.barnabasrobotics.com">https://code.barnabasrobotics.com</a></cmd></p>
 
-  homePos();
-}
-void loop() {
-  // put your main code here, to run repeatedly:
+#### 6. Upload Code
 
-  demoSequence();
-  syncTest();
-  
-}
+1. Connect your Arduino Uno-Compatible board to your computer using a USB cable.  A  light should turn on on your board.
 
-void clawOpen() {
-  clawMotor.write(CLAWMOTOR_MAX);
-}
+2. Click on "TEXT CODE" to enable text-based coding
 
-void clawClose() {
-  clawMotor.write(CLAWMOTOR_MIN);
-}
+   <img src="block code.jpg" alt="fig-6_0" style="zoom:50%;" class="image center" />
 
-//- cycles through the motor angles smoothly
-void cycleMotor(Servo motor, int minNum, int maxNum, int delay_time) {
-  for (int i = minNum;i<maxNum;i++) {
-    motor.write(i);
-    delay(delay_time);
-  }
-  for (int i = maxNum;i>minNum;i--) {
-    motor.write(i);
-    delay(delay_time);
-  }
-}
+   <img src="textcode.jpg" alt="fig-6_0" style="zoom:50%;" class="image center" />
 
-void syncTest() {
-  
-  clawMotor.write(CLAWMOTOR_MAX);
-  panMotor.write(PANMOTOR_MAX);
-  tiltMotor.write(TILTMOTOR_MAX);
-  extendMotor.write(EXTENDMOTOR_MAX);
-  delay(1000);
-  
-  clawMotor.write(CLAWMOTOR_MIN);
-  panMotor.write(PANMOTOR_MIN);
-  tiltMotor.write(TILTMOTOR_MIN);
-  extendMotor.write(EXTENDMOTOR_MIN);
+3. Set "Select a board" to "Uno"
 
-  delay(1000);
-  
-}
+4. Copy and paste sample initial code below
 
-void demoSequence() {
+   ```c
+   //- code that runs on boot up (only once)
+   void setup()
+   {
+   
+   }
+   
+   //- code that runs in a loop forever (after setup())
+   void loop()
+   {
+   
+   }
+   ```
 
-  cycleMotor(clawMotor, CLAWMOTOR_MIN, CLAWMOTOR_MAX, 30);
-  cycleMotor(panMotor, PANMOTOR_MIN, PANMOTOR_MAX, 30);
-  cycleMotor(tiltMotor, TILTMOTOR_MIN, TILTMOTOR_MAX, 30);
-  cycleMotor(extendMotor, EXTENDMOTOR_MIN, EXTENDMOTOR_MAX, 30);
-}
+5. Click "Upload"
 
+6. Select the COM port and click "Connect"
 
-void homePos() {
-  clawMotor.write(CLAWMOTOR_MIN);
-  panMotor.write(PANMOTOR_MIN);
-  tiltMotor.write(TILTMOTOR_MIN);
-  extendMotor.write(EXTENDMOTOR_MIN);
-}
-```
+   <img src="fig-4_5.png" style="zoom:60%;" class="image center" />
 
+   
+
+   **Troubleshooting:** If you don't see any device show up, try installing the USB driver and trying again.  After installing the USB driver, you may need to unplug and re-plug the board and also refresh the website.
+
+   - [Windows USB Driver](https://cdn.sparkfun.com/assets/learn_tutorials/8/4/4/CH341SER.EXE)
+
+   - [Mac USB Driver](https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver/raw/master/CH34x_Install_V1.5.pkg)
+
+   
+
+7. If you see a green check mark message, you have successfully uploaded! If you get an error, check your connections and try again. 
+
+   <img src="check.jpg" style="zoom:60%;" class="image center" />
+
+### Stuck? Need Help?
+
+If you need technical support, feel free to contact us at support@barnabasrobotics.com!
