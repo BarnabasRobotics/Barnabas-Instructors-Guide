@@ -78,7 +78,6 @@ Note: Watch until 22:45
 
 {% include youtube.html id='feg8_S7SqrY' %}
 
-### 
 
 ### Written Instructions
 
