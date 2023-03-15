@@ -11,7 +11,18 @@ videos:
       text: Assemble The Rotating Base / Turret
     - link: https://youtu.be/bb9ocu_3jo8
       text: Building The Main Robot Arm
+    - link: https://youtu.be/70e3SHPGu3M
+      text: Building Motor Claw Assembly and Adding Pinchers
+    - link: https://youtu.be/0c6QId35D4k
+      text: Building and Attaching Claw Assembly Drive Gear
+    - link: https://youtu.be/feg8_S7SqrY
+      text: Building The Main Robot Arm
+
 ---
+
+
+
+
 
 ## Project Overview
 
@@ -54,6 +65,20 @@ Note: Watch until 22:45
 **<u>STEPS 10-11: Assemble Main Robot Arm</u>**
 
 {% include youtube.html id='bb9ocu_3jo8' %}
+
+**<u>STEP 12-13: Build Motor Claw Assembly, Attach Pinchers</u>**
+
+{% include youtube.html id='70e3SHPGu3M' %}
+
+**<u>STEPS 14-15: Build And Attach Drive Gear</u>**
+
+{% include youtube.html id='0c6QId35D4k' %}
+
+**<u>STEPS 16: Attach Claw Assembly To Rest Of Arm</u>**
+
+{% include youtube.html id='feg8_S7SqrY' %}
+
+### 
 
 ### Written Instructions
 
@@ -285,7 +310,7 @@ Build claw motor assembly using:
 
 Build left pincher assembly using:
 
-- 1 x M3x12 Screw
+- 1 x M3x10 Screw
 - 3 x Wood Pieces
 
 This pincher will be driven by the claw drive gear.
