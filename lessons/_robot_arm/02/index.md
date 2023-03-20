@@ -36,7 +36,9 @@ In this lesson we will assemble the mechanical parts of our robot arm
 
 **<u>STEPS 1-3: Assemble Robot Arm Base</u>**
 
-Note: Watch until 22:45
+Note #1: Watch until 22:45
+
+Note #2: Newer models include a gray metal servo motor.  Make sure to use that one for the arm base motor.  Video [here](https://youtu.be/TFep5o_B7lE).
 
 {% include youtube.html id='NFqWNfnIABY' %} 
 
@@ -67,7 +69,7 @@ Note: Watch until 22:45
 
 Assemble the base motor assembly using:
 
-- 1 x Servo Motor
+- 1 x Servo Motor (Use gray metal servo motor if it is included in your kit)
 - 2 x M3x10 Screws
 - 2 x Wood Pieces
 
