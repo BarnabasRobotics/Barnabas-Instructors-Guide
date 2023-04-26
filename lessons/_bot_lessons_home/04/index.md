@@ -2,7 +2,9 @@
 layout: lesson
 title: Lesson 4 &middot; Assemble Your Robot
 suggested_time: 60-75 minutes
-
+videos:
+    - link: https://youtu.be/QfAQusejKVM
+      text: How To Assemble Your Barnabas-Bot
 ---
 
 {% include badge.html type='suggestion' content='If you are building the wooden version of the Barnabas Bot, please see <a href="../Appendix/C"> the Wooden Bot Addendeum</a>.' %}
@@ -12,6 +14,10 @@ suggested_time: 60-75 minutes
 Before we get started, let’s make sure that we have all the parts.
 
 ![fig 4.0](fig-4_0.png){:class="image center"}
+
+### Tutorial Video(s)
+
+{% include youtube.html id="QfAQusejKVM" %}
 
 ### Attaching The Servo Motors
 
