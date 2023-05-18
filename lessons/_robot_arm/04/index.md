@@ -1,10 +1,10 @@
 ---
 layout: lesson
-title: Lesson 4 &middot; Build
+title: Lesson 4 &middot; Build The Main Robot Arm
 suggested_time: 60-90 minutes
 videos:
-      text: Building The Main Robot Arm
     - link: https://youtu.be/70e3SHPGu3M
+      text: Building The Main Robot Arm
 ---
 
 
