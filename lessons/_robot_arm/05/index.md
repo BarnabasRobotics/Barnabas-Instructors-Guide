@@ -1,207 +1,80 @@
 ---
 layout: lesson
-title: Lesson 5 &middot; Operate The Arm
-suggested_time: 30-60 minutes
+title: Lesson 5 &middot; Build
+suggested_time: 60-90 minutes
 videos:
-    - link: https://youtu.be/F_K7G25mS4k
-      text: Robot Arm Demo (Dial)
-    - link: https://youtu.be/RPg-ayzt8RA
-      text: Wood Robot Arm Demo (Dial)
-    - link: https://youtu.be/Gxu7uIzHSiM
-      text: Robot Arm Demo (Autonomous)
+    - link: https://youtu.be/70e3SHPGu3M
+      text: Building Motor Claw Assembly and Adding Pinchers
 ---
 
-### Dial Mode 
+## Materials
 
-Program your robot arm in dial mode so that you can control all 4 axes using the dial.  Simply copy the code and upload it using the Arduino IDE.
+Need materials?  [Purchase the Barnabas Robot Arm at our e-store](https://shop.barnabasrobotics.com/collections/classroom-robotics-kits/products/barnabas-arduino-compatible-robot-arm-kit-with-joystick-control-ages-11).  
 
-{% include youtube.html id='F_K7G25mS4k' %}
+Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire. 
 
-{% include youtube.html id='RPg-ayzt8RA' %}
+## Lesson Overview
 
-#### Sample Code
+In this lesson we will assemble the claw and add pinchers.
 
-```c
-#include <Servo.h>
+## Arm Assembly (Same for Wood and Acrylic Model)
 
-#define CLAWMOTOR_MAX 90
-#define CLAWMOTOR_MIN 65
-#define CLAWMOTOR_MID (CLAWMOTOR_MAX + CLAWMOTOR_MIN)/2
+### Tutorial Video
 
-#define TILTMOTOR_MAX 155
-#define TILTMOTOR_MIN 80
-#define TILTMOTOR_MID (TILTMOTOR_MAX + TILTMOTOR_MIN)/2
-
-#define EXTENDMOTOR_MAX 105
-#define EXTENDMOTOR_MIN 10
-#define EXTENDMOTOR_MID (EXTENDMOTOR_MAX + EXTENDMOTOR_MIN)/2
-
-#define PANMOTOR_MAX 180
-#define PANMOTOR_MIN 0
-#define PANMOTOR_MID (PANMOTOR_MAX + PANMOTOR_MIN)/2
-
-Servo panMotor;
-Servo tiltMotor;
-Servo extendMotor;
-Servo clawMotor;
-
-int potPin1 = 0;
-int potPin2 = 1;
-int potPin3 = 2;
-int potPin4 = 3;
-
-int panMotorPin = 6;
-int tiltMotorPin = 9;
-int extendMotorPin = 10;
-int clawMotorPin = 11;
-
-void setup() {
-  // put your setup code here, to run once:
-  panMotor.attach(panMotorPin);
-  tiltMotor.attach(tiltMotorPin);
-  extendMotor.attach(extendMotorPin);
-  clawMotor.attach(clawMotorPin);
-  Serial.begin(9600);
-}
-
-void printPotStatus() {
-  Serial.print("Pot1 = " + String(analogRead(potPin1)));
-  Serial.print(" Pot2 = " + String(analogRead(potPin2)));
-  Serial.print(" Pot3 = " + String(analogRead(potPin3)));
-  Serial.println(" Pot4 = " + String(analogRead(potPin4)));
-}
+{% include youtube.html id='70e3SHPGu3M' %}
 
 
-void processPot() {
-  int panMotorAngle = map(analogRead(potPin1),0,1023,0,180);
-  panMotor.write(panMotorAngle);
+### Instructions
 
-  int tiltMotorAngle = map(analogRead(potPin2),0,1023,0,180);
-  tiltMotor.write(tiltMotorAngle);
+### STEP 1. Build Claw Motor Assembly
 
-  int extendMotorAngle = map(analogRead(potPin3),0,1023,0,180);
-  extendMotor.write(extendMotorAngle);
+Build claw motor assembly using:
 
-  int clawMotorAngle = map(analogRead(potPin4),0,1023,0,180);
-  clawMotor.write(clawMotorAngle);
+- 1 x Servo Motor
+- 4 x Wood Pieces
+- 4 x M3x10 Screws
 
-  //Serial.println(panMotorAngle);
-}
+<img src="claw2 (9).jpg" style="zoom:15%;" class="image center" />
 
-void loop() {
-  printPotStatus();
-  delay(100);
-  processPot();
-}
-```
+|                            Side 1                            |                            Side 2                            |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="claw2 (8).jpg" style="zoom:75%;" class="image center" /> | <img src="claw2 (10).jpg" style="zoom:50%;" class="image center" /> |
 
+### STEP 2. Attach Pinchers
 
+Build left pincher assembly using:
 
-### Autonomous Mode
+- 1 x M3x10 Screw
+- 3 x Wood Pieces
 
-You can also program your robot to follow pre-programmed moves.  Simply copy the code and upload it using the Arduino IDE.  Have fun customizing it!
+This pincher will be driven by the claw drive gear.
 
-{% include youtube.html id='Gxu7uIzHSiM' %}
+*IMPORTANT:* Do not overtighten.  Make sure that the joint can move easily.  If it is too tight, your motors will not be able to move the joint during robot arm operation.
 
-#### Sample Code
+<img src="claw2 (7).jpg" style="zoom:15%;" class="image center" />
 
-```c
-#include <Servo.h>
+Attach left pincher using:
 
-#define CLAWMOTOR_MAX 90
-#define CLAWMOTOR_MIN 65
-#define CLAWMOTOR_MID (CLAWMOTOR_MAX + CLAWMOTOR_MIN)/2
+- 1 x M3x12 Screw
+- 1 x Wood piece
 
-#define TILTMOTOR_MAX 155
-#define TILTMOTOR_MIN 80
-#define TILTMOTOR_MID (TILTMOTOR_MAX + TILTMOTOR_MIN)/2
+You'll need to be careful to slide the wood piece in between the left pincher assembly like meat in a sandwich and then align the holes so that the screw can go through all of the pieces.
 
-#define EXTENDMOTOR_MAX 105
-#define EXTENDMOTOR_MIN 10
-#define EXTENDMOTOR_MID (EXTENDMOTOR_MAX + EXTENDMOTOR_MIN)/2
+<img src="claw2 (6).jpg" style="zoom:10%;" class="image center" />
 
-#define PANMOTOR_MAX 180
-#define PANMOTOR_MIN 0
-#define PANMOTOR_MID (PANMOTOR_MAX + PANMOTOR_MIN)/2
+|                           Top View                           |                         Bottom View                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="claw3 (1).jpg" style="zoom:50%;" class="image center" /> | <img src="claw3 (2).jpg" style="zoom:50%;" class="image center" /> |
 
-Servo panMotor;
-Servo tiltMotor;
-Servo extendMotor;
-Servo clawMotor;
+Attach right pincher using:
 
-int panMotorPin = 6;
-int tiltMotorPin = 9;
-int extendMotorPin = 10;
-int clawMotorPin = 11;
+- 1 x M3x10 Screw
+- 1 x Wood Piece
 
-void setup() {
-  // put your setup code here, to run once:
-  panMotor.attach(panMotorPin);
-  tiltMotor.attach(tiltMotorPin);
-  extendMotor.attach(extendMotorPin);
-  clawMotor.attach(clawMotorPin);
+When inserting the right pincher, align the gears so that the claw can open and close all the way.  
 
-  homePos();
-}
-void loop() {
-  // put your main code here, to run repeatedly:
+*IMPORTANT:* Don't tighten the screw all the way.  Be careful to make sure that the screw does not protrude past the wood surface (see below in the red circle)  If it does, the claw will get stuck when the drive motor tries to move it.
 
-  demoSequence();
-  syncTest();
-  
-}
-
-void clawOpen() {
-  clawMotor.write(CLAWMOTOR_MAX);
-}
-
-void clawClose() {
-  clawMotor.write(CLAWMOTOR_MIN);
-}
-
-//- cycles through the motor angles smoothly
-void cycleMotor(Servo motor, int minNum, int maxNum, int delay_time) {
-  for (int i = minNum;i<maxNum;i++) {
-    motor.write(i);
-    delay(delay_time);
-  }
-  for (int i = maxNum;i>minNum;i--) {
-    motor.write(i);
-    delay(delay_time);
-  }
-}
-
-void syncTest() {
-  
-  clawMotor.write(CLAWMOTOR_MAX);
-  panMotor.write(PANMOTOR_MAX);
-  tiltMotor.write(TILTMOTOR_MAX);
-  extendMotor.write(EXTENDMOTOR_MAX);
-  delay(1000);
-  
-  clawMotor.write(CLAWMOTOR_MIN);
-  panMotor.write(PANMOTOR_MIN);
-  tiltMotor.write(TILTMOTOR_MIN);
-  extendMotor.write(EXTENDMOTOR_MIN);
-
-  delay(1000);
-  
-}
-
-void demoSequence() {
-
-  cycleMotor(clawMotor, CLAWMOTOR_MIN, CLAWMOTOR_MAX, 30);
-  cycleMotor(panMotor, PANMOTOR_MIN, PANMOTOR_MAX, 30);
-  cycleMotor(tiltMotor, TILTMOTOR_MIN, TILTMOTOR_MAX, 30);
-  cycleMotor(extendMotor, EXTENDMOTOR_MIN, EXTENDMOTOR_MAX, 30);
-}
-
-
-void homePos() {
-  clawMotor.write(CLAWMOTOR_MIN);
-  panMotor.write(PANMOTOR_MIN);
-  tiltMotor.write(TILTMOTOR_MIN);
-  extendMotor.write(EXTENDMOTOR_MIN);
-}
-```
-
+|                           Top View                           |              Make sure screw does not protrude!              |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="claw2 (3).jpg" style="zoom:50%;" class="image center" /> | <img src="claw2 (5).jpg" style="zoom:50%;" class="image center" /> |

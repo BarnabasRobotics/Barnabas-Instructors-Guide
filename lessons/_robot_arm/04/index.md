@@ -1,107 +1,59 @@
 ---
 layout: lesson
-title: Lesson 4 &middot; Set Up Your Computer
-suggested_time: 30-45 minutes
-
+title: Lesson 4 &middot; Build
+suggested_time: 60-90 minutes
 videos:
-    - link: https://youtu.be/3CW-bDeKVi4
-      text: How To Upload Code (Mac)
-    - link: https://youtu.be/T9EyaAX91Rg
-      text: Software Installation (Windows)
-    - link: https://youtu.be/gJliBVUUOKk
-      text: How To Upload Code (Windows)
+      text: Building The Main Robot Arm
+    - link: https://youtu.be/70e3SHPGu3M
 ---
 
 
 
-### What You'll Need
+## Materials
 
-Before we get started, let’s make sure that we have all the parts.
+Need materials?  [Purchase the Barnabas Robot Arm at our e-store](https://shop.barnabasrobotics.com/collections/classroom-robotics-kits/products/barnabas-arduino-compatible-robot-arm-kit-with-joystick-control-ages-11).  
 
-<img src="fig-6_0.png" alt="fig-6_0" style="zoom:90%;" class="image center" />
+Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire. 
 
-### Overview
+## Lesson Overview
 
-In this section we'll be setting up your computer for coding. 
+In this lesson we will assemble the main robot arm
 
-### Barnabas Web Coding
+## Arm Assembly (Same for Wood and Acrylic Model)
 
-We have an online coding platform that allows you to program your Arduino-based robot controller without installing new software.  Our online site runs on Google Chrome or Microsoft Edge browsers, so you'll need to install either one on your PC or Mac if you don't have it already.  Chromebooks come with Chrome browser built-in.  
+### Tutorial Video
 
-### Browser Setup
+{% include youtube.html id='bb9ocu_3jo8' %}
 
-#### 1. Open your Google Chrome browser
 
-#### 2. Copy and paste this text into your address bar.  
+### Instructions
 
-Note: This step may not be necessary for newer versions of Chrome/Edge.
+### STEP 1. Attach Main Arm
 
-<p style="text-align:center"><cmd>chrome://flags/#enable-experimental-web-platform-features</cmd></p>
+Attach main arm using:
 
-#### 3. Select “Enabled” on the “Experimental Web Platform features”
+- 2 x M3x12 Screws
+- 2 x M3 Nuts (Regular)
+- 1 x Wood Piece
 
-Note: This step may not be necessary for newer versions of Chrome/Edge.
+<img src="main.jpg" style="zoom:15%;" class="image center" />
 
-<img src="fig-6_2.png" alt="fig-6_2" style="zoom:40%;" class="image center" />
+### STEP 2. Attach Secondary Arm
 
-#### 4. Click “Relaunch”
+Attach secondary arm using:
 
-Note: This step may not be necessary for newer versions of Chrome/Edge.
+- 5 x M3x6 Screws
+- 2 x M3x10 Screws
+- 1 x M3 Nut (Nylon Lock)
+- 7 x Wood Pieces
 
-#### 5. Visit The Coding Site
+*IMPORTANT:* Do not overtighten.  Make sure that the joint can move easily.  If it is too tight, your motors will not be able to move the joint during robot arm operation.
 
-Your computer is now ready to access your IDE.  That was easy, right?  Type the link below (or copy and paste) into your address bar to check it out!
+|                            Side 1                            |                            Side 2                            |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="secondary (2).jpg" style="zoom:75%;" class="image center" /> | <img src="secondary (3).jpg" style="zoom:75%;" class="image center" /> |
 
-<p style="text-align:center"><cmd><a style="color:white" target="_blank" href="https://code.barnabasrobotics.com">https://code.barnabasrobotics.com</a></cmd></p>
+Use the supplied wrench to tighten the lock nut.  Do not overtighten.
 
-#### 6. Upload Code
+<img src="secondary (1).jpg" style="zoom:15%;" class="image center" />
 
-1. Connect your Arduino Uno-Compatible board to your computer using a USB cable.  A  light should turn on on your board.
-
-2. Click on "TEXT CODE" to enable text-based coding
-
-   <img src="block code.jpg" alt="fig-6_0" style="zoom:50%;" class="image center" />
-
-   <img src="textcode.jpg" alt="fig-6_0" style="zoom:50%;" class="image center" />
-
-3. Set "Select a board" to "Uno"
-
-4. Copy and paste sample initial code below
-
-   ```c
-   //- code that runs on boot up (only once)
-   void setup()
-   {
-   
-   }
-   
-   //- code that runs in a loop forever (after setup())
-   void loop()
-   {
-   
-   }
-   ```
-
-5. Click "Upload"
-
-6. Select the COM port and click "Connect"
-
-   <img src="fig-4_5.png" style="zoom:60%;" class="image center" />
-
-   
-
-   **Troubleshooting:** If you don't see any device show up, try installing the USB driver and trying again.  After installing the USB driver, you may need to unplug and re-plug the board and also refresh the website.
-
-   - [Windows USB Driver](https://cdn.sparkfun.com/assets/learn_tutorials/8/4/4/CH341SER.EXE)
-
-   - [Mac USB Driver](https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver/raw/master/CH34x_Install_V1.5.pkg)
-
-   
-
-7. If you see a green check mark message, you have successfully uploaded! If you get an error, check your connections and try again. 
-
-   <img src="check.jpg" style="zoom:60%;" class="image center" />
-
-### Stuck? Need Help?
-
-If you need technical support, feel free to contact us at support@barnabasrobotics.com!
