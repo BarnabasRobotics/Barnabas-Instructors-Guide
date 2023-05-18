@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 3 &middot; Build
+title: Lesson 3 &middot; Build The Rotating Base
 suggested_time: 60-90 minutes
 videos:
     - link: https://youtu.be/tmwG4g5-tf4

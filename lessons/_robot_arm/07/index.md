@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 7 &middot; Build
+title: Lesson 7 &middot; Attach Claw Assembly To Rest Of Arm
 suggested_time: 60-90 minutes
 videos:
     - link: https://youtu.be/feg8_S7SqrY

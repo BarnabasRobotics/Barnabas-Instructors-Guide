@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 5 &middot; Build
+title: Lesson 5 &middot; Build Motor Claw Assembly and Adding Pinchers
 suggested_time: 60-90 minutes
 videos:
     - link: https://youtu.be/70e3SHPGu3M

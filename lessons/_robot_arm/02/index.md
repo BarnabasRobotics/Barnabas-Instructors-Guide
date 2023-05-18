@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 2 &middot; Build
+title: Lesson 2 &middot; Build The Main Base
 suggested_time: 60-90 minutes
 videos:
     - link: https://youtu.be/NFqWNfnIABY

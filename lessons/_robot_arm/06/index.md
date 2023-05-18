@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 6 &middot; Build
+title: Lesson 6 &middot; Build and Attach Claw Assembly Drive Gear
 suggested_time: 60-90 minutes
 videos:
     - link: https://youtu.be/0c6QId35D4k
