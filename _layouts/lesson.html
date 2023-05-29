@@ -178,6 +178,10 @@ layout: index
     <h2><i class="icon fa-pencil"></i> Lesson Plan</h2>
 
     {{ content }}
+<!--
+    only show this if there are comprenhension questions
+-->
+    {% if page.reflection.comprehension.length != 0 %}
 
     <div id="reflection" class="row">
         <div class="col-2">
@@ -189,6 +193,7 @@ layout: index
             <hr />
         </div>
     </div>
+    {% endif %}
 <!--
     <h3>Comprehension</h3>
 -->
