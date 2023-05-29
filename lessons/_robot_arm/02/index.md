@@ -23,7 +23,7 @@ In this lesson we will assemble the robot arm base
 
 ## Tutorial Video
 
-s{% include badge.html type='suggestion' content='Only watch until 22:45.  The remaining video includes coding, which we will get to later!' %}
+{% include badge.html type='suggestion' content='Only watch until 22:45.  The remaining video includes coding, which we will get to later!' %}
 
 {% include badge.html type='suggestion' content='Newer models include a gray metal servo motor.  Make sure to use that one for the arm base motor.  Watch <a href="https://youtu.be/TFep5o_B7lE" target="_blank">How to upgrade your robot arm with a metal servo motor</a> for help!' %}
 
