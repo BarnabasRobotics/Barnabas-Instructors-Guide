@@ -2,13 +2,19 @@
 layout: lesson
 title: Lesson 8 &middot; Wiring
 suggested_time: 60-90 minutes
-
+videos:
+    - link: https://youtu.be/DIqoneF1J9k
+      text: Mounting The Arduino, daughter board and wiring motors
       
 ---
 
 ### Lesson Overview
 
 In this lesson we'll put your hardware together and connect the motors to it.
+
+### Tutorial Video
+
+{% include youtube.html id='DIqoneF1J9k' %}
 
 ### Introducing The Hardware
 
