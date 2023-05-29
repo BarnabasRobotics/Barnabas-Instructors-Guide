@@ -182,7 +182,7 @@ layout: index
     only show this if there are comprenhension questions
 -->
 
-    {% if Object.keys(page.reflection.comprehension) > 1 %}
+    {% if page.reflection.comprehension.size > 0 %}
 
     <div id="reflection" class="row">
         <div class="col-2">
