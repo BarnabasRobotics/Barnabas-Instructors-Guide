@@ -5,7 +5,10 @@ suggested_time: 60-90 minutes
 videos:
     - link: https://youtu.be/NFqWNfnIABY
       text: Assemble Robot Arm Base and Program Motor Arduino Robot Arm
-
+    - link: https://youtu.be/TFep5o_B7lE
+      text: Upgrade base motor to a metal servo
+    - link: https://youtu.be/rJP7WexIhWo
+      text: How to fix the Arduino wood robot arm base where screws go through the wood pieces
 ---
 
 
@@ -20,16 +23,17 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 
 In this lesson we will assemble the robot arm base
 
-## Arm Assembly (Same for Wood and Acrylic Model)
+## Arm Base Assembly
 
 ### Tutorial Video
 
 Note #1: Watch until 22:45
 
-Note #2: Newer models include a gray metal servo motor.  Make sure to use that one for the arm base motor.  Video [here](https://youtu.be/TFep5o_B7lE).
+Note #2: Newer models include a gray metal servo motor.  Make sure to use that one for the arm base motor.  See [video](https://youtu.be/TFep5o_B7lE)
 
 {% include youtube.html id='NFqWNfnIABY' %} 
 
+{% include badge.html type='troubleshoot' content='Having trouble with the screws not self-tapping?  This can happen if the holes in the wood are too big from either imperfections or from being stripped.  See [trouble-shooting video](https://youtu.be/rJP7WexIhWo).' %}
 
 ### Written Instructions
 
@@ -42,6 +46,8 @@ Assemble the base motor assembly using:
 - 2 x Wood Pieces
 
 Make sure that the screw holes on the wood pieces align perfectly so that the screws can go in straight.  You may need to flip/rotate the wood pieces a few times until you get it right.  The screws will self-tap into the wood.
+
+{% include badge.html type='troubleshoot' content='Having trouble with the screws not self-tapping?  This can happen if the holes in the wood are too big from either imperfections or from being stripped.  See [trouble-shooting video](https://youtu.be/rJP7WexIhWo).' %}
 
 <img src="beg (5).jpg" style="zoom:15%;" class="image center" />
 
@@ -66,7 +72,7 @@ Align the base motor assembly to the platform screws so that they are perfectly 
 
 *IMPORTANT:* If you try to do this step without aligning the screws, you may damage the base motor assembly.  You may need to rotate the base motor platform several times until you get the right orientation.  When aligned correctly, ALL screws are perfectly straight.
 
-Once aligned, screw the screws into the base motor platform and tighten the nuts.  The screw will self-tap into the base motor assembly wood.
+Once aligned, screw the screws into the base motor platform and tighten the nuts.  The screw will self-tap into the base motor assembly wood.  
 
 |                          Side View                           |                           Top View                           |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |

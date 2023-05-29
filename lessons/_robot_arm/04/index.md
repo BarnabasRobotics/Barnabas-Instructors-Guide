@@ -19,7 +19,7 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 
 In this lesson we will assemble the main robot arm
 
-## Arm Assembly (Same for Wood and Acrylic Model)
+## Arm Assembly
 
 ### Tutorial Video
 

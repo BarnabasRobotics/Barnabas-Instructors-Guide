@@ -5,8 +5,8 @@ suggested_time: 60-90 minutes
 videos:
     - link: https://youtu.be/tmwG4g5-tf4
       text: Assemble The Rotating Base / Turret
-
-
+    - link: https://youtu.be/rJP7WexIhWo
+      text: Give more clearance between the bottom of the rotating turret and the base
 ---
 
 
@@ -24,6 +24,8 @@ In this lesson we will assemble the rotating base / turret
 ### Tutorial Video
 
 {% include youtube.html id='tmwG4g5-tf4' %}
+
+{% include badge.html type='troubleshoot' content='Are the screws on the base touching the rotating piece?  See [this video for instructions on secure the screws](https://youtu.be/rJP7WexIhWo).  Also see an [optional upgrade](https://youtu.be/rJP7WexIhWo) that requires additional parts.' %}
 
 
 ### Instructions
@@ -169,3 +171,5 @@ Attach main body using to base servo motor using:
 |                           Screw In                           |                           Finished                           |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="main body (2).jpg" style="zoom:75%;" class="image center" /> | <img src="main body (3).jpg" style="zoom:75%;" class="image center" /> |
+
+{% include badge.html type='troubleshoot' content='Are the screws on the base touching the rotating piece?  See [this video for instructions on secure the screws](https://youtu.be/rJP7WexIhWo).  Also see an [optional upgrade](https://youtu.be/rJP7WexIhWo) that requires additional parts.' %}
