@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: Lesson 1 &middot; Overview
-suggested_time: 60-90 minutes
+suggested_time: 5 minutes
 videos:
     - link: https://youtu.be/aPI11noSG28
       text: Robot Arm Demo
