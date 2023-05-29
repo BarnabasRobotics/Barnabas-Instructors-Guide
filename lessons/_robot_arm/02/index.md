@@ -5,9 +5,7 @@ suggested_time: 60-90 minutes
 videos:
     - link: https://youtu.be/NFqWNfnIABY
       text: Assemble Robot Arm Base and Program Motor Arduino Robot Arm
-    - link: https://youtu.be/TFep5o_B7lE
-      text: Upgrade base motor to a metal servo
-    - link: https://youtu.be/rJP7WexIhWo
+    - link: https://youtu.be/VqSkfI2I-TE
       text: How to fix the Arduino wood robot arm base where screws go through the wood pieces
 ---
 
@@ -27,13 +25,13 @@ In this lesson we will assemble the robot arm base
 
 ### Tutorial Video
 
-Note #1: Watch until 22:45
+Notes:
 
-Note #2: Newer models include a gray metal servo motor.  Make sure to use that one for the arm base motor.  See [video](https://youtu.be/TFep5o_B7lE)
+- Watch until 22:45
+- Newer models include a gray metal servo motor.  Make sure to use that one for the arm base motor.  See [video](https://youtu.be/TFep5o_B7lE) for help.
+- Having trouble with the screws not self-tapping?  This can happen if the holes in the wood are too big from either imperfections or from being stripped.  See [video](https://youtu.be/VqSkfI2I-TE) for help.
 
-{% include youtube.html id='NFqWNfnIABY' %} 
-
-{% include badge.html type='troubleshoot' content='Having trouble with the screws not self-tapping?  This can happen if the holes in the wood are too big from either imperfections or from being stripped.  See video for help: https://youtu.be/rJP7WexIhWo' %}
+{% include youtube.html id='NFqWNfnIABY' %}
 
 ### Written Instructions
 
@@ -47,7 +45,7 @@ Assemble the base motor assembly using:
 
 Make sure that the screw holes on the wood pieces align perfectly so that the screws can go in straight.  You may need to flip/rotate the wood pieces a few times until you get it right.  The screws will self-tap into the wood.
 
-{% include badge.html type='troubleshoot' content='Having trouble with the screws not self-tapping?  This can happen if the holes in the wood are too big from either imperfections or from being stripped.  See video for help: https://youtu.be/rJP7WexIhWo' %}
+Having trouble with the screws not self-tapping?  This can happen if the holes in the wood are too big from either imperfections or from being stripped.  See [video](https://youtu.be/VqSkfI2I-TE) for help.
 
 <img src="beg (5).jpg" style="zoom:15%;" class="image center" />
 

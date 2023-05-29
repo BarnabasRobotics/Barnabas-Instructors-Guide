@@ -7,6 +7,8 @@ videos:
       text: Assemble The Rotating Base / Turret
     - link: https://youtu.be/rJP7WexIhWo
       text: Give more clearance between the bottom of the rotating turret and the base
+    - link: https://youtu.be/VqSkfI2I-TE
+      text: How to fix the Arduino wood robot arm base where screws go through the wood pieces
 ---
 
 
@@ -25,7 +27,7 @@ In this lesson we will assemble the rotating base / turret
 
 {% include youtube.html id='tmwG4g5-tf4' %}
 
-Note: Are the screws on the base touching the rotating piece?  See [this video for instructions on how to secure the screws](https://youtu.be/rJP7WexIhWo).  Also see an [optional upgrade](https://youtu.be/rJP7WexIhWo) that requires additional parts.
+Note: Are the screws on the base touching the rotating piece?  See [this video for instructions on how to secure the screws](https://youtu.be/VqSkfI2I-TE).  Also see an [optional upgrade](https://youtu.be/rJP7WexIhWo) that requires additional parts.
 
 
 ### Instructions
@@ -172,4 +174,4 @@ Attach main body using to base servo motor using:
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="main body (2).jpg" style="zoom:75%;" class="image center" /> | <img src="main body (3).jpg" style="zoom:75%;" class="image center" /> |
 
-Note: Are the screws on the base touching the rotating piece?  See [this video for instructions on how to secure the screws](https://youtu.be/rJP7WexIhWo).  Also see an [optional upgrade](https://youtu.be/rJP7WexIhWo) that requires additional parts.
+Note: Are the screws on the base touching the rotating piece?  See [this video for instructions on how to secure the screws](https://youtu.be/VqSkfI2I-TE).  Also see an [optional upgrade](https://youtu.be/rJP7WexIhWo) that requires additional parts.
