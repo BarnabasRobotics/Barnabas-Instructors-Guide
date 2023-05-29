@@ -23,11 +23,11 @@ In this lesson we will assemble the robot arm base
 
 ## Tutorial Video
 
+{% include youtube.html id='NFqWNfnIABY' %}
+
 {% include badge.html type='suggestion' content='Only watch until 22:45.  The remaining video includes coding, which we will get to later!' %}
 
 {% include badge.html type='suggestion' content='Newer models include a gray metal servo motor.  Make sure to use that one for the arm base motor.  Watch <a href="https://youtu.be/TFep5o_B7lE" target="_blank">How to upgrade your robot arm with a metal servo motor</a> for help!' %}
-
-{% include youtube.html id='NFqWNfnIABY' %}
 
 {% include badge.html type='troubleshoot' content='Having trouble with the screws not fitting tightly in the wood?  This can happen if the holes in the wood are too big from either imperfections during manufacturing or from being pushed through with too much force.  Watch <a href="https://youtu.be/VqSkfI2I-TE" target="_blank">how to get stripped holes to fit snuggly</a> for help!' %}
 
