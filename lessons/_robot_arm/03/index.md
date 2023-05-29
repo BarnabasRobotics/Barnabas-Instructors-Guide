@@ -25,9 +25,9 @@ In this lesson we will assemble the rotating base / turret
 
 ### Tutorial Video
 
-{% include youtube.html id='tmwG4g5-tf4' %}
+{% include badge.html type='troubleshoot' content='Are the screws on the base touching the rotating piece?  This can happen if the holes in the wood are too big from either imperfections during manufacturing or from being pushed through with too much force.  Watch <a href="https://youtu.be/VqSkfI2I-TE" target="_blank">how to get stripped holes to fit snuggly</a> for help!  You can also <a href="https://youtu.be/rJP7WexIhWo" target="_blank">adjust the position of the motor and upgrade the spacer screws</a> (this requires additional parts)' %}
 
-Note: Are the screws on the base touching the rotating piece?  See [this video for instructions on how to secure the screws](https://youtu.be/VqSkfI2I-TE).  Also see an [optional upgrade](https://youtu.be/rJP7WexIhWo) that requires additional parts.
+{% include youtube.html id='tmwG4g5-tf4' %}
 
 
 ### Instructions
@@ -174,4 +174,4 @@ Attach main body using to base servo motor using:
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="main body (2).jpg" style="zoom:75%;" class="image center" /> | <img src="main body (3).jpg" style="zoom:75%;" class="image center" /> |
 
-Note: Are the screws on the base touching the rotating piece?  See [this video for instructions on how to secure the screws](https://youtu.be/VqSkfI2I-TE).  Also see an [optional upgrade](https://youtu.be/rJP7WexIhWo) that requires additional parts.
+{% include badge.html type='troubleshoot' content='Are the screws on the base touching the rotating piece?  This can happen if the holes in the wood are too big from either imperfections during manufacturing or from being pushed through with too much force.  Watch <a href="https://youtu.be/VqSkfI2I-TE" target="_blank">how to get stripped holes to fit snuggly</a> for help!  You can also <a href="https://youtu.be/rJP7WexIhWo" target="_blank">adjust the position of the motor and upgrade the spacer screws</a> (this requires additional parts)' %}
