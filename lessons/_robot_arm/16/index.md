@@ -15,7 +15,7 @@ I show you how to simplify your move motor code using helper functions.  I also 
 
 {% include youtube.html id='_xMY7DYNcWQ' %}
 
-## Sample Code #1
+## Sample Code
 
 ```c
 /*
@@ -153,24 +153,6 @@ void loop() {
   moveTilt(160);
   delay(1000);
   moveExtend(40);
-
-/*
-  moveClaw(0);
-  moveClaw(180);
-  moveClaw(0);
-  
-  moveBase(0);
-  moveBase(180);
-  moveBase(90);
-  
-  moveTilt(0);
-  moveTilt(180);
-  moveTilt(90);
-  
-  moveExtend(0);
-  moveExtend(180);
-  moveExtend(90);
-*/
 
   while (1==1) {
     //-do nothing

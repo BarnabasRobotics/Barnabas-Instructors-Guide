@@ -272,16 +272,7 @@ void loop() {
   moveMotor(clawMotor,0,CLAW_CLOSE, CLAW_OPEN);
   moveMotor(clawMotor,180,CLAW_CLOSE, CLAW_OPEN);
   moveMotor(clawMotor,0,CLAW_CLOSE, CLAW_OPEN);
-/*
-  moveMotor(baseMotor,-1, BASE_MIN, BASE_MAX);
-  moveMotor(baseMotor,200, BASE_MIN, BASE_MAX);
 
-  moveMotor(tiltMotor,-20,TILT_MIN, TILT_MAX);
-  delay(1000);
-
-  moveMotor(extendMotor,30,EXTEND_MIN, EXTEND_MAX);
-  delay(1000);
-*/
   while (1==1) {
     //-do nothing
   }

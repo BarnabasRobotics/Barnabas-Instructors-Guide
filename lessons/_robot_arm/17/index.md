@@ -15,7 +15,7 @@ I show you how to control all the motors on your Barnabas wood robot arm.
 
 {% include youtube.html id='5udlIIpuS1U' %}
 
-## Sample Code #1
+## Sample Code
 
 ```c
 /*
@@ -153,7 +153,6 @@ void loop() {
   //- analogRead(3) -> CONTROL 4 -> Claw Motor
   //- range of analog is [0-1023]
   
-  
   //-BaseMotor
   if (analogRead(0) == 0) moveBase(0);
   if (analogRead(0)==256) moveBase(40);
@@ -181,37 +180,6 @@ void loop() {
   if (analogRead(3)==512) moveClaw(90);
   if (analogRead(3)==768) moveClaw(135);
   if (analogRead(3)==1023) moveClaw(180);
-
-/*  
-
-  moveClaw(180);
-  delay(1000);
-  moveExtend(160);
-  delay(1000);
-  moveClaw(0);
-  delay(1000);
-  moveTilt(160);
-  delay(1000);
-  moveExtend(40);
-  */
-
-/*
-  moveClaw(0);
-  moveClaw(180);
-  moveClaw(0);
-  
-  moveBase(0);
-  moveBase(180);
-  moveBase(90);
-  
-  moveTilt(0);
-  moveTilt(180);
-  moveTilt(90);
-  
-  moveExtend(0);
-  moveExtend(180);
-  moveExtend(90);
-*/
 
 }
 ```
