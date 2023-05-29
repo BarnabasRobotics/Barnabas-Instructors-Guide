@@ -33,7 +33,7 @@ Note #2: Newer models include a gray metal servo motor.  Make sure to use that o
 
 {% include youtube.html id='NFqWNfnIABY' %} 
 
-{% include badge.html type='troubleshoot' content='Having trouble with the screws not self-tapping?  This can happen if the holes in the wood are too big from either imperfections or from being stripped.  See [trouble-shooting video](https://youtu.be/rJP7WexIhWo).' %}
+{% include badge.html type='troubleshoot' content='Having trouble with the screws not self-tapping?  This can happen if the holes in the wood are too big from either imperfections or from being stripped.  See video for help: https://youtu.be/rJP7WexIhWo' %}
 
 ### Written Instructions
 
@@ -47,7 +47,7 @@ Assemble the base motor assembly using:
 
 Make sure that the screw holes on the wood pieces align perfectly so that the screws can go in straight.  You may need to flip/rotate the wood pieces a few times until you get it right.  The screws will self-tap into the wood.
 
-{% include badge.html type='troubleshoot' content='Having trouble with the screws not self-tapping?  This can happen if the holes in the wood are too big from either imperfections or from being stripped.  See [trouble-shooting video](https://youtu.be/rJP7WexIhWo).' %}
+{% include badge.html type='troubleshoot' content='Having trouble with the screws not self-tapping?  This can happen if the holes in the wood are too big from either imperfections or from being stripped.  See video for help: https://youtu.be/rJP7WexIhWo' %}
 
 <img src="beg (5).jpg" style="zoom:15%;" class="image center" />
 
