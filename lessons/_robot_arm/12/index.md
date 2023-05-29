@@ -1,24 +1,24 @@
 ---
 layout: lesson
-title: Lesson 12 &middot; Investigating Servo Jitter Issue With Barnabas Robot Arm, Move To Angle Code, Functions
-suggested_time: 30-60 minutes
+title: Lesson 12 &middot; Move Motor In Increments
+suggested_time: 45-60 minutes
 videos:
     - link: https://youtu.be/ZYbJyu0ji-M
       text: Investigating Servo Jitter Issue With Barnabas Robot Arm, Move To Angle Code, Functions
 ---
 
-### Lesson Overview
+## Lesson Overview
 
 - Servo Jitter issue and how to help it via code
 - Introduction to functions
 - Functions with parameters
 - How to create a function to go to any angle in 15 degree increments
 
-### Tutorial Video
+## Tutorial Video
 
 {% include youtube.html id='ZYbJyu0ji-M' %}
 
-#### Sample Code
+## Sample Code
 
 ```c
 /*

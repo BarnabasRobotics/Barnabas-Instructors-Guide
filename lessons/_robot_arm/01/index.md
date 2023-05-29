@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 1 &middot; Overview
+title: Lesson 1 &middot; Project Overview
 suggested_time: 5 minutes
 videos:
     - link: https://youtu.be/aPI11noSG28

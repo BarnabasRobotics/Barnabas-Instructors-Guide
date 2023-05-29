@@ -7,16 +7,16 @@ videos:
       text: Code The Base Motor
 ---
 
-### Lesson Overview
+## Lesson Overview
 
 - Program the base servo motor
 - Calibrate the base servo motor 
 
-### Tutorial Video
+## Tutorial Video
 
 {% include youtube.html id='NFqWNfnIABY?t=1371' %}
 
-#### Sample Code
+## Sample Code
 
 ```c
 #include <Servo.h>

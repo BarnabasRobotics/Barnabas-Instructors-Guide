@@ -1,21 +1,21 @@
 ---
 layout: lesson
-title: Lesson 17 &middot; Programming Dials / Potentiometers to control all motors on Barnabas Wood Robot Arm
+title: Lesson 17 &middot; Program Dials To Move Motors
 suggested_time: 30-60 minutes
 videos:
     - link: https://youtu.be/5udlIIpuS1U
       text: Programming Dials / Potentiometers to control all motors on Barnabas Wood Robot Arm
 ---
 
-### Lesson Overview
+## Lesson Overview
 
 I show you how to control all the motors on your Barnabas wood robot arm. 
 
-### Video Tutorial
+## Video Tutorial
 
 {% include youtube.html id='5udlIIpuS1U' %}
 
-### Sample Code #1
+## Sample Code #1
 
 ```c
 /*

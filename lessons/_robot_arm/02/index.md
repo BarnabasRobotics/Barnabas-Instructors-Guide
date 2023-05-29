@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: Lesson 2 &middot; Build The Main Base
-suggested_time: 60-90 minutes
+suggested_time: 30-60 minutes
 videos:
     - link: https://youtu.be/NFqWNfnIABY
       text: Assemble Robot Arm Base and Program Motor Arduino Robot Arm
@@ -21,11 +21,9 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 
 In this lesson we will assemble the robot arm base
 
-## Arm Base Assembly
+## Tutorial Video
 
-### Tutorial Video
-
-{% include badge.html type='suggestion' content='Only watch until 22:45.  The remaining video includes coding, which we will get to later!' %}
+s{% include badge.html type='suggestion' content='Only watch until 22:45.  The remaining video includes coding, which we will get to later!' %}
 
 {% include badge.html type='suggestion' content='Newer models include a gray metal servo motor.  Make sure to use that one for the arm base motor.  Watch <a href="https://youtu.be/TFep5o_B7lE" target="_blank">How to upgrade your robot arm with a metal servo motor</a> for help!' %}
 
@@ -33,7 +31,7 @@ In this lesson we will assemble the robot arm base
 
 {% include youtube.html id='NFqWNfnIABY' %}
 
-### Written Instructions
+## Written Instructions
 
 ### STEP 1. Build Base Motor Assembly
 

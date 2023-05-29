@@ -1,23 +1,23 @@
 ---
 layout: lesson
-title: Lesson 13 &middot; Coding Tilt and Extend Motors, Adding A Servo Object As Parameter
-suggested_time: 30-60 minutes
+title: Lesson 13 &middot; Code Tilt and Extend Motors
+suggested_time: 45-60 minutes
 videos:
     - link: https://youtu.be/vwdR3h2wYp8
       text: Coding Tilt and Extend Motors, Adding A Servo Object As Parameter
 ---
 
-### Lesson Overview
+## Lesson Overview
 
 - Code two additional motors
 - Add home() function
 - Take a servo motor as a parameter
 
-### Tutorial Video
+## Tutorial Video
 
 {% include youtube.html id='vwdR3h2wYp8' %}
 
-#### Sample Code
+## Sample Code
 
 ```c
 /*

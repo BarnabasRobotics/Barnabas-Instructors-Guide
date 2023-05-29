@@ -1,7 +1,7 @@
 ---
 layout: lesson
-title: Lesson 5 &middot; Build Motor Claw Assembly and Adding Pinchers
-suggested_time: 60-90 minutes
+title: Lesson 5 &middot; Build Motor Claw and Add Pinchers
+suggested_time: 30-60 minutes
 videos:
     - link: https://youtu.be/70e3SHPGu3M
       text: Building Motor Claw Assembly and Adding Pinchers
@@ -17,14 +17,12 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 
 In this lesson we will assemble the claw and add pinchers.
 
-## Arm Assembly (Same for Wood and Acrylic Model)
-
-### Tutorial Video
+## Tutorial Video
 
 {% include youtube.html id='70e3SHPGu3M' %}
 
 
-### Instructions
+## Instructions
 
 ### STEP 1. Build Claw Motor Assembly
 

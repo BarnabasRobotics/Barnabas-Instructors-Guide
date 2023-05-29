@@ -1,21 +1,21 @@
 ---
 layout: lesson
-title: Lesson 16 &middot; Creating helper functions for claw, extend, tilt and base motors
-suggested_time: 30-60 minutes
+title: Lesson 16 &middot; Create Helper Functions For Each Motor
+suggested_time: 30-45 minutes
 videos:
     - link: https://youtu.be/_xMY7DYNcWQ
       text: Creating helper functions for claw, extend, tilt and base motors
 ---
 
-### Lesson Overview
+## Lesson Overview
 
 I show you how to simplify your move motor code using helper functions.  I also demo how you would try to pick something up with your robot arm using code!
 
-### Video Tutorial
+## Video Tutorial
 
 {% include youtube.html id='_xMY7DYNcWQ' %}
 
-### Sample Code #1
+## Sample Code #1
 
 ```c
 /*

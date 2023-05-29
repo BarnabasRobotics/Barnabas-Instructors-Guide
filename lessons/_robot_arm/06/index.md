@@ -1,13 +1,11 @@
 ---
 layout: lesson
-title: Lesson 6 &middot; Build and Attach Claw Assembly Drive Gear
-suggested_time: 60-90 minutes
+title: Lesson 6 &middot; Build and Attach Claw Drive Gears
+suggested_time: 15-30 minutes
 videos:
     - link: https://youtu.be/0c6QId35D4k
       text: Building and Attaching Claw Assembly Drive Gear
 ---
-
-
 
 ## Materials
 
@@ -19,14 +17,12 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 
 In this lesson we will build and attach the claw assembly drive gear.
 
-## Arm Assembly (Same for Wood and Acrylic Model)
-
-### Tutorial Video
+## Tutorial Video
 
 {% include youtube.html id='0c6QId35D4k' %}
 
 
-### Instructions
+## Instructions
 
 ### STEP 1. Build Claw Drive Gear Assembly
 

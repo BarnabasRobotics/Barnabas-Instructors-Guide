@@ -11,11 +11,11 @@ videos:
       text: Robot Arm Demo (Autonomous)
 ---
 
-### Lesson Overview
+## Lesson Overview
 
 Here is some additional sample code for reference.
 
-### Dial Mode 
+## Dial Mode 
 
 Program your robot arm in dial mode so that you can control all 4 axes using the dial.
 
@@ -23,7 +23,7 @@ Program your robot arm in dial mode so that you can control all 4 axes using the
 
 {% include youtube.html id='RPg-ayzt8RA' %}
 
-#### Sample Code
+## Sample Code
 
 ```c
 #include <Servo.h>
@@ -101,13 +101,13 @@ void loop() {
 
 
 
-### Autonomous Mode
+## Autonomous Mode
 
 You can also program your robot to follow pre-programmed moves.  Simply copy the code and upload it using the Arduino IDE.  Have fun customizing it!
 
 {% include youtube.html id='Gxu7uIzHSiM' %}
 
-#### Sample Code
+## Sample Code
 
 ```c
 #include <Servo.h>

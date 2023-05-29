@@ -1,17 +1,21 @@
 ---
 layout: lesson
-title: Lesson 14 &middot; Coding Claw Motor and Finding Min and Max Limits For All Motors For Arduino Wood Arm
-suggested_time: 30-60 minutes
+title: Lesson 14 &middot; Code Claw Motor And Find Limits For Motors
+suggested_time: 45-60 minutes
 videos:
     - link: https://youtu.be/Bw7IfrGTrAQ
       text: Coding Claw Motor and Finding Min and Max Limits For All Motors For Arduino Wood Arm
 ---
 
-### Tutorial Video
+## Lesson Overview
+
+I show you how to wire the claw motor and to find the minimum and maximum angles for all the motors. 
+
+## Tutorial Video
 
 {% include youtube.html id='Bw7IfrGTrAQ' %}
 
-#### Sample Code
+## Sample Code
 
 ```c
 /*

@@ -1,24 +1,24 @@
 ---
 layout: lesson
-title: Lesson 11 &middot; Introduction To While Loops and Variables Using the Base Servo Motor
+title: Lesson 11 &middot; Code Base Motor With A While Loop
 suggested_time: 30-60 minutes
 videos:
     - link: https://youtu.be/iGCHPjRm1Lo
       text: Introduction To While Loops and Variables Using the Base Servo Motor - Arduino Robot Arm
 ---
 
-### Lesson Overview
+## Lesson Overview
 
 - While loop, condition, variable
 - How to make your code loop any number of times 
 - Using a while loop to change the angle of the servo motor
 - Make your servo motor move like the second hand of a clock
 
-### Tutorial Video
+## Tutorial Video
 
 {% include youtube.html id='iGCHPjRm1Lo' %}
 
-#### Sample Code
+## Sample Code
 
 ```c
 #include <Servo.h>

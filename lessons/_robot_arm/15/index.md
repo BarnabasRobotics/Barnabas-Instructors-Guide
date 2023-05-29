@@ -1,7 +1,7 @@
 ---
 layout: lesson
-title: Lesson 15 &middot; Adding Min and Max Limits For All Motors For Arduino Wood Arm To Your Move Function
-suggested_time: 30-60 minutes
+title: Lesson 15 &middot; Incorporate Motor Limits To Your Move Function
+suggested_time: 45-60 minutes
 videos:
     - link: https://youtu.be/K0oMXIJTww4
       text: Adding Min and Max Limits For All Motors For Arduino Wood Arm To Your Move Function
@@ -9,15 +9,15 @@ videos:
       text: FIX - Adding Min and Max Limits For All Motors For Arduino Wood Arm To Your Move Function
 ---
 
-### Lesson Overview
+## Lesson Overview
 
 How to incorporate the max and minimum angles into your move functions so that your code never pushes your robot arm beyond its limits.  Make sure to watch both videos as the second video fixes a bug in the first one!
 
-### Video Tutorial #1
+## Video Tutorial #1
 
 {% include youtube.html id='K0oMXIJTww4' %}
 
-### Sample Code #1
+## Sample Code #1
 
 ```c
 /*
@@ -149,11 +149,11 @@ void loop() {
 }
 ```
 
-### Video Tutorial #2
+## Video Tutorial #2
 
 {% include youtube.html id='m1LiqKgSrSs' %}
 
-### Sample Code #2
+## Sample Code #2
 
 ```c
 /*
