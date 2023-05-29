@@ -9,7 +9,7 @@ videos:
 
 ## Lesson Overview
 
-I show you how to control all the motors on your Barnabas wood robot arm. 
+I show you how to control all the motors on your Barnabas wood robot arm. using the dials.
 
 ## Video Tutorial
 
