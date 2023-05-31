@@ -1,211 +1,185 @@
 ---
 layout: lesson
-title: Lesson 18 &middot; Additional Sample Code
+title: Lesson 18 &middot; Create smoother and finer motion on all motors using the dials
 suggested_time: 30-60 minutes
 videos:
-    - link: https://youtu.be/F_K7G25mS4k
-      text: Robot Arm Demo (Dial)
-    - link: https://youtu.be/RPg-ayzt8RA
-      text: Wood Robot Arm Demo (Dial)
-    - link: https://youtu.be/Gxu7uIzHSiM
-      text: Robot Arm Demo (Autonomous)
+    - link: https://youtu.be/bcnczfulwoo
+      text: Programming Dials / Potentiometers to control all motors on Barnabas Wood Robot Arm using the map function
 ---
 
 ## Lesson Overview
 
-Here is some additional sample code for reference.
+I show you how to control the Barnabas Wood Robot Arm using the dials by making use of the map function on the Arduino.  This will create much smoother and finer motion for all of your motors.  I also show how to print the status of each dial with labels.  Have fun!
 
-## Dial Mode 
+## Video Tutorial
 
-Program your robot arm in dial mode so that you can control all 4 axes using the dial.
-
-{% include youtube.html id='F_K7G25mS4k' %}
-
-{% include youtube.html id='RPg-ayzt8RA' %}
+{% include youtube.html id='bcnczfulwoo' %}
 
 ## Sample Code
 
 ```c
 #include <Servo.h>
 
-#define CLAWMOTOR_MAX 90
-#define CLAWMOTOR_MIN 65
-#define CLAWMOTOR_MID (CLAWMOTOR_MAX + CLAWMOTOR_MIN)/2
+#define CLAW_OPEN 120
+#define CLAW_CLOSE 5
 
-#define TILTMOTOR_MAX 155
-#define TILTMOTOR_MIN 80
-#define TILTMOTOR_MID (TILTMOTOR_MAX + TILTMOTOR_MIN)/2
+#define BASE_MAX 180
+#define BASE_MIN 0
 
-#define EXTENDMOTOR_MAX 105
-#define EXTENDMOTOR_MIN 10
-#define EXTENDMOTOR_MID (EXTENDMOTOR_MAX + EXTENDMOTOR_MIN)/2
+#define TILT_MAX 180
+#define TILT_MIN 120
 
-#define PANMOTOR_MAX 180
-#define PANMOTOR_MIN 0
-#define PANMOTOR_MID (PANMOTOR_MAX + PANMOTOR_MIN)/2
+#define EXTEND_MAX 150
+#define EXTEND_MIN 75
 
-Servo panMotor;
+//- servos move half a circle 0-180 degrees.
+Servo baseMotor;
 Servo tiltMotor;
 Servo extendMotor;
 Servo clawMotor;
 
-int potPin1 = 0;
-int potPin2 = 1;
-int potPin3 = 2;
-int potPin4 = 3;
-
-int panMotorPin = 6;
-int tiltMotorPin = 9;
-int extendMotorPin = 10;
-int clawMotorPin = 11;
-
+//- runs only once when you turn on
 void setup() {
-  // put your setup code here, to run once:
-  panMotor.attach(panMotorPin);
-  tiltMotor.attach(tiltMotorPin);
-  extendMotor.attach(extendMotorPin);
-  clawMotor.attach(clawMotorPin);
+  baseMotor.attach(6);
+  tiltMotor.attach(9);
+  extendMotor.attach(10);
+  clawMotor.attach(11);
+  
+  home();
+  
+  delay(1000);
+  
   Serial.begin(9600);
-}
-
-void printPotStatus() {
-  Serial.print("Pot1 = " + String(analogRead(potPin1)));
-  Serial.print(" Pot2 = " + String(analogRead(potPin2)));
-  Serial.print(" Pot3 = " + String(analogRead(potPin3)));
-  Serial.println(" Pot4 = " + String(analogRead(potPin4)));
-}
-
-
-void processPot() {
-  int panMotorAngle = map(analogRead(potPin1),0,1023,0,180);
-  panMotor.write(panMotorAngle);
-
-  int tiltMotorAngle = map(analogRead(potPin2),0,1023,0,180);
-  tiltMotor.write(tiltMotorAngle);
-
-  int extendMotorAngle = map(analogRead(potPin3),0,1023,0,180);
-  extendMotor.write(extendMotorAngle);
-
-  int clawMotorAngle = map(analogRead(potPin4),0,1023,0,180);
-  clawMotor.write(clawMotorAngle);
-
-  //Serial.println(panMotorAngle);
-}
-
-void loop() {
-  printPotStatus();
-  delay(100);
-  processPot();
-}
-```
-
-
-
-## Autonomous Mode
-
-You can also program your robot to follow pre-programmed moves.  Simply copy the code and upload it using the Arduino IDE.  Have fun customizing it!
-
-{% include youtube.html id='Gxu7uIzHSiM' %}
-
-## Sample Code
-
-```c
-#include <Servo.h>
-
-#define CLAWMOTOR_MAX 90
-#define CLAWMOTOR_MIN 65
-#define CLAWMOTOR_MID (CLAWMOTOR_MAX + CLAWMOTOR_MIN)/2
-
-#define TILTMOTOR_MAX 155
-#define TILTMOTOR_MIN 80
-#define TILTMOTOR_MID (TILTMOTOR_MAX + TILTMOTOR_MIN)/2
-
-#define EXTENDMOTOR_MAX 105
-#define EXTENDMOTOR_MIN 10
-#define EXTENDMOTOR_MID (EXTENDMOTOR_MAX + EXTENDMOTOR_MIN)/2
-
-#define PANMOTOR_MAX 180
-#define PANMOTOR_MIN 0
-#define PANMOTOR_MID (PANMOTOR_MAX + PANMOTOR_MIN)/2
-
-Servo panMotor;
-Servo tiltMotor;
-Servo extendMotor;
-Servo clawMotor;
-
-int panMotorPin = 6;
-int tiltMotorPin = 9;
-int extendMotorPin = 10;
-int clawMotorPin = 11;
-
-void setup() {
-  // put your setup code here, to run once:
-  panMotor.attach(panMotorPin);
-  tiltMotor.attach(tiltMotorPin);
-  extendMotor.attach(extendMotorPin);
-  clawMotor.attach(clawMotorPin);
-
-  homePos();
-}
-void loop() {
-  // put your main code here, to run repeatedly:
-
-  demoSequence();
-  syncTest();
   
 }
 
-void clawOpen() {
-  clawMotor.write(CLAWMOTOR_MAX);
+void home() {
+  tiltMotor.write(90);
+  baseMotor.write(90);
+  extendMotor.write(90);
+  clawMotor.write(90);
 }
 
-void clawClose() {
-  clawMotor.write(CLAWMOTOR_MIN);
-}
 
-//- cycles through the motor angles smoothly
-void cycleMotor(Servo motor, int minNum, int maxNum, int delay_time) {
-  for (int i = minNum;i<maxNum;i++) {
-    motor.write(i);
-    delay(delay_time);
+void moveMotor(Servo motor, int target, int min, int max) {
+  
+  //- figure out if we need to move up or down
+  
+  int myCurrentAngle = motor.read();
+  
+  //- if myCurrentAngle is > target, go down
+  if (myCurrentAngle > target) {
+      moveAngleDown(target,motor,min,max);
   }
-  for (int i = maxNum;i>minNum;i--) {
-    motor.write(i);
-    delay(delay_time);
+  
+  //- if myCurrentAngle is < target, go up
+  if (myCurrentAngle < target) {
+      moveAngleUp(target,motor,min,max);
+  }
+  
+}
+
+void moveAngleUp(int target, Servo motor, int min, int max) {
+  
+  int angle = motor.read();
+  
+  while (angle <= target) {
+    
+    if (angle <= max) {
+    
+      //-do this code
+      motor.write(angle);
+      delay(20);
+      
+      angle = angle + 5;
+    }
+    else {
+      break;
+    }
+    
+  }
+  
+}
+
+void moveAngleDown(int target, Servo motor, int min, int max) {
+  
+  int angle = motor.read();
+  
+  while (angle >= target) {
+    
+    if (angle >= min) {
+    
+      motor.write(angle);
+      delay(20);
+    
+      angle = angle - 5;
+    }
+    else {
+      break;
+    }
+    
   }
 }
-
-void syncTest() {
   
-  clawMotor.write(CLAWMOTOR_MAX);
-  panMotor.write(PANMOTOR_MAX);
-  tiltMotor.write(TILTMOTOR_MAX);
-  extendMotor.write(EXTENDMOTOR_MAX);
-  delay(1000);
   
-  clawMotor.write(CLAWMOTOR_MIN);
-  panMotor.write(PANMOTOR_MIN);
-  tiltMotor.write(TILTMOTOR_MIN);
-  extendMotor.write(EXTENDMOTOR_MIN);
-
-  delay(1000);
-  
+void moveClaw(int target) {
+  moveMotor(clawMotor,target,CLAW_CLOSE, CLAW_OPEN);
 }
 
-void demoSequence() {
-
-  cycleMotor(clawMotor, CLAWMOTOR_MIN, CLAWMOTOR_MAX, 30);
-  cycleMotor(panMotor, PANMOTOR_MIN, PANMOTOR_MAX, 30);
-  cycleMotor(tiltMotor, TILTMOTOR_MIN, TILTMOTOR_MAX, 30);
-  cycleMotor(extendMotor, EXTENDMOTOR_MIN, EXTENDMOTOR_MAX, 30);
+void moveBase(int target) {
+  moveMotor(baseMotor,target, BASE_MIN, BASE_MAX);
 }
 
+void moveTilt(int target) {
+  moveMotor(tiltMotor,target,TILT_MIN, TILT_MAX);
+}
 
-void homePos() {
-  clawMotor.write(CLAWMOTOR_MIN);
-  panMotor.write(PANMOTOR_MIN);
-  tiltMotor.write(TILTMOTOR_MIN);
-  extendMotor.write(EXTENDMOTOR_MIN);
+void moveExtend(int target) {
+  moveMotor(extendMotor,target,EXTEND_MIN, EXTEND_MAX);
+}
+
+//- runs forever in a loop after setup
+void loop() {
+  
+  
+  //- analogRead(0) -> CONTROL 1 -> Base Motor
+  //- analogRead(1) -> CONTROL 2 -> Tilt Motor
+  //- analogRead(2) -> CONTROL 3 -> Extend Motor
+  //- analogRead(3) -> CONTROL 4 -> Claw Motor
+  //- range of analog is [0-1023]
+  
+
+  //- comment this out if you want faster processing
+/*
+  Serial.print("Base: ");
+  Serial.println(analogRead(0));
+
+  Serial.print("Tilt: ");
+  Serial.println(analogRead(1));
+  
+  Serial.print("Extend: ");
+  Serial.println(analogRead(2));
+  
+  Serial.print("Claw: ");
+  Serial.println(analogRead(3));
+  
+  Serial.println();
+  
+  delay(500);
+*/
+
+  //-BaseMotor
+  moveBase(map(analogRead(0),0,1023,BASE_MIN,BASE_MAX));
+  
+  //-TiltMotor
+  moveTilt(map(analogRead(1),0,1023,TILT_MIN,TILT_MAX));
+  
+  //-ExtendMotor
+  moveExtend(map(analogRead(2),0,1023,EXTEND_MIN,EXTEND_MAX));
+  
+  //-ClawMotor
+  moveClaw(map(analogRead(3),0,1023,CLAW_CLOSE,CLAW_OPEN));
+  
+  
 }
 ```
-
