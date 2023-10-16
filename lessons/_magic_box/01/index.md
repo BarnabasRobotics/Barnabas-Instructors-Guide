@@ -20,7 +20,7 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 
 We have different tutorial series based on the version of your Magic Box kit.  Find the video that matches your kit, and start your magic box journey! 
 
-
+------
 
 **KIT-8-3 (3rd-8th Grade Version)**
 
@@ -30,7 +30,7 @@ We have different tutorial series based on the version of your Magic Box kit.  F
 
 
 
-
+------
 
 **KIT-8-2 (9th-12th Grade Version)**
 
@@ -38,18 +38,11 @@ We have different tutorial series based on the version of your Magic Box kit.  F
     <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=2S0PRG_edmZA0ATj&amp;list=PL0Z988iPSaSZ3Jychhr_725bLCoWF8sOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-
-
-
-
-
+------
 
 **KIT-8-1 (Old Version)**
 
-<div><br/><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=jMnVkXHufOHFwZIZ&amp;list=PL0Z988iPSaSYQzHjr80v3feeuYbHjVVLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br/></div>
-
-
-#### 
+<div><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=jMnVkXHufOHFwZIZ&amp;list=PL0Z988iPSaSYQzHjr80v3feeuYbHjVVLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
 
 
