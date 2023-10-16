@@ -5,9 +5,9 @@ suggested_time: 10-15 minutes
 ---
 
 ### What Is Barnabas Racer?
-<p align="center" markdown = "1">
-<img align="center" src="fig-01_05.jpg" width="500">
-</p>
+
+<img src="fig-01_05.jpg" alt="barnabas racer" style="zoom:10%;" class="image center" />
+
 
 The Barnabas Racer is a continuation project for [Barnabas-Bot](https://shop.barnabasrobotics.com/collections/kits-1/products/barnabas-bot-kit).  This robot is a car that is able to think and act on its own.  Builders will cover concepts from Barnabas Bot (circuits, coding, mechanical build) in addition to sensors.  Recommended Ages: 11+
 
@@ -46,7 +46,6 @@ A big part of the Barnabas Racer project includes creating code on the computer,
 <p align="center" markdown = "1">
     Block-Based Code
 </p>
-
 <img src="fig-01_11.png" alt="fig-01_01" style="zoom:60%;" class="image center" />
 
 *Text-based* coding requires that every command in the code to be typed out explicitly.  The commands need to be spelled correctly and are case-sensitive (capitals and lower-case matter!).  This style is the popular method used by software programmers (video game, website developers, app developers, etc.) in the real world.  See below for an example of what it looks like.
