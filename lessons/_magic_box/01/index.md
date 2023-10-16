@@ -25,7 +25,7 @@ We have different tutorial series based on the version of your Magic Box kit.  F
 **KIT-8-3 (3rd-8th Grade Version)**
 
 <div>
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?si=yjMU1m_OGy0BqjT9&amp;list=PL0Z988iPSaSbYlD2dJL4IrCGlssX8nZOb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=yjMU1m_OGy0BqjT9&amp;list=PL0Z988iPSaSbYlD2dJL4IrCGlssX8nZOb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 
