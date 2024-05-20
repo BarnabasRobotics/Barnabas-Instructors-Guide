@@ -98,6 +98,18 @@
         {% include sidebar/lessonsegment.html %}
         {% endif %}
 
+	<li>
+            <span class="opener"><i class="icon fa-truck"></i> Barnabas WIFI Wheeler</span>
+            <ul>
+                    {% for lesson in site.wifi_wheeler%}
+                    <li><a href="{{ site.baseurl }}{{ lesson.url }}">{{ lesson.title }}</a></li>
+                    {% endfor %}
+            </ul>
+        </li>
+        {% if page.collection == "wifi_wheeler"%}
+        {% include sidebar/lessonsegment.html %}
+        {% endif %}
+
         <li>
             <span class="opener"><i class="icon fa-hand-scissors-o"></i> Barnabas Robot Arm</span>
             <ul>
