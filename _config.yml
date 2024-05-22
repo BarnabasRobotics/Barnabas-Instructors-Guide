@@ -55,7 +55,7 @@ collections:
     output: true
   robot_arm:
     output: true
-  wifi_wheeler:
+  wifi_wheeler_lessons:
     output: true
 collections_dir: lessons
 
