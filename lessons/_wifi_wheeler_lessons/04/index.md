@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 4 &middot; Mounting Your Electronics
+title: Lesson 4 &middot; Wiring your DC Driver Board and Motors
 suggested_time: 30 minutes
 videos:
     - link: https://youtu.be/YGrzI9nI-OI
