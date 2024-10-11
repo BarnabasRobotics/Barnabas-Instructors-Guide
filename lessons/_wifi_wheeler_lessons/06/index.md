@@ -27,9 +27,9 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 
 ## Tutorial Video
 
-Source code: https://github.com/BarnabasRobotics/WIFI-Wheeler/blob/main/wifi_wheeler.ino
+Source code: [https://github.com/BarnabasRobotics/WIFI-Wheeler/blob/main/wifi_wheeler.ino](https://github.com/BarnabasRobotics/WIFI-Wheeler/blob/main/wifi_wheeler.ino)
 
-Coding Site: https://code.barnabasrobotics.com/ 
+Coding Site: [https://code.barnabasrobotics.com/](https://code.barnabasrobotics.com/ ) 
 
 {% include youtube.html id='E1CUYUmXCFc' %}
 
