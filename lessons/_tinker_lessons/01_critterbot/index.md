@@ -30,23 +30,30 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 
 {% include youtube.html id="7GSXwE5xGxo" %}
 
-### Curriculum & Worksheets
+### Curriculum
 
-- [Critter Bot ](https://www.barnabasrobotics.com/wp-content/uploads/2023/03/Critter-Bot-Curriculum-3.1.pdf)[Curriculum ](https://go.barnabasrobotics.com/critter-bot-curriculum)[(40-60 min)](https://www.barnabasrobotics.com/wp-content/uploads/2023/03/Critter-Bot-Curriculum-3.1.pdf)
-- [Critter Bot Worksheet](https://go.barnabasrobotics.com/critter-bot-worksheet)
+- [Critter Bot ](https://www.barnabasrobotics.com/wp-content/uploads/2023/03/Critter-Bot-Curriculum-3.1.pdf)[Curriculum ](https://go.barnabasrobotics.com/critter-bot-curriculum)[(40-60 min)](https://www.barnabasrobotics.com/wp-content/uploads/2023/03/Critter-Bot-Curriculum-3.1.pdf) 
+
+### Worksheets
+
+- [Critter Bot Worksheet (AAA/Mini Versions)](https://go.barnabasrobotics.com/critter-bot-worksheet)
+
+### Quick Build Instructions
+
+- [Critter Bot Build Printable Instructions (AAA Version)](https://go.barnabasrobotics.com/critter-quick-build-aaa)
+- [Critter Bot Build Printable Instructions (Mini Version)](https://go.barnabasrobotics.com/critter-bot-quick-build)
 
 ### Printable Templates
 
-- [Critter Bot Body (x4)](https://go.barnabasrobotics.com/critter-bot-body)
+- [Critter Bot Body (AAA Version)](https://www.barnabasrobotics.com/wp-content/uploads/2025/02/CritterBot-AAA-version-Body-Template-x-4-2.pdf)
+- [Critter Bot Body (Mini Version)](https://go.barnabasrobotics.com/critter-bot-body)
+- [Bumblebee Body (AAA Version)](https://www.barnabasrobotics.com/wp-content/uploads/2024/11/Bumble-Bots-2.0-AAA-Body-Template-x-12-1.pdf)
 - [Bumblebee (Body (x4), Head (x12), Wings (x12)](https://www.barnabasrobotics.com/bumble-bots-body-template-8-5-x-11-in-2/))
-- [(Body, Head, Wings) (x4)](https://www.barnabasrobotics.com/bumble-bots-body-template-8-5-x-11-in-2/)
 - [Bear Head (x12)](https://go.barnabasrobotics.com/critter-bot-bear-12)
 - [Cat Head (x12)](https://go.barnabasrobotics.com/critter-bot-head-cat-12)
 - [Person Head (x12)](https://go.barnabasrobotics.com/critter-bot-person-head-12)
 - [Robot Head (x12)](https://go.barnabasrobotics.com/critter-bot-robot-head-12)
-
-### Quick Build Instructions
-
-<iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=z95rlli1ci" width="100%" height="480" frameborder="0" scrolling="no" seamless="seamless" allowfullscreen="allowfullscreen"></iframe>
-
-[Critter Bot Build Instructions (Printable)](https://go.barnabasrobotics.com/critter-bot-quick-build)
+- [Dinosaur Head, Tail, Arms (x12)](https://www.barnabasrobotics.com/wp-content/uploads/2023/08/Critter-Bot-Dinosaur-Head-Tail-Arms.pdf)
+- [Unicorn Head, Tail (x12)](https://www.barnabasrobotics.com/wp-content/uploads/2023/08/Critter-Bot-Unicor-Head-Tail.pdf)
+- [Pumpkin (x4)](https://www.barnabasrobotics.com/wp-content/uploads/2023/10/Critter-Bot-Pumpkin-Template.pdf)
+- [Spider (x4)](https://www.barnabasrobotics.com/wp-content/uploads/2023/10/Critter-Bot-Spider-Template.pdf)
