@@ -32,7 +32,8 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 
 ### Curriculum
 
-- [Critter Bot ](https://www.barnabasrobotics.com/wp-content/uploads/2023/03/Critter-Bot-Curriculum-3.1.pdf)[Curriculum ](https://go.barnabasrobotics.com/critter-bot-curriculum)[(40-60 min)](https://www.barnabasrobotics.com/wp-content/uploads/2023/03/Critter-Bot-Curriculum-3.1.pdf) 
+- [Critter Bot Curriculum (AAA Version)](https://www.barnabasrobotics.com/wp-content/uploads/2025/02/P3-CritterBot-AAA-Version-Educators.pdf)
+- [Critter Bot Curriculum (Mini Version)](https://www.barnabasrobotics.com/wp-content/uploads/2023/03/Critter-Bot-Curriculum-3.1.pdf)
 
 ### Worksheets
 
