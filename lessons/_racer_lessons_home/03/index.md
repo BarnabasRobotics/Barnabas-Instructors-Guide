@@ -167,7 +167,7 @@ Once you are done, power up the Barnabas Noggin with the 9V battery and test you
 
 You may have noticed the two different types of resistor that we have are differentiated based on the colors of their bands. As it turns out we can tell the exact strength of a resistor based on the color of those bands.
 
-<img src="resistor_table.png" alt="resistor_table" style="zoom:90%;" class="image right" />
+<img src="resistor_table.png" alt="resistor_table" style="zoom:70%;" class="image right" />
 
 Let’s walk through this chart together. In the Numeric Value column we see that each color is given a number value associated with it. These numbers are only applied to the first two colored bands on a resistor. Those two numbers are combined into one 2 digit number. For example our 4,700 Ohm resistor has the colors yellow and violet as it’s first two color bands, in that order. From this we know that resistor’s value must start with the number 47, which we know it does. The third band on the resistor is the multiplier. We take the number denoted by the color of that band (in this case 100-red) and multiply that number and the 2 digit number from earlier together (47x100), giving us 4,700 Ohms. 
 
