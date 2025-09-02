@@ -131,23 +131,23 @@ To do this, put all the sides together like a 3-D jigsaw puzzle.  After that you
 
 Note: It may be easier to join two pieces together at a time rather than all of them at the same time.  See suggested steps below.
 
-|        STEP 1        |        STEP 2        |
-| :------------------: | :------------------: |
-| ![img](arm3 (2).jpg) | ![img](arm3 (3).jpg) |
+|                            STEP 1                            |                            STEP 2                            |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="arm3 (2).jpg" style="zoom:75%;" class="image center" /> | <img src="arm3 (3).jpg" style="zoom:75%;" class="image center" /> |
 
-|        STEP 4        |        STEP 5        |
-| :------------------: | :------------------: |
-| ![img](arm3 (4).jpg) | ![img](arm3 (5).jpg) |
+|                            STEP 4                            |                            STEP 5                            |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="arm3 (4).jpg" style="zoom:75%;" class="image center" /> | <img src="arm3 (5).jpg" style="zoom:75%;" class="image center" /> |
 
-|        STEP 6        |        STEP 5        |
-| :------------------: | :------------------: |
-| ![img](arm3 (6).jpg) | ![img](arm3 (7).jpg) |
+|                            STEP 6                            |                            STEP 5                            |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="arm3 (6).jpg" style="zoom:75%;" class="image center" /> | <img src="arm3 (7).jpg" style="zoom:75%;" class="image center" /> |
 
 When complete, your turret should look like the photos below.
 
-|      Front View      |       Back View       |
-| :------------------: | :-------------------: |
-| ![img](arm3 (8).jpg) | ![img](arm3 (10).jpg) |
+|                          Front View                          |                          Back View                           |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="arm3 (8).jpg" style="zoom:75%;" class="image center" /> | <img src="arm3 (10).jpg" style="zoom:75%;" class="image center" /> |
 
 ### STEP 6. Attach Main Body To Motor
 
@@ -157,7 +157,7 @@ Attach main body using to base servo motor using:
 
 *IMPORTANT:* Note that the servo motor can only move 180 degrees.  Make sure that the arm can turn fully between the two positions shown below before fastening the screw.  You may need to take the servo coupling off of the servo motor shaft and reposition it a few times to get it right.
 
-|      Position 1      |      Position 2       |
-| :------------------: | :-------------------: |
-| ![img](arm3 (1).jpg) | ![img](arm3 (11).jpg) |
+|                          Position 1                          |                          Position 2                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="arm3 (1).jpg" style="zoom:75%;" class="image center" /> | <img src="arm3 (11).jpg" style="zoom:75%;" class="image center" /> |
 
