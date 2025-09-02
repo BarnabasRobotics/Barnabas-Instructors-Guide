@@ -30,12 +30,12 @@ Assemble claw drive gear using:
 
 |                            STEP 1                            |                            STEP 2                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![img](file://C:/Users/edwar/Documents/dev/Barnabas-Instructors-Guide/lessons/_robot_arm_acrylic/05/arm5%20(7).jpg?lastModify=1756839011?lastModify=1756839355) | ![img](file://C:/Users/edwar/Documents/dev/Barnabas-Instructors-Guide/lessons/_robot_arm_acrylic/05/arm5%20(8).jpg?lastModify=1756839011?lastModify=1756839355) |
+| <img src="arm5 (7).jpg" style="zoom:75%;" class="image center" /> | <img src="arm5 (8).jpg" style="zoom:75%;" class="image center" /> |
 
 |                            STEP 3                            |                            STEP 4                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![img](file://C:/Users/edwar/Documents/dev/Barnabas-Instructors-Guide/lessons/_robot_arm_acrylic/05/arm5%20(9).jpg?lastModify=1756839011?lastModify=1756839355?lastModify=1756839355) | ![img](file://C:/Users/edwar/Documents/dev/Barnabas-Instructors-Guide/lessons/_robot_arm_acrylic/05/arm5%20(10).jpg?lastModify=1756839011?lastModify=1756839355?lastModify=1756839355) |
+| <img src="arm5 (9).jpg" style="zoom:75%;" class="image center" /> | <img src="arm5 (10).jpg" style="zoom:75%;" class="image center" /> |
 
 |                            STEP 5                            |      |
 | :----------------------------------------------------------: | :--: |
-| ![img](file://C:/Users/edwar/Documents/dev/Barnabas-Instructors-Guide/lessons/_robot_arm_acrylic/05/arm5%20(11).jpg?lastModify=1756839011?lastModify=1756839355?lastModify=1756839355) |      |
+| <img src="arm5 (11).jpg" style="zoom:75%;" class="image center" /> |      |
