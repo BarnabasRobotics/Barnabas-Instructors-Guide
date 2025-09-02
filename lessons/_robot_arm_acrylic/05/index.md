@@ -36,13 +36,13 @@ Build claw motor assembly using:
 
 
 
-|        STEP 1        |        STEP 2        |
-| :------------------: | :------------------: |
-| ![img](arm5 (2).jpg) | ![img](arm5 (3).jpg) |
+|                            STEP 1                            |                            STEP 2                            |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="arm5 (2).jpg" style="zoom:75%;" class="image center" /> | <img src="arm5 (3).jpg" style="zoom:75%;" class="image center" /> |
 
 |                            STEP 3                            |                            STEP 4                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![img](file://C:/Users/edwar/Documents/dev/Barnabas-Instructors-Guide/lessons/_robot_arm_acrylic/05/arm5%20(4).jpg?lastModify=1756839011) | ![img](file://C:/Users/edwar/Documents/dev/Barnabas-Instructors-Guide/lessons/_robot_arm_acrylic/05/arm5%20(3).jpg?lastModify=1756839011) |
+| <img src="arm5 (4).jpg" style="zoom:75%;" class="image center" /> | <img src="arm5 (3).jpg" style="zoom:75%;" class="image center" /> |
 
 |                            STEP 5                            |                            STEP 6                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -54,4 +54,4 @@ Build claw motor assembly using:
 
 |                            STEP 1                            |                            STEP 2                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![img](file://C:/Users/edwar/Documents/dev/Barnabas-Instructors-Guide/lessons/_robot_arm_acrylic/05/arm5%20(5).jpg?lastModify=1756839011) | ![img](file://C:/Users/edwar/Documents/dev/Barnabas-Instructors-Guide/lessons/_robot_arm_acrylic/05/arm5%20(6).jpg?lastModify=1756839011) |
+| <img src="arm5 (5).jpg" style="zoom:75%;" class="image center" /> | <img src="arm5 (6).jpg" style="zoom:75%;" class="image center" /> |
