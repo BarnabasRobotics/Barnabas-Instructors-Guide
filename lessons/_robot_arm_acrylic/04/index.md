@@ -60,13 +60,13 @@ Attach secondary arm using:
 
 |                            STEP 8                            |                            STEP 9                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![img](file://C:/Users/edwar/Documents/dev/Barnabas-Instructors-Guide/lessons/_robot_arm_acrylic/04/arm4%20(8).jpg?lastModify=1756838449) | ![img](file://C:/Users/edwar/Documents/dev/Barnabas-Instructors-Guide/lessons/_robot_arm_acrylic/04/arm4%20(9).jpg?lastModify=1756838449) |
+| <img src="arm4 (8).jpg" style="zoom:75%;" class="image center" /> | <img src="arm4 (9).jpg" style="zoom:75%;" class="image center" /> |
 
 |                           STEP 10                            |                           STEP 11                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![img](file://C:/Users/edwar/Documents/dev/Barnabas-Instructors-Guide/lessons/_robot_arm_acrylic/04/arm4%20(10).jpg?lastModify=1756838449) | ![img](file://C:/Users/edwar/Documents/dev/Barnabas-Instructors-Guide/lessons/_robot_arm_acrylic/04/arm4%20(11).jpg?lastModify=1756838449) |
+| <img src="arm4 (10).jpg" style="zoom:75%;" class="image center" /> | <img src="arm4 (11).jpg" style="zoom:75%;" class="image center" /> |
 
 |                           STEP 12                            |                           STEP 13                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![img](file://C:/Users/edwar/Documents/dev/Barnabas-Instructors-Guide/lessons/_robot_arm_acrylic/04/arm4%20(12).jpg?lastModify=1756838449) | ![img](file://C:/Users/edwar/Documents/dev/Barnabas-Instructors-Guide/lessons/_robot_arm_acrylic/04/arm4%20(13).jpg?lastModify=1756838449) |
+| <img src="arm4 (12).jpg" style="zoom:75%;" class="image center" /> | <img src="arm4 (13).jpg" style="zoom:75%;" class="image center" /> |
 
