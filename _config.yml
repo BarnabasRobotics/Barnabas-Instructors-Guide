@@ -55,6 +55,8 @@ collections:
     output: true
   robot_arm:
     output: true
+  robot_arm_acrylic:
+    output: true
   wifi_wheeler_lessons:
     output: true
 collections_dir: lessons
