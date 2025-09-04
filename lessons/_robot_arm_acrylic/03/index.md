@@ -3,8 +3,6 @@ layout: lesson
 title: Lesson 3 &middot; Build The Rotating Base
 suggested_time: 30-60 minutes
 videos:
-    - link: https://youtu.be/tmwG4g5-tf4
-      text: Assemble The Rotating Base / Turret
 ---
 
 
@@ -18,10 +16,6 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 ## Lesson Overview
 
 In this lesson we will assemble the rotating base / turret.
-
-## Tutorial Video
-
-{% include youtube.html id='tmwG4g5-tf4' %}
 
 
 ## Instructions

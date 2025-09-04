@@ -2,9 +2,6 @@
 layout: lesson
 title: Lesson 7 &middot; Attach Claw Assembly
 suggested_time: 15-30 minutes
-videos:
-    - link: https://youtu.be/feg8_S7SqrY
-      text: Attaching Claw Assembly To Rest Of Arm
 ---
 
 
@@ -18,10 +15,6 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 ## Lesson Overview
 
 In this lesson we will attach the claw assembly to the rest of the robot arm.
-
-## Tutorial Video
-
-{% include youtube.html id='feg8_S7SqrY' %}
 
 
 ## Instructions

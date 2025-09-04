@@ -2,9 +2,6 @@
 layout: lesson
 title: Lesson 4 &middot; Build The Main Robot Arm
 suggested_time: 30-60 minutes
-videos:
-    - link: https://youtu.be/70e3SHPGu3M
-      text: Building The Main Robot Arm
 ---
 
 
@@ -18,10 +15,6 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 ## Lesson Overview
 
 In this lesson we will assemble the main robot arm.
-
-## Tutorial Video
-
-{% include youtube.html id='bb9ocu_3jo8' %}
 
 ## Instructions
 

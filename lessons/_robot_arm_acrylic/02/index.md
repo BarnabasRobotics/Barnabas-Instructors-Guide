@@ -3,8 +3,6 @@ layout: lesson
 title: Lesson 2 &middot; Build The Main Base
 suggested_time: 30-60 minutes
 videos:
-    - link: https://youtu.be/NFqWNfnIABY
-      text: Assemble Robot Arm Base and Program Motor Arduino Robot Arm
 ---
 
 
@@ -19,23 +17,14 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 
 In this lesson we will assemble the robot arm base
 
-## Tutorial Video
-
-{% include youtube.html id='NFqWNfnIABY' %}
-
-{% include badge.html type='suggestion' content='Only watch until 22:45.  The remaining video includes coding, which we will get to later!' %}
-
-Notes:
+Important Notes:
 
 - You can peel off the protective plastic cover if you want to expose the glossy acrylic
-- Newer kit uses Philips screws and Philips screwdriver for assembly instead of hex screw and allen wrench.
 - Be sure not to over tighten screws as it can crack the acrylic
 
 ## Written Instructions
 
 ### STEP 1. Build Base Motor Assembly
-
-
 
 Assemble the base motor assembly using:
 
