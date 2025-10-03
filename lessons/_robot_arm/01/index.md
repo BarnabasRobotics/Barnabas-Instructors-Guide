@@ -14,11 +14,11 @@ videos:
 
 ## Project Overview
 
-In this project you will build and code a robot arm!
+In this project you will build and code a wood robot arm!
 
-|              Acrylic Version (Black or Yellow)               |                             Wood                             |
-| :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="robotarm.jpg" style="zoom:75%;" class="image center" /> | <img src="wood2.jpg" style="zoom:75%;" class="image center" /> |
+|                             Wood                             |
+| :----------------------------------------------------------: |
+| <img src="wood2.jpg" style="zoom:75%;" class="image center" /> |
 
 ## Materials
 

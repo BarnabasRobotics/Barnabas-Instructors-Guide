@@ -111,14 +111,28 @@
         {% endif %}
 
         <li>
-            <span class="opener"><i class="icon fa-hand-scissors-o"></i> Barnabas Robot Arm</span>
+            <span class="opener"><i class="icon fa-hand-scissors-o"></i> Barnabas Robot Arm (Wood)</span>
             <ul>
                     {% for lesson in site.robot_arm %}
                     <li><a href="{{ site.baseurl }}{{ lesson.url }}">{{ lesson.title }}</a></li>
                     {% endfor %}
             </ul>
         </li>
+
+
         {% if page.collection == "robot_arm"%}
+        {% include sidebar/lessonsegment.html %}
+        {% endif %}
+
+	        <li>
+            <span class="opener"><i class="icon fa-hand-scissors-o"></i> Barnabas Robot Arm (Acrylic)</span>
+            <ul>
+                    {% for lesson in site.robot_arm_acrylic %}
+                    <li><a href="{{ site.baseurl }}{{ lesson.url }}">{{ lesson.title }}</a></li>
+                    {% endfor %}
+            </ul>
+        </li>
+        {% if page.collection == "robot_arm_acrylic"%}
         {% include sidebar/lessonsegment.html %}
         {% endif %}
 

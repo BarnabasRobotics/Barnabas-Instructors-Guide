@@ -14,7 +14,7 @@ videos:
 
 ## Project Overview
 
-In this project you will build and code a robot arm!
+In this project you will build and code an acrylic robot arm!
 
 |              Acrylic Version (Black or Yellow)               |
 | :----------------------------------------------------------: |
