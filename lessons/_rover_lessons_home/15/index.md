@@ -85,8 +85,6 @@ Let's wire the IR modules to your Arduino-Compatible board using the following c
 | GND          | GND                          |
 | OUT          | 6                            |
 
-<div markdown = "1">
-
 ### How to wire and code a single IR sensor
 
 {% include youtube.html id='MGxP-yhvOD8' %}
@@ -358,17 +356,11 @@ void loop() {
 
 }
 ```
-{:.text-based}
-
 ### How to code line following using 2 sensors
 
 Now that we have 1 sensor working, let's go ahead and add the second sensor, and code our Rover to follow a line!
 
 {% include youtube.html id='6JP4tyrF_q8' %}
-
-</div>{:.text-based}
-
-<img src="linefollowrover.png" alt="fig-6_0" style="zoom:100%;" class="image center block-based" />
 
 ```c
 /*
@@ -662,9 +654,6 @@ void loop() {
 
 }
 ```
-{:.text-based}
-
-
 
 ### Troubleshooting Tips
 

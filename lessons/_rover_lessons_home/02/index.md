@@ -43,9 +43,6 @@ A robot is a type of moving machine powered by electricity that can automaticall
 
 **Personality** - Personality refers to a person’s unique pattern of thinking, feeling, and behaving. Everyone’s personality is different and it’s one of the things that makes you so special. Similarly, the computer code for a robot is like the robot’s personality because it determines how the robot will behave.  The robot’s computer code is processed through its “brain” or circuit board.  We can see the output of the code through the robot’s movement and function. 
 
-<p align="center" markdown = "1">
-<img align="center" src="fig-01_11.png" width="300">{:.block-based}
-</p>
 
 
 ```c
@@ -66,7 +63,6 @@ void loop()
   }
 }
 ```
-{:.text-based}
 
 ### Robots Bring Together Different Engineering Disciplines
 

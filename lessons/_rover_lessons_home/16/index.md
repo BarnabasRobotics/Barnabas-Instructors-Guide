@@ -54,16 +54,6 @@ We will be connecting the photoresistors between analog inputs and GND.
 | Leg #1              | A1                           |
 | Leg #2              | GND                          |
 
-<div markdown = "1">
-
-### Coding The Photoresistor
-
-Photoresistor coding is currently only available on text-based.  Change to text-based coding mode in settings to check it out!
-
-</div>{:.block-based} 
-
-<div markdown="1">
-
 ### Code A Single Photoresistor to Control Movement
 
 In the video below we will find out the light/dark values for our photoresistor and code our car to move when a light is on and stop when the light is off.
@@ -545,5 +535,3 @@ void loop() {
     
   }
 ```
-
-</div>{:.text-based}

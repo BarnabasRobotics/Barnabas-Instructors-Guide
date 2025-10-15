@@ -5,10 +5,6 @@ title: Lesson 5 &middot; Build And Program A Button Circuit
 suggested_time: 60-75 minutes  
 
 videos:
-    - link: https://youtu.be/-UxbsqI5vh0
-      text: Wiring the Button and LED for programming (Block-Based)
-    - link: https://youtu.be/VlEWea9keUY
-      text: Programming the Button (Block-Based)
     - link: https://youtu.be/bSCSOL20SIw 
       text: Wiring and Program the LED and Button (Text-Based)
 ---
@@ -24,10 +20,8 @@ Before we get started, let's make sure that we have all the parts.
 - 1 x USB Cable
 - 1 x Computer
 
-<div markdown="1">
 ### Tutorial Video
 {% include youtube.html id='bSCSOL20SIw' %}
-</div>{:.text-based}
 
 <img src="fig-7_1.png" alt="fig-7_1" style="zoom:10%;" class="image right" />
 
@@ -64,8 +58,6 @@ Go ahead and remove everything from your breadboard and wire the circuit based o
 
 <img src="fig-3_5.png" alt="fig-3_5" style="zoom:70%;" class="image center" />
 
-{% include youtube.html id='-UxbsqI5vh0' %}{:.block-based}
-
 ### Introduction To Coding
 
 It’s now time to start coding.  To do this, we first need to create instructions to send to your robot’s brain to tell it to turn the LED on. The process of creating instructions for your robot is called **computer programming** or software engineering.  The actual set of instructions that we create is called **computer code**.
@@ -88,8 +80,6 @@ It's time to start coding!  Go ahead and open your IDE
 
 {% include badge.html type='suggestion' content='If you need a refresher on the IDE, go to: <a href="../04">Setting Up Your Computer</a>.' %}
 
-<div markdown="1">
-
 ### Setup And Loop
 
 In our code, we're going to have to main functions - setup() and loop().  The code inside setup runs only one time when your robot's brain turns on.  The code inside loop() will run after the setup code runs and then continue to run that code until the robot is turned off or runs out of battery.
@@ -104,48 +94,7 @@ void loop() {
     //- after the setup code runs once, the code in here runs forever in a loop
 }
 ```
-</div>{:.text-based}
-
-<div markdown="1">
-
-
-### The Loop
-
-In your IDE, your code will be made up of a series of blocks that snap together like puzzle pieces.  
-
-<img src="fig-7_8.png" alt="fig-7_8" style="zoom:90%;" class="image center" />
-
-<img src="fig-7_9.png" style="zoom:50%;" class="image center" />
-
-Note: On code.barnabasrobotics.com, the "LOOP do:" is inside a "Program block" (see above).
-
-The first block to introduce is called the “LOOP do.”  The “LOOP do” will house all of the other blocks used in your code.  It is like the outside cover of a book, which houses all of its pages.   The computer reads the pages (i.e. code blocks) within the “LOOP do” block from the beginning to the end.  When it gets to the end, it starts back at the beginning and begins again.  This process repeats forever as long as your Uno has power.
-
-Note: You can only have one “LOOP do” in your code.
-
-### How to Add a Block
-
-Let’s add a “LOOP do” block to our code!
-
-1. Find the colored button on the left side of your screen labeled “Control,”
-2. After you click on the yellow “Control” button, you’ll see a menu of yellow blocks open up.  Click (and hold down) on the “LOOP do” block and drag it into the large area to the right of the colored buttons.  When it is in the large area, release the click.
-
-### How to Delete a Block
-
-There may be times when you’ll need to delete blocks of code. For example, if we have multiple “LOOP do” blocks in our code (remember your code can only have one “LOOP do” to work), we need to get rid of the extras.
-
-Let’s practice by deleting the “LOOP do” block from our code.
-
-1. Click (and hold down) on the “LOOP do” block and drag it over to the tabs on the left side of the window.
-2. Release the click and the “LOOP do” block should disappear.
-
-Now that we know how to delete a block that we don’t want, let’s go ahead and bring in a “LOOP do” block again so that we can continue building our code.
-
-</div>{:.block-based}
-
 ### Programming the Button
-
-{% include youtube.html id='VlEWea9keUY' %}{:.block-based}
 
 #### Conditional Logic
 
@@ -160,8 +109,6 @@ You likely make hundreds of conditional logic decisions a day.  Your robot can b
 
 See below for what if/else code looks like:
 
-![fig 3.6](fig-3_6.png){:.image .block-based}
-
 ```c
 if ( ) {
     //- do something
@@ -170,34 +117,15 @@ else {
     //- do something else
 }
 ```
-{:.text-based}
 
 #### Practice
 
 Now that we know the basics of conditional logic, let's write a program that turns ON the light if we press the button and turns OFF the light if we let go of the button.  A few notes:
 
-<div markdown = "1">
-- The button is connected to pin 2.  When you press it, it pulls pin 2 to 0V (or ground), which is the same as LOW.  When you don't press it, pin 2 is naturally pulled to 5V, which is the same as HIGH.
-- The LED is connected to pin 7 and is controlled by the "set digital pin" block.  To turn the LED on, set the pin to HIGH.  To turn the LED off, set the pin to LOW.
-- The blocks are color coded, so if you have trouble finding these blocks, look under the corresponding color on the left side of your IDE.
-
-</div>{:.block-based}
-
-
-
-<div markdown = "1">
-
-
 - The button is connected to pin 2.  When you press it, it pulls pin 2 to 0V (or ground), which is the same as LOW.  When you don't press it, pin 2 is naturally pulled to 5V, which is the same as HIGH.
 - The LED is connected to pin 7 and is controlled by the "digitalWrite" command.  To turn the LED on, set the pin to HIGH.  To turn the LED off, set the pin to LOW.
 - Pin 2 (the button control pin) is setup as an input using the "pinMode" command.
 - Pin 7 (the LED control pin) is setup as an output using the "pinMode" command.
-
-</div>{:.text-based}
-
-
-
-![fig 3.7](fig-3_7.png){:.image .block-based}
 
 ```c
 void setup()
@@ -217,7 +145,6 @@ void loop()
   }
 }
 ```
-{:.text-based}
 
 #### Our First Upload
 

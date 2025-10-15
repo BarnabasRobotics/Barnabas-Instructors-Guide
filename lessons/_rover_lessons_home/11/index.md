@@ -20,33 +20,9 @@ To create a turn, we'll need to:
 1. Program on wheel to move forward while the other one is stopped.  
 2. Determine how long we want the one wheel to turn before we stop it
 
-<div markdown = "1">
-
-See below for code that turns right, stops for 3 seconds and then turns left and stops for 3 seconds.  Try it out!  Remember that you need to push the button first before it moves because of the button code inside the while loop.
-
-<img src="fig-7_4.png" style="zoom:100%;" class="image center" />
-
-#### Challenge #1: Adjust The Turn Amount
-
-Change the delay inside the subroutines to adjust how much it turns.
-
-#### Challenge #2: Create Right Angle Turns
-
-Change the delay inside the subroutines so that the left and right turns create exactly 90 degree turns.
-
-#### Challenge #3: Adjust The Turn Direction
-
-Change the low/high values to change the direction of the turn so that it turns backwards instead of forwards.
-
-</div>{:.block-based}
-
-<div markdown = "1">
-
 {% include youtube.html id='TBSFREXMHs4' %}
 
 Note: This uses pins 3,11 and 9,11 for the DC driver.  There is also an additional challenge to move forward by distance.  I don't get it quite right, but I show you the process.  Feel free to try it out too! :)
-
-</div>{:.text-based}
 
 ```c
 /*
@@ -168,7 +144,6 @@ void loop() {
 
 }
 ```
-{:.text-based}
 
 
 

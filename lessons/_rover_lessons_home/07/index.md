@@ -25,13 +25,9 @@ In this section we will explore how DC motors are controlled.  Topics covered in
 - How to wire your servo motors to your Arduino Uno Compatible board
 - How to program your DC motors to to turn on, stop and spin both directions
 
-<div markdown = "1">
-
 ### Video Lesson - How To Wire & Code (Text) Your DC Motors (Text-Code)
 
 {% include youtube.html id='fbnLJJpaAGk' %}
-
-</div>{:.text-based}
 
 ### DC Motors
 
@@ -128,8 +124,6 @@ See below for a control table for Motor B.  Notice that everything is the same e
 
 The code below moves motor A in one direction.  Try uploading this code to your Uno board and see if the motor starts spinning.
 
-<img src="fig-6_4.png" alt="fig-6_4" style="zoom:90%;" class="image center block-based" />
-
 ```c
 void setup()
 {
@@ -145,13 +139,8 @@ void loop()
   digitalWrite(11,LOW);
 }
 ```
-{:.text-based}
 
 This code moves the same motor A in the opposite direction.  Notice we just change the high/low for both pins.  Try uploading this code.  Your motor should spin in the opposite direction
-
-<img src="fig-6_5.png" alt="fig-6_5" style="zoom:90%;" class="image center block-based" />
-
-
 
 ```c
 void setup()
@@ -168,15 +157,8 @@ void loop()
   digitalWrite(11,HIGH);
 }
 ```
-{:.text-based}
 
 Now let's stop the motor.  Following the chart from the previous section, we just need to set both signals to low or both to high.  Try both to make sure that both emergency stop and deceleration stop do what they are supposed to do.
-
-<img src="fig-6_6.png" alt="fig-6_6" style="zoom:90%;" class="image center block-based" />
-
-<img src="fig-6_7.png" alt="fig-6_7" style="zoom:90%;" class="image center block-based" />
-
-
 
 ```c
 void setup()
@@ -193,10 +175,6 @@ void loop()
   digitalWrite(11,LOW);
 }
 ```
-{:.text-based}
-
-
-
 ```c
 void setup()
 {
@@ -212,8 +190,6 @@ void loop()
   digitalWrite(11,HIGH);
 }
 ```
-{:.text-based}
-
 #### Challenge #1: Motor B
 
 Now try to get Motor B to move both directions and stop by uploading similar code.  
@@ -223,10 +199,6 @@ Hint: Change pin 8 to pin 10 and change pin 11 to pin 12.
 ### Move Both Motors
 
 Now that we know how to move a single motor in both directions, let's see if we can move both motors at the same time.  The code below has four blocks because need two blocks to control each motors.  Try uploading the code.
-
-<img src="fig-6_8.png" alt="fig-6_8" style="zoom:90%;" class="image center block-based" />
-
-
 
 ```c
 void setup()
@@ -249,7 +221,6 @@ void loop()
   digitalWrite(12,LOW);
 }
 ```
-{:.text-based}
 
 Do both motors spin in the same direction?  Or are they opposite?  Try the challenges below.
 
@@ -269,10 +240,6 @@ Using what you have learned, program the motors spin in opposite directions.
 
 Now that we know how to move the motors back and forth, let's create a simple program where the motor moves both motors for 1 second, stops both motors for 1 second and the continues in a forever loop.
 
-<img src="fig-6_9.png" alt="fig-6_9" style="zoom:90%;" class="image center block-based" />
-
-
-
 ```c
 void setup()
 {
@@ -305,7 +272,6 @@ void loop()
     
 }
 ```
-{:.text-based}
 
 A few notes:
 
@@ -319,8 +285,6 @@ A few notes:
 
 Modify the code so that it only waits 1/2 a second after stopping and going.  See the answer below.  Note that 500 milliseconds is 1 second.
 
-<img src="fig-6_10.png" alt="fig-6_10" style="zoom:90%;" class="image center block-based" />
-
 ```c
 void setup()
 {
@@ -351,4 +315,3 @@ void loop()
     
 }
 ```
-{:.text-based}

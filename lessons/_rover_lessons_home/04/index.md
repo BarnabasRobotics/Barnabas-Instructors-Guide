@@ -52,29 +52,13 @@ Before starting:
 - [ ] Make sure that your Chromebook is powered on and charged (or charging)
 - [ ] Make sure that your Chromebook has access to the internet
 
-#### Enable Experimental Web Platform features
-
-Your Chromebook has special secret features that we need to enable so that it will be able to communicate with your Uno.  We’ll go through how to enable this cool feature.
-
-#### 1. Open your Google Chrome browser
-
-#### 2. Copy and paste this text into your address bar.  
-
-<p style="text-align:center"><cmd>chrome://flags/#enable-experimental-web-platform-features</cmd></p>
-
-#### 3. Select “Enabled” on the “Experimental Web Platform features”
-
-<img src="fig-6_2.png" alt="fig-6_2" style="zoom:40%;" class="image center" />
-
-#### 4. Click “Relaunch”
-
-#### 5. Visit The IDE
+#### 1. Visit The IDE
 
 Your Chromebook is now ready.  That was easy, right?  Type the link below (or copy and paste) into your address bar to check out your IDE!
 
 <p style="text-align:center"><cmd><a style="color:white" href="https://code.barnabasrobotics.com">https://code.barnabasrobotics.com</a></cmd></p>
 
-#### 6. Upload Code
+#### 2. Upload Code
 
 1. Connect your Uno to your Chromebook using a USB cable.  A red light should turn on on your Uno board.
 
@@ -98,6 +82,8 @@ Your Chromebook is now ready.  That was easy, right?  Type the link below (or co
 
 <img src="fig-6_3.png" alt="fig-6_3" style="zoom:15%;" class="image center" />
 
+**Note**: The [Chromebook](#chromebook-ide-setup) also works for your Macbook as well.  All you need is to click on the link provided in that section using Google Chrome or Microsoft Edge browsers.  No software installation is necessary.  If you prefer to install software onto your computer, proceed below.
+
 For Macbooks, your IDE is called Ardublock.  We’re going to need to download something called a package file (**.pkg**) from the internet and then run the **.pkg** so that it can install the IDE onto your Macbook.  
 
 
@@ -120,7 +106,9 @@ Learn how to connect your Uno board to your computer and upload code by watching
 
 <img src="fig-6_8.png" alt="fig-6_8" style="zoom:15%;" class="image center" />
 
-For Windows PCs, your IDE is called **Ardublock**.  We’re going to need to download something called an executable file (.exe) from the internet and then run the .exe so that it can install the IDE onto your Windows PC.  
+**Note**: The [Chromebook](#chromebook-ide-setup) also works for your Windows computer as well.  All you need is to click on the link provided in that section using Google Chrome or Microsoft Edge browsers.  No software installation is necessary.  If you prefer to install software onto your computer, proceed below.
+
+For Windows PCs, your IDE is called **Arduino and Ardublock**.  We’re going to need to download something called an executable file (.exe) from the internet and then run the .exe so that it can install the IDE onto your Windows PC.  
 
 
 We’re going to use a super cool software engineering tool called the terminal to do this.

@@ -51,8 +51,6 @@ Note: In the table below, only pins 8 and 11 can be controlled via analog so pin
 |           HIGH (255)           |              128              | Turn The Other Way (Half Speed)  |
 |           HIGH (255)           |              255              | Stop Right Away (Emergency Stop) |
 
-<div markdown = "1">
-
 ### Changing Our Motor Wires To Analog Pins
 
 It is a good idea to change all of our pins to analog pins instead of digital.  This way you can adjust the analog level of both control pins, simplifying the logic.  8 and 12 are digital pins, so let's change them to 3 and 9.  See the updated table and video below.
@@ -62,9 +60,7 @@ It is a good idea to change all of our pins to analog pins instead of digital.  
 
 {% include youtube.html id='eLpbRqXdTR0' %}
 
-</div>{:.text-based}
-
-**Motor A Control Table Using Analog**{:.text-based}
+**Motor A Control Table Using Analog**
 
 | A-IA Signal (Pin 3) - Analog | A-IB Signal (Pin 11) - Analog | DC Motor Movement                |
 | :--------------------------: | :---------------------------: | -------------------------------- |
@@ -74,9 +70,8 @@ It is a good idea to change all of our pins to analog pins instead of digital.  
 |             255              |               0               | Turn The Other Way               |
 |             128              |               0               | Turn The Other Way (Half Speed)  |
 |             255              |              255              | Stop Right Away (Emergency Stop) |
-{:.text-based}
 
-**Motor B Control Table Using analog**{:.text-based}
+**Motor B Control Table Using analog**
 
 | B-IB Signal (Pin 10) - Analog | B-IA Signal (Pin 9) - Analog | DC Motor Movement                |
 | :---------------------------: | :--------------------------: | -------------------------------- |
@@ -86,17 +81,6 @@ It is a good idea to change all of our pins to analog pins instead of digital.  
 |              255              |              0               | Turn The Other Way               |
 |              128              |              0               | Turn The Other Way (Half Speed)  |
 |              255              |             255              | Stop Right Away (Emergency Stop) |
-{:.text-based}
-
-<div markdown = "1">
-
-Now let's experiment!  We'll need to use the command, **analogWrite()**.
-
-The code below converts the original subroutines to include the use of analog and also adds two new subroutines to move forward and backwards at half speed.  Give it a try!
-
-<img src="halfspeedardu.png" alt="fig-6_0" style="zoom:100%;" class="image center" />
-
-</div>{:.block-based} 
 
 ```c
 int motb_pin1 = 3;
@@ -179,10 +163,6 @@ void loop() {
 
 }
 ```
-{:.text-based}
-
-<div markdown = "1">
-
 ### Extra Challenges
 
 - Make functions for forward, backwards and stop
@@ -190,5 +170,3 @@ void loop() {
 - Make your car move and slow down by using the for loop
 - Change forward and backwards functions so that you can set the speed for BOTH motors.
 - Create function to turnRight() and turnLeft()
-
-{:.text-based}

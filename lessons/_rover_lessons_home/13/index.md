@@ -5,8 +5,6 @@ title: Lesson 13 &middot; Allow Your Robot To See
 suggested_time: 60-75 minutes  
 
 videos:
-    - link: https://youtu.be/pK9GB7W3-bk?t=805
-      text: Printing Ultrasonic Sensor Distance On Serial Monitor (Block-Based)
     - link: https://youtu.be/vf95FwYDsv8
       text: Ultrasonic Lesson (Text-based)
     - link: https://youtu.be/pMzp3fG5EeM
@@ -55,7 +53,6 @@ The wiring chart below shows the connections that we need to make between the ul
 | Trig              | Pin 3 | Output             |
 | Echo              | Pin 4 | Input              |
 | Gnd               | Gnd   | Power (-)          |
-{:.block-based}
 
 | Ultrasonic Sensor | Uno   | Type of Connection |
 | ----------------- | ----- | ------------------ |
@@ -63,17 +60,6 @@ The wiring chart below shows the connections that we need to make between the ul
 | Trig              | Pin 4 | Output             |
 | Echo              | Pin 5 | Input              |
 | Gnd               | Gnd   | Power (-)          |
-{:.text-based}
-
-<div markdown = "1">
-
-##### Ultrasonic Sensor Wiring Diagram
-
-Go ahead and wire your ultrasonic sensor based on the wiring diagram below. 
-
-<img src="ultrasonic.png" alt="fig-14_1" style="zoom:75%;" class="image center" />
-
-</div>{:.block-based}
 
 ### Coding the Ultrasonic Sensor
 
@@ -82,8 +68,6 @@ Go ahead and wire your ultrasonic sensor based on the wiring diagram below.
 <img src="fig-14_2.png" alt="fig-14_2" style="zoom:90%;" class="image right" />
 
 Before we start coding, we need to first understand the science of how this sensor works.  Let's first go over how the ultrasonic sensor sends and receives signals.  The diagram on the right shows how a sensor sends an outgoing sound to an object which is reflected back to the sensor when it bounces off the same object.  The sensor does some math on the time that it takes the initial sound to come back to the sensor to find out how far away the object is.  This is how animals like bats and whales use echo location to tell how far objects are.  
-
-
 
 #### The Math 
 
@@ -109,8 +93,6 @@ This is the equation we will use in our computer code for the sensor to behave a
 #### Reading the Distance
 
 Our first coding challenge is to take what the ultrasonic sensor is reading and display it on our computer screen.  
-
-<div markdown = "1">
 
 {% include youtube.html id='pMzp3fG5EeM' %}
 
@@ -295,63 +277,3 @@ void loop() {
 
 }
 ```
-
-
-</div>{:.text-based}
-
-<div markdown = "1">
-On Ardublock, we'll need to use the ultrasonic block.   When used, this block gives us the distance (in centimeters) between the sensor and the closest object that it sees.  We need to take the number and display it using the "serial println" block.
-
-![fig 14.6](fig-14_6.png)
-
-In the  communication tab you'll find blocks called "serial println" and "glue".  Combine them to make this simple program.  Notice that the pin numbers settings in the ultrasonic block match the wiring diagram that we used to wire the sensor earlier.
-
-![fig 14.7](fig-14_7.png)
-
-{% include youtube.html id='pK9GB7W3-bk?start=805' %}
-
-Now you can upload this code and open the serial monitor. You should see numbers flying by as the robot continuously writes the distance to the serial monitor. Perhaps including a delay block after the Serial.print command would be helpful in slowing down the rate that numbers appear. The numbers shown should change as you put your hand in front of the sensor, or point the sensor at various objects.
-
-After uploading this code, go to the software window and click on the button that says `Serial Monitor`.  After pressing this button, a window should pop up that begins to display numbers.  Note that the Uno needs to be connected to the computer for these numbers to appear.  
-
-You should be able to see those numbers change as you point your robot towards different objects, or move your hand back and forth in front of it.
-
-
-![fig 14.8](fig-14_8.png){:.image .block-based}
-
-
-{% include badge.html type='activity' content=' Notice that your ultrasonic can only sense up to a certain range. Beyond that range the number that is returned to the computer becomes 0.  Take your robot and computer in hand and walk up to a nearby wall. Point your robot at the wall and slowly start to walk backwards. Try and find the maximum range of your sensor by seeing what the biggest number it displays before reaching 0 is.  The value should be between 200 and 300 cm.' %}
-
-#### Combine The LED And Ultrasonic Sensor
-
-How about we use the LED in tandem with the ultrasonic sensor to notify us of the distance? The simplest code that allows us to do that is the following:
-
-![fig 14.9](fig-14_9.png){:.image .block-based}
-
-The above code blinks a light on and off with the added wrinkle of having the distance measured by the sensor control the length of the blink. 
-
-{% include youtube.html id='D_xfOxR7BAE' %}{:.block-based}
-
-Upload the code to test it.  After uploading this code, you can power the robot using the 9V battery and experiment with the bot. You should see the light blink faster or slower depending on the distance between the robot and the nearest object.
-
-{% include badge.html type='troubleshoot' content='If you experience erratic issues with the sensor or motors, try replacing the 9V battery.  Note that some of the cheaper 9V batteries may not have enough charge to power the entire system.  We recommend the Procell or Duracell brand.' %}
-
-#### Challenges
-
-##### Turn On When Close
-
-Create code to turn the light on when an object is close and off when an object is far off.
-
-##### Blinking With Intervals
-
-Create code to blink the light at specific time intervals for specific distance intervals. For example, make the LED blink at 80ms intervals if the distance is less than 20cm, 160ms intervals if the distance is between 20cm and 40cm, and so on.  
-
-Hint: To do this you will need to make use of **if** and **and**.  The **and** block allows you to have two conditions rather than just one, and asks if both are true.
-
-![fig 14.10](fig-14_10.png){:.image .block-based}
-
-![fig 14.11](fig-14_11.png){:.image .block-based}
-
-![fig 14.12](fig-14_12.png){:.image .block-based}
-
-</div>{:.block-based}

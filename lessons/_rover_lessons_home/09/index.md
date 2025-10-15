@@ -13,7 +13,6 @@ videos:
 
 In this section we will be programming our Barnabas Rover to trigger your code with your button
 
-<div markdown = "1">
 ### Trigger Motion With Your Button
 
 {% include youtube.html id='SHaALfbN5wc' %}
@@ -62,23 +61,3 @@ void loop() {
 <li>When you press, move both motors forward for 1 second and then stop.</li>
 <li>When you press, move both motors backward for 1 second and then stop.</li>
 <li>Place a piece of tape on your table then program your car to move right to the tape when you press the button.</li>
-
-</div>{:.text-based}
-
-
-<div markdown = "1">
-
-### Trigger Motion With Your Button
-
-Since we have started to program our car to move, you may have noticed that at times your car starts moving before you're ready to test your code.  To make things a bit more convenient for us, we're going to add a bit of code so that you car doesn't begin its program until you press your button.  
-
-In order to accomplish this, we're going to need to use something called a while loop.  The while loop is like an if/else block.  How it works is: 
-
-"Do what ever is inside the loop WHILE this thing is true"
-
-So what we're going to do is tell it to do nothing WHILE the button is not pressed, and then jump out of the while loop once the button is pressed.  This is what it looks like in code.  Give it a try!
-
-<img src="fig-7_3.png" style="zoom:100%;" class="image center" />
-
-</div>{:.block-based}
-

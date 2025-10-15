@@ -5,11 +5,6 @@ title: Lesson 12 &middot; Navigation Challenges
 suggested_time: 60-75 minutes  
 
 videos:
-
-    - link: https://youtu.be/FZrIQ_5z6RE
-      text: Box Challenge (Block-based)
-
-
 ---
 
 
@@ -30,8 +25,6 @@ Some things to keep in mind during this lesson:
 - The turn will likely need to be two separate 90 degree turns. 
 
 ### Box Challenge
-
-{% include youtube.html id='FZrIQ_5z6RE' %}{:.block-based}
 
  Have your robot travel around the box until it reaches its starting location. 
 
