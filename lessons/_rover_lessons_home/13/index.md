@@ -50,13 +50,6 @@ The wiring chart below shows the connections that we need to make between the ul
 | Ultrasonic Sensor | Uno   | Type of Connection |
 | ----------------- | ----- | ------------------ |
 | Vcc               | 5V    | Power (+)          |
-| Trig              | Pin 3 | Output             |
-| Echo              | Pin 4 | Input              |
-| Gnd               | Gnd   | Power (-)          |
-
-| Ultrasonic Sensor | Uno   | Type of Connection |
-| ----------------- | ----- | ------------------ |
-| Vcc               | 5V    | Power (+)          |
 | Trig              | Pin 4 | Output             |
 | Echo              | Pin 5 | Input              |
 | Gnd               | Gnd   | Power (-)          |
