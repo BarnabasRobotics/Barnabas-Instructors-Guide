@@ -32,9 +32,7 @@ In this section we will assemble the car and mount our hardware
 
 Gather the parts below.
 
-> [!NOTE]
->
-> Newer versions of the chassis do not come with sticky paper that you need to peel off - they will be clear.  Mounting holes on the newer chassis are slightly different.  Additional notes below.
+>**Note:** Newer versions of the chassis do not come with sticky paper that you need to peel off - they will be clear.  Mounting holes on the newer chassis are slightly different.  Additional notes below.
 
 <img src="1a.jpg" style="zoom:15%;" class="image center" />
 
@@ -60,9 +58,7 @@ Flip the chassis over and fasten the caster wheel onto the pillars by lining up 
 
 <img src="1j.jpg" style="zoom:10%;" class="image center" />
 
-> [!NOTE]
->
-> Newer versions of the chassis are clear and do not have extra unused holes for mounting the caster wheel.  Image below.
+> **Note:** Newer versions of the chassis are clear and do not have extra unused holes for mounting the caster wheel.  Image below.
 >
 > <img src="6a.jpg" style="zoom:10%;" class="image center" />
 
@@ -80,9 +76,7 @@ Fasten one of the motor mounts using 2 x short screws.
 
 <img src="2c.jpg" style="zoom:10%;" class="image center" />
 
-> [!NOTE]
->
-> Newer versions of the chassis are clear and do not have two dedicated holes for the screws.  Instead, it is a single rectangular hole where you put both screws.  See image below.
+> **Note:** Newer versions of the chassis are clear and do not have two dedicated holes for the screws.  Instead, it is a single rectangular hole where you put both screws.  See image below.
 >
 > <img src="6b.jpg" style="zoom:20%;" class="image center" />
 
