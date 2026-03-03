@@ -55,29 +55,15 @@ Before starting:
 - [ ] Make sure that your Chromebook is powered on and charged (or charging)
 - [ ] Make sure that your Chromebook has access to the internet
 
-#### Enable Experimental Web Platform features
-
-Your Chromebook has special secret features that we need to enable so that it will be able to communicate with our Barnabas Noggin.  Follow these steps to enable this cool feature.
-
 #### 1. Open your Google Chrome browser
 
-#### 2. Copy and paste this text into your address bar.  
-
-<p style="text-align:center"><cmd>chrome://flags/#enable-experimental-web-platform-features</cmd></p>
-
-#### 3. Select “Enabled” on the “Experimental Web Platform features”
-
-<img src="fig-6_2.png" alt="fig-6_2" style="zoom:40%;" class="image center" />
-
-#### 4. Click “Relaunch”
-
-#### 5. Visit The IDE
+#### 2. Visit The IDE
 
 Your Chromebook is now ready to access your IDE.  That was easy, right?  Type the link below (or copy and paste) into your address bar to check it out!
 
 <p style="text-align:center"><cmd><a style="color:white" href="https://code.barnabasrobotics.com">https://code.barnabasrobotics.com</a></cmd></p>
 
-#### 6. Upload Code
+#### 3. Upload Code
 
 1. Connect your Barnabas Noggin (Green board) to your Chromebook using a USB cable.  A red light should turn on on your Barnabas Noggin.
 
@@ -101,6 +87,8 @@ Your Chromebook is now ready to access your IDE.  That was easy, right?  Type th
 
 <img src="fig-6_3.png" alt="fig-6_3" style="zoom:15%;" class="image center" />
 
+**Note**: The [Chromebook Instructions](#chromebook-ide-setup) also work for your Macbook as well.  All you need is to click on the link provided in that section using Google Chrome or Microsoft Edge browsers.  No software installation is necessary.  If you prefer to install software onto your computer, proceed below.
+
 For Macbooks, your IDE is called Ardublock.  We’re going to need to download something called a package file (**.pkg**) from the internet and then run the **.pkg** so that it can install the IDE onto your Macbook.  
 
 
@@ -123,6 +111,8 @@ Learn how to connect your Noggin to your computer and upload code by watching th
 
 <img src="fig-6_8.png" alt="fig-6_8" style="zoom:15%;" class="image center" />
 
+**Note**: The [Chromebook Instructions](#chromebook-ide-setup) also work for your Windows computer as well.  All you need is to click on the link provided in that section using Google Chrome or Microsoft Edge browsers.  No software installation is necessary.  If you prefer to install software onto your computer, proceed below.
+
 For Windows PCs, your IDE is called **Ardublock**.  We’re going to need to download something called an executable file (.exe) from the internet and then run the .exe so that it can install the IDE onto your Windows PC.  
 
 
@@ -134,6 +124,12 @@ Before starting:
 #### 1. Download And Install
 
 [Download the windows installer and run it.](https://www.barnabasrobotics.com/barnabas-driver-installer-1-0-5/)
+
+| Notes For Proper Installation on Newer Versions of Windows   |                                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Make sure to right click on the installer and select "Run as Administrator" | <img src="run as admin.png" alt="fig-6_8" style="zoom:40%;" class="image center" /> |
+| Next, click on "More Info"                                   | <img src="more info.png" alt="fig-6_8" style="zoom:40%;" class="image center" /> |
+| Next click on "Run anyway"                                   | <img src="run anyway.png" alt="fig-6_8" style="zoom:40%;" class="image center" /> |
 
 {% include youtube.html id='T9EyaAX91Rg' %}
 
