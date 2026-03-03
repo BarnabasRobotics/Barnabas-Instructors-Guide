@@ -116,7 +116,11 @@ Our first coding challenge is to take what the ultrasonic sensor is reading and 
 <div markdown = "1">
 On Ardublock, we'll need to use the ultrasonic block.   When used, this block gives us the distance (in centimeters) between the sensor and the closest object that it sees.  We need to take the number and display it using the "serial println" block.
 
+Note: In some versions or Ardublock, your ultrasonic block may be orange in color.
+
 ![fig 14.6](fig-14_6.png){:.image .block-based}
+
+![ultr.png](ultr.png){:.image .block-based}
 
 In the  communication tab you'll find blocks called "serial println" and "glue".  Combine them to make this simple program.  Notice that the pin numbers settings in the ultrasonic block match the wiring diagram that we used to wire the sensor earlier.
 
