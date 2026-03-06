@@ -26,22 +26,18 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 
 {% include youtube.html id="tC3SYftzvzY" %}
 
-**CAUTION ⚠️**
-
-To prevent a short circuit, which causes overheating, please see the following note.
-
-When using the breadboard, make sure that neither the **red wires** and **black wires** are never on the same row.
+> [!CAUTION]
+>
+> To prevent a short circuit, which causes overheating, please see the following note:  When using the breadboard, make sure that neither the **red wires** and **black wires** are never on the same row.
 
 #### Mini Bus DC Motor Kit [2 of 2] - Adding A Switch
 
 {% include youtube.html id="yvNeg2367mA" %}
 
-**CAUTION ⚠️**
-
-To prevent a short circuit, which causes overheating, please see the following note.
-
-When using the switch, make sure that neither the **row of red wires** nor the **row of black wires** are ever on the same row as the middle leg of the switch.
+> [!CAUTION]
+>
+> To prevent a short circuit, which causes overheating, please see the following note:  When using the switch, make sure that neither the **row of red wires** nor the **row of black wires** are ever on the same row as the middle leg of the switch.
 
 ### Written Instructions
 
-https://go.barnabasrobotics.com/mini-bus-written
+[https://go.barnabasrobotics.com/mini-bus-written](https://go.barnabasrobotics.com/mini-bus-written)
