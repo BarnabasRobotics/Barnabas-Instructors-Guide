@@ -47,15 +47,17 @@ Use two modules, and you now have the ability to cause the robot to follow a lin
 
 ### Mounting Your Modules 
 
-Mount your modules to the front bumper using double-stick foam.
+Mount your modules to the front bumper using 2 x 90 degree angle mounts or 2 x wood blocks.
 
-<img src="rover (3).png" alt="fig-3_4" style="zoom:40%;" class="image center" />
-
-**Note:** Newer versions include 2 x 90 degree angle mounts to ease mounting.  See photos below for mounting instructions.
+**Photos using 90 degree angle mounts**
 
 | <img src="90mount (3).jpg" alt="fig-3_4" style="zoom:40%;" class="image center" /> | <img src="90mount (4).jpg" alt="fig-3_4" style="zoom:40%;" class="image center" /> |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <img src="90mount (1).jpg" alt="fig-3_4" style="zoom:40%;" class="image center" /> | <img src="90mount (2).jpg" alt="fig-3_4" style="zoom:40%;" class="image center" /> |
+
+**Photo using wood blocks**
+
+<img src="wood.jpg" alt="fig-3_4" style="zoom:20%;" class="image center" />
 
 ### Wire Your IR Modules
 
