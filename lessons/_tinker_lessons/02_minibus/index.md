@@ -24,7 +24,7 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 
 #### Mini Bus DC Motor Kit [1 of 2] - Circuits, Chassis, Breadboard
 
-{% include youtube.html id="tC3SYftzvzY" %}
+{% include youtube.html id="SF3HF8DD9f8" %}
 
 > [!CAUTION]
 >
