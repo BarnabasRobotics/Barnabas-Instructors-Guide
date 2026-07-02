@@ -30,31 +30,15 @@ We have an online coding platform that allows you to program your Arduino-based 
 
 ### Browser Setup
 
-#### 1. Open your Google Chrome browser
+#### 1. Open your Google Chrome / Microsoft Edge browser
 
-#### 2. Copy and paste this text into your address bar.  
-
-Note: This step may not be necessary for newer versions of Chrome/Edge.
-
-<p style="text-align:center"><cmd>chrome://flags/#enable-experimental-web-platform-features</cmd></p>
-
-#### 3. Select “Enabled” on the “Experimental Web Platform features”
-
-Note: This step may not be necessary for newer versions of Chrome/Edge.
-
-<img src="fig-6_2.png" alt="fig-6_2" style="zoom:40%;" class="image center" />
-
-#### 4. Click “Relaunch”
-
-Note: This step may not be necessary for newer versions of Chrome/Edge.
-
-#### 5. Visit The Coding Site
+#### 2. Visit The Coding Site
 
 Your computer is now ready to access your IDE.  That was easy, right?  Type the link below (or copy and paste) into your address bar to check it out!
 
 <p style="text-align:center"><cmd><a style="color:white" target="_blank" href="https://code.barnabasrobotics.com">https://code.barnabasrobotics.com</a></cmd></p>
 
-#### 6. Upload Code
+#### 3. Upload Code
 
 1. Connect your Arduino Uno-Compatible board to your computer using a USB cable.  A  light should turn on on your board.
 
