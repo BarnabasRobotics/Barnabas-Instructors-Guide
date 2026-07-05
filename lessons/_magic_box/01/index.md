@@ -26,7 +26,7 @@ We have different tutorial series based on the version of your Magic Box kit.  F
 
 Block-based Coding using Button + IR Sensor Module.
 
-[![Watch the playlist](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/playlist?list=PL0Z988iPSaSbYlD2dJL4IrCGlssX8nZOb)
+<iframe    width="100%"    height="500"    src="https://www.youtube.com/embed/videoseries?list=PL0Z988iPSaSbYlD2dJL4IrCGlssX8nZOb"    title="YouTube Playlist"    frameborder="0"    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"    allowfullscreen></iframe>
 
 
 
