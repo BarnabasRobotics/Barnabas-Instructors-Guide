@@ -1,9 +1,7 @@
 ---
 layout: lesson
 title: Lesson 1 &middot; Tutorial Videos
-suggested_time: 30-60 minutes
-
-      
+suggested_time: 4-6 hours
 ---
 
 ### Project Overview
@@ -32,7 +30,18 @@ Block-based Coding using Button + IR Sensor Module.
 
 Note: To watch, press the play button.  To go to the next episode, just click on the right icon in the video screen.
 
+***Done with all the videos?  Here are some additional challenges!***
 
+1) Code your box to open half way with the button, but fully open with IR sensor.
+2) Code your box to open ONLY if both button and IR sensor are pushed at the same time.
+3) Code your box to open ONLY if you push the button for more than 1 second.
+4) Code your box to open only if you first press the button, then trigger the IR sensor in sequence.
+5) Make an arcade game!  
+   - Place the IR sensor **inside** the box so it can detect whether an object is present. Put a small object inside the box, such as a rock.
+   - Program the button so that pressing it opens the box.
+   - The goal of the game is to remove the object from the box before it closes. Use the IR sensor to detect when the object has been taken out. If the sensor detects that the object is no longer inside the box, program the LEDs to flash to indicate that the player has won.
+   - Increase the difficulty after each successful round by reducing the amount of time the box stays open.
+   - Continue increasing the difficulty with each level until the box opens so briefly that the game becomes nearly impossible to win.
 
 
 ------
@@ -45,6 +54,19 @@ Text-Based Coding (C/C++) using Ultrasonic Sensor.  Includes a deeper dive into 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=2S0PRG_edmZA0ATj&amp;list=PL0Z988iPSaSZ3Jychhr_725bLCoWF8sOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 Note: To watch, press the play button.  To go to the next episode, just click on the right icon in the video screen.
+
+***Done with all the videos?  Here are some additional challenges!***
+
+1) Code your box to open half way with the button, but fully open with IR sensor.
+2) Code your box to open ONLY if both button and IR sensor are pushed at the same time.
+3) Code your box to open ONLY if you push the button for more than 1 second.
+4) Code your box to open only if you first press the button, then trigger the IR sensor in sequence.
+5) Make an arcade game!  
+   - Place the IR sensor **inside** the box so it can detect whether an object is present. Put a small object inside the box, such as a rock.
+   - Program the button so that pressing it opens the box.
+   - The goal of the game is to remove the object from the box before it closes. Use the IR sensor to detect when the object has been taken out. If the sensor detects that the object is no longer inside the box, program the LEDs to flash to indicate that the player has won.
+   - Increase the difficulty after each successful round by reducing the amount of time the box stays open.
+   - Continue increasing the difficulty with each level until the box opens so briefly that the game becomes nearly impossible to win.
 
 
 ------
