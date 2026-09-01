@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 11 &middot; Turning
+title: Lesson 11 &middot; Distance Sensor
 suggested_time: 30 minutes
 videos:
     - link: https://www.youtube.com/watch?v=QFm8Gkofgs8
