@@ -49,6 +49,8 @@ collections:
     output: true
   magic_box:
     output: true
+  magic_box_9th_12th:
+    output: true
   tinker_lessons:
     output: true
   rover_lessons_home:

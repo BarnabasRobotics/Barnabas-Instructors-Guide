@@ -75,7 +75,7 @@
         {% endif %}
         
         <li>
-            <span class="opener"><i class="icon fa-magic"></i> Magic Box</span>
+            <span class="opener"><i class="icon fa-magic"></i> Magic Box (3rd-8th) </span>
             <ul>
                     {% for lesson in site.magic_box %}
                     <li><a href="{{ site.baseurl }}{{ lesson.url }}">{{ lesson.title }}</a></li>
@@ -83,6 +83,18 @@
             </ul>
         </li>
         {% if page.collection == "magic_box"%}
+        {% include sidebar/lessonsegment.html %}
+        {% endif %}
+
+	<li>
+            <span class="opener"><i class="icon fa-magic"></i> Magic Box (9th-12th) </span>
+            <ul>
+                    {% for lesson in site.magic_box_9th_12th %}
+                    <li><a href="{{ site.baseurl }}{{ lesson.url }}">{{ lesson.title }}</a></li>
+                    {% endfor %}
+            </ul>
+        </li>
+        {% if page.collection == "magic_box_9th_12th"%}
         {% include sidebar/lessonsegment.html %}
         {% endif %}
 
