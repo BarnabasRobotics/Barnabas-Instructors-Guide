@@ -35,9 +35,9 @@ Those four pins are labeled **Vcc**, **Trig**, **Echo** and **GND**. The pin lab
 
 That leaves only the Trig and Echo pins to explain. 
 
-Uno and will be programmed as an output. 
+The Trig pin is an output pin. It is going to be used to send sound signals out from the sensor. This pin will be connected to the Noggin and will be programmed as an output.
 
-The Echo pin is an input pin.  It will be used to listen for sounds coming back to the sensor. This pin will be connected to the Uno and will be programmed as an input. 
+The Echo pin is an input pin. It will be used to listen for sounds coming back to the sensor. This pin will be connected to the Noggin and will be programmed as an input. 
 
 ### Wiring The Ultrasonic Sensor
 
@@ -67,7 +67,7 @@ The wiring chart below shows the connections that we need to make between the ul
 | Echo              | D6   | Input              |
 | Gnd               | Gnd  | Power (-)          |
 
-### 
+ 
 
 ### Coding the Ultrasonic Sensor
 
