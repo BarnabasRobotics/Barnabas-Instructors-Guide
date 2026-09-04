@@ -98,6 +98,19 @@
         {% include sidebar/lessonsegment.html %}
         {% endif %}
 
+
+	<li>
+            <span class="opener"><i class="icon fa-magic"></i> Barnabas Cyclone </span>
+            <ul>
+                    {% for lesson in site.cyclone %}
+                    <li><a href="{{ site.baseurl }}{{ lesson.url }}">{{ lesson.title }}</a></li>
+                    {% endfor %}
+            </ul>
+        </li>
+        {% if page.collection == "cyclone"%}
+        {% include sidebar/lessonsegment.html %}
+        {% endif %}
+
         <li>
             <span class="opener"><i class="icon fa-truck"></i> Barnabas Rover</span>
             <ul>

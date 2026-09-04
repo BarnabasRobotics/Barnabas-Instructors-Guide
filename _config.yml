@@ -51,6 +51,8 @@ collections:
     output: true
   magic_box_9th_12th:
     output: true
+  cyclone:
+    output: true
   tinker_lessons:
     output: true
   rover_lessons_home:
