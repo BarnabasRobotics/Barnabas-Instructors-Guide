@@ -11,8 +11,9 @@ Your box can move—now you'll give it an input. In this lesson, you'll add a bu
 ### Tutorial Video
 
 <div class="video-responsive">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL0Z988iPSaSbYlD2dJL4IrCGlssX8nZOb&index=6" title="Magic Box Workshop Lesson 6: Adding A Button To Control Opening Your Box" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uFXSDzGmh6o" title="Magic Box Workshop Lesson 6: Adding A Button To Control Opening Your Box" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+
 
 ### What You'll Learn
 

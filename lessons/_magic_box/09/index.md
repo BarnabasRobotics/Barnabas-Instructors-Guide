@@ -11,8 +11,9 @@ In the final lesson, you'll bring the project together by using both the button 
 ### Tutorial Video
 
 <div class="video-responsive">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL0Z988iPSaSbYlD2dJL4IrCGlssX8nZOb&index=9" title="Magic Box Workshop Lesson 9: Triggering The Box Using A Button & IR Sensor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/k96XUATYRi4" title="Magic Box Workshop Lesson 9: Triggering The Box Using A Button & IR Sensor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+
 
 ### What You'll Learn
 

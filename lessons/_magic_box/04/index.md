@@ -11,8 +11,9 @@ In this lesson, you will add the servo motor—the part that creates the movemen
 ### Tutorial Video
 
 <div class="video-responsive">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL0Z988iPSaSbYlD2dJL4IrCGlssX8nZOb&index=4" title="Magic Box Workshop Lesson 4: Wiring and Coding The Servo Motor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nBYuns5kocs" title="Magic Box Workshop Lesson 4: Wiring and Coding The Servo Motor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+
 
 ### What You'll Learn
 

@@ -11,8 +11,9 @@ In this lesson, you'll expand your circuit by adding a second LED and programmin
 ### Tutorial Video
 
 <div class="video-responsive">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL0Z988iPSaSbYlD2dJL4IrCGlssX8nZOb&index=7" title="Magic Box Workshop Lesson 7: Wiring And Coding The Second LED" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3jQvq-pwyaA" title="Magic Box Workshop Lesson 7: Wiring And Coding The Second LED" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+
 
 ### What You'll Learn
 

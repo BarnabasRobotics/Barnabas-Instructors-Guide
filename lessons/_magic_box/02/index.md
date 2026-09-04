@@ -11,8 +11,9 @@ In this lesson, you will begin building the Magic Box circuit by connecting the 
 ### Tutorial Video
 
 <div class="video-responsive">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL0Z988iPSaSbYlD2dJL4IrCGlssX8nZOb&index=2" title="Magic Box Workshop Lesson 2: Connecting Our First LED" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oxGDhvVFxxo" title="Magic Box Workshop Lesson 2: Connecting Our First LED" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+
 
 ### What You'll Learn
 
