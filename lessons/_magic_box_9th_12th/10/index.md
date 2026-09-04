@@ -21,7 +21,7 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 **Video length:** 47:30
 
 <div class="video-responsive">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL0Z988iPSaSZ3Jychhr_725bLCoWF8sOs&index=10" title="Magic Box 2.0 - S1E10 - Using Arduino To Fade Rainbow Using Potentiometer and Intro To Servo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/f00ZPnqMeVw" title="Magic Box 2.0 - S1E10 - Using Arduino To Fade Rainbow Using Potentiometer and Intro To Servo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 ### Key Topics

@@ -21,7 +21,7 @@ Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire.
 **Video length:** 32:40
 
 <div class="video-responsive">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL0Z988iPSaSZ3Jychhr_725bLCoWF8sOs&index=14" title="Magic Box 2.0 - S1E14 - Using Ultrasonic Sensor To Open And Close Box. Math Included" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vOXYc63kUiY" title="Magic Box 2.0 - S1E14 - Using Ultrasonic Sensor To Open And Close Box. Math Included" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 ### Key Topics
