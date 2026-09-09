@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 1 &middot; Building the Cyclone Game Circuit
+title: Lesson 1 &middot; Intro To Cyclone Game and Mechanical Assembly
 suggested_time: 20-30 minutes
 ---
 
@@ -10,9 +10,9 @@ These lessons go along with [Cyclone Arcade Game: Intro To Arduino Kit (Ages 9+)
 
 Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire. 
 
-### Building the Cyclone Game Circuit
+### Building the Cyclone Game
 
-Begin your Cyclone arcade game by assembling the main electronic components. In this lesson, you will attach the LEDs, Arduino-compatible Uno board, and breadboard to create the foundation for your game.
+Begin your Cyclone arcade game by learning about how it works and assembling the mechanical parts.  
 
 ### Tutorial Video
 
@@ -24,7 +24,7 @@ Begin your Cyclone arcade game by assembling the main electronic components. In 
 
 - Identify the Uno board, breadboard, and LEDs used in the project
 - Understand how the main electronic components fit together
-- Build a sturdy foundation for the Cyclone game circuit
+- Build a sturdy mechanical foundation for the Cyclone game
 
 ### Follow Along
 
