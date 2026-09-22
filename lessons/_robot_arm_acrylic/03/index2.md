@@ -128,9 +128,9 @@ You will need:
 
 #### 5A. Join the first two pieces
 
-Connect the **Left (Lift) Motor Assembly** and **Straight Joiner** as shown in **Step 1**, and fasten it together by sliding a M3 nut into the slot and installing the M3x12 screw.  Tighten the screw only until the joint is secure.
+Connect the **Left (Lift) Motor Assembly** and **Straight Joiner** as shown in **Step 1**, and fasten it together by sliding a M3 nut into the slot and installing the M3x12 screw.  Tighten the screws only until the joints are secure.
 
-Then carefully position the **Main Arm Support** and **Curved Joiner** as shown in  **Step 2**.  Make sure that the orientation of the tabs matches the one in the photo.
+Then carefully position the **Main Arm Support** and **Curved Joiner** as shown in  **Step 2**.  Make sure that that orientation of the tabs match the one in the photo.
 
 |                            STEP 1                            |                            STEP 2                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -138,7 +138,7 @@ Then carefully position the **Main Arm Support** and **Curved Joiner** as shown 
 
 #### 5B. Fasten Curved Joiner and position the Bottom Plate
 
-Fasten the **Curved Joiner** using an M3x12 Screw + Nut as shown in **Step 3**.
+Fasten the **Curved Joiner** using a M3x12 Screw + Nut as shown in **Step 3**, 
 
 Next, position the **Main Body Bottom Plate**, so that it connects all the pieces together, as shown in **STEP 4**.
 
@@ -156,7 +156,7 @@ While holding everything together, fit the **Right (Extend) Motor Assembly**.
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="arm3 (6).jpg" style="zoom:75%;" class="image center" /> | <img src="arm3 (7).jpg" style="zoom:75%;" class="image center" /> |
 
-Once the final piece is correctly positioned, fasten it together by sliding the M3 nuts into the slots and installing the M3x12 screws.  Tighten the screws only until the joints are secure.
+Once all of the final piece is correctly positioned, fasten it together by sliding the M3 nuts into the slots and installing the M3x12 screws.  Tighten the screws only until the joints are secure.
 
 When complete, your turret should look like the photos below.
 
@@ -166,7 +166,7 @@ When complete, your turret should look like the photos below.
 
 ### STEP 6. Attach Main Body To Motor
 
-Attach the main body to the base servo motor using:
+Attach main body using to base servo motor using:
 
 - 1 x Servo Screw
 

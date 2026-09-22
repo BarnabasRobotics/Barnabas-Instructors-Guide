@@ -107,56 +107,35 @@ Assemble main arm support using:
 
 ### STEP 5. Assemble Main Body
 
-You will need:
+Assemble main body using:
+
+<img src="arm2 (1).jpg" style="zoom:15%;" class="image center" />
 
 - 1 x Left (Lift) Motor Assembly
 - 1 x Right (Extend) Motor Assembly
 - 1 x Main Body Bottom Plate
 - 1 x Main Arm Support
-- 1 x Acrylic Piece - Curved Joiner
-- 1 x Acrylic Piece - Straight Joiner
+- 2 x Acrylic Pieces (Joiners)
 - 4 x M3x12 Screws
 - 4 x M3 Nuts (Regular)
 
-<img src="arm2 (1).png" style="zoom:100%;" class="image center" />
+Use the two joiners to join all the assemblies together.  
 
-> **IMPORTANT — FOLLOW STEPS 1–6 IN ORDER**
->
-> Assemble the main body in the exact order shown in the photos below. **Do not try to snap or force all of the pieces together at once.**
->
-> The acrylic tabs should fit into the matching slots with gentle pressure. **If a piece does not fit easily, stop and check its orientation against the photo before continuing.** Forcing a tab into the wrong slot or bending the piece can cause it to break.
+To do this, put all the sides together like a 3-D jigsaw puzzle.  After that you can fasten the joints by sliding nuts into the appropriate slots and screwing in the M3x12 screws.  As the screws tighten, they will fasten the joints.  
 
-#### 5A. Join the first two pieces
-
-Connect the **Left (Lift) Motor Assembly** and **Straight Joiner** as shown in **Step 1**, and fasten it together by sliding a M3 nut into the slot and installing the M3x12 screw.  Tighten the screw only until the joint is secure.
-
-Then carefully position the **Main Arm Support** and **Curved Joiner** as shown in  **Step 2**.  Make sure that the orientation of the tabs matches the one in the photo.
+Note: It may be easier to join two pieces together at a time rather than all of them at the same time.  See suggested steps below.
 
 |                            STEP 1                            |                            STEP 2                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="arm3 (2).jpg" style="zoom:75%;" class="image center" /> | <img src="arm3 (3).jpg" style="zoom:75%;" class="image center" /> |
 
-#### 5B. Fasten Curved Joiner and position the Bottom Plate
-
-Fasten the **Curved Joiner** using an M3x12 Screw + Nut as shown in **Step 3**.
-
-Next, position the **Main Body Bottom Plate**, so that it connects all the pieces together, as shown in **STEP 4**.
-
 |                            STEP 3                            |                            STEP 4                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="arm3 (4).jpg" style="zoom:75%;" class="image center" /> | <img src="arm3 (5).jpg" style="zoom:75%;" class="image center" /> |
 
-#### 5C. Finish the assembly
-
-While holding everything together, fit the **Right (Extend) Motor Assembly**.  
-
-**Do not force the part into place. If the tabs do not line up easily, compare your assembly with the previous photo before continuing.**
-
 |                            STEP 5                            |                            STEP 6                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="arm3 (6).jpg" style="zoom:75%;" class="image center" /> | <img src="arm3 (7).jpg" style="zoom:75%;" class="image center" /> |
-
-Once the final piece is correctly positioned, fasten it together by sliding the M3 nuts into the slots and installing the M3x12 screws.  Tighten the screws only until the joints are secure.
 
 When complete, your turret should look like the photos below.
 
@@ -166,7 +145,7 @@ When complete, your turret should look like the photos below.
 
 ### STEP 6. Attach Main Body To Motor
 
-Attach the main body to the base servo motor using:
+Attach main body using to base servo motor using:
 
 - 1 x Servo Screw
 
