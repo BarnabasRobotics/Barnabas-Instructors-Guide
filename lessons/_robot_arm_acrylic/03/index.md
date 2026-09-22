@@ -129,11 +129,11 @@ Note: It may be easier to join two pieces together at a time rather than all of 
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="arm3 (2).jpg" style="zoom:75%;" class="image center" /> | <img src="arm3 (3).jpg" style="zoom:75%;" class="image center" /> |
 
-|                            STEP 4                            |                            STEP 5                            |
+|                            STEP 3                            |                            STEP 4                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="arm3 (4).jpg" style="zoom:75%;" class="image center" /> | <img src="arm3 (5).jpg" style="zoom:75%;" class="image center" /> |
 
-|                            STEP 6                            |                            STEP 5                            |
+|                            STEP 5                            |                            STEP 6                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="arm3 (6).jpg" style="zoom:75%;" class="image center" /> | <img src="arm3 (7).jpg" style="zoom:75%;" class="image center" /> |
 

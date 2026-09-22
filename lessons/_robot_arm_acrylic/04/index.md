@@ -39,7 +39,7 @@ Attach secondary arm using:
 
 *IMPORTANT:* Do not overtighten.  Make sure that the joint can move easily.  If it is too tight, your motors will not be able to move the joint during robot arm operation.
 
-|                            STEP 1                            |                            STEP 3                            |
+|                            STEP 1                            |                            STEP 2                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="arm4 (2).jpg" style="zoom:75%;" class="image center" /> | <img src="arm4 (3).jpg" style="zoom:75%;" class="image center" /> |
 
@@ -47,19 +47,19 @@ Attach secondary arm using:
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="arm4 (4).jpg" style="zoom:75%;" class="image center" /> | <img src="arm4 (5).jpg" style="zoom:75%;" class="image center" /> |
 
-|                            STEP 6                            |                            STEP 7                            |
+|                            STEP 5                            |                            STEP 6                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="arm4 (6).jpg" style="zoom:75%;" class="image center" /> | <img src="arm4 (7).jpg" style="zoom:75%;" class="image center" /> |
 
-|                            STEP 8                            |                            STEP 9                            |
+|                            STEP 7                            |                            STEP 8                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="arm4 (8).jpg" style="zoom:75%;" class="image center" /> | <img src="arm4 (9).jpg" style="zoom:75%;" class="image center" /> |
 
-|                           STEP 10                            |                           STEP 11                            |
+|                            STEP 9                            |                           STEP 10                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="arm4 (10).jpg" style="zoom:75%;" class="image center" /> | <img src="arm4 (11).jpg" style="zoom:75%;" class="image center" /> |
 
-|                           STEP 12                            |                           STEP 13                            |
+|                           STEP 11                            |                           STEP 12                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="arm4 (12).jpg" style="zoom:75%;" class="image center" /> | <img src="arm4 (13).jpg" style="zoom:75%;" class="image center" /> |
 
