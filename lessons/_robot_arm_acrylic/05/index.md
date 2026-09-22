@@ -34,13 +34,13 @@ Build claw motor assembly using:
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="arm5 (2).jpg" style="zoom:75%;" class="image center" /> | <img src="arm5 (3).jpg" style="zoom:75%;" class="image center" /> |
 
-|                            STEP 3                            |                            STEP 4                            |
-| :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="arm5 (4).jpg" style="zoom:75%;" class="image center" /> | <img src="arm5 (3).jpg" style="zoom:75%;" class="image center" /> |
+|                            STEP 3                            |
+| :----------------------------------------------------------: |
+| <img src="arm5 (4).jpg" style="zoom:75%;" class="image center" /> |
 
-|                            STEP 5                            |                            STEP 6                            |
+|                            STEP 4                            |                            STEP 5                            |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="claw2 (8).jpg" style="zoom:75%;" class="image center" /> | <img src="claw2 (10).jpg" style="zoom:50%;" class="image center" /> |
+| <img src="claw2 (8).png" style="zoom:75%;" class="image center" /> | <img src="claw2 (10).png" style="zoom:75%;" class="image center"/> |
 
 ### STEP 2. Attach Pinchers
 
