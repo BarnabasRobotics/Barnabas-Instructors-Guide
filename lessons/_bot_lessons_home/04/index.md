@@ -86,6 +86,11 @@ Every robot needs a head! You will be fastening the head to the servo motor stic
 {:style="overflow: hidden;"}
 
 ![fig 4.15](fig-4_15.png){:class="image right"} Use 1 x #2-5/16” screw to fasten the head base to your head servo motor.  You want it to be tight enough so that the base doesn’t wobble.
+
+Note: Having trouble getting the head to tighten?  Watch the support video below.
+
+{% include youtube.html id="8mM7dxJ765M" %}
+
 {:style="overflow: hidden;"}
 
 ![fig 4.16](fig-4_16.png){:class="image right"} Now fasten the top of the head to the bottom part. It should fit in over the top. You may want to use glue (Elmer’s glue or super glue) to secure it further.
