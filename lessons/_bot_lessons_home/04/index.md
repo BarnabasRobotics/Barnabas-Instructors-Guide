@@ -17,6 +17,8 @@ Before we get started, let’s make sure that we have all the parts.
 
 ### Tutorial Video(s)
 
+Note: Additional video regarding tightening the head platet within the instructions below.
+
 {% include youtube.html id="QfAQusejKVM" %}
 
 ### Attaching The Servo Motors
