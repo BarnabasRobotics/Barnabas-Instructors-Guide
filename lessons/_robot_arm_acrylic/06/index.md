@@ -34,8 +34,9 @@ Position the servo horn on the long acrylic linkage arm as shown. Insert the ser
 
 Use the photos below to check both the top and bottom of your finished assembly.
 
+|                           TOP VIEW                           |                         BOTTOM VIEW                          |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="arm1.png" style="zoom:75%;" class="image center" /> | <img src="arm2.png" style="zoom:75%;" class="image center" /> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 ### STEP 2. Attach the Long Linkage Arm to the Servo
 
