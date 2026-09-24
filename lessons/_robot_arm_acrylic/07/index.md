@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: Lesson 6 &middot; Build and Attach Claw Drive Gears
+title: Lesson 7 &middot; Attach Claw
 suggested_time: 15-30 minutes
 videos:
 
