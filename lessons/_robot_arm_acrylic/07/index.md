@@ -1,3 +1,17 @@
+---
+layout: lesson
+title: Lesson 6 &middot; Build and Attach Claw Drive Gears
+suggested_time: 15-30 minutes
+videos:
+
+---
+
+## Materials
+
+Need materials?  [Purchase the Barnabas Robot Arm at our e-store](https://shop.barnabasrobotics.com/collections/classroom-robotics-kits/products/barnabas-arduino-compatible-robot-arm-kit-with-joystick-control-ages-11).  
+
+Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire. 
+
 ## Lesson Overview
 
 In this lesson, you will attach the completed claw assembly to the robot arm.
