@@ -1,39 +1,37 @@
----
-layout: lesson
-title: Lesson 7 &middot; Attach Claw Assembly
-suggested_time: 15-30 minutes
----
-
-
-
-## Materials
-
-Need materials?  [Purchase the Barnabas Robot Arm at our e-store](https://shop.barnabasrobotics.com/collections/classroom-robotics-kits/products/barnabas-arduino-compatible-robot-arm-kit-with-joystick-control-ages-11).  
-
-Classroom sets available.  Contact us at info@barnabasrobotics.com to inquire. 
-
 ## Lesson Overview
 
-In this lesson we will attach the claw assembly to the rest of the robot arm.
-
+In this lesson, you will attach the completed claw assembly to the robot arm.
 
 ## Instructions
 
-### STEP 1. Attach Claw Assembly
+### Attach the Claw Assembly
 
-Attach claw to the arm using:
+You will need:
 
-- 1 x M3x6 Screw (top)
-- 1 x Plastic Washer
-- 2 x M3x12 Screws (sides)
+- 1 x M3x6 Screw (top mount)
+- 2 x M3x12 Screws (side mounts)
+- 1 x Circular Washer
 
-*IMPORTANT:* Do not overtighten. 
+### STEP 1. Attach the Top Arm Link
 
-|                          Top Screw                           |                       Side Screws (2x)                       |
-| :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <u><img src="arm5 (12).jpg" style="zoom:57%;" class="image center" /></u> | <u><img src="arm5 (14).jpg" style="zoom:50%;" class="image center" /></u> |
+Position the claw assembly at the end of the robot arm.
 
+Place the circular washer between the **top mounting hole on the claw assembly** and the **top arm link**, as shown in the photo.
 
+Line up the holes and secure the connection with an **M3x6 screw**.
 
+Tighten the screw until the parts are secure, but **do not overtighten**.
 
+<img src="arm5 (12).jpg" style="zoom:57%;" class="image center" />
 
+### STEP 2. Attach the Bottom Arm Links
+
+Line up the hole in one of the **bottom arm links** with the **side mounting hole on the claw assembly**.
+
+Insert an **M3x12 screw** through the aligned holes and tighten until secure.
+
+Repeat this step on the **opposite side** using the second M3x12 screw. The photo below shows one side of the connection; attach the other side in the same way.
+
+Make sure both connections are secure, but do not overtighten.
+
+<img src="arm5 (14).jpg" style="zoom:50%;" class="image center" />
